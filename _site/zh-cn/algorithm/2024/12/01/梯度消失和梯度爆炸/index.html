@@ -9,7 +9,7 @@
   <title>梯度消失和梯度爆炸</title>
   <meta name='description' content=''>
 
-  <link rel="canonical" href="http://localhost:4000/zh-cn/algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/">
+  <link rel="canonical" href="https://blog.tomori.io//zh-cn/algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/">
   <link rel="alternate" type="application/rss+xml" title="PT&#39;s Blog" href="/feed.xml">
 
   <!-- Icons -->
@@ -966,11 +966,11 @@
 
 <h2 id="梯度消失与爆炸的数学原理">梯度消失与爆炸的数学原理</h2>
 
-<p>假设我们有一个简单的深层神经网络，损失函数 <include src="/zh-cn/_Rx1chGvqI@2tWfsHaMD8Z9.xml"></include> 关于第 <include src="/zh-cn/_eP1KMSmJ$Y5ighEpDxXCVI.xml"></include> 层参数 <include src="/zh-cn/_csMxZlj4UzNJH6qC@Vavwg.xml"></include> 的梯度可以表示为：</p>
+<p>假设我们有一个简单的深层神经网络，损失函数 <include src="/zh-cn/_X36Kr$TdP4iSRGQE5lCAVZ.xml"></include> 关于第 <include src="/zh-cn/_5Xc2Zt$l8h6peEQsFmuAbS.xml"></include> 层参数 <include src="/zh-cn/_qStM8paAJb5kEYx3sZHOfl.xml"></include> 的梯度可以表示为：</p>
 
-<p><include src="/zh-cn/_bKsx65EZfBt7vUprADYhPH.xml"></include></p>
+<p><include src="/zh-cn/_7DlNUigZyECujOQp8zMX46.xml"></include></p>
 
-<p>其中，<include src="/zh-cn/_lOtPbCoIv41dczUZaKkY5W.xml"></include> 是第 <include src="/zh-cn/_EhzeX1vb58PjtBcTVWQNH0.xml"></include> 层的激活值。可以看到，梯度是多个层间导数的乘积。如果这些导数的模值小于1，随着层数增加，整个乘积会趋近于零；反之，如果导数的模值大于1，乘积会迅速增大。这就是梯度消失和梯度爆炸的数学根源。</p>
+<p>其中，<include src="/zh-cn/_iUJy1ALRQB@tHFlM4p0qEG.xml"></include> 是第 <include src="/zh-cn/_3@wTcs9lhmiuL2zMK7kFoZ.xml"></include> 层的激活值。可以看到，梯度是多个层间导数的乘积。如果这些导数的模值小于1，随着层数增加，整个乘积会趋近于零；反之，如果导数的模值大于1，乘积会迅速增大。这就是梯度消失和梯度爆炸的数学根源。</p>
 
 <h2 id="cnn中的梯度消失与爆炸">CNN中的梯度消失与爆炸</h2>
 
@@ -988,7 +988,7 @@
   <li>
     <p><strong>使用适当的激活函数</strong>：ReLU（Rectified Linear Unit）及其变种在一定程度上缓解了梯度消失的问题，因为其导数在正区间恒为1，不会导致梯度逐层缩小。</p>
 
-    <p><include src="/zh-cn/_6lTdtER31LhesfDz9cKWCN.xml"></include></p>
+    <p><include src="/zh-cn/_YJVAf3suzQCwK1yhZcjNBm.xml"></include></p>
   </li>
   <li>
     <p><strong>权重初始化</strong>：合理的权重初始化方法，如He初始化或Xavier初始化，能保持每层的激活值和梯度的方差一致，减少梯度消失或爆炸的风险。</p>
@@ -997,28 +997,28 @@
       <li>
         <p><strong>Xavier初始化</strong>（适用于Sigmoid和Tanh激活函数）：</p>
 
-        <p><include src="/zh-cn/_K4PpCgEY@dB9lGOuAtV0HU.xml"></include></p>
+        <p><include src="/zh-cn/_2JTS3niK1oM@9sycrmatIH.xml"></include></p>
       </li>
       <li>
         <p><strong>He初始化</strong>（适用于ReLU激活函数）：</p>
 
-        <p><include src="/zh-cn/_9WYlAMVoFXNczk4rd25ZbQ.xml"></include></p>
+        <p><include src="/zh-cn/_unyQ3FUEVklzKZbdh4DgRJ.xml"></include></p>
       </li>
     </ul>
   </li>
   <li>
     <p><strong>批归一化（Batch Normalization）</strong>：通过规范化每一层的输入，保持激活值在合理范围内，稳定梯度的传播。</p>
 
-    <p><include src="/zh-cn/_yqg@szWr6XiUmQET3LSNAn.xml"></include></p>
+    <p><include src="/zh-cn/_Hpw@G67oTkMP0iOl3KyDYF.xml"></include></p>
 
-    <p>其中，<include src="/zh-cn/_Nrvil$QzUK6Eb4nBgIcHyF.xml"></include> 和 <include src="/zh-cn/_zZhquEij@9QeHXp5OMkDN4.xml"></include> 分别是批量数据的均值和方差，<include src="/zh-cn/_Zx362iMnyvUbHgrjVoslSC.xml"></include> 是一个小常数，防止除零。</p>
+    <p>其中，<include src="/zh-cn/_Mon8u5TiXk31VUJw0spbYB.xml"></include> 和 <include src="/zh-cn/_PFhGMqNzinjOBfvK628IYQ.xml"></include> 分别是批量数据的均值和方差，<include src="/zh-cn/_y5YMqPH3dTsD9kGRArvXFV.xml"></include> 是一个小常数，防止除零。</p>
   </li>
   <li>
     <p><strong>残差连接（Residual Connections）</strong>：在深层网络中引入跳跃连接，允许梯度直接流过这些连接，缓解梯度消失问题。</p>
 
-    <p><include src="/zh-cn/_h7tXR@K4pSxqzJPgoHTv10.xml"></include></p>
+    <p><include src="/zh-cn/_7iBqZaImQrWsJ4cHTvUR2u.xml"></include></p>
 
-    <p>其中，<include src="/zh-cn/_vaNI7KDsOVZjgfwUbPy461.xml"></include> 是某些层的组合，<include src="/zh-cn/_@nuiVbE5pefrcmLshXQ2HZ.xml"></include> 是输入。</p>
+    <p>其中，<include src="/zh-cn/_2aqT3xvprV9Of5ulhyJZKN.xml"></include> 是某些层的组合，<include src="/zh-cn/_fa4iJKXDO6n0LrFv1uYEqe.xml"></include> 是输入。</p>
   </li>
 </ol>
 
@@ -1030,9 +1030,9 @@
 
 <h3 id="rnn中的梯度问题">RNN中的梯度问题</h3>
 
-<p>在标准RNN中，隐藏状态 <include src="/zh-cn/_Ady4iMVgnGvmsPbrxIjoap.xml"></include> 由以下递归公式定义：</p>
+<p>在标准RNN中，隐藏状态 <include src="/zh-cn/_7nPlYm9u@AgGpX0KVi3exh.xml"></include> 由以下递归公式定义：</p>
 
-<p><include src="/zh-cn/_WnNctYaQA@uilySIVOUgM1.xml"></include></p>
+<p><include src="/zh-cn/_h1itp8MHeDR@IUOdkvL7VQ.xml"></include></p>
 
 <p>反向传播通过时间（BPTT）计算梯度时，涉及到多个时间步的梯度累乘，导致梯度指数级地减小或增大。</p>
 
@@ -1042,7 +1042,7 @@
   <li>
     <p><strong>梯度裁剪（Gradient Clipping）</strong>：限制梯度的范数，防止梯度爆炸。例如，当梯度的L2范数超过某个阈值时，将其缩放到该阈值。</p>
 
-    <p><include src="/zh-cn/_07yEZNqSd2ftuxp3al8I4F.xml"></include></p>
+    <p><include src="/zh-cn/_nMgp1$aVYO@Qe59HDbxLm3.xml"></include></p>
   </li>
   <li>
     <p><strong>使用更复杂的RNN单元</strong>：如长短期记忆网络（LSTM）和门控循环单元（GRU），它们通过引入门机制，控制信息的流动，缓解梯度消失问题。</p>
@@ -1053,7 +1053,7 @@
   </li>
 </ol>
 
-<include src="/zh-cn/_aeI5vxRnyLgFq3p2hzUEoD.xml"></include>
+<include src="/zh-cn/_TiCtsOBxHNEMnkp9Z6eyb7.xml"></include>
 
 <ul>
   <li>通过这些门，LSTM能够有效地保持长期依赖，减少梯度消失的风险。</li>
@@ -1104,17 +1104,17 @@
 
 <!--    <div class="post__share">-->
 <!--      <div class="share__list">-->
-<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/zh-cn/algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
+<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.tomori.io//zh-cn/algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
 
-<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8&url=http://localhost:4000/zh-cn/algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
+<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8&url=https://blog.tomori.io//zh-cn/algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
 
-<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/&amp;media=http://localhost:4000/zh-cnhttps://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg&amp;description=%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
+<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=https://blog.tomori.io//algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/&amp;media=https://blog.tomori.io//zh-cnhttps://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg&amp;description=%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
 
-<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=http://localhost:4000/zh-cn/algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
+<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=https://blog.tomori.io//zh-cn/algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
 
-<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=http://localhost:4000/zh-cn/algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=https://blog.tomori.io//zh-cn/algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
 
-<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=http://localhost:4000/zh-cn/algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=https://blog.tomori.io//zh-cn/algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
 <!--      </div>-->
 <!--    </div>-->
 
@@ -1633,7 +1633,7 @@
     <div class="row">
       <div class="col col-12">
       <div class="footer__inner">
-        <div class="copyright">2024 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+        <div class="copyright">2025 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
         
 <div class="social">
   <ul class="social__list list-reset">

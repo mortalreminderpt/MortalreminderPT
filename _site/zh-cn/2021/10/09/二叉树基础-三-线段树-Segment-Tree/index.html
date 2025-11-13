@@ -9,7 +9,7 @@
   <title>二叉树基础（三） 线段树（Segment Tree）</title>
   <meta name='description' content='二叉树（Binary tree）是指树中节点的度不大于2的有序树，它是一种最简单且最重要的树。'>
 
-  <link rel="canonical" href="http://localhost:4000/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/">
+  <link rel="canonical" href="https://blog.tomori.io//2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/">
   <link rel="alternate" type="application/rss+xml" title="PT&#39;s Blog" href="/feed.xml">
 
   <!-- Icons -->
@@ -946,13 +946,13 @@
 <h2 id="概念">概念</h2>
 <p>线段树是常用于<strong>维护区间信息</strong>的数据结构</p>
 
-<p>线段树可以在<include src="/zh-cn/_lNXxj7G9B4neoqZK0iAOQM.xml"></include>的时间复杂度内实现单点修改、区间修改、区间查询（区间求和，求区间最大值，求区间最小值）等操作</p>
+<p>线段树可以在<include src="/zh-cn/_35rMAs8DoW21Valtfj9myY.xml"></include>的时间复杂度内实现单点修改、区间修改、区间查询（区间求和，求区间最大值，求区间最小值）等操作</p>
 
 <h3 id="结构">结构</h3>
 
-<p>线段树将每个长度不为<include src="/zh-cn/_B8x0KNWDTn2@uE4ropZmYX.xml"></include>的区间划分成左右两个区间递归求解，把整个线段划分为一个树形结构，通过合并左右两区间信息来求得该区间的信息。这种数据结构可以方便的进行大部分的区间操作。</p>
+<p>线段树将每个长度不为<include src="/zh-cn/_qQGhM3wAcVrpXgUN7CY1$d.xml"></include>的区间划分成左右两个区间递归求解，把整个线段划分为一个树形结构，通过合并左右两区间信息来求得该区间的信息。这种数据结构可以方便的进行大部分的区间操作。</p>
 
-<p>假设以线段树存储数组<include src="/zh-cn/_2OpKtVMkFJPqTygYXvNZez.xml"></include>，设线段树的根节点编号为<include src="/zh-cn/_B8x0KNWDTn2@uE4ropZmYX.xml"></include>，用数组<include src="/zh-cn/_frPyK4iL9kBq1Ul0OTDbYE.xml"></include>来保存线段树，<include src="/zh-cn/_wgtXIBqp8Yo3ZVf$jJ5M@a.xml"></include>用来保存线段树上编号为<include src="/zh-cn/_lzICjfpnM0ymisNEk9FAT6.xml"></include>的节点的值</p>
+<p>假设以线段树存储数组<include src="/zh-cn/_9ZXh4erQw0mJTRFD8iCb$2.xml"></include>，设线段树的根节点编号为<include src="/zh-cn/_qQGhM3wAcVrpXgUN7CY1$d.xml"></include>，用数组<include src="/zh-cn/_TXfFtp4@WsadlwzOgo2GbC.xml"></include>来保存线段树，<include src="/zh-cn/_GYdQS1jCDIERAlFr7KbU8v.xml"></include>用来保存线段树上编号为<include src="/zh-cn/_YOqX$Rylp2chE8ubFIxmW5.xml"></include>的节点的值</p>
 
 <p>该线段树的结构如下</p>
 
@@ -967,7 +967,7 @@
 <h2 id="基本操作">基本操作</h2>
 <h3 id="线段树的建立">线段树的建立</h3>
 
-<p>对于节点<include src="/zh-cn/_lzICjfpnM0ymisNEk9FAT6.xml"></include>，其子节点的编号为<include src="/zh-cn/_T@eBfPxlyvG8ktF2AcrDwL.xml"></include>以及<include src="/zh-cn/_OvnG@rdQpBH21$Ix7lqRNP.xml"></include>，若节点<include src="/zh-cn/_lzICjfpnM0ymisNEk9FAT6.xml"></include>存储的区间为<include src="/zh-cn/_XWd9Fegwc40oUVY8QR1tnS.xml"></include>，则节点<include src="/zh-cn/_T@eBfPxlyvG8ktF2AcrDwL.xml"></include>存储的区间应该是<include src="/zh-cn/_RL7iPYZJE3ruXFk@vt9bcg.xml"></include>，相应地，节点<include src="/zh-cn/_OvnG@rdQpBH21$Ix7lqRNP.xml"></include>存储的区间为<include src="/zh-cn/_L0D8ZhqcUKWAYfnX$iGwpk.xml"></include>。我们可以采用递归的方式建树，代码如下</p>
+<p>对于节点<include src="/zh-cn/_YOqX$Rylp2chE8ubFIxmW5.xml"></include>，其子节点的编号为<include src="/zh-cn/_O09s7@xawVlgNIuMXDkW$2.xml"></include>以及<include src="/zh-cn/_QhaTDrvd@lKGzjFO3ntP0q.xml"></include>，若节点<include src="/zh-cn/_YOqX$Rylp2chE8ubFIxmW5.xml"></include>存储的区间为<include src="/zh-cn/_FUR4mTSjzG@NXqEZbnIhp6.xml"></include>，则节点<include src="/zh-cn/_O09s7@xawVlgNIuMXDkW$2.xml"></include>存储的区间应该是<include src="/zh-cn/_$Oxe1QKym8AvM7lJDGTc9H.xml"></include>，相应地，节点<include src="/zh-cn/_QhaTDrvd@lKGzjFO3ntP0q.xml"></include>存储的区间为<include src="/zh-cn/_mPxEcgoZzvFUeYjrRawQ$l.xml"></include>。我们可以采用递归的方式建树，代码如下</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">build</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="kt">int</span> <span class="n">l</span><span class="p">,</span> <span class="kt">int</span> <span class="n">r</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// i表示当前节点, l表示左边界, r表示右边界</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">l</span> <span class="o">==</span> <span class="n">r</span><span class="p">)</span> <span class="p">{</span>
@@ -982,7 +982,7 @@
 </code></pre></div></div>
 
 <h3 id="区间查询">区间查询</h3>
-<p>若查询的区间为<include src="/zh-cn/_2smDL9Ao5lQnwNHcEKgyWJ.xml"></include>，我们只需直接返回<include src="/zh-cn/_Z31hcNyM5xwrGumAgKlLUI.xml"></include>，但如果我们查询的是<include src="/zh-cn/_PQMimTkIJ90Aef$5glRDx6.xml"></include>，则需要合并<include src="/zh-cn/_2AIfkqpKcBXEajPu0SnwUN.xml"></include>和<include src="/zh-cn/_yUupeRnPcLYl@3BbCoQFWX.xml"></include>的答案，代码如下</p>
+<p>若查询的区间为<include src="/zh-cn/_xS1F8aTwBG0pn94YLmECgb.xml"></include>，我们只需直接返回<include src="/zh-cn/_1IK4720TUNOe65CgDFA@Ri.xml"></include>，但如果我们查询的是<include src="/zh-cn/_WCy0gXpUPV2EkitJbqh@F1.xml"></include>，则需要合并<include src="/zh-cn/_3MNfQu2$BTjO5IeyAP9ZY8.xml"></include>和<include src="/zh-cn/_PAzFMdXYGNhjaxf9r5L34o.xml"></include>的答案，代码如下</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">query</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="kt">int</span> <span class="n">l</span><span class="p">,</span> <span class="kt">int</span> <span class="n">r</span><span class="p">,</span> <span class="kt">int</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//i表示当前节点, [l,r]是查询区间, [s,t]表示当前节点包含区间</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">l</span> <span class="o">&lt;=</span> <span class="n">s</span> <span class="o">&amp;&amp;</span> <span class="n">r</span> <span class="o">&gt;=</span> <span class="n">t</span><span class="p">)</span> <span class="c1">// 若[s,t]是[l,r]的子区间，直接返回</span>
@@ -1008,9 +1008,9 @@
 <span class="p">}</span>
 </code></pre></div></div>
 <h3 id="懒惰标记">懒惰标记</h3>
-<p>当我们按照上面的方法对<include src="/zh-cn/_r7jA1RVXnTdF64UzDNGvJw.xml"></include>的区间<include src="/zh-cn/_PQMimTkIJ90Aef$5glRDx6.xml"></include>加上<include src="/zh-cn/_hRxXtl3rUe7p50$wjQG6iB.xml"></include>后，更新后的线段树结构如下
+<p>当我们按照上面的方法对<include src="/zh-cn/_rRyOVsmvghGb98iN1wotK2.xml"></include>的区间<include src="/zh-cn/_WCy0gXpUPV2EkitJbqh@F1.xml"></include>加上<include src="/zh-cn/_8lEcubpk3vjKmWTit2GSYN.xml"></include>后，更新后的线段树结构如下
 <img src="/images/posts/segmenttree2.png" alt="在这里插入图片描述" />
-我们会发现，在进行递归更新时，递归执行到节点<include src="/zh-cn/_OHGnmCKuzrkWE@84M2FNLe.xml"></include>时就已经结束了，因此节点<include src="/zh-cn/_OHGnmCKuzrkWE@84M2FNLe.xml"></include>的两个子节点没有被更新</p>
+我们会发现，在进行递归更新时，递归执行到节点<include src="/zh-cn/_gRtjYMic4zZ8SFyK31GLek.xml"></include>时就已经结束了，因此节点<include src="/zh-cn/_gRtjYMic4zZ8SFyK31GLek.xml"></include>的两个子节点没有被更新</p>
 
 <p>遇到这种情况，我们需要给递归结束的节点打上一个标记，在下一次查询操作时将没有更新的子节点更新，这个标记被称为懒惰标记，这样更新时效果如图</p>
 
@@ -1096,17 +1096,17 @@
 
 <!--    <div class="post__share">-->
 <!--      <div class="share__list">-->
-<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/zh-cn/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
+<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.tomori.io//zh-cn/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
 
-<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89%20%E7%BA%BF%E6%AE%B5%E6%A0%91%EF%BC%88Segment%20Tree%EF%BC%89&url=http://localhost:4000/zh-cn/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
+<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89%20%E7%BA%BF%E6%AE%B5%E6%A0%91%EF%BC%88Segment%20Tree%EF%BC%89&url=https://blog.tomori.io//zh-cn/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
 
-<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/&amp;media=http://localhost:4000/zh-cn/images/covers/数据结构-cover1.png&amp;description=%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89%20%E7%BA%BF%E6%AE%B5%E6%A0%91%EF%BC%88Segment%20Tree%EF%BC%89" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
+<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=https://blog.tomori.io//2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/&amp;media=https://blog.tomori.io//zh-cn/images/covers/数据结构-cover1.png&amp;description=%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89%20%E7%BA%BF%E6%AE%B5%E6%A0%91%EF%BC%88Segment%20Tree%EF%BC%89" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
 
-<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=http://localhost:4000/zh-cn/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
+<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=https://blog.tomori.io//zh-cn/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
 
-<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=http://localhost:4000/zh-cn/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=https://blog.tomori.io//zh-cn/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
 
-<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=http://localhost:4000/zh-cn/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=https://blog.tomori.io//zh-cn/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
 <!--      </div>-->
 <!--    </div>-->
 
@@ -2398,7 +2398,7 @@
     <div class="row">
       <div class="col col-12">
       <div class="footer__inner">
-        <div class="copyright">2024 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+        <div class="copyright">2025 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
         
 <div class="social">
   <ul class="social__list list-reset">

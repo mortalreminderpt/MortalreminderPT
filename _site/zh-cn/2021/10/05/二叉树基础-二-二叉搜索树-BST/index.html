@@ -9,7 +9,7 @@
   <title>二叉树基础（二）二叉搜索树（BST）</title>
   <meta name='description' content='二叉树（Binary tree）是指树中节点的度不大于2的有序树，它是一种最简单且最重要的树。'>
 
-  <link rel="canonical" href="http://localhost:4000/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/">
+  <link rel="canonical" href="https://blog.tomori.io//2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/">
   <link rel="alternate" type="application/rss+xml" title="PT&#39;s Blog" href="/feed.xml">
 
   <!-- Icons -->
@@ -936,9 +936,9 @@
   </li>
   <li><a href="#代码" id="markdown-toc-代码">代码</a>    <ol>
       <li><a href="#基本操作" id="markdown-toc-基本操作">基本操作</a>        <ol>
-          <li><a href="#find" id="markdown-toc-find"><include src="/zh-cn/_n6gGkx2QZJHP58w7XpOchN.xml"></include></a></li>
-          <li><a href="#insert" id="markdown-toc-insert"><include src="/zh-cn/_9hKcy0MFxQw1dX@tkBIVUY.xml"></include></a></li>
-          <li><a href="#delete" id="markdown-toc-delete"><include src="/zh-cn/_SBqgLUXKY8i7OW1lcwNute.xml"></include></a></li>
+          <li><a href="#find" id="markdown-toc-find"><include src="/zh-cn/_a$dx6uZP@8Ke5BsOGX2NIr.xml"></include></a></li>
+          <li><a href="#insert" id="markdown-toc-insert"><include src="/zh-cn/_13BJ5dTz9mlAQCOuFwYPLj.xml"></include></a></li>
+          <li><a href="#delete" id="markdown-toc-delete"><include src="/zh-cn/_MWtiKgylG$eo0Xx2hwSOm7.xml"></include></a></li>
         </ol>
       </li>
     </ol>
@@ -972,8 +972,8 @@
 
 <p>BST的构造和析构与普通二叉树相同，这里不多赘述。相比于普通二叉树，BST的主要功能增加了查找，插入和删除</p>
 
-<h4 id="find"><include src="/zh-cn/_n6gGkx2QZJHP58w7XpOchN.xml"></include></h4>
-<p><include src="/zh-cn/_n6gGkx2QZJHP58w7XpOchN.xml"></include>函数的作用是查找某一个数据值已知的节点是否在树中，并返回节点值。代码如下</p>
+<h4 id="find"><include src="/zh-cn/_a$dx6uZP@8Ke5BsOGX2NIr.xml"></include></h4>
+<p><include src="/zh-cn/_a$dx6uZP@8Ke5BsOGX2NIr.xml"></include>函数的作用是查找某一个数据值已知的节点是否在树中，并返回节点值。代码如下</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">BST</span> <span class="nf">find</span><span class="p">(</span><span class="n">BST</span> <span class="n">tree</span><span class="p">,</span> <span class="kt">int</span> <span class="n">data</span><span class="p">){</span>
     <span class="n">BST</span> <span class="n">p</span> <span class="o">=</span> <span class="n">tree</span><span class="p">;</span>
@@ -988,8 +988,8 @@
     <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
-<h4 id="insert"><include src="/zh-cn/_9hKcy0MFxQw1dX@tkBIVUY.xml"></include></h4>
-<p><include src="/zh-cn/_9hKcy0MFxQw1dX@tkBIVUY.xml"></include>函数的作用是在树中插入一个节点。BST中所有的节点都是作为叶子节点插入的，因此在创建节点<include src="/zh-cn/_TpRbr9ZNiC1@KIvxPqXY40.xml"></include>后，要找到合适的父节点<include src="/zh-cn/_qMtxF$@GvjRA6VIKagN53B.xml"></include>并插入其中。代码如下</p>
+<h4 id="insert"><include src="/zh-cn/_13BJ5dTz9mlAQCOuFwYPLj.xml"></include></h4>
+<p><include src="/zh-cn/_13BJ5dTz9mlAQCOuFwYPLj.xml"></include>函数的作用是在树中插入一个节点。BST中所有的节点都是作为叶子节点插入的，因此在创建节点<include src="/zh-cn/_kn7vhP2Z0TyuJLzfMFsA5q.xml"></include>后，要找到合适的父节点<include src="/zh-cn/_a0mVuLgFhzNKlR6qJiOd1H.xml"></include>并插入其中。代码如下</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">bool</span> <span class="nf">insert</span><span class="p">(</span><span class="n">BST</span><span class="o">&amp;</span> <span class="n">tree</span><span class="p">,</span> <span class="kt">int</span> <span class="n">data</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">BST</span> <span class="n">p</span> <span class="o">=</span> <span class="n">tree</span><span class="p">,</span> <span class="n">f</span><span class="p">;</span>
@@ -1013,7 +1013,7 @@
     <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
-<h4 id="delete"><include src="/zh-cn/_SBqgLUXKY8i7OW1lcwNute.xml"></include></h4>
+<h4 id="delete"><include src="/zh-cn/_MWtiKgylG$eo0Xx2hwSOm7.xml"></include></h4>
 <p>二叉搜索树进行删除操作后，仍然要保证它的排序正确，因此我们的删除操作分为三种情况：</p>
 
 <ul>
@@ -1066,17 +1066,17 @@
 
 <!--    <div class="post__share">-->
 <!--      <div class="share__list">-->
-<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/zh-cn/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
+<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.tomori.io//zh-cn/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
 
-<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%EF%BC%88BST%EF%BC%89&url=http://localhost:4000/zh-cn/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
+<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%EF%BC%88BST%EF%BC%89&url=https://blog.tomori.io//zh-cn/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
 
-<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/&amp;media=http://localhost:4000/zh-cn/images/covers/数据结构-cover1.png&amp;description=%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%EF%BC%88BST%EF%BC%89" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
+<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=https://blog.tomori.io//2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/&amp;media=https://blog.tomori.io//zh-cn/images/covers/数据结构-cover1.png&amp;description=%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%EF%BC%88BST%EF%BC%89" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
 
-<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=http://localhost:4000/zh-cn/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
+<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=https://blog.tomori.io//zh-cn/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
 
-<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=http://localhost:4000/zh-cn/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=https://blog.tomori.io//zh-cn/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
 
-<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=http://localhost:4000/zh-cn/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=https://blog.tomori.io//zh-cn/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
 <!--      </div>-->
 <!--    </div>-->
 
@@ -2368,7 +2368,7 @@
     <div class="row">
       <div class="col col-12">
       <div class="footer__inner">
-        <div class="copyright">2024 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+        <div class="copyright">2025 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
         
 <div class="social">
   <ul class="social__list list-reset">

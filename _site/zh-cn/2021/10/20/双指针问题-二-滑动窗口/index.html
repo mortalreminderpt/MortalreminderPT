@@ -9,7 +9,7 @@
   <title>双指针问题（二）滑动窗口</title>
   <meta name='description' content='双指针是在遍历的过程中，使用两个方向相同或相反的指针进行扫描，从而达到相应目的的算法。'>
 
-  <link rel="canonical" href="http://localhost:4000/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/">
+  <link rel="canonical" href="https://blog.tomori.io//2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/">
   <link rel="alternate" type="application/rss+xml" title="PT&#39;s Blog" href="/feed.xml">
 
   <!-- Icons -->
@@ -943,7 +943,7 @@
 
 <h2 id="209-长度最小的子数组"><a href="https://leetcode-cn.com/problems/minimum-size-subarray-sum/">209. 长度最小的子数组</a></h2>
 
-<p>该题是最基本的滑动窗口问题，我们可以用两个指针<include src="/zh-cn/_eP1KMSmJ$Y5ighEpDxXCVI.xml"></include>和<include src="/zh-cn/_VUYkSgD6AeHawfZcQiK0LG.xml"></include>表示窗口的左右段，然后让指针<include src="/zh-cn/_VUYkSgD6AeHawfZcQiK0LG.xml"></include>持续向右移动，同时用一个变量<include src="/zh-cn/_SaZXlYxPEGH6$jiLKOMcmN.xml"></include>记录<include src="/zh-cn/_lyDs43J0MK@YwSBXqoiWHE.xml"></include>的区间和，若<include src="/zh-cn/_SaZXlYxPEGH6$jiLKOMcmN.xml"></include>满足条件，则记录<include src="/zh-cn/_eP1KMSmJ$Y5ighEpDxXCVI.xml"></include>和<include src="/zh-cn/_VUYkSgD6AeHawfZcQiK0LG.xml"></include>的差作为答案，并移动指针<include src="/zh-cn/_eP1KMSmJ$Y5ighEpDxXCVI.xml"></include>，代码如下</p>
+<p>该题是最基本的滑动窗口问题，我们可以用两个指针<include src="/zh-cn/_5Xc2Zt$l8h6peEQsFmuAbS.xml"></include>和<include src="/zh-cn/_qCdRY0E81oMSJ3P59$NAXI.xml"></include>表示窗口的左右段，然后让指针<include src="/zh-cn/_qCdRY0E81oMSJ3P59$NAXI.xml"></include>持续向右移动，同时用一个变量<include src="/zh-cn/_VbTSC7YyW9HOpi6KcXsvme.xml"></include>记录<include src="/zh-cn/_2D5PUGc7aVZHMmR0bsq$Je.xml"></include>的区间和，若<include src="/zh-cn/_VbTSC7YyW9HOpi6KcXsvme.xml"></include>满足条件，则记录<include src="/zh-cn/_5Xc2Zt$l8h6peEQsFmuAbS.xml"></include>和<include src="/zh-cn/_qCdRY0E81oMSJ3P59$NAXI.xml"></include>的差作为答案，并移动指针<include src="/zh-cn/_5Xc2Zt$l8h6peEQsFmuAbS.xml"></include>，代码如下</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>
@@ -966,9 +966,9 @@
 
 <p>这道题的解法与上道题非常相似，但求的不再是区间长度而是连续子区间数量。</p>
 
-<p>对于子区间数量，我们可以发现，若<include src="/zh-cn/_lyDs43J0MK@YwSBXqoiWHE.xml"></include>是一个符合条件的窗口，则<include src="/zh-cn/_wyGBNLIZ3J7v8hMX4Ffxzn.xml"></include>也必然是符合条件的窗口</p>
+<p>对于子区间数量，我们可以发现，若<include src="/zh-cn/_2D5PUGc7aVZHMmR0bsq$Je.xml"></include>是一个符合条件的窗口，则<include src="/zh-cn/_o1NLJq3@jGCt9OPZzb4UHp.xml"></include>也必然是符合条件的窗口</p>
 
-<p>即对于任何符合条件的区间<include src="/zh-cn/_lyDs43J0MK@YwSBXqoiWHE.xml"></include>，以<include src="/zh-cn/_VUYkSgD6AeHawfZcQiK0LG.xml"></include>结尾的子集个数永远是<include src="/zh-cn/_j$bmnUZkA5lCRsiGo8hJdu.xml"></include>，因此我们要在每次更新<include src="/zh-cn/_VUYkSgD6AeHawfZcQiK0LG.xml"></include>之前为答案加上<include src="/zh-cn/_j$bmnUZkA5lCRsiGo8hJdu.xml"></include>，代码如下</p>
+<p>即对于任何符合条件的区间<include src="/zh-cn/_2D5PUGc7aVZHMmR0bsq$Je.xml"></include>，以<include src="/zh-cn/_qCdRY0E81oMSJ3P59$NAXI.xml"></include>结尾的子集个数永远是<include src="/zh-cn/_S7tX8paHREAzq5erTKLgUx.xml"></include>，因此我们要在每次更新<include src="/zh-cn/_qCdRY0E81oMSJ3P59$NAXI.xml"></include>之前为答案加上<include src="/zh-cn/_S7tX8paHREAzq5erTKLgUx.xml"></include>，代码如下</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>
@@ -990,7 +990,7 @@
 </code></pre></div></div>
 <h2 id="3-无重复字符的最长子串"><a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/">3. 无重复字符的最长子串</a></h2>
 
-<p>与前面的连续子序列不同的是，这道题要求的是连续子串的长度，因此我们需要修改一下判定条件，若窗口区间内出现重复字符，则更新<include src="/zh-cn/_eP1KMSmJ$Y5ighEpDxXCVI.xml"></include>，代码如下</p>
+<p>与前面的连续子序列不同的是，这道题要求的是连续子串的长度，因此我们需要修改一下判定条件，若窗口区间内出现重复字符，则更新<include src="/zh-cn/_5Xc2Zt$l8h6peEQsFmuAbS.xml"></include>，代码如下</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>
@@ -1013,7 +1013,7 @@
 
 <h2 id="438-找到字符串中所有字母异位词"><a href="https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/">438. 找到字符串中所有字母异位词</a></h2>
 
-<p>这道题解法与上一题大同小异，是把字符的判据改为了字符串的比较。同时，该题的窗口长度始终保持不变，为<include src="/zh-cn/_TpRbr9ZNiC1@KIvxPqXY40.xml"></include>的长度</p>
+<p>这道题解法与上一题大同小异，是把字符的判据改为了字符串的比较。同时，该题的窗口长度始终保持不变，为<include src="/zh-cn/_kn7vhP2Z0TyuJLzfMFsA5q.xml"></include>的长度</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>
@@ -1039,17 +1039,17 @@
 
 <!--    <div class="post__share">-->
 <!--      <div class="share__list">-->
-<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/zh-cn/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
+<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.tomori.io//zh-cn/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
 
-<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3&url=http://localhost:4000/zh-cn/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
+<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3&url=https://blog.tomori.io//zh-cn/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
 
-<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/&amp;media=http://localhost:4000/zh-cnhttps://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_1920x1080.jpg&amp;description=%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
+<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=https://blog.tomori.io//2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/&amp;media=https://blog.tomori.io//zh-cnhttps://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_1920x1080.jpg&amp;description=%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
 
-<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=http://localhost:4000/zh-cn/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
+<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=https://blog.tomori.io//zh-cn/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
 
-<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=http://localhost:4000/zh-cn/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=https://blog.tomori.io//zh-cn/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
 
-<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=http://localhost:4000/zh-cn/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=https://blog.tomori.io//zh-cn/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
 <!--      </div>-->
 <!--    </div>-->
 
@@ -2348,7 +2348,7 @@
     <div class="row">
       <div class="col col-12">
       <div class="footer__inner">
-        <div class="copyright">2024 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+        <div class="copyright">2025 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
         
 <div class="social">
   <ul class="social__list list-reset">

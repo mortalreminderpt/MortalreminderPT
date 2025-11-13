@@ -9,7 +9,7 @@
   <title>Variational Autoencoder</title>
   <meta name='description' content=''>
 
-  <link rel="canonical" href="http://localhost:4000/zh-cn/algorithm/2024/12/07/Variational-Autoencoder/">
+  <link rel="canonical" href="https://blog.tomori.io//zh-cn/algorithm/2024/12/07/Variational-Autoencoder/">
   <link rel="alternate" type="application/rss+xml" title="PT&#39;s Blog" href="/feed.xml">
 
   <!-- Icons -->
@@ -1019,7 +1019,7 @@
 
 <p>在VAE中，<strong>潜在空间</strong>是数据的低维表示空间。编码器将输入数据映射到潜在空间，输出均值（μ）和标准差（σ），然后通过<strong>重参数化技巧</strong>（Reparameterization Trick）生成潜在变量<strong>z</strong>：</p>
 
-<include src="/zh-cn/_yZP7fK6RdW34Ssg5eqmOtb.xml"></include>
+<include src="/zh-cn/_52dtJck7UxXAEml89z3@gY.xml"></include>
 
 <p>这种方法允许梯度通过随机变量传递，从而实现端到端的训练。</p>
 
@@ -1037,13 +1037,13 @@
 
 <p>VAE的目标是最大化<strong>证据下界（Evidence Lower Bound, ELBO）</strong>，即最小化以下损失函数：</p>
 
-<include src="/zh-cn/_6UdWrBCwOj5KITPslLHYhS.xml"></include>
+<include src="/zh-cn/_qTfAkEhX2WY$NiMCjIl8Ka.xml"></include>
 
 <p>其中：</p>
 
 <ul>
-  <li><include src="/zh-cn/_C1HozV0QW6yGrZmJY8Uj$9.xml"></include> 是<strong>重建损失</strong>，衡量生成的数据与原始数据的相似度。</li>
-  <li><include src="/zh-cn/_B6MPaiJDqHZdw01OmFzSuT.xml"></include> 是<strong>KL散度</strong>，衡量编码器输出的分布 <include src="/zh-cn/_p9Ildy2ZEHKVzj3Miw6B8U.xml"></include> 与先验分布 <include src="/zh-cn/_ghPjs7OZESWX@BQkMdYbGi.xml"></include> （通常是标准正态分布<include src="/zh-cn/_2kainvP8sqAyZOjSE95rXW.xml"></include>）的差异。</li>
+  <li><include src="/zh-cn/_6j1LiXGp42VyK9ExorfZMm.xml"></include> 是<strong>重建损失</strong>，衡量生成的数据与原始数据的相似度。</li>
+  <li><include src="/zh-cn/_bx2j4P1pfmZQtYMESzB$@r.xml"></include> 是<strong>KL散度</strong>，衡量编码器输出的分布 <include src="/zh-cn/_AV2K6ZCReiljDIP5bsEXrk.xml"></include> 与先验分布 <include src="/zh-cn/_fIJ0w@hTbcdiOyuWrLUkpR.xml"></include> （通常是标准正态分布<include src="/zh-cn/_ejNLnTmk41bDJWsO8V3qZd.xml"></include>）的差异。</li>
 </ul>
 
 <p>在代码中，重建损失采用均方误差（MSELoss），而KL散度的计算如下：</p>
@@ -1061,21 +1061,21 @@
 
 <p>对于高斯分布，KL散度的公式为：</p>
 
-<include src="/zh-cn/_hOZd$qj4tu0Fz1BXwbLKa5.xml"></include>
+<include src="/zh-cn/_0dmEbe@zrhI4H6Y7fcSOqi.xml"></include>
 
-<p>代码中每个样本的KL散度通过对<include src="/zh-cn/_Nrvil$QzUK6Eb4nBgIcHyF.xml"></include>和<include src="/zh-cn/_7UFdqhn8QTrSkK5ByoZxw9.xml"></include>进行逐元素计算，并取平均得到。</p>
+<p>代码中每个样本的KL散度通过对<include src="/zh-cn/_Mon8u5TiXk31VUJw0spbYB.xml"></include>和<include src="/zh-cn/_cHdqrQDOIpC@eSsj9h3RWg.xml"></include>进行逐元素计算，并取平均得到。</p>
 
 <h2 id="vae的公式解析">VAE的公式解析</h2>
 
 <p>综合上述内容，VAE的损失函数可以表示为：</p>
 
-<include src="/zh-cn/_2SXHcD9TheFCot3kLpz4AO.xml"></include>
+<include src="/zh-cn/_6I@zUjZHveXcTLPOr1YwfA.xml"></include>
 
 <p>其中：</p>
 
 <ul>
-  <li>第一项是重建误差，确保生成的<include src="/zh-cn/_ji$pvoZBEkHuq0s28KX1AS.xml"></include>与原始<include src="/zh-cn/_@nuiVbE5pefrcmLshXQ2HZ.xml"></include>尽可能接近。</li>
-  <li>第二项是KL散度，确保潜在变量<include src="/zh-cn/_FcyX7Hku0qREjenKOvPCZ3.xml"></include>的分布接近标准正态分布。</li>
+  <li>第一项是重建误差，确保生成的<include src="/zh-cn/_ouialZMKdEp@DAwcNtRkOV.xml"></include>与原始<include src="/zh-cn/_fa4iJKXDO6n0LrFv1uYEqe.xml"></include>尽可能接近。</li>
+  <li>第二项是KL散度，确保潜在变量<include src="/zh-cn/_WbIO2CRe6QTnvX9wx4BhVd.xml"></include>的分布接近标准正态分布。</li>
 </ul>
 
 <h2 id="代码解析">代码解析</h2>
@@ -1086,18 +1086,18 @@
   <li><strong>编码器（Encoder）</strong>：
     <ul>
       <li>输入是展平后的28x28图像（784维）。</li>
-      <li>经过两层隐藏层后，输出20维向量，其中前10维为<include src="/zh-cn/_Nrvil$QzUK6Eb4nBgIcHyF.xml"></include>，后10维为<include src="/zh-cn/_7UFdqhn8QTrSkK5ByoZxw9.xml"></include>。</li>
+      <li>经过两层隐藏层后，输出20维向量，其中前10维为<include src="/zh-cn/_Mon8u5TiXk31VUJw0spbYB.xml"></include>，后10维为<include src="/zh-cn/_cHdqrQDOIpC@eSsj9h3RWg.xml"></include>。</li>
     </ul>
   </li>
   <li><strong>重参数化（Reparameterization）</strong>：
     <ul>
-      <li>将<include src="/zh-cn/_Nrvil$QzUK6Eb4nBgIcHyF.xml"></include>和<include src="/zh-cn/_7UFdqhn8QTrSkK5ByoZxw9.xml"></include>分离后，通过 <include src="/zh-cn/_LA1gb25TY8va@96lWIoHXO.xml"></include> 生成潜在变量<include src="/zh-cn/_FcyX7Hku0qREjenKOvPCZ3.xml"></include>，其中<include src="/zh-cn/_Zx362iMnyvUbHgrjVoslSC.xml"></include>来自标准正态分布。</li>
+      <li>将<include src="/zh-cn/_Mon8u5TiXk31VUJw0spbYB.xml"></include>和<include src="/zh-cn/_cHdqrQDOIpC@eSsj9h3RWg.xml"></include>分离后，通过 <include src="/zh-cn/_28zhfQLSxdnJqPY0Wts9g6.xml"></include> 生成潜在变量<include src="/zh-cn/_WbIO2CRe6QTnvX9wx4BhVd.xml"></include>，其中<include src="/zh-cn/_y5YMqPH3dTsD9kGRArvXFV.xml"></include>来自标准正态分布。</li>
     </ul>
   </li>
   <li><strong>解码器（Decoder）</strong>：
     <ul>
-      <li>输入是10维的潜在变量<include src="/zh-cn/_FcyX7Hku0qREjenKOvPCZ3.xml"></include>。</li>
-      <li>经过两层隐藏层后，输出784维向量，经过Sigmoid激活函数，得到重构的图像<include src="/zh-cn/_ji$pvoZBEkHuq0s28KX1AS.xml"></include>。</li>
+      <li>输入是10维的潜在变量<include src="/zh-cn/_WbIO2CRe6QTnvX9wx4BhVd.xml"></include>。</li>
+      <li>经过两层隐藏层后，输出784维向量，经过Sigmoid激活函数，得到重构的图像<include src="/zh-cn/_ouialZMKdEp@DAwcNtRkOV.xml"></include>。</li>
     </ul>
   </li>
   <li><strong>损失计算</strong>：
@@ -1116,17 +1116,17 @@
 
 <!--    <div class="post__share">-->
 <!--      <div class="share__list">-->
-<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/zh-cn/algorithm/2024/12/07/Variational-Autoencoder/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
+<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.tomori.io//zh-cn/algorithm/2024/12/07/Variational-Autoencoder/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
 
-<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=Variational%20Autoencoder&url=http://localhost:4000/zh-cn/algorithm/2024/12/07/Variational-Autoencoder/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
+<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=Variational%20Autoencoder&url=https://blog.tomori.io//zh-cn/algorithm/2024/12/07/Variational-Autoencoder/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
 
-<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/algorithm/2024/12/07/Variational-Autoencoder/&amp;media=http://localhost:4000/zh-cnhttps://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg&amp;description=Variational%20Autoencoder" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
+<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=https://blog.tomori.io//algorithm/2024/12/07/Variational-Autoencoder/&amp;media=https://blog.tomori.io//zh-cnhttps://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg&amp;description=Variational%20Autoencoder" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
 
-<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=http://localhost:4000/zh-cn/algorithm/2024/12/07/Variational-Autoencoder/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
+<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=https://blog.tomori.io//zh-cn/algorithm/2024/12/07/Variational-Autoencoder/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
 
-<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=http://localhost:4000/zh-cn/algorithm/2024/12/07/Variational-Autoencoder/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=https://blog.tomori.io//zh-cn/algorithm/2024/12/07/Variational-Autoencoder/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
 
-<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=http://localhost:4000/zh-cn/algorithm/2024/12/07/Variational-Autoencoder/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=https://blog.tomori.io//zh-cn/algorithm/2024/12/07/Variational-Autoencoder/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
 <!--      </div>-->
 <!--    </div>-->
 
@@ -1652,7 +1652,7 @@
     <div class="row">
       <div class="col col-12">
       <div class="footer__inner">
-        <div class="copyright">2024 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+        <div class="copyright">2025 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
         
 <div class="social">
   <ul class="social__list list-reset">

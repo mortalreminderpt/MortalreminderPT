@@ -9,7 +9,7 @@
   <title>Binary Tree Basics (Part 3) - Segment Tree</title>
   <meta name='description' content='A binary tree is an ordered tree where each node has a maximum of two children. It is the simplest and most essential type of tree.'>
 
-  <link rel="canonical" href="http://localhost:4000/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/">
+  <link rel="canonical" href="https://blog.tomori.io//2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/">
   <link rel="alternate" type="application/rss+xml" title="PT&#39;s Blog" href="/feed.xml">
 
   <!-- Icons -->
@@ -736,13 +736,13 @@
 <h2 id="concept">Concept</h2>
 <p>A segment tree is a data structure commonly used for <strong>maintaining interval information</strong>.</p>
 
-<p>Segment trees can perform operations like single-point modification, interval modification, and interval queries (such as interval sum, maximum value, minimum value) in <include src="/_cbpPXjTBl$8dHDfOWGh9F3.xml"></include> time complexity.</p>
+<p>Segment trees can perform operations like single-point modification, interval modification, and interval queries (such as interval sum, maximum value, minimum value) in <include src="/_7XpV42Ry96WegHnJq0utwF.xml"></include> time complexity.</p>
 
 <h3 id="structure">Structure</h3>
 
 <p>A segment tree divides each interval of non-unit length into left and right sub-intervals recursively. It forms a tree structure where the entire segment is divided. The information of the interval is obtained by merging the information of the left and right sub-intervals. This data structure facilitates most interval operations.</p>
 
-<p>Suppose we have an array <include src="/_EQzABDv@eX1K7LtgPHGRoM.xml"></include>. Let the root node of the segment tree be numbered <include src="/_GRO$8aCz64BojE3cp@qIL1.xml"></include>, and we use an array <include src="/_dwKHlCQ5P4XSnETM2Oav7q.xml"></include> to store the segment tree, where <include src="/_16YH30pVteDScsKWmZCx@N.xml"></include> stores the value of the node with index <include src="/_Ifn5XGx3zdrVT6RyiMgvwL.xml"></include> in the segment tree.</p>
+<p>Suppose we have an array <include src="/_41$8QWo@6dYlupSFcHR7sn.xml"></include>. Let the root node of the segment tree be numbered <include src="/_U4LN8Hn9$gpxlAiz@uqFd7.xml"></include>, and we use an array <include src="/_r3NskvFuJ1j98AaDnRlbGY.xml"></include> to store the segment tree, where <include src="/_rc7vVL4F6kCTGSRpyI0tbB.xml"></include> stores the value of the node with index <include src="/_tGN$cpayixkKIEZzVMB0m9.xml"></include> in the segment tree.</p>
 
 <p>The structure of this segment tree is as follows:</p>
 
@@ -758,7 +758,7 @@
 <h2 id="basic-operations">Basic Operations</h2>
 <h3 id="building-the-segment-tree">Building the Segment Tree</h3>
 
-<p>For a node <include src="/_Ifn5XGx3zdrVT6RyiMgvwL.xml"></include>, its child nodes are numbered <include src="/_QlZTPB6djkwb7@z2FKVnLm.xml"></include> and <include src="/_wSpTN8ns0moL$l@fJi4Bjx.xml"></include>. If node <include src="/_Ifn5XGx3zdrVT6RyiMgvwL.xml"></include> stores the interval <include src="/_xHBEMf4gpNQAds1Gwo6lJb.xml"></include>, then node <include src="/_QlZTPB6djkwb7@z2FKVnLm.xml"></include> should store the interval <include src="/_g5NJpGlLHamSsI@Pt8QRkE.xml"></include>, and similarly, node <include src="/_wSpTN8ns0moL$l@fJi4Bjx.xml"></include> should store the interval <include src="/_DSIYdBwLm8V4hKpqHuj9x3.xml"></include>. We can build the tree recursively. Here’s the code:</p>
+<p>For a node <include src="/_tGN$cpayixkKIEZzVMB0m9.xml"></include>, its child nodes are numbered <include src="/_WVEUzI74Ztb6kFcJvLRoSw.xml"></include> and <include src="/_trZ$0ywTmDlEjYIXo2PeiJ.xml"></include>. If node <include src="/_tGN$cpayixkKIEZzVMB0m9.xml"></include> stores the interval <include src="/_WYCae3kpfX147VAD@bmTJ$.xml"></include>, then node <include src="/_WVEUzI74Ztb6kFcJvLRoSw.xml"></include> should store the interval <include src="/_576bRtCImn2qVExW0lekiy.xml"></include>, and similarly, node <include src="/_trZ$0ywTmDlEjYIXo2PeiJ.xml"></include> should store the interval <include src="/_QzcMxeaVRpUNOI8yZEtGbP.xml"></include>. We can build the tree recursively. Here’s the code:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">build</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="kt">int</span> <span class="n">l</span><span class="p">,</span> <span class="kt">int</span> <span class="n">r</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// i represents the current node, l represents the left boundary, r represents the right boundary</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">l</span> <span class="o">==</span> <span class="n">r</span><span class="p">)</span> <span class="p">{</span>
@@ -773,7 +773,7 @@
 </code></pre></div></div>
 
 <h3 id="interval-query">Interval Query</h3>
-<p>If the query interval is <include src="/_O2C$4gaTfVuwrl8QDiSWY9.xml"></include>, we can directly return <include src="/_Zvi2mB$lVHqXWc6KFTng4M.xml"></include>. But if the query is <include src="/_HMFBw1thb9orRdSkUy@8Cc.xml"></include>, we need to merge the answers of <include src="/_7r59KRUqNQFOCiJ2BayHSw.xml"></include> and <include src="/_L6iIRHAnCW@j8QuXxEfhNB.xml"></include>. Here’s the code:</p>
+<p>If the query interval is <include src="/_Q39hfKBGwmz4YZsASxb0kJ.xml"></include>, we can directly return <include src="/_0XWS7p@BGr2DeMmvfAROVZ.xml"></include>. But if the query is <include src="/_hNgzCI9j57Vya1ovfi3WDp.xml"></include>, we need to merge the answers of <include src="/_Xtn2CA14wZvWfLrs57hpOD.xml"></include> and <include src="/_Oq1mVFePjg4MU3Xw@RAaoG.xml"></include>. Here’s the code:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">query</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="kt">int</span> <span class="n">l</span><span class="p">,</span> <span class="kt">int</span> <span class="n">r</span><span class="p">,</span> <span class="kt">int</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// i represents the current node, [l,r] is the query interval, [s,t] represents the interval covered by the current node</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">l</span> <span class="o">&lt;=</span> <span class="n">s</span> <span class="o">&amp;&amp;</span> <span class="n">r</span> <span class="o">&gt;=</span> <span class="n">t</span><span class="p">)</span> <span class="c1">// If [s,t] is a sub-interval of [l,r], directly return</span>
@@ -801,11 +801,11 @@
 </code></pre></div></div>
 
 <h3 id="lazy-propagation">Lazy Propagation</h3>
-<p>When updating the interval <include src="/_HMFBw1thb9orRdSkUy@8Cc.xml"></include> of the array <include src="/_q$8D@wUV5LJrjTzhYtmZ61.xml"></include> by adding <include src="/_qZv9M7VwYAu6BLWKcbORrH.xml"></include>, the updated segment tree structure becomes:</p>
+<p>When updating the interval <include src="/_hNgzCI9j57Vya1ovfi3WDp.xml"></include> of the array <include src="/_RwxGnvMzNKoHyp1UVgLdWP.xml"></include> by adding <include src="/_3i1g06TE2XxhytlBGa$VAo.xml"></include>, the updated segment tree structure becomes:</p>
 
 <p><img src="/images/posts/segmenttree2.png" alt="Segment Tree Lazy Propagation" /></p>
 
-<p>We notice that when recursively updating, the process stops at node <include src="/_Ksh6qa72TZznXYWgV04MUf.xml"></include>, leaving its two child nodes unchanged.</p>
+<p>We notice that when recursively updating, the process stops at node <include src="/_tfEqm@si3H4gCYXNnVj69D.xml"></include>, leaving its two child nodes unchanged.</p>
 
 <p>To handle this, we introduce lazy propagation. We mark the nodes where recursion ends with a flag. During the next query operation, we update the unprocessed child nodes. This flag is called a lazy tag. The effect of updating is as follows:</p>
 
@@ -896,17 +896,17 @@
 
 <!--    <div class="post__share">-->
 <!--      <div class="share__list">-->
-<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
+<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.tomori.io//2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
 
-<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=Binary%20Tree%20Basics%20(Part%203)%20-%20Segment%20Tree&url=http://localhost:4000/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
+<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=Binary%20Tree%20Basics%20(Part%203)%20-%20Segment%20Tree&url=https://blog.tomori.io//2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
 
-<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/&amp;media=http://localhost:4000/images/covers/数据结构-cover1.png&amp;description=Binary%20Tree%20Basics%20(Part%203)%20-%20Segment%20Tree" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
+<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=https://blog.tomori.io//2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/&amp;media=https://blog.tomori.io//images/covers/数据结构-cover1.png&amp;description=Binary%20Tree%20Basics%20(Part%203)%20-%20Segment%20Tree" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
 
-<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=http://localhost:4000/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
+<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=https://blog.tomori.io//2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
 
-<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=http://localhost:4000/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=https://blog.tomori.io//2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
 
-<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=http://localhost:4000/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=https://blog.tomori.io//2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
 <!--      </div>-->
 <!--    </div>-->
 
@@ -1555,7 +1555,7 @@
     <div class="row">
       <div class="col col-12">
       <div class="footer__inner">
-        <div class="copyright">2024 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+        <div class="copyright">2025 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
         
 <div class="social">
   <ul class="social__list list-reset">

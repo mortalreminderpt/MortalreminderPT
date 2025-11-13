@@ -9,7 +9,7 @@
   <title>二叉树基础（一）二叉树的概念</title>
   <meta name='description' content='二叉树（Binary tree）是指树中节点的度不大于2的有序树，它是一种最简单且最重要的树。'>
 
-  <link rel="canonical" href="http://localhost:4000/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/">
+  <link rel="canonical" href="https://blog.tomori.io//fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/">
   <link rel="alternate" type="application/rss+xml" title="PT&#39;s Blog" href="/feed.xml">
 
   <!-- Icons -->
@@ -989,20 +989,20 @@
   <li>森林：由m（m≥0）棵互不相交的树构成一片森林。如果把一棵非空的树的根结点删除，则该树就变成了一片森林，森林中的树由原来根结点的各棵子树构成
     <h3 id="性质">性质</h3>
   </li>
-  <li>一棵二叉树的第i层最多有<include src="/zh-cn/_T6zD$0v1ONwJyaRKCBY2Hp.xml"></include>个节点 <include src="/zh-cn/_17yNOTLpl0nf2K$4t5g9qc.xml"></include></li>
-  <li>深度为k的二叉树最多有<include src="/zh-cn/_f1pdFyi7Rab3TMzovDjwIZ.xml"></include>个节点 <include src="/zh-cn/_Y4Qe3pafiG@FlhcSjzZEnD.xml"></include></li>
-  <li>对于1棵二叉树，度为0的节点为<include src="/zh-cn/_FcuXW6VK9JUZ1Bzmokf2yE.xml"></include>，度为2的节点为<include src="/zh-cn/_uSMNBdQEkUVHoP0K53Y$hF.xml"></include>，则<include src="/zh-cn/_KZae2QktGb$1L4jcrTXWx3.xml"></include></li>
-  <li>满二叉树定理：非空满二叉树的叶子节点数等于分支节点数<include src="/zh-cn/_lU6RmVW92oDFZYrhzuqIeE.xml"></include></li>
-  <li>满二叉树定理推论：在一棵具有<include src="/zh-cn/_lE0Ats5XJCcUOnzmN7xopM.xml"></include>个结点的二叉树中,所有结点的空子树等于<include src="/zh-cn/_0V2BRN1cIyJxKefLFzP3lb.xml"></include></li>
-  <li><include src="/zh-cn/_lE0Ats5XJCcUOnzmN7xopM.xml"></include>个节点的完全二叉树高度为<include src="/zh-cn/_s2DRQWv@lFYekPiaMnmroj.xml"></include>，深度为<include src="/zh-cn/_xNdX3snLvkcHwtfaA9C@Sr.xml"></include></li>
+  <li>一棵二叉树的第i层最多有<include src="/zh-cn/_ofuXiaKVCFs7xgQ1jyNWn@.xml"></include>个节点 <include src="/zh-cn/_jkrntAJGVZI6xB72DaN08C.xml"></include></li>
+  <li>深度为k的二叉树最多有<include src="/zh-cn/_VmlQK6pJC83h29XvRjM4Bo.xml"></include>个节点 <include src="/zh-cn/_e0zQwkS2f@DHTWlom1Yd98.xml"></include></li>
+  <li>对于1棵二叉树，度为0的节点为<include src="/zh-cn/_4gP35xi$TlYUGmRLNVjC20.xml"></include>，度为2的节点为<include src="/zh-cn/_lYtAw2Uk7pfg135$DEHxM@.xml"></include>，则<include src="/zh-cn/_6IYpTasolA7$KkqwBrjLRt.xml"></include></li>
+  <li>满二叉树定理：非空满二叉树的叶子节点数等于分支节点数<include src="/zh-cn/_BHZEX1R5lVwIoAfbec9ryx.xml"></include></li>
+  <li>满二叉树定理推论：在一棵具有<include src="/zh-cn/_UjQRf0BI92C$qSNo1PhTiH.xml"></include>个结点的二叉树中,所有结点的空子树等于<include src="/zh-cn/_ViH6l5kjthqdyCGrTDuFLQ.xml"></include></li>
+  <li><include src="/zh-cn/_UjQRf0BI92C$qSNo1PhTiH.xml"></include>个节点的完全二叉树高度为<include src="/zh-cn/_0iy$cpY@Wadm4jEDG7ATln.xml"></include>，深度为<include src="/zh-cn/_X$BQM0D7EmgJwV2aKOSFGA.xml"></include></li>
 </ul>
 
 <h2 id="二叉树的c实现">二叉树的C++实现</h2>
 
 <h3 id="二叉树的顺序存储">二叉树的顺序存储</h3>
 
-<p>我们可以使用一个数组来存储所有的节点，按数组下标进行存储，根节点存储在下标<include src="/zh-cn/_5jWvOFVYNzlmk9iSDfP@Co.xml"></include>处，
-其左孩子存储于下标<include src="/zh-cn/_bUjpRIiuVZGO4fFzDsHSAh.xml"></include>，右孩子存储于下标<include src="/zh-cn/_9eLnyQ@1UjwDKEhbkAGt5B.xml"></include>….依此类推，对于下标为<include src="/zh-cn/_lzICjfpnM0ymisNEk9FAT6.xml"></include>的节点，左右孩子分别存储于下标为<include src="/zh-cn/_ko@fSzuXCRxcyDtnmN28$5.xml"></include>和<include src="/zh-cn/_bk3tnUcQNPOjfRzW4vFxKl.xml"></include>处。</p>
+<p>我们可以使用一个数组来存储所有的节点，按数组下标进行存储，根节点存储在下标<include src="/zh-cn/_$DuARwa2N0Eh3sbvzPHX8S.xml"></include>处，
+其左孩子存储于下标<include src="/zh-cn/_8hlEMUds5JI@f6VzLD$muW.xml"></include>，右孩子存储于下标<include src="/zh-cn/_26JLl9OcbIDSTXZdfmxzn5.xml"></include>….依此类推，对于下标为<include src="/zh-cn/_YOqX$Rylp2chE8ubFIxmW5.xml"></include>的节点，左右孩子分别存储于下标为<include src="/zh-cn/_RMNmYcWnU4Sa@$3w7tPGxk.xml"></include>和<include src="/zh-cn/_Czfpx5mWPk1qcaBVFjQiRd.xml"></include>处。</p>
 <h4 id="实现代码">实现代码</h4>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="kt">int</span> <span class="n">BinaryTree</span><span class="p">[</span><span class="n">MAX</span><span class="p">];</span>
@@ -1096,17 +1096,17 @@
 
 <!--    <div class="post__share">-->
 <!--      <div class="share__list">-->
-<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/zh-cn/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
+<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.tomori.io//zh-cn/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
 
-<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5&url=http://localhost:4000/zh-cn/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
+<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5&url=https://blog.tomori.io//zh-cn/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
 
-<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/&amp;media=http://localhost:4000/zh-cn/images/covers/数据结构-cover1.png&amp;description=%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
+<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=https://blog.tomori.io//fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/&amp;media=https://blog.tomori.io//zh-cn/images/covers/数据结构-cover1.png&amp;description=%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
 
-<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=http://localhost:4000/zh-cn/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
+<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=https://blog.tomori.io//zh-cn/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
 
-<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=http://localhost:4000/zh-cn/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=https://blog.tomori.io//zh-cn/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
 
-<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=http://localhost:4000/zh-cn/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=https://blog.tomori.io//zh-cn/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
 <!--      </div>-->
 <!--    </div>-->
 
@@ -2398,7 +2398,7 @@
     <div class="row">
       <div class="col col-12">
       <div class="footer__inner">
-        <div class="copyright">2024 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+        <div class="copyright">2025 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
         
 <div class="social">
   <ul class="social__list list-reset">

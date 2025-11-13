@@ -9,7 +9,7 @@
   <title>动态规划（三）股票问题系列</title>
   <meta name='description' content='动态规划最核心的思想，就在于将问题拆分为一个个子问题，保留之前的计算结果，以达到减少计算量的效果。'>
 
-  <link rel="canonical" href="http://localhost:4000/dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/">
+  <link rel="canonical" href="https://blog.tomori.io//dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/">
   <link rel="alternate" type="application/rss+xml" title="PT&#39;s Blog" href="/feed.xml">
 
   <!-- Icons -->
@@ -927,7 +927,7 @@
       <ol id="markdown-toc">
   <li><a href="#121-买卖股票的最佳时机" id="markdown-toc-121-买卖股票的最佳时机">121. 买卖股票的最佳时机</a>    <ol>
       <li><a href="#状态转移方程" id="markdown-toc-状态转移方程">状态转移方程</a>        <ol>
-          <li><a href="#如何表示price_min" id="markdown-toc-如何表示price_min">如何表示<include src="/zh-cn/_WlD5RQ9g7eEG3@PUXVNBIZ.xml"></include></a></li>
+          <li><a href="#如何表示price_min" id="markdown-toc-如何表示price_min">如何表示<include src="/zh-cn/_HP4A$56U7gM9jyaxkTL03S.xml"></include></a></li>
           <li><a href="#边界条件" id="markdown-toc-边界条件">边界条件</a></li>
         </ol>
       </li>
@@ -967,38 +967,38 @@
 
 <h2 id="121-买卖股票的最佳时机"><a href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/">121. 买卖股票的最佳时机</a></h2>
 <h3 id="状态转移方程">状态转移方程</h3>
-<p>我们可以用<include src="/zh-cn/_FqzSL6eQG1YkMspwtvUnWN.xml"></include>来表示，在前<include src="/zh-cn/_lzICjfpnM0ymisNEk9FAT6.xml"></include>日我们可以得到的最大利润，那么我们第<include src="/zh-cn/_lzICjfpnM0ymisNEk9FAT6.xml"></include>日的操作有两种选择：</p>
+<p>我们可以用<include src="/zh-cn/_2VrY7Fe53Uf@gPDvzB84HX.xml"></include>来表示，在前<include src="/zh-cn/_YOqX$Rylp2chE8ubFIxmW5.xml"></include>日我们可以得到的最大利润，那么我们第<include src="/zh-cn/_YOqX$Rylp2chE8ubFIxmW5.xml"></include>日的操作有两种选择：</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.我们在第i日卖出得到的利润可能比之前的利润（dp[i-1]）更高
 2.我们之前的利润要比现在更高，不用进行任何操作
 </code></pre></div></div>
 
-<p>对于情况1，我们得到状态转移方程<include src="/zh-cn/_ElDvTMuJqoS6kmaOjHeQWP.xml"></include>
-而对于情况2，我们有<include src="/zh-cn/_oWXuZC3xKQrVab15geL7Js.xml"></include>
+<p>对于情况1，我们得到状态转移方程<include src="/zh-cn/_M9lW5S1e78nZpw6IGXrjo3.xml"></include>
+而对于情况2，我们有<include src="/zh-cn/_sNoUkMgrqPTjKS24F6nlDp.xml"></include>
 综合两种情况，也就得到此题的状态转移方程：</p>
 
-<p><include src="/zh-cn/_Ge6vo3q41NxJOFlXArIUda.xml"></include></p>
+<p><include src="/zh-cn/_Qvl9yLDI@rMYE75VA8ZBg$.xml"></include></p>
 
-<p>那么剩下的问题就在于如何表示<include src="/zh-cn/_WlD5RQ9g7eEG3@PUXVNBIZ.xml"></include>。</p>
+<p>那么剩下的问题就在于如何表示<include src="/zh-cn/_HP4A$56U7gM9jyaxkTL03S.xml"></include>。</p>
 
-<h4 id="如何表示price_min">如何表示<include src="/zh-cn/_WlD5RQ9g7eEG3@PUXVNBIZ.xml"></include></h4>
-<p>我们发现，<include src="/zh-cn/_WlD5RQ9g7eEG3@PUXVNBIZ.xml"></include>的计算也是一个无后效性的问题，我们同样可以通过动态规划来求解，用<include src="/zh-cn/_XZtbOG76dzlEw9yNeqMLiI.xml"></include>来表示前i日股票的最低价格，则<include src="/zh-cn/_XZtbOG76dzlEw9yNeqMLiI.xml"></include>的状态转移方程可以写成：</p>
+<h4 id="如何表示price_min">如何表示<include src="/zh-cn/_HP4A$56U7gM9jyaxkTL03S.xml"></include></h4>
+<p>我们发现，<include src="/zh-cn/_HP4A$56U7gM9jyaxkTL03S.xml"></include>的计算也是一个无后效性的问题，我们同样可以通过动态规划来求解，用<include src="/zh-cn/_crYKWT0@x7L$QfgbkV8tvF.xml"></include>来表示前i日股票的最低价格，则<include src="/zh-cn/_crYKWT0@x7L$QfgbkV8tvF.xml"></include>的状态转移方程可以写成：</p>
 
-<p><include src="/zh-cn/_XZtbOG76dzlEw9yNeqMLiI.xml"></include> = <include src="/zh-cn/_ShYuzP1avIK$pf60y9WwQL.xml"></include></p>
+<p><include src="/zh-cn/_crYKWT0@x7L$QfgbkV8tvF.xml"></include> = <include src="/zh-cn/_rpfM4Oed5SNKsj3GYB9VWc.xml"></include></p>
 
-<p>可能这时候你就要说了，你这不是脱了裤子放屁吗？那我们不妨换一个思维方式，还是上面的状态转移方程不变，<strong>我们用<include src="/zh-cn/_6W8x@ZjcYdnfyupJmgvBK3.xml"></include>表示前<include src="/zh-cn/_lzICjfpnM0ymisNEk9FAT6.xml"></include>天手上有<include src="/zh-cn/_5ydhfHXWT2qcI6kxnQ@0Oo.xml"></include>个股票时我们的最大利润。</strong> 这时候你不妨停下来思考一会，该如何写出状态转移方程呢？</p>
+<p>可能这时候你就要说了，你这不是脱了裤子放屁吗？那我们不妨换一个思维方式，还是上面的状态转移方程不变，<strong>我们用<include src="/zh-cn/_PBSg6VzLyK2su0M83EGd51.xml"></include>表示前<include src="/zh-cn/_YOqX$Rylp2chE8ubFIxmW5.xml"></include>天手上有<include src="/zh-cn/_@LQxJeBVWlpZYns0hNAjyi.xml"></include>个股票时我们的最大利润。</strong> 这时候你不妨停下来思考一会，该如何写出状态转移方程呢？</p>
 
-<p>联立上面两个转移方程，得到<include src="/zh-cn/_6W8x@ZjcYdnfyupJmgvBK3.xml"></include>的状态转移方程：</p>
+<p>联立上面两个转移方程，得到<include src="/zh-cn/_PBSg6VzLyK2su0M83EGd51.xml"></include>的状态转移方程：</p>
 
-<p><include src="/zh-cn/_pIZhdRykuGOTi7KAflbSjg.xml"></include>
-<include src="/zh-cn/_4i2RtzYUFPVHbI8aNGgD5f.xml"></include></p>
+<p><include src="/zh-cn/_1CJ7azGfj3dQ654EsZ$p@2.xml"></include>
+<include src="/zh-cn/_eZ8Qx1N4HhlbBJq2PsEO6r.xml"></include></p>
 
-<p>没错，此时的<include src="/zh-cn/_zZvKoFjV7rCuL6AlkST@iW.xml"></include>就是之前我们的开销，用来辅助我们计算第<include src="/zh-cn/_lzICjfpnM0ymisNEk9FAT6.xml"></include>天的最大利润，也就是<include src="/zh-cn/_RosXPhabFjEue0QNJfGtMi.xml"></include></p>
+<p>没错，此时的<include src="/zh-cn/_Q865rdvmHfpnC7Nago1Tci.xml"></include>就是之前我们的开销，用来辅助我们计算第<include src="/zh-cn/_YOqX$Rylp2chE8ubFIxmW5.xml"></include>天的最大利润，也就是<include src="/zh-cn/_vCWJL76w91cPVEurQ@gSHj.xml"></include></p>
 
 <h4 id="边界条件">边界条件</h4>
-<p><include src="/zh-cn/_yC01rp9XxbYEuP5knaKtzW.xml"></include>表示在第0天我们手上有0支股票时的最大利润，因此<include src="/zh-cn/_PEi$dRnCyzQsW13VTY5eSh.xml"></include></p>
+<p><include src="/zh-cn/_3@oKgACmxRyuXzG9jqet5W.xml"></include>表示在第0天我们手上有0支股票时的最大利润，因此<include src="/zh-cn/_xzSw5B91ujtQEqIGROyeFH.xml"></include></p>
 
-<p><include src="/zh-cn/_aRXl9c21fCxiYeIV7BOwvk.xml"></include>表示在第0天我们手上有1支股票时的最大利润，因此<include src="/zh-cn/_3BHbmntz$4uIRZi02oPQ8d.xml"></include></p>
+<p><include src="/zh-cn/_9l3qgcaJ5yM4uYiN86$jpA.xml"></include>表示在第0天我们手上有1支股票时的最大利润，因此<include src="/zh-cn/_JCByTt1qweDW8g@FVbGxYl.xml"></include></p>
 
 <h3 id="代码">代码</h3>
 
@@ -1018,20 +1018,20 @@
 <h3 id="状态转移方程-1">状态转移方程</h3>
 <p>122.题与121.题的不同点在于，122.是可以无限进行购买操作的，相应的，我们的状态转移方程也有所改变。</p>
 
-<p>根据我们第一题的状态转移方程，在第一题里，一但我们前面卖出了股票，下次再想购买股票时，总利润便会变成<include src="/zh-cn/_l976wqH1JkMAt3aXNKObLd.xml"></include>，但在这道题中，由于我们不再受购买次数的限制，因此我们的利润就可以一直累计下去，如何理解这种累计呢？</p>
+<p>根据我们第一题的状态转移方程，在第一题里，一但我们前面卖出了股票，下次再想购买股票时，总利润便会变成<include src="/zh-cn/_EwCv6ecSWsK5ior4I3xtVd.xml"></include>，但在这道题中，由于我们不再受购买次数的限制，因此我们的利润就可以一直累计下去，如何理解这种累计呢？</p>
 
-<p>在前<include src="/zh-cn/_Jn9UKg1MfBRvmT5@heFxPw.xml"></include>天，我们的最大利润达到了<include src="/zh-cn/_VM$gEXtxBo@C3H8S5cfry1.xml"></include>，而在第<include src="/zh-cn/_lzICjfpnM0ymisNEk9FAT6.xml"></include>天我们要购入股票，此时的利润就会变为<include src="/zh-cn/_6W4jkhn1e3v0gHP85GJTFK.xml"></include></p>
+<p>在前<include src="/zh-cn/_CSRoqAaMi8pY9c4E0z2tQB.xml"></include>天，我们的最大利润达到了<include src="/zh-cn/_@G7hyrufHamF9$JitNDROk.xml"></include>，而在第<include src="/zh-cn/_YOqX$Rylp2chE8ubFIxmW5.xml"></include>天我们要购入股票，此时的利润就会变为<include src="/zh-cn/_@qd4MYZgBNmTER6QUXFbIJ.xml"></include></p>
 
-<p>即<include src="/zh-cn/_zZvKoFjV7rCuL6AlkST@iW.xml"></include>的状态转移方程变为：</p>
+<p>即<include src="/zh-cn/_Q865rdvmHfpnC7Nago1Tci.xml"></include>的状态转移方程变为：</p>
 
-<p><include src="/zh-cn/_D6K9mUxrdMnaVIZscTNQLp.xml"></include></p>
+<p><include src="/zh-cn/_esEXzu1yOrtLFG5g0pBcHw.xml"></include></p>
 
-<p>读者应该也注意到，在我们把状态转移方程分成两部分后，我们对转移方程的解读方式也转变了，这里我再次阐述一遍，<include src="/zh-cn/_RosXPhabFjEue0QNJfGtMi.xml"></include>表示手上没有股票时的最大利润，<include src="/zh-cn/_zZvKoFjV7rCuL6AlkST@iW.xml"></include>表示手上有一枚股票时的最大利润。</p>
+<p>读者应该也注意到，在我们把状态转移方程分成两部分后，我们对转移方程的解读方式也转变了，这里我再次阐述一遍，<include src="/zh-cn/_vCWJL76w91cPVEurQ@gSHj.xml"></include>表示手上没有股票时的最大利润，<include src="/zh-cn/_Q865rdvmHfpnC7Nago1Tci.xml"></include>表示手上有一枚股票时的最大利润。</p>
 
 <p>综上，状态转移方程为：</p>
 
-<p><include src="/zh-cn/_pIZhdRykuGOTi7KAflbSjg.xml"></include>
-<include src="/zh-cn/_D6K9mUxrdMnaVIZscTNQLp.xml"></include></p>
+<p><include src="/zh-cn/_1CJ7azGfj3dQ654EsZ$p@2.xml"></include>
+<include src="/zh-cn/_esEXzu1yOrtLFG5g0pBcHw.xml"></include></p>
 
 <p>边界条件与之前相同。</p>
 
@@ -1050,14 +1050,14 @@
 
 <h2 id="714-买卖股票的最佳时机含手续费"><a href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/">714. 买卖股票的最佳时机含手续费</a></h2>
 <h3 id="状态转移方程-2">状态转移方程</h3>
-<p>如果你认真阅读了题714.并理解了题122.那这道题你其实可以直接过的，因为这道题和题122.的不同之处就在于，它在售卖时多了手续费这个固定消耗，因此在决定卖出股票的第<include src="/zh-cn/_lzICjfpnM0ymisNEk9FAT6.xml"></include>天里，如果收益不足以抵消掉手续费，那我们会选择之前的利润作为最优解，即：</p>
+<p>如果你认真阅读了题714.并理解了题122.那这道题你其实可以直接过的，因为这道题和题122.的不同之处就在于，它在售卖时多了手续费这个固定消耗，因此在决定卖出股票的第<include src="/zh-cn/_YOqX$Rylp2chE8ubFIxmW5.xml"></include>天里，如果收益不足以抵消掉手续费，那我们会选择之前的利润作为最优解，即：</p>
 
-<p><include src="/zh-cn/_Sq6$139aMcEg5hdzJLHxQ2.xml"></include></p>
+<p><include src="/zh-cn/_bu0UYGN4MZgc5n@HJwmWrv.xml"></include></p>
 
 <p>整体的转移方程表示为：</p>
 
-<p><include src="/zh-cn/_Sq6$139aMcEg5hdzJLHxQ2.xml"></include>
-<include src="/zh-cn/_D6K9mUxrdMnaVIZscTNQLp.xml"></include></p>
+<p><include src="/zh-cn/_bu0UYGN4MZgc5n@HJwmWrv.xml"></include>
+<include src="/zh-cn/_esEXzu1yOrtLFG5g0pBcHw.xml"></include></p>
 
 <p>边界条件仍与之前相同</p>
 
@@ -1076,19 +1076,19 @@
 
 <h2 id="309-最佳买卖股票时机含冷冻期"><a href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/">309. 最佳买卖股票时机含冷冻期</a></h2>
 <h3 id="状态转移方程-3">状态转移方程</h3>
-<p>这道题的变化在于，之前我们只有<include src="/zh-cn/_F47jMVY3PIBwbl8aZru5UA.xml"></include>卖出、<include src="/zh-cn/_5$RxZly703BQSEIGNHK@9d.xml"></include>买入两种状态，但这道题引入了一个新的新的状态<include src="/zh-cn/_5N$F1HWVnydEct0Mj9Ipah.xml"></include>冷冻期，而这个冷冻期状态是在卖出操作后出现，如果我们用<include src="/zh-cn/_@NpoVtD6eLcwEXzG$u8OvQ.xml"></include>来表示当我们在第<include src="/zh-cn/_lzICjfpnM0ymisNEk9FAT6.xml"></include>天的冷冻期收益，则<include src="/zh-cn/_@NpoVtD6eLcwEXzG$u8OvQ.xml"></include>可以用<include src="/zh-cn/_CrdYgxqcV8lhHRn9sINS3w.xml"></include>表示为：</p>
+<p>这道题的变化在于，之前我们只有<include src="/zh-cn/_bNP$MU1eLk@z53XGK6Aoai.xml"></include>卖出、<include src="/zh-cn/_yaJSlDXmQAfYzEokgLpbZC.xml"></include>买入两种状态，但这道题引入了一个新的新的状态<include src="/zh-cn/_5Me2PWmXHnqr$L@0CFuJAc.xml"></include>冷冻期，而这个冷冻期状态是在卖出操作后出现，如果我们用<include src="/zh-cn/_y8X2zmS9ZY5ol01AbFMPRK.xml"></include>来表示当我们在第<include src="/zh-cn/_YOqX$Rylp2chE8ubFIxmW5.xml"></include>天的冷冻期收益，则<include src="/zh-cn/_y8X2zmS9ZY5ol01AbFMPRK.xml"></include>可以用<include src="/zh-cn/_fLgBRGbOlw29A5QK@yaY8j.xml"></include>表示为：</p>
 
-<p><include src="/zh-cn/_KT9G5hxYajyV3CeHtF2ZXd.xml"></include></p>
+<p><include src="/zh-cn/_v2rTe6juR5WmpXoQGIyk$c.xml"></include></p>
 
 <p>买入状态的转移方程也有所变化，因为此题中买入状态必须由冷冻期状态进入，也就是：</p>
 
-<p><include src="/zh-cn/_KQab3@7Etm01wC5UgpXRYO.xml"></include></p>
+<p><include src="/zh-cn/_Vl8Ajb2gOTEoULvR$@Wzya.xml"></include></p>
 
 <p>最后，综合三式就可以得到我们新的状态转移方程：</p>
 
-<p><include src="/zh-cn/_EGiSLVH5JRFYB2ZKlj7n9O.xml"></include>
-<include src="/zh-cn/_KQab3@7Etm01wC5UgpXRYO.xml"></include>
-<include src="/zh-cn/_ti@FpDa$4x0LVAWNHQj5es.xml"></include></p>
+<p><include src="/zh-cn/_@zplUXcB38sKyeHJ6GvLWi.xml"></include>
+<include src="/zh-cn/_Vl8Ajb2gOTEoULvR$@Wzya.xml"></include>
+<include src="/zh-cn/_yOsCK0ESw5HJZp8I$3jPNY.xml"></include></p>
 
 <p>边界条件仍然不变</p>
 
@@ -1110,9 +1110,9 @@
 <h3 id="思路">思路</h3>
 <p>如果没有前面的铺垫直接来看这道题，难度瞬间就高起来了。但现在带着前面的经验再来对比这道题，我们会发现这道题和题121. 题122.有着很大的关联。</p>
 
-<p>假设在第<include src="/zh-cn/_lzICjfpnM0ymisNEk9FAT6.xml"></include>天卖出了股票，当我们是第一次或第二次操作时，我们的利润是可以积累的。但如果是在第三次操作，那么我们就要重新累计利润了。</p>
+<p>假设在第<include src="/zh-cn/_YOqX$Rylp2chE8ubFIxmW5.xml"></include>天卖出了股票，当我们是第一次或第二次操作时，我们的利润是可以积累的。但如果是在第三次操作，那么我们就要重新累计利润了。</p>
 
-<p>我们不妨将<include src="/zh-cn/_CrdYgxqcV8lhHRn9sINS3w.xml"></include>升到三维数组，用第三维来区分第一次操作和第二次操作，即得到代码如下：</p>
+<p>我们不妨将<include src="/zh-cn/_fLgBRGbOlw29A5QK@yaY8j.xml"></include>升到三维数组，用第三维来区分第一次操作和第二次操作，即得到代码如下：</p>
 <h3 id="代码-4">代码</h3>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">maxProfit</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">prices</span><span class="p">)</span> <span class="p">{</span>
@@ -1132,7 +1132,7 @@
 
 <h2 id="188-买卖股票的最佳时机-iv"><a href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/">188. 买卖股票的最佳时机 IV</a></h2>
 
-<p>当问题扩充到<include src="/zh-cn/_EhzeX1vb58PjtBcTVWQNH0.xml"></include>时，我们解决题123.的思路仍然有效，我们可以用初始化边界为<include src="/zh-cn/_5jWvOFVYNzlmk9iSDfP@Co.xml"></include>，再用一个<include src="/zh-cn/_4YSDIb1RN8Hd5yPFsajx6C.xml"></include>循环写出结果。</p>
+<p>当问题扩充到<include src="/zh-cn/_3@wTcs9lhmiuL2zMK7kFoZ.xml"></include>时，我们解决题123.的思路仍然有效，我们可以用初始化边界为<include src="/zh-cn/_$DuARwa2N0Eh3sbvzPHX8S.xml"></include>，再用一个<include src="/zh-cn/_$1FiVoaUR4rGl5HLWpdONJ.xml"></include>循环写出结果。</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kt">int</span> <span class="nf">maxProfit</span><span class="p">(</span><span class="kt">int</span> <span class="n">k</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">prices</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span><span class="p">(</span><span class="n">prices</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
@@ -1152,18 +1152,18 @@
 <p>股票问题的三个限定条件是</p>
 
 <ul>
-  <li>当前天数<include src="/zh-cn/_lzICjfpnM0ymisNEk9FAT6.xml"></include></li>
-  <li>手持股票<include src="/zh-cn/_5ydhfHXWT2qcI6kxnQ@0Oo.xml"></include></li>
-  <li>允许的最大操作次数<include src="/zh-cn/_EhzeX1vb58PjtBcTVWQNH0.xml"></include></li>
+  <li>当前天数<include src="/zh-cn/_YOqX$Rylp2chE8ubFIxmW5.xml"></include></li>
+  <li>手持股票<include src="/zh-cn/_@LQxJeBVWlpZYns0hNAjyi.xml"></include></li>
+  <li>允许的最大操作次数<include src="/zh-cn/_3@wTcs9lhmiuL2zMK7kFoZ.xml"></include></li>
 </ul>
 
-<p>我们设在第<include src="/zh-cn/_lzICjfpnM0ymisNEk9FAT6.xml"></include>天，手持股票为<include src="/zh-cn/_5ydhfHXWT2qcI6kxnQ@0Oo.xml"></include>，操作次数为<include src="/zh-cn/_EhzeX1vb58PjtBcTVWQNH0.xml"></include>时我们的利润为<include src="/zh-cn/_Mr5fpsRQcXKnuIxA9DgUVE.xml"></include>，视每次购买股票为进行一次操作，则我们的状态转移方程为：</p>
+<p>我们设在第<include src="/zh-cn/_YOqX$Rylp2chE8ubFIxmW5.xml"></include>天，手持股票为<include src="/zh-cn/_@LQxJeBVWlpZYns0hNAjyi.xml"></include>，操作次数为<include src="/zh-cn/_3@wTcs9lhmiuL2zMK7kFoZ.xml"></include>时我们的利润为<include src="/zh-cn/_s16U5KhOzTqyjPexog4SVY.xml"></include>，视每次购买股票为进行一次操作，则我们的状态转移方程为：</p>
 
-<p><include src="/zh-cn/_Kk1flr3ncUBWyFG2HpzamO.xml"></include>
-<include src="/zh-cn/_GfrDn5vtNVyU6OXFBKqEd0.xml"></include></p>
+<p><include src="/zh-cn/_RkSP0KZheltjQL6bJIrnpX.xml"></include>
+<include src="/zh-cn/_0WqMDV1JfuH4yw$7SrzksB.xml"></include></p>
 
 <h4 id="边界条件-1">边界条件</h4>
-<p><include src="/zh-cn/_zfPrKyNhxdYVEGSw4Q9k5i.xml"></include>
+<p><include src="/zh-cn/_l8wrU46vq@G2BCcJKju1hO.xml"></include>
 其余值都为0</p>
 
 <h2 id="结束语">结束语</h2>
@@ -1173,17 +1173,17 @@
 
 <!--    <div class="post__share">-->
 <!--      <div class="share__list">-->
-<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/zh-cn/dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
+<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.tomori.io//zh-cn/dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
 
-<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%88%E4%B8%89%EF%BC%89%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97&url=http://localhost:4000/zh-cn/dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
+<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%88%E4%B8%89%EF%BC%89%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97&url=https://blog.tomori.io//zh-cn/dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
 
-<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/&amp;media=http://localhost:4000/zh-cn/images/covers/village.jpg&amp;description=%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%88%E4%B8%89%EF%BC%89%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
+<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=https://blog.tomori.io//dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/&amp;media=https://blog.tomori.io//zh-cn/images/covers/village.jpg&amp;description=%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%88%E4%B8%89%EF%BC%89%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
 
-<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=http://localhost:4000/zh-cn/dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
+<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=https://blog.tomori.io//zh-cn/dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
 
-<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=http://localhost:4000/zh-cn/dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=https://blog.tomori.io//zh-cn/dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
 
-<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=http://localhost:4000/zh-cn/dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=https://blog.tomori.io//zh-cn/dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
 <!--      </div>-->
 <!--    </div>-->
 
@@ -2475,7 +2475,7 @@
     <div class="row">
       <div class="col col-12">
       <div class="footer__inner">
-        <div class="copyright">2024 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+        <div class="copyright">2025 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
         
 <div class="social">
   <ul class="social__list list-reset">

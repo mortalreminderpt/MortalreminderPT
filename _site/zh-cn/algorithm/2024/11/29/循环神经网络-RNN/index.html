@@ -9,7 +9,7 @@
   <title>循环神经网络（RNN）</title>
   <meta name='description' content=''>
 
-  <link rel="canonical" href="http://localhost:4000/zh-cn/algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/">
+  <link rel="canonical" href="https://blog.tomori.io//zh-cn/algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/">
   <link rel="alternate" type="application/rss+xml" title="PT&#39;s Blog" href="/feed.xml">
 
   <!-- Icons -->
@@ -961,31 +961,31 @@
 
 <h3 id="rnn的结构">RNN的结构</h3>
 
-<p>RNN的核心是一个循环单元，能够在时间步之间传递信息。每个时间步的计算依赖于当前输入和前一时刻的隐藏状态。假设我们有一个长度为<include src="/zh-cn/_jcKWo2t$BlhYv4MpZr3ORE.xml"></include>的输入序列 <include src="/zh-cn/_Zz1DPw6Y5TgHFW9tIqeNjh.xml"></include>，RNN在每个时间步 <include src="/zh-cn/_qeox5Hz0VT93d2N$sYWPiA.xml"></include> 的计算过程如下：</p>
+<p>RNN的核心是一个循环单元，能够在时间步之间传递信息。每个时间步的计算依赖于当前输入和前一时刻的隐藏状态。假设我们有一个长度为<include src="/zh-cn/_YF@Gmr6swWkDj$0cIHRyBC.xml"></include>的输入序列 <include src="/zh-cn/_ZMg6oxXisdhU8cn4Y7T1Se.xml"></include>，RNN在每个时间步 <include src="/zh-cn/_zLshb8NFXHKvA0aj$cpPVY.xml"></include> 的计算过程如下：</p>
 
 <ol>
   <li>
     <p><strong>隐藏状态更新</strong>：
-<include src="/zh-cn/_9j54noM$qdUw@x0liaBAm2.xml"></include></p>
+<include src="/zh-cn/_KfatWUYGySudk5ewQ8XEsN.xml"></include></p>
 
     <p>其中：</p>
     <ul>
-      <li><include src="/zh-cn/_Ady4iMVgnGvmsPbrxIjoap.xml"></include> 是当前时刻的隐藏状态。</li>
-      <li><include src="/zh-cn/_P@JGnSQut8qxocHECITvUr.xml"></include> 是当前时刻的输入。</li>
-      <li><include src="/zh-cn/_Fw0cUlAtkn2fGESjgDh8Mi.xml"></include> 和 <include src="/zh-cn/_ceKplLN0mJzayRHoFOhEsV.xml"></include> 分别是输入到隐藏状态和隐藏状态到隐藏状态的权重矩阵。</li>
-      <li><include src="/zh-cn/_quJ@ziryHZKbFD9tvnfGAU.xml"></include> 是偏置项。</li>
-      <li><include src="/zh-cn/_Ft53JufME$s9C6d@ZYqzPV.xml"></include> 是激活函数，常用的还有ReLU等。</li>
+      <li><include src="/zh-cn/_7nPlYm9u@AgGpX0KVi3exh.xml"></include> 是当前时刻的隐藏状态。</li>
+      <li><include src="/zh-cn/_cYxeLlE@nOIkDUuwm9GFZ1.xml"></include> 是当前时刻的输入。</li>
+      <li><include src="/zh-cn/_C95gpfZH3wPGFVj1XNJB0U.xml"></include> 和 <include src="/zh-cn/_XkOme@82MsR40xgyBaTNLA.xml"></include> 分别是输入到隐藏状态和隐藏状态到隐藏状态的权重矩阵。</li>
+      <li><include src="/zh-cn/_yx5dKM$YVl6Or803n71jk4.xml"></include> 是偏置项。</li>
+      <li><include src="/zh-cn/_dgaQfmHn39WwxjYuJTCZci.xml"></include> 是激活函数，常用的还有ReLU等。</li>
     </ul>
   </li>
   <li>
     <p><strong>输出计算</strong>（可选）：
-<include src="/zh-cn/_go@8XKfLscHCBJkU1NqI2i.xml"></include></p>
+<include src="/zh-cn/_YbHuMmC8XDEOUlegyGJcQn.xml"></include></p>
 
     <p>其中：</p>
     <ul>
-      <li><include src="/zh-cn/_57THtiDyAcdSQBjv@WngMe.xml"></include> 是当前时刻的输出。</li>
-      <li><include src="/zh-cn/_oMrnvLa7sDctk9eYjmpS5l.xml"></include> 是隐藏状态到输出的权重矩阵。</li>
-      <li><include src="/zh-cn/_Pc0fBYzC2LjEiV46wnUR5x.xml"></include> 是输出层的偏置项。</li>
+      <li><include src="/zh-cn/_dYL5zkT83WoRstOGxElM0n.xml"></include> 是当前时刻的输出。</li>
+      <li><include src="/zh-cn/_ze73xCYgSHu@o60KsaPiAw.xml"></include> 是隐藏状态到输出的权重矩阵。</li>
+      <li><include src="/zh-cn/_4ANlsgPdpRHG7rEe2ixbJF.xml"></include> 是输出层的偏置项。</li>
     </ul>
   </li>
 </ol>
@@ -1232,17 +1232,17 @@ Epoch <span class="o">[</span>10/10], Loss: 0.0228
 
 <!--    <div class="post__share">-->
 <!--      <div class="share__list">-->
-<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/zh-cn/algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
+<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.tomori.io//zh-cn/algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
 
-<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%EF%BC%88RNN%EF%BC%89&url=http://localhost:4000/zh-cn/algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
+<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%EF%BC%88RNN%EF%BC%89&url=https://blog.tomori.io//zh-cn/algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
 
-<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/&amp;media=http://localhost:4000/zh-cnhttps://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg&amp;description=%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%EF%BC%88RNN%EF%BC%89" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
+<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=https://blog.tomori.io//algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/&amp;media=https://blog.tomori.io//zh-cnhttps://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg&amp;description=%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%EF%BC%88RNN%EF%BC%89" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
 
-<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=http://localhost:4000/zh-cn/algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
+<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=https://blog.tomori.io//zh-cn/algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
 
-<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=http://localhost:4000/zh-cn/algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=https://blog.tomori.io//zh-cn/algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
 
-<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=http://localhost:4000/zh-cn/algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=https://blog.tomori.io//zh-cn/algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
 <!--      </div>-->
 <!--    </div>-->
 
@@ -1761,7 +1761,7 @@ Epoch <span class="o">[</span>10/10], Loss: 0.0228
     <div class="row">
       <div class="col col-12">
       <div class="footer__inner">
-        <div class="copyright">2024 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+        <div class="copyright">2025 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
         
 <div class="social">
   <ul class="social__list list-reset">

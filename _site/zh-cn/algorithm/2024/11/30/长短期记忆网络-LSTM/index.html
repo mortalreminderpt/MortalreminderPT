@@ -9,7 +9,7 @@
   <title>长短期记忆网络（LSTM）</title>
   <meta name='description' content=''>
 
-  <link rel="canonical" href="http://localhost:4000/zh-cn/algorithm/2024/11/30/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C-LSTM/">
+  <link rel="canonical" href="https://blog.tomori.io//zh-cn/algorithm/2024/11/30/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C-LSTM/">
   <link rel="alternate" type="application/rss+xml" title="PT&#39;s Blog" href="/feed.xml">
 
   <!-- Icons -->
@@ -970,53 +970,53 @@
   <li><strong>输出门（Output Gate）</strong>：决定输出多少当前单元状态的信息。</li>
 </ol>
 
-<p>假设我们有一个长度为<include src="/zh-cn/_jcKWo2t$BlhYv4MpZr3ORE.xml"></include>的输入序列 <include src="/zh-cn/_Zz1DPw6Y5TgHFW9tIqeNjh.xml"></include>，LSTM在每个时间步 <include src="/zh-cn/_qeox5Hz0VT93d2N$sYWPiA.xml"></include> 的计算过程如下：</p>
+<p>假设我们有一个长度为<include src="/zh-cn/_YF@Gmr6swWkDj$0cIHRyBC.xml"></include>的输入序列 <include src="/zh-cn/_ZMg6oxXisdhU8cn4Y7T1Se.xml"></include>，LSTM在每个时间步 <include src="/zh-cn/_zLshb8NFXHKvA0aj$cpPVY.xml"></include> 的计算过程如下：</p>
 
 <ol>
   <li>
     <p><strong>遗忘门</strong>：
-<include src="/zh-cn/_kILirnUTZcJmNzBW3wtfGD.xml"></include></p>
+<include src="/zh-cn/_8i06VDRLnuNM4fHdSAeg@P.xml"></include></p>
 
     <p>其中：</p>
     <ul>
-      <li><include src="/zh-cn/_y5eaHKmhZALkc0Y@RSQCEt.xml"></include> 是遗忘门的输出。</li>
-      <li><include src="/zh-cn/_y6cA91$TMiotfYdRzh@jG8.xml"></include> 是遗忘门的权重矩阵。</li>
-      <li><include src="/zh-cn/_lkCdeAVoNJ3aDKcInBFh0r.xml"></include> 是前一时刻的隐藏状态。</li>
-      <li><include src="/zh-cn/_P@JGnSQut8qxocHECITvUr.xml"></include> 是当前时刻的输入。</li>
-      <li><include src="/zh-cn/_fohPQ1keA5OrgNtBZcEVIW.xml"></include> 是遗忘门的偏置项。</li>
-      <li><include src="/zh-cn/_7UFdqhn8QTrSkK5ByoZxw9.xml"></include> 是Sigmoid激活函数。</li>
+      <li><include src="/zh-cn/_voL9wVn7kfWaKmFJsEBQh1.xml"></include> 是遗忘门的输出。</li>
+      <li><include src="/zh-cn/_Umw3tn0T4@pQxWqFYf$AIB.xml"></include> 是遗忘门的权重矩阵。</li>
+      <li><include src="/zh-cn/_3x0lV6L7A4J2vThdcbZ9wE.xml"></include> 是前一时刻的隐藏状态。</li>
+      <li><include src="/zh-cn/_cYxeLlE@nOIkDUuwm9GFZ1.xml"></include> 是当前时刻的输入。</li>
+      <li><include src="/zh-cn/_cNdXUu5koOmyjzxs0PfKSE.xml"></include> 是遗忘门的偏置项。</li>
+      <li><include src="/zh-cn/_cHdqrQDOIpC@eSsj9h3RWg.xml"></include> 是Sigmoid激活函数。</li>
     </ul>
   </li>
   <li>
     <p><strong>输入门</strong>：
-<include src="/zh-cn/_pyu7RAzkdYcJWvofGOVwT8.xml"></include>
-<include src="/zh-cn/_V7dB1GNteUzM@Iv6yuWx3r.xml"></include></p>
+<include src="/zh-cn/_@ReOB7mCVLbfiF5u1AX9oz.xml"></include>
+<include src="/zh-cn/_akuSYT$3ZyQ546vKbCnPsX.xml"></include></p>
 
     <p>其中：</p>
     <ul>
-      <li><include src="/zh-cn/_KHuUNb$Xic4ay3rDgldOzm.xml"></include> 是输入门的输出。</li>
-      <li><include src="/zh-cn/_k5X9g6rQ0FxiheoEU4OPN3.xml"></include> 是候选单元状态。</li>
+      <li><include src="/zh-cn/_1Emchrptd$DKSTR2NeloHU.xml"></include> 是输入门的输出。</li>
+      <li><include src="/zh-cn/_EGqkxiIjy@K9z4NuOs2oVJ.xml"></include> 是候选单元状态。</li>
     </ul>
   </li>
   <li>
     <p><strong>单元状态更新</strong>：
-<include src="/zh-cn/_Zvcb2q0PAlBfMw1SFdoW7a.xml"></include></p>
+<include src="/zh-cn/_4@rva3etEdyLXTFgkWSbcB.xml"></include></p>
 
     <p>其中：</p>
     <ul>
-      <li><include src="/zh-cn/_Z@CSLYj3bwIGfWHoMKpi6h.xml"></include> 是当前时刻的单元状态。</li>
-      <li><include src="/zh-cn/_KI6OUqaP8$40nmbr7GLJlN.xml"></include> 表示逐元素相乘。</li>
+      <li><include src="/zh-cn/_7yDcotKIGzad8xge2jHCVS.xml"></include> 是当前时刻的单元状态。</li>
+      <li><include src="/zh-cn/_83y7zDHP@4TesWo0YFOuqB.xml"></include> 表示逐元素相乘。</li>
     </ul>
   </li>
   <li>
     <p><strong>输出门</strong>：
-<include src="/zh-cn/_lKJNU5WXqwYBvGLyPxofFV.xml"></include>
-<include src="/zh-cn/_7cT@xI9qoOGYZBDFVa3R2A.xml"></include></p>
+<include src="/zh-cn/_YmBvnqZr6cyOT5wh1feFdb.xml"></include>
+<include src="/zh-cn/_WNc24V1hiU0F$JItKBlv68.xml"></include></p>
 
     <p>其中：</p>
     <ul>
-      <li><include src="/zh-cn/_O98VDXo3jKmyJfwT@znEpY.xml"></include> 是输出门的输出。</li>
-      <li><include src="/zh-cn/_Ady4iMVgnGvmsPbrxIjoap.xml"></include> 是当前时刻的隐藏状态。</li>
+      <li><include src="/zh-cn/_sHOD2bgrXCGap4QYvlSEuq.xml"></include> 是输出门的输出。</li>
+      <li><include src="/zh-cn/_7nPlYm9u@AgGpX0KVi3exh.xml"></include> 是当前时刻的隐藏状态。</li>
     </ul>
   </li>
 </ol>
@@ -1280,17 +1280,17 @@ Epoch <span class="o">[</span>10/100], Loss: 0.4827
 
 <!--    <div class="post__share">-->
 <!--      <div class="share__list">-->
-<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/zh-cn/algorithm/2024/11/30/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C-LSTM/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
+<!--        <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.tomori.io//zh-cn/algorithm/2024/11/30/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C-LSTM/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow"><i class="ion ion-logo-facebook"></i></a>-->
 
-<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C%EF%BC%88LSTM%EF%BC%89&url=http://localhost:4000/zh-cn/algorithm/2024/11/30/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C-LSTM/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
+<!--        <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C%EF%BC%88LSTM%EF%BC%89&url=https://blog.tomori.io//zh-cn/algorithm/2024/11/30/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C-LSTM/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow"><i class="ion ion-logo-twitter"></i></a>-->
 
-<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=http://localhost:4000/algorithm/2024/11/30/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C-LSTM/&amp;media=http://localhost:4000/zh-cnhttps://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg&amp;description=%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C%EF%BC%88LSTM%EF%BC%89" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
+<!--        <a class="share__link share__pinterest" href="http://pinterest.com/pin/create/button/?url=https://blog.tomori.io//algorithm/2024/11/30/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C-LSTM/&amp;media=https://blog.tomori.io//zh-cnhttps://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg&amp;description=%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C%EF%BC%88LSTM%EF%BC%89" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" rel="nofollow"><i class="ion ion-logo-pinterest"></i></a>-->
 
-<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=http://localhost:4000/zh-cn/algorithm/2024/11/30/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C-LSTM/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
+<!--        <a class="share__link share__tumblr" href="https://www.tumblr.com/share/link?url=https://blog.tomori.io//zh-cn/algorithm/2024/11/30/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C-LSTM/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Tumblr" rel="nofollow"><i class="ion ion-logo-tumblr"></i></a>-->
 
-<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=http://localhost:4000/zh-cn/algorithm/2024/11/30/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C-LSTM/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__whatsapp" href="whatsapp://send?text=https://blog.tomori.io//zh-cn/algorithm/2024/11/30/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C-LSTM/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Whatsapp" rel="nofollow"><i class="ion ion-logo-whatsapp"></i></a>&ndash;&gt;-->
 
-<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=http://localhost:4000/zh-cn/algorithm/2024/11/30/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C-LSTM/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a class="share__link share__telegram" href="https://t.me/share/url?url=https://blog.tomori.io//zh-cn/algorithm/2024/11/30/%E9%95%BF%E7%9F%AD%E6%9C%9F%E8%AE%B0%E5%BF%86%E7%BD%91%E7%BB%9C-LSTM/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Telegram" rel="nofollow"><i class="ion ion-logo-tux"></i></a>&ndash;&gt;-->
 <!--      </div>-->
 <!--    </div>-->
 
@@ -1809,7 +1809,7 @@ Epoch <span class="o">[</span>10/100], Loss: 0.4827
     <div class="row">
       <div class="col col-12">
       <div class="footer__inner">
-        <div class="copyright">2024 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+        <div class="copyright">2025 &copy; <a href="/">PT's Blog</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
         
 <div class="social">
   <ul class="social__list list-reset">
