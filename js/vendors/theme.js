@@ -11,7 +11,7 @@ const dayStyles = {
     "--white-lightness": "5%",
     "--background-saturation": "70%",
     "--background-lightness": "93%",
-    "--middle-grey-lightness": "0%"
+    "--middle-grey-lightness": "10%"
 }
 
 const nightStyles = {
