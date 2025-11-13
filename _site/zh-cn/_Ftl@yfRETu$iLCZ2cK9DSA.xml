@@ -1,0 +1,1 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi mathvariant="script">F</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><msub><mi>W</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo>+</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">y = \mathcal{F}(x, {W_i}) + x</annotation></semantics></math>

@@ -312,6 +312,42 @@
     
   
     
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -548,6 +584,42 @@
     
   
     
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -713,7 +785,7 @@
 
 <h2 id="209-minimum-size-subarray-sum"><a href="https://leetcode-cn.com/problems/minimum-size-subarray-sum/">209. Minimum Size Subarray Sum</a></h2>
 
-<p>This problem is the most basic sliding window problem. We can use two pointers <include src="/_h$34Co7HwDTFA9kRUzlSLe.xml"></include> and <include src="/_PxwsXFS72yK30UvJHLcOTR.xml"></include> to represent the left and right ends of the window, then move the pointer <include src="/_PxwsXFS72yK30UvJHLcOTR.xml"></include> continuously to the right. Meanwhile, use a variable <include src="/_4HZsR6vcF9KgqChS8nijr7.xml"></include> to record the sum of the interval <include src="/_Ihq5GxzA2F3pfSKU0jsHYn.xml"></include>. If <include src="/_4HZsR6vcF9KgqChS8nijr7.xml"></include> meets the condition, record the difference between <include src="/_h$34Co7HwDTFA9kRUzlSLe.xml"></include> and <include src="/_PxwsXFS72yK30UvJHLcOTR.xml"></include> as the answer, and move the pointer <include src="/_h$34Co7HwDTFA9kRUzlSLe.xml"></include>. Here’s the code:</p>
+<p>This problem is the most basic sliding window problem. We can use two pointers <include src="/_41$Q8W3MgexO2@fLBsUXyq.xml"></include> and <include src="/_8pTzcr$K0X7q4kJCE2og@i.xml"></include> to represent the left and right ends of the window, then move the pointer <include src="/_8pTzcr$K0X7q4kJCE2og@i.xml"></include> continuously to the right. Meanwhile, use a variable <include src="/_zeVHQvGaJ5bXo6s7pZ1gO9.xml"></include> to record the sum of the interval <include src="/_31AjZ2PovHLQe76$TnUpSN.xml"></include>. If <include src="/_zeVHQvGaJ5bXo6s7pZ1gO9.xml"></include> meets the condition, record the difference between <include src="/_41$Q8W3MgexO2@fLBsUXyq.xml"></include> and <include src="/_8pTzcr$K0X7q4kJCE2og@i.xml"></include> as the answer, and move the pointer <include src="/_41$Q8W3MgexO2@fLBsUXyq.xml"></include>. Here’s the code:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>
@@ -737,9 +809,9 @@
 
 <p>The solution to this problem is very similar to the previous one, but instead of finding the length of the interval, we’re looking for the number of consecutive subintervals.</p>
 
-<p>For the number of subintervals, we can observe that if <include src="/_Ihq5GxzA2F3pfSKU0jsHYn.xml"></include> is a valid window, then <include src="/_jgBp9lLYACfIsK$TZtNmcQ.xml"></include> for <include src="/_3aXe$cd@5rSoWtbJVqHAP7.xml"></include> must also be valid windows.</p>
+<p>For the number of subintervals, we can observe that if <include src="/_31AjZ2PovHLQe76$TnUpSN.xml"></include> is a valid window, then <include src="/_cAdnIVhJLx3iRMapqNE@Tg.xml"></include> for <include src="/_srgPaOQvXElFJTfbj8A3yz.xml"></include> must also be valid windows.</p>
 
-<p>For any valid interval <include src="/_Ihq5GxzA2F3pfSKU0jsHYn.xml"></include>, the number of subsets ending at <include src="/_PxwsXFS72yK30UvJHLcOTR.xml"></include> is always <include src="/_6Kk7A1p4wQiUeHGSn0Vr8y.xml"></include>. Therefore, before updating <include src="/_PxwsXFS72yK30UvJHLcOTR.xml"></include> each time, we add <include src="/_6Kk7A1p4wQiUeHGSn0Vr8y.xml"></include> to the answer. Here’s the code:</p>
+<p>For any valid interval <include src="/_31AjZ2PovHLQe76$TnUpSN.xml"></include>, the number of subsets ending at <include src="/_8pTzcr$K0X7q4kJCE2og@i.xml"></include> is always <include src="/_JQs0rma8yWE6dxlMYZ59H2.xml"></include>. Therefore, before updating <include src="/_8pTzcr$K0X7q4kJCE2og@i.xml"></include> each time, we add <include src="/_JQs0rma8yWE6dxlMYZ59H2.xml"></include> to the answer. Here’s the code:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>
@@ -762,7 +834,7 @@
 
 <h2 id="3-longest-substring-without-repeating-characters"><a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/">3. Longest Substring Without Repeating Characters</a></h2>
 
-<p>Unlike the previous contiguous subsequence problem, this problem requires the length of contiguous substrings. Therefore, we need to modify the condition. If duplicate characters appear within the window interval, we update <include src="/_h$34Co7HwDTFA9kRUzlSLe.xml"></include>. Here’s the code:</p>
+<p>Unlike the previous contiguous subsequence problem, this problem requires the length of contiguous substrings. Therefore, we need to modify the condition. If duplicate characters appear within the window interval, we update <include src="/_41$Q8W3MgexO2@fLBsUXyq.xml"></include>. Here’s the code:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>
@@ -785,7 +857,7 @@
 
 <h2 id="438-find-all-anagrams-in-a-string"><a href="https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/">438. Find All Anagrams in a String</a></h2>
 
-<p>The solution to this problem is quite similar to the previous one, but instead of comparing characters, we’re comparing strings. Additionally, the length of the window in this problem remains constant, which is the length of <include src="/_6ESIGf$7iZrw0J9ja4mQF3.xml"></include>.</p>
+<p>The solution to this problem is quite similar to the previous one, but instead of comparing characters, we’re comparing strings. Additionally, the length of the window in this problem remains constant, which is the length of <include src="/_h7bEKfWZ$jGnyOr26zR0v5.xml"></include>.</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>
@@ -865,6 +937,188 @@
           <div class="row grid">
 
           
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
+            
+            
+
+            
+
+            
+            
             
             
 
@@ -1302,21 +1556,21 @@
     
     <div class="recent-posts">
       
-      <a class="recent-posts__image" href="/algorithm/2024/11/12/%E5%B0%84%E7%BA%BF%E6%B3%95%E5%88%A4%E6%96%AD%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E5%A4%9A%E8%BE%B9%E5%BD%A2%E5%86%85/"><img class="lazy" data-src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_Computer_Vision.jpg" alt="Using the ray-casting algorithm to determine whether a point is inside a polygon"></a>
+      <a class="recent-posts__image" href="/node.js/2024/12/19/Prisma-Filtering/"><img class="lazy" data-src="https://miro.medium.com/v2/1*1d4T0TNb33A7Dus2ePdN_g.jpeg" alt="Prisma - Filtering"></a>
       
       <div class="recent-posts__content">
         <div class="article__meta">
           <span class="article__minutes">
             
 
-  27 min read
+  24 min read
 
 
           </span>
           <time class="article__date"
-            datetime="2024-11-12T14:06:48+11:00">Nov 12, 2024</time>
+            datetime="2024-12-19T15:40:02+11:00">Dec 19, 2024</time>
         </div>
-        <h4 class="recent-posts__title"><a href="/algorithm/2024/11/12/%E5%B0%84%E7%BA%BF%E6%B3%95%E5%88%A4%E6%96%AD%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E5%A4%9A%E8%BE%B9%E5%BD%A2%E5%86%85/">Using the ray-casting algorithm to determine whether a point is inside a polygon</a></h4>
+        <h4 class="recent-posts__title"><a href="/node.js/2024/12/19/Prisma-Filtering/">Prisma - Filtering</a></h4>
         <div class="article__bottom">
           <div class="article__author">
             <a href="/about/" aria-label="Mortalreminder PT"><img class="article__author-image lazy" data-src="https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&spec=140&img_type=jpg" alt="Mortalreminder PT's Picture"></a>
@@ -1330,21 +1584,21 @@
     
     <div class="recent-posts">
       
-      <a class="recent-posts__image" href="/2024/05/24/K8s%E7%AC%94%E8%AE%B0-%E4%B8%89/"><img class="lazy" data-src="/images/covers/k8s.png" alt="Kubernetes Notes (Part 3) - Concepts of Master and Worker"></a>
+      <a class="recent-posts__image" href="/node.js/2024/12/19/Prisma-%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86-Batch%E5%92%8CInteractive/"><img class="lazy" data-src="https://miro.medium.com/v2/1*1d4T0TNb33A7Dus2ePdN_g.jpeg" alt="Prisma - Transaction Handling — Batch and Interactive"></a>
       
       <div class="recent-posts__content">
         <div class="article__meta">
           <span class="article__minutes">
             
 
-  14 min read
+  49 min read
 
 
           </span>
           <time class="article__date"
-            datetime="2024-05-24T20:18:52+10:00">May 24, 2024</time>
+            datetime="2024-12-19T15:20:09+11:00">Dec 19, 2024</time>
         </div>
-        <h4 class="recent-posts__title"><a href="/2024/05/24/K8s%E7%AC%94%E8%AE%B0-%E4%B8%89/">Kubernetes Notes (Part 3) - Concepts of Master and Worker</a></h4>
+        <h4 class="recent-posts__title"><a href="/node.js/2024/12/19/Prisma-%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86-Batch%E5%92%8CInteractive/">Prisma - Transaction Handling — Batch and Interactive</a></h4>
         <div class="article__bottom">
           <div class="article__author">
             <a href="/about/" aria-label="Mortalreminder PT"><img class="article__author-image lazy" data-src="https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&spec=140&img_type=jpg" alt="Mortalreminder PT's Picture"></a>
@@ -1379,6 +1633,8 @@
         <a href="/categories/edit-xlsx"#{html_opts}>Edit-xlsx</a>
       
         <a href="/categories/algorithm"#{html_opts}>Algorithm</a>
+      
+        <a href="/categories/node-js"#{html_opts}>Node.js</a>
       
     </div>
   </div>
@@ -1438,6 +1694,16 @@
         <a href="/tags/algorithm"#{html_opts}>Algorithm</a>
       
         <a href="/tags/python"#{html_opts}>Python</a>
+      
+        <a href="/tags/pytorch"#{html_opts}>Pytorch</a>
+      
+        <a href="/tags/node-js"#{html_opts}>Node.js</a>
+      
+        <a href="/tags/next-js"#{html_opts}>Next.js</a>
+      
+        <a href="/tags/typescript"#{html_opts}>Typescript</a>
+      
+        <a href="/tags/prisma"#{html_opts}>Prisma</a>
       
     </div>
   </div>

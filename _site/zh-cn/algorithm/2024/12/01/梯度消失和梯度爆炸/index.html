@@ -9,7 +9,7 @@
   <title>梯度消失和梯度爆炸</title>
   <meta name='description' content=''>
 
-  <link rel="canonical" href="https://blog.tomori.io//zh-cn/algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/">
+  <link rel="canonical" href="https://blog.tomori.io//algorithm/2024/12/01/%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1%E5%92%8C%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8/">
   <link rel="alternate" type="application/rss+xml" title="PT&#39;s Blog" href="/feed.xml">
 
   <!-- Icons -->
@@ -880,11 +880,11 @@
 
 <h2 id="梯度消失与爆炸的数学原理">梯度消失与爆炸的数学原理</h2>
 
-<p>假设我们有一个简单的深层神经网络，损失函数 <include src="/zh-cn/_ykL0Fx8aH2z3CvIpqbgwAi.xml"></include> 关于第 <include src="/zh-cn/_9VLc6MN1mxaJH0QAGdyRbt.xml"></include> 层参数 <include src="/zh-cn/_G70X6wWfkRym4CIoYtT@Nc.xml"></include> 的梯度可以表示为：</p>
+<p>假设我们有一个简单的深层神经网络，损失函数 <include src="/zh-cn/_wN7KhYy1Vsf3WeTOov2PAZ.xml"></include> 关于第 <include src="/zh-cn/_MLCtyFE3Kwbe62ZPHvXnV7.xml"></include> 层参数 <include src="/zh-cn/_8Kqw2X0mSJWOB6NGMYH5V9.xml"></include> 的梯度可以表示为：</p>
 
-<p><include src="/zh-cn/_$zkqPRr8gtxiJ31QNsawlC.xml"></include></p>
+<p><include src="/zh-cn/_a8@CJM9lKSPUXwEmyxzLGb.xml"></include></p>
 
-<p>其中，<include src="/zh-cn/_LQHTSN1AqnJhYV3WG0i5b6.xml"></include> 是第 <include src="/zh-cn/_R0Vp2Yx9ri7nEsN4SweBmq.xml"></include> 层的激活值。可以看到，梯度是多个层间导数的乘积。如果这些导数的模值小于1，随着层数增加，整个乘积会趋近于零；反之，如果导数的模值大于1，乘积会迅速增大。这就是梯度消失和梯度爆炸的数学根源。</p>
+<p>其中，<include src="/zh-cn/_4O2mps8EDbSLTCg$1iqvlJ.xml"></include> 是第 <include src="/zh-cn/_5ykOliTaGFqCV4d$3tHWmf.xml"></include> 层的激活值。可以看到，梯度是多个层间导数的乘积。如果这些导数的模值小于1，随着层数增加，整个乘积会趋近于零；反之，如果导数的模值大于1，乘积会迅速增大。这就是梯度消失和梯度爆炸的数学根源。</p>
 
 <h2 id="cnn中的梯度消失与爆炸">CNN中的梯度消失与爆炸</h2>
 
@@ -902,7 +902,7 @@
   <li>
     <p><strong>使用适当的激活函数</strong>：ReLU（Rectified Linear Unit）及其变种在一定程度上缓解了梯度消失的问题，因为其导数在正区间恒为1，不会导致梯度逐层缩小。</p>
 
-    <p><include src="/zh-cn/_wBigRqy0GSU7rxkmaJhpcf.xml"></include></p>
+    <p><include src="/zh-cn/_u8QjEhciHm5zgG7$CDPN3L.xml"></include></p>
   </li>
   <li>
     <p><strong>权重初始化</strong>：合理的权重初始化方法，如He初始化或Xavier初始化，能保持每层的激活值和梯度的方差一致，减少梯度消失或爆炸的风险。</p>
@@ -911,28 +911,28 @@
       <li>
         <p><strong>Xavier初始化</strong>（适用于Sigmoid和Tanh激活函数）：</p>
 
-        <p><include src="/zh-cn/_Cmajxg$OJuynhiMPHYTV7K.xml"></include></p>
+        <p><include src="/zh-cn/_U5JW1lRaqM8wkAgoLn2DK6.xml"></include></p>
       </li>
       <li>
         <p><strong>He初始化</strong>（适用于ReLU激活函数）：</p>
 
-        <p><include src="/zh-cn/_tfZGsEJH98j13QLneaoxbR.xml"></include></p>
+        <p><include src="/zh-cn/_Wm38J0TcKtGFYf@O92dZP7.xml"></include></p>
       </li>
     </ul>
   </li>
   <li>
     <p><strong>批归一化（Batch Normalization）</strong>：通过规范化每一层的输入，保持激活值在合理范围内，稳定梯度的传播。</p>
 
-    <p><include src="/zh-cn/_YI47z2MiAnDsUNh9u3JkpT.xml"></include></p>
+    <p><include src="/zh-cn/_vQwDurKqgXkTM6xNEO50WY.xml"></include></p>
 
-    <p>其中，<include src="/zh-cn/_eHPtygiKIvo@49XDp6MYET.xml"></include> 和 <include src="/zh-cn/_PnqbfI2k7WYRLHuo0Xal65.xml"></include> 分别是批量数据的均值和方差，<include src="/zh-cn/_SKG1QPUxpFM8eAnTNBzb4u.xml"></include> 是一个小常数，防止除零。</p>
+    <p>其中，<include src="/zh-cn/_FAJviqtThb4X07y6SZLI@K.xml"></include> 和 <include src="/zh-cn/_J3a2xsB6bQlLo$5v4cWdRG.xml"></include> 分别是批量数据的均值和方差，<include src="/zh-cn/_HauEvlV0W$F4@OCYRbSjUQ.xml"></include> 是一个小常数，防止除零。</p>
   </li>
   <li>
     <p><strong>残差连接（Residual Connections）</strong>：在深层网络中引入跳跃连接，允许梯度直接流过这些连接，缓解梯度消失问题。</p>
 
-    <p><include src="/zh-cn/_jFVfa9pJ08hNvl$gd1ybQ2.xml"></include></p>
+    <p><include src="/zh-cn/_Ftl@yfRETu$iLCZ2cK9DSA.xml"></include></p>
 
-    <p>其中，<include src="/zh-cn/_h4HpCSIiX$m@sWzxGQauwb.xml"></include> 是某些层的组合，<include src="/zh-cn/_pte0$Kauzx3W14Y9FDoXTr.xml"></include> 是输入。</p>
+    <p>其中，<include src="/zh-cn/_dXrv@Cwu4U$2IeZDOQLNKJ.xml"></include> 是某些层的组合，<include src="/zh-cn/_0kGpxt61jKarnPIlbmO7BQ.xml"></include> 是输入。</p>
   </li>
 </ol>
 
@@ -944,9 +944,9 @@
 
 <h3 id="rnn中的梯度问题">RNN中的梯度问题</h3>
 
-<p>在标准RNN中，隐藏状态 <include src="/zh-cn/_$meOh48PgAGUYjsyLHB5lZ.xml"></include> 由以下递归公式定义：</p>
+<p>在标准RNN中，隐藏状态 <include src="/zh-cn/_ycADGv@a7Xf84EmhQNpr9$.xml"></include> 由以下递归公式定义：</p>
 
-<p><include src="/zh-cn/_mTvU0kj@WncQAlMIV3atos.xml"></include></p>
+<p><include src="/zh-cn/_ySmNTodILnhQt8ez@iHfuO.xml"></include></p>
 
 <p>反向传播通过时间（BPTT）计算梯度时，涉及到多个时间步的梯度累乘，导致梯度指数级地减小或增大。</p>
 
@@ -956,7 +956,7 @@
   <li>
     <p><strong>梯度裁剪（Gradient Clipping）</strong>：限制梯度的范数，防止梯度爆炸。例如，当梯度的L2范数超过某个阈值时，将其缩放到该阈值。</p>
 
-    <p><include src="/zh-cn/_Ed2H4NoSDI8WjGf$w9kBl7.xml"></include></p>
+    <p><include src="/zh-cn/_aWc4$Vbu9ewSXU@iz7tGBr.xml"></include></p>
   </li>
   <li>
     <p><strong>使用更复杂的RNN单元</strong>：如长短期记忆网络（LSTM）和门控循环单元（GRU），它们通过引入门机制，控制信息的流动，缓解梯度消失问题。</p>
@@ -967,7 +967,7 @@
   </li>
 </ol>
 
-<include src="/zh-cn/_IiAvtTfJGgPzUxMl2Z9D0q.xml"></include>
+<include src="/zh-cn/_CB8GZuMTPzEArvKbVF6faR.xml"></include>
 
 <ul>
   <li>通过这些门，LSTM能够有效地保持长期依赖，减少梯度消失的风险。</li>

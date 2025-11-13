@@ -1,0 +1,1 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>t</mi></msub><mo>=</mo><msub><mi>o</mi><mi>t</mi></msub><mo>⊙</mo><mi>tanh</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>C</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">h_t = o_t \odot \tanh(C_t)</annotation></semantics></math>

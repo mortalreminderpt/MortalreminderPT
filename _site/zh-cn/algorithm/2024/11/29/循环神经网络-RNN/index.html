@@ -9,7 +9,7 @@
   <title>循环神经网络（RNN）</title>
   <meta name='description' content=''>
 
-  <link rel="canonical" href="https://blog.tomori.io//zh-cn/algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/">
+  <link rel="canonical" href="https://blog.tomori.io//algorithm/2024/11/29/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-RNN/">
   <link rel="alternate" type="application/rss+xml" title="PT&#39;s Blog" href="/feed.xml">
 
   <!-- Icons -->
@@ -875,31 +875,31 @@
 
 <h3 id="rnn的结构">RNN的结构</h3>
 
-<p>RNN的核心是一个循环单元，能够在时间步之间传递信息。每个时间步的计算依赖于当前输入和前一时刻的隐藏状态。假设我们有一个长度为<include src="/zh-cn/_ImokQ91xuHGBVgifnWlwah.xml"></include>的输入序列 <include src="/zh-cn/_Tf@03kNtLH4caAhzmYBZpM.xml"></include>，RNN在每个时间步 <include src="/zh-cn/_K5kLi8UEyxhCsTuRmWvzAp.xml"></include> 的计算过程如下：</p>
+<p>RNN的核心是一个循环单元，能够在时间步之间传递信息。每个时间步的计算依赖于当前输入和前一时刻的隐藏状态。假设我们有一个长度为<include src="/zh-cn/_MdD2xkOvBLCYXUnJG@ohrp.xml"></include>的输入序列 <include src="/zh-cn/_J2@NCmDwqIFuPpYMi3EgaU.xml"></include>，RNN在每个时间步 <include src="/zh-cn/_rPV4wjRsqU$IheZ3S@mNHT.xml"></include> 的计算过程如下：</p>
 
 <ol>
   <li>
     <p><strong>隐藏状态更新</strong>：
-<include src="/zh-cn/_cMWrQOu0hvUCiVqod$p58D.xml"></include></p>
+<include src="/zh-cn/_Z6o3MlBgWTjx17HsKkzbuE.xml"></include></p>
 
     <p>其中：</p>
     <ul>
-      <li><include src="/zh-cn/_$meOh48PgAGUYjsyLHB5lZ.xml"></include> 是当前时刻的隐藏状态。</li>
-      <li><include src="/zh-cn/_U0tb3NMj$yDk4FgclRLrJB.xml"></include> 是当前时刻的输入。</li>
-      <li><include src="/zh-cn/_RvMUuPDtLYCI7@iQG3Sg06.xml"></include> 和 <include src="/zh-cn/_HBqidxGe8YTFZgI$jOzl5y.xml"></include> 分别是输入到隐藏状态和隐藏状态到隐藏状态的权重矩阵。</li>
-      <li><include src="/zh-cn/_vMHQCcgLXhWr0TI9polFiy.xml"></include> 是偏置项。</li>
-      <li><include src="/zh-cn/_UCAvdHW24RYEzb9j8hBmrc.xml"></include> 是激活函数，常用的还有ReLU等。</li>
+      <li><include src="/zh-cn/_ycADGv@a7Xf84EmhQNpr9$.xml"></include> 是当前时刻的隐藏状态。</li>
+      <li><include src="/zh-cn/_viGyPWlwxQfV9bKr56Baq@.xml"></include> 是当前时刻的输入。</li>
+      <li><include src="/zh-cn/_HNnq2jSoeCrzFh1MTyLW7d.xml"></include> 和 <include src="/zh-cn/_MsTltWVji7GkzaQ3S2wgro.xml"></include> 分别是输入到隐藏状态和隐藏状态到隐藏状态的权重矩阵。</li>
+      <li><include src="/zh-cn/_FD7KcATb3iZawejgROP$S2.xml"></include> 是偏置项。</li>
+      <li><include src="/zh-cn/_CpNzTHy1eQBw7orO@XaIcf.xml"></include> 是激活函数，常用的还有ReLU等。</li>
     </ul>
   </li>
   <li>
     <p><strong>输出计算</strong>（可选）：
-<include src="/zh-cn/_uOHiSDfzBM4R50TJaCULZl.xml"></include></p>
+<include src="/zh-cn/_RAOei7YExHCMf6hLrulGd9.xml"></include></p>
 
     <p>其中：</p>
     <ul>
-      <li><include src="/zh-cn/_jMh$IPpkyrVbGm8AOBUCN6.xml"></include> 是当前时刻的输出。</li>
-      <li><include src="/zh-cn/_NAjrG3liZC8$2v1YP9kuSK.xml"></include> 是隐藏状态到输出的权重矩阵。</li>
-      <li><include src="/zh-cn/_6CfEVs9BvxktPpRO@7Lo4Y.xml"></include> 是输出层的偏置项。</li>
+      <li><include src="/zh-cn/_vUViP4bCwBj9EoKu0ZmlSI.xml"></include> 是当前时刻的输出。</li>
+      <li><include src="/zh-cn/_JB1AM0iYheFEtg6DlmUv3W.xml"></include> 是隐藏状态到输出的权重矩阵。</li>
+      <li><include src="/zh-cn/_OvpVzQiYB1@Zjn79Ua2wms.xml"></include> 是输出层的偏置项。</li>
     </ul>
   </li>
 </ol>

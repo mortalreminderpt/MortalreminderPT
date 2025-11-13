@@ -1,0 +1,1 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>σ</mi><mo stretchy="false">(</mo><mi mathvariant="bold">X</mi><mo>⋅</mo><mi mathvariant="bold">W</mi><mo>+</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">y = \sigma(\mathbf{X} \cdot \mathbf{W} + b)</annotation></semantics></math>

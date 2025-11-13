@@ -1,0 +1,1 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>γ</mi><mo>⋅</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac><mo>+</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">y = \gamma \cdot \frac{x - \mu}{\sigma} + \beta</annotation></semantics></math>
