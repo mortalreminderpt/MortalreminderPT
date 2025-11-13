@@ -105,10 +105,10 @@
                 <div class="mobile-nav">
                   <ul class="nav__list list-reset">
   <li class="nav__item">
-    <a href="/about" class="nav__link">HOME</a>
+    <a href="/" class="nav__link">HOME</a>
   </li>
   <li class="nav__item">
-    <a href="/" class="nav__link">BLOG</a>
+    <a href="/blogs/" class="nav__link">BLOG</a>
   </li>
   </li>
   
@@ -312,23 +312,13 @@
     
   
     
-      
-      
+  
     
   
     
-      
-      
-    
   
     
-      
-      
-    
   
-    
-      
-      
     
   
     
@@ -351,10 +341,10 @@
         <div class="top-nav">
           <ul class="nav__list list-reset">
   <li class="nav__item">
-    <a href="/about" class="nav__link">HOME</a>
+    <a href="/" class="nav__link">HOME</a>
   </li>
   <li class="nav__item">
-    <a href="/" class="nav__link">BLOG</a>
+    <a href="/blogs/" class="nav__link">BLOG</a>
   </li>
   </li>
   
@@ -558,23 +548,13 @@
     
   
     
-      
-      
+  
     
   
     
-      
-      
-    
   
     
-      
-      
-    
   
-    
-      
-      
     
   
     
@@ -726,9 +706,9 @@
   </li>
   <li><a href="#code" id="markdown-toc-code">Code</a>    <ol>
       <li><a href="#basic-operations" id="markdown-toc-basic-operations">Basic Operations</a>        <ol>
-          <li><a href="#find" id="markdown-toc-find"><include src="/_aVmqWGfZSF7xuO4nPRBEDy.xml"></include></a></li>
-          <li><a href="#insert" id="markdown-toc-insert"><include src="/_7b4Dt1moL5$FaIsUp8OdYl.xml"></include></a></li>
-          <li><a href="#delete" id="markdown-toc-delete"><include src="/_khLcGZnVTafbUE8Hj2WMud.xml"></include></a></li>
+          <li><a href="#find" id="markdown-toc-find"><include src="/_ISdeXro93Nlx5G2PnMRpHh.xml"></include></a></li>
+          <li><a href="#insert" id="markdown-toc-insert"><include src="/_bVH7elqJ@UZcpNEra4nDkz.xml"></include></a></li>
+          <li><a href="#delete" id="markdown-toc-delete"><include src="/_R9S1g8ujbVLOovpHXlnqms.xml"></include></a></li>
         </ol>
       </li>
     </ol>
@@ -767,7 +747,7 @@
 
 <p>The construction and destruction of a BST are similar to those of a regular binary tree. Here, we focus on additional operations like search, insertion, and deletion compared to regular binary trees.</p>
 
-<h4 id="find"><include src="/_aVmqWGfZSF7xuO4nPRBEDy.xml"></include></h4>
+<h4 id="find"><include src="/_ISdeXro93Nlx5G2PnMRpHh.xml"></include></h4>
 <p>The <code class="language-plaintext highlighter-rouge">find()</code> function searches whether a node with a known data value exists in the tree and returns the node. The code is as follows:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">BST</span> <span class="nf">find</span><span class="p">(</span><span class="n">BST</span> <span class="n">tree</span><span class="p">,</span> <span class="kt">int</span> <span class="n">data</span><span class="p">){</span>
@@ -784,8 +764,8 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h4 id="insert"><include src="/_7b4Dt1moL5$FaIsUp8OdYl.xml"></include></h4>
-<p>The <code class="language-plaintext highlighter-rouge">insert()</code> function inserts a node into the tree. All nodes in a BST are inserted as leaf nodes. Hence, after creating node <include src="/_PReUzdMIo$2sfmN@bXcAgk.xml"></include>, we find the appropriate parent node <include src="/_FDj2LUZ6SuenWQvMoP@$Tk.xml"></include> and insert <include src="/_PReUzdMIo$2sfmN@bXcAgk.xml"></include> there. The code is as follows:</p>
+<h4 id="insert"><include src="/_bVH7elqJ@UZcpNEra4nDkz.xml"></include></h4>
+<p>The <code class="language-plaintext highlighter-rouge">insert()</code> function inserts a node into the tree. All nodes in a BST are inserted as leaf nodes. Hence, after creating node <include src="/_s564qTO9JrkUGRfwMBxjip.xml"></include>, we find the appropriate parent node <include src="/_TWg1ZdBDHCirAn3xvSQhXl.xml"></include> and insert <include src="/_s564qTO9JrkUGRfwMBxjip.xml"></include> there. The code is as follows:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">bool</span> <span class="nf">insert</span><span class="p">(</span><span class="n">BST</span><span class="o">&amp;</span> <span class="n">tree</span><span class="p">,</span> <span class="kt">int</span> <span class="n">data</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">BST</span> <span class="n">p</span> <span class="o">=</span> <span class="n">tree</span><span class="p">,</span> <span class="n">f</span><span class="p">;</span>
@@ -810,7 +790,7 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h4 id="delete"><include src="/_khLcGZnVTafbUE8Hj2WMud.xml"></include></h4>
+<h4 id="delete"><include src="/_R9S1g8ujbVLOovpHXlnqms.xml"></include></h4>
 <p>After deleting a node in a binary search tree, its sorting order must still be maintained. Therefore, deletion is divided into three cases:</p>
 <ul>
   <li>If the node to be deleted has no left child, replace it with its right child.</li>

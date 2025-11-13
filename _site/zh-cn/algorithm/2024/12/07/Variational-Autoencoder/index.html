@@ -105,10 +105,10 @@
                 <div class="mobile-nav">
                   <ul class="nav__list list-reset">
   <li class="nav__item">
-    <a href="/zh-cn/about" class="nav__link">HOME</a>
+    <a href="/zh-cn/" class="nav__link">HOME</a>
   </li>
   <li class="nav__item">
-    <a href="/zh-cn/" class="nav__link">BLOG</a>
+    <a href="/zh-cn/blogs/" class="nav__link">BLOG</a>
   </li>
   </li>
   
@@ -362,78 +362,35 @@
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
-    
   
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
     
   
     
@@ -456,10 +413,10 @@
         <div class="top-nav">
           <ul class="nav__list list-reset">
   <li class="nav__item">
-    <a href="/zh-cn/about" class="nav__link">HOME</a>
+    <a href="/zh-cn/" class="nav__link">HOME</a>
   </li>
   <li class="nav__item">
-    <a href="/zh-cn/" class="nav__link">BLOG</a>
+    <a href="/zh-cn/blogs/" class="nav__link">BLOG</a>
   </li>
   </li>
   
@@ -713,78 +670,35 @@
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
-    
   
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
     
   
     
@@ -1019,7 +933,7 @@
 
 <p>在VAE中，<strong>潜在空间</strong>是数据的低维表示空间。编码器将输入数据映射到潜在空间，输出均值（μ）和标准差（σ），然后通过<strong>重参数化技巧</strong>（Reparameterization Trick）生成潜在变量<strong>z</strong>：</p>
 
-<include src="/zh-cn/_52dtJck7UxXAEml89z3@gY.xml"></include>
+<include src="/zh-cn/_EYvxyujeHV9ogha1SOmrpd.xml"></include>
 
 <p>这种方法允许梯度通过随机变量传递，从而实现端到端的训练。</p>
 
@@ -1037,13 +951,13 @@
 
 <p>VAE的目标是最大化<strong>证据下界（Evidence Lower Bound, ELBO）</strong>，即最小化以下损失函数：</p>
 
-<include src="/zh-cn/_qTfAkEhX2WY$NiMCjIl8Ka.xml"></include>
+<include src="/zh-cn/_ULceAVPBMJ@Gn0$r5faD3F.xml"></include>
 
 <p>其中：</p>
 
 <ul>
-  <li><include src="/zh-cn/_6j1LiXGp42VyK9ExorfZMm.xml"></include> 是<strong>重建损失</strong>，衡量生成的数据与原始数据的相似度。</li>
-  <li><include src="/zh-cn/_bx2j4P1pfmZQtYMESzB$@r.xml"></include> 是<strong>KL散度</strong>，衡量编码器输出的分布 <include src="/zh-cn/_AV2K6ZCReiljDIP5bsEXrk.xml"></include> 与先验分布 <include src="/zh-cn/_fIJ0w@hTbcdiOyuWrLUkpR.xml"></include> （通常是标准正态分布<include src="/zh-cn/_ejNLnTmk41bDJWsO8V3qZd.xml"></include>）的差异。</li>
+  <li><include src="/zh-cn/_2jDMmh0@L5Z$gsqFR9uyoO.xml"></include> 是<strong>重建损失</strong>，衡量生成的数据与原始数据的相似度。</li>
+  <li><include src="/zh-cn/_rGXCh6NwA9cD7mYqJ51Sif.xml"></include> 是<strong>KL散度</strong>，衡量编码器输出的分布 <include src="/zh-cn/_rWusRPy7In@GJ1$XgjZwc4.xml"></include> 与先验分布 <include src="/zh-cn/_blXc21q3mSUACejkLxrhP7.xml"></include> （通常是标准正态分布<include src="/zh-cn/_uIj6lot31CpqMi4Yhe7XKA.xml"></include>）的差异。</li>
 </ul>
 
 <p>在代码中，重建损失采用均方误差（MSELoss），而KL散度的计算如下：</p>
@@ -1061,21 +975,21 @@
 
 <p>对于高斯分布，KL散度的公式为：</p>
 
-<include src="/zh-cn/_0dmEbe@zrhI4H6Y7fcSOqi.xml"></include>
+<include src="/zh-cn/_oCi1EeaJ9U$SfZVchDwy@p.xml"></include>
 
-<p>代码中每个样本的KL散度通过对<include src="/zh-cn/_Mon8u5TiXk31VUJw0spbYB.xml"></include>和<include src="/zh-cn/_cHdqrQDOIpC@eSsj9h3RWg.xml"></include>进行逐元素计算，并取平均得到。</p>
+<p>代码中每个样本的KL散度通过对<include src="/zh-cn/_BngeHv7Fw@Wsbz9dY5Guyi.xml"></include>和<include src="/zh-cn/_bpNhmBrSuGiQdWVJtXYvIE.xml"></include>进行逐元素计算，并取平均得到。</p>
 
 <h2 id="vae的公式解析">VAE的公式解析</h2>
 
 <p>综合上述内容，VAE的损失函数可以表示为：</p>
 
-<include src="/zh-cn/_6I@zUjZHveXcTLPOr1YwfA.xml"></include>
+<include src="/zh-cn/_YrGXcOUwHNLdT5uVQgWAfa.xml"></include>
 
 <p>其中：</p>
 
 <ul>
-  <li>第一项是重建误差，确保生成的<include src="/zh-cn/_ouialZMKdEp@DAwcNtRkOV.xml"></include>与原始<include src="/zh-cn/_fa4iJKXDO6n0LrFv1uYEqe.xml"></include>尽可能接近。</li>
-  <li>第二项是KL散度，确保潜在变量<include src="/zh-cn/_WbIO2CRe6QTnvX9wx4BhVd.xml"></include>的分布接近标准正态分布。</li>
+  <li>第一项是重建误差，确保生成的<include src="/zh-cn/_RSjgvX4cCQd7ZEe6aYWfUw.xml"></include>与原始<include src="/zh-cn/_nt5Vh$4p7Ur9QXRPHekAd6.xml"></include>尽可能接近。</li>
+  <li>第二项是KL散度，确保潜在变量<include src="/zh-cn/_n3XuqMaEih8Af9O4yNLQd1.xml"></include>的分布接近标准正态分布。</li>
 </ul>
 
 <h2 id="代码解析">代码解析</h2>
@@ -1086,18 +1000,18 @@
   <li><strong>编码器（Encoder）</strong>：
     <ul>
       <li>输入是展平后的28x28图像（784维）。</li>
-      <li>经过两层隐藏层后，输出20维向量，其中前10维为<include src="/zh-cn/_Mon8u5TiXk31VUJw0spbYB.xml"></include>，后10维为<include src="/zh-cn/_cHdqrQDOIpC@eSsj9h3RWg.xml"></include>。</li>
+      <li>经过两层隐藏层后，输出20维向量，其中前10维为<include src="/zh-cn/_BngeHv7Fw@Wsbz9dY5Guyi.xml"></include>，后10维为<include src="/zh-cn/_bpNhmBrSuGiQdWVJtXYvIE.xml"></include>。</li>
     </ul>
   </li>
   <li><strong>重参数化（Reparameterization）</strong>：
     <ul>
-      <li>将<include src="/zh-cn/_Mon8u5TiXk31VUJw0spbYB.xml"></include>和<include src="/zh-cn/_cHdqrQDOIpC@eSsj9h3RWg.xml"></include>分离后，通过 <include src="/zh-cn/_28zhfQLSxdnJqPY0Wts9g6.xml"></include> 生成潜在变量<include src="/zh-cn/_WbIO2CRe6QTnvX9wx4BhVd.xml"></include>，其中<include src="/zh-cn/_y5YMqPH3dTsD9kGRArvXFV.xml"></include>来自标准正态分布。</li>
+      <li>将<include src="/zh-cn/_BngeHv7Fw@Wsbz9dY5Guyi.xml"></include>和<include src="/zh-cn/_bpNhmBrSuGiQdWVJtXYvIE.xml"></include>分离后，通过 <include src="/zh-cn/_OfGQuzZcPsko@YInAqe25r.xml"></include> 生成潜在变量<include src="/zh-cn/_n3XuqMaEih8Af9O4yNLQd1.xml"></include>，其中<include src="/zh-cn/_5ywlnM9$8PUgOANIeoQHVq.xml"></include>来自标准正态分布。</li>
     </ul>
   </li>
   <li><strong>解码器（Decoder）</strong>：
     <ul>
-      <li>输入是10维的潜在变量<include src="/zh-cn/_WbIO2CRe6QTnvX9wx4BhVd.xml"></include>。</li>
-      <li>经过两层隐藏层后，输出784维向量，经过Sigmoid激活函数，得到重构的图像<include src="/zh-cn/_ouialZMKdEp@DAwcNtRkOV.xml"></include>。</li>
+      <li>输入是10维的潜在变量<include src="/zh-cn/_n3XuqMaEih8Af9O4yNLQd1.xml"></include>。</li>
+      <li>经过两层隐藏层后，输出784维向量，经过Sigmoid激活函数，得到重构的图像<include src="/zh-cn/_RSjgvX4cCQd7ZEe6aYWfUw.xml"></include>。</li>
     </ul>
   </li>
   <li><strong>损失计算</strong>：

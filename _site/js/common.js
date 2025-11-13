@@ -112,7 +112,12 @@ $(document).ready(function() {
   $load_posts_button.click(function(e) {
     e.preventDefault();
     var loadMore = $('.load-more-section');
-    var request_next_link = pagination_next_url.split('/page')[0] + site_lang + '/page/' + pagination_next_page_number + '/';
+    var request_next_link;
+    if (typeof pagination_base_path !== 'undefined' && pagination_base_path) {
+      request_next_link = pagination_base_path + pagination_next_page_number + '/';
+    } else {
+      request_next_link = pagination_next_url.split('/page')[0] + site_lang + '/page/' + pagination_next_page_number + '/';
+    }
 
     $.ajax({
       url: request_next_link,

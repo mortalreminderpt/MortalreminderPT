@@ -26,8 +26,9 @@ contact:
   email: mail@mortalreminder.net # Add your email for contact form
   description: 非常欢迎您与博主联系！如果您对博客有任何建议，可以留言给博主来信，无论您是有疑问、需要帮助还是想表达对博主的赞赏，博主非常期待听到您的声音。
 
-paginate: 8
-paginate_path: "/page/:num"
+ 
+pagination:
+  enabled: true
 
 # NOTE
 # Norlin theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
@@ -64,7 +65,7 @@ mailchimp-identifier: https://app.us20.list-manage.com/subscribe/post?u65e25d0a6
 markdown: kramdown
 permalink: pretty
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll/fontawesome/svg
   - jekyll-archives

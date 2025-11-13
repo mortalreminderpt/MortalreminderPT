@@ -1,2 +1,4 @@
 ---
 BUNDLE_PWD: ""
+BUNDLE_PATH: "vendor/bundle"
+BUNDLE_SSL_CA_CERT: "/private/etc/ssl/cert.pem"

@@ -105,10 +105,10 @@
                 <div class="mobile-nav">
                   <ul class="nav__list list-reset">
   <li class="nav__item">
-    <a href="/about" class="nav__link">HOME</a>
+    <a href="/" class="nav__link">HOME</a>
   </li>
   <li class="nav__item">
-    <a href="/" class="nav__link">BLOG</a>
+    <a href="/blogs/" class="nav__link">BLOG</a>
   </li>
   </li>
   
@@ -312,23 +312,13 @@
     
   
     
-      
-      
+  
     
   
     
-      
-      
-    
   
     
-      
-      
-    
   
-    
-      
-      
     
   
     
@@ -351,10 +341,10 @@
         <div class="top-nav">
           <ul class="nav__list list-reset">
   <li class="nav__item">
-    <a href="/about" class="nav__link">HOME</a>
+    <a href="/" class="nav__link">HOME</a>
   </li>
   <li class="nav__item">
-    <a href="/" class="nav__link">BLOG</a>
+    <a href="/blogs/" class="nav__link">BLOG</a>
   </li>
   </li>
   
@@ -558,23 +548,13 @@
     
   
     
-      
-      
+  
     
   
     
-      
-      
-    
   
     
-      
-      
-    
   
-    
-      
-      
     
   
     
@@ -728,7 +708,7 @@
 </ol>
 
 <h2 id="concept">Concept</h2>
-<p>Binary search is a common method for finding a specific value in a sorted array. It doesn’t need to traverse the entire sequence; it only needs to focus on the boundaries and the middle value of the sequence. Therefore, its time complexity can reach <include src="/_7XpV42Ry96WegHnJq0utwF.xml"></include>.</p>
+<p>Binary search is a common method for finding a specific value in a sorted array. It doesn’t need to traverse the entire sequence; it only needs to focus on the boundaries and the middle value of the sequence. Therefore, its time complexity can reach <include src="/_UR6LOCVBWkglZYtfc9Nozr.xml"></include>.</p>
 
 <h3 id="template">Template</h3>
 
@@ -753,7 +733,7 @@
 
 <h3 id="34-find-first-and-last-position-of-element-in-sorted-array"><a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/">34. Find First and Last Position of Element in Sorted Array</a></h3>
 
-<p>This problem requires not only finding the first occurrence of an element but also the last occurrence. In the template code, if <code class="language-plaintext highlighter-rouge">nums[i] &lt; key</code>, it continues searching on the left side. To continue searching after finding the element, we need to modify it to <code class="language-plaintext highlighter-rouge">nums[i] &lt;= key</code>. This modification finds the position of the first element greater than or equal to <include src="/_Cvf2yGFDtwjBmloE@qb081.xml"></include>. Therefore, the code for this problem is as follows:</p>
+<p>This problem requires not only finding the first occurrence of an element but also the last occurrence. In the template code, if <code class="language-plaintext highlighter-rouge">nums[i] &lt; key</code>, it continues searching on the left side. To continue searching after finding the element, we need to modify it to <code class="language-plaintext highlighter-rouge">nums[i] &lt;= key</code>. This modification finds the position of the first element greater than or equal to <include src="/_5Z2eoqd8fahY71nNT9AVz4.xml"></include>. Therefore, the code for this problem is as follows:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>
@@ -780,7 +760,7 @@
 
 <h3 id="74-search-a-2d-matrix"><a href="https://leetcode.com/problems/search-a-2d-matrix/">74. Search a 2D Matrix</a></h3>
 
-<p>According to the problem, the element to be searched must be greater than or equal to the first element in its row. Therefore, we first perform a binary search on the columns to find the largest element not greater than <include src="/_tfq@juvyE98WJ7AQNaUZ$5.xml"></include>.</p>
+<p>According to the problem, the element to be searched must be greater than or equal to the first element in its row. Therefore, we first perform a binary search on the columns to find the largest element not greater than <include src="/_lTCQd1PInke4VgBRS@pxOr.xml"></include>.</p>
 
 <p>Then, we perform a basic binary search on that row to find the result. The code for this problem is as follows:</p>
 
@@ -866,9 +846,9 @@
 
 <h3 id="162-find-peak-element"><a href="https://leetcode.com/problems/find-peak-element/">162. Find Peak Element</a></h3>
 
-<p>We can use the <include src="/_ycPg@aqWTZEvLQnB8irslG.xml"></include> range</p>
+<p>We can use the <include src="/_V0lCDyc5A$H7X4pUwOQvte.xml"></include> range</p>
 
-<p>to store the possible intervals containing peaks. Based on the midpoint, we perform binary search. If <code class="language-plaintext highlighter-rouge">nums[mid] &lt; nums[mid + 1]</code>, it means a peak exists in the <include src="/_VjLWOf6z1hFqrIaPQ73@YU.xml"></include> interval; otherwise, it exists in the <include src="/_3kdOaugWZPLbqBMxYpJRmv.xml"></include> interval. The code for this problem is as follows:</p>
+<p>to store the possible intervals containing peaks. Based on the midpoint, we perform binary search. If <code class="language-plaintext highlighter-rouge">nums[mid] &lt; nums[mid + 1]</code>, it means a peak exists in the <include src="/_KL@DMJlXmCGZad5o42j7wp.xml"></include> interval; otherwise, it exists in the <include src="/_E5mUqnA9IxHRWf03MQ$r8b.xml"></include> interval. The code for this problem is as follows:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>

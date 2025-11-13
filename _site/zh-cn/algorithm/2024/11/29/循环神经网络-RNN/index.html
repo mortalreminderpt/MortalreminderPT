@@ -105,10 +105,10 @@
                 <div class="mobile-nav">
                   <ul class="nav__list list-reset">
   <li class="nav__item">
-    <a href="/zh-cn/about" class="nav__link">HOME</a>
+    <a href="/zh-cn/" class="nav__link">HOME</a>
   </li>
   <li class="nav__item">
-    <a href="/zh-cn/" class="nav__link">BLOG</a>
+    <a href="/zh-cn/blogs/" class="nav__link">BLOG</a>
   </li>
   </li>
   
@@ -362,78 +362,35 @@
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
-    
   
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
     
   
     
@@ -456,10 +413,10 @@
         <div class="top-nav">
           <ul class="nav__list list-reset">
   <li class="nav__item">
-    <a href="/zh-cn/about" class="nav__link">HOME</a>
+    <a href="/zh-cn/" class="nav__link">HOME</a>
   </li>
   <li class="nav__item">
-    <a href="/zh-cn/" class="nav__link">BLOG</a>
+    <a href="/zh-cn/blogs/" class="nav__link">BLOG</a>
   </li>
   </li>
   
@@ -713,78 +670,35 @@
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
+  
     
   
     
-      
-      
-    
   
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
     
   
     
@@ -961,31 +875,31 @@
 
 <h3 id="rnn的结构">RNN的结构</h3>
 
-<p>RNN的核心是一个循环单元，能够在时间步之间传递信息。每个时间步的计算依赖于当前输入和前一时刻的隐藏状态。假设我们有一个长度为<include src="/zh-cn/_YF@Gmr6swWkDj$0cIHRyBC.xml"></include>的输入序列 <include src="/zh-cn/_ZMg6oxXisdhU8cn4Y7T1Se.xml"></include>，RNN在每个时间步 <include src="/zh-cn/_zLshb8NFXHKvA0aj$cpPVY.xml"></include> 的计算过程如下：</p>
+<p>RNN的核心是一个循环单元，能够在时间步之间传递信息。每个时间步的计算依赖于当前输入和前一时刻的隐藏状态。假设我们有一个长度为<include src="/zh-cn/_J4piCu57Bj$xcYVKMWyGQX.xml"></include>的输入序列 <include src="/zh-cn/_LVoEWt@eu8zwv2SCT93qgI.xml"></include>，RNN在每个时间步 <include src="/zh-cn/_3SG90CxyorU$bJsKRY1PBH.xml"></include> 的计算过程如下：</p>
 
 <ol>
   <li>
     <p><strong>隐藏状态更新</strong>：
-<include src="/zh-cn/_KfatWUYGySudk5ewQ8XEsN.xml"></include></p>
+<include src="/zh-cn/_qfl9dv47DaLJzo@2AECnMB.xml"></include></p>
 
     <p>其中：</p>
     <ul>
-      <li><include src="/zh-cn/_7nPlYm9u@AgGpX0KVi3exh.xml"></include> 是当前时刻的隐藏状态。</li>
-      <li><include src="/zh-cn/_cYxeLlE@nOIkDUuwm9GFZ1.xml"></include> 是当前时刻的输入。</li>
-      <li><include src="/zh-cn/_C95gpfZH3wPGFVj1XNJB0U.xml"></include> 和 <include src="/zh-cn/_XkOme@82MsR40xgyBaTNLA.xml"></include> 分别是输入到隐藏状态和隐藏状态到隐藏状态的权重矩阵。</li>
-      <li><include src="/zh-cn/_yx5dKM$YVl6Or803n71jk4.xml"></include> 是偏置项。</li>
-      <li><include src="/zh-cn/_dgaQfmHn39WwxjYuJTCZci.xml"></include> 是激活函数，常用的还有ReLU等。</li>
+      <li><include src="/zh-cn/_nuQ0JaLG7mBPASe4iDVytM.xml"></include> 是当前时刻的隐藏状态。</li>
+      <li><include src="/zh-cn/_vMwsyj7pHCuizVFG4xPtNa.xml"></include> 是当前时刻的输入。</li>
+      <li><include src="/zh-cn/_umAgLeHynlJKSIZzN2sQX$.xml"></include> 和 <include src="/zh-cn/_4rQWFxBY@zCUb7aNg$tILO.xml"></include> 分别是输入到隐藏状态和隐藏状态到隐藏状态的权重矩阵。</li>
+      <li><include src="/zh-cn/_pMg4u8E@LDaqodNeFhJf02.xml"></include> 是偏置项。</li>
+      <li><include src="/zh-cn/_uWAT21JmkC@OY6SzbIs9e4.xml"></include> 是激活函数，常用的还有ReLU等。</li>
     </ul>
   </li>
   <li>
     <p><strong>输出计算</strong>（可选）：
-<include src="/zh-cn/_YbHuMmC8XDEOUlegyGJcQn.xml"></include></p>
+<include src="/zh-cn/_Ze9@BCgDoiIWdGN01n$Uwz.xml"></include></p>
 
     <p>其中：</p>
     <ul>
-      <li><include src="/zh-cn/_dYL5zkT83WoRstOGxElM0n.xml"></include> 是当前时刻的输出。</li>
-      <li><include src="/zh-cn/_ze73xCYgSHu@o60KsaPiAw.xml"></include> 是隐藏状态到输出的权重矩阵。</li>
-      <li><include src="/zh-cn/_4ANlsgPdpRHG7rEe2ixbJF.xml"></include> 是输出层的偏置项。</li>
+      <li><include src="/zh-cn/_LV@WZxuKvjfNlMRksmXQbY.xml"></include> 是当前时刻的输出。</li>
+      <li><include src="/zh-cn/_nc0IOg9tEmfArQTzBYJh$j.xml"></include> 是隐藏状态到输出的权重矩阵。</li>
+      <li><include src="/zh-cn/_JzQDRCxXZjA9VP$kYorn1W.xml"></include> 是输出层的偏置项。</li>
     </ul>
   </li>
 </ol>

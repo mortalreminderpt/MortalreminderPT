@@ -1,8 +1,9 @@
 ---
 layout: page
-title: PT's Home
+title: About (moved)
 permalink: /about/
 hidden: true
 ---
 
-{% include_relative README.md %}
+<meta http-equiv="refresh" content="0; url={{ '/' | relative_url }}">
+<p>If you are not redirected, click <a href="{{ '/' | relative_url }}">here</a>.</p>
