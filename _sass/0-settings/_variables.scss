@@ -21,9 +21,63 @@ $global-transition: all .2s;
 
 // $color-degree: 82deg;
 
-:root {
+:root,
+:root[data-theme="night"] {
   --primary-color: 192deg;
   --secondary-color: 0deg;
+
+  --accent: hsl(var(--primary-color), 92%, 52%);
+  --accent-hover: hsl(var(--primary-color), 92%, 60%);
+  --accent-soft: hsla(var(--primary-color), 92%, 52%, 0.16);
+  --accent-faint: hsla(var(--primary-color), 92%, 52%, 0.1);
+  --accent-ink: hsl(var(--primary-color), 92%, 72%);
+  --accent-ink-hover: hsl(var(--primary-color), 92%, 82%);
+  --title-marker-bg: linear-gradient(90deg, hsla(var(--primary-color), 92%, 52%, 0.72) 0%, hsla(var(--primary-color), 92%, 52%, 0.18) 70%, transparent 100%);
+  --title-marker-text: var(--heading);
+  --button-primary-bg: var(--surface-raised);
+  --button-primary-bg-hover: var(--surface);
+  --button-primary-text: var(--text-primary);
+  --button-primary-text-hover: var(--accent-ink);
+  --button-primary-border: var(--border);
+  --button-primary-border-hover: var(--accent);
+  --button-shadow: none;
+  --chip-bg: transparent;
+  --chip-border: var(--border);
+  --chip-text: var(--text-muted);
+  --chip-hover-bg: var(--accent-soft);
+  --chip-hover-border: var(--accent);
+  --chip-hover-text: var(--accent-ink);
+  --input-bg: var(--surface-raised);
+  --input-border: transparent;
+  --page-bg: hsl(var(--primary-color), 20%, 7%);
+  --surface: hsl(var(--primary-color), 25%, 10%);
+  --surface-raised: hsl(var(--primary-color), 13%, 12%);
+  --surface-glass: hsla(var(--primary-color), 25%, 10%, 0.86);
+  --heading: hsl(var(--primary-color), 0%, 93%);
+  --text-primary: hsl(var(--primary-color), 0%, 93%);
+  --text-muted: hsl(var(--primary-color), 0%, 76%);
+  --text-subtle: hsla(var(--primary-color), 0%, 93%, 0.66);
+  --border: hsla(var(--primary-color), 0%, 100%, 0.12);
+  --border-strong: hsla(var(--primary-color), 0%, 100%, 0.2);
+  --overlay-image: linear-gradient(180deg, hsla(220, 32%, 5%, 0.08) 0%, hsla(220, 32%, 5%, 0.72) 100%);
+  --overlay-hero: linear-gradient(180deg, hsla(var(--primary-color), 20%, 7%, 0.42) 0%, var(--page-bg) 100%);
+  --on-image: #fff;
+  --on-image-muted: rgba(255, 255, 255, 0.82);
+  --logo-color: #fff;
+  --shadow-card: 0 16px 36px rgba(0, 0, 0, 0.38);
+  --shadow-soft: 0 10px 28px rgba(0, 0, 0, 0.26);
+  --code-bg: #171724;
+  --code-text: #f8f8f2;
+  --code-muted: #8d8d86;
+  --code-keyword: #ae81ff;
+  --code-string: #a6e22e;
+  --code-number: #fd971f;
+  --code-function: #66d9ef;
+  --code-symbol: #f4bf75;
+  --code-error-bg: #f92672;
+  --color-scheme: dark;
+
+  // Legacy component tokens kept for older selectors during migration.
   --dark-saturation: 25%;
   --darkest-saturation: 0%;
   --dark-lightness: 10%;
@@ -31,10 +85,77 @@ $global-transition: all .2s;
   --gray-lightness: 76%;
   --light-gray-lightness: 93%;
   --white-lightness: 100%;
-
   --background-saturation: 20%;
   --background-lightness: 7%;
   --middle-grey-lightness: 100%;
+  --logo-saturation: 100%;
+  --logo-lightness: 100%;
+}
+
+:root[data-theme="day"] {
+  --accent: hsl(var(--primary-color), 78%, 36%);
+  --accent-hover: hsl(var(--primary-color), 82%, 30%);
+  --accent-soft: hsla(var(--primary-color), 72%, 36%, 0.12);
+  --accent-faint: hsla(var(--primary-color), 72%, 36%, 0.08);
+  --accent-ink: hsl(var(--primary-color), 76%, 23%);
+  --accent-ink-hover: hsl(var(--primary-color), 82%, 18%);
+  --title-marker-bg: linear-gradient(90deg, hsla(var(--primary-color), 72%, 36%, 0.18) 0%, hsla(var(--primary-color), 72%, 36%, 0.08) 58%, transparent 100%);
+  --title-marker-text: var(--accent-ink);
+  --button-primary-bg: var(--accent-soft);
+  --button-primary-bg-hover: hsla(var(--primary-color), 72%, 36%, 0.18);
+  --button-primary-text: var(--accent-ink);
+  --button-primary-text-hover: var(--accent-ink-hover);
+  --button-primary-border: hsla(var(--primary-color), 68%, 30%, 0.22);
+  --button-primary-border-hover: hsla(var(--primary-color), 68%, 30%, 0.34);
+  --button-shadow: 0 8px 18px hsla(var(--primary-color), 64%, 28%, 0.08);
+  --chip-bg: var(--accent-faint);
+  --chip-border: hsla(var(--primary-color), 62%, 32%, 0.18);
+  --chip-text: var(--accent-ink);
+  --chip-hover-bg: var(--button-primary-bg-hover);
+  --chip-hover-border: var(--button-primary-border-hover);
+  --chip-hover-text: var(--accent-ink-hover);
+  --input-bg: #ffffff;
+  --input-border: var(--border);
+  --page-bg: #f5f7fa;
+  --surface: #ffffff;
+  --surface-raised: #fbfcfe;
+  --surface-glass: rgba(255, 255, 255, 0.88);
+  --heading: #111827;
+  --text-primary: #242933;
+  --text-muted: #667085;
+  --text-subtle: #7a8494;
+  --border: #d9e0ea;
+  --border-strong: #c6d0dc;
+  --overlay-image: linear-gradient(180deg, rgba(15, 23, 42, 0.04) 0%, rgba(15, 23, 42, 0.68) 100%);
+  --overlay-hero: linear-gradient(180deg, rgba(15, 23, 42, 0.18) 0%, rgba(245, 247, 250, 0.92) 84%, var(--page-bg) 100%);
+  --on-image: #fff;
+  --on-image-muted: rgba(255, 255, 255, 0.86);
+  --logo-color: #1f2937;
+  --shadow-card: 0 14px 34px rgba(20, 32, 48, 0.12);
+  --shadow-soft: 0 8px 22px rgba(20, 32, 48, 0.1);
+  --code-bg: #f1f5f9;
+  --code-text: #1f2937;
+  --code-muted: #64748b;
+  --code-keyword: #7c3aed;
+  --code-string: #047857;
+  --code-number: #b45309;
+  --code-function: #0369a1;
+  --code-symbol: #be123c;
+  --code-error-bg: #fecdd3;
+  --color-scheme: light;
+
+  --dark-saturation: 0%;
+  --darkest-saturation: 0%;
+  --dark-lightness: 100%;
+  --darkest-lightness: 98%;
+  --gray-lightness: 42%;
+  --light-gray-lightness: 17%;
+  --white-lightness: 10%;
+  --background-saturation: 0%;
+  --background-lightness: 96%;
+  --middle-grey-lightness: 100%;
+  --logo-saturation: 100%;
+  --logo-lightness: 20%;
 }
 
 // *****************
@@ -58,7 +179,7 @@ $quote-line-height: 1.7;
 // Headings
 $heading-font-weight: 900;
 $heading-font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
-$heading-color: hsl(var(--primary-color), 0%, var(--light-gray-lightness));
+$heading-color: var(--heading);
 
 $font-size-h1:  36px;
 $font-size-h2:  28px;

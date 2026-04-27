@@ -3,7 +3,7 @@
   position: relative;
   margin-bottom: 32px;
   overflow: hidden;
-  background-color: hsl(var(--primary-color), var(--dark-saturation), var(--dark-lightness));
+  background-color: var(--surface);
   @media only screen and (max-width: $mobile) {
     box-shadow: none;
   }
@@ -13,7 +13,7 @@
   position: relative;
   margin-bottom: 32px;
   overflow: hidden;
-  background-color: hsl(var(--primary-color), var(--dark-saturation), var(--dark-lightness));
+  background-color: var(--surface);
   @media only screen and (max-width: $mobile) {
     box-shadow: none;
   }
@@ -29,7 +29,7 @@
     left: 0;
     right: 0;
     z-index: 1;
-    background: linear-gradient(180deg, hsla(var(--primary-color), var(--background-saturation), var(--background-lightness), 50%), hsla(var(--primary-color), var(--background-saturation), var(--background-lightness), 100%));
+    background: var(--overlay-hero);
   }
 }
 
@@ -43,15 +43,14 @@
     left: 0;
     right: 0;
     z-index: 1;
-    background: linear-gradient(180deg, hsla(var(--primary-color), var(--dark-saturation), var(--background-lightness), 0.4) 33%, hsla(var(--primary-color), var(--background-saturation), var(--background-lightness), 100%));
+    background: var(--overlay-hero);
   }
 }
 
 .hero__image {
   min-height: 664px;
   user-select: none;
-  // background-color: hsl(var(--primary-color), var(--dark-saturation), var(--dark-lightness));
-  background-color: hsla(var(--primary-color), var(--dark-saturation), var(--background-lightness), 0.6);
+  background-color: var(--surface);
   img {
     position: absolute;
     top: 0px;
@@ -100,7 +99,7 @@
   font-size: 60px;
   margin: 0 0 10px;
   line-height: 1;
-  color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+  color: var(--on-image);
   @media only screen and (max-width: $mobile) {
     font-size: 43px;
     margin: 0 0 5px;
@@ -110,7 +109,7 @@
 .hero__desc {
   font-family: 'Fraunces', serif;
   font-size: 24px;
-  color: hsl(var(--primary-color), var(darkest-saturation), var(gray-lightness));
+  color: var(--on-image-muted);
   margin: 0;
   @media only screen and (max-width: $mobile) {
     font-size: 16px;
@@ -121,6 +120,12 @@
 /* Hero Withou Image */
 .hero-without-image {
   margin: 192px 0 96px;
+  .hero__title {
+    color: var(--heading);
+  }
+  .hero__desc {
+    color: var(--text-muted);
+  }
   .hero-inner {
     display: flex;
     align-items: center;

@@ -10,11 +10,11 @@
   -webkit-appearance: none;
   text-align: center;
   text-decoration: none;
-  color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+  color: var(--text-primary);
   transition: all 0.2s ease;
   cursor: pointer;
   &:hover {
-    color: hsl(var(--primary-color), 100%, 50%);
+    color: var(--accent);
   }
 
   &--primary {
@@ -22,10 +22,14 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
-    background-color: hsl(var(--primary-color), 13%,  var(--dark-lightness));
+    color: var(--button-primary-text);
+    background-color: var(--button-primary-bg);
+    border: 1px solid var(--button-primary-border);
+    box-shadow: var(--button-shadow);
     &:hover {
-      color: hsl(var(--primary-color), 100%, 50%);
-      background-color: hsl(var(--primary-color), 13%,  var(--dark-lightness));// hsl(from hsl(var(--primary-color), 100%, 50%) h s calc(l - 5%));// darken(nth($brand-color,2), 5%);
+      color: var(--button-primary-text-hover);
+      background-color: var(--button-primary-bg-hover);
+      border-color: var(--button-primary-border-hover);
     }
   }
 
@@ -40,11 +44,15 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: all .2s ease;
-    background-color: hsl(var(--primary-color), var(--dark-saturation), var(--dark-lightness));
+    color: var(--button-primary-text);
+    background-color: var(--button-primary-bg);
+    border: 1px solid var(--button-primary-border);
+    box-shadow: var(--button-shadow);
 
     &:hover {
-      color: hsl(var(--primary-color), 100%, 50%);
-      background-color: hsl(var(--primary-color), 13%,  var(--dark-lightness));
+      color: var(--button-primary-text-hover);
+      background-color: var(--button-primary-bg-hover);
+      border-color: var(--button-primary-border-hover);
     }
   }
 

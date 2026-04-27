@@ -99,7 +99,7 @@ abbr[title] {
 b,
 strong {
   font-weight: bolder;
-  color: hsl(var(--primary-color), 100%, 50%);
+  color: var(--accent);
 }
 
 /**

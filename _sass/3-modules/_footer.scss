@@ -22,7 +22,7 @@
   margin-bottom: 36px;
   font-size: 24px;
   line-height: 1;
-  color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+  color: var(--title-marker-text);
   &::after {
     content: "";
     position: absolute;
@@ -34,7 +34,7 @@
     width: 106px;
     height: 38px;
     border-radius: 4px 0px 0px 4px;
-    background: linear-gradient(90deg, hsl(var(--primary-color), 100%, 50%) -5.19%, hsla(var(--primary-color),20%,7%, 0) 100%);
+    background: var(--title-marker-bg);
   }
   @media only screen and (max-width: $desktop) {
     font-size: 24px;
@@ -46,8 +46,8 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  --title-font-color: hsl(var(--primary-color), 0%,  var(--light-gray-lightness));
-  --content-font-color: hsl(var(--primary-color), 0%,  var(--light-gray-lightness));
+  --title-font-color: var(--heading);
+  --content-font-color: var(--text-muted);
   color: var(--content-font-color);
 
   &:last-child {
@@ -70,7 +70,7 @@
   margin-right: 20px;
   border-radius: 16px;
   overflow: hidden;
-  background: hsl(var(--primary-color), var(--dark-saturation), var(--dark-lightness));
+  background: var(--surface);
   img {
     position: absolute;
     top: 0;
@@ -114,13 +114,14 @@
     font-size: 12px;
     line-height: 10px;
     font-weight: 700;
-    border: 2px solid rgba(255,255,255,0.1);
+    background: var(--chip-bg);
+    border: 2px solid var(--chip-border);
     border-radius: 24px;
-    color: hsl(var(--primary-color), var(darkest-saturation), var(gray-lightness));
-    border-color: hsla(var(--primary-color), 100%, 70%, 0.1);
+    color: var(--chip-text);
     &:hover {
-      border-color: hsl(var(--primary-color), 100%, 50%);
-      color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+      background: var(--chip-hover-bg);
+      border-color: var(--chip-hover-border);
+      color: var(--chip-hover-text);
     }
   }
 }
@@ -131,7 +132,7 @@
   margin-bottom: 24px;
   font-size: 16px;
   line-height: 24px;
-  color: hsl(var(--primary-color), var(darkest-saturation), var(gray-lightness));
+  color: var(--text-muted);
 }
 
 .subscribe-group-top {
@@ -148,20 +149,20 @@
     line-height: 20px;
     font-weight: 700;
     border-radius: 8px;
-    color: hsl(var(--primary-color), 0%,  var(--white-lightness));
-    background-color: hsl(var(--primary-color), 13%,  var(--dark-lightness));
-    border: 2px solid transparent;
+    color: var(--text-primary);
+    background-color: var(--input-bg);
+    border: 2px solid var(--input-border);
     outline: 0;
     -webkit-appearance: none;
     box-sizing: border-box;
     transition: border-color .2s ease-in-out;
     cursor: text;
     &::placeholder {
-      color: hsl(var(--primary-color), 0%, var(--light-gray-lightness));
+      color: var(--text-muted);
     }
     &:focus {
-      color: hsl(var(--primary-color), 0%,  var(--white-lightness));
-      border-color: hsl(var(--primary-color), 100%, 50%);
+      color: var(--text-primary);
+      border-color: var(--accent);
     }
   }
 
@@ -174,7 +175,7 @@
 .footer {
   position: relative;
   padding: 64px 0;
-  border-top: 2px solid hsl(var(--primary-color), var(--dark-saturation), var(--dark-lightness));
+  border-top: 2px solid var(--border);
 
   .footer__inner {
     display: flex;
@@ -197,12 +198,12 @@
 /* Copyright */
 .copyright {
   font-size: 13px;
-  color: hsl(var(--primary-color), var(darkest-saturation), var(gray-lightness));
+  color: var(--text-muted);
   a {
     font-weight: 500;
-    color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+    color: var(--text-primary);
     &:hover {
-      color: hsl(var(--primary-color), 100%, 50%);
+      color: var(--accent);
     }
   }
 }

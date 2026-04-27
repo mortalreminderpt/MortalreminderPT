@@ -46,6 +46,24 @@
   <!-- <script src="/js/vendors/prism.js"></script>
   <link rel="stylesheet" href="/css/prism.css"> -->
 
+  <script>
+    (function() {
+      var theme;
+      try {
+        theme = sessionStorage.getItem('theme');
+      } catch (error) {}
+      if (theme !== 'day' && theme !== 'night') {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          theme = 'night';
+        } else {
+          var hour = new Date().getHours();
+          theme = hour < 6 || hour >= 18 ? 'night' : 'day';
+        }
+      }
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+
   <style>
     {% capture include_to_scssify %}
       {% include main.scss %}

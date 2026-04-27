@@ -9,7 +9,7 @@
   overflow: auto;
   opacity: 0;
   visibility: hidden;
-  background-color: hsl(var(--primary-color), var(--dark-saturation), var(--dark-lightness));
+  background-color: var(--surface);
   transition: all 0.25s ease-in;
   &.is-visible {
     opacity: 1;
@@ -18,7 +18,7 @@
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     -webkit-backdrop-filter: saturate(180%) blur(24px);
     backdrop-filter: saturate(180%) blur(24px);
-    background-color: hsla(var(--primary-color), var(--dark-saturation), var(--dark-lightness), .9);
+    background-color: var(--surface-glass);
   }
 }
 
@@ -36,11 +36,11 @@
     transform: translateY(-50%);
     font-size: 30px;
     line-height: 1;
-    color: hsla(var(--primary-color), 0%, var(--light-gray-lightness), .5);
+    color: var(--text-muted);
     transition: all .25s;
     cursor: pointer;
     &:hover {
-      color: hsl(var(--primary-color), 0%, var(--light-gray-lightness));
+      color: var(--accent);
     }
   }
 
@@ -66,25 +66,25 @@
     font-weight: 900;
     line-height: 42px;
     border-radius: 8px;
-    border: 4px solid hsla(var(--primary-color), 0%, var(--light-gray-lightness), .1);
+    border: 4px solid var(--border);
     transition: all .3s;
-    color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+    color: var(--text-primary);
     background-color: transparent;
 
     &::-webkit-input-placeholder {
       font-weight: 900;
-      color: hsla(var(--primary-color), 0%, var(--light-gray-lightness), .8);
+      color: var(--text-muted);
     }
     &::placeholder {
       font-weight: 900;
-      color: hsla(var(--primary-color), 0%, var(--light-gray-lightness), .8);
+      color: var(--text-muted);
     }
     &::-ms-clear {
       display: none;
     }
     &:focus {
-      color: hsl(var(--primary-color), 0%, var(--light-gray-lightness));
-      background: hsl(var(--primary-color), var(--dark-saturation), var(--dark-lightness));
+      color: var(--text-primary);
+      background: var(--surface-raised);
     }
 
     @media only screen and (max-width: $mobile) {

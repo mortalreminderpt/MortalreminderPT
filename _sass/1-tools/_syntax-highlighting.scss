@@ -4,13 +4,13 @@
 
 .highlight {
   border-radius: 4px;
-  color: hsl(var(--primary-color), 0%,  var(--white-lightness));
-  background: hsl(var(--primary-color), 13%,  var(--dark-lightness));
+  color: var(--code-text);
+  background: var(--code-bg);
 
   pre { white-space: pre; overflow: auto; }
 
   .highlighter-rouge & {
-    background: #171724;
+    background: var(--code-bg);
   }
 
   table td {
@@ -22,107 +22,107 @@
   }
 
   .w {
-    color: #f8f8f2;
-    background-color: #272822;
+    color: var(--code-text);
+    background-color: var(--code-bg);
   }
 
   .err {
-    color: #272822;
-    background-color: #f92672;
+    color: var(--code-text);
+    background-color: var(--code-error-bg);
   }
 
   .c, .ch, .cd, .cm, .cpf, .c1, .cs {
-    color: #75715e;
+    color: var(--code-muted);
   }
 
   .cp {
-    color: #f4bf75;
+    color: var(--code-symbol);
   }
 
   .nt {
-    color: #f4bf75;
+    color: var(--code-symbol);
   }
 
   .o, .ow {
-    color: #f8f8f2;
+    color: var(--code-text);
   }
 
   .p, .pi {
-    color: #f8f8f2;
+    color: var(--code-text);
   }
 
   .gi {
-    color: #a6e22e;
+    color: var(--code-string);
   }
 
   .gd {
-    color: #f92672;
+    color: var(--code-symbol);
   }
 
   .gh {
-    color: #66d9ef;
-    background-color: #272822;
+    color: var(--code-function);
+    background-color: var(--code-bg);
     font-weight: bold;
   }
 
   .k, .kn, .kp, .kr, .kv {
-    color: #ae81ff;
+    color: var(--code-keyword);
   }
 
   .kc {
-    color: #fd971f;
+    color: var(--code-number);
   }
 
   .kt {
-    color: #fd971f;
+    color: var(--code-number);
   }
 
   .kd {
-    color: #fd971f;
+    color: var(--code-number);
   }
 
   .s, .sb, .sc, .dl, .sd, .s2, .sh, .sx, .s1 {
-    color: #a6e22e;
+    color: var(--code-string);
   }
 
   .sa {
-    color: #ae81ff;
+    color: var(--code-keyword);
   }
 
   .sr {
-    color: #a1efe4;
+    color: var(--code-function);
   }
 
   .si {
-    color: #cc6633;
+    color: var(--code-symbol);
   }
 
   .se {
-    color: #cc6633;
+    color: var(--code-symbol);
   }
 
   .nn {
-    color: #f4bf75;
+    color: var(--code-symbol);
   }
 
   .nc {
-    color: #f4bf75;
+    color: var(--code-symbol);
   }
 
   .no {
-    color: #f4bf75;
+    color: var(--code-symbol);
   }
 
   .na {
-    color: #66d9ef;
+    color: var(--code-function);
   }
 
   .m, .mb, .mf, .mh, .mi, .il, .mo, .mx {
-    color: #a6e22e;
+    color: var(--code-number);
   }
 
   .ss {
-    color: #a6e22e;
+    color: var(--code-string);
   }
 
 }

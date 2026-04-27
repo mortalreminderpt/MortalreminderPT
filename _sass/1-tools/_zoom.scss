@@ -18,7 +18,7 @@ img.zoom-img {
 }
 .zoom-overlay {
   z-index: 420;
-  background: hsl(var(--primary-color),20%,7%);
+  background: var(--surface);
   position: fixed;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@ img.zoom-img {
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     -webkit-backdrop-filter: saturate(180%) blur(24px);
     backdrop-filter: saturate(180%) blur(24px);
-    background: hsla(var(--primary-color),20%,7%, .8);
+    background: var(--surface-glass);
   }
 }
 .zoom-overlay-open .zoom-overlay {

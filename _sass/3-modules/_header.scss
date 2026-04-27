@@ -4,7 +4,7 @@
   margin: 0 0;
   padding: 15px 0;
   transition: $global-transition;
-  color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+  color: var(--on-image);
   position: absolute;
   top: 0;
   z-index: 100;
@@ -13,7 +13,11 @@
     // position: absolute;
     // top: 0;
     // z-index: 100;
-    background-color: hsla(var(--primary-color), var(--background-saturation), var(--background-lightness), 50%);
+    color: var(--heading);
+    background-color: var(--surface-glass);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: saturate(180%) blur(18px);
+    -webkit-backdrop-filter: saturate(180%) blur(18px);
   }
 
   @media only screen and (max-width: $desktop) {
@@ -40,24 +44,24 @@
   display: flex;
   max-height: max-content;
   vertical-align: middle;
-  color: hsl(var(--primary-color), 0%, var(--light-gray-lightness));
+  color: inherit;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: -1px;
   .logo__image {
     transform: translateY(-200px);
-    filter: drop-shadow(0 200px hsl(var(--primary-color), 0%, var(--logo-lightness)));
+    filter: drop-shadow(0 200px var(--logo-color));
   }
   @media (any-hover: hover){
     &:hover {
       .logo__image {
-        filter: drop-shadow(0 200px hsl(var(--primary-color), var(--logo-saturation), 50%));
+        filter: drop-shadow(0 200px var(--accent));
       }
     }
   }
   &:active {
     .logo__image {
-      filter: drop-shadow(0 200px hsl(var(--primary-color), var(--logo-saturation), 50%));
+      filter: drop-shadow(0 200px var(--accent));
     }
   }
 }
@@ -98,13 +102,13 @@
     height: 40px;
     text-align: center;
     line-height: 40px;
-    color: hsla(var(--primary-color), 0%,  var(--white-lightness), .5);
+    color: var(--text-muted);
     transition: all .25s ease;
     cursor: pointer;
     .child {
       margin-left: 20px;
       &:hover {
-        color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+        color: var(--accent);
       }
     }
   }
@@ -122,11 +126,11 @@
     height: 40px;
     text-align: center;
     line-height: 40px;
-    color: hsla(var(--primary-color), 0%,  var(--white-lightness), .5);
+    color: var(--text-muted);
     transition: all .25s ease;
     cursor: pointer;
     &:hover {
-      color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+      color: var(--accent);
     }
   }
 
@@ -170,9 +174,9 @@
         //   1px -1px 0 #000,
         //   -1px  1px 0 #000,
         //   1px  1px 0 #000;
-        color: hsl(var(--primary-color), 0%, var(--light-gray-lightness));
+        color: inherit;
         &:hover {
-          color: hsl(var(--primary-color), 100%, 50%);
+          color: var(--accent);
         }
       }
     }
@@ -200,9 +204,9 @@
         font-weight: 700;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: hsl(var(--primary-color), 0%, var(--light-gray-lightness));
+        color: var(--heading);
         &:hover {
-          color: hsl(var(--primary-color), 100%, 50%);
+          color: var(--accent);
         }
       }
 
@@ -217,7 +221,7 @@
   display: flex;
   align-items: center;
   font-size: 24px;
-  color: hsl(var(--primary-color), 0%, var(--light-gray-lightness));
+  color: inherit;
 
   .search-button {
     display: flex;
@@ -230,8 +234,9 @@
     }
 
     &:hover {
+      color: var(--accent);
       span {
-        color: hsl(var(--primary-color), 100%, 50%);
+        color: var(--accent);
       }
     }
 
@@ -265,6 +270,9 @@
   .nav__icon {
     margin-left: 40px;
     cursor: pointer;
+    &:hover {
+      color: var(--accent);
+    }
   }
 }
 
@@ -278,7 +286,7 @@
   z-index: 100;
   opacity: 0;
   visibility: hidden;
-  background-color: hsl(var(--primary-color), var(--dark-saturation), var(--dark-lightness));
+  background-color: var(--surface);
   transition: all 0.25s ease-in;
   &.is-open {
     opacity: 1;
@@ -288,7 +296,7 @@
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     -webkit-backdrop-filter: saturate(180%) blur(24px);
     backdrop-filter: saturate(180%) blur(24px);
-    background-color: hsla(var(--primary-color), var(--dark-saturation), var(--dark-lightness), .8);
+    background-color: var(--surface-glass);
   }
   @media only screen and (min-width: $desktop) {
     display: none;
@@ -314,7 +322,7 @@
   padding-bottom: 15px;
   font-size: 40px;
   text-align: center;
-  color: hsl(var(--primary-color), 0%, var(--light-gray-lightness));
+  color: var(--heading);
   &::after {
     content: "";
     position: absolute;
@@ -324,7 +332,7 @@
     display: block;
     width: 25px;
     height: 2px;
-    background-color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+    background-color: var(--border-strong);
   }
   @media only screen and (max-width: $tablet) {
     margin-bottom: 30px;

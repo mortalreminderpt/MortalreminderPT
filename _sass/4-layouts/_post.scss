@@ -54,7 +54,7 @@
   height: 36px;
   padding: 3px;
   margin-right: 8px;
-  border: 2px solid hsl(var(--primary-color), 100%, 50%);
+  border: 2px solid var(--accent);
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
@@ -66,8 +66,8 @@
   min-height: 280px;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 5px 10px 0px rgba(0,0,0,.15);
-  background-color: hsl(var(--primary-color), var(--dark-saturation), var(--dark-lightness));
+  box-shadow: var(--shadow-soft);
+  background-color: var(--surface);
 
   @media only screen and (max-width: $tablet) {
     padding-top: 65%;
@@ -86,7 +86,7 @@
   }
 
   .post__date {
-    color: hsl(var(--primary-color), var(darkest-saturation), var(gray-lightness));
+    color: var(--text-muted);
   }
 }
 
@@ -110,7 +110,7 @@
   font-size: 13px;
   line-height: 30px;
   font-weight: 500;
-  color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+  color: var(--text-muted);
 }
 
 .post-tags {
@@ -121,12 +121,14 @@
     font-size: 12px;
     line-height: 10px;
     font-weight: 700;
-    border: 2px solid hsla(var(--primary-color), 0%,  var(--white-lightness), 0.2);
+    background: var(--chip-bg);
+    border: 2px solid var(--chip-border);
     border-radius: 24px;
-    color: hsl(var(--primary-color), var(darkest-saturation), var(gray-lightness));
+    color: var(--chip-text);
     &:hover {
-      color: hsl(var(--primary-color), 0%,  var(--white-lightness));
-      border-color: hsl(var(--primary-color), 100%, 50%);
+      background: var(--chip-hover-bg);
+      color: var(--chip-hover-text);
+      border-color: var(--chip-hover-border);
     }
   }
 }
@@ -142,7 +144,7 @@
     height: 36px;
     padding: 3px;
     margin-right: 8px;
-    border: 2px solid hsl(var(--primary-color), 100%, 50%);
+    border: 2px solid var(--accent);
     border-radius: 50%;
     overflow: hidden;
     img {
@@ -157,25 +159,26 @@
 
   &-link {
     font-size: 13px;
-    color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+    color: var(--text-primary);
     &:hover {
-      color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+      color: var(--accent);
     }
   }
 
   span {
-    color: hsla(var(--primary-color), 0%,  var(--white-lightness), .8);
+    color: var(--text-muted);
   }
 }
 
 .post__content,
 .page__content {
-  color: hsl(var(--primary-color), var(darkest-saturation), var(gray-lightness));
+  color: var(--text-primary);
   a {
-    border-bottom: 2px solid hsla(var(--primary-color), 100%, 50%, 0.5);
+    border-bottom: 2px solid var(--accent-soft);
+    color: var(--text-primary);
     &:hover {
-      border-color: hsl(var(--primary-color), 100%, 50%);
-      color: hsl(var(--primary-color), 0%, var(--light-gray-lightness));
+      border-color: var(--accent);
+      color: var(--accent);
       text-decoration: none;
     }
   }
@@ -192,7 +195,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 16px;
-    background: hsl(var(--primary-color), 13%,  var(--dark-lightness));
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
 
     .share__link {
       position: relative;
@@ -201,7 +205,7 @@
       align-items: center;
       padding: 28px 24px;
       font-size: 20px;
-      color: hsl(var(--primary-color), 0%, var(--light-gray-lightness));
+      color: var(--text-primary);
       transition: all .2s;
       &:first-child {
         padding-left: 48px;
@@ -219,10 +223,10 @@
         display: block;
         width: 1px;
         height: 12px;
-        background: hsla(var(--primary-color), 0%, var(--light-gray-lightness), .08);
+        background: var(--border);
       }
       &:hover {
-        color: hsl(var(--primary-color), 100%, 50%);
+        color: var(--accent);
       }
     }
   }
@@ -249,8 +253,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-  --title-font-color: hsl(var(--primary-color), 0%,  var(--middle-grey-lightness));
-  --content-font-color: hsl(var(--primary-color), 0%,  var(--middle-grey-lightness));
+  --title-font-color: var(--on-image);
+  --content-font-color: var(--on-image-muted);
   a:first-child {
     margin-right: 2%;
   }
@@ -275,11 +279,11 @@
     border-radius: 30px;
     overflow: hidden;
     transition: transform .2s,-webkit-transform .2s;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,.15);
+    box-shadow: var(--shadow-soft);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: hsl(var(--primary-color), var(--dark-saturation), var(--dark-lightness));
+    background-color: var(--surface);
     &::after {
       content: "";
       display: block;
@@ -289,7 +293,7 @@
       width: 100%;
       height: 100%;
       // background-color: rgba(#10111e, 0.6);
-      background-color: hsla(var(--primary-color), 40%, var(--background-lightness), 0.4);
+      background: var(--overlay-image);
       pointer-events: none;
     }
     &:hover {
@@ -302,7 +306,7 @@
       font-size: 12px;
       font-weight: 500;
       text-transform: uppercase;
-      color: var(--content-font-color);//hsl(var(--primary-color), 0%, var(--light-gray-lightness));
+      color: var(--content-font-color);
     }
 
     .post__nav-image {
@@ -338,7 +342,7 @@
       line-height: 1;
       color: var(--title-font-color);
       a {
-        color: var(--title-font-color);//hsl(var(--primary-color), 0%, var(--light-gray-lightness));
+        color: var(--title-font-color);
       }
     }
   }
@@ -355,7 +359,7 @@
     .prev, .next {
       width: 100%;
       border-radius: 16px;
-      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+      box-shadow: var(--shadow-soft);
 
       img {
         border-radius: 16px;
@@ -386,7 +390,7 @@
     margin-bottom: 36px;
     font-size: 24px;
     line-height: 1;
-    color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+    color: var(--title-marker-text);
     &::after {
       content: "";
       position: absolute;
@@ -398,7 +402,7 @@
       width: 106px;
       height: 38px;
       border-radius: 4px 0px 0px 4px;
-      background: linear-gradient(90deg, hsl(var(--primary-color), 100%, 50%) -5.19%, hsla(var(--primary-color),20%,7%, 0) 100%);
+      background: var(--title-marker-bg);
     }
     @media only screen and (max-width: $desktop) {
       font-size: 24px;
@@ -409,7 +413,8 @@
 /* Disqus Comments */
 .disqus-inner {
   border-radius: 16px;
-  background: hsl(var(--primary-color), 13%,  var(--dark-lightness));
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
 }
 
 .post-comments {

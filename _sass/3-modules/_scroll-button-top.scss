@@ -18,21 +18,16 @@
   line-height: 40px;
   text-align: center;
   border-radius: 8px;
-  background-color: hsl(var(--primary-color), var(--dark-saturation), var(--dark-lightness));
-  color: hsl(var(--primary-color), 0%,  var(--white-lightness));
+  background-color: var(--surface-raised);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
   margin-top: 20px;
   @media (any-hover: hover){
     &:hover {
-      color: hsl(var(--primary-color), var(--dark-saturation), var(--dark-lightness));
-      background: hsl(var(--primary-color), 100%, 50%);
+      color: var(--on-image);
+      background: var(--accent);
     }
   }
-
-  // &:active {
-  //   color: hsl(var(--primary-color), var(--dark-saturation), var(--dark-lightness));
-  //   background: hsl(var(--primary-color), 100%, 50%);
-  // }
-
   // &.is-active {
   //   right: 30px;
   // }
