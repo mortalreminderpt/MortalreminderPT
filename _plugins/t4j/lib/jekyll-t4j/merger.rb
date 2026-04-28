@@ -1,17 +1,18 @@
 # frozen_string_literal: true
 
+require "digest"
+
 module Jekyll::T4J
     module Merger
         @@table = {}
-        @@rnd_range = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@".chars
 
         def self.ask_for_merge(filedata, extname)
             request = @@table[filedata]
             
             if request then
-                request[1] << extname
+                request[1] << extname unless request[1].include?(extname)
             else
-                basename = @@rnd_range.sample(22).join.prepend("_").freeze
+                basename = "_#{Digest::SHA256.hexdigest(filedata)}".freeze
                 request = @@table[filedata] = [basename, [extname]]
             end
 

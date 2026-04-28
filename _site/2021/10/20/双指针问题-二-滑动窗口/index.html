@@ -803,7 +803,7 @@
 
 <h2 id="209-minimum-size-subarray-sum"><a href="https://leetcode-cn.com/problems/minimum-size-subarray-sum/">209. Minimum Size Subarray Sum</a></h2>
 
-<p>This problem is the most basic sliding window problem. We can use two pointers <include src="/_aNgJeRG4Sf7wmAEHtvIbL1.xml"></include> and <include src="/_G3t6pnDCZKUOJ59gmFNy42.xml"></include> to represent the left and right ends of the window, then move the pointer <include src="/_G3t6pnDCZKUOJ59gmFNy42.xml"></include> continuously to the right. Meanwhile, use a variable <include src="/_RK@7Wn9krBfmSZtExU6Aq8.xml"></include> to record the sum of the interval <include src="/_VL2uSRvKJiOYBbnM4p8c@W.xml"></include>. If <include src="/_RK@7Wn9krBfmSZtExU6Aq8.xml"></include> meets the condition, record the difference between <include src="/_aNgJeRG4Sf7wmAEHtvIbL1.xml"></include> and <include src="/_G3t6pnDCZKUOJ59gmFNy42.xml"></include> as the answer, and move the pointer <include src="/_aNgJeRG4Sf7wmAEHtvIbL1.xml"></include>. Here’s the code:</p>
+<p>This problem is the most basic sliding window problem. We can use two pointers <include src="/_aab99a218aed3ad2003e09e3b52db2f11c3e0c0c911c2bb5c8654da7cb591149.xml"></include> and <include src="/_1827c09128c21813b2540b2c42401eb28885e5d47d731f0e174bdb15b5fc20b0.xml"></include> to represent the left and right ends of the window, then move the pointer <include src="/_1827c09128c21813b2540b2c42401eb28885e5d47d731f0e174bdb15b5fc20b0.xml"></include> continuously to the right. Meanwhile, use a variable <include src="/_7c84e4e138373e38dd81da041e3fcf1ce2bdbb4ec9c34ce9eb3e599960359242.xml"></include> to record the sum of the interval <include src="/_83ee5b565e515490d9ea90aca5494090bdb15b1959d3f01d9223c539ede40d5f.xml"></include>. If <include src="/_7c84e4e138373e38dd81da041e3fcf1ce2bdbb4ec9c34ce9eb3e599960359242.xml"></include> meets the condition, record the difference between <include src="/_aab99a218aed3ad2003e09e3b52db2f11c3e0c0c911c2bb5c8654da7cb591149.xml"></include> and <include src="/_1827c09128c21813b2540b2c42401eb28885e5d47d731f0e174bdb15b5fc20b0.xml"></include> as the answer, and move the pointer <include src="/_aab99a218aed3ad2003e09e3b52db2f11c3e0c0c911c2bb5c8654da7cb591149.xml"></include>. Here’s the code:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>
@@ -827,9 +827,9 @@
 
 <p>The solution to this problem is very similar to the previous one, but instead of finding the length of the interval, we’re looking for the number of consecutive subintervals.</p>
 
-<p>For the number of subintervals, we can observe that if <include src="/_VL2uSRvKJiOYBbnM4p8c@W.xml"></include> is a valid window, then <include src="/_deZisRKUcDxJFwfpM9yAm4.xml"></include> for <include src="/_j0@xM5rSGDabyen9o8vq6H.xml"></include> must also be valid windows.</p>
+<p>For the number of subintervals, we can observe that if <include src="/_83ee5b565e515490d9ea90aca5494090bdb15b1959d3f01d9223c539ede40d5f.xml"></include> is a valid window, then <include src="/_5ba194d233aa5f25ca53c7ea9a70021e2ddb5a6f277b6aad6568649179a7e563.xml"></include> for <include src="/_3885c6bf23bef33461c54150eae5d8adc90adec4323e2ccc199ed8917c7d202a.xml"></include> must also be valid windows.</p>
 
-<p>For any valid interval <include src="/_VL2uSRvKJiOYBbnM4p8c@W.xml"></include>, the number of subsets ending at <include src="/_G3t6pnDCZKUOJ59gmFNy42.xml"></include> is always <include src="/_@JD5leHZKmE4dsbPanwYVf.xml"></include>. Therefore, before updating <include src="/_G3t6pnDCZKUOJ59gmFNy42.xml"></include> each time, we add <include src="/_@JD5leHZKmE4dsbPanwYVf.xml"></include> to the answer. Here’s the code:</p>
+<p>For any valid interval <include src="/_83ee5b565e515490d9ea90aca5494090bdb15b1959d3f01d9223c539ede40d5f.xml"></include>, the number of subsets ending at <include src="/_1827c09128c21813b2540b2c42401eb28885e5d47d731f0e174bdb15b5fc20b0.xml"></include> is always <include src="/_17076a88d90585348539b154874b19dc1e3e8cc10049e1d072918305cca366a4.xml"></include>. Therefore, before updating <include src="/_1827c09128c21813b2540b2c42401eb28885e5d47d731f0e174bdb15b5fc20b0.xml"></include> each time, we add <include src="/_17076a88d90585348539b154874b19dc1e3e8cc10049e1d072918305cca366a4.xml"></include> to the answer. Here’s the code:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>
@@ -852,7 +852,7 @@
 
 <h2 id="3-longest-substring-without-repeating-characters"><a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/">3. Longest Substring Without Repeating Characters</a></h2>
 
-<p>Unlike the previous contiguous subsequence problem, this problem requires the length of contiguous substrings. Therefore, we need to modify the condition. If duplicate characters appear within the window interval, we update <include src="/_aNgJeRG4Sf7wmAEHtvIbL1.xml"></include>. Here’s the code:</p>
+<p>Unlike the previous contiguous subsequence problem, this problem requires the length of contiguous substrings. Therefore, we need to modify the condition. If duplicate characters appear within the window interval, we update <include src="/_aab99a218aed3ad2003e09e3b52db2f11c3e0c0c911c2bb5c8654da7cb591149.xml"></include>. Here’s the code:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>
@@ -875,7 +875,7 @@
 
 <h2 id="438-find-all-anagrams-in-a-string"><a href="https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/">438. Find All Anagrams in a String</a></h2>
 
-<p>The solution to this problem is quite similar to the previous one, but instead of comparing characters, we’re comparing strings. Additionally, the length of the window in this problem remains constant, which is the length of <include src="/_KdBRze3xhLQ4XYPTOEsiCb.xml"></include>.</p>
+<p>The solution to this problem is quite similar to the previous one, but instead of comparing characters, we’re comparing strings. Additionally, the length of the window in this problem remains constant, which is the length of <include src="/_a260382ae7f2024c5b7f530818d038a184fe8f4d8507782b2ed544d9ea480095.xml"></include>.</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>

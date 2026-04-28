@@ -822,31 +822,31 @@
 
 <h3 id="structure-of-an-rnn">Structure of an RNN</h3>
 
-<p>The core of an RNN is a recurrent unit capable of transmitting information across time steps. For an input sequence of length <include src="/_wDaQIPSG5U1uKOHsnqC8p$.xml"></include>: <include src="/_UQ$3cPJNButTA7hHVEqapM.xml"></include>, the computation at each time step <include src="/_4$MRbWaJz@cT9HpGCVZP8K.xml"></include> proceeds as follows:</p>
+<p>The core of an RNN is a recurrent unit capable of transmitting information across time steps. For an input sequence of length <include src="/_881f41d4deeedb84f5264cd91fc226177de59e683fb3686f1759231adbee7332.xml"></include>: <include src="/_800f1881215f61a94811b4c79aff4148aad2143381b0622d04d757b94f46b4e0.xml"></include>, the computation at each time step <include src="/_c8018b91a7a2ff9ea35769f4ac2bc2a73184e5729874b7b8e1a8fb72c38184b6.xml"></include> proceeds as follows:</p>
 
 <ol>
   <li>
     <p><strong>Hidden State Update</strong>:
-<include src="/_OucTkHxjhdG1ZJEbQyRMKa.xml"></include></p>
+<include src="/_f71b4868ef6f4e487ded044a49ac552f62170e53f78132a3b5543d1808d027f1.xml"></include></p>
 
     <p>where:</p>
     <ul>
-      <li><include src="/_@ZhjSaGz6xARLgT2B4vuIt.xml"></include> is the hidden state at time <include src="/_4$MRbWaJz@cT9HpGCVZP8K.xml"></include></li>
-      <li><include src="/_aMJEZbijug8Y1yInHo5Xls.xml"></include> is the input at time <include src="/_4$MRbWaJz@cT9HpGCVZP8K.xml"></include></li>
-      <li><include src="/_Mjk2oJw1WqCxQa6bFUiDvZ.xml"></include> and <include src="/_Hc79dN3Sa4MCZuy85XUxiA.xml"></include> are weight matrices from input to hidden state and from hidden state to hidden state, respectively</li>
-      <li><include src="/_WglKdX1uve3ykaL5iEjZN7.xml"></include> is the bias term</li>
-      <li><include src="/_4FNA$jswLiQR7E8V0g2Izb.xml"></include> is the activation function (ReLU is also used in some cases)</li>
+      <li><include src="/_9b54afb79c0c45669d05c4c1012b4658abf1c3003ffaa1cbf0e4ea9aba51cc7d.xml"></include> is the hidden state at time <include src="/_c8018b91a7a2ff9ea35769f4ac2bc2a73184e5729874b7b8e1a8fb72c38184b6.xml"></include></li>
+      <li><include src="/_721e04a26c57614b4da6f10720c4f737f2c11e91d21cab8e27363ab5cdbaa8cb.xml"></include> is the input at time <include src="/_c8018b91a7a2ff9ea35769f4ac2bc2a73184e5729874b7b8e1a8fb72c38184b6.xml"></include></li>
+      <li><include src="/_83f85ba00cde8752015050127f197cd054446c6c59df890e6e04a77948cfdbeb.xml"></include> and <include src="/_264f9a748d2ae816e703f42fe91daffb20321880d5f195ffb337329219a654a1.xml"></include> are weight matrices from input to hidden state and from hidden state to hidden state, respectively</li>
+      <li><include src="/_89117184fe056aa2e09a058a5e58c181ae4627cf73532f78e342149882a4816c.xml"></include> is the bias term</li>
+      <li><include src="/_3165181332e626d121f9456fec7f40017dd3bbd3017779a4846463b3ededb4ab.xml"></include> is the activation function (ReLU is also used in some cases)</li>
     </ul>
   </li>
   <li>
     <p><strong>Output Calculation (Optional)</strong>:
-<include src="/_AeZ8p$ijnyuH@rCKsaWb4h.xml"></include></p>
+<include src="/_1772d54d6893e2824b2a819cfaecb3d772b5592cf309019903c4489ed32f6b29.xml"></include></p>
 
     <p>where:</p>
     <ul>
-      <li><include src="/_NorfKtVAF3lZWRXnvHyE1k.xml"></include> is the output at time <include src="/_4$MRbWaJz@cT9HpGCVZP8K.xml"></include></li>
-      <li><include src="/_yH5wpu1WLcA8B6zrsUQNm@.xml"></include> is the weight matrix from hidden state to output</li>
-      <li><include src="/_lKWvtfhZFzUi9RPSVCco6r.xml"></include> is the output bias term</li>
+      <li><include src="/_410f52f3689d8ab92c3f8c691f43cedd00c9788684fffb600bc73aaa28cb8e11.xml"></include> is the output at time <include src="/_c8018b91a7a2ff9ea35769f4ac2bc2a73184e5729874b7b8e1a8fb72c38184b6.xml"></include></li>
+      <li><include src="/_103da75202093a8e55d4d4df6443183f6602c210131ed14de483750828db713b.xml"></include> is the weight matrix from hidden state to output</li>
+      <li><include src="/_ffb8997632baf460000b0bc66ba831350dfece572663544ffe22b4d635bc5f87.xml"></include> is the output bias term</li>
     </ul>
   </li>
 </ol>

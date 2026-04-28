@@ -864,10 +864,10 @@
 <p><a href="https://leetcode-cn.com/problems/longest-increasing-subsequence/">300.最长递增子序列</a></p>
 
 <h2 id="动态规划">动态规划</h2>
-<p>我们可以定义<include src="/zh-cn/_aFprtDAdf4xk0bOePnjs8E.xml"></include>为以<include src="/zh-cn/_8Avbz4iIpMd0akxTDYlmsn.xml"></include>结尾的递增子序列长度的最大值（数组<include src="/zh-cn/_9hY7ZBTXPm8ieqFSjv6aWO.xml"></include>的常用套路），则我们可以写出状态转移方程为
-<include src="/zh-cn/_rAtkTLoCPih7cqYeVvdz98.xml"></include></p>
+<p>我们可以定义<include src="/zh-cn/_4ae19b4d2bc3c911e9c4f02e418695163eab37649dfff0e947dbaa412e5dd95a.xml"></include>为以<include src="/zh-cn/_fd85aeddf1afb7a4e34e914a38eee6cc4afe05d6f829bba0b5e836d614f4084c.xml"></include>结尾的递增子序列长度的最大值（数组<include src="/zh-cn/_3b1bdf7e54773eabdc1eb97adda61be7e9b0333347d580248ca25b82684da7e5.xml"></include>的常用套路），则我们可以写出状态转移方程为
+<include src="/zh-cn/_0a3b09b30eac5ff50725d79bea12777723e5708b7ccd66b467932b91ba9d46a9.xml"></include></p>
 
-<p>最后，此题的结果便是<include src="/zh-cn/_iP5wVz8IJ@HxnbyXmMUu3L.xml"></include>，代码如下</p>
+<p>最后，此题的结果便是<include src="/zh-cn/_e6bbd99867457a2c481bdbcfccb24383ee5dbef3d88438a3b446609e74292279.xml"></include>，代码如下</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">lengthOfLIS</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">nums</span><span class="p">)</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
@@ -884,12 +884,12 @@
     <span class="k">return</span> <span class="n">res</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
-<p>该解法时间复杂度为<include src="/zh-cn/_H91fmub3KYJWATszOtoI6D.xml"></include></p>
+<p>该解法时间复杂度为<include src="/zh-cn/_71c6efd0103954c7c939cd518c0a028f6e8bda5a456468bff49e61ac5e5773a4.xml"></include></p>
 
 <h2 id="树状数组">树状数组</h2>
 <p>LIS问题的本质是偏序问题，我们之前在二维偏序问题中提到过，树状数组可以轻松的解决这类问题。但之前的问题中，我们求的是数对的数量，而不是序列的长度。为了能够求得序列长度，我们要对树状数组进行修改。</p>
 
-<p>我们可以用树状数组存储以<include src="/zh-cn/_8Avbz4iIpMd0akxTDYlmsn.xml"></include>结尾的递增子序列最大值，修改树状数组结构如下</p>
+<p>我们可以用树状数组存储以<include src="/zh-cn/_fd85aeddf1afb7a4e34e914a38eee6cc4afe05d6f829bba0b5e836d614f4084c.xml"></include>结尾的递增子序列最大值，修改树状数组结构如下</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">update</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="kt">int</span> <span class="n">k</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">i</span><span class="o">++</span><span class="p">;</span>
@@ -907,7 +907,7 @@
     <span class="k">return</span> <span class="n">sum</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
-<p>随后用和<include src="/zh-cn/_9hY7ZBTXPm8ieqFSjv6aWO.xml"></include>同样的方式进行遍历，可以得出正确结果，同时要注意数据的离散化，代码如下</p>
+<p>随后用和<include src="/zh-cn/_3b1bdf7e54773eabdc1eb97adda61be7e9b0333347d580248ca25b82684da7e5.xml"></include>同样的方式进行遍历，可以得出正确结果，同时要注意数据的离散化，代码如下</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Fenwick</span> <span class="p">{</span>
 <span class="nl">public:</span>
@@ -957,7 +957,7 @@
     <span class="p">}</span>
 <span class="p">};</span>
 </code></pre></div></div>
-<p>该解法时间复杂度为<include src="/zh-cn/_LbNyZqgJ5mQT1PCn2pVFsS.xml"></include></p>
+<p>该解法时间复杂度为<include src="/zh-cn/_b364e72676f6ecb5082c15a30dfd55f096f50007bc257e886afee217c3af804e.xml"></include></p>
 
     </div>
 

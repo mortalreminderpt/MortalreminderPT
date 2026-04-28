@@ -879,7 +879,7 @@
 
 <p>In a VAE, the <strong>latent space</strong> represents a low-dimensional compressed representation of the data. The encoder maps inputs to this space by outputting μ and σ, and uses the <strong>reparameterization trick</strong> to generate the latent variable <strong>z</strong>:</p>
 
-<include src="/_9eV@W0pt7dLDPqn6KOGNuY.xml"></include>
+<include src="/_2f86ebb02deb12dc6c5436a237dba606eb3a657576d6e09b214483c0b835597d.xml"></include>
 
 <p>This allows gradients to propagate through the sampling process, enabling end-to-end training.</p>
 
@@ -897,7 +897,7 @@
 
 <p>VAE aims to maximize the <strong>Evidence Lower Bound (ELBO)</strong>, which corresponds to minimizing the following loss function:</p>
 
-<include src="/_SWcMiwU1@BH36x$PebA5ql.xml"></include>
+<include src="/_fc5bdc22aaea146f80c8bf632078061aebd19c2d83ee412af28410272765ce17.xml"></include>
 
 <p>Where:</p>
 
@@ -941,7 +941,7 @@
 
 <p>For Gaussian distributions, KL divergence is:</p>
 
-<include src="/_2AZUb4JWy8j9lOLthRv7qG.xml"></include>
+<include src="/_0336b9f7eb01cbf05bace468ad5275e3c98b7bbfcd320dea7ee2cdd9e3dc774c.xml"></include>
 
 <p>The code computes this term element-wise and averages over the batch.</p>
 
@@ -949,7 +949,7 @@
 
 <p>Combining everything, the VAE loss is:</p>
 
-<include src="/_sc43EF8mhaeOgJvoBSfAqd.xml"></include>
+<include src="/_114a6272d0aec73d1cf1ab8c34362674245fa56c3c5d96c06a7ace41c1929ae9.xml"></include>
 
 <p>Where:</p>
 
@@ -975,7 +975,7 @@
     <p><strong>Reparameterization</strong>:</p>
 
     <ul>
-      <li>Uses <include src="/_vaNicfF@DzX6x3eZPRWA9M.xml"></include>, where ε is Gaussian noise</li>
+      <li>Uses <include src="/_2c5a3e6c001f9058b2e9731fd61b1e9bafa192626cc60277be7e4af62c13e9ab.xml"></include>, where ε is Gaussian noise</li>
     </ul>
   </li>
   <li>

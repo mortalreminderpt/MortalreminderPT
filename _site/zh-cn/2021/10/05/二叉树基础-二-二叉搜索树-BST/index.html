@@ -868,9 +868,9 @@
   </li>
   <li><a href="#代码" id="markdown-toc-代码">代码</a>    <ol>
       <li><a href="#基本操作" id="markdown-toc-基本操作">基本操作</a>        <ol>
-          <li><a href="#find" id="markdown-toc-find"><include src="/zh-cn/_rgI@6bjakH8P1ewQuG7RxE.xml"></include></a></li>
-          <li><a href="#insert" id="markdown-toc-insert"><include src="/zh-cn/_iV@Rj3S8HrwzpJL6TWoyKq.xml"></include></a></li>
-          <li><a href="#delete" id="markdown-toc-delete"><include src="/zh-cn/_@1hiQB9DCPntZ7uIqkcUTV.xml"></include></a></li>
+          <li><a href="#find" id="markdown-toc-find"><include src="/zh-cn/_35138f29c1926bcdf83e196d6c6171fb4881a2b21f852e1479c5a7b82b36d5f6.xml"></include></a></li>
+          <li><a href="#insert" id="markdown-toc-insert"><include src="/zh-cn/_d6ffc3a3b4825bd5dab07b83b4c658f5d46fea382b03b971f450ddb99b85d006.xml"></include></a></li>
+          <li><a href="#delete" id="markdown-toc-delete"><include src="/zh-cn/_52a77a147cd235f99aa48987794fcec2bfa043d6c05fd1e86a844a82916189e8.xml"></include></a></li>
         </ol>
       </li>
     </ol>
@@ -904,8 +904,8 @@
 
 <p>BST的构造和析构与普通二叉树相同，这里不多赘述。相比于普通二叉树，BST的主要功能增加了查找，插入和删除</p>
 
-<h4 id="find"><include src="/zh-cn/_rgI@6bjakH8P1ewQuG7RxE.xml"></include></h4>
-<p><include src="/zh-cn/_rgI@6bjakH8P1ewQuG7RxE.xml"></include>函数的作用是查找某一个数据值已知的节点是否在树中，并返回节点值。代码如下</p>
+<h4 id="find"><include src="/zh-cn/_35138f29c1926bcdf83e196d6c6171fb4881a2b21f852e1479c5a7b82b36d5f6.xml"></include></h4>
+<p><include src="/zh-cn/_35138f29c1926bcdf83e196d6c6171fb4881a2b21f852e1479c5a7b82b36d5f6.xml"></include>函数的作用是查找某一个数据值已知的节点是否在树中，并返回节点值。代码如下</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">BST</span> <span class="nf">find</span><span class="p">(</span><span class="n">BST</span> <span class="n">tree</span><span class="p">,</span> <span class="kt">int</span> <span class="n">data</span><span class="p">){</span>
     <span class="n">BST</span> <span class="n">p</span> <span class="o">=</span> <span class="n">tree</span><span class="p">;</span>
@@ -920,8 +920,8 @@
     <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
-<h4 id="insert"><include src="/zh-cn/_iV@Rj3S8HrwzpJL6TWoyKq.xml"></include></h4>
-<p><include src="/zh-cn/_iV@Rj3S8HrwzpJL6TWoyKq.xml"></include>函数的作用是在树中插入一个节点。BST中所有的节点都是作为叶子节点插入的，因此在创建节点<include src="/zh-cn/_6e9BAUt@c2REqkxf7aDv0K.xml"></include>后，要找到合适的父节点<include src="/zh-cn/_2v$QwJHEcOgSTunCzk0FXs.xml"></include>并插入其中。代码如下</p>
+<h4 id="insert"><include src="/zh-cn/_d6ffc3a3b4825bd5dab07b83b4c658f5d46fea382b03b971f450ddb99b85d006.xml"></include></h4>
+<p><include src="/zh-cn/_d6ffc3a3b4825bd5dab07b83b4c658f5d46fea382b03b971f450ddb99b85d006.xml"></include>函数的作用是在树中插入一个节点。BST中所有的节点都是作为叶子节点插入的，因此在创建节点<include src="/zh-cn/_a260382ae7f2024c5b7f530818d038a184fe8f4d8507782b2ed544d9ea480095.xml"></include>后，要找到合适的父节点<include src="/zh-cn/_c58c41894da24e2cb0358d0d35c25c7681d8948ee897a807cdafe1db2b24d3da.xml"></include>并插入其中。代码如下</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">bool</span> <span class="nf">insert</span><span class="p">(</span><span class="n">BST</span><span class="o">&amp;</span> <span class="n">tree</span><span class="p">,</span> <span class="kt">int</span> <span class="n">data</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">BST</span> <span class="n">p</span> <span class="o">=</span> <span class="n">tree</span><span class="p">,</span> <span class="n">f</span><span class="p">;</span>
@@ -945,7 +945,7 @@
     <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
-<h4 id="delete"><include src="/zh-cn/_@1hiQB9DCPntZ7uIqkcUTV.xml"></include></h4>
+<h4 id="delete"><include src="/zh-cn/_52a77a147cd235f99aa48987794fcec2bfa043d6c05fd1e86a844a82916189e8.xml"></include></h4>
 <p>二叉搜索树进行删除操作后，仍然要保证它的排序正确，因此我们的删除操作分为三种情况：</p>
 
 <ul>

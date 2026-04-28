@@ -815,7 +815,7 @@
 
 <p>The two-pointer approach is suitable for <strong>sorted arrays and strings</strong>.</p>
 
-<p>The time complexity of the two-pointer approach is <include src="/_rGY6Uguk90tNXSLMW1a52x.xml"></include>.</p>
+<p>The time complexity of the two-pointer approach is <include src="/_55c3e71a168bf923b7bf3b534763ca567299add0f266875280845d2e708c5ebb.xml"></include>.</p>
 
 <p><a href="https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/">LeetCode Problem 21</a></p>
 
@@ -834,15 +834,15 @@
 
 <p><a href="https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/">LeetCode Problem 57</a></p>
 
-<p>This problem requires finding pairs of numbers that sum to <include src="/_$wGemiVUgH1tKCIxSDMoqc.xml"></include>. Since the array is already sorted in this problem, we can determine:</p>
+<p>This problem requires finding pairs of numbers that sum to <include src="/_a6abf15bc5faca4ac63ad01fb0b48ea3fddb0d977a9da679e8449eecbbd9d832.xml"></include>. Since the array is already sorted in this problem, we can determine:</p>
 
-<p>If the pair <include src="/_ouTAp7Z2faRJnGgSqthxD4.xml"></include>,
-then <include src="/_isWAh@Heq3SK$CV9fvxpQD.xml"></include>.</p>
+<p>If the pair <include src="/_b5a17b15d089a63c223b95193aa65857e0cc4ca396905f8703f63e51efc2fdb3.xml"></include>,
+then <include src="/_a26427726b8c806a65eee33b11d03317e8d3cdfd345d5a76d27b8ab250ca7f04.xml"></include>.</p>
 
-<p>Similarly, if <include src="/_pHxC1P6SciXkNZuJm58Aw$.xml"></include>,
-then <include src="/_a8qoxOWuS41mMG7Vc6BsIH.xml"></include>.</p>
+<p>Similarly, if <include src="/_079e6e2e582576bcdd88c05e1e77764ec49eec55c1adfb4770f96c608af58747.xml"></include>,
+then <include src="/_8138f49999019311c980c282396d0d24e5fa7f9a426ace8e18e9132d54f68d09.xml"></include>.</p>
 
-<p>Therefore, this problem can also be solved using the two-pointer approach. When <include src="/_Qh4C6JmbB3GVR1$DslUzTd.xml"></include>, move <include src="/_aNgJeRG4Sf7wmAEHtvIbL1.xml"></include> to the right; otherwise, if <include src="/_2mtw4QxeDBK$XG@PvpiOMb.xml"></include>, move <include src="/_G3t6pnDCZKUOJ59gmFNy42.xml"></include> to the left. The code is as follows:</p>
+<p>Therefore, this problem can also be solved using the two-pointer approach. When <include src="/_7c04fceab46e36f887abb184c80149b809eb6b61190ddf021fb87e4f18955682.xml"></include>, move <include src="/_aab99a218aed3ad2003e09e3b52db2f11c3e0c0c911c2bb5c8654da7cb591149.xml"></include> to the right; otherwise, if <include src="/_8c57c3826b8ae5c24ed200a2903199733740bbce65c3f8e88e67fcbd7f0eb2a1.xml"></include>, move <include src="/_1827c09128c21813b2540b2c42401eb28885e5d47d731f0e174bdb15b5fc20b0.xml"></include> to the left. The code is as follows:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">twoSum</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">nums</span><span class="p">,</span> <span class="kt">int</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">l</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
@@ -863,7 +863,7 @@ then <include src="/_a8qoxOWuS41mMG7Vc6BsIH.xml"></include>.</p>
 <h3 id="fast-slow-pointer">Fast Slow Pointer</h3>
 <p>The fast-slow pointer defines a pair of pointers with different speeds in the sequence to solve one-way sequence problems.</p>
 
-<p>The time complexity of the fast-slow pointer approach is <include src="/_rGY6Uguk90tNXSLMW1a52x.xml"></include>, and the space complexity is <include src="/_32wCUuPOFis4l7M@mXyTkH.xml"></include>.</p>
+<p>The time complexity of the fast-slow pointer approach is <include src="/_55c3e71a168bf923b7bf3b534763ca567299add0f266875280845d2e708c5ebb.xml"></include>, and the space complexity is <include src="/_b2c85037712243249512e6523fb7e411bb71bdaf11db7fffb437b5abf5b264ab.xml"></include>.</p>
 
 <p><a href="https://leetcode-cn.com/problems/linked-list-cycle/">LeetCode Problem 141</a></p>
 
@@ -886,15 +886,15 @@ then <include src="/_a8qoxOWuS41mMG7Vc6BsIH.xml"></include>.</p>
 
 <p>This problem requires finding the first node of the cycle while determining if there is a cycle. We can reason based on the condition that the fast pointer’s speed is always twice that of the slow pointer.</p>
 
-<p>Assuming the fast and slow pointers meet at point <include src="/_ikoHEsUvV6yl7TIYrKN$Dw.xml"></include>, at this point, the distance the slow pointer has traveled should be <include src="/_q9u5LW8Ukh1$nBvDxzwTPG.xml"></include>, while the fast pointer has traveled <include src="/_96twzZau0o8msDij13f@UN.xml"></include>.</p>
+<p>Assuming the fast and slow pointers meet at point <include src="/_e26b964206f242e1a53f89d8df281bbdb45c8c83787ae16713e76d0198c17318.xml"></include>, at this point, the distance the slow pointer has traveled should be <include src="/_6b60a9974410c8be893ff15c66c6f99ae44092e4a1fbdfa7cb0ec67aa4e9ef2e.xml"></include>, while the fast pointer has traveled <include src="/_9a46ee3deaea2318d0df12c318108ae4e9228bbaf00f70d3614df7bd34380605.xml"></include>.</p>
 
 <p>Since the fast pointer’s speed is twice that of the slow pointer, we have:</p>
 
-<p><include src="/_uCOWcz20dwMZrHbUy3sJgY.xml"></include>,</p>
+<p><include src="/_dba67fa96ff7bdd80460389a700d8ea4696183fda4c24486276595cb35d5e041.xml"></include>,</p>
 
-<p>which implies <include src="/_IzjfJs1MFyDlTRKQ9oeXtH.xml"></include>.</p>
+<p>which implies <include src="/_9632ef0656604372a6190e850b00fb36fdd5069898fd224f0bd9f3eba43311e3.xml"></include>.</p>
 
-<p>Therefore, when the fast and slow pointers meet, the distance from the meeting point to the entry point of the cycle is always <include src="/_3QiEvuZ4YewaAg9UL8JGpO.xml"></include>. We can then use another pointer <include src="/_twjKXaNy5Ddi3n2pruWGcR.xml"></include> to find the entry point of the cycle while updating <include src="/_twjKXaNy5Ddi3n2pruWGcR.xml"></include> and the slow pointer. When they meet, the meeting node is the entry point of the cycle. The code is as follows:</p>
+<p>Therefore, when the fast and slow pointers meet, the distance from the meeting point to the entry point of the cycle is always <include src="/_d00c69555357c62ecaa7778c8318fd00961136e38dc376d87dbbc45836303833.xml"></include>. We can then use another pointer <include src="/_c50b047441478bd2d7f76f0f56c82d73b5c0bcd49cf07851cd9bcaad6bcbe5de.xml"></include> to find the entry point of the cycle while updating <include src="/_c50b047441478bd2d7f76f0f56c82d73b5c0bcd49cf07851cd9bcaad6bcbe5de.xml"></include> and the slow pointer. When they meet, the meeting node is the entry point of the cycle. The code is as follows:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ListNode</span> <span class="o">*</span><span class="nf">detectCycle</span><span class="p">(</span><span class="n">ListNode</span> <span class="o">*</span><span class="n">head</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">ListNode</span> <span class="o">*</span><span class="n">p1</span> <span class="o">=</span> <span class="n">head</span><span class="p">,</span> <span class="o">*</span><span class="n">p2</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>

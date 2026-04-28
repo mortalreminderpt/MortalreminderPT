@@ -798,7 +798,7 @@
 </ol>
 
 <h2 id="concept">Concept</h2>
-<p>Binary search is a common method for finding a specific value in a sorted array. It doesn’t need to traverse the entire sequence; it only needs to focus on the boundaries and the middle value of the sequence. Therefore, its time complexity can reach <include src="/_OlstYJKXUxWCR8vPGAwqid.xml"></include>.</p>
+<p>Binary search is a common method for finding a specific value in a sorted array. It doesn’t need to traverse the entire sequence; it only needs to focus on the boundaries and the middle value of the sequence. Therefore, its time complexity can reach <include src="/_ac0a29417ae55e8abb26ff3ac6ece5ffd5d3a0f2f4a532747771d7cd9fb2939e.xml"></include>.</p>
 
 <h3 id="template">Template</h3>
 
@@ -823,7 +823,7 @@
 
 <h3 id="34-find-first-and-last-position-of-element-in-sorted-array"><a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/">34. Find First and Last Position of Element in Sorted Array</a></h3>
 
-<p>This problem requires not only finding the first occurrence of an element but also the last occurrence. In the template code, if <code class="language-plaintext highlighter-rouge">nums[i] &lt; key</code>, it continues searching on the left side. To continue searching after finding the element, we need to modify it to <code class="language-plaintext highlighter-rouge">nums[i] &lt;= key</code>. This modification finds the position of the first element greater than or equal to <include src="/_egMchR2DTuqOy6J8@KrIZX.xml"></include>. Therefore, the code for this problem is as follows:</p>
+<p>This problem requires not only finding the first occurrence of an element but also the last occurrence. In the template code, if <code class="language-plaintext highlighter-rouge">nums[i] &lt; key</code>, it continues searching on the left side. To continue searching after finding the element, we need to modify it to <code class="language-plaintext highlighter-rouge">nums[i] &lt;= key</code>. This modification finds the position of the first element greater than or equal to <include src="/_a04f212a13074e0d4e9cf193b377925bf89b5bb39bee2b5f95486e677583e676.xml"></include>. Therefore, the code for this problem is as follows:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>
@@ -850,7 +850,7 @@
 
 <h3 id="74-search-a-2d-matrix"><a href="https://leetcode.com/problems/search-a-2d-matrix/">74. Search a 2D Matrix</a></h3>
 
-<p>According to the problem, the element to be searched must be greater than or equal to the first element in its row. Therefore, we first perform a binary search on the columns to find the largest element not greater than <include src="/_$wGemiVUgH1tKCIxSDMoqc.xml"></include>.</p>
+<p>According to the problem, the element to be searched must be greater than or equal to the first element in its row. Therefore, we first perform a binary search on the columns to find the largest element not greater than <include src="/_a6abf15bc5faca4ac63ad01fb0b48ea3fddb0d977a9da679e8449eecbbd9d832.xml"></include>.</p>
 
 <p>Then, we perform a basic binary search on that row to find the result. The code for this problem is as follows:</p>
 
@@ -936,9 +936,9 @@
 
 <h3 id="162-find-peak-element"><a href="https://leetcode.com/problems/find-peak-element/">162. Find Peak Element</a></h3>
 
-<p>We can use the <include src="/_VL2uSRvKJiOYBbnM4p8c@W.xml"></include> range</p>
+<p>We can use the <include src="/_83ee5b565e515490d9ea90aca5494090bdb15b1959d3f01d9223c539ede40d5f.xml"></include> range</p>
 
-<p>to store the possible intervals containing peaks. Based on the midpoint, we perform binary search. If <code class="language-plaintext highlighter-rouge">nums[mid] &lt; nums[mid + 1]</code>, it means a peak exists in the <include src="/_lYuIFv5xgnjWkmMShaE7@t.xml"></include> interval; otherwise, it exists in the <include src="/_th7Bu$X2UjoyrwYcJARZ1F.xml"></include> interval. The code for this problem is as follows:</p>
+<p>to store the possible intervals containing peaks. Based on the midpoint, we perform binary search. If <code class="language-plaintext highlighter-rouge">nums[mid] &lt; nums[mid + 1]</code>, it means a peak exists in the <include src="/_0df8b059464cc0e4b095117f520517ffa02e42b02fd15a7e15703f0751cb2f25.xml"></include> interval; otherwise, it exists in the <include src="/_6747cdd38d669b403b08f91a45f0f196494c5ea7164c34b9635afad121cd38d2.xml"></include> interval. The code for this problem is as follows:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
 <span class="nl">public:</span>

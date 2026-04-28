@@ -830,55 +830,55 @@
   <li><strong>Output Gate</strong>: Determines how much information from the current cell state will be output.</li>
 </ol>
 
-<p>Suppose we have an input sequence of length <include src="/_wDaQIPSG5U1uKOHsnqC8p$.xml"></include>:<br />
-<include src="/_UQ$3cPJNButTA7hHVEqapM.xml"></include>.<br />
-At each time step <include src="/_4$MRbWaJz@cT9HpGCVZP8K.xml"></include>, LSTM performs the following computations:</p>
+<p>Suppose we have an input sequence of length <include src="/_881f41d4deeedb84f5264cd91fc226177de59e683fb3686f1759231adbee7332.xml"></include>:<br />
+<include src="/_800f1881215f61a94811b4c79aff4148aad2143381b0622d04d757b94f46b4e0.xml"></include>.<br />
+At each time step <include src="/_c8018b91a7a2ff9ea35769f4ac2bc2a73184e5729874b7b8e1a8fb72c38184b6.xml"></include>, LSTM performs the following computations:</p>
 
 <ol>
   <li>
     <p><strong>Forget Gate</strong>:
-<include src="/_gRIz9XPB$sQO5L4HCJAK8G.xml"></include></p>
+<include src="/_27599303b5cc4087097d30a3b6c02cc5f7c67978b080f5c51c2ea6536f7cdf76.xml"></include></p>
 
     <p>where:</p>
     <ul>
-      <li><include src="/_nxTXtiSUvCqwuodGlr08M5.xml"></include> is the forget gate output</li>
-      <li><include src="/_fL18DtqXPWz3$4uwQOYMEk.xml"></include> is the forget gate weight matrix</li>
-      <li><include src="/_Q1vMNy8sjk2eI6qCdmralp.xml"></include> is the previous hidden state</li>
-      <li><include src="/_aMJEZbijug8Y1yInHo5Xls.xml"></include> is the input at time <include src="/_4$MRbWaJz@cT9HpGCVZP8K.xml"></include></li>
-      <li><include src="/_kKoRElXy39ZmngtuqjxH$w.xml"></include> is the bias</li>
-      <li><include src="/_odZQSmL2MCGv1tTIk5a@iB.xml"></include> is the Sigmoid activation function</li>
+      <li><include src="/_84a6de1d56315c4aad59ce992ce7728a4874058b386ed307279f567b0102f21e.xml"></include> is the forget gate output</li>
+      <li><include src="/_5050cff326da7ca2a1c95fc6fac6becbd35173c46460c89c798b1ad67a467415.xml"></include> is the forget gate weight matrix</li>
+      <li><include src="/_6b9d63f13a226968aea32db7c88b763b67aab5d0f4e5d65256fbc64a18044035.xml"></include> is the previous hidden state</li>
+      <li><include src="/_721e04a26c57614b4da6f10720c4f737f2c11e91d21cab8e27363ab5cdbaa8cb.xml"></include> is the input at time <include src="/_c8018b91a7a2ff9ea35769f4ac2bc2a73184e5729874b7b8e1a8fb72c38184b6.xml"></include></li>
+      <li><include src="/_592cbbd975c9c48b8a81576cfa555790d3f84931a93c4ca0d0dbcc62f6817ef0.xml"></include> is the bias</li>
+      <li><include src="/_92015ede20c36995b890ffd100d755c80fbf365c6040a7decefdb7dc5aadb7da.xml"></include> is the Sigmoid activation function</li>
     </ul>
   </li>
   <li>
     <p><strong>Input Gate</strong>:
-<include src="/_3I1JWSHz9URKLMGT2oCFki.xml"></include>
-<include src="/_IBzwtCp3gNjkVELA@JTPQR.xml"></include></p>
+<include src="/_c0172ceb8c5274067fc4118ea832c4a503460f078c47248c4d9807750bd713f9.xml"></include>
+<include src="/_409c1cc56aa8c456e929599a4398da3c73369d0d8355418939c35abe6d2654a8.xml"></include></p>
 
     <p>where:</p>
     <ul>
-      <li><include src="/_6Bskq4@xujaloK8UiYDh3T.xml"></include> is the input gate output</li>
-      <li><include src="/_jrnPs@liwSCL7EKB56ybTo.xml"></include> is the candidate cell state</li>
+      <li><include src="/_4ba45889deb1fc496c36506c941087437a7a8d665d59e94188d404f8f5d9a90d.xml"></include> is the input gate output</li>
+      <li><include src="/_2e12d5249ddb17e89258cadde2e1caf1881e25a2592effcb5290b66c4a5ae55d.xml"></include> is the candidate cell state</li>
     </ul>
   </li>
   <li>
     <p><strong>Cell State Update</strong>:
-<include src="/_GO8yoD9BHQLWn4pw2h$630.xml"></include></p>
+<include src="/_761e33219e811005dbd5b400cf5f689eac6599ebc29d2612f65f817c1b323072.xml"></include></p>
 
     <p>where:</p>
     <ul>
-      <li><include src="/_I7RfWox@j1dDT2iJvypnLa.xml"></include> is the updated cell state</li>
-      <li><include src="/_G7c03tKmXRDY5SzUZnf12r.xml"></include> is element-wise multiplication</li>
+      <li><include src="/_deb6df053171b5cd9e38ea2856ace22eaa2a4bd16f5832b7c3ffd71c5184f9ca.xml"></include> is the updated cell state</li>
+      <li><include src="/_7eeaf15b7198996b02c2ded38d9a7edc730b8b5f1bc58ba48e5704930224d1a5.xml"></include> is element-wise multiplication</li>
     </ul>
   </li>
   <li>
     <p><strong>Output Gate</strong>:
-<include src="/_BaK6EI02XciQ1hUyHOFfkt.xml"></include>
-<include src="/_@yUrLu4f85QYzFKSMJkwTe.xml"></include></p>
+<include src="/_2d6cf4b85e3eff0d969bf12f782fb9b9f21e0108db322f9c01a2cb60db1f3226.xml"></include>
+<include src="/_bc84449c7bc9792849324e80584c90455cf0573622fcfb89b5fca2b4dc9f36b2.xml"></include></p>
 
     <p>where:</p>
     <ul>
-      <li><include src="/_TpBaVAwv9briW0ku$hFPQN.xml"></include> is the output gate output</li>
-      <li><include src="/_@ZhjSaGz6xARLgT2B4vuIt.xml"></include> is the hidden state at time <include src="/_4$MRbWaJz@cT9HpGCVZP8K.xml"></include></li>
+      <li><include src="/_b290d9945674aa96690dd410ccbb2d441c5e2a7ccce9c75cc8d8c4519b2f6ea1.xml"></include> is the output gate output</li>
+      <li><include src="/_9b54afb79c0c45669d05c4c1012b4658abf1c3003ffaa1cbf0e4ea9aba51cc7d.xml"></include> is the hidden state at time <include src="/_c8018b91a7a2ff9ea35769f4ac2bc2a73184e5729874b7b8e1a8fb72c38184b6.xml"></include></li>
     </ul>
   </li>
 </ol>

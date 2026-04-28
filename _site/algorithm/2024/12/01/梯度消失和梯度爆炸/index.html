@@ -826,11 +826,11 @@
 
 <h2 id="mathematical-principles-behind-vanishing-and-exploding-gradients">Mathematical Principles Behind Vanishing and Exploding Gradients</h2>
 
-<p>Consider a deep neural network. The gradient of the loss function <include src="/_rq4kgfnZG@7NWJ5BdToy9V.xml"></include> with respect to the parameters of layer <include src="/_aNgJeRG4Sf7wmAEHtvIbL1.xml"></include>, denoted <include src="/_9oIn$kd4OTvWY3jhJlqERg.xml"></include>, can be expressed as:</p>
+<p>Consider a deep neural network. The gradient of the loss function <include src="/_4b377f8fa5ab78735c90dd53e3f969dbb2c1493bf029edcb1c7d6625c5086f78.xml"></include> with respect to the parameters of layer <include src="/_aab99a218aed3ad2003e09e3b52db2f11c3e0c0c911c2bb5c8654da7cb591149.xml"></include>, denoted <include src="/_223e105bda48ef90aab2578d3f464ad9ce80a1295728dbe8e81b0641a39b5938.xml"></include>, can be expressed as:</p>
 
-<include src="/_K1Py$lVwhCfRxSzFnbIQ5B.xml"></include>
+<include src="/_2f510e3173352063420959aaf4df5287ed8abb8ec29af558630be5fadea37380.xml"></include>
 
-<p>where <include src="/_faNoUwz7nA0vy4P$cktQFE.xml"></include> is the activation of layer <include src="/_xidCf9ZVMumyT5FH3rDwRa.xml"></include>. We can see that the gradient is the product of derivatives between layers. If the magnitudes of these derivatives are less than 1, the product tends toward zero as depth increases (vanishing gradient). Conversely, if the derivatives are greater than 1, the product increases rapidly (exploding gradient). This is the mathematical root of these problems.</p>
+<p>where <include src="/_9b0886ed0008c720fe38b6244cb622aa7baa3594024e2916810ff474134495a4.xml"></include> is the activation of layer <include src="/_67fc9a7f9ec57b54685c86704924f20a56ac184bd165b089b71cda2f24af2999.xml"></include>. We can see that the gradient is the product of derivatives between layers. If the magnitudes of these derivatives are less than 1, the product tends toward zero as depth increases (vanishing gradient). Conversely, if the derivatives are greater than 1, the product increases rapidly (exploding gradient). This is the mathematical root of these problems.</p>
 
 <h2 id="vanishing-and-exploding-gradients-in-cnns">Vanishing and Exploding Gradients in CNNs</h2>
 
@@ -849,7 +849,7 @@
     <p><strong>Using Appropriate Activation Functions</strong><br />
 ReLU and its variants help alleviate vanishing gradients because their derivative is 1 in the positive region.</p>
 
-    <p><include src="/_yQgA15DrsF9nu7va8eXk$Z.xml"></include></p>
+    <p><include src="/_4d7247831c3d67fa8988fab5849c55144380a4cff9caee7f8d77d4418c4711f8.xml"></include></p>
   </li>
   <li>
     <p><strong>Weight Initialization</strong><br />
@@ -859,12 +859,12 @@ Proper initialization (He or Xavier) maintains stable activation and gradient va
       <li>
         <p><strong>Xavier Initialization</strong> (for Sigmoid/Tanh):</p>
 
-        <p><include src="/_k41mawHLXhEPC@BqW2RGfF.xml"></include></p>
+        <p><include src="/_0640d69a2909b3dd7f47bb67dac792ddb2f54f65164b82ff4261ab6808f8d975.xml"></include></p>
       </li>
       <li>
         <p><strong>He Initialization</strong> (for ReLU):</p>
 
-        <p><include src="/_VXE1$fsiK0NdnrOM2v3quW.xml"></include></p>
+        <p><include src="/_a4a422c2528c681bb8b8b9df6a0297d60346eff19f25e45a5b529c0caca08242.xml"></include></p>
       </li>
     </ul>
   </li>
@@ -872,17 +872,17 @@ Proper initialization (He or Xavier) maintains stable activation and gradient va
     <p><strong>Batch Normalization (BN)</strong><br />
 BN normalizes layer inputs to keep activations within a reasonable range, stabilizing gradient flow.</p>
 
-    <p><include src="/_mhJVpoM8@AaqT7S6cd4XOi.xml"></include></p>
+    <p><include src="/_e6adad7da8d77002872d155d435e4046c08b144c26bfdd26a28111b3d5b0f3b3.xml"></include></p>
 
-    <p>where <include src="/_Mh03dp@Sx92NBRIVtyjA1P.xml"></include> and <include src="/_NsRwMarzKhWg$XOu43D7y@.xml"></include> are the mean and variance of the batch data, respectively, and <include src="/_sBYEt7x0bPNWCOagkumn9r.xml"></include> is a small constant to prevent division by zero.</p>
+    <p>where <include src="/_6df89dfb728f5561e4afaad4744ff2b90dfb38126cacec468889a8fc8ff0b3f8.xml"></include> and <include src="/_9ec833b508126b2c28ef266c4115a9859389499185767e6660a0dbc4703b9fac.xml"></include> are the mean and variance of the batch data, respectively, and <include src="/_1a00f93a2c43ccf2f1dbb461540bcae1457f59e2101641798470cca6bd907e65.xml"></include> is a small constant to prevent division by zero.</p>
   </li>
   <li>
     <p><strong>Residual Connections</strong><br />
 Skip connections allow gradients to flow directly, greatly reducing vanishing gradients.</p>
 
-    <p><include src="/_clOYoRmZxBWF50E8SyTLXG.xml"></include></p>
+    <p><include src="/_7e5a115b09771d0b1829f4b5803000808ffc4d583c9acdd2101d6a68248a2a36.xml"></include></p>
 
-    <p>where <include src="/_s72ILe4vERKVQNdH@OJoZG.xml"></include> is a combination of certain layers and <include src="/_20ZOseEzMQP1aHSgVdYuTX.xml"></include> is the input.</p>
+    <p>where <include src="/_460d84e46d6c3979844733df387322a00138ef8efd238ca7b5b1755119c12fae.xml"></include> is a combination of certain layers and <include src="/_7555722b0b1ef93c1fac7b32443682dbcc575cf1e63b4c1749d735a1761888a9.xml"></include> is the input.</p>
   </li>
 </ol>
 
@@ -894,9 +894,9 @@ Skip connections allow gradients to flow directly, greatly reducing vanishing gr
 
 <h3 id="gradient-issues-in-rnns">Gradient Issues in RNNs</h3>
 
-<p>In standard RNNs, the hidden state <include src="/_@ZhjSaGz6xARLgT2B4vuIt.xml"></include> is computed as:</p>
+<p>In standard RNNs, the hidden state <include src="/_9b54afb79c0c45669d05c4c1012b4658abf1c3003ffaa1cbf0e4ea9aba51cc7d.xml"></include> is computed as:</p>
 
-<p><include src="/_tF1MkoI$hz97Gq0edLr4Zp.xml"></include></p>
+<p><include src="/_25e414b3d8de7a6591600beb583e86b3f10d468a249bffc38ccc5e95e9220a87.xml"></include></p>
 
 <p>Backpropagation Through Time (BPTT) involves multiplying gradients across many time steps, causing them to decrease or increase exponentially.</p>
 
@@ -907,7 +907,7 @@ Skip connections allow gradients to flow directly, greatly reducing vanishing gr
     <p><strong>Gradient Clipping</strong><br />
 Limit the gradient norm to prevent exploding gradients. For example, when the L2 norm of the gradient exceeds a certain threshold, scale it to that threshold.</p>
 
-    <p><include src="/_eKuzscVnj5E$BQhtr7HL8J.xml"></include></p>
+    <p><include src="/_0876bc5c1f8da87341f27af922562685f789ece7e44ee8e504e49349ec486ef7.xml"></include></p>
   </li>
   <li>
     <p><strong>Using More Advanced RNN Units</strong><br />
@@ -919,7 +919,7 @@ LSTM and GRU use gating mechanisms to control information flow and preserve long
   </li>
 </ol>
 
-<include src="/_FTRjQpWLDoMu93vHUC2g$i.xml"></include>
+<include src="/_fdbd71c2d05e331b3512449ea74770463ee4059b72d96cbd8521ef58739a59c8.xml"></include>
 
 <ul>
   <li>Through these gates, LSTM can effectively maintain long-term dependencies and reduce the risk of vanishing gradients.</li>
