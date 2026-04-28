@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem "bundler"
+gem "csv"
 gem "jekyll", "=4.3.4"
 gem "jekyll-paginate-v2", "~> 3.0"
 gem 'jekyll-tagging', "=1.1.0"

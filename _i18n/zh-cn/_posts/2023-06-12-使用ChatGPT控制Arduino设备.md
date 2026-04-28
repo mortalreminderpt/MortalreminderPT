@@ -24,6 +24,7 @@ tags:
 
 我们期望ChatGPT以json格式输出命令实现对设备的控制，因此首先需要编写一个合适的提示（prompt），用于告诉ChatGPT我们的需求。在这个提示中，我们应该明确表达我们希望ChatGPT理解并回答的问题，如打开/关闭LED灯、控制电机转速等。经过数次测试之后，我们使用python代码整合了我们的全部需求，
 
+{% raw %}
 ```python
 def generate_prompt(text):
     possible_device = [
@@ -43,6 +44,7 @@ def generate_prompt(text):
              f' and only write json list without any discourse.'
     return prompt
 ```
+{% endraw %}
 
 在ChatGPT官网测试该提示词，发现ChatGPT可以正确理解我们的需求并做出回应。
 

@@ -1,3 +1,6 @@
+@use "../0-settings/variables" as *;
+@use "../1-tools/grid" as *;
+
 /* Header */
 .header {
   width: 100%;

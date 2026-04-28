@@ -24,6 +24,7 @@ The code for this blog is publicly available in my GitHub repository, [click her
 
 We expect ChatGPT to output commands in JSON format to control the devices. Therefore, we need to create an appropriate prompt to instruct ChatGPT on our requirements. In this prompt, we should clearly express the questions we want ChatGPT to understand and respond to, such as turning on/off an LED light, controlling motor speed, etc. After several tests, we integrated all our requirements using the following Python code:
 
+{% raw %}
 ```python
 def generate_prompt(text):
     possible_device = [
@@ -43,6 +44,7 @@ def generate_prompt(text):
              f' and only write JSON list without any discourse.'
     return prompt
 ```
+{% endraw %}
 
 Testing this prompt on the official ChatGPT website, we found that ChatGPT can correctly understand our requirements and respond accordingly.
 
