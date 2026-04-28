@@ -107,7 +107,8 @@
 }
 
 :root[data-theme="day"] .hero .hero__title {
-  color: var(--accent-ink-hover);
+  color: var(--on-image);
+  text-shadow: 0 3px 18px rgba(15, 23, 42, 0.34);
 }
 
 .hero__desc {
