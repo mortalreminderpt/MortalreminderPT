@@ -106,6 +106,10 @@
   }
 }
 
+:root[data-theme="day"] .hero .hero__title {
+  color: var(--accent-ink-hover);
+}
+
 .hero__desc {
   font-family: 'Fraunces', serif;
   font-size: 24px;

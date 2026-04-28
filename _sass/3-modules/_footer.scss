@@ -18,22 +18,21 @@
 
 .widget__title {
   position: relative;
-  padding-left: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 0;
   margin-bottom: 36px;
   font-size: 24px;
   line-height: 1;
   color: var(--title-marker-text);
-  &::after {
+  &::before {
     content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    z-index: -1;
-    transform: translateY(-50%);
     display: block;
-    width: 106px;
-    height: 38px;
-    border-radius: 4px 0px 0px 4px;
+    flex: 0 0 auto;
+    width: 5px;
+    height: 24px;
+    border-radius: 999px;
     background: var(--title-marker-bg);
   }
   @media only screen and (max-width: $desktop) {
@@ -109,14 +108,15 @@
   flex-wrap: wrap;
   a {
     display: inline-block;
-    padding: 8px 16px;
-    margin: 0 5px 5px 0;
+    padding: 7px 14px;
+    margin: 0 8px 8px 0;
+    font-family: $heading-font-family;
     font-size: 12px;
-    line-height: 10px;
-    font-weight: 700;
+    line-height: 1.2;
+    font-weight: 600;
     background: var(--chip-bg);
-    border: 2px solid var(--chip-border);
-    border-radius: 24px;
+    border: 1px solid var(--chip-border);
+    border-radius: 999px;
     color: var(--chip-text);
     &:hover {
       background: var(--chip-hover-bg);
@@ -168,6 +168,7 @@
 
   .subscribe-button {
     margin-left: 10px;
+    flex: 0 0 auto;
   }
 }
 

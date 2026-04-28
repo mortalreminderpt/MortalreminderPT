@@ -18,10 +18,12 @@
   }
 
   &--primary {
-    padding: 20px 40px;
-    font-size: 16px;
+    min-height: 56px;
+    padding: 0 36px;
+    font-family: $heading-font-family;
+    font-size: 15px;
     font-weight: 700;
-    line-height: 1;
+    line-height: 56px;
     color: var(--button-primary-text);
     background-color: var(--button-primary-bg);
     border: 1px solid var(--button-primary-border);
@@ -35,13 +37,15 @@
 
   &--middle {
     position: relative;
-    padding: 24px 48px;
+    min-height: 56px;
+    padding: 0 40px;
     width: 100%;
     max-width: 412px;
     font-family: $heading-font-family;
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 1px;
+    line-height: 56px;
+    letter-spacing: 0;
     text-transform: uppercase;
     transition: all .2s ease;
     color: var(--button-primary-text);

@@ -41,10 +41,12 @@ $(document).ready(function() {
 
   function menuOpen() {
     menuList.addClass("is-open");
+    $("body").addClass("menu-is-open");
   }
 
   function menuClose() {
     menuList.removeClass("is-open");
+    $("body").removeClass("menu-is-open");
   }
 
   function searchOpen() {
