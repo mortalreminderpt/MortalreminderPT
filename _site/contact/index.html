@@ -719,47 +719,61 @@
   
   <p class="contact-description">Feel free to interact with the blogger! Whether you have any suggestions, questions, need help, or just want to show your appreciation for the blogger, feel free to email the blogger. Looking forward to hearing from you!</p>
   
-  <form class="form"
-    name="addForm" method="post" onsubmit="return CheckPost();">
-<!--    action="https://formspree.io/mail@mortalreminder.net" method="POST">-->
+  <form class="form" id="contact-form" action="mailto:ptzhao@hotmail.com" onsubmit="return false;">
     <div class="form__group">
       <label class="form__label screen-reader-text" for="form-name">Name</label>
-      <input class="form__input" id="form-name" type="text" name="name" placeholder="Name" required>
+      <input class="form__input" id="form-name" type="text" name="name" placeholder="Name" autocomplete="name" required>
     </div>
     <div class="form__group">
       <label class="form__label screen-reader-text" for="form-email">Email</label>
-      <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="Email" required>
+      <input class="form__input" id="form-email" type="email" name="email" placeholder="Email" autocomplete="email" required>
     </div>
     <div class="form__group">
       <label class="form__label screen-reader-text" for="form-text">Message</label>
-      <textarea class="form__input" id="form-text" name="text" rows="10" placeholder="Message" required></textarea>
+      <textarea class="form__input" id="form-text" name="message" rows="10" placeholder="Message" required></textarea>
     </div>
     <div class="form__group">
-      <button class="button button--primary" type="submit">Send Message</button>
+      <a class="button button--primary" id="contact-mail-link" href="mailto:ptzhao@hotmail.com">Send Message</a>
     </div>
   </form>
   <hr>
 </div>
 
 <script>
-  function CheckPost () {
-  var body = ("发件人姓名: "+addForm.name.value+"\n" +
-    "发件人邮箱地址: "+addForm._replyto.value+"\n" +
-    "正文内容:\n" +addForm.text.value)
-    Email.send({
-      SecureToken : "5df920cd-e43e-4280-8f18-98fe220ef67e",
-      To : 'contact@mortalreminder.net',
-      From : "ptblogsender@yeah.net",
-      Subject : "Blog Contact",
-      Body : body
-      }).then(
-      message => {
-        alert(message);
-        return true;
+  (function () {
+    var form = document.getElementById('contact-form');
+    var mailLink = document.getElementById('contact-mail-link');
+    if (!form || !mailLink) {
+      return;
+    }
+
+    function updateMailLink() {
+      var name = form.elements['name'].value.trim();
+      var email = form.elements['email'].value.trim();
+      var message = form.elements['message'].value.trim();
+      var body = [
+        'Name: ' + name,
+        'Email: ' + email,
+        '',
+        'Message:',
+        message
+      ].join('\n');
+
+      mailLink.href = 'mailto:ptzhao@hotmail.com?subject=' +
+        encodeURIComponent('Blog Contact') +
+        '&body=' +
+        encodeURIComponent(body);
+    }
+
+    mailLink.addEventListener('click', function (event) {
+      if (!form.reportValidity()) {
+        event.preventDefault();
+        return;
       }
-    );
-    return false;
-  }
+
+      updateMailLink();
+    });
+  })();
 </script>
 
     </div>
@@ -979,8 +993,8 @@
   <ul class="social__list list-reset">
     
     <li class="social__item">
-<!--      <a class="social__link" href="mailto://mail@mortalreminder.net" aria-label="social icon"><i class=""></i></a>-->
-      <a class="social__link" href="mailto://mail@mortalreminder.net" aria-label="social icon"><i class="ion ion-md-mail"></i></a>
+<!--      <a class="social__link" href="mailto:ptzhao@hotmail.com" aria-label="social icon"><i class=""></i></a>-->
+      <a class="social__link" href="mailto:ptzhao@hotmail.com" aria-label="social icon"><i class="ion ion-md-mail"></i></a>
     </li>
     
     <li class="social__item">
@@ -1021,7 +1035,6 @@
 <script src="/js/vendors/color.js"></script>
 <script src="/js/vendors/theme.js"></script>
 <script src="/js/vendors/i18n.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
   var base_url = "",
     site_langs = '["en","zh-cn"]',

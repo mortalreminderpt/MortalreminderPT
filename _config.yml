@@ -23,7 +23,7 @@ hero:
 #-------------------------------
 # Contact Settings
 contact:
-  email: mail@mortalreminder.net # Add your email for contact form
+  email: ptzhao@hotmail.com # Add your email for contact form
   description: 非常欢迎您与博主联系！如果您对博客有任何建议，可以留言给博主来信，无论您是有疑问、需要帮助还是想表达对博主的赞赏，博主非常期待听到您的声音。
 
  
@@ -41,7 +41,7 @@ pagination:
 social:
 #- {icon: "ion-logo-twitter", link: "https://twitter.com/Mortalreminder PTok"}
 #- {icon: "ion-logo-facebook", link: "https://www.facebook.com/braianagustin.diez"}
-- {icon: "ion-md-mail", link: "mailto://mail@mortalreminder.net"}
+- {icon: "ion-md-mail", link: "mailto:ptzhao@hotmail.com"}
 - {icon: "ion-logo-github", link: "https://github.com/MortalreminderPT"}
 #- {icon: "ion-logo-instagram", link: "https://www.instagram.com/elblogdebraian"}
 

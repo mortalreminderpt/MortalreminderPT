@@ -7,45 +7,59 @@ permalink: /contact/
   {% if site.contact.description %}
   <p class="contact-description">{% t global.contact.content %}</p>
   {% endif %}
-  <form class="form"
-    name="addForm" method="post" onsubmit="return CheckPost();">
-<!--    action="{% if site.contact.email %}https://formspree.io/{{site.contact.email}}{% else %}#{% endif %}" method="POST">-->
+  <form class="form" id="contact-form" action="mailto:{{ site.contact.email }}" onsubmit="return false;">
     <div class="form__group">
       <label class="form__label screen-reader-text" for="form-name">{% t global.contact.name %}</label>
-      <input class="form__input" id="form-name" type="text" name="name" placeholder="{% t global.contact.name %}" required>
+      <input class="form__input" id="form-name" type="text" name="name" placeholder="{% t global.contact.name %}" autocomplete="name" required>
     </div>
     <div class="form__group">
       <label class="form__label screen-reader-text" for="form-email">{% t global.contact.email %}</label>
-      <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="{% t global.contact.email %}" required>
+      <input class="form__input" id="form-email" type="email" name="email" placeholder="{% t global.contact.email %}" autocomplete="email" required>
     </div>
     <div class="form__group">
       <label class="form__label screen-reader-text" for="form-text">{% t global.contact.message %}</label>
-      <textarea class="form__input" id="form-text" name="text" rows="10" placeholder="{% t global.contact.message %}" required></textarea>
+      <textarea class="form__input" id="form-text" name="message" rows="10" placeholder="{% t global.contact.message %}" required></textarea>
     </div>
     <div class="form__group">
-      <button class="button button--primary" type="submit">{% t global.contact.send-message %}</button>
+      <a class="button button--primary" id="contact-mail-link" href="mailto:{{ site.contact.email }}">{% t global.contact.send-message %}</a>
     </div>
   </form>
   <hr>
 </div>
 
 <script>
-  function CheckPost () {
-  var body = ("发件人姓名: "+addForm.name.value+"\n" +
-    "发件人邮箱地址: "+addForm._replyto.value+"\n" +
-    "正文内容:\n" +addForm.text.value)
-    Email.send({
-      SecureToken : "5df920cd-e43e-4280-8f18-98fe220ef67e",
-      To : 'contact@mortalreminder.net',
-      From : "ptblogsender@yeah.net",
-      Subject : "Blog Contact",
-      Body : body
-      }).then(
-      message => {
-        alert(message);
-        return true;
+  (function () {
+    var form = document.getElementById('contact-form');
+    var mailLink = document.getElementById('contact-mail-link');
+    if (!form || !mailLink) {
+      return;
+    }
+
+    function updateMailLink() {
+      var name = form.elements['name'].value.trim();
+      var email = form.elements['email'].value.trim();
+      var message = form.elements['message'].value.trim();
+      var body = [
+        '{% t global.contact.name %}: ' + name,
+        '{% t global.contact.email %}: ' + email,
+        '',
+        '{% t global.contact.message %}:',
+        message
+      ].join('\n');
+
+      mailLink.href = 'mailto:{{ site.contact.email }}?subject=' +
+        encodeURIComponent('Blog Contact') +
+        '&body=' +
+        encodeURIComponent(body);
+    }
+
+    mailLink.addEventListener('click', function (event) {
+      if (!form.reportValidity()) {
+        event.preventDefault();
+        return;
       }
-    );
-    return false;
-  }
+
+      updateMailLink();
+    });
+  })();
 </script>
