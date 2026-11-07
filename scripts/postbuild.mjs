@@ -7,7 +7,7 @@ const origin = (process.env.SITE_URL || 'https://ptzhao.com').replace(/\/$/, '')
 // App Router emits trailing-slash folders; retain the original file-extension URL.
 await fs.copyFile('out/zh-cn/404/index.html', 'out/zh-cn/404.html');
 const notFound = await fs.readFile('out/404.html', 'utf8');
-await fs.writeFile('out/404.html', notFound.replace(/<title>[^<]*<\/title>/, '<title>Page not found</title>'));
+if (!notFound.includes('<title>Page not found</title>')) throw new Error('The exported 404 must retain its original title through hydration.');
 await fs.writeFile('out/.nojekyll', '');
 await fs.writeFile('out/CNAME', 'ptzhao.com\n');
 const revision = process.env.GITHUB_SHA || execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();

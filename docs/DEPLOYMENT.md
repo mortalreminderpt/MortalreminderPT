@@ -33,14 +33,14 @@ git push origin gh-pages
 
 ## 回滚
 
-如果需要恢复旧站，先提交或保存本地修改，在 `gh-pages` 分支撤销 Next.js 切换提交并推送：
+如果需要恢复归档当天的完整旧站，先提交或保存本地修改，在 `gh-pages` 分支撤销归档标签之后的变更并推送：
 
 ```bash
 git switch gh-pages
 git pull --ff-only origin gh-pages
-git log --oneline --grep='Deploy Next.js website and archive original Jekyll site'
-git revert <上一步找到的切换提交>
+git revert --no-commit jekyll-archive-2026-11-07..HEAD
+git commit -m 'Restore archived Jekyll website'
 git push origin gh-pages
 ```
 
-该操作恢复旧版源码、`_site` 和旧版部署工作流，由同一个 GitHub Pages 自动重新发布。回滚保留后续历史，不需要强制推送。若之后已有其他变更，先检查并解决 revert 冲突。归档分支和标签始终保留原始版本。
+该操作恢复旧版源码、`_site` 和旧版部署工作流，由同一个 GitHub Pages 自动重新发布。归档之后的提交仍保留在历史中，不需要强制推送。若之后存在合并提交或 revert 冲突，需要先检查并处理。归档分支和标签始终保留原始版本。

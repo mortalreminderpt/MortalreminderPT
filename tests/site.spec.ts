@@ -113,6 +113,8 @@ test('images zoom and close, and missing pages lead home', async ({ page }) => {
   const response = await page.goto('/a-page-that-does-not-exist/');
   expect(response!.status()).toBe(404);
   await expect(page.locator('.hero__title')).toHaveText('Page not found');
+  await expect(page.locator('body')).toHaveClass(/is-in/);
+  await expect(page).toHaveTitle('Page not found');
   await page.locator('#homepage').click();
   await expect(page).toHaveURL('http://localhost:3100/');
 });
@@ -132,6 +134,8 @@ test('missing translations and localized 404 navigation follow the original URLs
   await expect(page.locator('.hero__title')).toHaveText('Page not found');
   const response = await page.goto('/zh-cn/a-page-that-does-not-exist/');
   expect(response!.status()).toBe(404);
+  await expect(page.locator('body')).toHaveClass(/is-in/);
+  await expect(page).toHaveTitle('Page not found');
   await page.locator('#homepage').click();
   await expect(page).toHaveURL('http://localhost:3100/zh-cn/');
   await page.goto('/zh-cn');

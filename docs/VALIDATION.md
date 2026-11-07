@@ -89,5 +89,6 @@ REFERENCE_URL=http://localhost:3101 REPLICA_URL=http://localhost:3100 npm run te
 - 300 个 canonical 地址均使用 `https://ptzhao.com`；原生 404 页面按原逻辑不设 canonical。全部 301 个导出页面使用 Next.js 资源。
 - CNAME、robots.txt、sitemap 和中英文 RSS 均检查通过，无私有预览域名残留。
 - 原 GitHub 个人主页 README 字节级保留，生产仓库不包含私有 Sites 配置、构建缓存或浏览器文件。
+- 404 页通过布局的默认元数据保留原有 `Page not found` 标题，React 加载后也保持一致，并加入浏览器回归检查。
 
 本次未改动视觉布局、文章源码、组件交互或锁定依赖；视觉截图对照沿用上方 2026-10-29 的记录。

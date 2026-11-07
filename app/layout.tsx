@@ -3,7 +3,8 @@ import '@/styles/main.scss';
 import '@/styles/next.scss';
 
 export const metadata: Metadata = {
-  title: "PT's Blog",
+  // Every valid route supplies its own title; this fallback is used by the exported 404.
+  title: 'Page not found',
   icons: { icon: '/images/favicon.ico' },
   alternates: { types: { 'application/rss+xml': '/feed.xml' } },
 };
