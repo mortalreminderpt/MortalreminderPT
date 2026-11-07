@@ -1,0 +1,377 @@
+{
+  "route": "/tags/",
+  "lang": "en",
+  "kind": "taxonomy",
+  "title": "Tags",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"Tags\">\n    </div>\n    <div class=\"hero__content\">\n      <h1 class=\"hero__title\">Tags</h1>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/computer-networking",
+        "src": "https://src.onlinedown.net/images/h_imges/wdj/3/logo/c76a697a57cfc446c777513a033e19b1_256_256.png",
+        "alt": "One-Click Hanmu on Sunshine Sports Platform"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      1 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2019-10-11T14:59:11+11:00\">Oct 11, 2019</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/computer-networking\"=\"\">Computer Networking</a>\n                  ",
+      "title": "Computer Networking",
+      "excerptHtml": "This blog introduces a method for completing Hanmu (a type of running challenge) on the Sunshine Sports platform using HTTP requests. Compared to virtual positioning, this method is faster and more convenient.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/algorithms",
+        "src": "https://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_1920x1080.jpg",
+        "alt": "Two Pointer Problems (Part 2) - Sliding Window"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      10 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2021-10-20T00:41:33+11:00\">Oct 20, 2021</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/algorithms\"=\"\">Algorithms</a>\n                  ",
+      "title": "Algorithms",
+      "excerptHtml": "Two pointers are used to scan in two directions during traversal, achieving the desired algorithmic goals.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/dynamic-programming",
+        "src": "/images/covers/village.jpg",
+        "alt": "Dynamic Programming (Part 4): Longest Increasing Subsequence (LIS)"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      4 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2021-10-12T00:19:19+11:00\">Oct 12, 2021</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/dynamic-programming\"=\"\">Dynamic Programming</a>\n                  ",
+      "title": "Dynamic Programming",
+      "excerptHtml": "The core idea of dynamic programming lies in breaking down a problem into smaller subproblems and storing previous computation results to reduce computational complexity.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/data-structures",
+        "src": "https://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_1920x1080.jpg",
+        "alt": "Two Pointer Problems (Part 2) - Sliding Window"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      4 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2021-10-20T00:41:33+11:00\">Oct 20, 2021</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/data-structures\"=\"\">Data Structures</a>\n                  ",
+      "title": "Data Structures",
+      "excerptHtml": "Two pointers are used to scan in two directions during traversal, achieving the desired algorithmic goals.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/binary-tree",
+        "src": "/images/covers/数据结构-cover1.png",
+        "alt": "Binary Tree Basics (Part 3) - Segment Tree"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      3 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2021-10-09T22:00:50+11:00\">Oct 9, 2021</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/binary-tree\"=\"\">Binary Tree</a>\n                  ",
+      "title": "Binary Tree",
+      "excerptHtml": "A binary tree is an ordered tree where each node has a maximum of two children. It is the simplest and most essential type of tree.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/tree-data-structures",
+        "src": "/images/covers/数据结构-cover1.png",
+        "alt": "Binary Tree Basics (Part 3) - Segment Tree"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      3 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2021-10-09T22:00:50+11:00\">Oct 9, 2021</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/tree-data-structures\"=\"\">Tree Data Structures</a>\n                  ",
+      "title": "Tree Data Structures",
+      "excerptHtml": "A binary tree is an ordered tree where each node has a maximum of two children. It is the simplest and most essential type of tree.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/pointers",
+        "src": "https://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_1920x1080.jpg",
+        "alt": "Two Pointer Problems (Part 2) - Sliding Window"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      2 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2021-10-20T00:41:33+11:00\">Oct 20, 2021</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/pointers\"=\"\">Pointers</a>\n                  ",
+      "title": "Pointers",
+      "excerptHtml": "Two pointers are used to scan in two directions during traversal, achieving the desired algorithmic goals.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/linked-list",
+        "src": "https://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_1920x1080.jpg",
+        "alt": "Two Pointer Problems (Part 2) - Sliding Window"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      2 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2021-10-20T00:41:33+11:00\">Oct 20, 2021</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/linked-list\"=\"\">Linked List</a>\n                  ",
+      "title": "Linked List",
+      "excerptHtml": "Two pointers are used to scan in two directions during traversal, achieving the desired algorithmic goals.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/data-structure",
+        "src": "https://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_1920x1080.jpg",
+        "alt": "Two Pointer Problems (Part 1) - Two Pointer and Fast Slow Pointer"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      1 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2021-10-09T00:14:13+11:00\">Oct 9, 2021</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/data-structure\"=\"\">Data Structure</a>\n                  ",
+      "title": "Data Structure",
+      "excerptHtml": "Two pointers are used to scan in two directions during traversal, achieving the respective algorithmic goals.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/chatgpt",
+        "src": "https://www.bing.com/th?id=OHR.LittleDuckling_ZH-CN2922471258_1920x1080.jpg",
+        "alt": "Using ChatGPT to Control Arduino Devices"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      1 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2023-04-24T02:00:00+10:00\">Apr 24, 2023</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/chatgpt\"=\"\">ChatGPT</a>\n                  ",
+      "title": "ChatGPT",
+      "excerptHtml": "This post explores a method to integrate ChatGPT with external systems, leveraging ChatGPT as a controller to manage Arduino devices, thus exploring the potential of natural language commands to control home devices and the development direction of smart home technology.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/arduino",
+        "src": "https://www.bing.com/th?id=OHR.LittleDuckling_ZH-CN2922471258_1920x1080.jpg",
+        "alt": "Using ChatGPT to Control Arduino Devices"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      1 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2023-04-24T02:00:00+10:00\">Apr 24, 2023</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/arduino\"=\"\">Arduino</a>\n                  ",
+      "title": "Arduino",
+      "excerptHtml": "This post explores a method to integrate ChatGPT with external systems, leveraging ChatGPT as a controller to manage Arduino devices, thus exploring the potential of natural language commands to control home devices and the development direction of smart home technology.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/smart-home",
+        "src": "https://www.bing.com/th?id=OHR.LittleDuckling_ZH-CN2922471258_1920x1080.jpg",
+        "alt": "Using ChatGPT to Control Arduino Devices"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      1 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2023-04-24T02:00:00+10:00\">Apr 24, 2023</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/smart-home\"=\"\">Smart Home</a>\n                  ",
+      "title": "Smart Home",
+      "excerptHtml": "This post explores a method to integrate ChatGPT with external systems, leveraging ChatGPT as a controller to manage Arduino devices, thus exploring the potential of natural language commands to control home devices and the development direction of smart home technology.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/disk-management",
+        "src": "https://www.bing.com/th?id=OHR.TexasIndigoBunting_ZH-CN3699392300_1920x1080.jpg",
+        "alt": "Migrating Your System with DiskGenius"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      1 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2023-10-12T21:54:54+11:00\">Oct 12, 2023</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/disk-management\"=\"\">Disk Management</a>\n                  ",
+      "title": "Disk Management",
+      "excerptHtml": "Learn how to migrate your system disk using DiskGenius, a powerful disk management tool.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/configuration",
+        "src": "/images/covers/apollo-cover.jpg",
+        "alt": "Apollo Configuration Center (Part 7) - Spring Boot Integration and Distributed Deployment"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      7 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2023-11-24T16:29:57+11:00\">Nov 24, 2023</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/configuration\"=\"\">configuration</a>\n                  ",
+      "title": "configuration",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/configuration-center",
+        "src": "/images/covers/apollo-cover.jpg",
+        "alt": "Apollo Configuration Center (Part 7) - Spring Boot Integration and Distributed Deployment"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      7 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2023-11-24T16:29:57+11:00\">Nov 24, 2023</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/configuration-center\"=\"\">configuration center</a>\n                  ",
+      "title": "configuration center",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/apollo",
+        "src": "/images/covers/apollo-cover.jpg",
+        "alt": "Apollo Configuration Center (Part 7) - Spring Boot Integration and Distributed Deployment"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      7 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2023-11-24T16:29:57+11:00\">Nov 24, 2023</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/apollo\"=\"\">Apollo</a>\n                  ",
+      "title": "Apollo",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/maven",
+        "src": "/images/covers/maven-cover.jpg",
+        "alt": "Maven (Part 13) - Optional Dependencies and Dependency Exclusions"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      13 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2023-12-05T20:01:56+11:00\">Dec 5, 2023</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/maven\"=\"\">Maven</a>\n                  ",
+      "title": "Maven",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/rust",
+        "src": "/images/covers/edit-xlsx-cover.png",
+        "alt": "Edit-xlsx Development Log (Part 1)"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      1 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-01-30T18:20:05+11:00\">Jan 30, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/rust\"=\"\">rust</a>\n                  ",
+      "title": "rust",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/kubernetes",
+        "src": "/images/covers/k8s.png",
+        "alt": "Kubernetes Notes (Part 3) - Concepts of Master and Worker"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      3 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-05-24T20:18:52+10:00\">May 24, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/kubernetes\"=\"\">Kubernetes</a>\n                  ",
+      "title": "Kubernetes",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/algorithm",
+        "src": "https://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg",
+        "alt": "Reconstructing the MNIST Dataset Using VAE"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      22 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-12-08T19:12:54+11:00\">Dec 8, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/algorithm\"=\"\">Algorithm</a>\n                  ",
+      "title": "Algorithm",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/python",
+        "src": "https://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg",
+        "alt": "Reconstructing the MNIST Dataset Using VAE"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      22 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-12-08T19:12:54+11:00\">Dec 8, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/python\"=\"\">Python</a>\n                  ",
+      "title": "Python",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/pytorch",
+        "src": "https://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg",
+        "alt": "Reconstructing the MNIST Dataset Using VAE"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      21 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-12-08T19:12:54+11:00\">Dec 8, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/pytorch\"=\"\">Pytorch</a>\n                  ",
+      "title": "Pytorch",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/node-js",
+        "src": "https://miro.medium.com/v2/1*1d4T0TNb33A7Dus2ePdN_g.jpeg",
+        "alt": "Prisma - Filtering"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      5 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-12-19T15:40:02+11:00\">Dec 19, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/node-js\"=\"\">Node.js</a>\n                  ",
+      "title": "Node.js",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/next-js",
+        "src": "https://miro.medium.com/v2/1*1d4T0TNb33A7Dus2ePdN_g.jpeg",
+        "alt": "Prisma - Filtering"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      5 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-12-19T15:40:02+11:00\">Dec 19, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/next-js\"=\"\">Next.js</a>\n                  ",
+      "title": "Next.js",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/typescript",
+        "src": "https://miro.medium.com/v2/1*1d4T0TNb33A7Dus2ePdN_g.jpeg",
+        "alt": "Prisma - Filtering"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      5 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-12-19T15:40:02+11:00\">Dec 19, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/typescript\"=\"\">Typescript</a>\n                  ",
+      "title": "Typescript",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/tags/prisma",
+        "src": "https://miro.medium.com/v2/1*1d4T0TNb33A7Dus2ePdN_g.jpeg",
+        "alt": "Prisma - Filtering"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      5 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-12-19T15:40:02+11:00\">Dec 19, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/tags/prisma\"=\"\">Prisma</a>\n                  ",
+      "title": "Prisma",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    }
+  ],
+  "sectionClass": "featured-tag.last.first."
+}

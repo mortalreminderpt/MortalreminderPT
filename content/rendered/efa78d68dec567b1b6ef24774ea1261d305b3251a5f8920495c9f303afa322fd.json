@@ -1,0 +1,83 @@
+{
+  "route": "/zh-cn/tags/数据结构/",
+  "lang": "zh-cn",
+  "kind": "archive",
+  "title": "数据结构",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"数据结构\">\n    </div>\n    <div class=\"hero__content\">\n      <div class=\"row\">\n        <div class=\"col col-8 col-d-10 col-m-12 push-m-0 push-d-1 push-2\">\n          <div class=\"archive-box\">\n            \n                <h1 class=\"archive-title\">数据结构</h1>\n              \n            <span class=\"archive-meta\">5 posts found.</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/",
+        "src": "https://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_1920x1080.jpg",
+        "alt": "双指针问题（二）滑动窗口"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 13 分钟\n\n\n          <time class=\"article__date\" datetime=\"2021-10-20T00:41:33+11:00\">Oct 20, 2021</time>\n        </span>\n      ",
+      "titleHtml": "双指针问题（二）滑动窗口",
+      "title": "双指针问题（二）滑动窗口",
+      "excerptHtml": "双指针是在遍历的过程中，使用两个方向相同或相反的指针进行扫描，从而达到相应目的的算法。",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E7%AE%97%E6%B3%95\"=\"\">算法</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E6%8C%87%E9%92%88\"=\"\">指针</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E9%93%BE%E8%A1%A8\"=\"\">链表</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84\"=\"\">数据结构</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/",
+        "src": "/images/covers/数据结构-cover1.png",
+        "alt": "二叉树基础（三） 线段树（Segment Tree）"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 23 分钟\n\n\n          <time class=\"article__date\" datetime=\"2021-10-09T22:00:50+11:00\">Oct 9, 2021</time>\n        </span>\n      ",
+      "titleHtml": "二叉树基础（三） 线段树（Segment Tree）",
+      "title": "二叉树基础（三） 线段树（Segment Tree）",
+      "excerptHtml": "二叉树（Binary tree）是指树中节点的度不大于2的有序树，它是一种最简单且最重要的树。",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E7%AE%97%E6%B3%95\"=\"\">算法</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84\"=\"\">数据结构</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E4%BA%8C%E5%8F%89%E6%A0%91\"=\"\">二叉树</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E6%A0%91%E5%9E%8B%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84\"=\"\">树型数据结构</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/2021/10/09/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%B8%80-%E5%AF%B9%E6%92%9E%E6%8C%87%E9%92%88%E5%92%8C%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88/",
+        "src": "https://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_1920x1080.jpg",
+        "alt": "双指针问题（一）对撞指针和快慢指针"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 13 分钟\n\n\n          <time class=\"article__date\" datetime=\"2021-10-09T00:14:13+11:00\">Oct 9, 2021</time>\n        </span>\n      ",
+      "titleHtml": "双指针问题（一）对撞指针和快慢指针",
+      "title": "双指针问题（一）对撞指针和快慢指针",
+      "excerptHtml": "双指针是在遍历的过程中，使用两个方向相同或相反的指针进行扫描，从而达到相应目的的算法。",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E7%AE%97%E6%B3%95\"=\"\">算法</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E6%8C%87%E9%92%88\"=\"\">指针</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E9%93%BE%E8%A1%A8\"=\"\">链表</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84\"=\"\">数据结构</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/",
+        "src": "/images/covers/数据结构-cover1.png",
+        "alt": "二叉树基础（二）二叉搜索树（BST）"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 16 分钟\n\n\n          <time class=\"article__date\" datetime=\"2021-10-05T04:14:28+11:00\">Oct 5, 2021</time>\n        </span>\n      ",
+      "titleHtml": "二叉树基础（二）二叉搜索树（BST）",
+      "title": "二叉树基础（二）二叉搜索树（BST）",
+      "excerptHtml": "二叉树（Binary tree）是指树中节点的度不大于2的有序树，它是一种最简单且最重要的树。",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E7%AE%97%E6%B3%95\"=\"\">算法</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84\"=\"\">数据结构</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E4%BA%8C%E5%8F%89%E6%A0%91\"=\"\">二叉树</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E6%A0%91%E5%9E%8B%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84\"=\"\">树型数据结构</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/",
+        "src": "/images/covers/数据结构-cover1.png",
+        "alt": "二叉树基础（一）二叉树的概念"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 14 分钟\n\n\n          <time class=\"article__date\" datetime=\"2021-09-28T15:58:19+10:00\">Sep 28, 2021</time>\n        </span>\n      ",
+      "titleHtml": "二叉树基础（一）二叉树的概念",
+      "title": "二叉树基础（一）二叉树的概念",
+      "excerptHtml": "二叉树（Binary tree）是指树中节点的度不大于2的有序树，它是一种最简单且最重要的树。",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E7%AE%97%E6%B3%95\"=\"\">算法</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84\"=\"\">数据结构</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E4%BA%8C%E5%8F%89%E6%A0%91\"=\"\">二叉树</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E6%A0%91%E5%9E%8B%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84\"=\"\">树型数据结构</a>\n              \n            </span>\n          \n        </div>\n      "
+    }
+  ],
+  "sectionClass": "hero"
+}

@@ -1,0 +1,139 @@
+{
+  "route": "/zh-cn/categories/",
+  "lang": "zh-cn",
+  "kind": "taxonomy",
+  "title": "Categories",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"Categories\">\n    </div>\n    <div class=\"hero__content\">\n      <h1 class=\"hero__title\">Categories</h1>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/zh-cn/categories/dynamic-programming-fundamentals",
+        "src": "/images/covers/village.jpg",
+        "alt": "动态规划（四）最长上升子序列（LIS）"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      4 篇内容\n                    </span>\n                    <time class=\"article__date\" datetime=\"2021-10-12T00:19:19+11:00\">Oct 12, 2021</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/zh-cn/categories/dynamic-programming-fundamentals\"=\"\">Dynamic Programming Fundamentals</a>\n                  ",
+      "title": "Dynamic Programming Fundamentals",
+      "excerptHtml": "动态规划最核心的思想，就在于将问题拆分为一个个子问题，保留之前的计算结果，以达到减少计算量的效果。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/zh-cn/categories/fundamentals-of-data-structures",
+        "src": "/images/covers/数据结构-cover1.png",
+        "alt": "二叉树基础（一）二叉树的概念"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      1 篇内容\n                    </span>\n                    <time class=\"article__date\" datetime=\"2021-09-28T15:58:19+10:00\">Sep 28, 2021</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/zh-cn/categories/fundamentals-of-data-structures\"=\"\">Fundamentals of Data Structures</a>\n                  ",
+      "title": "Fundamentals of Data Structures",
+      "excerptHtml": "二叉树（Binary tree）是指树中节点的度不大于2的有序树，它是一种最简单且最重要的树。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/zh-cn/categories/apollo",
+        "src": "/images/covers/apollo-cover.jpg",
+        "alt": "Apollo配置中心（七）Springboot集成及分布式部署"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      7 篇内容\n                    </span>\n                    <time class=\"article__date\" datetime=\"2023-11-24T16:29:57+11:00\">Nov 24, 2023</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/zh-cn/categories/apollo\"=\"\">Apollo</a>\n                  ",
+      "title": "Apollo",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/zh-cn/categories/maven",
+        "src": "/images/covers/maven-cover.jpg",
+        "alt": "Maven（十三）可选（optional）依赖项和依赖项排除（exclusion）"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      13 篇内容\n                    </span>\n                    <time class=\"article__date\" datetime=\"2023-12-05T20:01:56+11:00\">Dec 5, 2023</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/zh-cn/categories/maven\"=\"\">Maven</a>\n                  ",
+      "title": "Maven",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/zh-cn/categories/edit-xlsx",
+        "src": "/images/covers/edit-xlsx-cover.png",
+        "alt": "Edit-xlsx开发日志（一）"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      1 篇内容\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-01-30T18:20:05+11:00\">Jan 30, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/zh-cn/categories/edit-xlsx\"=\"\">Edit-xlsx</a>\n                  ",
+      "title": "Edit-xlsx",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/zh-cn/categories/react",
+        "src": "/images/covers/react.png",
+        "alt": "Redux词汇表"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      10 篇内容\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-09-16T12:08:53+10:00\">Sep 16, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/zh-cn/categories/react\"=\"\">React</a>\n                  ",
+      "title": "React",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/zh-cn/categories/computer-network",
+        "src": "https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp",
+        "alt": "计算机网络（七）应用层"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      7 篇内容\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-10-25T17:43:27+11:00\">Oct 25, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/zh-cn/categories/computer-network\"=\"\">Computer Network</a>\n                  ",
+      "title": "Computer Network",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/zh-cn/categories/algorithm",
+        "src": "https://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg",
+        "alt": "使用VAE重建MNIST数据集"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      22 篇内容\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-12-08T19:12:54+11:00\">Dec 8, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/zh-cn/categories/algorithm\"=\"\">Algorithm</a>\n                  ",
+      "title": "Algorithm",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/zh-cn/categories/node-js",
+        "src": "https://miro.medium.com/v2/1*1d4T0TNb33A7Dus2ePdN_g.jpeg",
+        "alt": "Prisma：Filtering"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      5 篇内容\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-12-19T15:40:02+11:00\">Dec 19, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/zh-cn/categories/node-js\"=\"\">Node.js</a>\n                  ",
+      "title": "Node.js",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    }
+  ],
+  "sectionClass": "featured-tag.last.first."
+}

@@ -1,0 +1,157 @@
+{
+  "route": "/blogs/8/",
+  "lang": "en",
+  "kind": "blog",
+  "title": "PT's Blog - page 8",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"PT's Blog\">\n    </div>\n    <div class=\"hero__content\">\n      <h1 class=\"hero__title\">PT's Blog</h1>\n      <p class=\"hero__desc\">Just coding for fun.</p>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "featuredCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/2023/04/24/%E4%BD%BF%E7%94%A8ChatGPT%E6%8E%A7%E5%88%B6Arduino%E8%AE%BE%E5%A4%87/",
+        "src": "https://www.bing.com/th?id=OHR.LittleDuckling_ZH-CN2922471258_1920x1080.jpg",
+        "alt": "Using ChatGPT to Control Arduino Devices"
+      },
+      "featured": true,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n\n  69 min read\n\n\n                    </span>\n                    <time class=\"article__date\" datetime=\"2023-04-24T02:00:00+10:00\">Apr 24, 2023</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/2023/04/24/%E4%BD%BF%E7%94%A8ChatGPT%E6%8E%A7%E5%88%B6Arduino%E8%AE%BE%E5%A4%87/\">Using ChatGPT to Control Arduino Devices</a>\n                  ",
+      "title": "Using ChatGPT to Control Arduino Devices",
+      "excerptHtml": "This post explores a method to integrate ChatGPT with external systems, leveraging ChatGPT as a controller to manage Arduino devices, thus exploring the potential of natural language commands to control home devices and the development direction of smart home technology.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/tags/chatgpt\" class=\"article__tag\">ChatGPT</a>\n                        \n                          <a href=\"/tags/arduino\" class=\"article__tag\">Arduino</a>\n                        \n                          <a href=\"/tags/smart-home\" class=\"article__tag\">Smart Home</a>\n                        \n                      </span>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/dynamic%20programming%20fundamentals/2021/09/27/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%80-%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D%E7%B3%BB%E5%88%97/",
+        "src": "/images/covers/village.jpg",
+        "alt": "Dynamic Programming (Part 1) - House Robber Series"
+      },
+      "featured": true,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n\n  10 min read\n\n\n                    </span>\n                    <time class=\"article__date\" datetime=\"2021-09-27T22:12:45+10:00\">Sep 27, 2021</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/dynamic%20programming%20fundamentals/2021/09/27/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%80-%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D%E7%B3%BB%E5%88%97/\">Dynamic Programming (Part 1) - House Robber Series</a>\n                  ",
+      "title": "Dynamic Programming (Part 1) - House Robber Series",
+      "excerptHtml": "The core idea of dynamic programming lies in breaking down a problem into smaller subproblems and retaining previously computed results to reduce computational complexity.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/tags/algorithms\" class=\"article__tag\">Algorithms</a>\n                        \n                          <a href=\"/tags/dynamic-programming\" class=\"article__tag\">Dynamic Programming</a>\n                        \n                      </span>\n                      \n                    </div>\n\n                  "
+    }
+  ],
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/",
+        "src": "/images/covers/数据结构-cover1.png",
+        "alt": "Binary Tree Basics (Part 3) - Segment Tree"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  37 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-10-09T22:00:50+11:00\">Oct 9, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Binary Tree Basics (Part 3) - Segment Tree",
+      "title": "Binary Tree Basics (Part 3) - Segment Tree",
+      "excerptHtml": "A binary tree is an ordered tree where each node has a maximum of two children. It is the simplest and most essential type of tree.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/data-structures\"=\"\">Data Structures</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/binary-tree\"=\"\">Binary Tree</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/tree-data-structures\"=\"\">Tree Data Structures</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/2021/10/09/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%B8%80-%E5%AF%B9%E6%92%9E%E6%8C%87%E9%92%88%E5%92%8C%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88/",
+        "src": "https://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_1920x1080.jpg",
+        "alt": "Two Pointer Problems (Part 1) - Two Pointer and Fast Slow Pointer"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  25 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-10-09T00:14:13+11:00\">Oct 9, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Two Pointer Problems (Part 1) - Two Pointer and Fast Slow Pointer",
+      "title": "Two Pointer Problems (Part 1) - Two Pointer and Fast Slow Pointer",
+      "excerptHtml": "Two pointers are used to scan in two directions during traversal, achieving the respective algorithmic goals.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/pointers\"=\"\">Pointers</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/linked-list\"=\"\">Linked List</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/data-structure\"=\"\">Data Structure</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/",
+        "src": "/images/covers/数据结构-cover1.png",
+        "alt": "Binary Trees Basics (Part 2) - Binary Search Trees (BSTs)"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  26 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-10-05T04:14:28+11:00\">Oct 5, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Binary Trees Basics (Part 2) - Binary Search Trees (BSTs)",
+      "title": "Binary Trees Basics (Part 2) - Binary Search Trees (BSTs)",
+      "excerptHtml": "A binary tree is a tree in which each node has at most two children, making it a simple yet fundamental tree structure.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/data-structures\"=\"\">Data Structures</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/binary-tree\"=\"\">Binary Tree</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/tree-data-structures\"=\"\">Tree Data Structures</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/",
+        "src": "/images/covers/village.jpg",
+        "alt": "Dynamic Programming Series on Stock Problems"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  41 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-09-29T22:29:46+10:00\">Sep 29, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Dynamic Programming Series on Stock Problems",
+      "title": "Dynamic Programming Series on Stock Problems",
+      "excerptHtml": "The core idea of dynamic programming lies in breaking down a problem into subproblems, retaining previous computational results to reduce the amount of computation needed.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/dynamic-programming\"=\"\">Dynamic Programming</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/",
+        "src": "/images/covers/数据结构-cover1.png",
+        "alt": "Binary Trees Basics (Part 1) - Understanding Binary Trees"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  31 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-09-28T15:58:19+10:00\">Sep 28, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Binary Trees Basics (Part 1) - Understanding Binary Trees",
+      "title": "Binary Trees Basics (Part 1) - Understanding Binary Trees",
+      "excerptHtml": "A binary tree is a fundamental type of tree structure where each node has at most two child nodes, making it one of the simplest and most important trees.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/data-structures\"=\"\">Data Structures</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/binary-tree\"=\"\">Binary Tree</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/tree-data-structures\"=\"\">Tree Data Structures</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/dynamic%20programming%20fundamentals/2021/09/28/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%BA%8C-%E6%9C%80%E4%BC%98%E5%AD%90%E5%BA%8F%E5%88%97%E7%B3%BB%E5%88%97/",
+        "src": "/images/covers/village.jpg",
+        "alt": "Dynamic Programming (Part 2) - Optimal Subsequence Series"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  10 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-09-28T13:12:38+10:00\">Sep 28, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Dynamic Programming (Part 2) - Optimal Subsequence Series",
+      "title": "Dynamic Programming (Part 2) - Optimal Subsequence Series",
+      "excerptHtml": "The core idea of dynamic programming lies in breaking down a problem into smaller subproblems, retaining previously computed results to reduce computational effort.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/dynamic-programming\"=\"\">Dynamic Programming</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/dynamic%20programming%20fundamentals/2021/09/27/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%80-%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D%E7%B3%BB%E5%88%97/",
+        "src": "/images/covers/village.jpg",
+        "alt": "Dynamic Programming (Part 1) - House Robber Series"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  10 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-09-27T22:12:45+10:00\">Sep 27, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Dynamic Programming (Part 1) - House Robber Series",
+      "title": "Dynamic Programming (Part 1) - House Robber Series",
+      "excerptHtml": "The core idea of dynamic programming lies in breaking down a problem into smaller subproblems and retaining previously computed results to reduce computational complexity.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/dynamic-programming\"=\"\">Dynamic Programming</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/2019/10/11/%E9%98%B3%E5%85%89%E4%BD%93%E8%82%B2%E4%B8%80%E9%94%AE%E6%B1%89%E5%A7%86/",
+        "src": "https://src.onlinedown.net/images/h_imges/wdj/3/logo/c76a697a57cfc446c777513a033e19b1_256_256.png",
+        "alt": "One-Click Hanmu on Sunshine Sports Platform"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  17 min read\n\n\n          <time class=\"article__date\" datetime=\"2019-10-11T14:59:11+11:00\">Oct 11, 2019</time>\n        </span>\n      ",
+      "titleHtml": "One-Click Hanmu on Sunshine Sports Platform",
+      "title": "One-Click Hanmu on Sunshine Sports Platform",
+      "excerptHtml": "This blog introduces a method for completing Hanmu (a type of running challenge) on the Sunshine Sports platform using HTTP requests. Compared to virtual positioning, this method is faster and more convenient.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/computer-networking\"=\"\">Computer Networking</a>\n              \n            </span>\n          \n        </div>\n      "
+    }
+  ],
+  "pageNumber": 8,
+  "totalPages": 8,
+  "loadMoreText": ""
+}

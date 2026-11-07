@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/04/20/操作系统-一-操作系统的概念和功能/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（一）操作系统的概念和功能",
+  "description": "操作系统（Operating System，OS）是指控制和管理计算机系统软硬件资源，合理组织调度计算机工作和资源分配，提供给用户和其它软件方便的接口和环境。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（一）操作系统的概念和功能\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（一）操作系统的概念和功能\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-04-20T04:17:03+10:00\">Apr 20, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（一）操作系统的概念和功能</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#声明\" id=\"markdown-toc-声明\">声明</a></li>\n  <li><a href=\"#操作系统的定义\" id=\"markdown-toc-操作系统的定义\">操作系统的定义</a></li>\n  <li><a href=\"#操作系统的功能和目标\" id=\"markdown-toc-操作系统的功能和目标\">操作系统的功能和目标</a>    <ol>\n      <li><a href=\"#作为系统资源的管理者\" id=\"markdown-toc-作为系统资源的管理者\">作为系统资源的管理者</a></li>\n      <li><a href=\"#向上层提供方便易用的服务\" id=\"markdown-toc-向上层提供方便易用的服务\">向上层提供方便易用的服务</a>        <ol>\n          <li><a href=\"#封装思想\" id=\"markdown-toc-封装思想\">封装思想</a></li>\n          <li><a href=\"#操作系统提供的服务示例\" id=\"markdown-toc-操作系统提供的服务示例\">操作系统提供的服务示例</a></li>\n        </ol>\n      </li>\n      <li><a href=\"#作为最接近硬件的层次\" id=\"markdown-toc-作为最接近硬件的层次\">作为最接近硬件的层次</a></li>\n    </ol>\n  </li>\n</ol>\n\n<h2 id=\"声明\">声明</h2>\n<p>本系列主要参考了\n<a href=\"https://www.bilibili.com/video/BV1YE411D7nH\">王道计算机考研 操作系统</a>\n完成，准确来说是作者的学习笔记，读者可以视频为主，以本文为辅进行学习。</p>\n\n<h2 id=\"操作系统的定义\">操作系统的定义</h2>\n\n<p>在了解操作系统的定义前，为了方便起见，我们可以将计算机系统抽象为包含如下四层的层次结构。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-计算机系统层次结构2.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<p>明确操作系统在计算机系统所在位置后，可以给出操作系统的定义</p>\n\n<p>操作系统（Operating System，OS）是指控制和<strong>管理</strong>整个计算机系统的<strong>硬件和软件</strong>资源，并合理地组织调度计算机的工作和资源的分配；以<strong>提供给用户和其他软件方便的接口和环境</strong>；它是计算机系统中最基本的、最接近系统硬件的<strong>系统软件</strong>。</p>\n\n<p>在任务管理器中可以看到操作系统对应用程序使用的管理及对硬件资源的监控。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-任务管理器.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<h2 id=\"操作系统的功能和目标\">操作系统的功能和目标</h2>\n\n<h3 id=\"作为系统资源的管理者\">作为系统资源的管理者</h3>\n\n<p>操作系统作为系统资源的管理者，其提供的四种功能包括<strong>处理机管理、存储器管理、文件管理及设备管理</strong>。其主要目标包括<strong>安全和高效</strong>。</p>\n\n<p>使用QQ进行视频聊天时，操作系统的工作主要包含四步：</p>\n\n<div class=\"language-plaintext highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>1. 在各个文件夹中找到QQ安装的位置；（逐层打开文件夹，找到QQ的可执行文件存放位置。）\n2. 用户双击打开QQ；（将该程序相关数据放入内存，执行一个程序前**需要将该程序放到内存中**，才能被CPU处理。）\n3. QQ程序正常运行；（对应进程被处理机（CPU）处理。）\n4. 开始视频聊天。（需要将摄像头设备分配给进程。）\n</code></pre></div></div>\n\n<h3 id=\"向上层提供方便易用的服务\">向上层提供方便易用的服务</h3>\n\n<h4 id=\"封装思想\">封装思想</h4>\n\n<p>操作系统把一些丑陋的硬件功能封装成简单易用的服务，使用户能更方便地使用计算机,用户无需关心底层硬件的原理，只需要对操作系统发出命令即可。</p>\n\n<p>硬件只听得懂二进制指令，如：<code class=\"language-plaintext highlighter-rouge\">01010111101110111010101</code>，对外暴露了“丑陋”、不友好的交互接口。</p>\n\n<p>在硬件之上安装了操作系统，操作系统对外暴露了“美丽”、友好的交互接口。</p>\n\n<h4 id=\"操作系统提供的服务示例\">操作系统提供的服务示例</h4>\n\n<p>操作系统提供的服务包括图形化用户接口、命令接口及程序接口，其中命令接口和程序接口统称用户接口。</p>\n\n<p>（1）图形化用户接口(Graphical User Interface，GUI)</p>\n\n<p>用户可以使用形象的图形界面进行操作，而不再需要记忆复杂的命令、参数。</p>\n\n<div class=\"language-plaintext highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>比如在Windows操作系统中，删除一个文件只需要把文件“拖拽”到回收站即可。\n</code></pre></div></div>\n\n<p>（2）联机命令接口(交互式命令接口)</p>\n\n<p>由一组键盘操作命令及命令解释程序组成（通过命令解释程序对用户从键盘输入的命令进行检查命令格式、完成命令的执行）。</p>\n\n<p>即用户说一句，系统做一句。</p>\n\n<p>（3）脱机命令接口(批处理命令接口)</p>\n\n<p>由一组作业控制语言（JCL）组成。</p>\n\n<p>比如.bat、.sh等批处理文件。即用户说一堆，系统做一堆。</p>\n\n<p>（4）程序接口</p>\n\n<p>可以在程序中进行系统调用来使用程序接口。普通用户不能直接使用程序接口，只能通过程序代码间接使用。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-系统调用.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<h3 id=\"作为最接近硬件的层次\">作为最接近硬件的层次</h3>\n\n<p>操作系统作为最接近硬件的层次，需要实现<strong>对硬件机器的拓展</strong>。</p>\n\n<p>没有任何软件支持的计算机称为<strong>裸机</strong>。在裸机上安装的操作系统，可以提供资源管理功能和方便用户的服务功能，将裸机改造成功能更强、使用更方便的机器。</p>\n\n<p>通常把覆盖了软件的机器成为<strong>扩充机器</strong>，又称之为<strong>虚拟机</strong>。</p>\n\n<div class=\"language-plaintext highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>类比于汽车，硬件级别的发动机和轮胎无法直接衔接，使用传动系统让发动机带动轮子，即完成了对原始硬件机器的拓展。\n</code></pre></div></div>\n\n<p>操作系统对硬件机器的拓展：将CPU、内存、磁盘、显示器、键盘等硬件合理地组织起来，让各种硬件能够相互协调配合，实现更多更复杂的功能。</p>\n\n\n    ",
+  "source": "content/posts/zh-cn/2022-04-20-操作系统（一）操作系统的概念和功能.md",
+  "sourceDigest": "2544243c503a4c8d8d4040bebcd6f2140b53151bd2d0ccfd39c72debf93b35f6",
+  "postTitle": "操作系统（一）操作系统的概念和功能",
+  "date": "2022-04-20T04:17:03+10:00",
+  "dateText": "Apr 20, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover1.png",
+  "featured": true,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/\">\n        <img class=\"post__nav-image lazy\" data-src=\"https://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_1920x1080.jpg\" alt=\"双指针问题（二）滑动窗口\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">双指针问题（二）滑动窗口</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/04/20/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BA%8C-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%B9%E5%BE%81/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（二）操作系统的特征\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（二）操作系统的特征</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

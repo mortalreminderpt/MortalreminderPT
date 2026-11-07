@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/04/20/操作系统-七-操作系统体系结构/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（七）操作系统体系结构",
+  "description": "操作系统（Operating System，OS）是指控制和管理计算机系统软硬件资源，合理组织调度计算机工作和资源分配，提供给用户和其它软件方便的接口和环境。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（七）操作系统体系结构\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（七）操作系统体系结构\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-04-20T21:29:07+10:00\">Apr 20, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（七）操作系统体系结构</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#操作系统的内核\" id=\"markdown-toc-操作系统的内核\">操作系统的内核</a></li>\n  <li><a href=\"#宏内核大内核单内核和微内核\" id=\"markdown-toc-宏内核大内核单内核和微内核\">宏内核（大内核/单内核）和微内核</a></li>\n  <li><a href=\"#分层结构\" id=\"markdown-toc-分层结构\">分层结构</a></li>\n  <li><a href=\"#模块化\" id=\"markdown-toc-模块化\">模块化</a></li>\n  <li><a href=\"#外核\" id=\"markdown-toc-外核\">外核</a></li>\n</ol>\n\n<h2 id=\"操作系统的内核\">操作系统的内核</h2>\n\n<p>操作系统内部的层次结构可以进一步划分，如下图所示：</p>\n\n<p><img src=\"\\images\\posts\\操作系统-操作系统分层.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<ul>\n  <li>非内核部分：Ubuntu、CentOS的开发团队，其主要工作是实现非内核功能，而内核都是用了Linux内核。</li>\n  <li>时钟中断：利用时钟中断实现计时功能；</li>\n  <li>原语：原语是一种特殊的程序，具有原子性。也就是说，这段程序的运行必须一气呵成，不可被“中断”。</li>\n</ul>\n\n<p>操作系统内部可以划分为内核和非内核部分，<strong>内核</strong>是操作系统最基本、最核心的部分，实现操作系统内核功能的程序是内核程序。</p>\n\n<p>其中，<strong>时钟管理、中断处理和原语等</strong>部分是<strong>与硬件关联较紧密的模块</strong>；而<strong>管理模块</strong>负责的管理工作更多的是<strong>对数据结构的操作，不会直接涉及硬件</strong>。</p>\n\n<p><strong>操作系统内核</strong>需要运行在<strong>内核态</strong>；</p>\n\n<p><strong>操作系统的非内核功能</strong>运行在<strong>用户态</strong>。</p>\n<h2 id=\"宏内核大内核单内核和微内核\">宏内核（大内核/单内核）和微内核</h2>\n\n<p>把所有功能都包含在内的体系结构叫做宏内核；</p>\n\n<p><img src=\"\\images\\posts\\操作系统-宏内核体系结构.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>内核当中只保留与硬件关联最紧密部分的体系结构叫微内核。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-微内核体系结构.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>现在，应用程序想要请求操作系统的服务，这个服务的处理同时涉及到进程管理、存储管理、设备管理。</p>\n\n<p>此时使用宏内核结构需要进行两次变态，而使用微内核结构需要进行六次变态。</p>\n\n<p><strong>变态的过程是有成本的</strong>，要消耗不少时间，<strong>频繁地变态会降低系统性能</strong>。</p>\n\n<p>宏内核的特点</p>\n\n<p>所有的系统功能都放在内核里（宏内核结构的OS通常也采用了”模块化”的设计思想）。</p>\n\n<p>宏内核的优点</p>\n\n<p>性能高，内核内部各种功能都可以直接相互调用。</p>\n\n<p>宏内核的缺点</p>\n\n<ol>\n  <li>内核庞大功能复杂，难以维护；</li>\n  <li>内核中某个功能模块出错，就可能导致整个系统崩溃。</li>\n</ol>\n\n<p>微内核的特点</p>\n\n<p>只把中断、原语、进程通信等最核心的功能放入内核。进程管理、文件管理、设备管理等功能以用户进程的形式运行在用户态。</p>\n\n<p>微内核的优点</p>\n\n<ol>\n  <li>内核小功能少、易于维护，内核可靠性高；</li>\n  <li>内核外的某个功能模块出错不会导致整个系统崩溃。</li>\n</ol>\n\n<p>微内核的缺点</p>\n\n<ol>\n  <li>性能低，需要频繁的切换用户态/核心态。用户态下的各功能模块不可以直接相互调用，只能通过内核的”消息传递“来间接通信；</li>\n  <li>用户态下的各功能模块不可以直接相互调用，只能通过内核的”消息传递“来间接通信。</li>\n</ol>\n\n<h2 id=\"分层结构\">分层结构</h2>\n\n<p>分层结构的特点</p>\n\n<p><img src=\"\\images\\posts\\操作系统-分层结构.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>内核分多层，每层可单向调用更低一层提供的接口。</p>\n\n<p>分层结构的优点</p>\n\n<ol>\n  <li>便于调试和验证，自底向上逐层调试验证；</li>\n  <li>易扩充和易维护，各层之间调用接口清晰固定。</li>\n</ol>\n\n<p>分层结构的缺点</p>\n\n<ol>\n  <li>仅可调用相邻低层，难以合理定义各层的边界；</li>\n  <li>效率低，不可跨层调用，系统调用执行时间长。</li>\n</ol>\n\n<h2 id=\"模块化\">模块化</h2>\n\n<p>模块化是将操作系统按功能划分为若干个具有一定独立性的模块。每个模块具有某方面的管理功能，并<strong>规定好各模块间的接口</strong>，使各模块之间能通过接口进行通信。\n还可以进一步将各模块细分为若干个具有一定功能的子模块，同样也<strong>规定好各子模块之间的接口</strong>。\n把这种设计方法称为<strong>模块-接口法</strong>，下图为由模块、子模块等组成的模块化操作系统结构：</p>\n\n<p><img src=\"\\images\\posts\\操作系统-模块化.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>模块化的特点</p>\n\n<p>将内核划分为多个模块，各模块之间相互协作。</p>\n\n<p>内核=主模块+可加载内核模块；</p>\n\n<p>主模块︰只负责核心功能，如进程调度、内存管理；</p>\n\n<p>可加载内核模块︰可以动态加载新模块到内核，而无需重新编译整个内核。</p>\n\n<p>模块化的优点</p>\n\n<ol>\n  <li>模块间逻辑清晰易于维护，确定模块间接口后即可多模块同时开发；</li>\n  <li>支持动态加载新的内核模块（如：安装设备驱动程序、安装新的文件系统模块到内核），增强OS适应性；</li>\n  <li>任何模块都可以直接调用其他模块，无需采用消息传递进行通信，效率高。</li>\n</ol>\n\n<p>模块化的缺点</p>\n\n<ol>\n  <li>模块间的接口定义未必合理、实用；</li>\n  <li>模块间相互依赖，更难调试和验证。</li>\n</ol>\n\n<h2 id=\"外核\">外核</h2>\n\n<p>外核的特点</p>\n\n<p>内核负责进程调度、进程通信等功能，外核负责为用户进程分配未经抽象的硬件资源，且由外核负责保证资源使用安全。</p>\n\n<p>外核的优点</p>\n\n<ol>\n  <li>外核可直接给用户进程分配”不虚拟、不抽象“的硬件资源，使用户进程可以更灵活地使用硬件资源；</li>\n  <li>减少了虚拟硬件资源的”映射层“，提升效率。</li>\n</ol>\n\n<p>外核的缺点</p>\n\n<ol>\n  <li>降低了系统的一致性；</li>\n  <li>使系统变得更复杂。</li>\n</ol>\n\n    ",
+  "source": "content/posts/zh-cn/2022-04-20-操作系统（七）操作系统体系结构.md",
+  "sourceDigest": "b297e5fba4c6502ea5d8618e2288b5ad13611885347caf9d7ade81183d079cfb",
+  "postTitle": "操作系统（七）操作系统体系结构",
+  "date": "2022-04-20T21:29:07+10:00",
+  "dateText": "Apr 20, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover1.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/04/20/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%85%AD-%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（六）系统调用\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（六）系统调用</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/04/20/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%85%AB-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E5%AF%BC-Boot/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（八）操作系统引导（Boot）\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（八）操作系统引导（Boot）</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

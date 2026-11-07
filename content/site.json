@@ -1,0 +1,143 @@
+{
+  "site": {
+    "title": "PT's Blog",
+    "logo": "/images/logos/logo.svg",
+    "baseurl": "",
+    "url": "https://ptzhao.com/",
+    "author": {
+      "name": "Mortalreminder PT",
+      "avatar": "https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&spec=140&img_type=jpg"
+    },
+    "hero": {
+      "title": "PT's Blog",
+      "description": "Just coding for fun.",
+      "image": "https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=en-US"
+    },
+    "contact": {
+      "email": "ptzhao@hotmail.com",
+      "description": "非常欢迎您与博主联系！如果您对博客有任何建议，可以留言给博主来信，无论您是有疑问、需要帮助还是想表达对博主的赞赏，博主非常期待听到您的声音。"
+    },
+    "pagination": {
+      "enabled": true
+    },
+    "social": [
+      {
+        "icon": "ion-md-mail",
+        "link": "mailto:ptzhao@hotmail.com"
+      },
+      {
+        "icon": "ion-logo-github",
+        "link": "https://github.com/MortalreminderPT"
+      }
+    ],
+    "mailchimp": "enable",
+    "mailchimp-identifier": "https://app.us20.list-manage.com/subscribe/post?u65e25d0a60609c8cbde82c607;id=4eaddf4109",
+    "markdown": "kramdown",
+    "permalink": "pretty",
+    "plugins": [
+      "jekyll-paginate-v2",
+      "jekyll-sitemap",
+      "jekyll/fontawesome/svg",
+      "jekyll-archives",
+      "jekyll-t4j"
+    ],
+    "defaults": [
+      {
+        "scope": {
+          "path": "_pages"
+        },
+        "values": {
+          "permalink": "/:basename:output_ext"
+        }
+      }
+    ],
+    "include": [
+      "_pages"
+    ],
+    "sass": {
+      "sass_dir": "_sass",
+      "style": "compressed"
+    },
+    "jekyll-archives": {
+      "enabled": [
+        "categories",
+        "tags"
+      ],
+      "layouts": "archive",
+      "permalinks": {
+        "tag": "tags/:name/",
+        "category": "categories/:name/"
+      }
+    },
+    "minima": {
+      "date_format": "%b %-d, %Y"
+    },
+    "color": "82deg",
+    "languages": [
+      "en",
+      "zh-cn"
+    ]
+  },
+  "translations": {
+    "en": {
+      "global": {
+        "lang": "en",
+        "not-found": "Page not found",
+        "back-homepage": "BACK TO THE HOMEPAGE",
+        "recent": "Latest Posts",
+        "tags": "Explore Tags",
+        "categories": "View Categories",
+        "post-found": "post found",
+        "subscribe": "Get Interesting News",
+        "subscribe-content": "Subscribe to our newsletter and we’ll send you the emails of latest posts.",
+        "relative": "You may also like",
+        "reading-times-front": " ",
+        "reading-times-tail": "min read",
+        "contact": {
+          "content": "Feel free to interact with the blogger! Whether you have any suggestions, questions, need help, or just want to show your appreciation for the blogger, feel free to email the blogger. Looking forward to hearing from you!",
+          "name": "Name",
+          "email": "Email",
+          "message": "Message",
+          "send-message": "Send Message"
+        },
+        "search": {
+          "search": "Search..."
+        }
+      },
+      "pages": {
+        "previous-post": "PREVIOUS POST",
+        "next-post": "NEXT POST"
+      }
+    },
+    "zh-cn": {
+      "global": {
+        "lang": "zh-cn",
+        "not-found": "没有找到内容",
+        "back-homepage": "返回首页",
+        "recent": "最新发布",
+        "tags": "探索标签",
+        "categories": "查看专栏",
+        "post-found": "篇内容",
+        "subscribe": "订阅",
+        "subscribe-content": "留下邮箱以订阅更新",
+        "relative": "相关阅读",
+        "reading-times-front": "阅读时间",
+        "reading-times-tail": "分钟",
+        "contact": {
+          "content": "欢迎与博主互动！无论您是有任何建议、疑问，需要帮助，还是想表达对博主的赞赏，都欢迎发送邮件给博主。期待听到您的声音！",
+          "name": "您的称呼",
+          "email": "邮箱",
+          "message": "留言内容",
+          "send-message": "留言"
+        },
+        "search": {
+          "search": "搜索..."
+        }
+      },
+      "pages": {
+        "previous-post": "上一篇",
+        "next-post": "下一篇"
+      }
+    }
+  }
+}

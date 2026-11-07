@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/04/22/操作系统-十五-线程的实现方式和多线程模型/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（十五）线程的实现方式和多线程模型",
+  "description": "进程（Process）是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十五）线程的实现方式和多线程模型\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十五）线程的实现方式和多线程模型\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-04-22T04:46:02+10:00\">Apr 22, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（十五）线程的实现方式和多线程模型</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#线程的背景\" id=\"markdown-toc-线程的背景\">线程的背景</a></li>\n  <li><a href=\"#线程的实现方式\" id=\"markdown-toc-线程的实现方式\">线程的实现方式</a>    <ol>\n      <li><a href=\"#用户级线程\" id=\"markdown-toc-用户级线程\">用户级线程</a></li>\n      <li><a href=\"#内核级线程\" id=\"markdown-toc-内核级线程\">内核级线程</a></li>\n    </ol>\n  </li>\n  <li><a href=\"#多线程模型\" id=\"markdown-toc-多线程模型\">多线程模型</a>    <ol>\n      <li><a href=\"#一对一模型\" id=\"markdown-toc-一对一模型\">一对一模型</a></li>\n      <li><a href=\"#多对一模型\" id=\"markdown-toc-多对一模型\">多对一模型</a></li>\n      <li><a href=\"#多对多模型\" id=\"markdown-toc-多对多模型\">多对多模型</a></li>\n    </ol>\n  </li>\n</ol>\n\n<h2 id=\"线程的背景\">线程的背景</h2>\n\n<h2 id=\"线程的实现方式\">线程的实现方式</h2>\n\n<h3 id=\"用户级线程\">用户级线程</h3>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-用户级线程.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<ol>\n  <li>用户级线程（User-Level Thread，ULT）由应用程序通过线程库实现，所有的<strong>线程管理工作</strong>都由<strong>应用程序负责</strong>（包括线程切换）；</li>\n  <li>用户级线程中，<strong>线程切换</strong>可以在<strong>用户态下即可完成</strong>，无需操作系统干预；</li>\n  <li>在用户看来，是有多个线程。但是在操作系统内核看来，并意识不到线程的存在。<strong>“用户级线程”</strong>就是<strong>“从用户视角看能看到的线程”</strong>。</li>\n</ol>\n\n<p>用户级线程的优缺点：</p>\n<ul>\n  <li>优点：用户级线程的切换在用户空间即可完成，不需要切换到内核态，线程管理的系统开销小，效率高；</li>\n  <li>缺点：当一个用户级线程被阻塞后。整个进程都会被阻塞，并发度不高。多个线程不可在多核处理机上并行运行。</li>\n</ul>\n\n<h3 id=\"内核级线程\">内核级线程</h3>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-内核级线程.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<ol>\n  <li><strong>内核级线程（Kernel-Level Thread，KLT）的管理工作</strong>由<strong>操作系统内核</strong>完成；</li>\n  <li>线程调度、切换等工作都由内核负责，因此<strong>内核级线程的切换</strong>必然需要在<strong>内核态</strong>下才能完成；</li>\n  <li>操作系统会为每个内核级线程建立相应的TCB (Thread Control Block，线程控制块)，通过TCB对线程进行管理。<strong>“内核级线程”</strong>就是<strong>“从操作系统内核视角看能看到的线程”</strong>。</li>\n</ol>\n\n<p>内核级线程的优缺点：</p>\n<ul>\n  <li>优点：当一个线程被阻塞后，别的线程还可以继续执行，并发能力强。多线程可在多核处理机上并行执行；</li>\n  <li>缺点：一个用户进程会占用多个内核级线程，线程切换由操作系统内核完成，需要切换到核心态，因此线程管理的成本高，开销大。</li>\n</ul>\n\n<h2 id=\"多线程模型\">多线程模型</h2>\n\n<p>在支持内核级线程的系统中，根据用户级线程和内核级线程的映射关系，可以划分为几种多线程模型。</p>\n\n<h3 id=\"一对一模型\">一对一模型</h3>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-一对一模型.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>一对一模型：一个用户级线程映射到一个内核级线程，每个用户进程有与用户级线程同数量的内核级线程。</p>\n<ul>\n  <li>优点：当一个线程被阻塞后，别的线程还可以继续执行，并发能力强。多线程可在多核处理机上并行执行。</li>\n  <li>缺点：一个用户进程会占用多个内核级线程,线程切换由操作系统内核完成，需要切换到内核态，因此线程管理的成本高，开销大。</li>\n</ul>\n\n<h3 id=\"多对一模型\">多对一模型</h3>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-多对一模型.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>多对一模型：多个用户级线程映射到一个内核级线程，且一个进程只被分配一个内核级线程。</p>\n<ul>\n  <li>优点：用户级线程的切换在用户空间即可完成，不需要切换到核心态，线程管理的系统开销小，效率高</li>\n  <li>缺点：当一个用户级线程被阻塞后，整个进程都会被阻塞，并发度不高。多个线程不可在多核处理机上并行运行</li>\n  <li>注意：操作系统只“看得见”内核级线程，因此只有<strong>内核级线程才是处理机分配的单位</strong>。</li>\n</ul>\n\n<h3 id=\"多对多模型\">多对多模型</h3>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-多对多模型.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>多对多模型：<strong>n用户及线程映射到m个内核级线程（n&gt;=m）</strong>。每个用户进程对应m个内核级线程。</p>\n\n<p>克服了多对一模型并发度不高的缺点（一个阻塞全体阻塞），又克服了一对一模型中一个用户进程占用太多内核级线程，开销太大的缺点。</p>\n\n<p>可以这么理解：用户级线程是“代码逻辑”的载体；内核级线程是“运行机会”的载体。<strong>内核级线程才是处理机分配的单位</strong>，多核CPU环境下，上图这个进程最多能被分配两个核。\n一段“代码逻辑”只有获得了“运行机会”才能被CPU执行。\n内核级线程中可以运行任意一个有映射关系的用户级线程代码，只有两个内核级线程中正在运行的代码逻辑都阻塞时，这个进程才会阻塞。</p>\n\n    ",
+  "source": "content/posts/zh-cn/2022-04-22-操作系统（十五）线程的实现方式和多线程模型.md",
+  "sourceDigest": "7784cbc11d3950005b64c7e052919ac22119b05504fdb50be6eab5b0dbae42c7",
+  "postTitle": "操作系统（十五）线程的实现方式和多线程模型",
+  "date": "2022-04-22T04:46:02+10:00",
+  "dateText": "Apr 22, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover2.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%8D%81%E5%9B%9B-%E7%BA%BF%E7%A8%8B%E7%9A%84%E6%A6%82%E5%BF%B5/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十四）线程的概念\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（十四）线程的概念</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/04/23/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%8D%81%E5%85%AD-%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%8A%B6%E6%80%81%E4%B8%8E%E8%BD%AC%E6%8D%A2/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十六）线程的状态与转换\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（十六）线程的状态与转换</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

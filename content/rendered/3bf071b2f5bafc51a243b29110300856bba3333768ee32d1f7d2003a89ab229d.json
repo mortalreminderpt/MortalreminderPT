@@ -1,0 +1,83 @@
+{
+  "route": "/tags/typescript/",
+  "lang": "en",
+  "kind": "archive",
+  "title": "Typescript",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"Typescript\">\n    </div>\n    <div class=\"hero__content\">\n      <div class=\"row\">\n        <div class=\"col col-8 col-d-10 col-m-12 push-m-0 push-d-1 push-2\">\n          <div class=\"archive-box\">\n            \n                <h1 class=\"archive-title\">Typescript</h1>\n              \n            <span class=\"archive-meta\">5 posts found.</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/node.js/2024/12/19/Prisma-Filtering/",
+        "src": "https://miro.medium.com/v2/1*1d4T0TNb33A7Dus2ePdN_g.jpeg",
+        "alt": "Prisma - Filtering"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  23 min read\n\n\n          <time class=\"article__date\" datetime=\"2024-12-19T15:40:02+11:00\">Dec 19, 2024</time>\n        </span>\n      ",
+      "titleHtml": "Prisma - Filtering",
+      "title": "Prisma - Filtering",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/node-js\"=\"\">Node.js</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/next-js\"=\"\">Next.js</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/typescript\"=\"\">Typescript</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/prisma\"=\"\">Prisma</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/node.js/2024/12/19/Prisma-%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86-Batch%E5%92%8CInteractive/",
+        "src": "https://miro.medium.com/v2/1*1d4T0TNb33A7Dus2ePdN_g.jpeg",
+        "alt": "Prisma - Transaction Handling — Batch and Interactive"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  48 min read\n\n\n          <time class=\"article__date\" datetime=\"2024-12-19T15:20:09+11:00\">Dec 19, 2024</time>\n        </span>\n      ",
+      "titleHtml": "Prisma - Transaction Handling — Batch and Interactive",
+      "title": "Prisma - Transaction Handling — Batch and Interactive",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/node-js\"=\"\">Node.js</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/next-js\"=\"\">Next.js</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/typescript\"=\"\">Typescript</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/prisma\"=\"\">Prisma</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/node.js/2024/12/18/Prisma-%E4%BA%8B%E5%8A%A1%E6%93%8D%E4%BD%9C%E5%8F%8A%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/",
+        "src": "https://miro.medium.com/v2/1*1d4T0TNb33A7Dus2ePdN_g.jpeg",
+        "alt": "Prisma - Transaction Operations and Error Handling"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  17 min read\n\n\n          <time class=\"article__date\" datetime=\"2024-12-18T21:44:27+11:00\">Dec 18, 2024</time>\n        </span>\n      ",
+      "titleHtml": "Prisma - Transaction Operations and Error Handling",
+      "title": "Prisma - Transaction Operations and Error Handling",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/node-js\"=\"\">Node.js</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/next-js\"=\"\">Next.js</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/typescript\"=\"\">Typescript</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/prisma\"=\"\">Prisma</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/node.js/2024/12/18/Prisma-%E6%9B%B4%E6%96%B0%E5%92%8C%E5%88%A0%E9%99%A4/",
+        "src": "https://miro.medium.com/v2/1*1d4T0TNb33A7Dus2ePdN_g.jpeg",
+        "alt": "Prisma - Update and Delete Operations"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  38 min read\n\n\n          <time class=\"article__date\" datetime=\"2024-12-18T17:29:03+11:00\">Dec 18, 2024</time>\n        </span>\n      ",
+      "titleHtml": "Prisma - Update and Delete Operations",
+      "title": "Prisma - Update and Delete Operations",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/node-js\"=\"\">Node.js</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/next-js\"=\"\">Next.js</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/typescript\"=\"\">Typescript</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/prisma\"=\"\">Prisma</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/node.js/2024/12/18/Prisma-TypeScript%E7%9A%84%E7%8E%B0%E4%BB%A3ORM%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/",
+        "src": "https://miro.medium.com/v2/1*1d4T0TNb33A7Dus2ePdN_g.jpeg",
+        "alt": "Prisma - A Modern ORM Solution for TypeScript"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  44 min read\n\n\n          <time class=\"article__date\" datetime=\"2024-12-18T14:02:52+11:00\">Dec 18, 2024</time>\n        </span>\n      ",
+      "titleHtml": "Prisma - A Modern ORM Solution for TypeScript",
+      "title": "Prisma - A Modern ORM Solution for TypeScript",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/node-js\"=\"\">Node.js</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/next-js\"=\"\">Next.js</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/typescript\"=\"\">Typescript</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/prisma\"=\"\">Prisma</a>\n              \n            </span>\n          \n        </div>\n      "
+    }
+  ],
+  "sectionClass": "hero"
+}

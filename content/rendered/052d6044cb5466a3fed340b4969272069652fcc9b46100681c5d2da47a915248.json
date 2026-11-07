@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/04/25/操作系统-二十三-进程同步与互斥/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（二十三）进程同步与互斥",
+  "description": "进程（Process）是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（二十三）进程同步与互斥\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（二十三）进程同步与互斥\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-04-25T12:21:08+10:00\">Apr 25, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（二十三）进程同步与互斥</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#进程同步\" id=\"markdown-toc-进程同步\">进程同步</a></li>\n  <li><a href=\"#进程互斥\" id=\"markdown-toc-进程互斥\">进程互斥</a>    <ol>\n      <li><a href=\"#进程互斥的概念\" id=\"markdown-toc-进程互斥的概念\">进程互斥的概念</a></li>\n      <li><a href=\"#互斥访问的四个部分\" id=\"markdown-toc-互斥访问的四个部分\">互斥访问的四个部分</a></li>\n      <li><a href=\"#互斥访问临界资源的四个原则\" id=\"markdown-toc-互斥访问临界资源的四个原则\">互斥访问临界资源的四个原则</a></li>\n    </ol>\n  </li>\n</ol>\n\n<h2 id=\"进程同步\">进程同步</h2>\n\n<p>进程具有异步性的特征。异步性是指，各并发执行的进程以各自独立的、不可预知的速度向前推进。</p>\n\n<p>如图，前文的管道通信可以作为一个进程同步的例子。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-管道通信.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>在管道中，读进程和写进程并发地运行，由于并发必然导致异步性，因此“写数据”和“读数据”两个操作执行的<strong>先后顺序是不确定</strong>的。\n而<strong>实际应用中</strong>，又<strong>必须</strong>按照<strong>“写数据→读数据”的顺序</strong>来执行的。\n如何解决这种异步问题，就是“进程同步”所讨论的内容。</p>\n\n<p>操作系统要提供“进程同步机制”来实现上述需求。</p>\n\n<p><strong>同步</strong>亦称<strong>直接制约关系</strong>，它是指为完成某种任务而建立的两个或多个进程，这些进程因为需要<strong>在某些位置上协调它们的工作次序而产生的制约关系</strong>。\n进程间的直接制约关系就是源于它们之间的相互合作。</p>\n\n<h2 id=\"进程互斥\">进程互斥</h2>\n\n<h3 id=\"进程互斥的概念\">进程互斥的概念</h3>\n\n<p>进程的“并发”需要“共享”的支持。各个并发执行的进程不可避免的需要共享一些系统资源（比如内存，又比如打印机、摄像头这样的I/O设备）</p>\n\n<p>资源共享方式包括<strong>互斥共享方式</strong>和<strong>同时共享方式</strong>：</p>\n<ul>\n  <li>互斥共享方式：系统中的某些资源，虽然可以提供给多个进程使用，但<strong>一个时间段内只允许一个进程访问该资源</strong>；</li>\n  <li>同时共享方式：系统中的某些资源，<strong>允许一个时间段内由多个进程“同时”对它们进行访问</strong>。</li>\n</ul>\n\n<p>我们把<strong>一个时间段内只允许一个进程使用</strong>的资源称为<strong>临界资源</strong>。\n许多物理设备（比如摄像头、打印机）都属于临界资源。\n此外还有许多变量、数据、内存缓冲区等都属于临界资源。</p>\n\n<p>对临界资源的访问，必须<strong>互斥地</strong>进行。\n互斥，亦称<strong>间接制约关系</strong>。\n<strong>进程互斥</strong>指当一个<strong>进程访问某临界资源</strong>时，<strong>另一个想要访问该临界资源的进程必须等待</strong>。\n当前访问临界资源的进程访问结束，<strong>释放该资源之后</strong>，<strong>另一个进程才能去访问临界资源</strong>。</p>\n\n<h3 id=\"互斥访问的四个部分\">互斥访问的四个部分</h3>\n\n<p>对临界资源的互斥访问，可以在逻辑上分为如下四个部分:</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">do</span> <span class=\"p\">{</span>\n    <span class=\"n\">entry</span> <span class=\"n\">section</span><span class=\"p\">;</span> <span class=\"c1\">// 进入区</span>\n    <span class=\"n\">critical</span> <span class=\"n\">section</span><span class=\"p\">;</span> <span class=\"c1\">// 临界区</span>\n    <span class=\"n\">exit</span> <span class=\"n\">section</span><span class=\"p\">;</span> <span class=\"c1\">// 退出区</span>\n    <span class=\"n\">remainder</span> <span class=\"n\">section</span><span class=\"p\">;</span> <span class=\"c1\">// 剩余区</span>\n<span class=\"p\">}</span> <span class=\"k\">while</span><span class=\"p\">(</span><span class=\"nb\">true</span><span class=\"p\">);</span>\n</code></pre></div></div>\n\n<ul>\n  <li><strong>进入区</strong>负责检查是否可进入临界区，若可进入，则应设置正在访问临界资源的标志（上锁），以阻止其他进程同时进入临界区；</li>\n  <li><strong>临界区</strong>是访问资源的那段代码；</li>\n  <li><strong>退出区</strong>负责解除正在访问临界资源的标志（解锁）；</li>\n  <li>剩余区做其他处理。</li>\n</ul>\n\n<p>注意:\n<strong>临界区</strong>是进程中<strong>访问临界资源</strong>的代码段。</p>\n\n<p><strong>进入区和退出区</strong>是负责<strong>实现互斥的代码段</strong>。</p>\n\n<p>临界区也可称为“临界段”。</p>\n\n<h3 id=\"互斥访问临界资源的四个原则\">互斥访问临界资源的四个原则</h3>\n\n<p>为了实现对临界资源的互斥访问，同时保证系统整体性能，需要遵循以下原则：</p>\n\n<ol>\n  <li><strong>空闲让进</strong>。临界区空闲时，可以允许一个请求进入临界区的进程立即进入临界区；</li>\n  <li><strong>忙则等待</strong>。当已有进程进入临界区时，其他试图进入临界区的进程必须等待；</li>\n  <li><strong>有限等待</strong>。对请求访问的进程，应保证能在有限时间内进入临界区（保证不会饥饿）；</li>\n  <li><strong>让权等待</strong>。当进程不能进入临界区时，应<strong>立即释放处理机</strong>，防止进程忙等待。</li>\n</ol>\n\n    ",
+  "source": "content/posts/zh-cn/2022-04-25-操作系统（二十三）进程同步与互斥.md",
+  "sourceDigest": "d91011bbea9b455b3a139e800597b14e143bff8b2e16e6a51a8392a66d2030f2",
+  "postTitle": "操作系统（二十三）进程同步与互斥",
+  "date": "2022-04-25T12:21:08+10:00",
+  "dateText": "Apr 25, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover2.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/04/24/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BA%8C%E5%8D%81%E4%BA%8C-RR-PSA-MLFQ%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（二十二）RR、PSA、MLFQ调度算法\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（二十二）RR、PSA、MLFQ调度算法</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/04/25/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BA%8C%E5%8D%81%E5%9B%9B-%E8%BF%9B%E7%A8%8B%E4%BA%92%E6%96%A5%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（二十四）进程互斥的软件实现方法\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（二十四）进程互斥的软件实现方法</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

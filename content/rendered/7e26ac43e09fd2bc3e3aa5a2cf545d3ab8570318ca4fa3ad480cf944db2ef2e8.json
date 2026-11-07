@@ -1,0 +1,27 @@
+{
+  "route": "/zh-cn/tags/rust/",
+  "lang": "zh-cn",
+  "kind": "archive",
+  "title": "rust",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"rust\">\n    </div>\n    <div class=\"hero__content\">\n      <div class=\"row\">\n        <div class=\"col col-8 col-d-10 col-m-12 push-m-0 push-d-1 push-2\">\n          <div class=\"archive-box\">\n            \n                <h1 class=\"archive-title\">rust</h1>\n              \n            <span class=\"archive-meta\">1 post  found.</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/edit-xlsx/2024/01/30/Edit-xlsx%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-%E4%B8%80/",
+        "src": "/images/covers/edit-xlsx-cover.png",
+        "alt": "Edit-xlsx开发日志（一）"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 15 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-01-30T18:20:05+11:00\">Jan 30, 2024</time>\n        </span>\n      ",
+      "titleHtml": "Edit-xlsx开发日志（一）",
+      "title": "Edit-xlsx开发日志（一）",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/rust\"=\"\">rust</a>\n              \n            </span>\n          \n        </div>\n      "
+    }
+  ],
+  "sectionClass": "hero"
+}

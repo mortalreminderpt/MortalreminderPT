@@ -1,0 +1,70 @@
+{
+  "route": "/zh-cn/computer network/2024/10/24/计算机网络-五-路由算法/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "计算机网络（五）路由算法",
+  "description": "",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp\" alt=\"计算机网络（五）路由算法\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp\" alt=\"计算机网络（五）路由算法\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2024-10-24T01:50:30+11:00\">Oct 24, 2024</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">计算机网络（五）路由算法</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/computer-network\" class=\"post__tag\">Computer Network</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#路由算法分类\" id=\"markdown-toc-路由算法分类\">路由算法分类</a></li>\n  <li><a href=\"#非自适应算法non-adaptive-algorithms\" id=\"markdown-toc-非自适应算法non-adaptive-algorithms\">非自适应算法（Non-Adaptive Algorithms）</a></li>\n  <li><a href=\"#自适应算法adaptive-algorithms\" id=\"markdown-toc-自适应算法adaptive-algorithms\">自适应算法（Adaptive Algorithms）</a></li>\n  <li><a href=\"#其他路由算法\" id=\"markdown-toc-其他路由算法\">其他路由算法</a></li>\n  <li><a href=\"#示例题目与解答\" id=\"markdown-toc-示例题目与解答\">示例题目与解答</a>    <ol>\n      <li><a href=\"#为什么网络层需要路由算法路由算法的主要类别有哪些\" id=\"markdown-toc-为什么网络层需要路由算法路由算法的主要类别有哪些\">为什么网络层需要路由算法？路由算法的主要类别有哪些？</a></li>\n      <li><a href=\"#dijkstra算法的基本步骤\" id=\"markdown-toc-dijkstra算法的基本步骤\">Dijkstra算法的基本步骤</a></li>\n    </ol>\n  </li>\n</ol>\n\n<h3 id=\"路由算法分类\">路由算法分类</h3>\n\n<ol>\n  <li><strong>非自适应算法（Non-Adaptive Algorithms）</strong>\n    <ul>\n      <li>静态决策过程，算法在设计时已经决定路由，不会根据网络的实际情况进行调整。</li>\n      <li>示例：静态路由（Static Routing）。</li>\n    </ul>\n  </li>\n  <li><strong>自适应算法（Adaptive Algorithms）</strong>\n    <ul>\n      <li>动态决策过程，算法根据网络拓扑、流量负载等动态变化调整路由。</li>\n      <li>示例：动态路由（Dynamic Routing）。</li>\n    </ul>\n  </li>\n</ol>\n\n<hr>\n\n<h3 id=\"非自适应算法non-adaptive-algorithms\">非自适应算法（Non-Adaptive Algorithms）</h3>\n\n<ol>\n  <li><strong>Shortest Path Routing（最短路径路由）</strong>\n    <ul>\n      <li>使用Dijkstra算法计算网络中两点之间的最短路径。</li>\n      <li>Dijkstra算法基于权重（如距离、延迟、费用等）最小化原理，逐步更新路径，直到所有节点的最短路径计算完成。</li>\n    </ul>\n  </li>\n  <li><strong>Flooding（泛洪）</strong>\n    <ul>\n      <li>每当一个节点收到数据包时，它会向除发送者外的所有邻居节点发送该数据包。</li>\n      <li>特点：\n        <ul>\n          <li>简单直接，无需复杂的路由表。</li>\n          <li>缺点：产生大量重复数据包，浪费带宽资源。</li>\n        </ul>\n      </li>\n    </ul>\n  </li>\n</ol>\n\n<hr>\n\n<h3 id=\"自适应算法adaptive-algorithms\">自适应算法（Adaptive Algorithms）</h3>\n\n<ol>\n  <li><strong>Distance Vector Routing（距离向量路由）</strong>\n    <ul>\n      <li>每个路由器维护一张表，记录其到所有其他节点的估计距离（称为距离向量表）。</li>\n      <li>路由器会周期性地向邻居通告自己的距离向量表，并根据收到的邻居距离向量表更新自己的表。</li>\n      <li>示例：J估计到C的延迟\n        <div class=\"language-plaintext highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>JAC: 25 + 8 = 33  \nJIC: 18 + 10 = 28  \nJHC: 19 + 12 = 31  \nJKC: 36 + 6 = 42  \n因此，J -&gt; I -&gt; C 的延迟最低，为28。\n</code></pre></div>        </div>\n      </li>\n    </ul>\n  </li>\n  <li><strong>Link State Routing（链路状态路由）</strong>\n    <ul>\n      <li>通过广播链路状态信息，所有路由器共享整个网络的拓扑图，并使用Dijkstra算法计算最短路径。</li>\n      <li>基本步骤：\n        <ol>\n          <li>发现直接连接的邻居节点。</li>\n          <li>确定链路成本（如延迟或带宽的反比）。</li>\n          <li>构建链路状态包（LSP）。</li>\n          <li>将LSP发送给网络中的其他所有路由器。</li>\n          <li>使用Dijkstra算法计算到其他节点的最短路径。</li>\n        </ol>\n      </li>\n    </ul>\n  </li>\n</ol>\n\n<hr>\n\n<h3 id=\"其他路由算法\">其他路由算法</h3>\n\n<ol>\n  <li><strong>Hierarchical Routing（分层路由）</strong>\n    <ul>\n      <li>将网络划分为多个区域或层次，每个路由器只需维护所在区域的详细路由信息和其他区域的汇总信息。</li>\n      <li>优点：\n        <ul>\n          <li>路由表规模减小，内存需求降低。</li>\n          <li>计算路由最优解所需的时间减少。</li>\n        </ul>\n      </li>\n      <li>缺点：\n        <ul>\n          <li>路径可能不是全局最优路径，但接近最优。</li>\n        </ul>\n      </li>\n    </ul>\n  </li>\n  <li><strong>Broadcasting Routing（广播路由）</strong>\n    <ul>\n      <li>目标：将数据包发送给网络中的所有主机。</li>\n      <li>基础方法：\n        <ul>\n          <li>Flooding：发送给所有邻居，可能产生大量重复包。</li>\n        </ul>\n      </li>\n      <li>改进方法：Reverse Path Forwarding（RPF）\n        <ul>\n          <li>检查数据包是否从最佳路径到达源。</li>\n          <li>如果是，则转发给其他节点；否则丢弃重复包。</li>\n        </ul>\n      </li>\n    </ul>\n  </li>\n  <li><strong>Multicasting Routing（组播路由）</strong>\n    <ul>\n      <li>将网络中的节点划分为组，每个组构建生成树（Spanning Tree），组内的节点共享数据包。</li>\n      <li>适用于需要向特定小组传递信息的场景，例如视频会议或组播通信。</li>\n    </ul>\n  </li>\n</ol>\n\n<hr>\n\n<h3 id=\"示例题目与解答\">示例题目与解答</h3>\n\n<h4 id=\"为什么网络层需要路由算法路由算法的主要类别有哪些\">为什么网络层需要路由算法？路由算法的主要类别有哪些？</h4>\n\n<p>路由算法用于帮助网络层决定传入的数据包应该通过哪条输出线路传输，确保数据包能够正确高效地到达目的地。</p>\n<ul>\n  <li><strong>主要分类</strong>：\n    <ul>\n      <li>非自适应算法（如Shortest Path Routing和Flooding）。</li>\n      <li>自适应算法（如Distance Vector Routing和Link State Routing）。</li>\n    </ul>\n  </li>\n</ul>\n\n<h4 id=\"dijkstra算法的基本步骤\">Dijkstra算法的基本步骤</h4>\n\n<p>Dijkstra算法用于计算从一个节点到网络中所有其他节点的最短路径。\n基本步骤：</p>\n<ol>\n  <li>初始化：为每个节点设置一个初始距离（通常为无穷大），将起点的距离设置为0。</li>\n  <li>选择当前未访问节点中距离最小的节点，将其标记为已访问。</li>\n  <li>更新邻居节点的距离，如果通过当前节点的路径更短，则更新邻居节点的最短路径值。</li>\n  <li>重复步骤2和3，直到所有节点都被访问。</li>\n</ol>\n\n    ",
+  "source": "content/posts/zh-cn/2024-10-23-计算机网络（五）路由算法.md",
+  "sourceDigest": "39f94e985f2f3421618efa718651a4e9f6061dc9c06a559e2215ea88eb199a1f",
+  "postTitle": "计算机网络（五）路由算法",
+  "date": "2024-10-24T01:50:30+11:00",
+  "dateText": "Oct 24, 2024",
+  "tags": [
+    "Computer Network"
+  ],
+  "categories": [
+    "Computer Network"
+  ],
+  "image": "https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/computer%20network/2024/10/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%9B%9B-%E7%BD%91%E7%BB%9C%E5%B1%82/\">\n        <img class=\"post__nav-image lazy\" data-src=\"https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp\" alt=\"计算机网络（四）网络层\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">计算机网络（四）网络层</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/computer%20network/2024/10/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%85%AD-%E4%BC%A0%E8%BE%93%E5%B1%82/\">\n        <img class=\"post__nav-image lazy\" data-src=\"https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp\" alt=\"计算机网络（六）传输层\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">计算机网络（六）传输层</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/computer%20network/2024/10/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%B8%83-%E5%BA%94%E7%94%A8%E5%B1%82/",
+        "src": "https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp",
+        "alt": "计算机网络（七）应用层"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 5 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2024-10-25T17:43:27+11:00\">Oct 25, 2024</time>\n                    </span>\n                  ",
+      "titleHtml": "计算机网络（七）应用层",
+      "title": "计算机网络（七）应用层",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/computer-network\" class=\"article__tag\">Computer Network</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/computer%20network/2024/10/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%85%AD-%E4%BC%A0%E8%BE%93%E5%B1%82/",
+        "src": "https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp",
+        "alt": "计算机网络（六）传输层"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 15 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2024-10-24T08:15:09+11:00\">Oct 24, 2024</time>\n                    </span>\n                  ",
+      "titleHtml": "计算机网络（六）传输层",
+      "title": "计算机网络（六）传输层",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/computer-network\" class=\"article__tag\">Computer Network</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/computer%20network/2024/10/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%9B%9B-%E7%BD%91%E7%BB%9C%E5%B1%82/",
+        "src": "https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp",
+        "alt": "计算机网络（四）网络层"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 13 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2024-10-22T10:01:45+11:00\">Oct 22, 2024</time>\n                    </span>\n                  ",
+      "titleHtml": "计算机网络（四）网络层",
+      "title": "计算机网络（四）网络层",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/computer-network\" class=\"article__tag\">Computer Network</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

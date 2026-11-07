@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/04/20/操作系统-六-系统调用/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（六）系统调用",
+  "description": "操作系统（Operating System，OS）是指控制和管理计算机系统软硬件资源，合理组织调度计算机工作和资源分配，提供给用户和其它软件方便的接口和环境。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（六）系统调用\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（六）系统调用\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-04-20T20:35:40+10:00\">Apr 20, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（六）系统调用</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#什么是系统调用系统调用的作用\" id=\"markdown-toc-什么是系统调用系统调用的作用\">什么是系统调用？系统调用的作用</a></li>\n  <li><a href=\"#系统调用与库函数的区别\" id=\"markdown-toc-系统调用与库函数的区别\">系统调用与库函数的区别</a></li>\n  <li><a href=\"#为什么系统调用是必须的\" id=\"markdown-toc-为什么系统调用是必须的\">为什么系统调用是必须的？</a></li>\n  <li><a href=\"#什么功能要用系统调用实现\" id=\"markdown-toc-什么功能要用系统调用实现\">什么功能要用系统调用实现</a></li>\n  <li><a href=\"#系统调用的过程\" id=\"markdown-toc-系统调用的过程\">系统调用的过程</a>    <ol>\n      <li><a href=\"#陷入指令系统调用\" id=\"markdown-toc-陷入指令系统调用\">陷入指令系统调用</a></li>\n    </ol>\n  </li>\n</ol>\n\n<h2 id=\"什么是系统调用系统调用的作用\">什么是系统调用？系统调用的作用</h2>\n<p>操作系统作为用户和计算机硬件之间的接口，需要向上提供一些简单易用的服务。主要包括命令接口和程序接口。其中程序接口由一组<strong>系统调用</strong>组成。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-系统调用的作用1.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<p>“系统调用”是操作系统提供给应用程序（程序员/编程人员）使用的接口，可以理解为一种可供应用程序调用的特殊函数，<strong>应用程序可以通过系统调用来请求获得操作系统内核的服务</strong>。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-系统调用的作用2.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<h2 id=\"系统调用与库函数的区别\">系统调用与库函数的区别</h2>\n\n<table>\n  <thead>\n    <tr>\n      <th>普通应用程序</th>\n      <th>可直接进行系统调用，也可使用库函数。有的库函数涉及系统调用，有的不涉及。</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>编程语言</td>\n      <td>向上提供库函数。有时会将系统调用封装成库函数，以隐藏系统调用的一些细节，使程序员编程更加方便。</td>\n    </tr>\n    <tr>\n      <td>操作系统</td>\n      <td>向上提供系统调用，使得上层程序能请求内核的服务。</td>\n    </tr>\n    <tr>\n      <td>裸机</td>\n      <td>&nbsp;</td>\n    </tr>\n  </tbody>\n</table>\n\n<p><img src=\"\\images\\posts\\操作系统-系统调用和库函数1.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<p>不涉及系统调用的库函数：如“取绝对值”的函数；</p>\n\n<p>涉及系统调用的库函数：如“创建一个新文件”的函数。</p>\n\n<h2 id=\"为什么系统调用是必须的\">为什么系统调用是必须的？</h2>\n\n<p>生活场景：去学校打印店打印论文，你按下了WPS的“打印”选项，打印机开始工作。</p>\n\n<p>你的论文打印到一半时，另一位同学按下了Word的“打印”按钮，开始打印他自己的论文。</p>\n\n<p>如果两个进程可以随意地、并发地共享打印机资源，打印机设备交替地收到WPS和Word两个进程发来的打印请求，两篇论文的内容混杂在一起了…</p>\n\n<p>解决方法：<strong>由操作系统内核对共享资源进行统一管理</strong>，并向上提供“系统调用”用户进程想要使用打印机这种共享资源，只能通过系统调用向操作系统内核发出请求。内核会对各个请求进行协调处理。</p>\n\n<h2 id=\"什么功能要用系统调用实现\">什么功能要用系统调用实现</h2>\n\n<p>应用程序通过系统调用请求操作系统的服务。\n而系统中的各种共享资源都由操作系统内核统一掌管，因此<strong>凡是与共享资源有关的操作(如存储分配、I/O操作、文件管理等），都必须通过系统调用的方式向操作系统内核提出服务请求</strong>，由操作系统内核代为完成。\n这样可以<strong>保证系统的稳定性和安全性</strong>，防止用户进行非法操作。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-系统调用的功能.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<h2 id=\"系统调用的过程\">系统调用的过程</h2>\n\n<h3 id=\"陷入指令系统调用\">陷入指令系统调用</h3>\n<ol>\n  <li>应用程序执行传参指令，<strong>将传递的参数（参数1、参数2…）存放于CPU寄存器</strong>，参数可以指明系统调用类型；</li>\n  <li>应用程序执行<strong>陷入指令</strong>，引发一个内中断信号。该中断由陷入指令引发，因此转入相应中断处理程序，即系统调用的入口程序；</li>\n  <li>处理器转变为内核态运行，执行<strong>系统调用入口程序</strong>，根据寄存器中的参数判断用户需要哪种系统调用服务；</li>\n  <li>运行<strong>系统调用所对应的处理程序</strong>；</li>\n  <li>完成系统调用，CPU转变为用户态。</li>\n</ol>\n\n<p>即传递系统调用参数→执行陷入指令（用户态）→执行相应的内请求核程序处理系统调用（内核态）→返回应用程序。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-系统调用的过程1.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:80%;\"></p>\n\n<p>注意：</p>\n<ol>\n  <li><strong>陷入指令</strong>是在<strong>用户态</strong>执行的，执行陷入指令之后立即<strong>引发一个内中断</strong>，使CPU<strong>进入内核态</strong>；</li>\n  <li><strong>发出系统调用请求是在用户态</strong>，而<strong>对系统调用的相应处理在核心态</strong>下进行。</li>\n</ol>\n\n\n    ",
+  "source": "content/posts/zh-cn/2022-04-20-操作系统（六）系统调用.md",
+  "sourceDigest": "abd6b20dd4d344a7ef59feec9de57ead6fbc29f4ba4dfc0c0fcbbb7f50e99199",
+  "postTitle": "操作系统（六）系统调用",
+  "date": "2022-04-20T20:35:40+10:00",
+  "dateText": "Apr 20, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover1.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/04/20/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BA%94-%E4%B8%AD%E6%96%AD%E5%92%8C%E5%BC%82%E5%B8%B8/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（五）中断和异常\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（五）中断和异常</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/04/20/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%B8%83-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（七）操作系统体系结构\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（七）操作系统体系结构</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/04/24/操作系统-二十-调度算法的评价指标/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（二十）调度算法的评价指标",
+  "description": "进程（Process）是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（二十）调度算法的评价指标\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（二十）调度算法的评价指标\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-04-24T13:05:28+10:00\">Apr 24, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（二十）调度算法的评价指标</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#cpu利用率\" id=\"markdown-toc-cpu利用率\">CPU利用率</a></li>\n  <li><a href=\"#系统吞吐量\" id=\"markdown-toc-系统吞吐量\">系统吞吐量</a></li>\n  <li><a href=\"#周转时间\" id=\"markdown-toc-周转时间\">周转时间</a>    <ol>\n      <li><a href=\"#周转时间平均周转时间\" id=\"markdown-toc-周转时间平均周转时间\">周转时间、平均周转时间</a></li>\n      <li><a href=\"#带权周转时间平均带权周转时间\" id=\"markdown-toc-带权周转时间平均带权周转时间\">带权周转时间、平均带权周转时间</a></li>\n    </ol>\n  </li>\n  <li><a href=\"#等待时间\" id=\"markdown-toc-等待时间\">等待时间</a></li>\n  <li><a href=\"#响应时间\" id=\"markdown-toc-响应时间\">响应时间</a></li>\n</ol>\n\n<h2 id=\"cpu利用率\">CPU利用率</h2>\n\n<p>由于早期的CPU造价极其昂贵，因此人们会<strong>希望让CPU尽可能多地工作</strong>。</p>\n\n<p><strong>CPU利用率</strong>：指CPU忙碌的时间占总时间的比例。</p>\n\n<p><strong>利用率</strong> = 设备忙碌时间/总时间</p>\n\n<p>Eg. 某计算机只支持单道程序，某个作业刚开始需要在CPU上运行5秒，再用打印机打印输出5秒，之后再执行5秒，才能结束。\n在此过程中，CPU利用率、打印机利用率分别是多少？</p>\n\n<p>CPU利用率：</p>\n\n<include src=\"/zh-cn/_50d435a1978f9023e1ec9655c2cef0df1f92b6ab07231adc7e8f2c986484c046.xml\"></include>\n\n<p>打印机利用率：</p>\n\n<include src=\"/zh-cn/_658f87c4584252b4edc4ff8267b05617d01b28e2283e56cb675cfd7fa355681d.xml\"></include>\n\n<p>多道程序并发执行时，通常使用<strong>甘特图</strong>进行辅助计算。</p>\n\n<h2 id=\"系统吞吐量\">系统吞吐量</h2>\n\n<p>对于计算机来说，希望能用尽可能少的时间处理完尽可能多的作业。</p>\n\n<p><strong>系统吞吐量</strong>：单位时间内完成作业的数量</p>\n\n<p>系统吞吐量 = 总共完成作业数量 / 总共花费时间</p>\n\n<p>Eg. 某计算机系统处理完10道作业，共花费100秒，则系统吞吐量为10/100=0.1道/秒</p>\n\n<h2 id=\"周转时间\">周转时间</h2>\n\n<p>对于计算机的用户来说，他很关心自己的作业从提交到完成花了多少时间。</p>\n\n<p><strong>周转时间</strong>，是<strong>指从作业被提交给系统开始，到作业完成为止的这段时间间隔</strong>。</p>\n\n<p>总共包括四个部分：</p>\n<ol>\n  <li>作业在外存后备队列上等待作业调度（高级调度）的时间；</li>\n  <li>进程在就绪队列上等待进程调度（低级调度，就绪态）的时间；</li>\n  <li>进程在CPU上执行（运行态）的时间；</li>\n  <li>进程等待I/O操作完成（阻塞态）的时间。</li>\n</ol>\n\n<p>后三项在一个作业的整个处理过程中，可能发生多次。</p>\n\n<p>（作业）<strong>周转时间</strong> = 作业完成时间 - 作业提交时间</p>\n\n<h3 id=\"周转时间平均周转时间\">周转时间、平均周转时间</h3>\n\n<p>对于用户来说，更关心自己的单个作业的周转时间；\n但对于操作系统来说，更关心系统的整体表现，因此更关心所有作业周转时间的平均值，即平均周转时间。</p>\n\n<p><strong>平均周转时间</strong> = 各作业周转时间和 / 作业数</p>\n\n<p>有的作业运行时间短，有的作业运行时间长，因此在周转时间相同的情况下，运行时间不同的作业，给用户的感觉肯定是不一样的。</p>\n\n<h3 id=\"带权周转时间平均带权周转时间\">带权周转时间、平均带权周转时间</h3>\n\n<p><strong>带权周转时间</strong> = 作业周转时间 / 作业实际运行时间 = （作业完成时间 - 作业提交时间） / 作业实际运行时间</p>\n\n<p>对于周转时间相同的两个作业，实际运行时间长的作业在相同时间内被服务的时间更多，带权周转时间更小，用户满意度更高。</p>\n\n<p>对于实际运行时间相同的两个作业，周转时间短的带权周转时间更小，用户满意度更高。</p>\n\n<p>注意：</p>\n<ul>\n  <li>带权周转时间必定 ≥ 1；</li>\n  <li>带权周转时间与周转时间都是越小越好。</li>\n</ul>\n\n<p><strong>平均带权周转时间</strong> = 各作业带权周转时间和 / 作业数</p>\n\n<h2 id=\"等待时间\">等待时间</h2>\n\n<p>计算机的用户希望自己的作业尽可能少的等待处理机。</p>\n\n<p><strong>等待时间</strong>，指进程/作业处于<strong>等待处理机状态时间之和</strong>，等待时间越长，用户满意度越低。</p>\n\n<p>作业提交后首先进入作业后备队列（在外存中），在后备队列中<strong>等待被服务（调度）</strong>。</p>\n\n<p>作业调入内存后，<strong>建立对应的进程</strong>。这个进程会被CPU服务、会被I/O设备服务，当然也会有<strong>等待被服务</strong>的时候。</p>\n\n<p>对于<strong>进程</strong>来说，等待时间就是指进程建立后<strong>等待被服务的时间之和</strong>，\n在等待I/O完成的期间其实进程也是在被服务的，所以不计入等待时间。</p>\n\n<p>对于<strong>作业</strong>来说，不仅要考虑<strong>建立进程后的等待时间，还要加上作业在外存后备队列中等待的时间</strong>。</p>\n\n<p>一个作业总共需要被CPU服务多久，被I/O设备服务多久一般是确定不变的，因此调度算法其实只会影响作业/进程的等待时间。\n当然，与前面指标类似，也有<strong>平均等待时间</strong>来评价整体性能。</p>\n\n<h2 id=\"响应时间\">响应时间</h2>\n\n<p>对于计算机用户来说，会希望自己的提交的请求（比如通过键盘输入了一个调试命令）尽早地开始被系统服务、回应。</p>\n\n<p><strong>响应时间</strong>，指从用户<strong>提交请求</strong>到<strong>首次产生响应</strong>所用的时间。</p>\n\n\n    ",
+  "source": "content/posts/zh-cn/2022-04-24-操作系统（二十）调度算法的评价指标.md",
+  "sourceDigest": "4f0512b94543d4141b92befb276167333dd09174a334dc95b19d3f0862ccd4cf",
+  "postTitle": "操作系统（二十）调度算法的评价指标",
+  "date": "2022-04-24T13:05:28+10:00",
+  "dateText": "Apr 24, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover2.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/04/24/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%8D%81%E4%B9%9D-%E8%B0%83%E5%BA%A6%E5%99%A8-Scheduler-%E5%92%8C%E9%97%B2%E9%80%9B%E8%BF%9B%E7%A8%8B/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十九）调度器（Scheduler）和闲逛进程\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（十九）调度器（Scheduler）和闲逛进程</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/04/24/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BA%8C%E5%8D%81%E4%B8%80-FCFS-SJF-HRRN%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（二十一）FCFS、SJF、HRRN调度算法\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（二十一）FCFS、SJF、HRRN调度算法</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

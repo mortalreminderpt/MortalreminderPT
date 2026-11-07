@@ -1,0 +1,51 @@
+{
+  "route": "/zh-cn/tags/设计模式/",
+  "lang": "zh-cn",
+  "kind": "archive",
+  "title": "设计模式",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"设计模式\">\n    </div>\n    <div class=\"hero__content\">\n      <div class=\"row\">\n        <div class=\"col col-8 col-d-10 col-m-12 push-m-0 push-d-1 push-2\">\n          <div class=\"archive-box\">\n            \n                <h1 class=\"archive-title\">设计模式</h1>\n              \n            <span class=\"archive-meta\">3 posts found.</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/2022/09/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E4%B8%89-%E7%94%9F%E6%88%90%E5%99%A8-Builder/",
+        "src": "/images/covers/操作系统-cover1.png",
+        "alt": "设计模式（三）生成器（Builder）"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 7 分钟\n\n\n          <time class=\"article__date\" datetime=\"2022-09-10T23:00:42+10:00\">Sep 10, 2022</time>\n        </span>\n      ",
+      "titleHtml": "设计模式（三）生成器（Builder）",
+      "title": "设计模式（三）生成器（Builder）",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F\"=\"\">设计模式</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/2022/09/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E4%BA%8C-%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82-Abstract-Factory/",
+        "src": "/images/covers/操作系统-cover1.png",
+        "alt": "设计模式（二）抽象工厂（Abstract Factory）"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 7 分钟\n\n\n          <time class=\"article__date\" datetime=\"2022-09-10T22:22:42+10:00\">Sep 10, 2022</time>\n        </span>\n      ",
+      "titleHtml": "设计模式（二）抽象工厂（Abstract Factory）",
+      "title": "设计模式（二）抽象工厂（Abstract Factory）",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F\"=\"\">设计模式</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": null,
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 1 分钟\n\n\n          <time class=\"article__date\" datetime=\"2022-09-10T21:45:18+10:00\">Sep 10, 2022</time>\n        </span>\n      ",
+      "titleHtml": "设计模式（一）简介",
+      "title": "设计模式（一）简介",
+      "excerptHtml": "设计模式是软件开发人员在软件开发过程中面临的一般问题的解决方案。这些解决方案是众多软件开发人员经过相当长的一段时间的试验和错误总结出来的。",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F\"=\"\">设计模式</a>\n              \n            </span>\n          \n        </div>\n      "
+    }
+  ],
+  "sectionClass": "hero"
+}

@@ -1,0 +1,55 @@
+{
+  "route": "/tags/tree-data-structures/",
+  "lang": "en",
+  "kind": "archive",
+  "title": "Tree Data Structures",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"Tree Data Structures\">\n    </div>\n    <div class=\"hero__content\">\n      <div class=\"row\">\n        <div class=\"col col-8 col-d-10 col-m-12 push-m-0 push-d-1 push-2\">\n          <div class=\"archive-box\">\n            \n                <h1 class=\"archive-title\">Tree Data Structures</h1>\n              \n            <span class=\"archive-meta\">3 posts found.</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/2021/10/09/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%89-%E7%BA%BF%E6%AE%B5%E6%A0%91-Segment-Tree/",
+        "src": "/images/covers/数据结构-cover1.png",
+        "alt": "Binary Tree Basics (Part 3) - Segment Tree"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  37 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-10-09T22:00:50+11:00\">Oct 9, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Binary Tree Basics (Part 3) - Segment Tree",
+      "title": "Binary Tree Basics (Part 3) - Segment Tree",
+      "excerptHtml": "A binary tree is an ordered tree where each node has a maximum of two children. It is the simplest and most essential type of tree.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/data-structures\"=\"\">Data Structures</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/binary-tree\"=\"\">Binary Tree</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/tree-data-structures\"=\"\">Tree Data Structures</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/2021/10/05/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%BA%8C-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-BST/",
+        "src": "/images/covers/数据结构-cover1.png",
+        "alt": "Binary Trees Basics (Part 2) - Binary Search Trees (BSTs)"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  26 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-10-05T04:14:28+11:00\">Oct 5, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Binary Trees Basics (Part 2) - Binary Search Trees (BSTs)",
+      "title": "Binary Trees Basics (Part 2) - Binary Search Trees (BSTs)",
+      "excerptHtml": "A binary tree is a tree in which each node has at most two children, making it a simple yet fundamental tree structure.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/data-structures\"=\"\">Data Structures</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/binary-tree\"=\"\">Binary Tree</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/tree-data-structures\"=\"\">Tree Data Structures</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/fundamentals%20of%20data%20structures/2021/09/28/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80-%E4%B8%80-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5/",
+        "src": "/images/covers/数据结构-cover1.png",
+        "alt": "Binary Trees Basics (Part 1) - Understanding Binary Trees"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  31 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-09-28T15:58:19+10:00\">Sep 28, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Binary Trees Basics (Part 1) - Understanding Binary Trees",
+      "title": "Binary Trees Basics (Part 1) - Understanding Binary Trees",
+      "excerptHtml": "A binary tree is a fundamental type of tree structure where each node has at most two child nodes, making it one of the simplest and most important trees.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/data-structures\"=\"\">Data Structures</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/binary-tree\"=\"\">Binary Tree</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/tree-data-structures\"=\"\">Tree Data Structures</a>\n              \n            </span>\n          \n        </div>\n      "
+    }
+  ],
+  "sectionClass": "hero"
+}

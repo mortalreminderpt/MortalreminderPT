@@ -1,0 +1,11 @@
+{
+  "route": "/zh-cn/about/",
+  "lang": "zh-cn",
+  "kind": "redirect",
+  "title": "About (moved)",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"About (moved)\">\n    </div>\n    <div class=\"hero__content\">\n      <h1 class=\"hero__title\">About (moved)</h1>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "\n      <meta http-equiv=\"refresh\" content=\"0; url=/\">\n\n<p>If you are not redirected, click <a href=\"/\">here</a>.</p>\n\n    ",
+  "redirectTo": "/zh-cn/"
+}

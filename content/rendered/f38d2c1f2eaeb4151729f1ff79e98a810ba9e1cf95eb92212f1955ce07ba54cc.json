@@ -1,0 +1,171 @@
+{
+  "route": "/zh-cn/blogs/5/",
+  "lang": "zh-cn",
+  "kind": "blog",
+  "title": "PT's Blog - page 5",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"PT's Blog\">\n    </div>\n    <div class=\"hero__content\">\n      <h1 class=\"hero__title\">PT's Blog</h1>\n      <p class=\"hero__desc\">Just coding for fun.</p>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "featuredCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/zh-cn/2023/04/24/%E4%BD%BF%E7%94%A8ChatGPT%E6%8E%A7%E5%88%B6Arduino%E8%AE%BE%E5%A4%87/",
+        "src": "https://www.bing.com/th?id=OHR.LittleDuckling_ZH-CN2922471258_1920x1080.jpg",
+        "alt": "使用ChatGPT控制Arduino设备"
+      },
+      "featured": true,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n\n阅读时间 49 分钟\n\n\n                    </span>\n                    <time class=\"article__date\" datetime=\"2023-04-24T02:00:00+10:00\">Apr 24, 2023</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/zh-cn/2023/04/24/%E4%BD%BF%E7%94%A8ChatGPT%E6%8E%A7%E5%88%B6Arduino%E8%AE%BE%E5%A4%87/\">使用ChatGPT控制Arduino设备</a>\n                  ",
+      "title": "使用ChatGPT控制Arduino设备",
+      "excerptHtml": "本文介绍了ChatGPT与外部系统集成的一种方法，通过ChatGPT作为控制器实现对Arduino设备的控制，以探索自然语言命令控制家庭设备的可能性及智能家庭设备的发展方向。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/chatgpt\" class=\"article__tag\">ChatGPT</a>\n                        \n                          <a href=\"/zh-cn/tags/arduino\" class=\"article__tag\">Arduino</a>\n                        \n                          <a href=\"/zh-cn/tags/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%BA%AD\" class=\"article__tag\">智能家庭</a>\n                        \n                      </span>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/zh-cn/2022/04/20/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%B8%80-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E5%8A%9F%E8%83%BD/",
+        "src": "/images/covers/操作系统-cover1.png",
+        "alt": "操作系统（一）操作系统的概念和功能"
+      },
+      "featured": true,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n\n阅读时间 8 分钟\n\n\n                    </span>\n                    <time class=\"article__date\" datetime=\"2022-04-20T04:17:03+10:00\">Apr 20, 2022</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/zh-cn/2022/04/20/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%B8%80-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E5%8A%9F%E8%83%BD/\">操作系统（一）操作系统的概念和功能</a>\n                  ",
+      "title": "操作系统（一）操作系统的概念和功能",
+      "excerptHtml": "操作系统（Operating System，OS）是指控制和管理计算机系统软硬件资源，合理组织调度计算机工作和资源分配，提供给用户和其它软件方便的接口和环境。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/zh-cn/dynamic%20programming%20fundamentals/2021/09/27/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%80-%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D%E7%B3%BB%E5%88%97/",
+        "src": "/images/covers/village.jpg",
+        "alt": "动态规划（一）打家劫舍系列"
+      },
+      "featured": true,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n\n阅读时间 4 分钟\n\n\n                    </span>\n                    <time class=\"article__date\" datetime=\"2021-09-27T22:12:45+10:00\">Sep 27, 2021</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/zh-cn/dynamic%20programming%20fundamentals/2021/09/27/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%80-%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D%E7%B3%BB%E5%88%97/\">动态规划（一）打家劫舍系列</a>\n                  ",
+      "title": "动态规划（一）打家劫舍系列",
+      "excerptHtml": "动态规划最核心的思想，就在于将问题拆分为一个个子问题，保留之前的计算结果，以达到减少计算量的效果。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E7%AE%97%E6%B3%95\" class=\"article__tag\">算法</a>\n                        \n                          <a href=\"/zh-cn/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92\" class=\"article__tag\">动态规划</a>\n                        \n                      </span>\n                      \n                    </div>\n\n                  "
+    }
+  ],
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/computer%20network/2024/10/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%BA%8C-Data-Link%E5%B1%82/",
+        "src": "https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp",
+        "alt": "计算机网络（二）Data Link层"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 16 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-10-20T15:34:56+11:00\">Oct 20, 2024</time>\n        </span>\n      ",
+      "titleHtml": "计算机网络（二）Data Link层",
+      "title": "计算机网络（二）Data Link层",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/computer-network\"=\"\">Computer Network</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/computer%20network/2024/10/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%B8%80-%E7%89%A9%E7%90%86%E5%B1%82/",
+        "src": "https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp",
+        "alt": "计算机网络（一）物理层"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 13 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-10-19T06:45:23+11:00\">Oct 19, 2024</time>\n        </span>\n      ",
+      "titleHtml": "计算机网络（一）物理层",
+      "title": "计算机网络（一）物理层",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/computer-network\"=\"\">Computer Network</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/16/redux-2/",
+        "src": "/images/covers/react.png",
+        "alt": "Redux词汇表"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 11 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-16T12:08:53+10:00\">Sep 16, 2024</time>\n        </span>\n      ",
+      "titleHtml": "Redux词汇表",
+      "title": "Redux词汇表",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/16/redux-1/",
+        "src": "/images/covers/react.png",
+        "alt": "Redux三大原则"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 16 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-16T11:10:27+10:00\">Sep 16, 2024</time>\n        </span>\n      ",
+      "titleHtml": "Redux三大原则",
+      "title": "Redux三大原则",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/15/react-hook-6/",
+        "src": "/images/covers/react.png",
+        "alt": "React Hook（六） —— useReducer"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 17 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-15T13:15:36+10:00\">Sep 15, 2024</time>\n        </span>\n      ",
+      "titleHtml": "React Hook（六） —— useReducer",
+      "title": "React Hook（六） —— useReducer",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/15/react-hook-5/",
+        "src": "/images/covers/react.png",
+        "alt": "React Hook（五） —— useContext"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 20 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-15T09:08:47+10:00\">Sep 15, 2024</time>\n        </span>\n      ",
+      "titleHtml": "React Hook（五） —— useContext",
+      "title": "React Hook（五） —— useContext",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/14/react-hook-4/",
+        "src": "/images/covers/react.png",
+        "alt": "React Hook（四） —— useEffect"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 15 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-14T13:32:18+10:00\">Sep 14, 2024</time>\n        </span>\n      ",
+      "titleHtml": "React Hook（四） —— useEffect",
+      "title": "React Hook（四） —— useEffect",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/13/react-hook-3/",
+        "src": "/images/covers/react.png",
+        "alt": "React Hook（三） —— useMemo"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 12 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-13T19:43:54+10:00\">Sep 13, 2024</time>\n        </span>\n      ",
+      "titleHtml": "React Hook（三） —— useMemo",
+      "title": "React Hook（三） —— useMemo",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    }
+  ],
+  "pageNumber": 5,
+  "totalPages": 16,
+  "loadMoreText": "Load more"
+}

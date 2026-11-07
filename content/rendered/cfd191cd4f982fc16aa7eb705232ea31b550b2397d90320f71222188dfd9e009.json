@@ -1,0 +1,10 @@
+{
+  "route": "/contact/",
+  "lang": "en",
+  "kind": "contact",
+  "title": "Contact",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"Contact\">\n    </div>\n    <div class=\"hero__content\">\n      <h1 class=\"hero__title\">Contact</h1>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "\n      <div class=\"form-container\">\n  \n  <p class=\"contact-description\">Feel free to interact with the blogger! Whether you have any suggestions, questions, need help, or just want to show your appreciation for the blogger, feel free to email the blogger. Looking forward to hearing from you!</p>\n  \n  <form class=\"form\" id=\"contact-form\" action=\"mailto:ptzhao@hotmail.com\" onsubmit=\"return false;\">\n    <div class=\"form__group\">\n      <label class=\"form__label screen-reader-text\" for=\"form-name\">Name</label>\n      <input class=\"form__input\" id=\"form-name\" type=\"text\" name=\"name\" placeholder=\"Name\" autocomplete=\"name\" required=\"\">\n    </div>\n    <div class=\"form__group\">\n      <label class=\"form__label screen-reader-text\" for=\"form-email\">Email</label>\n      <input class=\"form__input\" id=\"form-email\" type=\"email\" name=\"email\" placeholder=\"Email\" autocomplete=\"email\" required=\"\">\n    </div>\n    <div class=\"form__group\">\n      <label class=\"form__label screen-reader-text\" for=\"form-text\">Message</label>\n      <textarea class=\"form__input\" id=\"form-text\" name=\"message\" rows=\"10\" placeholder=\"Message\" required=\"\"></textarea>\n    </div>\n    <div class=\"form__group\">\n      <a class=\"button button--primary\" id=\"contact-mail-link\" href=\"mailto:ptzhao@hotmail.com\">Send Message</a>\n    </div>\n  </form>\n  <hr>\n</div>\n\n\n\n    "
+}

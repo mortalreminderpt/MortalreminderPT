@@ -1,0 +1,106 @@
+@use 'ionicons';
+
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+-------------------------------------------------------------------*/
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+:: Template name: Norlin
+:: Norlin is a creative modern theme with a clean design specially created for dark themes lovers. Norlin theme is fully responsive and looks great on mobile devices and has a beautiful and modern design that is best suited for your personal or corporate blog. You can easily customize the theme by changing the accent colors, the arrangement of the widgets, etc.
+
+:: Template Author: Artem Sheludko
+:: Version: 1.2
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>
+:: 1-Tools and Libs
+    1.1-Normalize
+    1.2-Reset
+    1.3-Shared
+    1.4-Syntax Highlighting
+    1.5-Grid
+    1.6-Zoom
+    1.7-Animate
+:: 2-Base Styles
+    2.1-Base
+:: 3-Modules
+    3.1-Hero
+    3.2-Scroll Button Top
+    3.3-Header
+    3.4-Search
+    3.5-Pagination
+    3.6-Footer
+    3.7-Social Links
+    3.8-Buttons
+:: 4-Layouts
+    4.1-Home Page
+    4.2-Post
+    4.3-Tags Page
+    4.4-Contact Page
+<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+@use '0-settings/variables' as *;
+@use '0-settings/mixins' as *;
+@use '0-settings/helpers' as *;
+
+
+/* =======================
+:: 1-Tools and Libs
+======================= */
+/* >>>>>>>>>>>>>> :: 1.1-Normalize <<<<<<<<<<<<<<< */
+@use '1-tools/normalize' as *;
+/* >>>>>>>>>>>>>> :: 1.2-Reset <<<<<<<<<<<<<<< */
+@use '1-tools/reset' as *;
+/* >>>>>>>>>>>>>> :: 1.3-Shared <<<<<<<<<<<<<<< */
+@use '1-tools/shared' as *;
+/* >>>>>>>>>>>>>> :: 1.4-Syntax Highlighting <<<<<<<<<<<<<<< */
+@use '1-tools/syntax-highlighting' as *;
+/* >>>>>>>>>>>>>> :: 1.5-Grid <<<<<<<<<<<<<<< */
+@use '1-tools/grid' as *;
+/* >>>>>>>>>>>>>> :: 1.6-Zoom <<<<<<<<<<<<<<< */
+@use '1-tools/zoom' as *;
+/* >>>>>>>>>>>>>> :: 1.7-Animate <<<<<<<<<<<<<<< */
+@use '1-tools/animate' as *;
+
+
+/* =======================
+:: 2-Base Styles
+======================= */
+/* >>>>>>>>>>>>>> :: 2.1-Base <<<<<<<<<<<<<<< */
+@use '2-base/base' as *;
+
+
+/* =======================
+:: 3-Modules
+======================= */
+/* >>>>>>>>>>>>>> :: 3.1-Hero <<<<<<<<<<<<<<< */
+@use '3-modules/hero' as *;
+/* >>>>>>>>>>>>>> :: 3.2-Scroll Button Top <<<<<<<<<<<<<<< */
+@use '3-modules/scroll-button-top' as *;
+/* >>>>>>>>>>>>>> :: 3.3-Header <<<<<<<<<<<<<<< */
+@use '3-modules/header' as *;
+/* >>>>>>>>>>>>>> :: 3.4-Search <<<<<<<<<<<<<<< */
+@use '3-modules/search' as *;
+/* >>>>>>>>>>>>>> :: 3.5-Pagination <<<<<<<<<<<<<<< */
+@use '3-modules/pagination' as *;
+/* >>>>>>>>>>>>>> :: 3.6-Footer <<<<<<<<<<<<<<< */
+@use '3-modules/footer' as *;
+/* >>>>>>>>>>>>>> :: 3.7-Social Links <<<<<<<<<<<<<<< */
+@use '3-modules/social-links' as *;
+/* >>>>>>>>>>>>>> :: 3.8-Buttons <<<<<<<<<<<<<<< */
+@use '3-modules/buttons' as *;
+
+
+/* =======================
+:: 4-Layouts
+======================= */
+/* >>>>>>>>>>>>>> :: 4.1-Home Page <<<<<<<<<<<<<<< */
+@use '4-layouts/home-page' as *;
+/* >>>>>>>>>>>>>> :: 4.2-Post <<<<<<<<<<<<<<< */
+@use '4-layouts/post' as *;
+/* >>>>>>>>>>>>>> :: 4.3-Tags Page <<<<<<<<<<<<<<< */
+@use '4-layouts/tags-page' as *;
+/* >>>>>>>>>>>>>> :: 4.4-Contact Page <<<<<<<<<<<<<<< */
+@use '4-layouts/contact-page' as *;
+
+

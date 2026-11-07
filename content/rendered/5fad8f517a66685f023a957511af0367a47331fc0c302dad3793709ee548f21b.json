@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/05/02/操作系统-三十九-内存的基础知识/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（三十九）内存的基础知识",
+  "description": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover4.jpg\" alt=\"操作系统（三十九）内存的基础知识\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover4.jpg\" alt=\"操作系统（三十九）内存的基础知识\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-05-02T15:51:43+10:00\">May 2, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（三十九）内存的基础知识</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#什么是内存\" id=\"markdown-toc-什么是内存\">什么是内存</a>    <ol>\n      <li><a href=\"#内存管理的概念\" id=\"markdown-toc-内存管理的概念\">内存管理的概念</a></li>\n      <li><a href=\"#内存管理功能\" id=\"markdown-toc-内存管理功能\">内存管理功能</a></li>\n      <li><a href=\"#逻辑地址和物理地址\" id=\"markdown-toc-逻辑地址和物理地址\">逻辑地址和物理地址</a></li>\n    </ol>\n  </li>\n  <li><a href=\"#进程运行基本原理\" id=\"markdown-toc-进程运行基本原理\">进程运行基本原理</a>    <ol>\n      <li><a href=\"#三种链接方式\" id=\"markdown-toc-三种链接方式\">三种链接方式</a></li>\n      <li><a href=\"#三种装入方式\" id=\"markdown-toc-三种装入方式\">三种装入方式</a></li>\n    </ol>\n  </li>\n</ol>\n\n<h2 id=\"什么是内存\">什么是内存</h2>\n<p>内存可存放数据。程序执行前<strong>需要先放到内存中才能被CPU处理</strong>——缓和CPU与硬盘之间的速度矛盾。</p>\n\n<p>在多道程序环境下，系统中会有多个程序并发执行，也就是说会有多个程序的数据需要同时放到内存中。\n那么，如何区分各个程序的数据是放在什么地方的呢？</p>\n\n<p>内存中有一个一个的“小房间”，每个小房间就是一个“<strong>存储单元</strong>”。</p>\n\n<p>内存地址从0开始，<strong>每个地址对应一个存储单元</strong>。</p>\n\n<p>如果计算机“<strong>按字节编址</strong>”，则<strong>每个存储单元大小为1字节</strong>，即1B，即8个二进制位。</p>\n\n<p>如果字长为<strong>16位的计算机“按字编址”</strong>，则<strong>每个存储单元大小为1个字</strong>；每个字的大小为<strong>16个二进制位</strong>。</p>\n\n<p>补充知识：</p>\n\n<p><include src=\"/zh-cn/_aafaba9696d748f9be2dae7fadfe04b1d27cad8c271a7cdf44cbfaad9cc73030.xml\"></include></p>\n\n<p><include src=\"/zh-cn/_f4279966789d07ae7f2221961e9207efdee358f375347b85fa3ba1b592426bf9.xml\"></include></p>\n\n<p><include src=\"/zh-cn/_704aaa4a212f4ea02b6d0862d77343366c150f9a0b5d1961b61a7486e1bb1cf2.xml\"></include></p>\n\n<p>一台手机/电脑有4GB内存，是什么意思？</p>\n\n<p>是指该内存中可以存放<include src=\"/zh-cn/_58be1671142549aa6ac64a97523620b2db6f1aab83355a4c7017228bbed6f9c1.xml\"></include>个字节。</p>\n\n<p>如果是按字节编址的话，也就是有<include src=\"/zh-cn/_797fa7d3286c767a4b822805f3452bcd3e0e62ed6d7d759b25ee6273481f9d0f.xml\"></include>个存储单元。</p>\n\n<p>需要<include src=\"/zh-cn/_6f9c80627706ef7cb09dbc4d47b1bc99b20b51fb5ced349c722885b03a3fb9db.xml\"></include>个地址才能一一标识，\n所以地址需要用32个二进制位来表示（<include src=\"/zh-cn/_51bd78bbb3ba270ebd222bd001065c37cfd8abbb4e95e72b568400b5feb14a85.xml\"></include>）。</p>\n\n<h3 id=\"内存管理的概念\">内存管理的概念</h3>\n\n<p>计算机<strong>不可能将所有用户进程</strong>和系统所需要的全部程序和数据<strong>放入主存</strong>，因此操作系统必须<strong>对内存空间进行合理的划分和有效的动态分配</strong>。</p>\n\n<p><strong>内存管理</strong>的概念就是<strong>操作系统对内存的划分和动态分配</strong>。</p>\n\n<h3 id=\"内存管理功能\">内存管理功能</h3>\n\n<ul>\n  <li><strong>内存空间的分配与回收</strong>：由操作系统完成<strong>主存储器空间的分配和管理</strong>；</li>\n  <li>地址转换：将<strong>逻辑地址</strong>转换成<strong>相应的物理地址</strong>；</li>\n  <li>内存空间的<strong>扩充</strong>：利用<strong>虚拟存储技术</strong>或自动覆盖技术，从<strong>逻辑上扩充主存</strong>；</li>\n  <li><strong>存储保护</strong>：保证<strong>各道作业在各自的存储空间内运行</strong>，互不干扰。</li>\n</ul>\n\n<h3 id=\"逻辑地址和物理地址\">逻辑地址和物理地址</h3>\n<ul>\n  <li>逻辑地址：程序经过编译、链接后生成的指令中指明的是逻辑地址（相对地址），即:相对于进程的起始地址而言的地址；</li>\n</ul>\n\n<h2 id=\"进程运行基本原理\">进程运行基本原理</h2>\n\n<p>将用户<strong>源程序变为可在内存中执行的程序</strong>，通常需要以下几个步骤：</p>\n<ul>\n  <li><strong>编译</strong>：由编译程序将用户源代码编译成若干目标模块；（把高级语言翻译成机器语言）</li>\n  <li><strong>链接</strong>：由链接程序将编译后形成的一组目标模块及所需的库函数连接在一起，形成一个完整的装入模块；（由目标模块生成装入模块，链接后形成完整的逻辑地址)</li>\n  <li><strong>装入</strong>：由装入程序将装入模块装入内存运行，装入后形成物理地址。</li>\n</ul>\n\n<h3 id=\"三种链接方式\">三种链接方式</h3>\n<p>程序的链接有以下三种方式：</p>\n<ul>\n  <li><strong>静态链接</strong>：在程序运行之前，先将各目标模块及它们所需的库函数连接成一个完整的可执行文件（装入模块)，之后不再拆开；</li>\n  <li><strong>装入时动态链接</strong>：将各目标模块装入内存时，边装入边链接的链接方式；</li>\n  <li><strong>运行时动态链接</strong>：在程序执行中需要该目标模块时，才对它进行链接。其优点是便于修改和更新，便于实现对目标模块的共享。</li>\n</ul>\n\n<h3 id=\"三种装入方式\">三种装入方式</h3>\n<p>内存的装入模块在装入内存时，有以下三种方式:</p>\n<ul>\n  <li><strong>绝对装入</strong>（单道程序阶段）：在编译时，如果知道程序将放到内存中的哪个位置，编译程序将产生绝对的物理地址的目标代码。\n装入程序按照装入模块中的地址，将程序和数据装入内存。</li>\n  <li><strong>静态可重定位装入</strong>（早期多道批处理系统）：<strong>编译后的模块</strong>需要连续装入内存，但是<strong>在内存中的物理地址可与逻辑地址不同</strong>，可以存在一定偏移。\n比如逻辑地址是0-100，它可以在内存中存储在100-200的内存单元中，需要设定一个偏移量就是100。\n静态重定位的特点是在一个作业装入内存时，<strong>必须分配其要求的全部内存空间</strong>，如果没有足够的内存，就不能装入该作业。\n<strong>同时也需要为其分配连续的存储空间</strong>，不然通过偏移量是无法找到的。\n现在就可以通过作业的<strong>逻辑地址+偏移量</strong>获得作业在内存中的绝对地址。</li>\n  <li><strong>动态运行时装入</strong>（现代操作系统）：将<strong>不同的模块</strong>可以装入在<strong>不同的内存地址</strong>，<strong>不同模块可以不连续</strong>，但是<strong>同一模块还是要连续存放</strong>的。\n同一模块需要<strong>设定一个重定位寄存器</strong>，<strong>每个模块的重定位寄存器中的值</strong>就是对应的<strong>偏移量</strong>。\n装入程序会把模块装入内存，但是并<strong>不会立即将装入模块的相对地址转换为绝对地址</strong>，而是把这种地址转换<strong>推迟到程序真正执行时才进行</strong>。\n<strong>可以将程序分配到不连续的存储区</strong>。</li>\n</ul>\n\n    ",
+  "source": "content/posts/zh-cn/2022-05-02-操作系统（三十九）内存的基础知识.md",
+  "sourceDigest": "063adeb02b81663c5909ebe640f30572e5db796a9b06e11f5595190660efe139",
+  "postTitle": "操作系统（三十九）内存的基础知识",
+  "date": "2022-05-02T15:51:43+10:00",
+  "dateText": "May 2, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover4.jpg",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/05/01/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%B8%89%E5%8D%81%E5%85%AB-%E6%AD%BB%E9%94%81%E7%9A%84%E6%A3%80%E6%B5%8B%E5%92%8C%E8%A7%A3%E9%99%A4/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（三十八）死锁的检测和解除\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（三十八）死锁的检测和解除</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E7%9A%84%E6%A6%82%E5%BF%B5/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover4.jpg\" alt=\"操作系统（四十）内存管理的概念\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（四十）内存管理的概念</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

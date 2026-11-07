@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/05/01/操作系统-三十六-死锁的预防/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（三十六）死锁的预防",
+  "description": "进程（Process）是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（三十六）死锁的预防\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（三十六）死锁的预防\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-05-01T18:20:06+10:00\">May 1, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（三十六）死锁的预防</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#死锁的处理策略\" id=\"markdown-toc-死锁的处理策略\">死锁的处理策略</a></li>\n  <li><a href=\"#静态策略预防死锁\" id=\"markdown-toc-静态策略预防死锁\">静态策略：预防死锁</a>    <ol>\n      <li><a href=\"#破坏互斥条件\" id=\"markdown-toc-破坏互斥条件\">破坏互斥条件</a>        <ol>\n          <li><a href=\"#该策略的缺点\" id=\"markdown-toc-该策略的缺点\">该策略的缺点</a></li>\n        </ol>\n      </li>\n      <li><a href=\"#破坏不剥夺条件\" id=\"markdown-toc-破坏不剥夺条件\">破坏不剥夺条件</a>        <ol>\n          <li><a href=\"#该策略的缺点-1\" id=\"markdown-toc-该策略的缺点-1\">该策略的缺点</a></li>\n        </ol>\n      </li>\n      <li><a href=\"#破坏请求和保持条件\" id=\"markdown-toc-破坏请求和保持条件\">破坏请求和保持条件</a>        <ol>\n          <li><a href=\"#该策略的缺点-2\" id=\"markdown-toc-该策略的缺点-2\">该策略的缺点</a></li>\n        </ol>\n      </li>\n      <li><a href=\"#破坏循环等待条件\" id=\"markdown-toc-破坏循环等待条件\">破坏循环等待条件</a>        <ol>\n          <li><a href=\"#该策略的缺点-3\" id=\"markdown-toc-该策略的缺点-3\">该策略的缺点</a></li>\n        </ol>\n      </li>\n    </ol>\n  </li>\n</ol>\n\n<h2 id=\"死锁的处理策略\">死锁的处理策略</h2>\n\n<ol>\n  <li>预防死锁。破坏死锁产生的四个必要条件中的一个或几个；</li>\n  <li>避免死锁。用某种方法防止系统进入不安全状态，从而避免死锁（银行家算法）；</li>\n  <li>死锁的检测和解除。允许死锁的发生，不过操作系统会负责检测出死锁的发生，然后采取某种措施解除死锁。</li>\n</ol>\n\n<h2 id=\"静态策略预防死锁\">静态策略：预防死锁</h2>\n\n<h3 id=\"破坏互斥条件\">破坏互斥条件</h3>\n\n<p>互斥条件：只有对必须互斥使用的资源的争抢才会导致死锁。</p>\n\n<p>如果把只能互斥使用的资源改造为允许共享使用，则系统不会进入死锁状态。\n比如: <strong>SPOOLing技术。</strong>操作系统可以采用SPOOLing技术把独占设备在逻辑上改造成共享设备。\n如用SPooLing技术将打印机改造为共享设备。</p>\n\n<p>如图，进程1还没用完打印机之前，进程2申请使用打印机会阻塞：</p>\n\n<p><img src=\"\\images\\posts\\操作系统-死锁1.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>使用了SPOOLing技术后，在各进程看来，自己对打印机资源的使用请求立即就被接收处理了，不需要再阻塞等待：</p>\n\n<p><img src=\"\\images\\posts\\操作系统-死锁2.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<h4 id=\"该策略的缺点\">该策略的缺点</h4>\n<p>并不是所有的资源都可以改造成可共享使用的资源。\n并且为了系统安全，很多地方还必须保护这种互斥性。\n因此，<strong>很多时候都无法破坏互斥条件</strong>。</p>\n\n<h3 id=\"破坏不剥夺条件\">破坏不剥夺条件</h3>\n<p>不剥夺条件：进程所获得的资源在未使用完之前，不能由其他进程强行夺走，只能主动释放。</p>\n\n<p>破坏不剥夺条件：</p>\n<ul>\n  <li>方案一：当某个进程请求新的资源得不到满足时，它必须立即释放保持的所有资源，待以后需要时再重新申请。也就是说，即使某些资源尚未使用完，也需要主动释放，从而破坏了不可剥夺条件；</li>\n  <li>方案二:当某个进程需要的资源被其他进程所占有的时候，可以由操作系统协助，将想要的资源强行剥夺。这种方式一般需要考虑各进程的优先级。（比如剥夺调度方式，就是将处理机资源强行剥夺给优先级更高的进程使用）</li>\n</ul>\n\n<h4 id=\"该策略的缺点-1\">该策略的缺点</h4>\n\n<ol>\n  <li>实现起来比较复杂。</li>\n  <li>释放已获得的资源可能造成前一阶段工作的失效。因此这种方法一般<strong>只适用于易保存和恢复状态的资源</strong>，如CPU。</li>\n  <li>反复地申请和释放资源会增加系统开销，降低系统吞吐量。</li>\n  <li>若采用<strong>方案一</strong>，意味着只要暂时得不到某个资源，之前获得的那些资源就都需要放弃，以后再重新申请。如果一直发生这样的情况，就会<strong>导致进程饥饿</strong>。</li>\n</ol>\n\n<h3 id=\"破坏请求和保持条件\">破坏请求和保持条件</h3>\n<p>请求和保持条件：进程已经保持了至少一个资源，但又提出了新的资源请求，而该资源又被其他进程占有，此时请求进程被阻塞，但又对自己已有的资源保持不放。</p>\n\n<p>可以<strong>采用静态分配方法</strong>，即进程在<strong>运行前一次申请完</strong>它所需要的全部资源，在它的<strong>资源未满足前，不让它投入运行</strong>。\n一旦投入运行后，这些资源就一直归它所有，该进程就不会再请求别的任何资源了。</p>\n\n<h4 id=\"该策略的缺点-2\">该策略的缺点</h4>\n\n<p>该策略实现起来简单，但也有明显的缺点：\n有些资源可能只需要用很短的时间，因此如果进程的整个运行期间都一直保持着所有资源，就会造成严重的资源浪费，<strong>资源利用率极低</strong>。\n另外，该策略也有<strong>可能导致某些进程饥饿</strong>。</p>\n\n<p>如图A类进程只需资源1即可运行，B类进程只需资源2即可运行，但C类进程需要同时拥有资源1和资源2才可运行：</p>\n\n<p><img src=\"\\images\\posts\\操作系统-死锁3.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>这种情况下，可能存在A类进程和B类进程不断运行，而C类进程被饿死的情况发生。</p>\n\n<h3 id=\"破坏循环等待条件\">破坏循环等待条件</h3>\n<p>循环等待条件：存在一种进程资源的循环等待链，链中的每一个进程已获得的资源同时被下一个进程所请求。</p>\n\n<p>可采用<strong>顺序资源分配法</strong>。\n首先给系统中的资源编号，规定<strong>每个进程必须按编号递增的顺序请求资源</strong>，同类资源（即编号相同的资源）一次申请完。</p>\n\n<p>原理分析：一个进程只有<strong>已占有小编号</strong>的资源时，<strong>才有资格申请更大编号</strong>的资源。\n按此规则，<strong>已持有大编号资源的进程不可能逆向地回来申请小编号的资源</strong>，从而就不会产生循环等待的现象。</p>\n\n<p>Eg. 假设系统中共有10个资源，编号为1,2,…,10：</p>\n\n<p><img src=\"\\images\\posts\\操作系统-死锁4.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>在任何一个时刻，总有一个进程拥有的资源编号是最大的，那这个进程申请之后的资源必然畅通无阻。\n因此,不可能出现所有进程都阻塞的死锁现象。</p>\n\n<h4 id=\"该策略的缺点-3\">该策略的缺点</h4>\n\n<ol>\n  <li>不方便增加新的设备，因为可能需要重新分配所有的编号；</li>\n  <li>进程实际使用资源的顺序可能和编号递增顺序不一致，会导致资源浪费；</li>\n  <li>必须按规定次序申请资源，用户编程麻烦。</li>\n</ol>\n\n    ",
+  "source": "content/posts/zh-cn/2022-05-01-操作系统（三十六）死锁的预防.md",
+  "sourceDigest": "adb9e895ea45600d529f0b20d478b1d5ed2a0703b9a0a61c4b17881bd3e80132",
+  "postTitle": "操作系统（三十六）死锁的预防",
+  "date": "2022-05-01T18:20:06+10:00",
+  "dateText": "May 1, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover2.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/05/01/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%B8%89%E5%8D%81%E4%BA%94-%E6%AD%BB%E9%94%81%E7%9A%84%E6%A6%82%E5%BF%B5/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（三十五）死锁的概念\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（三十五）死锁的概念</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/05/01/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%B8%89%E5%8D%81%E4%B8%83-%E6%AD%BB%E9%94%81%E7%9A%84%E9%81%BF%E5%85%8D/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（三十七）死锁的避免\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（三十七）死锁的避免</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

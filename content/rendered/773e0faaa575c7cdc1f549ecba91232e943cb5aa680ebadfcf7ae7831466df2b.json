@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/04/26/操作系统-二十六-互斥锁/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（二十六）互斥锁",
+  "description": "进程（Process）是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（二十六）互斥锁\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（二十六）互斥锁\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-04-26T11:42:34+10:00\">Apr 26, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（二十六）互斥锁</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#互斥锁的概念\" id=\"markdown-toc-互斥锁的概念\">互斥锁的概念</a></li>\n  <li><a href=\"#互斥锁的特性\" id=\"markdown-toc-互斥锁的特性\">互斥锁的特性</a></li>\n</ol>\n\n<h2 id=\"互斥锁的概念\">互斥锁的概念</h2>\n<p>解决临界区最简单的工具就是互斥锁（mutex lock）。\n一个进程在进入临界区时应获得锁；在退出临界区时释放锁。\n函数<code class=\"language-plaintext highlighter-rouge\">acquire()</code>获得锁，而函数<code class=\"language-plaintext highlighter-rouge\">release()</code>释放锁。</p>\n\n<p>每个互斥锁有一个布尔变量<code class=\"language-plaintext highlighter-rouge\">available</code>，表示锁是否可用。\n如果锁是可用的，调用<code class=\"language-plaintext highlighter-rouge\">acquire()</code>会成功，且锁不再可用。\n当一个进程试图获取不可用的锁时，会被阻塞，直到锁被释放。</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">acquire</span> <span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"k\">while</span> <span class=\"p\">(</span><span class=\"o\">!</span><span class=\"n\">available</span><span class=\"p\">);</span> <span class=\"c1\">// 忙等待</span>\n    <span class=\"n\">available</span> <span class=\"o\">=</span> <span class=\"nb\">false</span><span class=\"p\">;</span>  <span class=\"c1\">// 获得锁</span>\n<span class=\"p\">}</span>\n\n<span class=\"n\">release</span> <span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"n\">available</span> <span class=\"o\">=</span> <span class=\"nb\">true</span><span class=\"p\">;</span>   <span class=\"c1\">// 释放锁</span>\n<span class=\"p\">}</span>\n</code></pre></div></div>\n\n<p><code class=\"language-plaintext highlighter-rouge\">acquire()</code>或<code class=\"language-plaintext highlighter-rouge\">release()</code>的执行必须是原子操作，因此互斥锁通常采用硬件机制来实现。</p>\n\n<p>互斥锁的主要缺点是忙等待，当有一个进程在临界区中，任何其他进程在进入临界区时必连续循环调用<code class=\"language-plaintext highlighter-rouge\">acquire()</code>。\n当多个进程共享同一CPU时，就浪费了CPU周期。\n因此，互斥锁通常用于多处理器系统，一个线程可以在一个处理器上等待，不影响其他线程的执行。</p>\n\n<p>需要连续循环忙等的互斥锁（自旋等待），都可称为自旋锁（spin lock）。\n如TS、swap指令；单标志、双标志法、Peterson算法。</p>\n\n<h2 id=\"互斥锁的特性\">互斥锁的特性</h2>\n<ul>\n  <li>需忙等，进程时间片用完才下处理机，<strong>违反“让权等待”原则</strong>；</li>\n  <li>优点：等待期间<strong>不用切换进程上下文</strong>，多处理器系统中，<strong>若上锁时间短，则等待代价很低</strong>；</li>\n  <li>常用于多处理器系统，一个核忙等，其他核照常工作，并快速释放临界区；</li>\n  <li><strong>不太适用于单处理机系统</strong>，忙等的过程中不可能解锁。</li>\n</ul>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">do</span> <span class=\"p\">{</span>\n    <span class=\"n\">acquire</span><span class=\"p\">();</span> <span class=\"c1\">// 进入区</span>\n    <span class=\"n\">critical</span> <span class=\"n\">section</span><span class=\"p\">;</span> <span class=\"c1\">// 临界区</span>\n    <span class=\"n\">release</span><span class=\"p\">();</span> <span class=\"c1\">// 退出区</span>\n    <span class=\"n\">remainder</span> <span class=\"n\">section</span><span class=\"p\">;</span> <span class=\"c1\">// 剩余区</span>\n<span class=\"p\">}</span> <span class=\"k\">while</span> <span class=\"p\">(</span><span class=\"nb\">true</span><span class=\"p\">);</span>\n</code></pre></div></div>\n\n    ",
+  "source": "content/posts/zh-cn/2022-04-26-操作系统（二十六）互斥锁.md",
+  "sourceDigest": "40bf57f7c2a8bcf453da21c8cf390322b1ac507132b1af167de965663ad53497",
+  "postTitle": "操作系统（二十六）互斥锁",
+  "date": "2022-04-26T11:42:34+10:00",
+  "dateText": "Apr 26, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover2.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/04/25/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BA%8C%E5%8D%81%E4%BA%94-%E8%BF%9B%E7%A8%8B%E4%BA%92%E6%96%A5%E7%9A%84%E7%A1%AC%E4%BB%B6%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（二十五）进程互斥的硬件实现方法\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（二十五）进程互斥的硬件实现方法</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/04/27/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BA%8C%E5%8D%81%E4%B8%83-%E4%BF%A1%E5%8F%B7%E9%87%8F%E6%9C%BA%E5%88%B6/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（二十七）信号量机制\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（二十七）信号量机制</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/04/23/操作系统-十八-进程调度的时机-切换与过程-方式/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（十八）进程调度的时机、切换与过程、方式",
+  "description": "进程（Process）是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十八）进程调度的时机、切换与过程、方式\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十八）进程调度的时机、切换与过程、方式\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-04-23T22:05:19+10:00\">Apr 23, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（十八）进程调度的时机、切换与过程、方式</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#时机\" id=\"markdown-toc-时机\">时机</a>    <ol>\n      <li><a href=\"#需要进行进程调度与切换的情况\" id=\"markdown-toc-需要进行进程调度与切换的情况\">需要进行进程调度与切换的情况</a></li>\n      <li><a href=\"#不能进行进程调度与切换的情况\" id=\"markdown-toc-不能进行进程调度与切换的情况\">不能进行进程调度与切换的情况</a></li>\n      <li><a href=\"#操作系统内核程序临界区中不能进行调度与切换\" id=\"markdown-toc-操作系统内核程序临界区中不能进行调度与切换\">操作系统内核程序临界区中不能进行调度与切换</a></li>\n    </ol>\n  </li>\n  <li><a href=\"#方式\" id=\"markdown-toc-方式\">方式</a>    <ol>\n      <li><a href=\"#非剥夺调度方式非抢占式\" id=\"markdown-toc-非剥夺调度方式非抢占式\">非剥夺调度方式（非抢占式）</a></li>\n      <li><a href=\"#剥夺调度方式抢占式\" id=\"markdown-toc-剥夺调度方式抢占式\">剥夺调度方式（抢占式）</a></li>\n    </ol>\n  </li>\n  <li><a href=\"#切换与过程\" id=\"markdown-toc-切换与过程\">切换与过程</a></li>\n</ol>\n\n<h2 id=\"时机\">时机</h2>\n\n<p><strong>进程调度（低级调度）</strong>，就是按照某种算法从就绪队列中选择一个进程为其分配处理机。</p>\n\n<h3 id=\"需要进行进程调度与切换的情况\">需要进行进程调度与切换的情况</h3>\n\n<p><strong>需要进行</strong>进程调度与切换的情况主要分为两种，<strong>主动放弃</strong>和<strong>被动放弃</strong>。</p>\n\n<p>当前运行的进程<strong>主动放弃</strong>处理机：</p>\n<ul>\n  <li>进程正常终止；</li>\n  <li>运行过程中发生异常而终止；</li>\n  <li>进程主动请求阻塞（如等待I/O）。</li>\n</ul>\n\n<p>当前运行的进程<strong>被动放弃</strong>处理机：</p>\n<ul>\n  <li>分给进程的时间片用完；</li>\n  <li>有更紧急的事需要处理（如I/O中断）；</li>\n  <li>有更高优先级的进程进入就绪队列。</li>\n</ul>\n\n<h3 id=\"不能进行进程调度与切换的情况\">不能进行进程调度与切换的情况</h3>\n\n<p><strong>不能进行</strong>进程调度与切换的情况：</p>\n<ul>\n  <li>在<strong>处理中断的过程中</strong>。中断处理过程复杂，与硬件密切相关，很难做到在中断处理过程中进行进程切换；</li>\n  <li>进程在<strong>操作系统内核程序临界区</strong>中；</li>\n  <li>在原子操作过程中（原语）。原子操作不可中断，要一气呵成（如修改PCB中进程状态的标识，并把PCB放到相应队列）。</li>\n</ul>\n\n<h3 id=\"操作系统内核程序临界区中不能进行调度与切换\">操作系统内核程序临界区中不能进行调度与切换</h3>\n\n<p>临界资源：一个时间段内只允许一个进程使用的资源。各进程需要<strong>互斥地</strong>访问临界资源。</p>\n\n<p>临界区：访问临界资源的那段代码。</p>\n\n<p><strong>内核程序临界区</strong>一般是用来访问某种<strong>内核数据结构</strong>的，比如进程的就绪队列（由各就绪进程的PCB组成）</p>\n\n<p>内核程序临界区访问的临界资源如果不尽快释放的话，极有可能影响到操作系统内核的其他管理工作。因此在访问内核程序临界区期间不能进行调度与切换。</p>\n\n<p>如图，访问进程的就绪队列时，由于就绪队列被访问，操作系统不能进行调度与切换。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-进程调度时机1.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>普通临界区访问的临界资源不会直接影响操作系统内核的管理工作，因此在访问普通临界区时可以进行调度与切换。</p>\n\n<p>如图，在打印机打印完成之前，进程一直处于临界区内，临界资源不会解锁。但打印机又是慢速设备，此时如果一直不允许进程调度的话就会导致CPU一直空闲。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-进程调度时机2.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<h2 id=\"方式\">方式</h2>\n\n<p>有的系统中，只允许进程主动放弃处理机；</p>\n\n<p>而有的系统中，进程可以主动放弃处理机，当有更紧急的任务需要处理时，也会强行剥夺处理机。</p>\n\n<p>因此，可以将进程调度的方式分为<strong>非剥夺调度方式</strong>和<strong>剥夺调度方式</strong>。</p>\n\n<h3 id=\"非剥夺调度方式非抢占式\">非剥夺调度方式（非抢占式）</h3>\n\n<p><strong>非剥夺调度方式，又称非抢占方式</strong>。即，只允许进程主动放弃处理机。在运行过程中即便有更紧迫的任务到达，当前进程依然会继续使用处理机，直到该进程终止或主动要求进入阻塞态。</p>\n\n<p>非剥夺调度方式实现简单，系统开销小但是无法及时处理紧急任务，适合于早期的批处理系统。</p>\n\n<h3 id=\"剥夺调度方式抢占式\">剥夺调度方式（抢占式）</h3>\n\n<p><strong>剥夺调度方式，又称抢占方式</strong>。当一个进程正在处理机上执行时，如果有一个更重要或更紧迫的进程需要使用处理机，则立即暂停正在执行的进程，将处理机分配给更重要紧迫的那个进程。</p>\n\n<p>剥夺调度方式可以优先处理更紧急的进程,也可实现让各进程按时间片轮流执行的功能（通过时钟中断）。适合于分时操作系统、实时操作系统。</p>\n\n<h2 id=\"切换与过程\">切换与过程</h2>\n\n<p>狭义的进程调度和进程切换：</p>\n\n<p><strong>狭义的进程调度</strong>指的是从就绪队列中<strong>选中一个要运行的进程</strong>。\n（这个进程可以是刚刚被暂停执行的进程，也可能是<strong>另一个进程</strong>，后一种情况就需要<strong>进程切换</strong>）</p>\n\n<p><strong>进程切换</strong>是指一个进程让出处理机，由另一个进程占用处理机的过程。</p>\n\n<p><strong>广义的进程调度</strong>包含了选择一个进程和进程切换两个步骤。</p>\n\n<p>进程切换的过程主要完成了：</p>\n\n<ol>\n  <li>对原来运行进程各种数据的保存；</li>\n  <li>对新的进程各种数据的恢复。（如:程序计数器、程序状态字、各种数据寄存器等处理机现场信息，这些信息一般保存在进程控制块）</li>\n</ol>\n\n<p>注意：<strong>进程切换是有代价的</strong>，因此如果<strong>过于频繁的</strong>进行进程<strong>调度、切换</strong>，必然会使整个<strong>系统的效率降低</strong>，使系统大部分时间都花在了进程切换上，而真正用于执行进程的时间减少。</p>\n\n\n    ",
+  "source": "content/posts/zh-cn/2022-04-23-操作系统（十八）进程调度的时机、切换与过程、方式.md",
+  "sourceDigest": "e6fa4baec9eb00fbdba7b75d347f8821574608eb2be0f26fbadc0b9f051ed903",
+  "postTitle": "操作系统（十八）进程调度的时机、切换与过程、方式",
+  "date": "2022-04-23T22:05:19+10:00",
+  "dateText": "Apr 23, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover2.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/04/23/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%8D%81%E4%B8%83-%E8%B0%83%E5%BA%A6%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E5%B1%82%E6%AC%A1/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十七）调度的概念和层次\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（十七）调度的概念和层次</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/04/24/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%8D%81%E4%B9%9D-%E8%B0%83%E5%BA%A6%E5%99%A8-Scheduler-%E5%92%8C%E9%97%B2%E9%80%9B%E8%BF%9B%E7%A8%8B/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十九）调度器（Scheduler）和闲逛进程\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（十九）调度器（Scheduler）和闲逛进程</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

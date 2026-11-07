@@ -1,0 +1,111 @@
+{
+  "route": "/zh-cn/categories/computer-network/",
+  "lang": "zh-cn",
+  "kind": "archive",
+  "title": "Computer Network",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"Computer Network\">\n    </div>\n    <div class=\"hero__content\">\n      <div class=\"row\">\n        <div class=\"col col-8 col-d-10 col-m-12 push-m-0 push-d-1 push-2\">\n          <div class=\"archive-box\">\n            \n                <h1 class=\"archive-title\">Computer Network</h1>\n              \n            <span class=\"archive-meta\">7 posts found.</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/computer%20network/2024/10/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%B8%83-%E5%BA%94%E7%94%A8%E5%B1%82/",
+        "src": "https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp",
+        "alt": "计算机网络（七）应用层"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 7 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-10-25T17:43:27+11:00\">Oct 25, 2024</time>\n        </span>\n      ",
+      "titleHtml": "计算机网络（七）应用层",
+      "title": "计算机网络（七）应用层",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/computer-network\"=\"\">Computer Network</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/computer%20network/2024/10/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%85%AD-%E4%BC%A0%E8%BE%93%E5%B1%82/",
+        "src": "https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp",
+        "alt": "计算机网络（六）传输层"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 16 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-10-24T08:15:09+11:00\">Oct 24, 2024</time>\n        </span>\n      ",
+      "titleHtml": "计算机网络（六）传输层",
+      "title": "计算机网络（六）传输层",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/computer-network\"=\"\">Computer Network</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/computer%20network/2024/10/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%BA%94-%E8%B7%AF%E7%94%B1%E7%AE%97%E6%B3%95/",
+        "src": "https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp",
+        "alt": "计算机网络（五）路由算法"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 12 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-10-24T01:50:30+11:00\">Oct 24, 2024</time>\n        </span>\n      ",
+      "titleHtml": "计算机网络（五）路由算法",
+      "title": "计算机网络（五）路由算法",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/computer-network\"=\"\">Computer Network</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/computer%20network/2024/10/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%9B%9B-%E7%BD%91%E7%BB%9C%E5%B1%82/",
+        "src": "https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp",
+        "alt": "计算机网络（四）网络层"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 13 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-10-22T10:01:45+11:00\">Oct 22, 2024</time>\n        </span>\n      ",
+      "titleHtml": "计算机网络（四）网络层",
+      "title": "计算机网络（四）网络层",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/computer-network\"=\"\">Computer Network</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/computer%20network/2024/10/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%B8%89-MAC%E5%B1%82/",
+        "src": "https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp",
+        "alt": "计算机网络（三）MAC层"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 10 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-10-21T21:22:11+11:00\">Oct 21, 2024</time>\n        </span>\n      ",
+      "titleHtml": "计算机网络（三）MAC层",
+      "title": "计算机网络（三）MAC层",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/computer-network\"=\"\">Computer Network</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/computer%20network/2024/10/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%BA%8C-Data-Link%E5%B1%82/",
+        "src": "https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp",
+        "alt": "计算机网络（二）Data Link层"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 16 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-10-20T15:34:56+11:00\">Oct 20, 2024</time>\n        </span>\n      ",
+      "titleHtml": "计算机网络（二）Data Link层",
+      "title": "计算机网络（二）Data Link层",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/computer-network\"=\"\">Computer Network</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/computer%20network/2024/10/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%B8%80-%E7%89%A9%E7%90%86%E5%B1%82/",
+        "src": "https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp",
+        "alt": "计算机网络（一）物理层"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 13 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-10-19T06:45:23+11:00\">Oct 19, 2024</time>\n        </span>\n      ",
+      "titleHtml": "计算机网络（一）物理层",
+      "title": "计算机网络（一）物理层",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/computer-network\"=\"\">Computer Network</a>\n              \n            </span>\n          \n        </div>\n      "
+    }
+  ],
+  "sectionClass": "hero"
+}

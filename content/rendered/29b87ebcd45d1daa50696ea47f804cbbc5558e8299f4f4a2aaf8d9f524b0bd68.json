@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/04/21/操作系统-十二-进程控制/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（十二）进程控制",
+  "description": "进程（Process）是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十二）进程控制\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十二）进程控制\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-04-21T19:48:42+10:00\">Apr 21, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（十二）进程控制</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#原语\" id=\"markdown-toc-原语\">原语</a>    <ol>\n      <li><a href=\"#为何进程控制状态转换的过程要一气呵成\" id=\"markdown-toc-为何进程控制状态转换的过程要一气呵成\">为何进程控制（状态转换）的过程要“一气呵成”？</a></li>\n      <li><a href=\"#原语执行原理\" id=\"markdown-toc-原语执行原理\">原语执行原理</a></li>\n    </ol>\n  </li>\n  <li><a href=\"#进程控制原语\" id=\"markdown-toc-进程控制原语\">进程控制原语</a>    <ol>\n      <li><a href=\"#进程的创建\" id=\"markdown-toc-进程的创建\">进程的创建</a></li>\n      <li><a href=\"#进程的终止\" id=\"markdown-toc-进程的终止\">进程的终止</a></li>\n      <li><a href=\"#进程的阻塞和唤醒\" id=\"markdown-toc-进程的阻塞和唤醒\">进程的阻塞和唤醒</a></li>\n      <li><a href=\"#进程的切换\" id=\"markdown-toc-进程的切换\">进程的切换</a></li>\n      <li><a href=\"#运行环境信息\" id=\"markdown-toc-运行环境信息\">运行环境信息</a></li>\n    </ol>\n  </li>\n</ol>\n\n<p>进程控制的主要功能是对系统中的所有进程实施有效的管理，它具有创建新进程、撤销已有进程、实现进程状态转换等功能。</p>\n\n<p>简化理解：进程控制就是要实现进程状态转换。</p>\n\n<h2 id=\"原语\">原语</h2>\n\n<h3 id=\"为何进程控制状态转换的过程要一气呵成\">为何进程控制（状态转换）的过程要“一气呵成”？</h3>\n\n<p>假设此时进程2等待的事件发生，则操作系统中，负责进程控制的内核程序至少需要做这样两件事：</p>\n<ol>\n  <li>将PCB2的state设为1</li>\n  <li>将PCB2从阻塞队列放到就绪队列</li>\n</ol>\n\n<p>完成了第一步后收到中断信号，那么PCB2的state=1，但是它却被放在阻塞队列里。</p>\n\n<p>如果不能“一气呵成”，就有可能导致操作系统中的某些关键数据结构信息不统一的情况，这会影响操作系统进行别的管理工作。</p>\n\n<h3 id=\"原语执行原理\">原语执行原理</h3>\n\n<p><strong>原语</strong>的执行具有<strong>原子性</strong>，即执行过程只能一气呵成，期间<strong>不允许被中断</strong>。\n可以用“<strong>关中断</strong>指令”和“<strong>开中断</strong>指令”这两个<strong>特权指令</strong>实现原子性。</p>\n\n<p>在正常情况下，CPU<strong>每执行完一条指令</strong>都会例行<strong>检查是否有中断信号</strong>需要处理，\n如果有，则暂停运行当前这段程序，转而执行相应的中断处理程序。</p>\n\n<p>CPU执行了<strong>关中断指令</strong>之后，就不再例行检查中断信号，直到执行<strong>开中断指令</strong>之后才会恢复检查。</p>\n\n<p>这样，关中断、开中断之间的这些指令序列就是不可被中断的，这就实现了“原子性”。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-原语.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<h2 id=\"进程控制原语\">进程控制原语</h2>\n\n<p>无论哪个进程控制原语，要做的无非三类事情：</p>\n<ol>\n  <li>更新PCB中的信息（修改进程状态state，保存/恢复运行环境）；</li>\n  <li>将PCB插入合适的队列；</li>\n  <li>分配/回收资源。</li>\n</ol>\n\n<h3 id=\"进程的创建\">进程的创建</h3>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-进程的创建.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<h3 id=\"进程的终止\">进程的终止</h3>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-进程的终止.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<h3 id=\"进程的阻塞和唤醒\">进程的阻塞和唤醒</h3>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-进程的阻塞和唤醒.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<p>注意：阻塞和唤醒原语必须成对使用。</p>\n\n<h3 id=\"进程的切换\">进程的切换</h3>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-进程的切换.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<h3 id=\"运行环境信息\">运行环境信息</h3>\n\n<p>在执行程序指令的过程中，CPU中会设置很多“寄存器”，用来存放程序运行过程中所需的某些数据，如：</p>\n<ul>\n  <li>PSW：程序状态字寄存器</li>\n  <li>PC：程序计数器，存放下一条指令地址</li>\n  <li>IR：指令寄存器，存放当前正在执行的指令</li>\n  <li>通用寄存器：存放其它一些必要信息</li>\n</ul>\n\n<p>在指令顺序执行的过程中，很多中间结果是放在各种寄存器中的。如执行如下代码时：</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"cm\">/* ... */</span>\n<span class=\"kt\">int</span> <span class=\"n\">x</span> <span class=\"o\">=</span> <span class=\"mi\">1</span><span class=\"p\">;</span>\n<span class=\"n\">x</span><span class=\"o\">++</span><span class=\"p\">;</span>\n<span class=\"cm\">/* ... */</span>\n</code></pre></div></div>\n\n<p>此时该进程在内存中结构如图：</p>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-运行环境信息.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>当执行到指令3时，CPU寄存器中的数据如下：</p>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-运行环境信息-寄存器.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>执行完指令3后，另一个进程开始上CPU运行。由于另一个进程在运行过程中也会使用各个寄存器，CPU寄存器数据将被覆盖。</p>\n\n<p>为了解决这个问题，在进程切换时先<strong>在PCB中保存这个进程的运行环境</strong>（保存一些必要的寄存器信息），当原来的进程再次投入运行时，可以<strong>通过PCB恢复它的运行环境</strong>。</p>\n\n    ",
+  "source": "content/posts/zh-cn/2022-04-21-操作系统（十二）进程控制.md",
+  "sourceDigest": "87fdd4402b8f0fb5a7c7a5c392542122f47a47cf32182227026140327b701737",
+  "postTitle": "操作系统（十二）进程控制",
+  "date": "2022-04-21T19:48:42+10:00",
+  "dateText": "Apr 21, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover2.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/04/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%8D%81%E4%B8%80-%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%8A%B6%E6%80%81-%E8%BD%AC%E6%8D%A2%E5%92%8C%E7%BB%84%E7%BB%87%E6%96%B9%E5%BC%8F/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十一）进程的状态、转换和组织方式\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（十一）进程的状态、转换和组织方式</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%8D%81%E4%B8%89-%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十三）进程通信\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（十三）进程通信</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

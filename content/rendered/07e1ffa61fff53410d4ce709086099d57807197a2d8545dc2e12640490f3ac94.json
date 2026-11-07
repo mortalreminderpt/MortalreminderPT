@@ -1,0 +1,27 @@
+{
+  "route": "/zh-cn/tags/磁盘管理/",
+  "lang": "zh-cn",
+  "kind": "archive",
+  "title": "磁盘管理",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"磁盘管理\">\n    </div>\n    <div class=\"hero__content\">\n      <div class=\"row\">\n        <div class=\"col col-8 col-d-10 col-m-12 push-m-0 push-d-1 push-2\">\n          <div class=\"archive-box\">\n            \n                <h1 class=\"archive-title\">磁盘管理</h1>\n              \n            <span class=\"archive-meta\">1 post  found.</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/2023/10/12/%E4%BD%BF%E7%94%A8DiskGenius%E8%BF%81%E7%A7%BBC%E7%9B%98/",
+        "src": "https://www.bing.com/th?id=OHR.TexasIndigoBunting_ZH-CN3699392300_1920x1080.jpg",
+        "alt": "使用DiskGenius进行系统迁移"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 3 分钟\n\n\n          <time class=\"article__date\" datetime=\"2023-10-12T21:54:54+11:00\">Oct 12, 2023</time>\n        </span>\n      ",
+      "titleHtml": "使用DiskGenius进行系统迁移",
+      "title": "使用DiskGenius进行系统迁移",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86\"=\"\">磁盘管理</a>\n              \n            </span>\n          \n        </div>\n      "
+    }
+  ],
+  "sectionClass": "hero"
+}

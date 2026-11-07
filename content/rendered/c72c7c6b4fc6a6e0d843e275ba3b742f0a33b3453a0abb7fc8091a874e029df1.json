@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/04/20/操作系统-三-操作系统的发展和分类/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（三）操作系统的发展和分类",
+  "description": "操作系统（Operating System，OS）是指控制和管理计算机系统软硬件资源，合理组织调度计算机工作和资源分配，提供给用户和其它软件方便的接口和环境。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（三）操作系统的发展和分类\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（三）操作系统的发展和分类\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-04-20T18:26:17+10:00\">Apr 20, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（三）操作系统的发展和分类</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#手工操作阶段\" id=\"markdown-toc-手工操作阶段\">手工操作阶段</a></li>\n  <li><a href=\"#批处理阶段\" id=\"markdown-toc-批处理阶段\">批处理阶段</a>    <ol>\n      <li><a href=\"#单道批处理系统\" id=\"markdown-toc-单道批处理系统\">单道批处理系统</a></li>\n      <li><a href=\"#多道批处理系统\" id=\"markdown-toc-多道批处理系统\">多道批处理系统</a></li>\n    </ol>\n  </li>\n  <li><a href=\"#分时操作系统\" id=\"markdown-toc-分时操作系统\">分时操作系统</a></li>\n  <li><a href=\"#实时操作系统\" id=\"markdown-toc-实时操作系统\">实时操作系统</a></li>\n  <li><a href=\"#其它操作系统\" id=\"markdown-toc-其它操作系统\">其它操作系统</a></li>\n</ol>\n\n<p>操作系统的发展主要包含以下发展阶段及分类：</p>\n\n<p><img src=\"\\images\\posts\\操作系统-操作系统的分类.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<h2 id=\"手工操作阶段\">手工操作阶段</h2>\n\n<p>在操作系统的手工操作阶段，由于大量时间被消耗在纸带的装取及读写上，计算机的计算效率极低。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-手工操作.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<p>手工操作阶段的主要缺点是<strong>用户独占全机、人机速度矛盾导致资源利用率极低</strong>。</p>\n\n<h2 id=\"批处理阶段\">批处理阶段</h2>\n\n<h3 id=\"单道批处理系统\">单道批处理系统</h3>\n\n<p>引入脱机输入/输出技术（用外围机+磁带完成），并由监督程序负责控制作业的输入、输出。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-单道批处理示意.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>用户通过外围机把程序提前存到磁带里，磁带的读写速度比纸带快很多。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-单道批处理.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<p>主要优点：缓解了一定程度的人机速度矛盾，资源利用率有所提升。</p>\n\n<p>主要缺点：<strong>内存中仅能有一道程序运行</strong>，只有该程序运行结束之后才能调入下一道程序。<strong>CPU有大量的时间是在空闲等待I/O完成</strong>，资源利用率依然很低。</p>\n\n<h3 id=\"多道批处理系统\">多道批处理系统</h3>\n\n<p>每次往内存中读入多道程序，此时操作系统正式诞生，用于支持多道程序并发运行。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-多道批处理.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<p>主要优点：多道程序<strong>并发</strong>执行，<strong>共享</strong>计算机资源。<strong>资源利用率大幅提升</strong>，CPU和其他资源更能保持“忙碌”状态，系统吞吐量增大。</p>\n\n<p>主要缺点：用户响应时间长，<strong>没有人机交互功能</strong>（用户提交自己的作业之后就只能等待计算机处理完成，中间不能控制自己的作业执行。比如无法调试程序/无法在程序运行过程中输入一些参数）</p>\n\n<h2 id=\"分时操作系统\">分时操作系统</h2>\n\n<p>分时操作系统的计算机以<strong>时间片</strong>为单位<strong>轮流为各个用户/作业服务</strong>，各个用户可通过终端与计算机进行交互。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-分时操作系统示意.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>主要优点：用户请求可以被即时响应，<strong>解决了人机交互问题</strong>。允许多个用户同时使用一台计算机，并且用户对计算机的操作相互独立，感受不到别人的存在。</p>\n\n<p>主要缺点：<strong>不能优先处理一些紧急任务</strong>。操作系统对各个用户/作业都是完全公平的，循环地为每个用户/作业服务一个时间片，不区分任务的紧急性。</p>\n\n<h2 id=\"实时操作系统\">实时操作系统</h2>\n\n<p>主要优点：能够优先响应一些紧急任务，某些紧急任务不需时间片排队。</p>\n\n<p>在实时操作系统的控制下，计算机系统接收到外部信号后及时进行处理，并且<strong>要在严格的时限内处理完事件</strong>。实时操作系统的主要特点是<strong>及时性和可靠性</strong>。</p>\n\n<p>实时操作系统主要包含硬实时系统和软实时系统。</p>\n\n<div class=\"language-plaintext highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>1. 硬实时系统必须在绝对严格的规定时间内完成处理（如导弹控制系统、自动驾驶系统）；\n2. 软实时系统能接收偶尔违反时间规定（如抢票系统）。\n</code></pre></div></div>\n\n<h2 id=\"其它操作系统\">其它操作系统</h2>\n\n<p>网络操作系统：是伴随着计算机网络的发展而诞生的，能把网络中各个计算机有机地结合起来，<strong>实现数据传送等功能，实现网络中各种资源的共享（如文件共享）和各台计算机之间的通信</strong>。（如：Windows NT就是一种典型的网络操作系统，网站服务器就可以使用）</p>\n\n<p>分布式操作系统：主要特点是<strong>分布性和并行性</strong>。系统中的各台计算机地位相同，<strong>任何工作都可以分布在这些计算机上，由它们并行、协同完成这个任务</strong>。</p>\n\n<p>个人计算机操作系统：如Windows XP、Mac OS，方便个人使用。</p>\n\n    ",
+  "source": "content/posts/zh-cn/2022-04-20-操作系统（三）操作系统的发展和分类.md",
+  "sourceDigest": "44f6f945565777faedc13c0baaebf73d8611211d46ee556ca825546ac903098f",
+  "postTitle": "操作系统（三）操作系统的发展和分类",
+  "date": "2022-04-20T18:26:17+10:00",
+  "dateText": "Apr 20, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover1.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/04/20/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BA%8C-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%B9%E5%BE%81/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（二）操作系统的特征\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（二）操作系统的特征</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/04/20/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（四）操作系统的运行机制\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（四）操作系统的运行机制</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

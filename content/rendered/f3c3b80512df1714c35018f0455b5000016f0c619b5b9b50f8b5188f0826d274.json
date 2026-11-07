@@ -1,0 +1,71 @@
+{
+  "route": "/zh-cn/react/2024/09/16/redux-2/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "Redux词汇表",
+  "description": "",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/react.png\" alt=\"Redux词汇表\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/react.png\" alt=\"Redux词汇表\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2024-09-16T12:08:53+10:00\">Sep 16, 2024</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">Redux词汇表</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/react\" class=\"post__tag\">React</a>\n              \n              <a href=\"/zh-cn/tags/javascript\" class=\"post__tag\">JavaScript</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#state\" id=\"markdown-toc-state\"><strong>State</strong></a></li>\n  <li><a href=\"#action\" id=\"markdown-toc-action\"><strong>Action</strong></a></li>\n  <li><a href=\"#reducer\" id=\"markdown-toc-reducer\"><strong>Reducer</strong></a></li>\n  <li><a href=\"#dispatch-function\" id=\"markdown-toc-dispatch-function\"><strong>Dispatch Function</strong></a></li>\n  <li><a href=\"#action-creator\" id=\"markdown-toc-action-creator\"><strong>Action Creator</strong></a></li>\n  <li><a href=\"#async-action\" id=\"markdown-toc-async-action\"><strong>Async Action</strong></a></li>\n  <li><a href=\"#middleware\" id=\"markdown-toc-middleware\"><strong>Middleware</strong></a></li>\n  <li><a href=\"#store\" id=\"markdown-toc-store\"><strong>Store</strong></a></li>\n  <li><a href=\"#store-creator\" id=\"markdown-toc-store-creator\"><strong>Store Creator</strong></a></li>\n  <li><a href=\"#store-enhancer\" id=\"markdown-toc-store-enhancer\"><strong>Store Enhancer</strong></a></li>\n</ol>\n\n<h3 id=\"state\"><strong>State</strong></h3>\n<p><strong>类型签名：</strong> <code class=\"language-plaintext highlighter-rouge\">type State = any</code></p>\n\n<p><strong>解释：</strong>\nState（状态）代表应用的整体数据结构，由 Redux 的 store 管理。它通常是一个多层嵌套的对象，保持应用的所有状态信息。确保 State 可序列化，以便于调试和持久化。</p>\n\n<h3 id=\"action\"><strong>Action</strong></h3>\n<p><strong>类型签名：</strong> <code class=\"language-plaintext highlighter-rouge\">type Action = Object</code></p>\n\n<p><strong>解释：</strong>\nAction 是一个描述“发生了什么”的简单对象，必须包含一个 <code class=\"language-plaintext highlighter-rouge\">type</code> 字段，用于标识具体的操作类型。Action 是改变 State 的唯一途径，通过 <code class=\"language-plaintext highlighter-rouge\">dispatch</code> 将其发送到 store。</p>\n\n<h3 id=\"reducer\"><strong>Reducer</strong></h3>\n<p><strong>类型签名：</strong> <code class=\"language-plaintext highlighter-rouge\">type Reducer&lt;S, A&gt; = (state: S, action: A) =&gt; S</code></p>\n\n<p><strong>解释：</strong>\nReducer 是一个纯函数，接收当前的 State 和 Action，返回一个新的 State。它根据 Action 的类型决定如何更新 State，确保 State 的不可变性。</p>\n\n<h3 id=\"dispatch-function\"><strong>Dispatch Function</strong></h3>\n<p><strong>类型签名：</strong></p>\n<pre><code class=\"language-flow\">type BaseDispatch = (a: Action) =&gt; Action\ntype Dispatch = (a: Action | AsyncAction) =&gt; any\n</code></pre>\n\n<p><strong>解释：</strong>\n<code class=\"language-plaintext highlighter-rouge\">dispatch</code> 是用于发送 Action 的函数。基础的 <code class=\"language-plaintext highlighter-rouge\">dispatch</code> 只能处理同步的普通 Action，而通过 Middleware 可以扩展 <code class=\"language-plaintext highlighter-rouge\">dispatch</code> 以处理异步 Action。</p>\n\n<h3 id=\"action-creator\"><strong>Action Creator</strong></h3>\n<p><strong>类型签名：</strong> <code class=\"language-plaintext highlighter-rouge\">type ActionCreator&lt;A, P extends any[] = any[]&gt; = (...args: P) =&gt; Action | AsyncAction</code></p>\n\n<p><strong>解释：</strong>\nAction Creator 是一个函数，用于创建 Action 对象。它封装了 Action 的创建逻辑，确保 Action 结构的一致性，通常与 <code class=\"language-plaintext highlighter-rouge\">dispatch</code> 一起使用。</p>\n\n<h3 id=\"async-action\"><strong>Async Action</strong></h3>\n<p><strong>类型签名：</strong> <code class=\"language-plaintext highlighter-rouge\">type AsyncAction = any</code></p>\n\n<p><strong>解释：</strong>\n异步 Action 是需要经过 Middleware 处理的 Action，通常用于处理异步操作如 API 请求。Middleware 会将异步 Action 转换为一个或多个普通 Action，以便 Reducer 处理。</p>\n\n<h3 id=\"middleware\"><strong>Middleware</strong></h3>\n<p><strong>类型签名：</strong></p>\n<pre><code class=\"language-flow\">type MiddlewareAPI = { dispatch: Dispatch, getState: () =&gt; State }\ntype Middleware = (api: MiddlewareAPI) =&gt; (next: Dispatch) =&gt; Dispatch\n</code></pre>\n\n<p><strong>解释：</strong>\nMiddleware 是扩展 <code class=\"language-plaintext highlighter-rouge\">dispatch</code> 功能的工具，允许在 Action 被发送到 Reducer 之前进行拦截、修改或执行副作用。常用于处理异步操作、日志记录等。</p>\n\n<h3 id=\"store\"><strong>Store</strong></h3>\n<p><strong>类型签名：</strong></p>\n<pre><code class=\"language-flow\">type Store = {\n  dispatch: Dispatch\n  getState: () =&gt; State\n  subscribe: (listener: () =&gt; void) =&gt; () =&gt; void\n  replaceReducer: (reducer: Reducer) =&gt; void\n}\n</code></pre>\n\n<p><strong>解释：</strong>\nStore 是保存应用 State 的容器，提供了 <code class=\"language-plaintext highlighter-rouge\">dispatch</code>、<code class=\"language-plaintext highlighter-rouge\">getState</code>、<code class=\"language-plaintext highlighter-rouge\">subscribe</code> 和 <code class=\"language-plaintext highlighter-rouge\">replaceReducer</code> 等方法，用于管理和访问 State，以及响应 State 的变化。</p>\n\n<h3 id=\"store-creator\"><strong>Store Creator</strong></h3>\n<p><strong>类型签名：</strong> <code class=\"language-plaintext highlighter-rouge\">type StoreCreator = (reducer: Reducer, preloadedState: ?State) =&gt; Store</code></p>\n\n<p><strong>解释：</strong>\nStore Creator 是一个函数，用于创建 Redux Store。它接收一个 Reducer 和初始 State，返回一个配置好的 Store 实例。</p>\n\n<h3 id=\"store-enhancer\"><strong>Store Enhancer</strong></h3>\n<p><strong>类型签名：</strong> <code class=\"language-plaintext highlighter-rouge\">type StoreEnhancer = (next: StoreCreator) =&gt; StoreCreator</code></p>\n\n<p><strong>解释：</strong>\nStore Enhancer 是用于增强 Store 创建过程的高阶函数，可以扩展 Store 的功能，如添加 Middleware 支持、增强调试能力等。常见的如 <code class=\"language-plaintext highlighter-rouge\">applyMiddleware</code>。</p>\n\n    ",
+  "source": "content/posts/zh-cn/2024-09-16-redux-2.md",
+  "sourceDigest": "ce36c2296e4d6c86f2e90db2182732512c09e2824f5bf7df95baff95265e1e3a",
+  "postTitle": "Redux词汇表",
+  "date": "2024-09-16T12:08:53+10:00",
+  "dateText": "Sep 16, 2024",
+  "tags": [
+    "React",
+    "JavaScript"
+  ],
+  "categories": [
+    "React"
+  ],
+  "image": "/images/covers/react.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/react/2024/09/16/redux-1/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/react.png\" alt=\"Redux三大原则\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">Redux三大原则</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/computer%20network/2024/10/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%B8%80-%E7%89%A9%E7%90%86%E5%B1%82/\">\n        <img class=\"post__nav-image lazy\" data-src=\"https://www.koombea.com/wp-content/uploads/2024/02/Essentials-of-Enterprise-Networking-1100x616.webp\" alt=\"计算机网络（一）物理层\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">计算机网络（一）物理层</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/react/2024/09/16/redux-1/",
+        "src": "/images/covers/react.png",
+        "alt": "Redux三大原则"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 16 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2024-09-16T11:10:27+10:00\">Sep 16, 2024</time>\n                    </span>\n                  ",
+      "titleHtml": "Redux三大原则",
+      "title": "Redux三大原则",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/react\" class=\"article__tag\">React</a>\n                        \n                          <a href=\"/zh-cn/tags/javascript\" class=\"article__tag\">JavaScript</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/react/2024/09/15/react-hook-6/",
+        "src": "/images/covers/react.png",
+        "alt": "React Hook（六） —— useReducer"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 17 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2024-09-15T13:15:36+10:00\">Sep 15, 2024</time>\n                    </span>\n                  ",
+      "titleHtml": "React Hook（六） —— useReducer",
+      "title": "React Hook（六） —— useReducer",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/react\" class=\"article__tag\">React</a>\n                        \n                          <a href=\"/zh-cn/tags/javascript\" class=\"article__tag\">JavaScript</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/react/2024/09/15/react-hook-5/",
+        "src": "/images/covers/react.png",
+        "alt": "React Hook（五） —— useContext"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 20 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2024-09-15T09:08:47+10:00\">Sep 15, 2024</time>\n                    </span>\n                  ",
+      "titleHtml": "React Hook（五） —— useContext",
+      "title": "React Hook（五） —— useContext",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/react\" class=\"article__tag\">React</a>\n                        \n                          <a href=\"/zh-cn/tags/javascript\" class=\"article__tag\">JavaScript</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "mortalreminderpt-next",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "predev": "node scripts/build-content.mjs",
+    "content": "node scripts/build-content.mjs",
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "node scripts/build-content.mjs && next build --webpack && node scripts/postbuild.mjs",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "test:content": "node scripts/verify-content.mjs",
+    "test:authoring": "node scripts/verify-authoring.mjs",
+    "test:visual": "PLAYWRIGHT_BROWSERS_PATH=.sites-runtime/browsers node scripts/visual-compare.mjs",
+    "preview": "node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "html-react-parser": "latest",
+    "gray-matter": "latest",
+    "markdown-it": "latest",
+    "markdown-it-anchor": "latest",
+    "markdown-it-attrs": "latest",
+    "markdown-it-texmath": "latest",
+    "katex": "latest",
+    "sass": "1.107.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "cheerio": "latest",
+    "pixelmatch": "latest",
+    "pngjs": "latest",
+    "typescript": "latest"
+  }
+}

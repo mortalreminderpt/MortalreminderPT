@@ -1,0 +1,72 @@
+{
+  "route": "/zh-cn/algorithm/2024/11/28/经典卷积网络/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "经典卷积网络",
+  "description": "",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"https://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg\" alt=\"经典卷积网络\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"https://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg\" alt=\"经典卷积网络\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2024-11-28T11:38:25+11:00\">Nov 28, 2024</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">经典卷积网络</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/algorithm\" class=\"post__tag\">Algorithm</a>\n              \n              <a href=\"/zh-cn/tags/python\" class=\"post__tag\">Python</a>\n              \n              <a href=\"/zh-cn/tags/pytorch\" class=\"post__tag\">Pytorch</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#经典卷积神经网络的发展\" id=\"markdown-toc-经典卷积神经网络的发展\">经典卷积神经网络的发展</a>    <ol>\n      <li><a href=\"#lenet-5神经网络的先驱\" id=\"markdown-toc-lenet-5神经网络的先驱\">LeNet-5：神经网络的先驱</a></li>\n      <li><a href=\"#alexnet深度学习的崛起\" id=\"markdown-toc-alexnet深度学习的崛起\">AlexNet：深度学习的崛起</a></li>\n      <li><a href=\"#vgg结构的极致简化\" id=\"markdown-toc-vgg结构的极致简化\">VGG：结构的极致简化</a></li>\n      <li><a href=\"#googlenetinception-模块的引入\" id=\"markdown-toc-googlenetinception-模块的引入\">GoogLeNet：Inception 模块的引入</a></li>\n      <li><a href=\"#resnet深度网络的革命\" id=\"markdown-toc-resnet深度网络的革命\">ResNet：深度网络的革命</a></li>\n      <li><a href=\"#densenet进一步优化信息流\" id=\"markdown-toc-densenet进一步优化信息流\">DenseNet：进一步优化信息流</a></li>\n    </ol>\n  </li>\n  <li><a href=\"#总结\" id=\"markdown-toc-总结\">总结</a></li>\n</ol>\n\n<h3 id=\"经典卷积神经网络的发展\">经典卷积神经网络的发展</h3>\n\n<p>在本篇博客中，我们将结合现代深度学习中一些经典卷积神经网络架构，简要梳理它们的背景和创新点，帮助大家了解卷积网络的演变过程及其核心理念。</p>\n\n<hr>\n\n<h4 id=\"lenet-5神经网络的先驱\">LeNet-5：神经网络的先驱</h4>\n<p><strong>背景</strong>：LeNet-5 是由 Yann LeCun 等人在 1998 年提出的，是卷积神经网络的早期代表作。它主要用于手写数字识别任务（如 MNIST 数据集）。</p>\n\n<p><strong>创新点</strong>：</p>\n<ul>\n  <li><strong>层级式结构</strong>：包括卷积层、池化层和全连接层的结合，奠定了现代卷积网络的基本框架。</li>\n  <li><strong>参数共享</strong>：通过卷积操作实现参数的显著减少。</li>\n  <li><strong>使用 Sigmoid 激活函数</strong>：增强非线性建模能力。</li>\n</ul>\n\n<p><strong>成果</strong>：在手写数字识别任务中，LeNet-5 达到了 99.2% 的准确率，展现了神经网络的潜力。</p>\n\n<hr>\n\n<h4 id=\"alexnet深度学习的崛起\">AlexNet：深度学习的崛起</h4>\n<p><strong>背景</strong>：2012 年，由 Alex Krizhevsky 提出的 AlexNet 在 ImageNet 竞赛中大放异彩。其表现远超传统方法，是深度学习的里程碑。</p>\n\n<p><strong>创新点</strong>：</p>\n<ul>\n  <li><strong>使用 GPU 加速训练</strong>：显著缩短了训练时间，标志着深度学习时代的开启。</li>\n  <li><strong>更深的网络结构</strong>：包含 8 层，比 LeNet-5 更深。</li>\n  <li><strong>ReLU 激活函数</strong>：替代 Sigmoid，大幅缓解了梯度消失问题。</li>\n  <li><strong>Dropout</strong>：有效防止过拟合。</li>\n</ul>\n\n<hr>\n\n<h4 id=\"vgg结构的极致简化\">VGG：结构的极致简化</h4>\n<p><strong>背景</strong>：2014 年，VGG 网络由牛津大学提出，其核心理念是通过简单的堆叠卷积层来增加网络深度。</p>\n\n<p><strong>创新点</strong>：</p>\n<ul>\n  <li><strong>统一的卷积核尺寸</strong>：采用 3x3 和 1x1 的卷积核，提升了模型的表达能力。</li>\n  <li><strong>深度与性能的关系</strong>：验证了网络深度的增加可以有效提高性能。</li>\n  <li><strong>多种深度版本</strong>：从 11 层到 19 层的网络结构满足不同需求。</li>\n</ul>\n\n<hr>\n\n<h4 id=\"googlenetinception-模块的引入\">GoogLeNet：Inception 模块的引入</h4>\n<p><strong>背景</strong>：同样在 2014 年，GoogLeNet 在 ILSVRC 比赛中获得冠军。它引入了革命性的 Inception 模块。</p>\n\n<p><strong>创新点</strong>：</p>\n<ul>\n  <li><strong>Inception 模块</strong>：同时使用不同大小的卷积核（1x1、3x3、5x5），实现多尺度特征提取。</li>\n  <li><strong>参数优化</strong>：通过 1x1 卷积降低计算成本和参数量。</li>\n  <li><strong>深度结构</strong>：22 层深度，但由于模块化设计，其计算效率得到了极大提升。</li>\n</ul>\n\n<hr>\n\n<h4 id=\"resnet深度网络的革命\">ResNet：深度网络的革命</h4>\n<p><strong>背景</strong>：随着网络深度的增加，梯度消失和训练困难问题开始显现。ResNet 于 2015 年由何恺明等人提出，突破了这些限制。</p>\n\n<p><strong>创新点</strong>：</p>\n<ul>\n  <li><strong>残差连接</strong>：通过引入跳跃连接，避免梯度消失并促进特征传递。</li>\n  <li><strong>极深网络的可行性</strong>：ResNet 成功训练了超过 1000 层的网络。</li>\n  <li><strong>模块化设计</strong>：残差块的引入方便了网络的扩展和修改。</li>\n</ul>\n\n<hr>\n\n<h4 id=\"densenet进一步优化信息流\">DenseNet：进一步优化信息流</h4>\n<p><strong>背景</strong>：在 ResNet 的基础上，DenseNet 提出了新的思路，通过密集连接实现特征复用。</p>\n\n<p><strong>创新点</strong>：</p>\n<ul>\n  <li><strong>密集连接</strong>：所有层之间直接相连，确保信息和梯度在整个网络中的高效传递。</li>\n  <li><strong>参数效率</strong>：尽管连接增加，但由于特征共享，总参数量并未显著上升。</li>\n  <li><strong>计算效率</strong>：提高了训练和推理的效率。</li>\n</ul>\n\n<hr>\n\n<h3 id=\"总结\">总结</h3>\n<p>从 LeNet 到 ResNet 和 DenseNet，卷积神经网络在深度和复杂度上不断发展，每一步都带来了显著的性能提升。这些经典网络不仅为计算机视觉奠定了坚实的基础，还启发了其他领域模型的设计。如果说 LeNet 是起点，那么 ResNet 和 DenseNet 则是里程碑，为深度学习的发展提供了更多可能性。</p>\n\n    ",
+  "source": "content/posts/zh-cn/2024-11-28-经典卷积网络.md",
+  "sourceDigest": "04eb456ceade79a49c0430ab1621f0cc950053975db77bddaad7d8b536e15c7f",
+  "postTitle": "经典卷积网络",
+  "date": "2024-11-28T11:38:25+11:00",
+  "dateText": "Nov 28, 2024",
+  "tags": [
+    "Algorithm",
+    "Python",
+    "Pytorch"
+  ],
+  "categories": [
+    "Algorithm"
+  ],
+  "image": "https://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/algorithm/2024/11/27/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-CNN/\">\n        <img class=\"post__nav-image lazy\" data-src=\"https://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg\" alt=\"卷积神经网络（CNN）\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">卷积神经网络（CNN）</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/algorithm/2024/11/28/%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA/\">\n        <img class=\"post__nav-image lazy\" data-src=\"https://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg\" alt=\"数据增强\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">数据增强</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/algorithm/2024/12/08/%E4%BD%BF%E7%94%A8VAE%E9%87%8D%E5%BB%BAMNIST%E6%95%B0%E6%8D%AE%E9%9B%86/",
+        "src": "https://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg",
+        "alt": "使用VAE重建MNIST数据集"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 30 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2024-12-08T19:12:54+11:00\">Dec 8, 2024</time>\n                    </span>\n                  ",
+      "titleHtml": "使用VAE重建MNIST数据集",
+      "title": "使用VAE重建MNIST数据集",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/algorithm\" class=\"article__tag\">Algorithm</a>\n                        \n                          <a href=\"/zh-cn/tags/python\" class=\"article__tag\">Python</a>\n                        \n                          <a href=\"/zh-cn/tags/pytorch\" class=\"article__tag\">Pytorch</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/algorithm/2024/12/07/Variational-Autoencoder/",
+        "src": "https://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg",
+        "alt": "Variational Autoencoder"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 22 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2024-12-07T20:17:35+11:00\">Dec 7, 2024</time>\n                    </span>\n                  ",
+      "titleHtml": "Variational Autoencoder",
+      "title": "Variational Autoencoder",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/algorithm\" class=\"article__tag\">Algorithm</a>\n                        \n                          <a href=\"/zh-cn/tags/python\" class=\"article__tag\">Python</a>\n                        \n                          <a href=\"/zh-cn/tags/pytorch\" class=\"article__tag\">Pytorch</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/algorithm/2024/12/06/%E6%97%A0%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%E5%8F%8AAutoencoder/",
+        "src": "https://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg",
+        "alt": "无监督学习及Autoencoder"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 31 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2024-12-06T21:53:06+11:00\">Dec 6, 2024</time>\n                    </span>\n                  ",
+      "titleHtml": "无监督学习及Autoencoder",
+      "title": "无监督学习及Autoencoder",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/algorithm\" class=\"article__tag\">Algorithm</a>\n                        \n                          <a href=\"/zh-cn/tags/python\" class=\"article__tag\">Python</a>\n                        \n                          <a href=\"/zh-cn/tags/pytorch\" class=\"article__tag\">Pytorch</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

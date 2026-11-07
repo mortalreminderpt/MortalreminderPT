@@ -1,0 +1,70 @@
+{
+  "route": "/zh-cn/maven/2023/12/04/Maven-七-命名约定指南/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "Maven（七）命名约定指南",
+  "description": "",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/maven-cover.jpg\" alt=\"Maven（七）命名约定指南\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/maven-cover.jpg\" alt=\"Maven（七）命名约定指南\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2023-12-04T16:05:40+11:00\">Dec 4, 2023</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">Maven（七）命名约定指南</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/maven\" class=\"post__tag\">Maven</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#groupid\" id=\"markdown-toc-groupid\">groupId</a></li>\n  <li><a href=\"#artifactid\" id=\"markdown-toc-artifactid\">artifactId</a></li>\n  <li><a href=\"#version\" id=\"markdown-toc-version\">version</a></li>\n</ol>\n\n<h2 id=\"groupid\">groupId</h2>\n\n<p><strong>groupId</strong> 在所有项目中唯一标识您的项目，应遵循<a href=\"https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7\">Java 的包名称规则</a>。这意味着它以您控制的反向域名开头。例如<code class=\"language-plaintext highlighter-rouge\">org.apache.maven</code>,<code class=\"language-plaintext highlighter-rouge\">org.apache.commons</code>。</p>\n\n<p>Maven 并不强制执行这一规则。有许多传统项目并不遵循这一约定，而是使用单字组 ID（single word ID）。不过，新的单字组 ID 将很难被批准纳入 Maven Central 资源库。</p>\n\n<p>您可以创建任意多的子组（subgroups）。使用项目结构是确定 <code class=\"language-plaintext highlighter-rouge\">groupId</code> 粒度的好方法。也就是说，如果当前项目是一个多模块项目，则应在父项目的 <code class=\"language-plaintext highlighter-rouge\">groupId</code> 上附加一个新的标识符。例如<code class=\"language-plaintext highlighter-rouge\">org.apache.maven</code>, <code class=\"language-plaintext highlighter-rouge\">org.apache.maven.plugins</code>,<code class=\"language-plaintext highlighter-rouge\">org.apache.maven.reporting</code></p>\n\n<h2 id=\"artifactid\">artifactId</h2>\n\n<p><strong>artifactId</strong> 是 jar 的名称，不含版本。如果是你创建的，那么你可以选择任何你想要的名称（小写字母，没有奇怪的符号）。但如果是第三方 jar，则必须使用分发的 jar 名称。例如<code class=\"language-plaintext highlighter-rouge\">maven</code>, <code class=\"language-plaintext highlighter-rouge\">commons-math</code>。</p>\n\n<h2 id=\"version\">version</h2>\n\n<p>如果您发布了版本，那么您可以选择任何带有数字和点的典型版本（1.0、1.1、1.0.1……）。不要使用日期，因为它们通常与 SNAPSHOT（nightly）版本相关联。但如果是第三方工具，则必须使用其版本号，不管它是什么，而且看起来可能很奇怪。例如<code class=\"language-plaintext highlighter-rouge\">2.0</code>, <code class=\"language-plaintext highlighter-rouge\">2.0.1</code>, <code class=\"language-plaintext highlighter-rouge\">1.3.1</code>。</p>\n\n    ",
+  "source": "content/posts/zh-cn/2023-12-04-Maven（七）命名约定指南.md",
+  "sourceDigest": "830c5db8e1190093700fd0f1c32ab403fdb6e513f049c45579bea9c4aac9cd5a",
+  "postTitle": "Maven（七）命名约定指南",
+  "date": "2023-12-04T16:05:40+11:00",
+  "dateText": "Dec 4, 2023",
+  "tags": [
+    "Maven"
+  ],
+  "categories": [
+    "Maven"
+  ],
+  "image": "/images/covers/maven-cover.jpg",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/maven/2023/12/04/Maven-%E5%85%AD-%E6%9E%84%E5%BB%BA%E5%85%B6%E5%AE%83%E7%B1%BB%E5%9E%8B%E9%A1%B9%E7%9B%AE%E5%8F%8A%E5%AD%90%E9%A1%B9%E7%9B%AE/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/maven-cover.jpg\" alt=\"Maven（六）构建其它类型项目及子项目\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">Maven（六）构建其它类型项目及子项目</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/maven/2023/12/04/Maven-%E5%85%AB-%E6%9E%84%E5%BB%BA%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/maven-cover.jpg\" alt=\"Maven（八）构建生命周期\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">Maven（八）构建生命周期</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/maven/2023/12/05/Maven-%E5%8D%81%E4%B8%89-%E5%8F%AF%E9%80%89-optional-%E4%BE%9D%E8%B5%96%E9%A1%B9%E5%92%8C%E4%BE%9D%E8%B5%96%E9%A1%B9%E6%8E%92%E9%99%A4-exclusion/",
+        "src": "/images/covers/maven-cover.jpg",
+        "alt": "Maven（十三）可选（optional）依赖项和依赖项排除（exclusion）"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 19 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2023-12-05T20:01:56+11:00\">Dec 5, 2023</time>\n                    </span>\n                  ",
+      "titleHtml": "Maven（十三）可选（optional）依赖项和依赖项排除（exclusion）",
+      "title": "Maven（十三）可选（optional）依赖项和依赖项排除（exclusion）",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/maven\" class=\"article__tag\">Maven</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/maven/2023/12/05/Maven-%E5%8D%81%E4%BA%8C-%E4%BE%9D%E8%B5%96%E6%9C%BA%E5%88%B6%E7%AE%80%E4%BB%8B/",
+        "src": "/images/covers/maven-cover.jpg",
+        "alt": "Maven（十二）依赖机制简介"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 48 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2023-12-05T19:10:42+11:00\">Dec 5, 2023</time>\n                    </span>\n                  ",
+      "titleHtml": "Maven（十二）依赖机制简介",
+      "title": "Maven（十二）依赖机制简介",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/maven\" class=\"article__tag\">Maven</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/maven/2023/12/05/Maven-%E5%8D%81%E4%B8%80-%E6%A0%87%E5%87%86%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95/",
+        "src": "/images/covers/maven-cover.jpg",
+        "alt": "Maven（十一）标准文件目录"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 7 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2023-12-05T14:41:05+11:00\">Dec 5, 2023</time>\n                    </span>\n                  ",
+      "titleHtml": "Maven（十一）标准文件目录",
+      "title": "Maven（十一）标准文件目录",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/maven\" class=\"article__tag\">Maven</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/04/21/操作系统-十-进程的概念-组成和特征/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（十）进程的概念、组成和特征",
+  "description": "进程（Process）是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十）进程的概念、组成和特征\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十）进程的概念、组成和特征\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-04-21T05:22:32+10:00\">Apr 21, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（十）进程的概念、组成和特征</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#理解进程和程序的区别\" id=\"markdown-toc-理解进程和程序的区别\">理解“进程”和“程序”的区别</a></li>\n  <li><a href=\"#一个进程实体由哪些部分组成\" id=\"markdown-toc-一个进程实体由哪些部分组成\">一个进程实体由哪些部分组成</a>    <ol>\n      <li><a href=\"#进程控制块pcb\" id=\"markdown-toc-进程控制块pcb\">进程控制块（PCB）</a></li>\n      <li><a href=\"#进程实体的组成\" id=\"markdown-toc-进程实体的组成\">进程实体的组成</a></li>\n    </ol>\n  </li>\n  <li><a href=\"#进程有哪些重要的特征\" id=\"markdown-toc-进程有哪些重要的特征\">进程有哪些重要的特征</a></li>\n</ol>\n\n<h2 id=\"理解进程和程序的区别\">理解“进程”和“程序”的区别</h2>\n\n<p>程序：是<strong>静态的</strong>，就是个存放在磁盘里的可执行文件，就是一系列的指令集合。</p>\n\n<p>进程（Process）：是<strong>动态的</strong>，是程序的一次执行过程（同一个程序多次执行会对应多个进程）。</p>\n\n<h2 id=\"一个进程实体由哪些部分组成\">一个进程实体由哪些部分组成</h2>\n\n<h3 id=\"进程控制块pcb\">进程控制块（PCB）</h3>\n\n<p>当进程被创建时，操作系统会为该进程分配一个<strong>唯一的、不重复的</strong>“身份证号”——进程ID（Process ID，<strong>PID</strong>）。</p>\n\n<p>操作系统要记录PID、进程所属用户ID（UID）等基本的进程描述信息，以让操作系统区分各个进程。</p>\n\n<p>还要记录给进程分配了哪些资源（如分配了多少内存、正在使用哪些I/O设备、正在使用哪些文件），用于实现操作系统对资源的管理。</p>\n\n<p>还要记录进程的运行情况（如CPU使用时间、磁盘使用情况、网络流量使用情况等），用于实现操作系统对进程的控制、调度。</p>\n\n<p>这些信息都被保存在一个数据结构<strong>PCB（Process Control Block）</strong>中，即<strong>进程控制块</strong>。PCB是进程存在的唯一标志，当进程被创建时，操作系统为其创建PCB，当进程结束时，会回收其PCB。</p>\n\n<p>操作系统需要对各个并发运行的进程进行管理，<strong>但凡管理时所需要的信息，都会被放在PCB中。</strong></p>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-进程控制块.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<h3 id=\"进程实体的组成\">进程实体的组成</h3>\n\n<p>在进程的组成部分中，PCB是给操作系统用的。程序段、数据段是给进程自己用的。PCB、程序段及数据段在内存中的位置如下图：</p>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-进程组成.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:80%;\"></p>\n\n<p>一个<strong>进程实体（进程映像）</strong>由<strong>PCB、程序段、数据段</strong>组成。<strong>进程</strong>是<strong>动态</strong>的，<strong>进程实体（进程映像）</strong>是<strong>静态</strong>的，类似于进程的一个快照。</p>\n\n<p>进程实体反映了进程在某一时刻的状态（如x++后，x=2）。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-进程实体.svg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:100%;\"></p>\n\n<ul>\n  <li>PCB是给操作系统使用的；</li>\n  <li>程序段、数据段是给进程自己用的，与进程自身的运行逻辑有关。</li>\n</ul>\n\n<p><strong>程序段、数据段、PCB</strong>三部分组成了<strong>进程实体（进程映像）</strong>。</p>\n\n<p>引入进程实体的概念后，可把进程定义为：\n<strong>进程</strong>是进程实体的<strong>运行过程</strong>，是系统进行<strong>资源分配和调度</strong>的一个独立单位。</p>\n\n<p>注意：PCB是进程存在的唯一标志。</p>\n\n<h2 id=\"进程有哪些重要的特征\">进程有哪些重要的特征</h2>\n\n<p>程序是静态的，进程是动态的，相比于程序，进程拥有以下特征：</p>\n\n<ol>\n  <li><strong>动态性</strong>：进程是程序的一次执行过程，是动态地产生、变化和消亡的；</li>\n  <li>并发性：内存中有多个进程实体，各进程可并发执行；</li>\n  <li>独立性：进程是能独立运行、独立获得资源、独立接受调度的基本单位；</li>\n  <li>异步性：各进程按各自独立的、不可预知的速度向前推进，操作系统要提供“进程同步机制”来解决异步问题；</li>\n  <li>结构性：每个进程都会配置一个PCB。结构上看，进程由程序段、数据段、PCB组成。</li>\n</ol>\n\n<p>其中，<strong>动态性是进程最基本的特征</strong>，异步性会导致并发程序执行结果的不确定性。</p>\n\n    ",
+  "source": "content/posts/zh-cn/2022-04-21-操作系统（十）进程的概念、组成和特征.md",
+  "sourceDigest": "eabf8a5fb72a814124dc8609c07ef78ad64a6c479b8c473cced57692bcd6649c",
+  "postTitle": "操作系统（十）进程的概念、组成和特征",
+  "date": "2022-04-21T05:22:32+10:00",
+  "dateText": "Apr 21, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover2.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/04/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%B9%9D-%E8%99%9A%E6%8B%9F%E6%9C%BA/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（九）虚拟机\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（九）虚拟机</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/04/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%8D%81%E4%B8%80-%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%8A%B6%E6%80%81-%E8%BD%AC%E6%8D%A2%E5%92%8C%E7%BB%84%E7%BB%87%E6%96%B9%E5%BC%8F/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十一）进程的状态、转换和组织方式\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（十一）进程的状态、转换和组织方式</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

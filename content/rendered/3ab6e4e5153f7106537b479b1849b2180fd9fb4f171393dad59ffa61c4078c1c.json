@@ -1,0 +1,71 @@
+{
+  "route": "/dynamic programming fundamentals/2021/09/27/动态规划-一-打家劫舍系列/",
+  "lang": "en",
+  "kind": "post",
+  "title": "Dynamic Programming (Part 1) - House Robber Series",
+  "description": "The core idea of dynamic programming lies in breaking down a problem into smaller subproblems and retaining previously computed results to reduce computation...",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/village.jpg\" alt=\"Dynamic Programming (Part 1) - House Robber Series\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/village.jpg\" alt=\"Dynamic Programming (Part 1) - House Robber Series\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2021-09-27T22:12:45+10:00\">Sep 27, 2021</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">Dynamic Programming (Part 1) - House Robber Series</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/tags/algorithms\" class=\"post__tag\">Algorithms</a>\n              \n              <a href=\"/tags/dynamic-programming\" class=\"post__tag\">Dynamic Programming</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#core-idea-of-dynamic-programming\" id=\"markdown-toc-core-idea-of-dynamic-programming\">Core Idea of Dynamic Programming</a></li>\n  <li><a href=\"#198-house-robber\" id=\"markdown-toc-198-house-robber\">198. House Robber</a></li>\n</ol>\n\n<h2 id=\"core-idea-of-dynamic-programming\">Core Idea of Dynamic Programming</h2>\n<p>The core idea of dynamic programming lies in breaking down a problem into smaller subproblems and retaining previously computed results to reduce computational complexity.</p>\n\n<p>Let’s illustrate with an example:</p>\n\n<blockquote>\n  <p>A: 1+1+1+1+1+1+1+1 = ?</p>\n\n  <p>B (calculating): 8</p>\n\n  <p>A: What if we add “1+” to the left side of the equation?</p>\n\n  <p>B (quickly): 9</p>\n\n  <p>A: How did you arrive at the answer so quickly?</p>\n\n  <p>B: Just add 1 to 8.</p>\n\n  <p>A: So you didn’t have to recalculate because you remembered the value of the first equation as 8. Dynamic programming algorithms also memorize previously computed solutions to save time.</p>\n</blockquote>\n\n<h2 id=\"198-house-robber\"><a href=\"https://leetcode.com/problems/house-robber/\">198. House Robber</a></h2>\n\n<ol>\n  <li>When there is only one house, we choose to rob it.</li>\n  <li>When there are two houses, we choose the one with the larger amount to rob.</li>\n  <li>If there are more than two houses, for example, the third one, we need to consider whether the sum of the first and third houses is greater than the second one. If the sum of the first and third houses is greater, we rob both the first and third houses; otherwise, we skip the first and third houses and rob the second one.</li>\n  <li>Generalizing to the common case, for the first i houses, we have two options for robbing:\n    <ol>\n      <li>Robbing the ith house, which results in the total amount being the value of the ith house plus the total amount of money robbed from the first i-2 houses.</li>\n      <li>Not robbing the ith house, resulting in the total amount being the same as the total amount robbed from the first i-1 houses.</li>\n    </ol>\n  </li>\n</ol>\n\n<p>We always choose the option that yields a higher amount between 1 and 2. Here, we use <include src=\"/_5fee80a7553577b4ce1094ac5261872889693a32cd3e4ccff3f1fc0ce36edb82.xml\"></include> to represent the total amount robbed from the first i houses, and <include src=\"/_5fee80a7553577b4ce1094ac5261872889693a32cd3e4ccff3f1fc0ce36edb82.xml\"></include> represents the two options:</p>\n\n<include src=\"/_89d2e882a1c6e5d09f82dd2a3b2c8554fa489695b31e9a3b08094c9908c368f7.xml\"></include>\n\n    ",
+  "source": "content/posts/en/2021-09-27-动态规划（一）打家劫舍系列.md",
+  "sourceDigest": "a72205c3846e7c52aa3e016c34c2feb95737adb154f2573390b373234e02f096",
+  "postTitle": "Dynamic Programming (Part 1) - House Robber Series",
+  "date": "2021-09-27T22:12:45+10:00",
+  "dateText": "Sep 27, 2021",
+  "tags": [
+    "Algorithms",
+    "Dynamic Programming"
+  ],
+  "categories": [
+    "Dynamic Programming Fundamentals"
+  ],
+  "image": "/images/covers/village.jpg",
+  "featured": true,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/2019/10/11/%E9%98%B3%E5%85%89%E4%BD%93%E8%82%B2%E4%B8%80%E9%94%AE%E6%B1%89%E5%A7%86/\">\n        <img class=\"post__nav-image lazy\" data-src=\"https://src.onlinedown.net/images/h_imges/wdj/3/logo/c76a697a57cfc446c777513a033e19b1_256_256.png\" alt=\"One-Click Hanmu on Sunshine Sports Platform\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> PREVIOUS POST</div>\n          <h4 class=\"post__nav__title\">One-Click Hanmu on Sunshine Sports Platform</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/dynamic%20programming%20fundamentals/2021/09/28/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%BA%8C-%E6%9C%80%E4%BC%98%E5%AD%90%E5%BA%8F%E5%88%97%E7%B3%BB%E5%88%97/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/village.jpg\" alt=\"Dynamic Programming (Part 2) - Optimal Subsequence Series\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">NEXT POST <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">Dynamic Programming (Part 2) - Optimal Subsequence Series</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "You may also like",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/",
+        "src": "https://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_1920x1080.jpg",
+        "alt": "Two Pointer Problems (Part 2) - Sliding Window"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n  19 min read\n\n\n                      <time class=\"article__date\" datetime=\"2021-10-20T00:41:33+11:00\">Oct 20, 2021</time>\n                    </span>\n                  ",
+      "titleHtml": "Two Pointer Problems (Part 2) - Sliding Window",
+      "title": "Two Pointer Problems (Part 2) - Sliding Window",
+      "excerptHtml": "Two pointers are used to scan in two directions during traversal, achieving the desired algorithmic goals.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/tags/algorithms\" class=\"article__tag\">Algorithms</a>\n                        \n                          <a href=\"/tags/pointers\" class=\"article__tag\">Pointers</a>\n                        \n                          <a href=\"/tags/linked-list\" class=\"article__tag\">Linked List</a>\n                        \n                          <a href=\"/tags/data-structures\" class=\"article__tag\">Data Structures</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/2021/10/15/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE-Binary-Search/",
+        "src": "/images/covers/blackrock2.jpg",
+        "alt": "Binary Search"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n  18 min read\n\n\n                      <time class=\"article__date\" datetime=\"2021-10-15T23:51:55+11:00\">Oct 15, 2021</time>\n                    </span>\n                  ",
+      "titleHtml": "Binary Search",
+      "title": "Binary Search",
+      "excerptHtml": "Binary search is a common method for finding a specific value in a sorted array. It doesn't need to traverse the entire sequence; it only needs to focus on the boundaries and the middle value of the sequence. Therefore, its time complexity can reach O(log n).",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/tags/algorithms\" class=\"article__tag\">Algorithms</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/dynamic%20programming%20fundamentals/2021/10/12/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E5%9B%9B-%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97-LIS/",
+        "src": "/images/covers/village.jpg",
+        "alt": "Dynamic Programming (Part 4): Longest Increasing Subsequence (LIS)"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n  9 min read\n\n\n                      <time class=\"article__date\" datetime=\"2021-10-12T00:19:19+11:00\">Oct 12, 2021</time>\n                    </span>\n                  ",
+      "titleHtml": "Dynamic Programming (Part 4): Longest Increasing Subsequence (LIS)",
+      "title": "Dynamic Programming (Part 4): Longest Increasing Subsequence (LIS)",
+      "excerptHtml": "The core idea of dynamic programming lies in breaking down a problem into smaller subproblems and storing previous computation results to reduce computational complexity.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/tags/algorithms\" class=\"article__tag\">Algorithms</a>\n                        \n                          <a href=\"/tags/dynamic-programming\" class=\"article__tag\">Dynamic Programming</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

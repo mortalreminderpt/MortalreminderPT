@@ -1,0 +1,41 @@
+{
+  "route": "/tags/pointers/",
+  "lang": "en",
+  "kind": "archive",
+  "title": "Pointers",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"Pointers\">\n    </div>\n    <div class=\"hero__content\">\n      <div class=\"row\">\n        <div class=\"col col-8 col-d-10 col-m-12 push-m-0 push-d-1 push-2\">\n          <div class=\"archive-box\">\n            \n                <h1 class=\"archive-title\">Pointers</h1>\n              \n            <span class=\"archive-meta\">2 posts found.</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/2021/10/20/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%BA%8C-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/",
+        "src": "https://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_1920x1080.jpg",
+        "alt": "Two Pointer Problems (Part 2) - Sliding Window"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  21 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-10-20T00:41:33+11:00\">Oct 20, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Two Pointer Problems (Part 2) - Sliding Window",
+      "title": "Two Pointer Problems (Part 2) - Sliding Window",
+      "excerptHtml": "Two pointers are used to scan in two directions during traversal, achieving the desired algorithmic goals.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/pointers\"=\"\">Pointers</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/linked-list\"=\"\">Linked List</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/data-structures\"=\"\">Data Structures</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/2021/10/09/%E5%8F%8C%E6%8C%87%E9%92%88%E9%97%AE%E9%A2%98-%E4%B8%80-%E5%AF%B9%E6%92%9E%E6%8C%87%E9%92%88%E5%92%8C%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88/",
+        "src": "https://www.bing.com/th?id=OHR.IndianStarTortoise_EN-US4160827746_1920x1080.jpg",
+        "alt": "Two Pointer Problems (Part 1) - Two Pointer and Fast Slow Pointer"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  25 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-10-09T00:14:13+11:00\">Oct 9, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Two Pointer Problems (Part 1) - Two Pointer and Fast Slow Pointer",
+      "title": "Two Pointer Problems (Part 1) - Two Pointer and Fast Slow Pointer",
+      "excerptHtml": "Two pointers are used to scan in two directions during traversal, achieving the respective algorithmic goals.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/pointers\"=\"\">Pointers</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/linked-list\"=\"\">Linked List</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/data-structure\"=\"\">Data Structure</a>\n              \n            </span>\n          \n        </div>\n      "
+    }
+  ],
+  "sectionClass": "hero"
+}

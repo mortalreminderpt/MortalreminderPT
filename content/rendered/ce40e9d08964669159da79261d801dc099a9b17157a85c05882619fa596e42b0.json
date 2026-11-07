@@ -1,0 +1,72 @@
+{
+  "route": "/zh-cn/apollo/2023/11/23/Apollo配置中心-二-Apollo简介/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "Apollo配置中心（二）Apollo简介",
+  "description": "",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/apollo-cover.jpg\" alt=\"Apollo配置中心（二）Apollo简介\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/apollo-cover.jpg\" alt=\"Apollo配置中心（二）Apollo简介\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2023-11-23T13:13:25+11:00\">Nov 23, 2023</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">Apollo配置中心（二）Apollo简介</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE\" class=\"post__tag\">配置</a>\n              \n              <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83\" class=\"post__tag\">配置中心</a>\n              \n              <a href=\"/zh-cn/tags/apollo\" class=\"post__tag\">Apollo</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#apollo简介\" id=\"markdown-toc-apollo简介\">Apollo简介</a>    <ol>\n      <li><a href=\"#特性\" id=\"markdown-toc-特性\">特性</a></li>\n    </ol>\n  </li>\n</ol>\n\n<h2 id=\"apollo简介\">Apollo简介</h2>\n\n<p><img src=\"https://cdn.jsdelivr.net/gh/apolloconfig/apollo@master/doc/images/logo/logo-simple.png\" alt=\"apollo-logo\" width=\"40%\"></p>\n\n<p>Apollo（<a href=\"https://github.com/ctripcorp/apollo\">Github</a> <code>|</code> <a href=\"https://www.apolloconfig.com/#/zh/README\">官方文档</a>）是携程框架部门研发的分布式配置中心。\n能够集中化管理应用的不同环境、不同集群的配置，配置修改后能够实时推送到应用端，并且具备规范的权限、流程治理等特性，适用于微服务配置管理场景。</p>\n\n<p>Apollo包括服务端和客户端两部分：</p>\n\n<p>服务端基于Spring Boot和Spring Cloud开发，打包后可以直接运行，不需要额外安装Tomcat等应用容器。</p>\n\n<p>Java客户端不依赖任何框架，能够运行于所有Java运行时环境，同时对Spring/Spring Boot环境也有较好的支持。</p>\n\n<h3 id=\"特性\">特性</h3>\n\n<p>基于配置的特殊性，所以Apollo从设计之初就立志于成为一个有治理能力的配置发布平台，目前提供了以下的特性：</p>\n\n<ol>\n  <li>统一管理不同环境、不同集群的配置\n    <ul>\n      <li>Apollo提供了一个统一界面集中式管理不同环境（environment）、不同集群（cluster）、不同命名空间（namespace）的配置；</li>\n      <li>同一份代码部署在不同的集群，可以有不同的配置，比如zookeeper的地址等；</li>\n      <li>通过命名空间（namespace）可以很方便地支持多个不同应用共享同一份配置，同时还允许应用对共享的配置进行覆盖。</li>\n    </ul>\n  </li>\n  <li>配置修改实时生效（热发布）\n    <ul>\n      <li>用户在Apollo修改完配置并发布后，客户端能实时接收到最新的配置，并通知到应用程序。</li>\n    </ul>\n  </li>\n  <li>版本发布管理\n    <ul>\n      <li>所有的配置发布都有版本概念，从而可以方便地支持配置的回滚。</li>\n    </ul>\n  </li>\n  <li>灰度发布\n    <ul>\n      <li>支持配置的灰度发布，比如点了发布后，只对部分应用实例生效，等观察一段时间没问题后再推给所有应用实例。</li>\n    </ul>\n  </li>\n  <li>权限管理、发布审核、操作审计\n    <ul>\n      <li>应用和配置的管理都有完善的权限管理机制，对配置的管理还分为了编辑和发布两个环节，从而减少人为的错误；</li>\n      <li>所有的操作都有审计日志，可以方便地追踪问题。</li>\n    </ul>\n  </li>\n  <li>客户端配置信息监控\n    <ul>\n      <li>可以在界面上方便地看到配置在被哪些实例使用。</li>\n    </ul>\n  </li>\n  <li>提供Java和.Net原生客户端\n    <ul>\n      <li>提供了Java和.Net的原生客户端，方便应用集成；</li>\n      <li>支持Spring Placeholder, Annotation和Spring Boot的ConfigurationProperties，方便应用使用；</li>\n      <li>同时提供了HTTP接口，非Java和.Net应用也可以方便地使用。</li>\n    </ul>\n  </li>\n  <li>提供开放平台API\n    <ul>\n      <li>Apollo自身提供了比较完善的统一配置管理界面，支持多环境、多数据中心配置管理、权限、流程治理等特性。不过Apollo出于通用性考虑，不会对配置的修改做过多限制，只要符合基本的格式就能保存，不会针对不同的配置值进行针对性的校验，如数据库用户名、密码，Redis服务地址等；</li>\n      <li>对于这类应用配置，Apollo支持应用方通过开放平台API在Apollo进行配置的修改和发布，并且具备完善的授权和权限控制。</li>\n    </ul>\n  </li>\n</ol>\n\n    ",
+  "source": "content/posts/zh-cn/2023-11-23-Apollo配置中心（二）Apollo简介.md",
+  "sourceDigest": "c041fb7a0213311e90d1d112848fa778e4cdef594c96db0f6b926bacf6748fd3",
+  "postTitle": "Apollo配置中心（二）Apollo简介",
+  "date": "2023-11-23T13:13:25+11:00",
+  "dateText": "Nov 23, 2023",
+  "tags": [
+    "配置",
+    "配置中心",
+    "Apollo"
+  ],
+  "categories": [
+    "Apollo"
+  ],
+  "image": "/images/covers/apollo-cover.jpg",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/apollo/2023/11/23/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83-%E4%B8%80-%E9%85%8D%E7%BD%AE%E5%92%8C%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/apollo-cover.jpg\" alt=\"Apollo配置中心（一）配置和配置中心\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">Apollo配置中心（一）配置和配置中心</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/apollo/2023/11/23/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83-%E4%B8%89-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%8F%8A%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/apollo-cover.jpg\" alt=\"Apollo配置中心（三）工作原理及核心概念\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">Apollo配置中心（三）工作原理及核心概念</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/apollo/2023/11/24/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83-%E4%B8%83-Springboot%E9%9B%86%E6%88%90%E5%8F%8A%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2/",
+        "src": "/images/covers/apollo-cover.jpg",
+        "alt": "Apollo配置中心（七）Springboot集成及分布式部署"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2023-11-24T16:29:57+11:00\">Nov 24, 2023</time>\n                    </span>\n                  ",
+      "titleHtml": "Apollo配置中心（七）Springboot集成及分布式部署",
+      "title": "Apollo配置中心（七）Springboot集成及分布式部署",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE\" class=\"article__tag\">配置</a>\n                        \n                          <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83\" class=\"article__tag\">配置中心</a>\n                        \n                          <a href=\"/zh-cn/tags/apollo\" class=\"article__tag\">Apollo</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/apollo/2023/11/24/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83-%E5%85%AD-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%8F%8A%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BE%E8%AE%A1/",
+        "src": "/images/covers/apollo-cover.jpg",
+        "alt": "Apollo配置中心（六）服务端及客户端设计"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2023-11-24T14:54:12+11:00\">Nov 24, 2023</time>\n                    </span>\n                  ",
+      "titleHtml": "Apollo配置中心（六）服务端及客户端设计",
+      "title": "Apollo配置中心（六）服务端及客户端设计",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE\" class=\"article__tag\">配置</a>\n                        \n                          <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83\" class=\"article__tag\">配置中心</a>\n                        \n                          <a href=\"/zh-cn/tags/apollo\" class=\"article__tag\">Apollo</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/apollo/2023/11/24/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83-%E4%BA%94-%E7%81%B0%E5%BA%A6%E5%8F%91%E5%B8%83/",
+        "src": "/images/covers/apollo-cover.jpg",
+        "alt": "Apollo配置中心（五）灰度发布"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 2 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2023-11-24T12:54:35+11:00\">Nov 24, 2023</time>\n                    </span>\n                  ",
+      "titleHtml": "Apollo配置中心（五）灰度发布",
+      "title": "Apollo配置中心（五）灰度发布",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE\" class=\"article__tag\">配置</a>\n                        \n                          <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83\" class=\"article__tag\">配置中心</a>\n                        \n                          <a href=\"/zh-cn/tags/apollo\" class=\"article__tag\">Apollo</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

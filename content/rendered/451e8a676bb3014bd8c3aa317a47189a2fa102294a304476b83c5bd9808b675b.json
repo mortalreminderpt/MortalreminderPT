@@ -1,0 +1,70 @@
+{
+  "route": "/zh-cn/maven/2023/12/03/Maven-一-Maven的哲学/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "Maven（一）Maven的哲学",
+  "description": "",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/maven-cover.jpg\" alt=\"Maven（一）Maven的哲学\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/maven-cover.jpg\" alt=\"Maven（一）Maven的哲学\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2023-12-03T11:40:06+11:00\">Dec 3, 2023</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">Maven（一）Maven的哲学</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/maven\" class=\"post__tag\">Maven</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#前言\" id=\"markdown-toc-前言\">前言</a></li>\n  <li><a href=\"#maven-的哲学\" id=\"markdown-toc-maven-的哲学\">Maven 的哲学</a></li>\n  <li><a href=\"#maven-简介\" id=\"markdown-toc-maven-简介\">Maven 简介</a></li>\n  <li><a href=\"#maven-的目标\" id=\"markdown-toc-maven-的目标\">Maven 的目标</a>    <ol>\n      <li><a href=\"#使构建过程变得简单\" id=\"markdown-toc-使构建过程变得简单\">使构建过程变得简单</a></li>\n      <li><a href=\"#提供统一的构建系统\" id=\"markdown-toc-提供统一的构建系统\">提供统一的构建系统</a></li>\n      <li><a href=\"#提供优质项目信息\" id=\"markdown-toc-提供优质项目信息\">提供优质项目信息</a></li>\n      <li><a href=\"#提供最佳实践开发指南\" id=\"markdown-toc-提供最佳实践开发指南\">提供最佳实践开发指南</a></li>\n    </ol>\n  </li>\n  <li><a href=\"#maven-不是什么\" id=\"markdown-toc-maven-不是什么\">Maven 不是什么？</a></li>\n</ol>\n\n<h2 id=\"前言\">前言</h2>\n\n<p>Maven 作为常用的 Java 构建工具，我曾多次使用它但没有系统地学习过它。\n最近刚好因为工作需要有了重新认识Maven的机会，这次我以官方文档为主进行了学习，博客的主要内容也是对官方文档中比较重要的部分的翻译。</p>\n\n<h2 id=\"maven-的哲学\">Maven 的哲学</h2>\n\n<p><img src=\"https://maven.apache.org/images/maven-logo-black-on-white.png\" alt=\"logo\"></p>\n\n<p>Maven 通常被许多人认为是一个构建工具。许多最初接触 Maven 的人都熟悉 Ant，所以这是一种自然的联想，但 Maven 不仅仅是一个构建工具，也不仅仅是 Ant 的替代品。Maven 是与 Ant 完全不同的生物。Ant 只是一个工具箱，而 <strong>Maven 是关于模式的应用</strong>，以实现<strong>具有可见性、可重用性、可维护性和可理解性特征的基础设施</strong>。</p>\n\n<p>如果没有这些特征，多个人就不可能在一个项目上高效地合作。如果没有可见性，一个人就不可能知道另一个人已经完成了什么，因此很有可能有用的代码不会被重用。当代码不被重用时，就很难创建可维护的系统。当每个人都不断地试图找出构成你的项目的所有这些不同的部分时，几乎没有人能够从整体上理解该项目。结果，你最终会出现筒仓效应，共享知识的衰退以及团队成员之间相应程度的挫败感。当流程对每个人来说都以不同的方式运作时，这是自然的结果。</p>\n\n<p>Maven 的诞生源于一个非常实际的愿望，即让 Apache 的多个项目以相同的方式工作。这样开发人员就可以在这些项目之间自由移动，通过了解其中一个项目的工作原理来清楚地了解所有项目的工作原理。如果开发人员花时间了解一个项目是如何构建的，那么当他们转向下一个项目时，他们就不必再次经历这个过程。同样的想法延伸到测试、生成文档、生成指标和报告、测试和部署。所有项目都有足够多的相同特征，Maven 试图在其项目管理的一般方法中利用对这些特征的理解。在非常高的层面上，所有项目都需要构建、测试、打包、记录和部署。当然，上述每个步骤都存在无限的变化，但这种变化仍然发生在明确定义的路径范围内，而 Maven 试图以清晰的方式向每个人呈现这条路径。明确路径的最简单方法是为人们提供一组可以由参与项目的任何人共享的模式。</p>\n\n<h2 id=\"maven-简介\">Maven 简介</h2>\n\n<p>Maven 是一个<a href=\"https://en.wikipedia.org/wiki/Maven\">Yiddish word</a>，意思是<em>知识的积累器</em>，最初是为了简化 Jakarta Turbine 项目的构建过程。有几个项目，每个项目都有自己的 Ant 构建文件，但都略有不同。</p>\n\n<p>我们需要一种构建项目的标准方法：项目组成的定义清晰，发布项目信息的方法简单，并且支持跨多个项目共享 JAR。</p>\n\n<p>Maven现在是一个可用于构建和管理任何基于 Java 的项目的工具。Maven致力于使 Java 开发人员的日常工作变得更加轻松，并且有助于理解任何基于 Java 的项目。</p>\n\n<h2 id=\"maven-的目标\">Maven 的目标</h2>\n\n<p>Maven 的主要目标是让开发人员在<strong>最短的时间内了解开发工作的完整状态</strong>。为了实现这一目标，Maven 处理了几个需要关注的领域：</p>\n\n<ul>\n  <li>使构建过程变得简单</li>\n  <li>提供统一的构建系统</li>\n  <li>提供优质项目信息</li>\n  <li>鼓励更好的开发实践</li>\n</ul>\n\n<h3 id=\"使构建过程变得简单\">使构建过程变得简单</h3>\n\n<p>虽然使用 Maven 并不能消除了解底层机制的需要，但 Maven 确实使开发人员免于了解许多细节。</p>\n\n<h3 id=\"提供统一的构建系统\">提供统一的构建系统</h3>\n\n<p>Maven 使用其<strong>项目对象模型 (POM) **和一组</strong>插件**来构建项目。一旦熟悉了一个 Maven 项目，您就知道所有 Maven 项目是如何构建的。这可以在浏览许多项目时节省时间。</p>\n\n<h3 id=\"提供优质项目信息\">提供优质项目信息</h3>\n\n<p>Maven 提供有用的项目信息，这些信息部分取自 POM，<strong>部分从项目源生成</strong>。例如，Maven可以提供：</p>\n\n<ul>\n  <li>直接从源代码管理创建的<strong>修改日志</strong></li>\n  <li><strong>交叉引用来源</strong></li>\n  <li>由项目管理的邮件列表</li>\n  <li>项目使用的<strong>依赖项</strong></li>\n  <li>包括覆盖率的单元测试报告</li>\n</ul>\n\n<p>第三方代码分析产品还提供 Maven 插件，将其报告添加到 Maven 给出的标准信息中。</p>\n\n<h3 id=\"提供最佳实践开发指南\">提供最佳实践开发指南</h3>\n\n<p>Maven 旨在收集当前的最佳实践开发原则，并轻松引导项目朝该方向发展。</p>\n\n<p>以单元测试为例，单元测试的规范、执行和报告是使用 Maven 的正常构建周期的一部分。当前的单元测试最佳实践如下：</p>\n\n<ul>\n  <li>将测试源代码保存在单独但并行的源代码树中</li>\n  <li>使用测试用例命名约定来定位和执行测试</li>\n  <li>让测试用例设置其环境，而不是定制测试准备的构建</li>\n</ul>\n\n<p>Maven 还协助项目工作流程，例如发布和问题管理。</p>\n\n<p>Maven 还建议了一些项目目录布局。一旦了解了布局，您就可以轻松使用 Maven 的其他项目。由于历史原因，某些项目可能不适合这种结构。虽然 Maven 被设计为能够灵活地满足不同项目的需求，但它无法在不影响目标的前提下满足所有需要。</p>\n\n<p>如果您的项目具有无法重组的不寻常的构建结构，您可能必须放弃Maven的某些功能或完全放弃 Maven 的使用。</p>\n\n<h2 id=\"maven-不是什么\">Maven 不是什么？</h2>\n\n<p>您可能听说过以下一些有关 Maven 的事情：</p>\n\n<ul>\n  <li>Maven 是一个站点和文档工具</li>\n  <li>Maven 扩展了 Ant，让您可以下载依赖项</li>\n  <li>Maven 是一组可重用的 Ant scriptlet</li>\n</ul>\n\n<p>虽然 Maven 可以做这些事情，但正如您可以在上面的“什么是 Maven？”中读到的那样。部分，这些并不是 Maven 唯一的功能，而且它的目标也有很大不同。</p>\n\n    ",
+  "source": "content/posts/zh-cn/2023-12-03-Maven（一）Maven的哲学.md",
+  "sourceDigest": "e8d4e8e1c53d2ba28cb50c59fd079180cb392e02489e1b4f080fbcb1627b9639",
+  "postTitle": "Maven（一）Maven的哲学",
+  "date": "2023-12-03T11:40:06+11:00",
+  "dateText": "Dec 3, 2023",
+  "tags": [
+    "Maven"
+  ],
+  "categories": [
+    "Maven"
+  ],
+  "image": "/images/covers/maven-cover.jpg",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/apollo/2023/11/24/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83-%E4%B8%83-Springboot%E9%9B%86%E6%88%90%E5%8F%8A%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/apollo-cover.jpg\" alt=\"Apollo配置中心（七）Springboot集成及分布式部署\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">Apollo配置中心（七）Springboot集成及分布式部署</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/maven/2023/12/03/Maven-%E4%BA%8C-%E7%AC%AC%E4%B8%80%E4%B8%AAMaven%E9%A1%B9%E7%9B%AE/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/maven-cover.jpg\" alt=\"Maven（二）第一个Maven项目\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">Maven（二）第一个Maven项目</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/maven/2023/12/05/Maven-%E5%8D%81%E4%B8%89-%E5%8F%AF%E9%80%89-optional-%E4%BE%9D%E8%B5%96%E9%A1%B9%E5%92%8C%E4%BE%9D%E8%B5%96%E9%A1%B9%E6%8E%92%E9%99%A4-exclusion/",
+        "src": "/images/covers/maven-cover.jpg",
+        "alt": "Maven（十三）可选（optional）依赖项和依赖项排除（exclusion）"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 19 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2023-12-05T20:01:56+11:00\">Dec 5, 2023</time>\n                    </span>\n                  ",
+      "titleHtml": "Maven（十三）可选（optional）依赖项和依赖项排除（exclusion）",
+      "title": "Maven（十三）可选（optional）依赖项和依赖项排除（exclusion）",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/maven\" class=\"article__tag\">Maven</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/maven/2023/12/05/Maven-%E5%8D%81%E4%BA%8C-%E4%BE%9D%E8%B5%96%E6%9C%BA%E5%88%B6%E7%AE%80%E4%BB%8B/",
+        "src": "/images/covers/maven-cover.jpg",
+        "alt": "Maven（十二）依赖机制简介"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 48 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2023-12-05T19:10:42+11:00\">Dec 5, 2023</time>\n                    </span>\n                  ",
+      "titleHtml": "Maven（十二）依赖机制简介",
+      "title": "Maven（十二）依赖机制简介",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/maven\" class=\"article__tag\">Maven</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/maven/2023/12/05/Maven-%E5%8D%81%E4%B8%80-%E6%A0%87%E5%87%86%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95/",
+        "src": "/images/covers/maven-cover.jpg",
+        "alt": "Maven（十一）标准文件目录"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 7 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2023-12-05T14:41:05+11:00\">Dec 5, 2023</time>\n                    </span>\n                  ",
+      "titleHtml": "Maven（十一）标准文件目录",
+      "title": "Maven（十一）标准文件目录",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/maven\" class=\"article__tag\">Maven</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

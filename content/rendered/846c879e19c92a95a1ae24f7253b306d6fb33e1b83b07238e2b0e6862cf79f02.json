@@ -1,0 +1,10 @@
+{
+  "route": "/404.html",
+  "lang": "en",
+  "kind": "404",
+  "title": "Page not found",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://images.unsplash.com/photo-1584824486509-112e4181ff6b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80\" alt=\"Page not found\">\n    </div>\n    <div class=\"hero__content\">\n      <h1 class=\"hero__title\">Page not found</h1>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "\n      <div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col col-12\" style=\"text-align: center\">\n      <h2 style=\"font-size: 48px\">404</h2>\n      <p>The requested page could not be found.</p>\n      <p><button id=\"homepage\" data-homepage=\"true\" class=\"button button--middle\" style=\"text-decoration: none; border: none\">BACK TO THE HOMEPAGE</button></p>\n      <hr>\n    </div>\n  </div>\n</div>\n\n\n    "
+}

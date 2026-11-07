@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/04/21/操作系统-九-虚拟机/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（九）虚拟机",
+  "description": "操作系统（Operating System，OS）是指控制和管理计算机系统软硬件资源，合理组织调度计算机工作和资源分配，提供给用户和其它软件方便的接口和环境。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（九）虚拟机\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（九）虚拟机\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-04-21T00:39:30+10:00\">Apr 21, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（九）虚拟机</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#虚拟机的定义\" id=\"markdown-toc-虚拟机的定义\">虚拟机的定义</a></li>\n  <li><a href=\"#第一类虚拟机\" id=\"markdown-toc-第一类虚拟机\">第一类虚拟机</a></li>\n  <li><a href=\"#第二类虚拟机\" id=\"markdown-toc-第二类虚拟机\">第二类虚拟机</a></li>\n  <li><a href=\"#两类虚拟机的对比\" id=\"markdown-toc-两类虚拟机的对比\">两类虚拟机的对比</a></li>\n  <li><a href=\"#更多指令等级\" id=\"markdown-toc-更多指令等级\">更多指令等级</a></li>\n</ol>\n\n<h2 id=\"虚拟机的定义\">虚拟机的定义</h2>\n\n<p>在同一台操作系统上并发运行某些进程，可能存在安全隐患；如果将其运行在不同硬件上，则会浪费大量硬件资源。</p>\n\n<p>虚拟机：使用虚拟化技术，将一台物理机器虚拟化为多台虚拟机器（Virtual Machine，VM），每个虚拟机器都可以独立运行一个操作系统。</p>\n\n<p>同义术语：虚拟机管理程序/虚拟机监控程序/Virtual Machine Monitor/Hypervisor</p>\n\n<h2 id=\"第一类虚拟机\">第一类虚拟机</h2>\n<p>第一类虚拟机管理程序直接运行在硬件上。虚拟机管理程序将一个物理机器虚拟化为多台虚拟机器。\n第一类虚拟机管理程序会把一个总的硬件资源划分为多个部分，每一台虚拟机上可以安装各自的操作系统，如下图所示：</p>\n\n<p><img src=\"\\images\\posts\\操作系统-第一类虚拟机.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>在运行过程中，CPU的时间片被分给若干个虚拟机器，在上层操作系统看来自己分配的是独立的CPU；而磁盘和内存这些则是按空间进行划分。每台机器都拥有自己独立的资源。</p>\n\n<p>在第一类虚拟机中，<strong>只有虚拟机管理程序是运行在内核态</strong>的，可以使用那些最高特权的指令。\n上层<strong>虚拟内核空间运行在用户态</strong>，但它以为自己运行在内核态，会执行特权指令，此时这个<strong>特权指令会被虚拟机管理程序截获并进行等价转换</strong>。</p>\n\n<h2 id=\"第二类虚拟机\">第二类虚拟机</h2>\n<p>第二类虚拟机管理程序运行在宿主操作系统（Host OS）上。</p>\n\n<p>常用第二类虚拟机：VirtualBox、VMWare</p>\n\n<p>第二类虚拟机想要为虚拟机器分配硬件资源时，需要请求操作系统为其分配。<strong>硬件资源的管理者依旧是宿主操作系统</strong>。</p>\n\n<p>注意：在第二类虚拟机中，<strong>部分虚拟机管理程序运行在内核态</strong>，这部分是<strong>以虚拟机驱动程序的方式加载到操作系统内核</strong>当中的。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-第二类虚拟机.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<h2 id=\"两类虚拟机的对比\">两类虚拟机的对比</h2>\n\n<table>\n  <thead>\n    <tr>\n      <th>&nbsp;</th>\n      <th>第一类VMM</th>\n      <th>第二类VMM</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>对物理资源的控制权</td>\n      <td>直接运行在硬件之上，能直接控制和分配物理资源。</td>\n      <td>运行在Host OS之上，依赖于Host OS为其分配物理资源。</td>\n    </tr>\n    <tr>\n      <td>资源分配方式</td>\n      <td>在安装Guest OS时，VMM要在原本的硬盘上自行分配存储空间，类似于”外核“的分配方式，分配未经抽象的物理硬件。</td>\n      <td>Guest OS拥有自己的虚拟磁盘，该盘实际上是Host OS文件系统中的一个大文件。Guest OS分配到的内存是虚拟内存。</td>\n    </tr>\n    <tr>\n      <td>性能</td>\n      <td>性能较好。</td>\n      <td>性能更差，需要Host OS作为”中介“。</td>\n    </tr>\n    <tr>\n      <td>可支持的虚拟机数量</td>\n      <td>更多，不需要和Host OS竞争资源，相同的硬件资源可以支持更多的虚拟机。</td>\n      <td>更少，Host OS本身需要使用物理资源，Host OS上运行的其他进程也需要物理资源。</td>\n    </tr>\n    <tr>\n      <td>虚拟机的可迁移性</td>\n      <td>更差。</td>\n      <td>更好，只需导出虚拟机镜像文件即可迁移到另一台Host OS 上，商业化应用更广泛。</td>\n    </tr>\n    <tr>\n      <td>运行模式</td>\n      <td>第一类VMM运行在最高特权级（Ring 0），可以执行最高特权的指令。</td>\n      <td>第二类VMM部分运行在用户态、部分运行在内核态。Guest OS发出的系统调用会被VMM截获，并转化为VMM对Host OS的系统调用。</td>\n    </tr>\n  </tbody>\n</table>\n\n<h2 id=\"更多指令等级\">更多指令等级</h2>\n<p>支持虚拟化的CPU通常分为更多的指令等级，如下图所示：</p>\n\n<p><img src=\"\\images\\posts\\操作系统-虚拟化CPU指令等级.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>其中，Ring 0表示最高特权级指令；Ring 3表示最低特权级指令。</p>\n\n<p>在第一类虚拟机中，可以使VMM运行在Ring 0，虚拟内核空间运行在Ring 1，虚拟用户空间运行在Ring 2。这样可以保证在运行特权指令Ring 1和Ring 2时，虚拟机管理程序无需介入，提升运行效率。</p>\n\n    ",
+  "source": "content/posts/zh-cn/2022-04-20-操作系统（九）虚拟机.md",
+  "sourceDigest": "dcc8f2b4cd131bfae2ba338ba7cb51c5f6b7fb4de5863fcc22139f22239e7c1e",
+  "postTitle": "操作系统（九）虚拟机",
+  "date": "2022-04-21T00:39:30+10:00",
+  "dateText": "Apr 21, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover1.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/04/20/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%85%AB-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BC%95%E5%AF%BC-Boot/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（八）操作系统引导（Boot）\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（八）操作系统引导（Boot）</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/04/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%8D%81-%E8%BF%9B%E7%A8%8B%E7%9A%84%E6%A6%82%E5%BF%B5-%E7%BB%84%E6%88%90%E5%92%8C%E7%89%B9%E5%BE%81/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十）进程的概念、组成和特征\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（十）进程的概念、组成和特征</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

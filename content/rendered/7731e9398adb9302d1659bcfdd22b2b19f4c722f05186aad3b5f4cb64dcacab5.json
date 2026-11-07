@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/04/20/操作系统-五-中断和异常/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（五）中断和异常",
+  "description": "操作系统（Operating System，OS）是指控制和管理计算机系统软硬件资源，合理组织调度计算机工作和资源分配，提供给用户和其它软件方便的接口和环境。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（五）中断和异常\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（五）中断和异常\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-04-20T20:09:49+10:00\">Apr 20, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（五）中断和异常</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#中断的作用\" id=\"markdown-toc-中断的作用\">中断的作用</a></li>\n  <li><a href=\"#中断的类型\" id=\"markdown-toc-中断的类型\">中断的类型</a>    <ol>\n      <li><a href=\"#内中断异常类型\" id=\"markdown-toc-内中断异常类型\">内中断（异常）类型：</a></li>\n      <li><a href=\"#外中断类型\" id=\"markdown-toc-外中断类型\">外中断类型：</a></li>\n      <li><a href=\"#内中断异常示例\" id=\"markdown-toc-内中断异常示例\">内中断（异常）示例</a></li>\n      <li><a href=\"#外中断示例\" id=\"markdown-toc-外中断示例\">外中断示例</a></li>\n    </ol>\n  </li>\n  <li><a href=\"#中断机制的基本原理\" id=\"markdown-toc-中断机制的基本原理\">中断机制的基本原理</a></li>\n</ol>\n\n<h2 id=\"中断的作用\">中断的作用</h2>\n<p>CPU上会运行两种程序，一种是<strong>操作系统内核程序</strong>，一种是<strong>应用程序</strong>。</p>\n\n<p>在合适的情况下，操作系统内核会把CPU的使用权主动让给应用程序。</p>\n\n<p>“中断”是<strong>让操作系统内核夺回CPU使用权的唯一途径</strong>。</p>\n\n<p>如果没有“中断”机制，那么一旦应用程序上CPU运行，CPU就会一直运行这个应用程序（没有中断，就没有并发）。</p>\n\n<h2 id=\"中断的类型\">中断的类型</h2>\n\n<p>广义上中断包括内中断（又称异常）和外中断（狭义上的中断）两种。</p>\n\n<p>内中断与当前执行的<strong>指令有关</strong>，中断信号来源于<strong>CPU内部</strong>。</p>\n\n<p>外中断与当前执行的<strong>指令无关</strong>，中断信号来源于<strong>CPU外部</strong>。</p>\n\n<h3 id=\"内中断异常类型\">内中断（异常）类型：</h3>\n<ol>\n  <li>陷入（trap）：由陷入指令引发，是应用程序故意引发的；</li>\n  <li>故障（fault）：由错误条件引起的，可能被内核程序修复。内核程序修复故障后会把CPU使用权还给应用程序，让它继续执行下去。如缺页故障等；</li>\n  <li>终止（abort）：由致命错误引起，内核程序无法修复该错误，因此一般不再将CPU使用权还给引发终止的应用程序，而是直接终止该应用程序。如整数除0、非法使用特权指令等。</li>\n</ol>\n\n<h3 id=\"外中断类型\">外中断类型：</h3>\n<p>包括时钟中断、I/O中断等。</p>\n\n<h3 id=\"内中断异常示例\">内中断（异常）示例</h3>\n\n<p><strong>终止指令</strong>：若当前执行的指令是非法的，则会引发一个中断信号。</p>\n\n<div class=\"language-plaintext highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>1. 试图在用户态下执行特权指令\n2. 执行除法指令时发现除数为0\n</code></pre></div></div>\n\n<p><strong>陷入指令</strong>：有时候应用程序想请求操作系统内核的服务，此时会执行一条特殊的指令――陷入指令，该指令会引发一个内部中断信号。</p>\n\n<p>执行“陷入指令”，意味着应用程序主动地将CPU控制权还给操作系统内核。“系统调用”就是通过陷入指令完成的。</p>\n\n<h3 id=\"外中断示例\">外中断示例</h3>\n\n<p><strong>每一条指令执行结束时</strong>，CPU都会例行检查是否有外中断信号。</p>\n\n<p>时钟中断：时钟部件每隔一个时间片（如50ms）会给CPU发送一个时钟中断信号。时钟中断的过程如下：</p>\n\n<ol>\n  <li>在应用程序1的执行过程中，执行时间达到一个时间片，CPU分给该应用程序的时间耗尽。</li>\n  <li>此时时钟部件向CPU发送一个时钟中断信号，CPU转变为内核态并执行处理时钟中断的内核程序。操作系统内核决定接下来让应用程序2在上CPU运行。</li>\n  <li>接下来切换为用户态执行应用程序2，如此往复。</li>\n</ol>\n\n<p>I/O中断：由输入/输出设备发来的中断信号。当输入/输出任务完成后，向CPU发送中断信号。</p>\n\n<h2 id=\"中断机制的基本原理\">中断机制的基本原理</h2>\n\n<p>不同的中断信号，需要用不同的中断处理程序来处理。当CPU检测到中断信号后，会根据中断信号的类型去查询“<strong>中断向量表</strong>”，以此来找到相应的中断处理程序在内存中的存放位置。</p>\n\n<p><img src=\"\\images\\posts\\操作系统-中断向量表示例.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p><strong>中断处理程序一定是内核程序</strong>，因此需要运行在“内核态”。</p>\n\n    ",
+  "source": "content/posts/zh-cn/2022-04-20-操作系统（五）中断和异常.md",
+  "sourceDigest": "18f63b397ed891ce59c21a54595b8ca4f1c5167977870bcb9297937b5be8dd38",
+  "postTitle": "操作系统（五）中断和异常",
+  "date": "2022-04-20T20:09:49+10:00",
+  "dateText": "Apr 20, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover1.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/04/20/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（四）操作系统的运行机制\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（四）操作系统的运行机制</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/04/20/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%85%AD-%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"操作系统（六）系统调用\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（六）系统调用</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

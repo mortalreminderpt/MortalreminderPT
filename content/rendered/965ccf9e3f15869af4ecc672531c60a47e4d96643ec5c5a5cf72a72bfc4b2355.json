@@ -1,0 +1,54 @@
+{
+  "route": "/zh-cn/2024/05/24/K8s笔记-三/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "K8s笔记（三）Master 和 Worker 的概念",
+  "description": "",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/k8s.png\" alt=\"K8s笔记（三）Master 和 Worker 的概念\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/k8s.png\" alt=\"K8s笔记（三）Master 和 Worker 的概念\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2024-05-24T20:18:52+10:00\">May 24, 2024</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">K8s笔记（三）Master 和 Worker 的概念</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/kubernetes\" class=\"post__tag\">Kubernetes</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#master-节点\" id=\"markdown-toc-master-节点\">Master 节点</a></li>\n  <li><a href=\"#worker-节点\" id=\"markdown-toc-worker-节点\">Worker 节点</a></li>\n</ol>\n\n<h2 id=\"master-节点\">Master 节点</h2>\n\n<p>Master节点是Kubernetes集群的控制中心，负责管理集群的状态、调度应用程序、处理集群事件和监控集群健康状态。Master节点通常包含以下核心组件：</p>\n\n<ul>\n  <li>\n    <p><strong>API Server（kube-apiserver）</strong>：作为Kubernetes集群的前端接口，所有的管理操作都通过API Server进行。它负责接收和处理来自用户、命令行工具和其他组件的请求，并将请求转发给合适的组件进行处理。</p>\n  </li>\n  <li>\n    <p><strong>Scheduler（kube-scheduler）</strong>：负责根据应用程序的资源需求和集群的状态，将Pod调度到可用的Worker节点上运行。调度器根据预定义的调度策略选择最佳的节点来运行Pod。</p>\n  </li>\n  <li>\n    <p><strong>Controller Manager（kube-controller-manager）</strong>：包含多个控制器，负责维护集群的期望状态。常见的控制器包括Replication Controller、Namespace Controller、Node Controller等，它们确保集群中的各种资源处于所期望的状态。</p>\n  </li>\n  <li>\n    <p><strong>etcd</strong>：一个分布式键值存储，用于存储 Kubernetes 集群的配置信息和状态。etcd作为Master节点的数据存储后端，提供持久化存储和高可用性。</p>\n  </li>\n</ul>\n\n<h2 id=\"worker-节点\">Worker 节点</h2>\n\n<p>Worker节点是Kubernetes集群中的工作节点，负责运行应用程序的容器实例。每个Worker节点上都运行着一个叫做kubelet的代理程序，它负责与Master节点通信，并管理节点上的Pod生命周期。此外，Worker节点还包含以下核心组件：</p>\n\n<ul>\n  <li>\n    <p><strong>kubelet</strong>：是一个运行在每个Worker节点上的代理程序，负责接收来自API Server的Pod创建请求，并确保Pod处于运行状态。管理节点上的容器，包括创建、启动、停止等操作，并与 Master 节点交互以获取 Pod 的调度信息。kubelet还负责监控节点上的容器，并将容器的状态报告给Master节点。</p>\n  </li>\n  <li>\n    <p><strong>Kube-proxy</strong>：负责为Pod提供网络代理和负载均衡服务。它维护着集群中的网络规则，并将请求路由到正确的Pod上。</p>\n  </li>\n  <li>\n    <p><strong>Container Runtime</strong>：负责在Worker节点上运行容器。常见的Container Runtime包括Docker、containerd等，它们负责管理容器的生命周期、文件系统和网络配置等。</p>\n  </li>\n</ul>\n\n    ",
+  "source": "content/posts/zh-cn/2024-05-24-K8s笔记（三）.md",
+  "sourceDigest": "2b7896a000beebe481617d1d48caed3d0e7dc9e1ae268e8977a3075342142425",
+  "postTitle": "K8s笔记（三）Master 和 Worker 的概念",
+  "date": "2024-05-24T20:18:52+10:00",
+  "dateText": "May 24, 2024",
+  "tags": [
+    "Kubernetes"
+  ],
+  "categories": [],
+  "image": "/images/covers/k8s.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2024/05/24/K8s%E7%AC%94%E8%AE%B0-%E4%BA%8C/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/k8s.png\" alt=\"K8s笔记（二）基本概念（二）\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">K8s笔记（二）基本概念（二）</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/react/2024/09/12/react-1/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/react.png\" alt=\"React设计思想（一） —— Components and Hooks must be pure\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">React设计思想（一） —— Components and Hooks must be pure</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2024/05/24/K8s%E7%AC%94%E8%AE%B0-%E4%BA%8C/",
+        "src": "/images/covers/k8s.png",
+        "alt": "K8s笔记（二）基本概念（二）"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 24 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2024-05-24T14:20:48+10:00\">May 24, 2024</time>\n                    </span>\n                  ",
+      "titleHtml": "K8s笔记（二）基本概念（二）",
+      "title": "K8s笔记（二）基本概念（二）",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/kubernetes\" class=\"article__tag\">Kubernetes</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2024/05/23/K8s%E7%AC%94%E8%AE%B0-%E4%B8%80/",
+        "src": "/images/covers/k8s.png",
+        "alt": "K8s笔记（一）基本概念（一）"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 28 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2024-05-23T11:15:00+10:00\">May 23, 2024</time>\n                    </span>\n                  ",
+      "titleHtml": "K8s笔记（一）基本概念（一）",
+      "title": "K8s笔记（一）基本概念（一）",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/kubernetes\" class=\"article__tag\">Kubernetes</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

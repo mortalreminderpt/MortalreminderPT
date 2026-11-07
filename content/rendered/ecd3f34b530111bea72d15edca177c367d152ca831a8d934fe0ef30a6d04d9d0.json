@@ -1,0 +1,69 @@
+{
+  "route": "/categories/dynamic-programming-fundamentals/",
+  "lang": "en",
+  "kind": "archive",
+  "title": "Dynamic Programming Fundamentals",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"Dynamic Programming Fundamentals\">\n    </div>\n    <div class=\"hero__content\">\n      <div class=\"row\">\n        <div class=\"col col-8 col-d-10 col-m-12 push-m-0 push-d-1 push-2\">\n          <div class=\"archive-box\">\n            \n                <h1 class=\"archive-title\">Dynamic Programming Fundamentals</h1>\n              \n            <span class=\"archive-meta\">4 posts found.</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/dynamic%20programming%20fundamentals/2021/10/12/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E5%9B%9B-%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97-LIS/",
+        "src": "/images/covers/village.jpg",
+        "alt": "Dynamic Programming (Part 4): Longest Increasing Subsequence (LIS)"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  16 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-10-12T00:19:19+11:00\">Oct 12, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Dynamic Programming (Part 4): Longest Increasing Subsequence (LIS)",
+      "title": "Dynamic Programming (Part 4): Longest Increasing Subsequence (LIS)",
+      "excerptHtml": "The core idea of dynamic programming lies in breaking down a problem into smaller subproblems and storing previous computation results to reduce computational complexity.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/dynamic-programming\"=\"\">Dynamic Programming</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/dynamic%20programming%20fundamentals/2021/09/29/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%89-%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98%E7%B3%BB%E5%88%97/",
+        "src": "/images/covers/village.jpg",
+        "alt": "Dynamic Programming Series on Stock Problems"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  41 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-09-29T22:29:46+10:00\">Sep 29, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Dynamic Programming Series on Stock Problems",
+      "title": "Dynamic Programming Series on Stock Problems",
+      "excerptHtml": "The core idea of dynamic programming lies in breaking down a problem into subproblems, retaining previous computational results to reduce the amount of computation needed.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/dynamic-programming\"=\"\">Dynamic Programming</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/dynamic%20programming%20fundamentals/2021/09/28/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%BA%8C-%E6%9C%80%E4%BC%98%E5%AD%90%E5%BA%8F%E5%88%97%E7%B3%BB%E5%88%97/",
+        "src": "/images/covers/village.jpg",
+        "alt": "Dynamic Programming (Part 2) - Optimal Subsequence Series"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  10 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-09-28T13:12:38+10:00\">Sep 28, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Dynamic Programming (Part 2) - Optimal Subsequence Series",
+      "title": "Dynamic Programming (Part 2) - Optimal Subsequence Series",
+      "excerptHtml": "The core idea of dynamic programming lies in breaking down a problem into smaller subproblems, retaining previously computed results to reduce computational effort.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/dynamic-programming\"=\"\">Dynamic Programming</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/dynamic%20programming%20fundamentals/2021/09/27/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-%E4%B8%80-%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D%E7%B3%BB%E5%88%97/",
+        "src": "/images/covers/village.jpg",
+        "alt": "Dynamic Programming (Part 1) - House Robber Series"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n  10 min read\n\n\n          <time class=\"article__date\" datetime=\"2021-09-27T22:12:45+10:00\">Sep 27, 2021</time>\n        </span>\n      ",
+      "titleHtml": "Dynamic Programming (Part 1) - House Robber Series",
+      "title": "Dynamic Programming (Part 1) - House Robber Series",
+      "excerptHtml": "The core idea of dynamic programming lies in breaking down a problem into smaller subproblems and retaining previously computed results to reduce computational complexity.",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/tags/algorithms\"=\"\">Algorithms</a>\n              \n\n                <a class=\"article__tag\" href=\"/tags/dynamic-programming\"=\"\">Dynamic Programming</a>\n              \n            </span>\n          \n        </div>\n      "
+    }
+  ],
+  "sectionClass": "hero"
+}

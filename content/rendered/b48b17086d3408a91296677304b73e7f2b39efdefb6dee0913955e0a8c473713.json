@@ -1,0 +1,111 @@
+{
+  "route": "/categories/",
+  "lang": "en",
+  "kind": "taxonomy",
+  "title": "Categories",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"Categories\">\n    </div>\n    <div class=\"hero__content\">\n      <h1 class=\"hero__title\">Categories</h1>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/categories/dynamic-programming-fundamentals",
+        "src": "/images/covers/village.jpg",
+        "alt": "Dynamic Programming (Part 4): Longest Increasing Subsequence (LIS)"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      4 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2021-10-12T00:19:19+11:00\">Oct 12, 2021</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/categories/dynamic-programming-fundamentals\"=\"\">Dynamic Programming Fundamentals</a>\n                  ",
+      "title": "Dynamic Programming Fundamentals",
+      "excerptHtml": "The core idea of dynamic programming lies in breaking down a problem into smaller subproblems and storing previous computation results to reduce computational complexity.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/categories/fundamentals-of-data-structures",
+        "src": "/images/covers/数据结构-cover1.png",
+        "alt": "Binary Trees Basics (Part 1) - Understanding Binary Trees"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      1 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2021-09-28T15:58:19+10:00\">Sep 28, 2021</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/categories/fundamentals-of-data-structures\"=\"\">Fundamentals of Data Structures</a>\n                  ",
+      "title": "Fundamentals of Data Structures",
+      "excerptHtml": "A binary tree is a fundamental type of tree structure where each node has at most two child nodes, making it one of the simplest and most important trees.",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/categories/apollo",
+        "src": "/images/covers/apollo-cover.jpg",
+        "alt": "Apollo Configuration Center (Part 7) - Spring Boot Integration and Distributed Deployment"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      7 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2023-11-24T16:29:57+11:00\">Nov 24, 2023</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/categories/apollo\"=\"\">Apollo</a>\n                  ",
+      "title": "Apollo",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/categories/maven",
+        "src": "/images/covers/maven-cover.jpg",
+        "alt": "Maven (Part 13) - Optional Dependencies and Dependency Exclusions"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      13 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2023-12-05T20:01:56+11:00\">Dec 5, 2023</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/categories/maven\"=\"\">Maven</a>\n                  ",
+      "title": "Maven",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/categories/edit-xlsx",
+        "src": "/images/covers/edit-xlsx-cover.png",
+        "alt": "Edit-xlsx Development Log (Part 1)"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      1 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-01-30T18:20:05+11:00\">Jan 30, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/categories/edit-xlsx\"=\"\">Edit-xlsx</a>\n                  ",
+      "title": "Edit-xlsx",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/categories/algorithm",
+        "src": "https://about.fb.com/wp-content/uploads/2022/09/PyTorch-Foundation-Launch_Header.jpg",
+        "alt": "Reconstructing the MNIST Dataset Using VAE"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      22 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-12-08T19:12:54+11:00\">Dec 8, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/categories/algorithm\"=\"\">Algorithm</a>\n                  ",
+      "title": "Algorithm",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 animate",
+      "image": {
+        "href": "/categories/node-js",
+        "src": "https://miro.medium.com/v2/1*1d4T0TNb33A7Dus2ePdN_g.jpeg",
+        "alt": "Prisma - Filtering"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      5 post found\n                    </span>\n                    <time class=\"article__date\" datetime=\"2024-12-19T15:40:02+11:00\">Dec 19, 2024</time>\n                  ",
+      "titleHtml": "\n                    <a href=\"/categories/node-js\"=\"\">Node.js</a>\n                  ",
+      "title": "Node.js",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                    </div>\n\n                  "
+    }
+  ],
+  "sectionClass": "featured-tag.last.first."
+}

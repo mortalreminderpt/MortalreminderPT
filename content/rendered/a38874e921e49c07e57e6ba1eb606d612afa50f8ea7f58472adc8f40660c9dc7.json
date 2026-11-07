@@ -1,0 +1,72 @@
+{
+  "route": "/zh-cn/apollo/2023/11/23/Apollo配置中心-一-配置和配置中心/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "Apollo配置中心（一）配置和配置中心",
+  "description": "",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/apollo-cover.jpg\" alt=\"Apollo配置中心（一）配置和配置中心\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/apollo-cover.jpg\" alt=\"Apollo配置中心（一）配置和配置中心\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2023-11-23T12:01:05+11:00\">Nov 23, 2023</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">Apollo配置中心（一）配置和配置中心</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE\" class=\"post__tag\">配置</a>\n              \n              <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83\" class=\"post__tag\">配置中心</a>\n              \n              <a href=\"/zh-cn/tags/apollo\" class=\"post__tag\">Apollo</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#前言关于博客的思考\" id=\"markdown-toc-前言关于博客的思考\">前言：关于博客的思考</a></li>\n  <li><a href=\"#配置\" id=\"markdown-toc-配置\">配置</a></li>\n  <li><a href=\"#配置中心\" id=\"markdown-toc-配置中心\">配置中心</a></li>\n</ol>\n\n<h2 id=\"前言关于博客的思考\">前言：关于博客的思考</h2>\n\n<p>我对Apollo的学习主要靠三个过程完成，培训视频、官方文档及示例代码。\n在学习的过程中，我逐渐发现以培训视频和博客记录为主导的学习方式是一种快餐式的，不利于深度思考的学习方式。</p>\n\n<p>这种方式虽然可以在短时间内完成大量知识的学习，但是学习者无法达到对内容的真正掌握。\n而不同项目的文档学习难度不尽相同，主要取决于开发者撰写文档的水平和读者的阅读量。但这种学习方式可以增加读者的思考时间，也不失是一种好的学习方法。</p>\n\n<p>此外，关于Apollo配置中心的博客是在工作之余完成的，所以大部分内容基本都摘自官方文档。\n记录该博客的主要目的在于加深自己对微服务架构的印象和理解，至于细节的具体实现还是要以<a href=\"https://www.apolloconfig.com/#/zh/README\">官方文档</a>为准。</p>\n\n<h2 id=\"配置\">配置</h2>\n\n<p>应用程序在启动和运行时往往需要读取一些配置信息，配置基本上伴随着应用程序的整个生命周期。\n比如数据库连接参数、启动参数等。</p>\n\n<p>配置主要有以下几个特点：</p>\n\n<ol>\n  <li>配置是<strong>独立于程序的只读变量</strong>：\n    <ul>\n      <li>配置首先是独立于程序的，同一份程序在不同的配置下会有不同的行为；</li>\n      <li>其次，配置对于程序是只读的，程序通过读取配置来改变自己的行为，但是程序不应该去改变配置。</li>\n    </ul>\n  </li>\n  <li>配置<strong>伴随应用的整个生命周期</strong>：\n    <ul>\n      <li>配置贯穿于应用的整个生命周期，应用在启动时通过读取配置来初始化，在运行时根据配置调整行为。比如启动时需要读取服务的端口号、系统在运行过程中需要读取定时策略执行定时任务等。</li>\n    </ul>\n  </li>\n  <li>配置可以有多种加载方式：\n    <ul>\n      <li>常见的有程序内部硬编码，配置文件，环境变量，启动参数，基于数据库等。</li>\n    </ul>\n  </li>\n  <li>配置需要治理：\n    <ul>\n      <li>权限控制：由于配置能改变程序的行为，不正确的配置甚至能引起灾难，所以配置的修改必须有完善的权限控制；</li>\n      <li>不同环境、集群配置管理：同一份程序在不同的环境（开发、测试、生产）、不同的集群（如不同的数据中心）经常需要有不同的配置，所以需要有完善的环境、集群配置管理。</li>\n    </ul>\n  </li>\n</ol>\n\n<h2 id=\"配置中心\">配置中心</h2>\n\n<p>传统单体应用存在一些潜在的缺陷，如随着规模的扩大，部署效率降低，团队协作效率差，系统可靠性变差，维护困难，新功能上线周期长等。\n所以迫切需要一种新的架构去解决这些问题，而微服务架构是当下的解法之一。</p>\n\n<p>当系统从一个单体应用，被拆分成分布式系统上一个个服务节点后，配置文件也必须跟着迁移（分割），这样配置就分散了，不仅如此，分散还包含着冗余。</p>\n\n<p>配置中心<strong>将配置从应用中剥离出来，统一管理。</strong>\n解决了配置的动态变更，持久化、运维成本等问题。</p>\n\n<p>应用自身既不需要去添加管理配置接口，也不需要自己去实现配置的持久化，更不需要引入“定时任务”以便降低运维成本。</p>\n\n<p><strong>总的来说，配置中心是一种统一管理各种应用配置的基础服务组件。</strong></p>\n\n<p>在系统架构中，配置中心是整个微服务基础架构体系中的一个组件，一个合格的配置中心需要满足：</p>\n\n<ul>\n  <li>配置项容易读取和修改；</li>\n  <li>添加新配置简单直接；</li>\n  <li>支持对配置修改的监视以把控风险；</li>\n  <li>可以查看配置修改的历史记录；</li>\n  <li>不同部署环境支持隔离。</li>\n</ul>\n\n    ",
+  "source": "content/posts/zh-cn/2023-11-23-Apollo配置中心（一）配置和配置中心.md",
+  "sourceDigest": "5f780f1ab7f7df1586b0fe6796fb590d3ca188606e61a050a011afb6867408c0",
+  "postTitle": "Apollo配置中心（一）配置和配置中心",
+  "date": "2023-11-23T12:01:05+11:00",
+  "dateText": "Nov 23, 2023",
+  "tags": [
+    "配置",
+    "配置中心",
+    "Apollo"
+  ],
+  "categories": [
+    "Apollo"
+  ],
+  "image": "/images/covers/apollo-cover.jpg",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2023/10/12/%E4%BD%BF%E7%94%A8DiskGenius%E8%BF%81%E7%A7%BBC%E7%9B%98/\">\n        <img class=\"post__nav-image lazy\" data-src=\"https://www.bing.com/th?id=OHR.TexasIndigoBunting_ZH-CN3699392300_1920x1080.jpg\" alt=\"使用DiskGenius进行系统迁移\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">使用DiskGenius进行系统迁移</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/apollo/2023/11/23/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83-%E4%BA%8C-Apollo%E7%AE%80%E4%BB%8B/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/apollo-cover.jpg\" alt=\"Apollo配置中心（二）Apollo简介\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">Apollo配置中心（二）Apollo简介</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/apollo/2023/11/24/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83-%E4%B8%83-Springboot%E9%9B%86%E6%88%90%E5%8F%8A%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2/",
+        "src": "/images/covers/apollo-cover.jpg",
+        "alt": "Apollo配置中心（七）Springboot集成及分布式部署"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2023-11-24T16:29:57+11:00\">Nov 24, 2023</time>\n                    </span>\n                  ",
+      "titleHtml": "Apollo配置中心（七）Springboot集成及分布式部署",
+      "title": "Apollo配置中心（七）Springboot集成及分布式部署",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE\" class=\"article__tag\">配置</a>\n                        \n                          <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83\" class=\"article__tag\">配置中心</a>\n                        \n                          <a href=\"/zh-cn/tags/apollo\" class=\"article__tag\">Apollo</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/apollo/2023/11/24/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83-%E5%85%AD-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%8F%8A%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BE%E8%AE%A1/",
+        "src": "/images/covers/apollo-cover.jpg",
+        "alt": "Apollo配置中心（六）服务端及客户端设计"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2023-11-24T14:54:12+11:00\">Nov 24, 2023</time>\n                    </span>\n                  ",
+      "titleHtml": "Apollo配置中心（六）服务端及客户端设计",
+      "title": "Apollo配置中心（六）服务端及客户端设计",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE\" class=\"article__tag\">配置</a>\n                        \n                          <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83\" class=\"article__tag\">配置中心</a>\n                        \n                          <a href=\"/zh-cn/tags/apollo\" class=\"article__tag\">Apollo</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/apollo/2023/11/24/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83-%E4%BA%94-%E7%81%B0%E5%BA%A6%E5%8F%91%E5%B8%83/",
+        "src": "/images/covers/apollo-cover.jpg",
+        "alt": "Apollo配置中心（五）灰度发布"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 2 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2023-11-24T12:54:35+11:00\">Nov 24, 2023</time>\n                    </span>\n                  ",
+      "titleHtml": "Apollo配置中心（五）灰度发布",
+      "title": "Apollo配置中心（五）灰度发布",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE\" class=\"article__tag\">配置</a>\n                        \n                          <a href=\"/zh-cn/tags/%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83\" class=\"article__tag\">配置中心</a>\n                        \n                          <a href=\"/zh-cn/tags/apollo\" class=\"article__tag\">Apollo</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

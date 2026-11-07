@@ -1,0 +1,50 @@
+{
+  "route": "/zh-cn/2022/09/10/设计模式-二-抽象工厂-Abstract-Factory/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "设计模式（二）抽象工厂（Abstract Factory）",
+  "description": "",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"设计模式（二）抽象工厂（Abstract Factory）\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"设计模式（二）抽象工厂（Abstract Factory）\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-09-10T22:22:42+10:00\">Sep 10, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">设计模式（二）抽象工厂（Abstract Factory）</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F\" class=\"post__tag\">设计模式</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <h2 id=\"意图\">意图</h2>\n<p>提供一个<strong>接口</strong>，以创建<strong>一系列相关或相互依赖的对象</strong>，而无须指定它们的具体的类</p>\n\n<h2 id=\"动机\">动机</h2>\n<p>在设计一套支持不同主题的GUI时，同一套主题的GUI下会包括滚动条，窗口和按钮等组件。\n为了保证主题的可移植性，一个应用不该为一个特定的主题硬编码组件，否则会使改变主题变得困难。</p>\n\n<p>因此，可以定义一个抽象的WidgetFactory类，声明用来创建基本窗口组件的接口。\n其中，每一个窗口组件都有抽象类，它们的子类则实现窗口组件的具体主题。\n用户通过WidgetFactory提供的接口获得窗口组件，但是用户并不知道其使用的具体类，因此用户不依赖于具体的主题。</p>\n\n<p>每一种主题对应一个具体的WidgetFactory子类，每个子类实现用于创建该主题的组件操作。\n<strong>客户仅与抽象类定义的接口交互，而不使用特定类的接口</strong></p>\n\n<h2 id=\"适用性\">适用性</h2>\n\n<ul>\n  <li>一个<strong>系统</strong>要<strong>独立于其产品</strong>的创建、组合和表示；</li>\n  <li>一个<strong>系统</strong>要由<strong>多个产品系列中的一个</strong>来配置；</li>\n  <li>要强调<strong>一系列相关产品的对象的设计</strong>以便进行<strong>联合使用</strong>；</li>\n  <li>提供一个<strong>产品类库</strong>，但只想<strong>显示它们的接口</strong>而不是实现。</li>\n</ul>\n\n<h2 id=\"结构\">结构</h2>\n\n<h2 id=\"参与者\">参与者</h2>\n\n<ol>\n  <li>AbstractFactory（WidgetFactory）\n    <ul>\n      <li>声明一个创建抽象产品对象的操作接口</li>\n    </ul>\n  </li>\n  <li>ConcreteFactory（MotifWidgetFactory、PMWidgetFactory）\n    <ul>\n      <li>实现创建具体产品对象的操作</li>\n    </ul>\n  </li>\n  <li>AbstractProduct（Window、ScrollBar）\n    <ul>\n      <li>为一类产品对象声明一个接口</li>\n    </ul>\n  </li>\n  <li>ConcreteProduct（MotifWindow、MotifScrollBar）\n    <ul>\n      <li>定义一个将被具体工厂创建的产品对象；</li>\n      <li>实现AbstractProduct接口</li>\n    </ul>\n  </li>\n  <li>Client\n    <ul>\n      <li>仅由AbstractFactory和AbstractProduct类声明的接口</li>\n    </ul>\n  </li>\n</ol>\n\n<h2 id=\"协作\">协作</h2>\n\n<ul>\n  <li>通常在运行时创建一个ConcreteFactory的实例，这一具体工厂创建具有特定实现的产品对象。为创建不同的产品对象，客户应该使用不同的具体工厂;</li>\n  <li>AbstractProduct将产品对象的创建延迟到它的ConcreteFactory子类</li>\n</ul>\n\n<h2 id=\"效果\">效果</h2>\n\n<ol>\n  <li><strong>分离了具体的类</strong>：将客户与类的实现分离，客户通过它们的抽象接口操纵实例。\n产品的类名也在具体工厂的实现中被隔离，即不出现在客户的代码中。</li>\n  <li><strong>易于交换产品系列</strong>：一个具体的工厂类在一个应用中仅出现一次，即在它初始化的时候，这使得改变一个ConcreteFactory变得容易。\n只要改变具体工厂就可以使用不同产品配置，因为一个抽象工厂创建了一个完整的产品系列，所以整个产品系列会立刻改变。</li>\n  <li><strong>有利于产品一致性</strong>：当一个系列中产品对象被设计成一起工作时，一个应用只能使用同一个系列中的对象，而AbstractFactory很容易实现这一点</li>\n  <li><strong>难以支持新种类的产品</strong>：由于AbstractFactory确定了AbstractProduct的集合。\n因此支持新种类的Product就需要扩展该工厂的接口，并扩展其全部ConcreteFactory</li>\n</ol>\n\n    ",
+  "source": "content/posts/zh-cn/2022-09-10-设计模式（二）抽象工厂（Abstract Factory）.md",
+  "sourceDigest": "757e1f28706525da8dca7b8a5bf04a114c737896eabd3cf659e585970f0f43f7",
+  "postTitle": "设计模式（二）抽象工厂（Abstract Factory）",
+  "date": "2022-09-10T22:22:42+10:00",
+  "dateText": "Sep 10, 2022",
+  "tags": [
+    "设计模式"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover1.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/09/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E4%B8%80-%E7%AE%80%E4%BB%8B/\">\n        <img class=\"post__nav-image lazy\" data-src=\"\" alt=\"设计模式（一）简介\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">设计模式（一）简介</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/09/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E4%B8%89-%E7%94%9F%E6%88%90%E5%99%A8-Builder/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover1.png\" alt=\"设计模式（三）生成器（Builder）\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">设计模式（三）生成器（Builder）</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/09/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E4%B8%89-%E7%94%9F%E6%88%90%E5%99%A8-Builder/",
+        "src": "/images/covers/操作系统-cover1.png",
+        "alt": "设计模式（三）生成器（Builder）"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 7 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-09-10T23:00:42+10:00\">Sep 10, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "设计模式（三）生成器（Builder）",
+      "title": "设计模式（三）生成器（Builder）",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F\" class=\"article__tag\">设计模式</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": null,
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-09-10T21:45:18+10:00\">Sep 10, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "设计模式（一）简介",
+      "title": "设计模式（一）简介",
+      "excerptHtml": "设计模式是软件开发人员在软件开发过程中面临的一般问题的解决方案。这些解决方案是众多软件开发人员经过相当长的一段时间的试验和错误总结出来的。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F\" class=\"article__tag\">设计模式</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

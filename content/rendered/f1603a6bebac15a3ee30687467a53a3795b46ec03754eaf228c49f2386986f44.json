@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/04/23/操作系统-十七-调度的概念和层次/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（十七）调度的概念和层次",
+  "description": "进程（Process）是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十七）调度的概念和层次\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十七）调度的概念和层次\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-04-23T19:38:13+10:00\">Apr 23, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（十七）调度的概念和层次</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#调度的概念\" id=\"markdown-toc-调度的概念\">调度的概念</a></li>\n  <li><a href=\"#调度的三个层次\" id=\"markdown-toc-调度的三个层次\">调度的三个层次</a>    <ol>\n      <li><a href=\"#高级调度\" id=\"markdown-toc-高级调度\">高级调度</a></li>\n      <li><a href=\"#低级调度\" id=\"markdown-toc-低级调度\">低级调度</a></li>\n      <li><a href=\"#中级调度\" id=\"markdown-toc-中级调度\">中级调度</a></li>\n    </ol>\n  </li>\n  <li><a href=\"#进程的挂起态与七状态模型\" id=\"markdown-toc-进程的挂起态与七状态模型\">进程的挂起态与七状态模型</a></li>\n  <li><a href=\"#三层调度的联系和对比\" id=\"markdown-toc-三层调度的联系和对比\">三层调度的联系和对比</a></li>\n</ol>\n\n<h2 id=\"调度的概念\">调度的概念</h2>\n<p>背景：\n在银行取款时，普通客户一般先到先服务，但VIP客户可以优先被服务；\n假设有一群人需要使用厕所，他们可以用先排队先使用的方式，也可以经过讨论后时间短的人优先使用。</p>\n\n<p>类似的，当有一堆任务要处理，但由于资源有限，这些事情没法同时处理。这就需要确定<strong>某种规则</strong>来<strong>决定</strong>处理这些任务的<strong>顺序</strong>，这就是“调度”研究的问题。</p>\n\n<h2 id=\"调度的三个层次\">调度的三个层次</h2>\n\n<h3 id=\"高级调度\">高级调度</h3>\n\n<p>作业的定义：一个具体的任务</p>\n\n<p>用户向系统提交一个作业≈用户让操作系统启动一个程序（来处理一个具体的任务）</p>\n\n<p>当用户向系统提交大量作业时，有时内存空间有限，有时无法将用户提交的作业全部放入内存，此时需要采用高级调度，即作业调度的方式，决定哪些程序该优先启动。</p>\n\n<p><strong>高级调度（作业调度）</strong>：按一定的原则从外存的作业后备队列中挑选一个作业调入内存，并创建进程。<strong>每个作业只调入一次，调出一次</strong>。作业调入时会建立PCB，调出时才撤销PCB。</p>\n\n<h3 id=\"低级调度\">低级调度</h3>\n\n<p><strong>低级调度（进程调度/处理机调度）</strong>：按照某种策略从就绪队列中选取一个进程，将处理机分配给它。</p>\n\n<p>进程调度是操作系统中<strong>最基本的一种调度</strong>，在一般的操作系统中都必须配置进程调度。进程调度的<strong>频率很高</strong>，一般几十毫秒一次。</p>\n\n<h3 id=\"中级调度\">中级调度</h3>\n\n<p>在内存不够时，可将某些进程的数据调出外存。等内存空闲或者进程需要运行时再重新调入内存。</p>\n\n<p>暂时调到外存等待的进程状态为<strong>挂起状态</strong>。被挂起的进程PCB会被组织成<strong>挂起队列</strong>。</p>\n\n<p><strong>中级调度（内存调度）</strong>：按照某种策略决定将哪个处于挂起状态的进程重新调入内存。一个进程可能会被多次调出、调入内存，因此<strong>中级调度发生的频率要比高级调度更高</strong>。</p>\n\n<h2 id=\"进程的挂起态与七状态模型\">进程的挂起态与七状态模型</h2>\n\n<p>暂时调到外存等待的进程状态为<strong>挂起状态（挂起态，suspend）</strong>，挂起态又可以进一步细分为<strong>就绪挂起</strong>、<strong>阻塞挂起</strong>两种状态。</p>\n\n<p>加入挂起态后，进程的五状态模型可以扩展到七状态模型：</p>\n\n<p><img src=\"\\images\\posts\\操作系统-进程-七状态模型.jpg\" style=\"     display: block;     margin-left: auto;     margin-right: auto;      zoom:50%;\"></p>\n\n<p>注意“挂起”和“阻塞”的区别，两种状态都是暂时不能获得CPU的服务，但挂起态是将进程映像调到外存去了，而阻塞态下进程映像还在内存中。</p>\n\n<p>有的操作系统会把就绪挂起、阻塞挂起分为两个挂起队列，甚至会根据阻塞原因不同再把阻塞挂起进程进一步细分为多个队列。</p>\n\n<h2 id=\"三层调度的联系和对比\">三层调度的联系和对比</h2>\n\n<table>\n  <thead>\n    <tr>\n      <th>&nbsp;</th>\n      <th>行为</th>\n      <th>调度位置</th>\n      <th>频率</th>\n      <th>对进程状态的影响</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>高级调度（作业调度）</td>\n      <td>按照某种规则，从后备队列中选择合适的作业将其调入内存，并为其创建进程</td>\n      <td>外存→内存（面向作业）</td>\n      <td>最低</td>\n      <td>无→创建态→就绪态</td>\n    </tr>\n    <tr>\n      <td>中级调度（内存调度）</td>\n      <td>按照某种规则，从挂起队列中选择合适的进程将其数据调回内存</td>\n      <td>外存→内存（面向进程）</td>\n      <td>中等</td>\n      <td>挂起态→就绪态（阻塞挂起→阻塞态）</td>\n    </tr>\n    <tr>\n      <td>低级调度（进程调度）</td>\n      <td>按照某种规则，从就绪队列中选择一个进程为其分配处理机</td>\n      <td>内存→CPU</td>\n      <td>最高</td>\n      <td>就绪态→运行态</td>\n    </tr>\n  </tbody>\n</table>\n\n    ",
+  "source": "content/posts/zh-cn/2022-04-23-操作系统（十七）调度的概念和层次.md",
+  "sourceDigest": "692fed163466eea2bee50a43ed4e1dcf5931c3969a9b379213ddc80be3c6e4aa",
+  "postTitle": "操作系统（十七）调度的概念和层次",
+  "date": "2022-04-23T19:38:13+10:00",
+  "dateText": "Apr 23, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover2.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/04/23/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%8D%81%E5%85%AD-%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%8A%B6%E6%80%81%E4%B8%8E%E8%BD%AC%E6%8D%A2/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十六）线程的状态与转换\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（十六）线程的状态与转换</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/04/23/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%8D%81%E5%85%AB-%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%9A%84%E6%97%B6%E6%9C%BA-%E5%88%87%E6%8D%A2%E4%B8%8E%E8%BF%87%E7%A8%8B-%E6%96%B9%E5%BC%8F/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（十八）进程调度的时机、切换与过程、方式\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（十八）进程调度的时机、切换与过程、方式</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}

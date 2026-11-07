@@ -1,0 +1,153 @@
+{
+  "route": "/zh-cn/tags/javascript/",
+  "lang": "zh-cn",
+  "kind": "archive",
+  "title": "JavaScript",
+  "description": "",
+  "headerClass": "header header--top",
+  "heroHtml": "<section class=\"hero\">\n  <div class=\"hero__inner\">\n    <div class=\"hero__image\">\n      <img class=\"lazy\" data-src=\"https://bing.biturl.top/?resolution=1920&amp;format=image&amp;index=0&amp;mkt=en-US\" alt=\"JavaScript\">\n    </div>\n    <div class=\"hero__content\">\n      <div class=\"row\">\n        <div class=\"col col-8 col-d-10 col-m-12 push-m-0 push-d-1 push-2\">\n          <div class=\"archive-box\">\n            \n                <h1 class=\"archive-title\">JavaScript</h1>\n              \n            <span class=\"archive-meta\">10 posts found.</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+  "contentHtml": "",
+  "cards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/16/redux-2/",
+        "src": "/images/covers/react.png",
+        "alt": "Redux词汇表"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 11 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-16T12:08:53+10:00\">Sep 16, 2024</time>\n        </span>\n      ",
+      "titleHtml": "Redux词汇表",
+      "title": "Redux词汇表",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/16/redux-1/",
+        "src": "/images/covers/react.png",
+        "alt": "Redux三大原则"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 16 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-16T11:10:27+10:00\">Sep 16, 2024</time>\n        </span>\n      ",
+      "titleHtml": "Redux三大原则",
+      "title": "Redux三大原则",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/15/react-hook-6/",
+        "src": "/images/covers/react.png",
+        "alt": "React Hook（六） —— useReducer"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 17 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-15T13:15:36+10:00\">Sep 15, 2024</time>\n        </span>\n      ",
+      "titleHtml": "React Hook（六） —— useReducer",
+      "title": "React Hook（六） —— useReducer",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/15/react-hook-5/",
+        "src": "/images/covers/react.png",
+        "alt": "React Hook（五） —— useContext"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 20 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-15T09:08:47+10:00\">Sep 15, 2024</time>\n        </span>\n      ",
+      "titleHtml": "React Hook（五） —— useContext",
+      "title": "React Hook（五） —— useContext",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/14/react-hook-4/",
+        "src": "/images/covers/react.png",
+        "alt": "React Hook（四） —— useEffect"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 15 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-14T13:32:18+10:00\">Sep 14, 2024</time>\n        </span>\n      ",
+      "titleHtml": "React Hook（四） —— useEffect",
+      "title": "React Hook（四） —— useEffect",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/13/react-hook-3/",
+        "src": "/images/covers/react.png",
+        "alt": "React Hook（三） —— useMemo"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 12 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-13T19:43:54+10:00\">Sep 13, 2024</time>\n        </span>\n      ",
+      "titleHtml": "React Hook（三） —— useMemo",
+      "title": "React Hook（三） —— useMemo",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/13/react-hook-2/",
+        "src": "/images/covers/react.png",
+        "alt": "React Hook（二） —— useRef"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 23 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-13T16:54:01+10:00\">Sep 13, 2024</time>\n        </span>\n      ",
+      "titleHtml": "React Hook（二） —— useRef",
+      "title": "React Hook（二） —— useRef",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/12/react-hook-1/",
+        "src": "/images/covers/react.png",
+        "alt": "React Hook（一） —— useState"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 20 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-12T23:12:18+10:00\">Sep 12, 2024</time>\n        </span>\n      ",
+      "titleHtml": "React Hook（一） —— useState",
+      "title": "React Hook（一） —— useState",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/12/react-2/",
+        "src": "/images/covers/react.png",
+        "alt": "React设计思想（二） —— React calls Components and Hooks"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 13 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-12T18:39:42+10:00\">Sep 12, 2024</time>\n        </span>\n      ",
+      "titleHtml": "React设计思想（二） —— React calls Components and Hooks",
+      "title": "React设计思想（二） —— React calls Components and Hooks",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post animate",
+      "image": {
+        "href": "/zh-cn/react/2024/09/12/react-1/",
+        "src": "/images/covers/react.png",
+        "alt": "React设计思想（一） —— Components and Hooks must be pure"
+      },
+      "featured": false,
+      "metaHtml": "\n        <span class=\"article__minutes\">\n          \n\n阅读时间 18 分钟\n\n\n          <time class=\"article__date\" datetime=\"2024-09-12T11:10:34+10:00\">Sep 12, 2024</time>\n        </span>\n      ",
+      "titleHtml": "React设计思想（一） —— Components and Hooks must be pure",
+      "title": "React设计思想（一） —— Components and Hooks must be pure",
+      "excerptHtml": "",
+      "bottomHtml": "\n\n        \n        <div class=\"article__author\">\n          <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n        </div>\n        \n\n        <div class=\"article__bottom-meta\">\n          \n            <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n          \n          \n            <span>in</span>\n            <span class=\"article-tags\">\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/react\"=\"\">React</a>\n              \n\n                <a class=\"article__tag\" href=\"/zh-cn/tags/javascript\"=\"\">JavaScript</a>\n              \n            </span>\n          \n        </div>\n      "
+    }
+  ],
+  "sectionClass": "hero"
+}

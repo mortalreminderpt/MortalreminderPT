@@ -1,0 +1,68 @@
+{
+  "route": "/zh-cn/2022/05/01/操作系统-三十五-死锁的概念/",
+  "lang": "zh-cn",
+  "kind": "post",
+  "title": "操作系统（三十五）死锁的概念",
+  "description": "进程（Process）是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位。",
+  "headerClass": "header ",
+  "heroHtml": "<section class=\"hero\">\n    <div class=\"hero_post_inner\">\n      <div class=\"hero__image\">\n        <img class=\"lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（三十五）死锁的概念\">\n      </div>\n      <div class=\"hero__post__content\">\n        <div class=\"container\">\n  <div class=\"row\">\n    \n    <div class=\"col col-6 col-t-12\">\n      <div class=\"image-box\">\n        <img class=\"post-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（三十五）死锁的概念\">\n      </div>\n    </div>\n    \n\n    <div class=\"col col-6 col-t-12\">\n      <div class=\"post-head__box\">\n\n        <div class=\"post__meta\">\n          <span class=\"post__minutes\">\n            \n            \n              1 min read\n            \n            <time class=\"post__date\" datetime=\"2022-05-01T14:01:25+10:00\">May 1, 2022</time>\n          </span>\n        </div>\n\n        <h2 class=\"post__title\">操作系统（三十五）死锁的概念</h2>\n\n        <div class=\"post__bottom\">\n\n          <div class=\"post__author\">\n            <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"post__author-image\" src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n          </div>\n\n          <div class=\"post__bottom-meta\">\n            <a href=\"/zh-cn/about/\" class=\"post__author-link\">Mortalreminder PT</a>\n            \n            <span>in</span>\n            <span class=\"post-tags\">\n              \n              <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"post__tag\">操作系统</a>\n              \n            </span>\n            \n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n\n      </div>\n    </div>\n  </section>",
+  "contentHtml": "\n      <ol id=\"markdown-toc\">\n  <li><a href=\"#什么是死锁\" id=\"markdown-toc-什么是死锁\">什么是死锁</a></li>\n  <li><a href=\"#死锁饥饿死循环\" id=\"markdown-toc-死锁饥饿死循环\">死锁、饥饿、死循环</a></li>\n  <li><a href=\"#死锁产生的必要条件\" id=\"markdown-toc-死锁产生的必要条件\">死锁产生的必要条件</a></li>\n  <li><a href=\"#什么时候会发生死锁\" id=\"markdown-toc-什么时候会发生死锁\">什么时候会发生死锁</a></li>\n  <li><a href=\"#死锁的处理策略\" id=\"markdown-toc-死锁的处理策略\">死锁的处理策略</a></li>\n</ol>\n\n<h2 id=\"什么是死锁\">什么是死锁</h2>\n\n<p>在并发环境下，各进程因竞争资源而造成的一种<strong>互相等待对方手里的资源，导进程都阻塞，都无法向前推进的现象，</strong>就是“死锁”。\n发生死锁后若无外力干涉，这些进程都将无法向前推进。</p>\n\n<h2 id=\"死锁饥饿死循环\">死锁、饥饿、死循环</h2>\n\n<ul>\n  <li>死锁：各进程互相等待对方手里的资源，导致各进程都阻塞，无法向前推进的现象。</li>\n  <li>饥饿：由于长期得不到想要的资源，某进程无法向前推进的现象。如在短进程优先（SPF）算法中，若有源源不断的短进程到来，则长进程将一直得不到处理机，从而发生长进程“饥饿”。</li>\n  <li>死循环：某进程执行过程中一直跳不出某个循环的现象。有时是因为程序逻辑bug导致的，有时是程序员故意设计的。</li>\n</ul>\n\n<table>\n    <tbody><tr>\n        <th></th>\n        <th>共同点</th>\n        <th>区别</th>\n    </tr>\n    <tr>\n        <td>死锁</td>    \n        <td rowspan=\"3\">都是进程无法顺利向前推进的现象（故意设计的死循环除外）</td>\n        <td>死锁一定是“循环等待对方手里的资源”导致的，因此如果有死锁现象，那<b>至少有两个或两个以上的进程同时发生死锁</b>。另外，发生死锁的进程一定处于阻塞态。</td>\n    </tr>\n    <tr>\n        <td>饥饿</td>   \n        <td><b>可能只有一个进程发生饥饿</b>。发生饥饿的进程既可能是阻塞态（如长期得不到需要的I/O设备），也可能是就绪态（长期得不到处理机）。</td>\n    </tr>\n    <tr>\n        <td>死循环</td>    \n        <td>可能只有一个进程发生死循环。死循环的进程可以上处理机运行（可以是运行态），只不过无法像期待的那样顺利推进。死锁和饥饿问题是由于操作系统分配资源的策略不合理导致的，而死循环是由代码逻辑的错误导致的。<b>死锁和饥饿是管理者（操作系统）的问题，死循环是被管理者的问题。</b></td>\n    </tr>\n</tbody></table>\n\n<h2 id=\"死锁产生的必要条件\">死锁产生的必要条件</h2>\n\n<p>产生死锁必须同时满足一下四个条件，只要其中任一条件不成立，死锁就不会发生：</p>\n<ul>\n  <li><strong>互斥条件</strong>：只有对必须互斥使用的资源的争抢才会导致死锁（如哲学家的筷子、打印机设备）。像内存、扬声器这样可以同时让多个进程使用的资源是不会导致死锁的（因为进程不用阻塞等待这种资源）；</li>\n  <li><strong>不剥夺条件</strong>：进程所获得的资源在未使用完之前，<strong>不能由其他进程强行夺走</strong>，只能主动释放；</li>\n  <li><strong>请求和保持条件</strong>：进程<strong>已经保持了至少一个资源</strong>，但又提出了新的资源请求，而该资源又被其他进程占有，此时<strong>请求进程被阻塞</strong>，但又对自己<strong>已有的资源保持不放</strong>。</li>\n  <li><strong>循环等待条件</strong>：存在一种进程资源的循环等待链，链中的每一个进程已获得的资源同时被下一个进程所请求。</li>\n</ul>\n\n<p><strong>注意！发生死锁时一定有循环等待，但是发生循环等待时未必死锁</strong>（循环等待是死锁的必要不充分条件）</p>\n\n<p>即，如果<strong>同类型资源数</strong>（可以替换的资源）大于1，则即使有循环等待，也未必发生死锁。\n但如果系统中每类资源都只有一个，那循环等待就是死锁的充分必要条件了。</p>\n\n<h2 id=\"什么时候会发生死锁\">什么时候会发生死锁</h2>\n\n<ol>\n  <li>对系统资源的竞争。各进程对不可剥夺的资源（如打印机）的竞争可能引起死锁，对可剥夺的资源（CPU）的竞争是不会引起死锁的。</li>\n  <li>进程推进顺序非法。请求和释放资源的顺序不当，也同样会导致死锁。例如，并发执行的进程P1、P2分别申请并占有了资源R1、R2，之后进程P1又紧接着申请资源R2，而进程P2又申请资源R1，两者会因为申请的资源被对方占有而阻塞，从而发生死锁。</li>\n  <li>信号量的使用不当也会造成死锁。如生产者-消费者问题中，如果实现互斥的P操作在实现同步的P操作之前，就有可能导致死锁。（可以把互斥信号量、同步信号量也看做是一种抽象的系统资源）</li>\n</ol>\n\n<p>总之，对不可剥夺资源的不合理分配，可能导致死锁。</p>\n\n<h2 id=\"死锁的处理策略\">死锁的处理策略</h2>\n\n<ol>\n  <li>预防死锁。破坏死锁产生的四个必要条件中的一个或几个；</li>\n  <li>避免死锁。用某种方法防止系统进入不安全状态，从而避免死锁（银行家算法）；</li>\n  <li>死锁的检测和解除。允许死锁的发生，不过操作系统会负责检测出死锁的发生，然后采取某种措施解除死锁。</li>\n</ol>\n\n    ",
+  "source": "content/posts/zh-cn/2022-05-01-操作系统（三十五）死锁的概念.md",
+  "sourceDigest": "7122bafda668bd92e735de1cc33bf9a41883fd8576e6a368c44b9e669dafd24c",
+  "postTitle": "操作系统（三十五）死锁的概念",
+  "date": "2022-05-01T14:01:25+10:00",
+  "dateText": "May 1, 2022",
+  "tags": [
+    "操作系统"
+  ],
+  "categories": [],
+  "image": "/images/covers/操作系统-cover2.png",
+  "featured": false,
+  "navigationHtml": "<div class=\"post__navigation\">\n      \n      <a class=\"prev\" href=\"/zh-cn/2022/04/30/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%B8%89%E5%8D%81%E5%9B%9B-%E7%AE%A1%E7%A8%8B/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（三十四）管程\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__prev\"><i class=\"ion ion-md-arrow-round-back\"></i> 上一篇</div>\n          <h4 class=\"post__nav__title\">操作系统（三十四）管程</h4>\n        </div>\n      </a>\n      \n      \n      <a class=\"next\" href=\"/zh-cn/2022/05/01/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%B8%89%E5%8D%81%E5%85%AD-%E6%AD%BB%E9%94%81%E7%9A%84%E9%A2%84%E9%98%B2/\">\n        <img class=\"post__nav-image lazy\" data-src=\"/images/covers/操作系统-cover2.png\" alt=\"操作系统（三十六）死锁的预防\">\n        <div class=\"post__nav-box\">\n          <div class=\"post__nav post__nav__next\">下一篇 <i class=\"ion ion-md-arrow-forward\"></i></div>\n          <h4 class=\"post__nav__title\">操作系统（三十六）死锁的预防</h4>\n        </div>\n      </a>\n      \n    </div>",
+  "relatedClass": "related-posts is-related",
+  "relatedTitle": "相关阅读",
+  "relatedCards": [
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%89-%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十三）动态分区分配算法"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 1 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T19:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十三）动态分区分配算法",
+      "title": "操作系统（四十三）动态分区分配算法",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%BA%8C-%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十二）连续分配管理方式"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 10 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T18:01:06+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十二）连续分配管理方式",
+      "title": "操作系统（四十二）连续分配管理方式",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    },
+    {
+      "className": "article col col-4 col-d-6 col-t-12 grid__post",
+      "image": {
+        "href": "/zh-cn/2022/05/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%9B%9B%E5%8D%81%E4%B8%80-%E8%A6%86%E7%9B%96%E4%B8%8E%E4%BA%A4%E6%8D%A2/",
+        "src": "/images/covers/操作系统-cover4.jpg",
+        "alt": "操作系统（四十一）覆盖与交换"
+      },
+      "featured": false,
+      "metaHtml": "\n                    <span class=\"article__minutes\">\n                      \n                      \n\n阅读时间 6 分钟\n\n\n                      <time class=\"article__date\" datetime=\"2022-05-03T17:35:13+10:00\">May 3, 2022</time>\n                    </span>\n                  ",
+      "titleHtml": "操作系统（四十一）覆盖与交换",
+      "title": "操作系统（四十一）覆盖与交换",
+      "excerptHtml": "内存（Memory）是计算机的重要部件，也称内存储器和主存储器，它用于暂时存放CPU中的运算数据，以及与硬盘等外部存储器交换的数据，是外存与CPU进行沟通的桥梁。",
+      "bottomHtml": "\n\n                    \n                    <div class=\"article__author\">\n                      <a href=\"/zh-cn/about/\" aria-label=\"Mortalreminder PT\"><img class=\"article__author-image lazy\" data-src=\"https://q.qlogo.cn/headimg_dl?dst_uin=2656453168&amp;spec=140&amp;img_type=jpg\" alt=\"Mortalreminder PT's Picture\"></a>\n                    </div>\n                    \n\n                    <div class=\"article__bottom-meta\">\n                      \n                        <a href=\"/zh-cn/about/\" class=\"article__author-link\">Mortalreminder PT</a>\n                      \n                      \n                      <span>in</span>\n                      <span class=\"article-tags\">\n                        \n                          <a href=\"/zh-cn/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\" class=\"article__tag\">操作系统</a>\n                        \n                      </span>\n                      \n                    </div>\n                  "
+    }
+  ]
+}
