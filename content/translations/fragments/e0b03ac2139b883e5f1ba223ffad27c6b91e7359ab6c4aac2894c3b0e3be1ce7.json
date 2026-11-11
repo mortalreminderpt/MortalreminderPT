@@ -1,0 +1,4 @@
+{
+  "key": "e0b03ac2139b883e5f1ba223ffad27c6b91e7359ab6c4aac2894c3b0e3be1ce7",
+  "text": "### **Three-Way Handshake**\nThe purpose of the three-way handshake is to protect communication from the following problems:\n- **Duplicate CR (Connect Request)**: Duplicate connection requests.\n- **Duplicate CR and DATA**: Duplicate connection requests and data. Identical data combined with an incorrect ACK will be rejected."
+}

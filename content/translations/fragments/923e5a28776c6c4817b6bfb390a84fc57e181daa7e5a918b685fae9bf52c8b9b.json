@@ -1,0 +1,4 @@
+{
+  "key": "923e5a28776c6c4817b6bfb390a84fc57e181daa7e5a918b685fae9bf52c8b9b",
+  "text": "Some processes may need to do many things \"simultaneously\", while traditional processes can only execute a series of programs serially. For this reason, \"threads\" were introduced to increase the degree of concurrency."
+}

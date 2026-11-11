@@ -1,0 +1,4 @@
+{
+  "key": "68c53953bf99e67a23042ad41dab6a3e0147d983812c7afef9259dff91db716c",
+  "text": "- A **system** should be **independent of how its products** are created, composed, and represented;\n- A **system** should be configured with **one of multiple product families**;\n- The **design of a series of related product objects** should be emphasized for **joint use**;\n- Provide a **product class library**, but only **expose their interfaces** rather than their implementations."
+}

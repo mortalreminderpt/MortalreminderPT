@@ -1,0 +1,4 @@
+{
+  "key": "071913cd79780ff8895f9fd22b24f0950ff294c077fb1e366ac5b04aec12e751",
+  "text": "⟦MC_23407f5dd4f3e808_0⟧\n- mutex: mutual exclusion is achieved by performing a pair of PV operations within the same process.\n- empty/full: the synchronization relationship between the two processes is achieved by executing P in one process and V in the other."
+}

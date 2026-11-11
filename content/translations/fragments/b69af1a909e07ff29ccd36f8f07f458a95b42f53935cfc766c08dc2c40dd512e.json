@@ -1,0 +1,4 @@
+{
+  "key": "b69af1a909e07ff29ccd36f8f07f458a95b42f53935cfc766c08dc2c40dd512e",
+  "text": "In this algorithm, multiple readers entering consecutively can read the file simultaneously; writers and other processes cannot access the file simultaneously; writers will not starve, but it is not truly \"writer priority\" either; rather, it is the **relatively fair first-come, first-served principle.**\nThis algorithm is also called the \"read-write fair method\"."
+}

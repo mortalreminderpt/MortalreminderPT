@@ -1,0 +1,4 @@
+{
+  "key": "bd24a85ffe6e28868263d4182bdf532dc82642c8c8bf652709634f41a90acaae",
+  "text": "- **Avoid performance issues**: For Context that passes objects or functions, use ⟦MC_441142c51381d613_1⟧ or ⟦MC_2ec8a423b147e09f_1⟧ to optimize and avoid unnecessary re-renders."
+}

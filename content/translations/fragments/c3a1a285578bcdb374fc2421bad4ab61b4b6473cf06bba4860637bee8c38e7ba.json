@@ -1,0 +1,4 @@
+{
+  "key": "c3a1a285578bcdb374fc2421bad4ab61b4b6473cf06bba4860637bee8c38e7ba",
+  "text": "### Breaking the No Preemption Condition\nNo preemption condition: Resources obtained by a process cannot be forcibly taken away by other processes before they are used up; they can only be released voluntarily."
+}

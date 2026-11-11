@@ -1,0 +1,4 @@
+{
+  "key": "f50ea967d923b8d09bf58eb271caf14fbe533a535944b5fd082efdb2bd425122",
+  "text": "During the execution of program instructions, many \"registers\" are set in the CPU to store certain data needed during program execution, such as:\n- PSW: Program Status Word register\n- PC: Program Counter, stores the address of the next instruction\n- IR: Instruction Register, stores the instruction currently being executed\n- General-purpose registers: store other necessary information"
+}

@@ -1,0 +1,4 @@
+{
+  "key": "cf69e27af0eda6114d14aaeee386b2adc3e3a482ac618dba926851b612614256",
+  "text": "Compared with early batch processing operating systems, since the cost of computers has dropped significantly, the interactive operating systems that appeared later (including time-sharing operating systems, real-time operating systems, etc.) pay more attention to metrics such as system response time, fairness, and balance.\nThese algorithms happen to satisfy the needs of interactive systems well. Therefore, **these three algorithms are suitable for interactive systems**. (For example, UNIX uses the multi-level feedback queue scheduling algorithm.)"
+}

@@ -1,0 +1,4 @@
+{
+  "key": "df7ae9c8dcbda9acb20a4b7cc3c42dcfa281e39ca5ea519abf7b84ae63b90928",
+  "text": "1. **Non-Adaptive Algorithms**\n   - A static decision process: the algorithm has already determined the routes at design time and does not adjust them based on the actual network conditions.\n   - Example: Static Routing."
+}

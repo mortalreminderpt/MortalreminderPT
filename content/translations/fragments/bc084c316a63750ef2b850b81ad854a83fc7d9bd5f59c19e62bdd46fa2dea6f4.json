@@ -1,0 +1,4 @@
+{
+  "key": "bc084c316a63750ef2b850b81ad854a83fc7d9bd5f59c19e62bdd46fa2dea6f4",
+  "text": "An operating system mainly has four characteristics: concurrency, sharing, virtualization, and asynchrony. Among them, concurrency and sharing are mutually conditional for each other's existence, and without concurrency and sharing, virtualization and asynchrony cannot be discussed. Therefore, **concurrency and sharing are the two most fundamental characteristics of an operating system**."
+}

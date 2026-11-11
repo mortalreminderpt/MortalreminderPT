@@ -1,0 +1,4 @@
+{
+  "key": "2c3689b7d03cbec6a2a476245dd7b402078c705dcf3ffbfdb2cd106cfee1f620",
+  "text": "If a new Context is created or provided inside the component that calls ⟦MC_2af479ca3392eccf_8⟧, ⟦MC_2af479ca3392eccf_9⟧ will not be able to obtain the expected value. ⟦MC_2af479ca3392eccf_10⟧ can only subscribe to Providers that are higher than the current component in the component tree."
+}

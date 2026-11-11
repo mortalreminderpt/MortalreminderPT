@@ -1,0 +1,4 @@
+{
+  "key": "d8bd3a6a2e55cef55b47d84ec621888846756c87536351510a1a99f411d77142",
+  "text": "For example, using QQ to send file A while using WeChat to send file B. Macroscopically, both sides are reading and sending files at the same time, indicating that both processes are accessing the hard disk resource and reading data from it. Microscopically, the two processes access the hard disk alternately."
+}

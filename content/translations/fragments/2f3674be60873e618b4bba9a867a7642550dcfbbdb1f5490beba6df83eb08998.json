@@ -1,0 +1,4 @@
+{
+  "key": "2f3674be60873e618b4bba9a867a7642550dcfbbdb1f5490beba6df83eb08998",
+  "text": "### Potential Challenges of DNS Queries\n- Single point of failure\n- Traffic congestion\n- Remote queries\n- Service maintenance issues\n- Query response speed may be limited\n- Front-end scaling presents computational challenges"
+}

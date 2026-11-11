@@ -1,0 +1,4 @@
+{
+  "key": "09986fc28c82ad9df9eafe4e71a0fd2a2ceb42f743f8023a5c091d0102501979",
+  "text": "#### 2. Iterative Query\n- The contacted server replies with the name of the server to contact\n- If the queried server is not authoritative for the queried domain, the query issuer will accept a referral to another name server"
+}

@@ -1,0 +1,4 @@
+{
+  "key": "0c16bdf4163d918d01f71cf39ebd8d05e584c78f2d500ac6731eda37bfe8d9f2",
+  "text": "The second argument of ⟦MC_01a812598bf19cab_4⟧ is the dependency array, which must include all external variables used in the side effect (props, state, and functions and variables defined inside the component). Omitting dependencies may cause the side effect to fail to update in time, or trigger an infinite loop."
+}

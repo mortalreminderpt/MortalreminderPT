@@ -1,0 +1,4 @@
+{
+  "key": "b4e5e0327648ea8d61e9eadca01ca663eee34d1ac550591edac9c76897198b1b",
+  "text": "## Type 1 Virtual Machine\nThe Type 1 virtual machine manager runs directly on the hardware. The virtual machine manager virtualizes one physical machine into multiple virtual machines.\nThe Type 1 virtual machine manager divides the overall hardware resources into multiple parts, and each virtual machine can have its own operating system installed, as shown in the figure below:"
+}

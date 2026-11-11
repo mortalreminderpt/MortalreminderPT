@@ -1,0 +1,4 @@
+{
+  "key": "6398bc8e13aff124121fa1ec896cc936dc012ed60d82f69ebdbfd0f162f2329f",
+  "text": "In operating systems with swapping functionality, disk space is usually divided into two parts: the **file area** and the **swap area**.\n**The file area is mainly used to store files**, and mainly **pursues storage space utilization**, so the management of file area space **adopts discrete allocation**;\n**The swap area** occupies only a **small part** of disk space, and **the data of swapped-out processes is stored in the swap area**.\nBecause the speed of swapping directly affects the overall speed of the system, **the management of swap area space mainly pursues swap-in and swap-out speed, so the swap area usually adopts continuous allocation**.\nIn short, **the I/O speed of the swap area is faster than that of the file area**."
+}

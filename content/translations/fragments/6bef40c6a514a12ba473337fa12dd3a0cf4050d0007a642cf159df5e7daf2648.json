@@ -1,0 +1,4 @@
+{
+  "key": "6bef40c6a514a12ba473337fa12dd3a0cf4050d0007a642cf159df5e7daf2648",
+  "text": "It includes four parts in total:\n1. The time the job waits in the backup queue in external storage for job scheduling (high-level scheduling);\n2. The time the process waits in the ready queue for process scheduling (low-level scheduling, ready state);\n3. The time the process executes on the CPU (running state);\n4. The time the process waits for I/O operations to complete (blocked state)."
+}

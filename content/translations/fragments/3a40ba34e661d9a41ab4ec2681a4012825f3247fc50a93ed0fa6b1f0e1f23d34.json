@@ -1,0 +1,4 @@
+{
+  "key": "3a40ba34e661d9a41ab4ec2681a4012825f3247fc50a93ed0fa6b1f0e1f23d34",
+  "text": "⟦MC_01a812598bf19cab_7⟧ must be called at the top level of the component, and cannot be called inside conditional statements, loops, or nested functions. This is one of the rules of React Hooks, ensuring that the order in which Hooks are called is consistent on every render."
+}

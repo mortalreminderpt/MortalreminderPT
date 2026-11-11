@@ -1,0 +1,4 @@
+{
+  "key": "0ce4fcb22afc2933de009d6868bce38919eedc124d673314223bcdfc4b7d188d",
+  "text": "That is, if the **number of resources of the same type** (replaceable resources) is greater than 1, then even if there is circular waiting, deadlock may not occur.\nBut if there is only one resource of each type in the system, then circular waiting is a necessary and sufficient condition for deadlock."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "8cacb878f62032995cbc387a8af618f88f37c8e431d3b96ef6c22f3022eb4d15",
+  "text": "## Intent\n**Separate the construction of a complex object from its representation** so that **the same construction process can create different representations**"
+}

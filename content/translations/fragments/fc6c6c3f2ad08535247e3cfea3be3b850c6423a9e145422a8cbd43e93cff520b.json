@@ -1,0 +1,4 @@
+{
+  "key": "fc6c6c3f2ad08535247e3cfea3be3b850c6423a9e145422a8cbd43e93cff520b",
+  "text": "Redux's design is partly inspired by the Flux architecture and the architectural pattern of the Elm programming language, but through simplification and optimization it makes state management more intuitive and efficient. Since its release, Redux has become a widely used state management library in front-end development and has a large community and a rich ecosystem of support."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "9704de0e5585aa2b6f3ea13c4ba4638a63c186365c7721d3cc628c05620966f6",
+  "text": "If the critical resource accessed by a kernel program critical section is not released as soon as possible, it is very likely to affect other management work of the operating system kernel. Therefore, scheduling and switching cannot be performed while accessing a kernel program critical section."
+}

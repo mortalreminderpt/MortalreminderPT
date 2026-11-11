@@ -1,0 +1,4 @@
+{
+  "key": "67389a2fac09ba14d0e6111371b6411255195c3d6103e5fe2bfa19dfd2635e3b",
+  "text": "In a multiprogramming environment, multiple programs execute concurrently in the system, which means the data of multiple programs needs to be placed in memory at the same time.\nSo how do we distinguish where each program's data is stored?"
+}

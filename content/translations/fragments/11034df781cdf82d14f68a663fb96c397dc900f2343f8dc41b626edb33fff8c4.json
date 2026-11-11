@@ -1,0 +1,4 @@
+{
+  "key": "11034df781cdf82d14f68a663fb96c397dc900f2343f8dc41b626edb33fff8c4",
+  "text": "The data link layer plays a key role in computer networking:  \n- Provides reliable frame transmission services.  \n- Implements effective error detection and correction.  \n- Manages communication between adjacent nodes.  \n- Provides a robust interface for the network layer, improving the communication efficiency and reliability of the entire network."
+}

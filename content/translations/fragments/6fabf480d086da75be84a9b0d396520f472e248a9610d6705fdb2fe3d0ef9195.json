@@ -1,0 +1,4 @@
+{
+  "key": "6fabf480d086da75be84a9b0d396520f472e248a9610d6705fdb2fe3d0ef9195",
+  "text": "**Non-preemptive scheduling mode, also called non-preemptive mode**. That is, processes are only allowed to voluntarily relinquish the processor. During execution, even if a more urgent task arrives, the current process will continue to use the processor until it terminates or voluntarily requests to enter the blocked state."
+}

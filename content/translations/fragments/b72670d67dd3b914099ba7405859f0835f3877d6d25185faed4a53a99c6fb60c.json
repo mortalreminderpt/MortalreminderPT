@@ -1,0 +1,4 @@
+{
+  "key": "b72670d67dd3b914099ba7405859f0835f3877d6d25185faed4a53a99c6fb60c",
+  "text": "1. The kernel is large and its functionality is complex, making it difficult to maintain;\n2. An error in a certain functional module in the kernel may cause the entire system to crash."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "5453422c17ba019fa19c200b1fd95134e57865e677cf58d9ef540ac449727991",
+  "text": "Similarly, when there is a pile of tasks to process, but due to limited resources, these things cannot be processed at the same time. This requires determining **some kind of rule** to **decide** the **order** in which these tasks are processed, and this is the problem studied by \"scheduling\"."
+}

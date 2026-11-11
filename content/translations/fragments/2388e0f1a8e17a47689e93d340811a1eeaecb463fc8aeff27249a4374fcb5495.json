@@ -1,0 +1,4 @@
+{
+  "key": "2388e0f1a8e17a47689e93d340811a1eeaecb463fc8aeff27249a4374fcb5495",
+  "text": "## Motivation\nAn RTF reader should be able to convert RTF into a variety of text formats.\nThe reader can convert an RTF document into ASCII text or into a text window component that can be edited interactively.\nHowever, the number of possible conversions is unlimited, so it should be easy to add new conversions without changing the RTF reader."
+}

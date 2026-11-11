@@ -1,0 +1,4 @@
+{
+  "key": "3534d45aa236f66fa15130115a666673721c83b30507dea8ce4fe97bf8cbe11d",
+  "text": "Non-preemptive scheduling is simple to implement and has low system overhead, but it cannot handle urgent tasks in a timely manner. It is suitable for early batch processing systems."
+}

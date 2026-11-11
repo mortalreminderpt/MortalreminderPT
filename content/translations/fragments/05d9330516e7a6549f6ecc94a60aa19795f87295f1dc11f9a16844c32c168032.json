@@ -1,0 +1,4 @@
+{
+  "key": "05d9330516e7a6549f6ecc94a60aa19795f87295f1dc11f9a16844c32c168032",
+  "text": "#### TCP Header field analysis\n1. **Source Port and Destination Port**: Source port and destination port, used to identify the sender and receiver.\n2. **Sequence Number**: Used to mark the order of packets.\n3. **Acknowledgement Number**: Marks the packets that the receiver has received.\n4. **Flags**: Switches that control data behavior (such as SYN, ACK, FIN).\n5. **Window Size**: The receiver's window size, indicating the amount of data that can be received at one time.\n6. **Checksum**: Used to check data integrity.\n7. **Urgent Pointer**: Indicates urgent data.\n8. **Options and Data**: Optional items and data content."
+}

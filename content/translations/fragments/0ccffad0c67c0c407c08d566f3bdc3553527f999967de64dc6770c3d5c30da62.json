@@ -1,0 +1,4 @@
+{
+  "key": "0ccffad0c67c0c407c08d566f3bdc3553527f999967de64dc6770c3d5c30da62",
+  "text": "**Comparison:**\n- Pure ALOHA has lower latency under low load, but a higher collision rate.\n- Slotted ALOHA reduces collisions through synchronized transmission, but introduces some latency."
+}

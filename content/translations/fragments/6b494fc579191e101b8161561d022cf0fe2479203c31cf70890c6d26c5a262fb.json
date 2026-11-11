@@ -1,0 +1,4 @@
+{
+  "key": "6b494fc579191e101b8161561d022cf0fe2479203c31cf70890c6d26c5a262fb",
+  "text": "- **Follow the Hooks rules**: ⟦MC_2af479ca3392eccf_20⟧ must be called at the top level of a component and cannot be called in loops, conditions, or nested functions."
+}

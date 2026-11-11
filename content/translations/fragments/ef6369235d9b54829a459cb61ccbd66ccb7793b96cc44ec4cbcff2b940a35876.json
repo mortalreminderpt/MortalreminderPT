@@ -1,0 +1,4 @@
+{
+  "key": "ef6369235d9b54829a459cb61ccbd66ccb7793b96cc44ec4cbcff2b940a35876",
+  "text": "### **TCP Window Management**\n- TCP ensures correct receipt of segments through an acknowledgement mechanism.\n- The receiver adjusts the window size according to buffer space."
+}

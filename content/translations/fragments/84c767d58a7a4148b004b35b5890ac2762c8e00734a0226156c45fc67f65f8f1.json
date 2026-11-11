@@ -1,0 +1,4 @@
+{
+  "key": "84c767d58a7a4148b004b35b5890ac2762c8e00734a0226156c45fc67f65f8f1",
+  "text": "**Deadlock Theorem**: If at some moment the system's resource allocation graph is **not completely reducible**, then the system is deadlocked at that time."
+}

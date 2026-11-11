@@ -1,0 +1,4 @@
+{
+  "key": "d77ef8d44bdc3931fa49d11940a25ace35abc101899b2cdf6418b595532b28b3",
+  "text": "**Data-structure-based** sharing: for example, the shared space can only hold an array of length 10. This sharing method is slow and has many restrictions; it is a **low-level communication** method."
+}

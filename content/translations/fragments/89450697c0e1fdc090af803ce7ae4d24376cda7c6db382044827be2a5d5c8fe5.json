@@ -1,0 +1,4 @@
+{
+  "key": "89450697c0e1fdc090af803ce7ae4d24376cda7c6db382044827be2a5d5c8fe5",
+  "text": "#### 1. Non-persistent HTTP\n- Each TCP connection transmits only one object\n- A new TCP connection is established for each request/response pair"
+}

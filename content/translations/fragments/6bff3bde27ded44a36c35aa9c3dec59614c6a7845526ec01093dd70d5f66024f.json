@@ -1,0 +1,4 @@
+{
+  "key": "6bff3bde27ded44a36c35aa9c3dec59614c6a7845526ec01093dd70d5f66024f",
+  "text": "### Breaking the Circular Wait Condition\nCircular wait condition: There exists a circular wait chain of process resources, in which the resource already obtained by each process in the chain is simultaneously requested by the next process."
+}

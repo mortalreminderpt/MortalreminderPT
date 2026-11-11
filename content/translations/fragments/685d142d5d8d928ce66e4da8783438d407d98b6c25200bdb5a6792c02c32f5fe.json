@@ -1,0 +1,4 @@
+{
+  "key": "685d142d5d8d928ce66e4da8783438d407d98b6c25200bdb5a6792c02c32f5fe",
+  "text": "Computers running time-sharing operating systems **take turns serving each user/job** in units of **time slices**, and each user can interact with the computer through a terminal."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "55693032bda7e668c08527690e53fd437f6fca88a8d05783fc927c2f0713e323",
+  "text": "⟦MC_441142c51381d613_0⟧ is a Hook provided by React that caches the result of a computation between re-renders of a component. It accepts a \"create function\" and a dependency array; when the dependencies change, the value is recomputed; otherwise, the cached value is returned. It is mainly used to optimize performance and avoid performing time-consuming computations on every render."
+}

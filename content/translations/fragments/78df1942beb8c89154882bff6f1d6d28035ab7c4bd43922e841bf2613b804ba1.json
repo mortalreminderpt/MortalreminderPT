@@ -1,0 +1,4 @@
+{
+  "key": "78df1942beb8c89154882bff6f1d6d28035ab7c4bd43922e841bf2613b804ba1",
+  "text": "One of the most common uses of ⟦MC_ece0da93fe9e23ff_6⟧ is to directly access DOM elements. We can assign the ⟦MC_d20227eff778d4bc_1⟧ object to the ⟦MC_d20227eff778d4bc_2⟧ attribute of a JSX element, and React will assign the corresponding DOM element to ⟦MC_da756e7954773222_4⟧ when the component mounts."
+}

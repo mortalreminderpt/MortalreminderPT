@@ -1,0 +1,4 @@
+{
+  "key": "558edcfadef7ed6b7de5a93e8df57aca23407dfa0644439bc2e4924d09be6242",
+  "text": "### Limitations of Simple Download\n- Media files must be fully downloaded before playback\n- Users must wait for the download to complete\n- Primarily assumes point-to-point data distribution"
+}

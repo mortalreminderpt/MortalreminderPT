@@ -1,0 +1,4 @@
+{
+  "key": "8f22f78153855d58d955a8b099d29e69e1cb579038dadec6369f5c23f99cb154",
+  "text": "### Partition Reclamation\n1. If there is an adjacent free partition after the reclaimed area, merge the two adjacent free partitions into one;\n2. If there is an adjacent free partition before the reclaimed area, merge the two adjacent free partitions into one;\n3. If there is an adjacent free partition both before and after the reclaimed area, merge the three adjacent free partitions into one;\n4. If there is no adjacent free partition before or after the reclaimed area, add a new table entry."
+}

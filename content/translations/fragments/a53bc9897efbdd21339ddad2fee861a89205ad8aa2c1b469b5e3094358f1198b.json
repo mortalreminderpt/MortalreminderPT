@@ -1,0 +1,4 @@
+{
+  "key": "a53bc9897efbdd21339ddad2fee861a89205ad8aa2c1b469b5e3094358f1198b",
+  "text": "Modularization is the division of an operating system by function into several modules with a certain degree of independence. Each module has management functionality in some aspect, and **the interfaces between the modules are specified** so that the modules can communicate through the interfaces.\nEach module can be further subdivided into several submodules with certain functions, and **the interfaces between the submodules are likewise specified**.\nThis design method is called the **module-interface approach**. The following figure shows a modular operating system structure composed of modules, submodules, and so on:"
+}

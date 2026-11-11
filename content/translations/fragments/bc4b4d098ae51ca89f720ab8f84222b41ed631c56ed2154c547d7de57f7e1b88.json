@@ -1,0 +1,4 @@
+{
+  "key": "bc4b4d098ae51ca89f720ab8f84222b41ed631c56ed2154c547d7de57f7e1b88",
+  "text": "## Storage Protection\nThe operating system needs to provide a **memory protection** function. It ensures that each process runs within its own storage space without interfering with others.\nMemory protection can adopt two methods:\n1. **Set a pair of upper and lower limit registers** in the CPU to store the upper and lower limit addresses of the process.\nWhen an instruction of the process needs to access an address, the CPU checks whether it is out of bounds.\n2. Use a **relocation register** (also called the **base address register**) and a **bound address register** (also called the **limit length register**) to perform out-of-bounds checks.\nThe relocation register stores **the starting physical address of the process**, and the bound address register stores **the maximum logical address of the process**."
+}

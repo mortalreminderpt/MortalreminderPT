@@ -1,0 +1,4 @@
+{
+  "key": "34c01a2860d83e96be69c0a90be2aa733cfa0ac9d04022599389f7e5e163875e",
+  "text": "## Kernel Mode and User Mode of the Processor\nAlthough the CPU can determine the instruction type, how does it distinguish whether a kernel program or an application program is currently running?"
+}

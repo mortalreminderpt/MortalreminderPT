@@ -1,0 +1,4 @@
+{
+  "key": "1fbf9a4725eeb0a02ffcb88eca7852d6b5b3d1af8a1cbb750b19080256d1d8f3",
+  "text": "When updating state in a side effect, be careful to avoid triggering an infinite loop. Make sure that state updates do not cause the side effect to run repeatedly, unless that is intentional."
+}

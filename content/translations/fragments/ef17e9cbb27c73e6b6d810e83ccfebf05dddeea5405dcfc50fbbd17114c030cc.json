@@ -1,0 +1,4 @@
+{
+  "key": "ef17e9cbb27c73e6b6d810e83ccfebf05dddeea5405dcfc50fbbd17114c030cc",
+  "text": "1. **Idempotency**: Components and Hooks should be idempotent, that is, given the same inputs (such as ⟦MC_f34e540923455820_0⟧, ⟦MC_7727f8cb300c38ed_0⟧, and ⟦MC_fb017ec5f53a6dd6_0⟧), they always produce the same output. Functions like ⟦MC_4574e93916ea45ee_0⟧ or ⟦MC_02739300f247ce29_0⟧ cannot be used during rendering because they generate a different result every time."
+}

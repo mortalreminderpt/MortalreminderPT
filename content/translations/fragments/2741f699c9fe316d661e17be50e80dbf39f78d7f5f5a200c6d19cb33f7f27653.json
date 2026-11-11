@@ -1,0 +1,4 @@
+{
+  "key": "2741f699c9fe316d661e17be50e80dbf39f78d7f5f5a200c6d19cb33f7f27653",
+  "text": "- The PCB is for the operating system to use;\n- The program segment and data segment are for the process itself to use and are related to the process's own execution logic."
+}

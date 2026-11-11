@@ -1,0 +1,4 @@
+{
+  "key": "267ee192cac9367131c41c11a59e786ebe6b61d48899fa9660213641aa426cfc",
+  "text": "- **Initialize state correctly**: Use an initial value or a lazy initialization function as needed."
+}

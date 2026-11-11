@@ -1,0 +1,4 @@
+{
+  "key": "78e4e13c76dce5096f998ca4c7ae0b6fae3d5a5fd43ae90af0edca47ec06d172",
+  "text": "The \"concurrency\" of processes requires the support of \"sharing\". Concurrently executing processes inevitably need to share some system resources (such as memory, or I/O devices like printers and cameras)."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "2d2f5fce4fee6241e46e036ee51a8a59902d51e82bdd1ce486c43261cd72fab8",
+  "text": "A process can execute the exit system call to request that the operating system terminate the process.\nAt this point, the process enters the \"terminated state\"; the operating system takes the process off the CPU and reclaims resources such as memory space, and finally also reclaims the process's PCB."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "9d6f0182c9b574ea5344329ed5118df8949389695fac5e9179166d1d4876e073",
+  "text": "1. Low performance; frequent switching between user mode and kernel mode is required. The various functional modules in user mode cannot call each other directly and can only communicate indirectly through the kernel's \"message passing\";\n2. The various functional modules in user mode cannot call each other directly and can only communicate indirectly through the kernel's \"message passing\"."
+}

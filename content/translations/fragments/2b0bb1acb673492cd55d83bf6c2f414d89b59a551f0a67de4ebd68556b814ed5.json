@@ -1,0 +1,4 @@
+{
+  "key": "2b0bb1acb673492cd55d83bf6c2f414d89b59a551f0a67de4ebd68556b814ed5",
+  "text": "This creates a situation where **the producer waits for the consumer to release free buffer space**, while **the consumer waits for the producer to release the critical section**.\nThe producer and consumer cyclically wait for each other to wake them up, resulting in **\"deadlock.\"**"
+}

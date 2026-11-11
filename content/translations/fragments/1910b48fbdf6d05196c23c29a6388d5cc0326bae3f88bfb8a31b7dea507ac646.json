@@ -1,0 +1,4 @@
+{
+  "key": "1910b48fbdf6d05196c23c29a6388d5cc0326bae3f88bfb8a31b7dea507ac646",
+  "text": "### **User Datagram Protocol (UDP)**\n1. Provides a connectionless protocol that allows applications to send encapsulated IP datagrams.\n2. **Advantages**:\n   - Provides an IP interface that supports multiplexing, improving transmission efficiency.\n3. **Disadvantages**:\n   - Does not support flow control, error control, or retransmission of bad segments."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "b51aa9a22f18dd017b6438f937d254c60e19983fdb6eb4b76bfa10a1d0553282",
+  "text": "Synchronization relationships (analyzed from the perspective of events):\n- Combination 1 on the table -> the first smoker takes the items;\n- Combination 2 on the table -> the second smoker takes the items;\n- Combination 3 on the table -> the third smoker takes the items;\n- Completion signal sent -> the supplier puts the next combination on the table."
+}

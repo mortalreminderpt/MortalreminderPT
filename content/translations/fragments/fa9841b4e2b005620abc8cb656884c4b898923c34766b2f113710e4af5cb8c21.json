@@ -1,0 +1,4 @@
+{
+  "key": "fa9841b4e2b005620abc8cb656884c4b898923c34766b2f113710e4af5cb8c21",
+  "text": "#### Disadvantages of This Strategy\nNot all resources can be transformed into resources that can be used in a shared manner.\nMoreover, for system security, many places must still protect this mutual exclusivity.\nTherefore, **in many cases the mutual exclusion condition cannot be broken**."
+}

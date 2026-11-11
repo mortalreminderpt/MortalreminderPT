@@ -1,0 +1,4 @@
+{
+  "key": "1fc65a4ceb850ea9e222122cf902a56e8540e45463ab5713885300b1aa3fba74",
+  "text": "Its **core idea** is to set up a **counter count** to record the number of reader processes currently accessing the shared file.\nWe can use the value of count to determine whether the currently entering process is the first/last reader process, and thus handle it differently."
+}

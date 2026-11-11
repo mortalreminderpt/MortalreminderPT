@@ -1,0 +1,4 @@
+{
+  "key": "6b9d46501b85a5cccdb39311485446ede1d3840e2661c1a9c83423a0d02bfd78",
+  "text": "- **Always call it at the top level of the component**.\n- **Do not directly mutate state, especially objects and arrays**.\n- **Understand the asynchronous nature of state updates**.\n- **Use functional updates when updating state based on the previous state**."
+}

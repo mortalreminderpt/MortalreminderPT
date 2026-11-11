@@ -1,0 +1,4 @@
+{
+  "key": "4b80bbc341b58cabb4200247b882a5cbf442448275864a0864c6bf5191528a65",
+  "text": "Analysis: At the beginning, even if the son and daughter processes are scheduled onto the processor, they will be blocked.\nIf the father process is the first to be scheduled onto the processor at the beginning, then the father ⟦MC_1802c2c41c2df43e_0⟧, and can access the plate ->\nthe mother ⟦MC_1802c2c41c2df43e_1⟧, and blocks waiting for the plate ->\nthe father puts an apple in ⟦MC_c6f62f8bbe228bae_0⟧, the daughter process is woken up, and even if other processes run they will all be blocked, so it is temporarily impossible to access the critical resource (the plate) ->\nthe daughter ⟦MC_781c1cb01d6ef725_0⟧, accesses the plate, ⟦MC_4009822dd18c4029_0⟧, and the mother process waiting for the plate is woken up ->\nthe mother process accesses the plate (other processes are temporarily unable to enter the critical section) -> ..."
+}

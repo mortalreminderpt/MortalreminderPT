@@ -1,0 +1,4 @@
+{
+  "key": "9b43d0963f6109ec3cbecbda3ae4961be09b2c5b1e7ea86bc70d31e8981ff428",
+  "text": "**When a new process arrives, it first enters the level 1 queue** and waits in line according to the **FCFS principle** to be allocated a time slice. If the process has not finished after using up its time slice, it enters the tail of the next-level queue.\nIf it is already in the lowest-level queue, it is placed back at the tail of the lowest-level queue;"
+}

@@ -1,0 +1,4 @@
+{
+  "key": "ac5136aca34ef2bb6b8b1972a798c8639367136770e9311c56733442e2aeff79",
+  "text": "The FCFS algorithm selects the job (process) with the longest waiting time to serve at each scheduling decision.\nHowever, it does not consider the running time of the job, which leads to the problem of being unfriendly to short jobs;"
+}

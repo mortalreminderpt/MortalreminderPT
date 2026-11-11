@@ -1,0 +1,4 @@
+{
+  "key": "7d262aba87908dcad198da4de59f703dfa2c2750b76c737ebe6b6a61850675bc",
+  "text": "Main drawback: **it cannot prioritize some urgent tasks**. The operating system is completely fair to every user/job, cyclically serving each user/job for one time slice without distinguishing the urgency of tasks."
+}

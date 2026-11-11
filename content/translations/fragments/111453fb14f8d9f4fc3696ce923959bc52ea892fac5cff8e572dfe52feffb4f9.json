@@ -1,0 +1,4 @@
+{
+  "key": "111453fb14f8d9f4fc3696ce923959bc52ea892fac5cff8e572dfe52feffb4f9",
+  "text": "The idea of overlay technology: **divide the program into multiple segments** (multiple modules). Commonly used segments reside in memory permanently, while infrequently used segments are loaded into memory when needed."
+}

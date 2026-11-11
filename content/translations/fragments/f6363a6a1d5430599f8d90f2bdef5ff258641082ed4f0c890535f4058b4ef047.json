@@ -1,0 +1,4 @@
+{
+  "key": "f6363a6a1d5430599f8d90f2bdef5ff258641082ed4f0c890535f4058b4ef047",
+  "text": "In a process's PCB, there is a variable state that indicates the current state of the process. For example: 1 indicates the created state, 2 indicates the ready state, 3 indicates the running state...\nIn order to uniformly manage the various processes in the same state, the operating system organizes the PCBs of the various processes."
+}

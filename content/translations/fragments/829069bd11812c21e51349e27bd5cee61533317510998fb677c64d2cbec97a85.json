@@ -1,0 +1,4 @@
+{
+  "key": "829069bd11812c21e51349e27bd5cee61533317510998fb677c64d2cbec97a85",
+  "text": "3. **Immutable Props and State**: ⟦MC_f34e540923455820_1⟧ and ⟦MC_7727f8cb300c38ed_1⟧ are immutable snapshots in React. Do not modify them directly; instead, update ⟦MC_7727f8cb300c38ed_2⟧ by passing new ⟦MC_f34e540923455820_2⟧ or using the setter function provided by ⟦MC_d5607f8c3c3d434c_0⟧."
+}

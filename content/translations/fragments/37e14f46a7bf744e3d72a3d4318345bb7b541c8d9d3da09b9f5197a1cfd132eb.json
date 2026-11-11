@@ -1,0 +1,4 @@
+{
+  "key": "37e14f46a7bf744e3d72a3d4318345bb7b541c8d9d3da09b9f5197a1cfd132eb",
+  "text": "A process is the unit for allocating system resources (including memory address space), so the **memory address spaces** owned by **each process** are **independent of one another**."
+}

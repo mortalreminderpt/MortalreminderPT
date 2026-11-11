@@ -1,0 +1,4 @@
+{
+  "key": "11e2c514caedc02239965dafcbb1a23707d9db5e0ba0cbe4d1805cb574c89e87",
+  "text": "Each process first declares the maximum number of each type of resource it needs before running, so an n*m matrix (which can be implemented with a two-dimensional array) can be used to represent **the maximum number of each type of resource required by all processes**.\nLet us call it the **Maximum Demand Matrix Max**, where Max[i, j]=K means process Pi needs at most K instances of resource Rj."
+}

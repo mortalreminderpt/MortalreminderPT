@@ -1,0 +1,4 @@
+{
+  "key": "fac0a7ba927f8975580ae9fd3990e4d6941865edc682a949eb50bd42f10b578e",
+  "text": "|Ordinary applications|They can make system calls directly, or use library functions. Some library functions involve system calls, and some do not.|\n|------------|----|\n|Programming languages|They provide library functions upward. Sometimes system calls are encapsulated as library functions to hide some details of system calls and make programming more convenient for programmers.|\n|Operating system|It provides system calls upward, enabling upper-layer programs to request kernel services.|\n|Bare machine||"
+}

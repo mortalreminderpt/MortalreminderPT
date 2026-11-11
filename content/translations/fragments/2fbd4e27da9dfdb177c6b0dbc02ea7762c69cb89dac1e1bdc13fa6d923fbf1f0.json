@@ -1,0 +1,4 @@
+{
+  "key": "2fbd4e27da9dfdb177c6b0dbc02ea7762c69cb89dac1e1bdc13fa6d923fbf1f0",
+  "text": "### Trap Instruction System Call\n1. The application executes parameter-passing instructions and **stores the passed parameters (parameter 1, parameter 2...) in CPU registers**. The parameters can indicate the type of system call;\n2. The application executes a **trap instruction**, triggering an internal interrupt signal. This interrupt is triggered by the trap instruction, so control transfers to the corresponding interrupt handler, namely the entry program of the system call;\n3. The processor switches to kernel mode and executes the **system call entry program**, determining which system call service the user needs based on the parameters in the registers;\n4. Run the **handler corresponding to the system call**;\n5. After the system call is completed, the CPU switches to user mode."
+}

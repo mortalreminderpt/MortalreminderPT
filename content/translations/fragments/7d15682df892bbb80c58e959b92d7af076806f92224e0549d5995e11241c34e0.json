@@ -1,0 +1,4 @@
+{
+  "key": "7d15682df892bbb80c58e959b92d7af076806f92224e0549d5995e11241c34e0",
+  "text": "Note:\n- **Different critical resources** require **different mutex semaphores**.\n- **P and V operations must appear in pairs**. Missing ⟦MC_c080a9d828301512_1⟧ means **mutually exclusive access to the critical resource cannot be guaranteed**. Missing ⟦MC_e9b079a57ebdea94_1⟧ will cause **the resource to never be released, and waiting processes to never be woken up**."
+}

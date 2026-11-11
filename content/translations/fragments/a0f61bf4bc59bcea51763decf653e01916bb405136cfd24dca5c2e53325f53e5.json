@@ -1,0 +1,4 @@
+{
+  "key": "a0f61bf4bc59bcea51763decf653e01916bb405136cfd24dca5c2e53325f53e5",
+  "text": "A \"system call\" is an interface provided by the operating system for applications (programmers/developers) to use. It can be understood as a special function that applications can call, and **applications can request services from the operating system kernel through system calls**."
+}

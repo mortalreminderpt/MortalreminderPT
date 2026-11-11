@@ -1,0 +1,4 @@
+{
+  "key": "e7b7776678d08cb4afa0ed4ff1dbe4b6638b25244af75ea1a719745299e945e3",
+  "text": "No matter which process control primitive it is, there are only three types of things to do:\n1. Update the information in the PCB (modify the process state, save/restore the running environment);\n2. Insert the PCB into the appropriate queue;\n3. Allocate/reclaim resources."
+}

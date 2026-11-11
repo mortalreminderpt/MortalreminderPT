@@ -1,0 +1,4 @@
+{
+  "key": "6a62ecf88f9196b8b15a64bd5468f2807300eb509cf111e17c4f451fb1b3c8e4",
+  "text": "#### What is the three-way handshake?\nSuppose you want to play a game with a friend. You need to make sure the other party is ready, and the other party also needs to confirm that you are ready. The specific process of the three-way handshake is as follows:\n1. You signal to the other party: \"Are you ready?\"\n2. The other party responds: \"I'm ready, and you?\"\n3. You confirm receipt of the other party's reply: \"I'm ready too, let's start!\""
+}

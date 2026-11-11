@@ -1,0 +1,4 @@
+{
+  "key": "0db4bed386b53f2037f913ec004a726231dab1b8144ecd48c1ec940f28268dfb",
+  "text": "- **Do not create Context inside a component**: Context should be created outside the component; otherwise, a new Context will be created on every render, preventing child components from subscribing correctly."
+}

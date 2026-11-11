@@ -1,0 +1,4 @@
+{
+  "key": "d742d198598ce91c0eca7215efa1ab305fc42efc219e36eb1558a0d88f1a047b",
+  "text": "Mutual exclusion relationship (mutex = 1):\n- Access to the buffer (plate) must be performed mutually exclusively."
+}

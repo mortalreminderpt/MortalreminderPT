@@ -1,0 +1,4 @@
+{
+  "key": "8c20d1d5060baea1ab2a66b968bbafe7b6359000f4ee84fa38e5397e0b20a6a3",
+  "text": "- **Centralize state update logic in the Reducer**: You can centralize all state update logic in the Reducer function, making it easier to manage and test."
+}

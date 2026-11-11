@@ -1,0 +1,4 @@
+{
+  "key": "9f0848949a6f13277625eda91c832aa71617435dc3dbf01264c2215470dee4f2",
+  "text": "1. During the execution of application program 1, when the execution time reaches one time slice, the time allocated to that application program by the CPU is exhausted.\n2. At this point, the clock component sends a clock interrupt signal to the CPU. The CPU switches to kernel mode and executes the kernel program that handles the clock interrupt. The operating system kernel decides to let application program 2 run on the CPU next.\n3. Next, it switches to user mode to execute application program 2, and so on."
+}

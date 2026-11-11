@@ -1,0 +1,4 @@
+{
+  "key": "9af93b6214dff5af60df70dada153e5ceeaaf3d0f83e46756d458977538f2f90",
+  "text": "- **Use a cleanup function**: When the side effect needs to be cleaned up before the component unmounts or updates, return a cleanup function."
+}

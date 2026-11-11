@@ -1,0 +1,4 @@
+{
+  "key": "44fd7fa1a9694e9740b5a0c389b9b8131745e35f7a5d3f28326f63d76c786a16",
+  "text": "## Problem Description\nSuppose a system has **three smoker processes** and **one supplier process**.\nEach smoker continuously rolls a cigarette and smokes it, but to roll and smoke a cigarette, a smoker needs three materials: tobacco, paper, and glue.\nAmong the three smokers, **the first has tobacco, the second has paper, and the third has glue.**\nThe supplier process provides the three materials indefinitely. Each time, the supplier puts two materials on the table, and the smoker who has the remaining material rolls a cigarette and smokes it, then signals the supplier process that it is done. The supplier then puts the other two materials on the table, and this process repeats forever (letting the three smokers take turns smoking)."
+}

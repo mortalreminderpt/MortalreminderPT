@@ -1,0 +1,4 @@
+{
+  "key": "13abaff34b2cd72b0346d58a5db145686694fe7d5deb0b3a1c71ffa6c50336f6",
+  "text": "## Implementation Principle\nTwo types of processes: writer process, reader process"
+}

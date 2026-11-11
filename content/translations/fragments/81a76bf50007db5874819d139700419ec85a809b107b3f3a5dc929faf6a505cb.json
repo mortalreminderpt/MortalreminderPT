@@ -1,0 +1,4 @@
+{
+  "key": "81a76bf50007db5874819d139700419ec85a809b107b3f3a5dc929faf6a505cb",
+  "text": "#### p-Persistent CSMA\n- Suitable for slotted channels:\n  - When the channel is idle, transmits with probability ⟦MC_610cc142f0d529b4_0⟧;\n  - With probability ⟦MC_e9e85f93f7bb334c_0⟧, defers to the next slot and checks again.\n- Seeks a balance between persistence and collision risk."
+}

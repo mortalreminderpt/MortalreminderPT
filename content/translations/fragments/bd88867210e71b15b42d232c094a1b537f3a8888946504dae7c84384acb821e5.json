@@ -1,0 +1,4 @@
+{
+  "key": "bd88867210e71b15b42d232c094a1b537f3a8888946504dae7c84384acb821e5",
+  "text": "One-to-one model: One user-level thread maps to one kernel-level thread, and each user process has the same number of kernel-level threads as user-level threads.\n- Advantages: When one thread is blocked, other threads can continue to execute, and the concurrency capability is strong. Multiple threads can execute in parallel on a multi-core processor.\n- Disadvantages: One user process will occupy multiple kernel-level threads, and thread switching is completed by the operating system kernel and requires switching to kernel mode, so the cost of thread management is high and the overhead is large."
+}

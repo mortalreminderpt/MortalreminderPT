@@ -1,0 +1,4 @@
+{
+  "key": "4448e8c2ef53fb35f2b883898ac37144a63b7da3fd54cf02781748811a9b1d26",
+  "text": "1. The **management work of Kernel-Level Threads (KLT)** is completed by the **operating system kernel**;\n2. Thread scheduling, switching, and other work are all handled by the kernel, so **switching of kernel-level threads** must necessarily be completed in **kernel mode**;\n3. The operating system establishes a corresponding TCB (Thread Control Block) for each kernel-level thread and manages threads through the TCB. **\"Kernel-level threads\"** are simply **\"the threads that can be seen from the operating system kernel's perspective\"**."
+}

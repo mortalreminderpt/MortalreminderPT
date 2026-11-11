@@ -1,0 +1,4 @@
+{
+  "key": "1107ceecdeba188fd1d703067cf984cb010f6587ee6db54987d99669ba29360e",
+  "text": "- Non-kernel part: The development teams of Ubuntu and CentOS, whose main work is to implement non-kernel functionality, while the kernel used is the Linux kernel.\n- Clock interrupt: Uses clock interrupts to implement timing functionality;\n- Primitives: A primitive is a special kind of program that has atomicity. That is, the execution of this program must be completed in one go and cannot be \"interrupted\"."
+}

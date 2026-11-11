@@ -1,0 +1,4 @@
+{
+  "key": "f02f3c7ca31d4140f6123be82ca773c172f31eb68bbb2f6857448b375f3fd89b",
+  "text": "A process in the **ready state** already **meets the conditions for running**, but because **there is no idle CPU**, it temporarily cannot run."
+}

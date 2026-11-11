@@ -1,0 +1,4 @@
+{
+  "key": "9075e81463667907bd354e70a5f3caa597a7dcef0ee98401e857a509be3c583b",
+  "text": "In fact, each pair of precedence relationships is a process synchronization problem (it is necessary to ensure that the operations occur one before the other). Therefore:\n1. Set **one synchronization semaphore** for **each pair of precedence relationships**;\n2. Execute a **V operation** on the corresponding synchronization semaphore **after the \"preceding operation\"**;\n3. Execute a **P operation** on the corresponding synchronization semaphore **before the \"following operation\"**."
+}

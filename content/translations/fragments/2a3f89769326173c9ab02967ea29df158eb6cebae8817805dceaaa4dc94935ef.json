@@ -1,0 +1,4 @@
+{
+  "key": "2a3f89769326173c9ab02967ea29df158eb6cebae8817805dceaaa4dc94935ef",
+  "text": "- **Avoid causing infinite loops in side effects**: Update state carefully to avoid causing the side effect to run repeatedly."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "f3a89c9c421ed282034af36384444fe1eb7dbc13d9cb50349469678ef05f1381",
+  "text": "⟦MC_d5607f8c3c3d434c_1⟧ is a Hook provided by React that allows us to add state variables to function components. With it, we can declare a state variable and obtain a function that can update that state. When the state updates, React re-renders the component to reflect the latest state."
+}

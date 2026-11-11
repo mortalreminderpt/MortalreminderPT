@@ -1,0 +1,4 @@
+{
+  "key": "3905d85ce5fce69d50cac7ed563b5cad7a2af3175647cc4890da6a0146356184",
+  "text": "## Collaborations\n- The user creates a Director object and configures it with the desired Builder object;\n- Once the product parts are generated, the Director notifies the Builder;\n- The Builder handles the Director's requests and adds parts to the product.\n- The user retrieves the product from the Builder."
+}

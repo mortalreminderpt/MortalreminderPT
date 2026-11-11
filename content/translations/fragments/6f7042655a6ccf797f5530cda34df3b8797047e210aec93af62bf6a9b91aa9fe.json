@@ -1,0 +1,4 @@
+{
+  "key": "6f7042655a6ccf797f5530cda34df3b8797047e210aec93af62bf6a9b91aa9fe",
+  "text": "Dijkstra's algorithm is used to compute the shortest paths from one node to all other nodes in the network.\nBasic steps:\n1. Initialization: set an initial distance for each node (usually infinity), and set the distance of the starting point to 0.\n2. Select the unvisited node with the smallest distance and mark it as visited.\n3. Update the distances of neighboring nodes; if the path through the current node is shorter, update the shortest path value of the neighboring node.\n4. Repeat steps 2 and 3 until all nodes have been visited."
+}

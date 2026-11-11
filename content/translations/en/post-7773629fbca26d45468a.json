@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "sourceDigest": "b718a64090544dc0945c07e894ba65f9d21f1417b05b39f5464725f304c8e0a1",
+  "sourceLang": "zh-cn",
+  "targetLang": "en",
+  "provider": "deepseek",
+  "model": "deepseek-flash",
+  "targetDigest": "2bfe96b52ce2527a174b52fbc4cebe7d5f3560f7081fd4c0710e5625e8abda9b",
+  "translatedAt": "2026-11-11T10:58:22.354Z"
+}

@@ -1,0 +1,4 @@
+{
+  "key": "52ee0af46c332c92672808ef521ece9921fa768d795ecd27a1d508b79ac223bb",
+  "text": "Among them, **clock management, interrupt handling, and primitives** are **modules that are more closely tied to the hardware**; while the management work handled by the **management modules** is more about **operations on data structures and does not directly involve the hardware**."
+}

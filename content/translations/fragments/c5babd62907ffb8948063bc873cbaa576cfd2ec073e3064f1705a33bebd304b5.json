@@ -1,0 +1,4 @@
+{
+  "key": "c5babd62907ffb8948063bc873cbaa576cfd2ec073e3064f1705a33bebd304b5",
+  "text": "Obviously, if concurrency is lost, **only one program needs to run in the system within a time period, and then the significance of realizing virtualization is lost**. Therefore, **without concurrency, virtualization cannot be discussed**."
+}

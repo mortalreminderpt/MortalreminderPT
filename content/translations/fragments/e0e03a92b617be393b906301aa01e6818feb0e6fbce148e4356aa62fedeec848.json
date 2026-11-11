@@ -1,0 +1,4 @@
+{
+  "key": "e0e03a92b617be393b906301aa01e6818feb0e6fbce148e4356aa62fedeec848",
+  "text": "Therefore, **before allocating resources, we can determine in advance whether this allocation will cause the system to enter an unsafe state**, and use this to decide whether to grant the resource allocation request.\nThis is also the core idea of the **\"Banker's Algorithm\"**."
+}

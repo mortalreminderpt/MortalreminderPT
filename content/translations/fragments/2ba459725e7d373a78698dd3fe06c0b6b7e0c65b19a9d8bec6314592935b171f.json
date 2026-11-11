@@ -1,0 +1,4 @@
+{
+  "key": "2ba459725e7d373a78698dd3fe06c0b6b7e0c65b19a9d8bec6314592935b171f",
+  "text": "As JavaScript single-page application development grows increasingly complex, our code has to manage more state than ever before. This state may include server responses, cached data, data generated locally that has not yet been persisted to the server, and also UI state such as the active route, the selected tab, whether to show a loading animation or a paginator, and so on."
+}

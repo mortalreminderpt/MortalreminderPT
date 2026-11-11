@@ -1,0 +1,4 @@
+{
+  "key": "a1f3aee350ce23ec241f75eed580a2260c4a78aeab1afbf163b58c96e632fcf6",
+  "text": "Two types of nodes:\n- Process node: corresponds to a process;\n- Resource node: corresponds to a type of resource, and a type of resource may have multiple instances."
+}

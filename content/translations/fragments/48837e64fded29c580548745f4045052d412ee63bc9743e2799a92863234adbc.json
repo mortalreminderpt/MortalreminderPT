@@ -1,0 +1,4 @@
+{
+  "key": "48837e64fded29c580548745f4045052d412ee63bc9743e2799a92863234adbc",
+  "text": "The reason is that the two operations of \"checking\" and \"locking\" in the **entry section** are **not completed in one uninterrupted step**. A process switch may occur after \"checking\" and before \"locking\"."
+}

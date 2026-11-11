@@ -1,0 +1,4 @@
+{
+  "key": "076067b8bfbad700f6c2cbc9ef37e7b7a9e910d8c871a953e6616afbd364b215",
+  "text": "⟦MC_d0ee8a688b7d334c_0⟧\nThe execution of ⟦MC_ae22a4ea5acb3f84_2⟧ or ⟦MC_3029ca74a14f0801_1⟧ must be an atomic operation, so mutex locks are usually implemented using hardware mechanisms."
+}

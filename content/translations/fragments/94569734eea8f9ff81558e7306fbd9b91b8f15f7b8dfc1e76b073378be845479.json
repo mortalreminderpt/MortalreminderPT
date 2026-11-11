@@ -1,0 +1,4 @@
+{
+  "key": "94569734eea8f9ff81558e7306fbd9b91b8f15f7b8dfc1e76b073378be845479",
+  "text": "**Summary**:  \n- Virtual-Circuit provides better QoS and congestion control.  \n- Datagram is flexible and connectionless, but requires larger routing tables and additional overhead.  \n- **The IP protocol uses a Datagram network.**"
+}

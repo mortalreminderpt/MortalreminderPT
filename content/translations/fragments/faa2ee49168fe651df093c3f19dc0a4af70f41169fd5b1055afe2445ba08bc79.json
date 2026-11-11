@@ -1,0 +1,4 @@
+{
+  "key": "faa2ee49168fe651df093c3f19dc0a4af70f41169fd5b1055afe2445ba08bc79",
+  "text": "In operating systems that do not support kernel-level threads, the scheduler's processing object is the process:"
+}

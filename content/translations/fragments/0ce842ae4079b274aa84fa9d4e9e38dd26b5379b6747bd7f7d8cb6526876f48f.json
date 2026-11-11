@@ -1,0 +1,4 @@
+{
+  "key": "0ce842ae4079b274aa84fa9d4e9e38dd26b5379b6747bd7f7d8cb6526876f48f",
+  "text": "After a job is submitted, it first enters the job backup queue (in external storage), and in the backup queue it **waits to be served (scheduled)**."
+}

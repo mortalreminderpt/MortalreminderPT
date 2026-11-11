@@ -1,0 +1,4 @@
+{
+  "key": "89ad88924ea7dc08e4a10b40dd129d5b0f2a947fefe07e20eedb79726d0a29ac",
+  "text": "Concurrency:\n- In the traditional process mechanism, concurrency is only possible between processes;\n- After the introduction of threads, threads can also be concurrent with each other, improving the degree of concurrency."
+}

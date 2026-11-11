@@ -1,0 +1,4 @@
+{
+  "key": "e28376e807402177fd8a5b1a4006532f09f5b29be45e43f5d16fbbef74fdfaca",
+  "text": "1. **Go-Back-N**  \n   - The sender window size is ⟦MC_f0e081a6929dfd95_0⟧, and the receiver window size is 1.  \n   - When an error occurs, retransmit the erroneous frame and all subsequent frames."
+}

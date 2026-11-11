@@ -1,0 +1,4 @@
+{
+  "key": "d26460941fa0109d1bd41aaeb87896689a3ed3cb35175607124738bacda61ce3",
+  "text": "> To describe how actions change the state tree, you need to write pure reducers."
+}

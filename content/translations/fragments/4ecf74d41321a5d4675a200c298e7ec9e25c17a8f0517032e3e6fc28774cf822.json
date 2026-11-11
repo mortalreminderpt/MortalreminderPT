@@ -1,0 +1,4 @@
+{
+  "key": "4ecf74d41321a5d4675a200c298e7ec9e25c17a8f0517032e3e6fc28774cf822",
+  "text": "⟦MC_65d3c6fecab593f0_0⟧\nLogically, Swap and TS are not very different: both first record whether the critical section is currently locked (recorded in the old variable), then set the lock flag lock to true, and finally check old.\nIf old is false, it means no other process had locked the critical section before, so the loop can be exited and the process can enter the critical section."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "c5e20a9519d605ec425beb12bdd543b3b531bc125fcaa8e5e2ce382c6851c9ee",
+  "text": "1. **Provide a well-defined service interface to the network layer**  \n   - Receive packets from the network layer, construct data frames, and transmit them.  \n   - Ensure that the network layer can transmit data on a reliable basis."
+}

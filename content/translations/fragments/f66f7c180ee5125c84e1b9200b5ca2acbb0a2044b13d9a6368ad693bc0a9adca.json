@@ -1,0 +1,4 @@
+{
+  "key": "f66f7c180ee5125c84e1b9200b5ca2acbb0a2044b13d9a6368ad693bc0a9adca",
+  "text": "### Sliding Window Protocol\nAllows the sender to send multiple frames at the same time, improving transmission efficiency."
+}

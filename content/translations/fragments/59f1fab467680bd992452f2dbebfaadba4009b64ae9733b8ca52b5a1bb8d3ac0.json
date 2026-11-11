@@ -1,0 +1,4 @@
+{
+  "key": "59f1fab467680bd992452f2dbebfaadba4009b64ae9733b8ca52b5a1bb8d3ac0",
+  "text": "- **Methods:**\n  - **Time Division Multiplexing (TDM):** Divides time into fixed time slots, with each slot assigned to a specific user.\n  - **Frequency Division Multiplexing (FDM):** Divides the channel into fixed frequency bands, with each user assigned one band."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "c336f92eb407c070dacf4fa519c84be80ca67fa9b2fcb1306820fd517e27ef56",
+  "text": "- **Do not rely on the persistence of cached values**: Cached values may be discarded in certain situations, and you should not assume that they will always exist."
+}

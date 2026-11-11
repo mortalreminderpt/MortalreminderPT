@@ -1,0 +1,4 @@
+{
+  "key": "5e106f3c4eab64fb8aa4bb4cc05d876477d78c94efc95d1f39d04729ffd62836",
+  "text": "To solve this problem, when switching processes, first **save this process's running environment in the PCB** (save some necessary register information). When the original process is put into operation again, **its running environment can be restored through the PCB**."
+}

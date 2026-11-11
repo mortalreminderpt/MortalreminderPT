@@ -1,0 +1,4 @@
+{
+  "key": "246556cf9b485c3c7cf82482ace7e764df61dbac900ce6d2eadfd0ed6b87890c",
+  "text": "- **Pass data across the component tree**: Context can be used to pass data deeply through the component tree, avoiding the hassle of passing props level by level."
+}

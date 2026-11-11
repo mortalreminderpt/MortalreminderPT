@@ -1,0 +1,4 @@
+{
+  "key": "d5309ffe653c95d4969073805999ebd8bafb19b5abf1c581fa3765b3c74d7a89",
+  "text": "If **a process is currently running on the CPU**, then this process is in the \"**running state**\". The CPU executes the program corresponding to this process (executes the instruction sequence)."
+}

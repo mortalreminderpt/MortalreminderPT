@@ -1,0 +1,4 @@
+{
+  "key": "d570cbd080b2092decab339984ce18672c7cc23304a8cc14446f84df524d6980",
+  "text": "5. **Lazy initialization**: Provided it does not affect other components, lazy initialization can be performed, for example by calling certain external functions to initialize data, as long as these functions do not cause side effects during rendering."
+}

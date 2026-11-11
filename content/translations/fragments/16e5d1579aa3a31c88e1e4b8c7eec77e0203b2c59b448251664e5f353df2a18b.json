@@ -1,0 +1,4 @@
+{
+  "key": "16e5d1579aa3a31c88e1e4b8c7eec77e0203b2c59b448251664e5f353df2a18b",
+  "text": "In the three-state model of processes, processes ② and ③ are triggered by the scheduler, and the scheduler decides:\n- Who runs? — Scheduling algorithm\n- How long to run? — Time slice size"
+}

@@ -1,0 +1,4 @@
+{
+  "key": "8b87c5b8dd97e1424f18ec2e2190c9b9c4ce624ad672d6b98ae037e68a390707",
+  "text": "The **Highest Response Ratio Next algorithm** is a **non-preemptive** scheduling algorithm. Scheduling is only needed when the currently running process **voluntarily gives up the CPU** (normal/abnormal completion, or voluntary blocking).\nDuring scheduling, **calculate the response ratios of all ready processes and select the process with the highest response ratio** to run on the processor."
+}

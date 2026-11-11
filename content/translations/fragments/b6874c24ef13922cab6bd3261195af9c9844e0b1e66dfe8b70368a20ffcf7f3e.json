@@ -1,0 +1,4 @@
+{
+  "key": "b6874c24ef13922cab6bd3261195af9c9844e0b1e66dfe8b70368a20ffcf7f3e",
+  "text": "Suppose the total system resources are (10,5,7), and the remaining available resources are available=(3,3,2).\nAt this time, the process resource allocation situation is as shown in the table above. Is the system in a safe state?"
+}

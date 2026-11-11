@@ -1,0 +1,4 @@
+{
+  "key": "36ea285192254accb24a844be24aca54560945f6dd915b359bf4e1448eb3a784",
+  "text": "⟦MC_4296bf29d5dd7707_0⟧\n- **Disable interrupt instruction**: after interrupts are disabled, the current process is not allowed to be interrupted, and process switching will necessarily not occur; \n- **Enable interrupt instruction**: only after the current process has finished accessing the critical section and then executes the enable interrupt instruction is it possible for another process to get on the processor and access the critical section."
+}

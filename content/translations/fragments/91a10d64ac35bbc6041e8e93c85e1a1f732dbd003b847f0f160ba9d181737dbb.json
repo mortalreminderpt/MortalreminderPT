@@ -1,0 +1,4 @@
+{
+  "key": "91a10d64ac35bbc6041e8e93c85e1a1f732dbd003b847f0f160ba9d181737dbb",
+  "text": "Each mutex lock has a Boolean variable ⟦MC_06d65c3dfe60fb0e_0⟧ that indicates whether the lock is available.\nIf the lock is available, calling ⟦MC_ae22a4ea5acb3f84_1⟧ succeeds, and the lock is no longer available.\nWhen a process attempts to acquire an unavailable lock, it is blocked until the lock is released."
+}

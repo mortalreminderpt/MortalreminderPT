@@ -1,0 +1,4 @@
+{
+  "key": "42d3114d23199cf0da1a38f1b830141d7a29a815c9585c2aaf26d69cb1b342d4",
+  "text": "Without the \"interrupt\" mechanism, once an application program starts running on the CPU, the CPU will keep running that application program (no interrupts, no concurrency)."
+}

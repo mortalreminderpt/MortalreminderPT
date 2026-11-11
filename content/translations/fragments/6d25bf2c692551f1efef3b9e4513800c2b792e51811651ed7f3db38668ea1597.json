@@ -1,0 +1,4 @@
+{
+  "key": "6d25bf2c692551f1efef3b9e4513800c2b792e51811651ed7f3db38668ea1597",
+  "text": "- Equal partition sizes: lacks flexibility, but is **very suitable for situations where one computer controls multiple identical objects** (for example, if a steel plant has n identical steelmaking furnaces, memory can be divided into n equal-sized areas to store n steelmaking furnace control programs);\n- Unequal partition sizes: increases flexibility and can meet the needs of processes of different sizes.\nPartitioning is based on the sizes of jobs that often run in the system. (For example, divide multiple small partitions, an appropriate number of medium partitions, and a small number of large partitions)"
+}

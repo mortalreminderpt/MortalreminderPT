@@ -1,0 +1,4 @@
+{
+  "key": "29950d04d78df2d28402625a1c6527af666a0e4aa702c0186194a7fc4368fa77",
+  "text": "The main disadvantage of mutex locks is busy waiting: when one process is in the critical section, any other process must continuously loop calling ⟦MC_ae22a4ea5acb3f84_3⟧ when trying to enter the critical section.\nWhen multiple processes share the same CPU, this wastes CPU cycles.\nTherefore, mutex locks are usually used in multiprocessor systems, where one thread can wait on one processor without affecting the execution of other threads."
+}

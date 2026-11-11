@@ -1,0 +1,4 @@
+{
+  "key": "9490190a16df5d844c72121dd5842e4f875749760ddcd62ae41490c5e9e46a5d",
+  "text": "When in kernel mode, it means that **a kernel program is currently running**, and **privileged instructions can be executed** at this time;"
+}

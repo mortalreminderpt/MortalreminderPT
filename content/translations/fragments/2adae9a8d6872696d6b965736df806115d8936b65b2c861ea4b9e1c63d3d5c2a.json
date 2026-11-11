@@ -1,0 +1,4 @@
+{
+  "key": "2adae9a8d6872696d6b965736df806115d8936b65b2c861ea4b9e1c63d3d5c2a",
+  "text": "Situations where process scheduling and switching **cannot be performed**:\n- **During interrupt handling**. Interrupt handling is complex and closely tied to hardware, making it very difficult to perform process switching during interrupt handling;\n- The process is in a **critical section of an operating system kernel program**;\n- During an atomic operation (primitive). Atomic operations cannot be interrupted and must be completed in one go (e.g., modifying the process state flag in the PCB and placing the PCB into the corresponding queue)."
+}

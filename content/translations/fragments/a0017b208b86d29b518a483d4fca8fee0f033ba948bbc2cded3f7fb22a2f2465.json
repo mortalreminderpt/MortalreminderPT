@@ -1,0 +1,4 @@
+{
+  "key": "a0017b208b86d29b518a483d4fca8fee0f033ba948bbc2cded3f7fb22a2f2465",
+  "text": "This strategy is simple to implement, but it also has obvious disadvantages:\nSome resources may only need to be used for a very short time, so if a process keeps all resources throughout its entire running period, it will cause serious resource waste, and **resource utilization will be extremely low**.\nIn addition, this strategy may also **lead to starvation of some processes**."
+}

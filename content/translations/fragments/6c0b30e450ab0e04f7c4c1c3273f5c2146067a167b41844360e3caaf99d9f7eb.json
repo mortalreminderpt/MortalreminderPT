@@ -1,0 +1,4 @@
+{
+  "key": "6c0b30e450ab0e04f7c4c1c3273f5c2146067a167b41844360e3caaf99d9f7eb",
+  "text": "| Method              | Check Bit Length | Hamming Distance | Capability                         |\n|-------------------|------------|----------|------------------------------|\n| Parity | 1 bit        | 2        | Detects 1-bit errors                |\n| Checksum | 16 bits       | 2        | Detects 1-bit errors                |\n| CRC               | 32 bits       | 4        | Detects multiple errors and may partially correct them   |"
+}

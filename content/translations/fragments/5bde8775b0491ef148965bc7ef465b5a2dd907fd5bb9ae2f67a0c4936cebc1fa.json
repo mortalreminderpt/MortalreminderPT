@@ -1,0 +1,4 @@
+{
+  "key": "5bde8775b0491ef148965bc7ef465b5a2dd907fd5bb9ae2f67a0c4936cebc1fa",
+  "text": "Managing constantly changing state is very difficult. If a change in one model causes a change in another model, then when the view changes, it may cause a change in the corresponding model as well as in another model, and this change in turn may cause a change in yet another view. Once these chain reactions reach a certain point, you have no idea what actually happened. When state changes, why it changes, and how it changes are no longer under control. When the system becomes intricate and complex, reproducing problems or adding new features becomes extremely difficult."
+}

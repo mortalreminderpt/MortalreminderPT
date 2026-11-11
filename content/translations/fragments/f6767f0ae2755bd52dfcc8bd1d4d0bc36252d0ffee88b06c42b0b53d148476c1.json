@@ -1,0 +1,4 @@
+{
+  "key": "f6767f0ae2755bd52dfcc8bd1d4d0bc36252d0ffee88b06c42b0b53d148476c1",
+  "text": "Therefore, **the P operation that implements mutual exclusion must come after the P operation that implements synchronization**."
+}

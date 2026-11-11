@@ -1,0 +1,4 @@
+{
+  "key": "4c8bf13c0c57b2795a2e23432fe9b14e4ee91d1d8bf7362141b3027aa3e6c0bd",
+  "text": "1. **Hierarchical Routing**\n   - Divides the network into multiple regions or levels; each router only needs to maintain detailed routing information for its own region and summary information for other regions.\n   - Advantages:\n     - Reduced routing table size and lower memory requirements.\n     - Reduced time required to compute optimal routes.\n   - Disadvantages:\n     - Paths may not be globally optimal, but they are close to optimal."
+}

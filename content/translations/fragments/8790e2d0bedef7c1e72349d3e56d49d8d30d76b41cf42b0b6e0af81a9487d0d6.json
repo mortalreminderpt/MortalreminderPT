@@ -1,0 +1,4 @@
+{
+  "key": "8790e2d0bedef7c1e72349d3e56d49d8d30d76b41cf42b0b6e0af81a9487d0d6",
+  "text": "Clock interrupt: The clock component sends a clock interrupt signal to the CPU every time slice (e.g., 50 ms). The process of a clock interrupt is as follows:"
+}

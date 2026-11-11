@@ -1,0 +1,4 @@
+{
+  "key": "0b81e0b785e7e79ebe8cb5737f63133886db7cc1fe915d41eaff07d509f1615c",
+  "text": "### Summary\nThe MAC layer plays a key role in shared channel access. Choosing the appropriate protocol (static, ALOHA, CSMA, etc.) based on traffic patterns, load, and network requirements seeks a balance among simplicity, efficiency, and fairness."
+}

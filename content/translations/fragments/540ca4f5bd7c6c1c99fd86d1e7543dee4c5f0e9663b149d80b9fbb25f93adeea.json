@@ -1,0 +1,4 @@
+{
+  "key": "540ca4f5bd7c6c1c99fd86d1e7543dee4c5f0e9663b149d80b9fbb25f93adeea",
+  "text": "How long a job needs to be served by the CPU and by I/O devices in total is generally fixed and unchanging, so scheduling algorithms actually only affect the waiting time of jobs/processes.\nOf course, similar to the previous metrics, there is also **average waiting time** to evaluate overall performance."
+}

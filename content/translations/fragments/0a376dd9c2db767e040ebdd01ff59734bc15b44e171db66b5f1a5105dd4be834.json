@@ -1,0 +1,4 @@
+{
+  "key": "0a376dd9c2db767e040ebdd01ff59734bc15b44e171db66b5f1a5105dd4be834",
+  "text": "When memory is insufficient, the data of some processes can be swapped out to external storage. When memory becomes free or the process needs to run, it is loaded back into memory."
+}

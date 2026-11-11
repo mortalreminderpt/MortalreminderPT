@@ -1,0 +1,4 @@
+{
+  "key": "eeb85c1bd40b5b8400fb70ebb1af633830d8897be7fa887e83e15b66beb55dfd",
+  "text": "Only after P0 changes turn to 1 in the exit section can P1 enter the critical section.\nTherefore, this algorithm **can achieve \"at most one process is allowed to access the critical section at any given time\"**."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "a1a2b85ff4dd1ac18243d0041fab5d1bb0292b0f1e43418eeaed5756c32e6c67",
+  "text": "- **TDM (Time Division Multiplexing)**: time slots are divided in time, and users take turns using the channel.\n- **FDM (Frequency Division Multiplexing)**: different users use different frequency bands.\n- **CDMA (Code Division Multiple Access)**: different codes are used to distinguish users."
+}

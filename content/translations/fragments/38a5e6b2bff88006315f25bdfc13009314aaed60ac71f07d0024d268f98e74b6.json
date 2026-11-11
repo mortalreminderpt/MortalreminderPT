@@ -1,0 +1,4 @@
+{
+  "key": "38a5e6b2bff88006315f25bdfc13009314aaed60ac71f07d0024d268f98e74b6",
+  "text": "⟦MC_f6f594049b0e4169_0⟧\nIn this example, we use ⟦MC_ece0da93fe9e23ff_10⟧ to track the number of times the button has been clicked. Because this value does not need to be used for rendering, using ⟦MC_ece0da93fe9e23ff_11⟧ is more appropriate than ⟦MC_d5607f8c3c3d434c_1⟧."
+}

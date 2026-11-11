@@ -1,0 +1,4 @@
+{
+  "key": "61bc2eab7ffe139b00afe990a648e776160892cd71efa3a94958e1ec99b7dc61",
+  "text": "1. It can only call the adjacent lower layer, making it difficult to reasonably define the boundaries of each layer;\n2. Low efficiency; cross-layer calls are not allowed, and system call execution takes a long time."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "d47780322b083ba456ddaff146845c1bdf3e9266cfc0dac95b724afc31d8d18c",
+  "text": "## Asynchrony\nAsynchrony means that in a multiprogramming environment, multiple programs are allowed to execute concurrently, but due to limited resources, the execution of a process is not carried through to the end, but rather stops and starts, advancing at an unpredictable speed. This is the asynchrony of processes."
+}

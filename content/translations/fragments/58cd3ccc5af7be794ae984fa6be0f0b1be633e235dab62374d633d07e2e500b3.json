@@ -1,0 +1,4 @@
+{
+  "key": "58cd3ccc5af7be794ae984fa6be0f0b1be633e235dab62374d633d07e2e500b3",
+  "text": "As shown in the figure, class A processes only need resource 1 to run, class B processes only need resource 2 to run, but class C processes need to possess both resource 1 and resource 2 to run:"
+}

@@ -1,0 +1,4 @@
+{
+  "key": "c73dd26ecffe90cc47be2f0530f0a8eef9a705216b66c43880c450927945c27d",
+  "text": "Process states are divided into five types: running, ready, blocked, created, and terminated, among which the three states of **running, ready, and blocked** are the **basic states of a process**."
+}

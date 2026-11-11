@@ -1,0 +1,4 @@
+{
+  "key": "2f08cd5f7030068c1ba48fd1ca00b8df545261b7a655477345b301b4ac62a5fd",
+  "text": "The value obtained by ⟦MC_2af479ca3392eccf_2⟧ comes from the ⟦MC_0b1c5fa09a5595c1_0⟧ provided by the nearest upper-level ⟦MC_986e738e9f7d72a2_0⟧ to the current component in the component tree. If there is no corresponding Provider in the component tree, ⟦MC_2af479ca3392eccf_3⟧ will return the default value provided when ⟦MC_4275c672a6ab1d7d_0⟧ was called."
+}

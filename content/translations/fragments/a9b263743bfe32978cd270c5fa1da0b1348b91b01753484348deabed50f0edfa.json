@@ -1,0 +1,4 @@
+{
+  "key": "a9b263743bfe32978cd270c5fa1da0b1348b91b01753484348deabed50f0edfa",
+  "text": "#### Persistent CSMA\n- Continuously monitors the channel.\n- Transmits immediately when the channel is idle; if a collision occurs, retries after a random delay."
+}

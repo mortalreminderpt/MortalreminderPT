@@ -1,0 +1,4 @@
+{
+  "key": "a09b4b88607cb4c7c4b860501630f9a94f1713d0a4fa200379d1f14151b18255",
+  "text": "## How Programs Run\nAfter the code is written, the compiler \"translates\" the high-level language into binary machine instructions. **The process of a program running is actually the process of the CPU executing machine instructions one by one**."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "7700216b41c09825c86b9bbca286a72d443ccb37cff7824243a31a58ac016c15",
+  "text": "**One P operation** on semaphore S means the process **requests one unit of that type of resource**, so ⟦MC_1ef3f0fca99b6d34_0⟧ needs to be executed, indicating that the number of resources is decreased by 1;\nwhen ⟦MC_fab635eb50ca4d44_0⟧, it indicates that this type of resource has been fully allocated, so the process should call the ⟦MC_045f01b5659425bb_1⟧ primitive to **block itself** (the currently running process goes from **running state -> blocked state**), voluntarily give up the processor, and insert itself into the waiting queue ⟦MC_f4677d3f75287146_0⟧ of this type of resource.\nIt can be seen that this mechanism **follows the \"wait with relinquished CPU\" principle** and will not exhibit \"busy waiting.\""
+}

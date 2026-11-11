@@ -1,0 +1,4 @@
+{
+  "key": "0caec518a36090c1643fa2e8fd7b0e0cd24e22172b77ad5a50b2761064c189f8",
+  "text": "- **What you can do**: Call components through JSX; call Hooks inside components or Hooks; create new Hook versions to extend functionality; inline Hook calls in components.\n- **What you cannot do**: Do not call component functions directly; do not pass Hooks as ordinary values; do not dynamically change Hooks; do not dynamically call Hooks under conditions."
+}

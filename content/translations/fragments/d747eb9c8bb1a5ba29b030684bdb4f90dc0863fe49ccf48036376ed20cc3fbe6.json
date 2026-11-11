@@ -1,0 +1,4 @@
+{
+  "key": "d747eb9c8bb1a5ba29b030684bdb4f90dc0863fe49ccf48036376ed20cc3fbe6",
+  "text": "- **Do not perform side effects during rendering**: React requires the rendering process to be a pure function and should not have side effects. Side effects should be placed in ⟦MC_01a812598bf19cab_11⟧."
+}

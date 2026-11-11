@@ -1,0 +1,4 @@
+{
+  "key": "2f971e9824b5e3663ea6ccccb6e8dd9eb2231f56f23696c3a7e387be16073995",
+  "text": "**Key observations:**\n- CSMA outperforms ALOHA under various loads, especially under high traffic.\n- The non-persistent and low-probability persistent variants perform better under high-load conditions."
+}

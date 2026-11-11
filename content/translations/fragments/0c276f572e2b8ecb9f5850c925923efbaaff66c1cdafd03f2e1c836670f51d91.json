@@ -1,0 +1,4 @@
+{
+  "key": "0c276f572e2b8ecb9f5850c925923efbaaff66c1cdafd03f2e1c836670f51d91",
+  "text": "A so-called **safe sequence** means that if the system allocates resources according to this sequence, every process can complete successfully.\nAs long as **a safe sequence can be found**, the system is in a **safe state**.\nOf course, **there may be multiple safe sequences**."
+}

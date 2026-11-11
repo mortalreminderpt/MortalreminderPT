@@ -1,0 +1,4 @@
+{
+  "key": "6f193771d94da09c4c4dca8198c727f79a28ebfa63898d348f602ba178434885",
+  "text": "If the ⟦MC_9c77272ebbd5e73b_2⟧ operation is executed first, then after ⟦MC_ececb72068763bba_0⟧, ⟦MC_ae6a34769b114118_0⟧.\nLater, when the ⟦MC_ed34efc966742035_2⟧ operation is executed, since ⟦MC_ae6a34769b114118_1⟧, indicating that there is an available resource, ⟦MC_b90119b1ef69c281_0⟧ will be executed, the value of S returns to 0, and process P2 will not execute the ⟦MC_045f01b5659425bb_0⟧ primitive, but will continue to execute code 4."
+}

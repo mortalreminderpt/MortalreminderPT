@@ -1,0 +1,4 @@
+{
+  "key": "eaef125a07e9b89d4af055f3a0281e25c46a70180d28a7b46d02c4ec1cac4fbe",
+  "text": "- **Internal fragmentation**: in the memory area allocated to a process, if some parts are not used.\n- **External fragmentation**: refers to some free partitions in memory that are too small to be used."
+}

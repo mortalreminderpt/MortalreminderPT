@@ -1,0 +1,4 @@
+{
+  "key": "b5ad6466926f82c4afc1a56fb65ba980deae57b3fbe068f017253bc07fb4bb1b",
+  "text": "### Stop and Wait Protocol\n- After sending each frame, the sender must wait for an acknowledgment (ACK) from the receiver."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "6402fd8fdebd289849c15f20ddc6d773a7d42e908510962e742c00e603fb955d",
+  "text": "Critical resource: a resource that only one process is allowed to use within a given time period. Processes need to access critical resources **mutually exclusively**."
+}

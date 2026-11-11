@@ -1,0 +1,4 @@
+{
+  "key": "48c528d29b6311c3a1f12efbfa93e5675e0fc0a059c2770be3a35fcff390d261",
+  "text": "Note: In a Type 2 virtual machine, **part of the virtual machine manager runs in kernel mode**, and this part is **loaded into the operating system kernel as a virtual machine driver**."
+}

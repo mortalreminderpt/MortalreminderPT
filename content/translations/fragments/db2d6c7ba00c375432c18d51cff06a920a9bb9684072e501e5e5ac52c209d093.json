@@ -1,0 +1,4 @@
+{
+  "key": "db2d6c7ba00c375432c18d51cff06a920a9bb9684072e501e5e5ac52c209d093",
+  "text": "Note:\n1. The **trap instruction** is executed in **user mode**. Immediately after the trap instruction is executed, **an internal interrupt is triggered**, causing the CPU to **enter kernel mode**;\n2. **Issuing the system call request occurs in user mode**, while **the corresponding handling of the system call is performed in kernel mode**."
+}

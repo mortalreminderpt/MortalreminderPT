@@ -1,0 +1,4 @@
+{
+  "key": "8db41678a05f3368ed38bd903cc0b1f22e7bf17713b656e441be36cfbaaf5f6b",
+  "text": "- Advantages: simple and efficient\n- Disadvantages: **not applicable to multiprocessors**; only applicable to operating system kernel processes, **not applicable to user processes** (because the enable/disable interrupt instructions can only run in kernel mode, and it would be very dangerous if these instructions could be used freely by users)."
+}

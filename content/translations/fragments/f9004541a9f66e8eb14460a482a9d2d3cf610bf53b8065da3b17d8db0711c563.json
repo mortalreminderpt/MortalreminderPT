@@ -1,0 +1,4 @@
+{
+  "key": "f9004541a9f66e8eb14460a482a9d2d3cf610bf53b8065da3b17d8db0711c563",
+  "text": "Internal interrupts are **related to the currently executing instruction**, and the interrupt signal comes from **inside the CPU**."
+}

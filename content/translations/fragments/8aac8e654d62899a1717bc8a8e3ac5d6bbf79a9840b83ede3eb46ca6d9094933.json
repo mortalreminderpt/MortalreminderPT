@@ -1,0 +1,4 @@
+{
+  "key": "8aac8e654d62899a1717bc8a8e3ac5d6bbf79a9840b83ede3eb46ca6d9094933",
+  "text": "If a function is passed as an argument to the state update function, React treats it as an updater function rather than as a new state value."
+}

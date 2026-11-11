@@ -1,0 +1,4 @@
+{
+  "key": "a281aa44919c19a379ea56039eb945fea0974be7c8ed472e3e708aa91699aa88",
+  "text": "|Moment|Response ratios of different processes|\n|--|--|\n|0 (P1 arrives)|Only P1 has arrived in the ready queue, so **P1** is selected directly|\n|7 (P1 completes)|P2=(5+4)/4=2.25, **P3=(3+1)/1=4**, P4=(2+4)/4=1.5|\n|8 (P3 completes)|**P2=2.5**, P4=1.75|\n|12 (P2 completes)|Only **P4** remains in the ready queue|"
+}

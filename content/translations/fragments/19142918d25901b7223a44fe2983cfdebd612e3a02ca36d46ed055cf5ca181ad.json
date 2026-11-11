@@ -1,0 +1,4 @@
+{
+  "key": "19142918d25901b7223a44fe2983cfdebd612e3a02ca36d46ed055cf5ca181ad",
+  "text": "All system functionality is placed in the kernel (operating systems with a monolithic kernel structure usually also adopt a \"modular\" design philosophy)."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "95effd2e8e7655f8106742b9877cb4ab8bd859e57d7e6782b92605698e3274ef",
+  "text": "If the system is in a **safe state, deadlock will definitely not occur**.\nIf the system enters an **unsafe state, deadlock may occur**. (Being in an unsafe state does not necessarily mean deadlock has occurred, but when deadlock occurs, the system must be in an unsafe state.)"
+}

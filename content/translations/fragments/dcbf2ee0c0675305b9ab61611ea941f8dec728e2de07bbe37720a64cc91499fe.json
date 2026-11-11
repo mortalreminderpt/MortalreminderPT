@@ -1,0 +1,4 @@
+{
+  "key": "dcbf2ee0c0675305b9ab61611ea941f8dec728e2de07bbe37720a64cc91499fe",
+  "text": "### Preemptive PSA\nPreemptive priority scheduling algorithm: each time scheduling occurs, select the process that has **currently arrived and has the highest priority**. Scheduling occurs when the current process **voluntarily gives up the processor**.\nIn addition, when the **ready queue changes**, it is also necessary to check whether preemption will occur."
+}

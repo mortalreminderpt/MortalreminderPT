@@ -1,0 +1,4 @@
+{
+  "key": "2798bc9ee921d5a8733cc871ef66e4155639905ef37d938143b0dc521577c7d2",
+  "text": "It can be understood this way: user-level threads are the carriers of \"code logic\"; kernel-level threads are the carriers of \"execution opportunities\". **Kernel-level threads are the unit of processor allocation**. In a multi-core CPU environment, the process in the figure above can be allocated at most two cores.\nA piece of \"code logic\" can be executed by the CPU only after it obtains an \"execution opportunity\".\nA kernel-level thread can run the code of any user-level thread that has a mapping relationship with it, and only when the code logic running in both kernel-level threads is blocked will this process be blocked."
+}

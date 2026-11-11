@@ -1,0 +1,4 @@
+{
+  "key": "c1a545795555f18e228723cf65a76126f7665e262e0db0c8054880a1e6fe8493",
+  "text": "V operations do not cause processes to block, so **the order of the two V operations can be swapped**."
+}

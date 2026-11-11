@@ -1,0 +1,4 @@
+{
+  "key": "fe9572864ddc084243d3194b15a5320c168e4d7e6c0b48cd522bdaeec2e32c35",
+  "text": "The system contains a group of producer processes and a group of consumer processes.\nEach time, a producer process produces a product and puts it into the buffer; each time, a consumer process takes a product out of the buffer and uses it. (Here, \"product\" is understood as some kind of data.)"
+}

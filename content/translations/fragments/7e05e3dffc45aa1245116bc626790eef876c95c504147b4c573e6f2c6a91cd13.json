@@ -1,0 +1,4 @@
+{
+  "key": "7e05e3dffc45aa1245116bc626790eef876c95c504147b4c573e6f2c6a91cd13",
+  "text": "Producer:\n⟦MC_b9feb5f88cbe1eb6_0⟧\nConsumer:\n⟦MC_6cb2a4d3f09a3c25_0⟧\nIf the buffer is already full at this point, then empty=0 and full=n.\nThen the producer process executes 1, making mutex become 0, and then executes 2. Since there is **no free buffer space, the producer is blocked**.\nBecause the producer is blocked, the system switches back to the consumer process.\nThe consumer process executes 3. **Because mutex is 0**, that is, the producer has not yet released the \"lock\" on the critical resource, **the consumer is also blocked**."
+}

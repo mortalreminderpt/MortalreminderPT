@@ -1,0 +1,4 @@
+{
+  "key": "1a6ccad9e2f25350e09bc229a6dd58e023258a43807e0bb257081f3a7b3515d8",
+  "text": "Turning a user's **source program into a program that can execute in memory** usually requires the following steps:\n- **Compilation**: the compiler compiles the user's source code into several object modules; (translating a high-level language into machine language)\n- **Linking**: the linker connects a set of compiled object modules and the required library functions together to form a complete load module; (generating a load module from object modules, forming complete logical addresses after linking)\n- **Loading**: the loader loads the load module into memory for execution, forming physical addresses after loading."
+}

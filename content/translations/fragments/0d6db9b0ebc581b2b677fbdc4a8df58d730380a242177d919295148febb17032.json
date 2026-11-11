@@ -1,0 +1,4 @@
+{
+  "key": "0d6db9b0ebc581b2b677fbdc4a8df58d730380a242177d919295148febb17032",
+  "text": "### **Flow Control vs. Congestion Control**\n1. **Flow Control**: A point-to-point traffic problem that prevents the sender from being faster than the receiver.\n2. **Congestion Control**: Involves the overall traffic-carrying capacity of the subnet."
+}

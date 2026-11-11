@@ -1,0 +1,4 @@
+{
+  "key": "f41321b74d082b0443e1032a542ce62590f035e56eb52cf281100c5f2fcd80aa",
+  "text": "1. Easy to debug and verify, debugging and verifying layer by layer from the bottom up;\n2. Easy to extend and maintain, with clear and fixed call interfaces between layers."
+}

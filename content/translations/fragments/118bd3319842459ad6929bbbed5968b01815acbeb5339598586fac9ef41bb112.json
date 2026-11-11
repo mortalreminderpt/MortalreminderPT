@@ -1,0 +1,4 @@
+{
+  "key": "118bd3319842459ad6929bbbed5968b01815acbeb5339598586fac9ef41bb112",
+  "text": "If there are no other ready processes in the ready queue, the scheduler will select the idle process (Idle). That is, in an actual system, the CPU will not be idle; even if no ready process exists, the idle process will run."
+}

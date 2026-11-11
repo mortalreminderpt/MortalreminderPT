@@ -1,0 +1,4 @@
+{
+  "key": "5bf0f72e082ff8a276557406f7c8cf6d5bf4145587a9ebceeea04409508e02cf",
+  "text": "This problem involves only mutual exclusion relationships, but unlike the problems encountered before, each philosopher process needs to hold two critical resources at the same time before it can start eating.\n**How to avoid deadlock caused by improper allocation of critical resources is the essence of the dining philosophers problem.**"
+}

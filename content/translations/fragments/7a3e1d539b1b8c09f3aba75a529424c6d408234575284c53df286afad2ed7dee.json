@@ -1,0 +1,4 @@
+{
+  "key": "7a3e1d539b1b8c09f3aba75a529424c6d408234575284c53df286afad2ed7dee",
+  "text": "The second argument of ⟦MC_441142c51381d613_4⟧ is the dependency array, which must contain all external variables used in the computation function. Omitting dependencies or including them incorrectly may cause the cache to become invalid or produce incorrect results."
+}

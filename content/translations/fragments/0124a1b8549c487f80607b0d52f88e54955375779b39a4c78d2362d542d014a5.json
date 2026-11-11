@@ -1,0 +1,4 @@
+{
+  "key": "0124a1b8549c487f80607b0d52f88e54955375779b39a4c78d2362d542d014a5",
+  "text": "During the sequential execution of instructions, many intermediate results are placed in various registers. For example, when executing the following code:"
+}

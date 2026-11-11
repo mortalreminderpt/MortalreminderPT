@@ -1,0 +1,4 @@
+{
+  "key": "d606ef5d118f2062e3ec309120ef44f05807a20ffeb6681b362d56a27878ecdc",
+  "text": "- **Combine with ⟦MC_d5607f8c3c3d434c_0⟧ or ⟦MC_18b9b49b1c5304f4_0⟧**: State and update functions can be passed through Context to achieve the effect of global state management."
+}

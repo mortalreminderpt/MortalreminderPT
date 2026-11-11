@@ -1,0 +1,4 @@
+{
+  "key": "1c32cc85cf8decbabbf72b547bececba542a4231f7f690155418c34e505a642b",
+  "text": "### Scheduling and switching cannot be performed in a critical section of an operating system kernel program"
+}

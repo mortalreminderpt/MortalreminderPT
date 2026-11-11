@@ -1,0 +1,4 @@
+{
+  "key": "4903223615e00504e712d3dc0f85fb1953c17314c40027abe500e252c0dea464",
+  "text": "⟦MC_d5607f8c3c3d434c_4⟧ must be called at the top level of a function component, and cannot be called inside loops, conditional statements, or nested functions. This is because React needs to manage state correctly according to the order in which Hooks are called."
+}

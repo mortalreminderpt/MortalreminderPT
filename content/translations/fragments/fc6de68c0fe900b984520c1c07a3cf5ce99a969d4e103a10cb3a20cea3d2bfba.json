@@ -1,0 +1,4 @@
+{
+  "key": "fc6de68c0fe900b984520c1c07a3cf5ce99a969d4e103a10cb3a20cea3d2bfba",
+  "text": "A **sequential resource allocation method** can be adopted.\nFirst, number the resources in the system, and stipulate that **each process must request resources in increasing order of number**, and resources of the same type (that is, resources with the same number) must be applied for all at once."
+}

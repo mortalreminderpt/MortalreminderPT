@@ -1,0 +1,4 @@
+{
+  "key": "b7b2da3ca151a025d76c8620687e9e9e53ad6bf36bbaa722abaab8b14902d62f",
+  "text": "The difference between non-preemptive and preemptive:\n- With a non-preemptive scheduling policy, the scheduler is only triggered when a **running process blocks or exits**;\n- With a preemptive scheduling policy, the scheduler is triggered on every **clock interrupt or every k clock interrupts**."
+}

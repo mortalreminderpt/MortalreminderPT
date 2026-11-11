@@ -1,0 +1,4 @@
+{
+  "key": "66ee98003db8b960476e52ef8593b8a56e590748c11eb82b2b67ae606dbec4c5",
+  "text": "If an interrupt signal is received after completing the first step, then PCB2 has state=1, but it is placed in the blocked queue."
+}

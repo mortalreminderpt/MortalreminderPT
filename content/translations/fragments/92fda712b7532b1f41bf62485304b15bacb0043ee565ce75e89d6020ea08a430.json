@@ -1,0 +1,4 @@
+{
+  "key": "92fda712b7532b1f41bf62485304b15bacb0043ee565ce75e89d6020ea08a430",
+  "text": "If **\"code 4\" of P2 must be based on the execution results of \"code 1\" and \"code 2\" of P1** before it can execute, then we must **ensure that \"code 4\" is definitely executed after \"code 2\"**."
+}

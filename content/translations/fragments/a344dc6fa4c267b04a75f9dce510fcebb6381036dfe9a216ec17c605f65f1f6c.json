@@ -1,0 +1,4 @@
+{
+  "key": "a344dc6fa4c267b04a75f9dce510fcebb6381036dfe9a216ec17c605f65f1f6c",
+  "text": "If this process finishes execution and returns its resources to the system, it may activate some processes that are waiting for resources, allowing them to continue executing smoothly."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "5b6f69d23d75b117a84bf843bb6a9328428d5e9ca466dcc5071be26cbfd558d9",
+  "text": "## Two-Flag Check-First Method\nAlgorithm idea: Set a Boolean array ⟦MC_17c21d4d9c0f9d2f_0⟧, where each element is used to **mark each process's intention to enter the critical section.**\nFor example, ⟦MC_6e61669635564c1a_0⟧ means that process 0, P0, now wants to enter the critical section.\nBefore entering the critical section, each process first checks whether any other process wants to enter the critical section; if not, it sets its own corresponding flag ⟦MC_a2cb7f9a49516545_0⟧ to ⟦MC_60404b5f6f687a2b_0⟧, and then begins accessing the critical section."
+}

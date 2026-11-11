@@ -1,0 +1,4 @@
+{
+  "key": "c5e8ac438000fdd9cf78d1e8cab199be73fc4d6bda4f214f8b6d60ac75956434",
+  "text": "## Problem Description\nThere are two groups of concurrent processes, readers and writers, sharing a single file.\nWhen two or more reader processes access the shared data simultaneously, no side effects occur, but if a writer process and another process (either a reader or a writer) access the shared data simultaneously, it may cause data inconsistency errors.\nTherefore, the requirements are:\n1. **Multiple readers** are allowed to perform read operations on the file simultaneously;\n2. **Only one writer** is allowed to write information to the file;\n3. No writer is **allowed to work before completing its write operation, nor are other readers or writers**;\n4. Before a writer **performs a write operation, all existing readers and writers should be made to exit**."
+}

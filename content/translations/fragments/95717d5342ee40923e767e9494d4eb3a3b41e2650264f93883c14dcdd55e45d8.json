@@ -1,0 +1,4 @@
+{
+  "key": "95717d5342ee40923e767e9494d4eb3a3b41e2650264f93883c14dcdd55e45d8",
+  "text": "We call resources that **only allow one process to use within a given time period** **critical resources**.\nMany physical devices (such as cameras and printers) are critical resources.\nIn addition, many variables, data, memory buffers, etc. are also critical resources."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "94e6a4364247e0a2b5e6affebe1322fbfbc497a2b32b1aeb42c5189dcae81450",
+  "text": "Suppose the event that process 2 is waiting for occurs at this moment. Then, in the operating system, the kernel program responsible for process control needs to do at least two things:\n1. Set the state of PCB2 to 1\n2. Move PCB2 from the blocked queue to the ready queue"
+}

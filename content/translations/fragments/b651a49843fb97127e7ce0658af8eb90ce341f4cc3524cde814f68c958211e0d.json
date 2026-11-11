@@ -1,0 +1,4 @@
+{
+  "key": "b651a49843fb97127e7ce0658af8eb90ce341f4cc3524cde814f68c958211e0d",
+  "text": "Process scheduling is **the most basic type of scheduling** in an operating system, and process scheduling must be configured in general operating systems. The **frequency** of process scheduling **is very high**, generally once every few tens of milliseconds."
+}

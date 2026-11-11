@@ -1,0 +1,4 @@
+{
+  "key": "d4907222bd216125532e755b73d272a3efb283550054696dd04c060f010132e2",
+  "text": "### Multimedia Protocols\n- HTTP: application layer protocol\n- RTSP (Real Time Streaming Protocol): application layer protocol\n- RTP (Real-time Transport Protocol): transport layer protocol, based on UDP\n- MPEG-4: media compression"
+}

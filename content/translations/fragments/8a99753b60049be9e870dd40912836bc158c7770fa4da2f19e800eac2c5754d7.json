@@ -1,0 +1,4 @@
+{
+  "key": "8a99753b60049be9e870dd40912836bc158c7770fa4da2f19e800eac2c5754d7",
+  "text": "**The overlay structure must be declared by the programmer**, and the operating system performs automatic overlaying. Disadvantage: **it is not transparent to users**, which increases the programming burden on users.\nOverlay technology was used only in early operating systems and has now become history."
+}

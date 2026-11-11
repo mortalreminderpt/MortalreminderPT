@@ -1,0 +1,4 @@
+{
+  "key": "36ee98554fad6a6bca215999f342a86bbd596e13a78d352e35d4f9f298de1b2d",
+  "text": "Algorithm idea: Between two processes, one process, **after finishing access to the critical section**, will **transfer the permission** to use the critical section to the other process.\nThat is, the permission for each process to enter the critical section can only be granted by the other process."
+}

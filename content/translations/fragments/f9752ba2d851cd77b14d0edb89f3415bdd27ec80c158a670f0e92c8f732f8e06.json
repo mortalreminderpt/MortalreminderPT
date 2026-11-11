@@ -1,0 +1,4 @@
+{
+  "key": "f9752ba2d851cd77b14d0edb89f3415bdd27ec80c158a670f0e92c8f732f8e06",
+  "text": "**One V operation** on semaphore S means the process **releases one unit of that type of resource**, so ⟦MC_4e105a2fd6138f90_0⟧ needs to be executed, indicating that the number of resources is increased by 1;\nif after the increase by 1 it is still ⟦MC_6e5d4476146a9eec_0⟧, it indicates that there are still processes waiting for this type of resource, so the ⟦MC_6ea40259be2a31da_1⟧ primitive should be called to **wake up the first process in the waiting queue** (the awakened process goes from **blocked state -> ready state**)."
+}

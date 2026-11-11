@@ -1,0 +1,4 @@
+{
+  "key": "bd61989311e30b36dc287b5187b3de1f37ff488494626839c25f002f9e569fb2",
+  "text": "There are only mutual exclusion relationships among these processes, but unlike the mutual exclusion relationships encountered before, each process needs to hold two critical resources at the same time, so there is a hidden risk of \"deadlock.\""
+}

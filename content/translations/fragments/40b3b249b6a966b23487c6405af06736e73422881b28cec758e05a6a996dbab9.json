@@ -1,0 +1,4 @@
+{
+  "key": "40b3b249b6a966b23487c6405af06736e73422881b28cec758e05a6a996dbab9",
+  "text": "1. **Dynamism**: a process is a single execution of a program, dynamically arising, changing, and dying out;\n2. Concurrency: there are multiple process entities in memory, and each process can execute concurrently;\n3. Independence: a process is the basic unit that can run independently, obtain resources independently, and accept scheduling independently;\n4. Asynchrony: each process advances at its own independent and unpredictable speed, and the operating system must provide a \"process synchronization mechanism\" to solve the asynchrony problem;\n5. Structure: every process is configured with a PCB. Structurally, a process consists of a program segment, a data segment, and a PCB."
+}

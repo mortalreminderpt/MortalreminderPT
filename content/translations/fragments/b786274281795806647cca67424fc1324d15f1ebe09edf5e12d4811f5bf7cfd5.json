@@ -1,0 +1,4 @@
+{
+  "key": "b786274281795806647cca67424fc1324d15f1ebe09edf5e12d4811f5bf7cfd5",
+  "text": "User processes can operate on **semaphores** by using a **pair of primitives** provided by the operating system, thereby conveniently achieving process mutual exclusion and process synchronization."
+}

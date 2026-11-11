@@ -1,0 +1,4 @@
+{
+  "key": "c5fb582543a2762dcd5e974db67f27c88455b457889be4b0eaaa2e1c8db4619c",
+  "text": "1. First, **several mailboxes** are stored in the operating system kernel's address space;\n2. Process P uses the send primitive ⟦MC_62e130cf57d286df_0⟧, and the operating system **adds the message** ⟦MC_278b3153e7247950_3⟧ **to mailbox A in the operating system kernel's address space**;\n3. While running, process Q executes the receive primitive ⟦MC_e3a1ef39e74a35da_0⟧, and the operating system retrieves the message ⟦MC_278b3153e7247950_4⟧ from mailbox A and moves it into process Q's address space."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "16a565e2785931596c68a93c6b51e6f93b9b3ed397b3fca5bcd66f7ebbc316e5",
+  "text": "⟦MC_20984598227cf347_0⟧4. The operating system **executes the safety algorithm** to check whether the system is in a safe state after this resource allocation. If it is safe, only then is the allocation formally made; otherwise, restore the corresponding data and let the process block and wait."
+}

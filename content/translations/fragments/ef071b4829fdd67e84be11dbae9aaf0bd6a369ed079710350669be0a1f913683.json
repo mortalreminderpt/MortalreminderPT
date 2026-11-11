@@ -1,0 +1,4 @@
+{
+  "key": "ef071b4829fdd67e84be11dbae9aaf0bd6a369ed079710350669be0a1f913683",
+  "text": "⟦MC_818d42e490579df8_0⟧\n- **Avoid unnecessary re-renders of child components**: Combined with ⟦MC_b0c15dff67cca024_0⟧, it can prevent child components from re-rendering when it is not necessary."
+}

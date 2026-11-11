@@ -1,0 +1,4 @@
+{
+  "key": "f5b62750c316794818d79ac6c2e3ddd9ec85c9030365ae796473f7a4381bc278",
+  "text": "Steps of the Banker's Algorithm:\n1. Check whether this request **exceeds the maximum demand declared previously**;\n2. Check whether the system's **remaining available resources can still satisfy** this request;\n3. Tentatively allocate and **change each data structure**;\n4. Use the safety algorithm to **check whether this allocation will cause the system to enter an unsafe state**."
+}

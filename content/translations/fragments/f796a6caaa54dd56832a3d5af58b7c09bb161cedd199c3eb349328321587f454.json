@@ -1,0 +1,4 @@
+{
+  "key": "f796a6caaa54dd56832a3d5af58b7c09bb161cedd199c3eb349328321587f454",
+  "text": "To prevent deadlock, **the act of each philosopher picking up chopsticks can be made mutually exclusive**.\nThis ensures that **even if a philosopher is blocked halfway through picking up chopsticks**, **no other philosopher will continue trying to pick up chopsticks**.\nIn this way, after the philosopher currently eating puts down their chopsticks, the blocked philosopher can obtain the chopsticks they are waiting for."
+}

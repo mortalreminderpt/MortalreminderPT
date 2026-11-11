@@ -1,0 +1,4 @@
+{
+  "key": "0e6f63f0dc7168c86cb9e3ea3abc45d869ddc0a53611376328c40d950821031c",
+  "text": "Thread control block:\n- Thread identifier: TID, similar to PID\n- Program counter PC: where the thread is executing (points to the address of the next instruction)\n- Other registers: intermediate results of thread execution\n- Stack pointer: the stack stores function call information, local variables, etc.\n- Thread running state: running/ready/blocked\n- Priority: a reference for thread scheduling and resource allocation"
+}

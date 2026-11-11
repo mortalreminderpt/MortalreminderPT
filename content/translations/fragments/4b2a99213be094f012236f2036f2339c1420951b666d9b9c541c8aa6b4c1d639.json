@@ -1,0 +1,4 @@
+{
+  "key": "4b2a99213be094f012236f2036f2339c1420951b666d9b9c541c8aa6b4c1d639",
+  "text": "- **Do not read or modify ⟦MC_da756e7954773222_8⟧ during rendering**: This breaks the pure function nature of the component and leads to unpredictable behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "caa71e041f1be7ccd38bf8bc630d6eb4e538703e34dd89c79adaa371185efc9a",
+  "text": "Mutex locks that require continuous busy waiting in a loop (spin waiting) can all be called spin locks.\nExamples include the TS and swap instructions; the single-flag method, the two-flag method, and Peterson's algorithm."
+}

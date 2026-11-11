@@ -1,0 +1,4 @@
+{
+  "key": "a12ac364a24e2d487bf488a9e7e198f6caa7a5b569804d29aabb1620b04e2792",
+  "text": "Basic characteristics of monitors:\n1. Data local to the monitor can only be accessed by procedures local to the monitor;\n2. A process can enter the monitor to access shared data only by calling a procedure within the monitor;\n3. **Only one process at a time is allowed to execute an internal procedure within the monitor**."
+}

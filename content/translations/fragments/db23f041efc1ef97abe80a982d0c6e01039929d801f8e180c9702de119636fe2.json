@@ -1,0 +1,4 @@
+{
+  "key": "db23f041efc1ef97abe80a982d0c6e01039929d801f8e180c9702de119636fe2",
+  "text": "Distributed operating system: its main characteristics are **distribution and parallelism**. The computers in the system have equal status, and **any work can be distributed across these computers and completed by them in parallel and collaboratively**."
+}

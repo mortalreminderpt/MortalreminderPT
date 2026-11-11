@@ -1,0 +1,4 @@
+{
+  "key": "344124ba080744c3d26b6971795b0f2cbe8dd9c4ac1f66ffac864703fe7ffca9",
+  "text": "### Example\nThe arrival times of each process at the ready queue and the required running times are shown in the following table. Using the Highest Response Ratio Next scheduling algorithm, calculate the waiting time, average waiting time, turnaround time, average turnaround time, weighted turnaround time, and average weighted turnaround time of each process."
+}

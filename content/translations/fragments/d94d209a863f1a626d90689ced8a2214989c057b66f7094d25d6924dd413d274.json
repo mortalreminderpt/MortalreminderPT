@@ -1,0 +1,4 @@
+{
+  "key": "d94d209a863f1a626d90689ced8a2214989c057b66f7094d25d6924dd413d274",
+  "text": "|Algorithm|Preemptive|Advantages|Disadvantages|Considers running and waiting time|Causes starvation|\n|--|--|--|--|\n|FCFS|Non-preemptive|Fair, simple to implement|Disadvantageous to short jobs|Waiting time √⟦MC_7a1718a3cc58b985_0⟧Running time ×|No|\n|SJF/SPF|Non-preemptive, also has a preemptive version called Shortest Remaining Time Next (SRTN)|Nearly the shortest average waiting time/turnaround time|Disadvantageous to long jobs, may cause starvation; ⟦MC_7a1718a3cc58b985_1⟧difficult to achieve true shortest job first|Waiting time ×⟦MC_7a1718a3cc58b985_2⟧Running time √|Yes|\n|HRRN|Non-preemptive|A compromise between FCFS and SJF, considering both waiting and running time|-|Waiting time √⟦MC_7a1718a3cc58b985_3⟧Running time √|No|"
+}

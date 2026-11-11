@@ -1,0 +1,4 @@
+{
+  "key": "72a0351235c4a36561935929153bea0a60ff7579aaedc0b281e22e0fae23f3e5",
+  "text": "**Low-level scheduling (process scheduling / processor scheduling)**: According to a certain strategy, select a process from the ready queue and allocate the processor to it."
+}

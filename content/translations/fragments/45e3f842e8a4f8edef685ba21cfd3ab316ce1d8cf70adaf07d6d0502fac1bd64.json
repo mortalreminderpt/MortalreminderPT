@@ -1,0 +1,4 @@
+{
+  "key": "45e3f842e8a4f8edef685ba21cfd3ab316ce1d8cf70adaf07d6d0502fac1bd64",
+  "text": "Only when **the buffer is not full** can **the producer put a product into the buffer**; otherwise, it must wait."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "37b6d03b35da2e90e2ae96f9a0cfe560f77fafaa86e4428ad46a69c5dc747793",
+  "text": "When encountering a situation where a process needs to hold multiple critical resources at the same time, one should refer to the ideas of the dining philosophers problem and analyze whether circular waiting or deadlock may occur among the processes given in the problem."
+}

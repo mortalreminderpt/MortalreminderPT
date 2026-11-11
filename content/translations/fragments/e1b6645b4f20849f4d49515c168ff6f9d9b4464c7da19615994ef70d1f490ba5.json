@@ -1,0 +1,4 @@
+{
+  "key": "e1b6645b4f20849f4d49515c168ff6f9d9b4464c7da19615994ef70d1f490ba5",
+  "text": "Similarly, if there is no product in the buffer, that is, full=0 and empty=n, executing in the order 341 will also cause deadlock."
+}

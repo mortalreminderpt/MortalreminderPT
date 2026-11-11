@@ -1,0 +1,4 @@
+{
+  "key": "0c5f35143876f10ca7bf91c2bbacafc509b9112fd53b289b3361c704a259a2e2",
+  "text": "The critical resources accessed by ordinary critical sections do not directly affect the management work of the operating system kernel, so scheduling and switching can be performed while accessing an ordinary critical section."
+}

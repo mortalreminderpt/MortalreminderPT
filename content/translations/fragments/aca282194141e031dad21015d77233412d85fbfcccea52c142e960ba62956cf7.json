@@ -1,0 +1,4 @@
+{
+  "key": "aca282194141e031dad21015d77233412d85fbfcccea52c142e960ba62956cf7",
+  "text": "## What Is a System Call? The Role of System Calls\nThe operating system, as the interface between users and computer hardware, needs to provide some simple and easy-to-use services upward. These mainly include command interfaces and program interfaces. Among them, the program interface consists of a set of **system calls**."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "d78fffccee05b095b783834a4c1c0f8cebbe23949fdbef9005bf65c9e3e8fc71",
+  "text": "As shown in the figure, before the printer finishes printing, the process remains in the critical section and the critical resource is not unlocked. But the printer is a slow device; if process scheduling were not allowed during this time, the CPU would remain idle."
+}

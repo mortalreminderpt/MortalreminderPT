@@ -1,0 +1,4 @@
+{
+  "key": "ddc66716289e5a49c0454ed149b4ae10bb848d07b6f1f26a508db9ee777dac6f",
+  "text": "1. The kernel is small with few functions, easy to maintain, and has high kernel reliability;\n2. An error in a functional module outside the kernel will not cause the entire system to crash."
+}

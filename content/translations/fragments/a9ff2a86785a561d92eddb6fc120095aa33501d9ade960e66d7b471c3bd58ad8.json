@@ -1,0 +1,4 @@
+{
+  "key": "a9ff2a86785a561d92eddb6fc120095aa33501d9ade960e66d7b471c3bd58ad8",
+  "text": "In the single contiguous allocation method, memory is divided into a **system area** and a **user area**.\nThe system area is usually located in the low-address part of memory and is used to store operating system-related data; the user area is used to store user process-related data.\nThere can be **only one user program** in memory, and the user program monopolizes the entire user area space."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "5b47ef62d08047c7a12cc0e59866bbd3a95774a89f326f5650b6cc9d40277965",
+  "text": "In this case, class A processes and class B processes may continue running while class C processes starve."
+}

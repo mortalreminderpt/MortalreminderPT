@@ -1,0 +1,4 @@
+{
+  "key": "41eba38df68bb6d83e8fbdd20ca721ce4cc0b6f1965ed097659eec19a3cfad18",
+  "text": "## General approach to PV operation problems:\n1. Relationship analysis. Identify each process described in the problem and analyze the synchronization and mutual exclusion relationships between them.\n2. Organize your thoughts. Determine the general order of P and V operations based on the operation flow of each process.\n3. Set semaphores. Set the required semaphores and determine their initial values based on the problem conditions. (The initial value of a mutual exclusion semaphore is generally 1; the initial value of a synchronization semaphore depends on the initial value of the corresponding resource.)"
+}

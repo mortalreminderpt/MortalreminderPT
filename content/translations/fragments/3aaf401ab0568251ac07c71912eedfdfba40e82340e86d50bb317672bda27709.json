@@ -1,0 +1,4 @@
+{
+  "key": "3aaf401ab0568251ac07c71912eedfdfba40e82340e86d50bb317672bda27709",
+  "text": "When a user submits a large number of jobs to the system, sometimes memory space is limited, and sometimes it is impossible to put all the jobs submitted by the user into memory. At this point, high-level scheduling, i.e., job scheduling, is needed to decide which programs should be started first."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "7135f43c9868ecc9385ab623cc7d4801757b55974ec6dad386c5ab1be26c9954",
+  "text": "A **thread** is a **basic CPU execution unit** and also the **smallest unit of program execution flow**.\nAfter the introduction of threads, not only can processes be concurrent with each other, but **threads within a process can also be concurrent with each other**, thereby further **improving the system's degree of concurrency**, so that a single process can also concurrently handle various tasks (such as QQ video, text chat, and file transfer)."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "89c85ecd40bd7d72ce7f12888dce1efc11c5353b205e02071a876712dc838b92",
+  "text": "Blocked processes can be swapped out first; processes with lower priority can be swapped out;\nto prevent low-priority processes from being swapped out again soon after being loaded into memory, some systems also consider the residence time of processes in memory.\n(Note: **The PCB resides in memory permanently** and will not be swapped out to external storage)"
+}

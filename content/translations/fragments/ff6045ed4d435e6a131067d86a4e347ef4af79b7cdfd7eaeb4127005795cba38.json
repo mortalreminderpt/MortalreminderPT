@@ -1,0 +1,4 @@
+{
+  "key": "ff6045ed4d435e6a131067d86a4e347ef4af79b7cdfd7eaeb4127005795cba38",
+  "text": "1. It is inconvenient to add new devices, because all numbers may need to be reassigned;\n2. The actual order in which a process uses resources may be inconsistent with the increasing order of numbers, resulting in resource waste;\n3. Resources must be applied for in the specified order, which makes user programming troublesome."
+}

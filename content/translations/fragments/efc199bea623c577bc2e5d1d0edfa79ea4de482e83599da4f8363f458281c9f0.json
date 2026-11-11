@@ -1,0 +1,4 @@
+{
+  "key": "efc199bea623c577bc2e5d1d0edfa79ea4de482e83599da4f8363f458281c9f0",
+  "text": "**Solution:**\n1. The sender sends a \"Request to Send (RTS)\".\n2. The receiver replies with a \"Clear to Send (CTS)\", notifying nearby nodes.\n3. After data transmission is complete, the channel is released via an \"Acknowledgement (ACK)\"."
+}

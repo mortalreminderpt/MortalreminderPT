@@ -1,0 +1,4 @@
+{
+  "key": "74e6fd3cb28f9f92b0c0b2ba8d1091cec0405d1f0ebf99ba199c21c31a504c52",
+  "text": "Switching threads back and forth among various states is called **thread control**. Thread states and transitions are almost the same as process states and transitions; usually only the **ready, running, and blocked states of threads** are of concern, which is the three-state model of threads."
+}

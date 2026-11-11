@@ -1,0 +1,4 @@
+{
+  "key": "e0dfde2635935fbf355568cd2ff694f22a52924bd74808f87beb9f7cd89df574",
+  "text": "**Example**:\nIf the channel bandwidth is 3000 Hz and the number of signal levels is 8, the maximum data rate is:\n$\n2 \\cdot 3000 \\cdot \\log_2(8) = 18,000 \\text{ bps}\n$"
+}

@@ -1,0 +1,4 @@
+{
+  "key": "b02352ea54a83aa5706a49f5cffd7ca5fed6bb799887801720dac46d9d07ae06",
+  "text": "Before this event occurs, the process cannot continue executing; at this point, **the operating system takes this process off the CPU** and lets it enter the \"**blocked state**\"."
+}

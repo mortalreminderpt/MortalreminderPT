@@ -1,0 +1,4 @@
+{
+  "key": "249bd71f4c20841ecbefd81f26a921d50703019eb2e608892e10514445d29df4",
+  "text": "Strictly speaking, the statement \"the SJF scheduling algorithm has the minimum average waiting time and average turnaround time\" is incorrect and imprecise.\nThe previous example shows that the Shortest Remaining Time Next algorithm yields even lower average waiting time and average turnaround time;\na condition should be added: \"when **all processes can run at the same time**, the SJF scheduling algorithm has the minimum average waiting time and average turnaround time\";\nor \"when **all processes arrive at almost the same time**, the SJF scheduling algorithm has the minimum average waiting time and average turnaround time\"."
+}

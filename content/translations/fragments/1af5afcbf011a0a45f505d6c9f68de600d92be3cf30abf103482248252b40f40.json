@@ -1,0 +1,4 @@
+{
+  "key": "1af5afcbf011a0a45f505d6c9f68de600d92be3cf30abf103482248252b40f40",
+  "text": "- **Specify the dependency array correctly**: Make sure all external variables used in the side effect are declared in the dependency array."
+}

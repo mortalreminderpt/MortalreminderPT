@@ -1,0 +1,4 @@
+{
+  "key": "690618764d0a125729002f67175fded6c06a35f3facfa43da3d36f20b0819ef3",
+  "text": "When analyzing synchronization problems (one-before-the-other problems), one must not analyze from the perspective of the behavior of a single process; instead, the things that happen \"one before the other\" should be regarded as the before-and-after relationship between two \"events\"."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "8ee608244c3c13ff9bc9152b966cee13ba4942d018d3466d3857787c779ecbf1",
+  "text": "**Explanation:**\nReducer is a pure function that receives the current State and an Action and returns a new State. It decides how to update State based on the Action type, ensuring the immutability of State."
+}

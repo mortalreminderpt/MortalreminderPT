@@ -1,0 +1,4 @@
+{
+  "key": "9bb9164f2bf21f2dfc494ee0e803313a7792525ac2f9f9f977234f8ffcf75ca1",
+  "text": "5. Client\n- Uses only the interfaces declared by the AbstractFactory and AbstractProduct classes"
+}

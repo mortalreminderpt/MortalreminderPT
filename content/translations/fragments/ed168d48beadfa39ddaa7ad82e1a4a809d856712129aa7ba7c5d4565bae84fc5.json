@@ -1,0 +1,4 @@
+{
+  "key": "ed168d48beadfa39ddaa7ad82e1a4a809d856712129aa7ba7c5d4565bae84fc5",
+  "text": "The defect of the integer semaphore is the \"busy waiting\" problem, so people proposed the \"record-type semaphore,\" that is, a semaphore represented by a record-type data structure."
+}

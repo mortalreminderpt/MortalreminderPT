@@ -1,0 +1,4 @@
+{
+  "key": "6acec64e1a0855a8f820b08137abaf5fc86a5a65e9725e88e768cdf024d0894b",
+  "text": "### Free Partition Table and Free Partition Chain\nThe system can use two data structures, the free partition table or the free partition chain, to record memory usage:\n- Free partition table: each free partition corresponds to one table entry. The table entry contains information such as the partition number, partition size, and partition starting address;\n- Free partition chain: the beginning and end of each partition are respectively provided with a forward pointer and a backward pointer. The beginning can also record information such as the partition size."
+}

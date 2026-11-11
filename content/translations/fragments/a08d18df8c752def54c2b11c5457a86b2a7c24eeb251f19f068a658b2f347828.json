@@ -1,0 +1,4 @@
+{
+  "key": "a08d18df8c752def54c2b11c5457a86b2a7c24eeb251f19f068a658b2f347828",
+  "text": "Data exchange between processes is based on **formatted messages (Message)**. Processes exchange data through the two **primitives** provided by the operating system: \"send message\" and \"receive message\"."
+}

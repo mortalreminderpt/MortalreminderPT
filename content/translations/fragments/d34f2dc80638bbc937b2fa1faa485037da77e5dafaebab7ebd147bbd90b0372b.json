@@ -1,0 +1,4 @@
+{
+  "key": "d34f2dc80638bbc937b2fa1faa485037da77e5dafaebab7ebd147bbd90b0372b",
+  "text": "- **Cache expensive computation results**: For values that require a lot of computation, you can use ⟦MC_441142c51381d613_6⟧ to cache the result and improve performance."
+}

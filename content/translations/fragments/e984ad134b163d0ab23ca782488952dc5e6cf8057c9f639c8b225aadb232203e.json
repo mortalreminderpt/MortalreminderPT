@@ -1,0 +1,4 @@
+{
+  "key": "e984ad134b163d0ab23ca782488952dc5e6cf8057c9f639c8b225aadb232203e",
+  "text": "- **Do not use ⟦MC_2af479ca3392eccf_15⟧ in loops or conditions**: ⟦MC_2af479ca3392eccf_16⟧ must be called at the top level of a component and cannot be called in loops, conditions, or nested functions."
+}

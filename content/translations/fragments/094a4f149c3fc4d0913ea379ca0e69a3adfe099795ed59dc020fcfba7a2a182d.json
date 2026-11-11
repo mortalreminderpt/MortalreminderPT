@@ -1,0 +1,4 @@
+{
+  "key": "094a4f149c3fc4d0913ea379ca0e69a3adfe099795ed59dc020fcfba7a2a182d",
+  "text": "**Fragmentation types**:  \n1. **Transparent**: Fragmentation and reassembly occur at every network traversed.  \n2. **Non-Transparent**: Packets are reassembled only at the destination."
+}

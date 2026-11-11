@@ -1,0 +1,4 @@
+{
+  "key": "07de01007b44bc3641176d28ccad2089a17f5fe2561a9e50c6844db9b5518576",
+  "text": "In a concurrent environment, a phenomenon in which processes, due to competing for resources, **wait for the resources held by each other, causing all processes to block and none to be able to move forward** is called \"deadlock.\"\nOnce a deadlock occurs, unless there is external interference, none of these processes will be able to move forward."
+}

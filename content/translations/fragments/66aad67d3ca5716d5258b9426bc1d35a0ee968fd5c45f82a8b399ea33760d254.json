@@ -1,0 +1,4 @@
+{
+  "key": "66aad67d3ca5716d5258b9426bc1d35a0ee968fd5c45f82a8b399ea33760d254",
+  "text": "Under the control of a real-time operating system, the computer system processes external signals promptly upon receiving them and **must finish processing events within strict time limits**. The main characteristics of real-time operating systems are **timeliness and reliability**."
+}

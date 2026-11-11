@@ -1,0 +1,4 @@
+{
+  "key": "2c5d4d28880ac31a349325c560ace2f037ff49c79247336abfe914f4b8c7b022",
+  "text": "- **Changing ⟦MC_da756e7954773222_11⟧ does not trigger a re-render**, so it should not be used for values that need to be displayed in the UI."
+}

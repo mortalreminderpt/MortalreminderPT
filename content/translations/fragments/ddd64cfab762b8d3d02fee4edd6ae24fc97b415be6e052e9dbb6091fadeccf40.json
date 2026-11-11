@@ -1,0 +1,4 @@
+{
+  "key": "ddd64cfab762b8d3d02fee4edd6ae24fc97b415be6e052e9dbb6091fadeccf40",
+  "text": "- **Understand how ⟦MC_1685976f9fe74590_10⟧ works**: State updates are asynchronous; after calling ⟦MC_1685976f9fe74590_11⟧, the state is updated only on the next render."
+}

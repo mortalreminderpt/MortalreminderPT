@@ -1,0 +1,4 @@
+{
+  "key": "3d09bb4e95c4c3d2ca8ef0687ead35174b8d16ef76e6922305c7ac3acbc7e682",
+  "text": "Routing algorithms help the network layer decide which output line incoming data packets should be transmitted over, ensuring that data packets reach their destination correctly and efficiently.\n- **Main categories**:\n  - Non-adaptive algorithms (such as Shortest Path Routing and Flooding).\n  - Adaptive algorithms (such as Distance Vector Routing and Link State Routing)."
+}

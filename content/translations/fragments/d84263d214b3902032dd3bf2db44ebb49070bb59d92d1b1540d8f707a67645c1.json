@@ -1,0 +1,4 @@
+{
+  "key": "d84263d214b3902032dd3bf2db44ebb49070bb59d92d1b1540d8f707a67645c1",
+  "text": "**Storage-region-based** sharing: the operating system carves out a shared storage region in memory, and the form of the data and where it is stored are controlled by the communicating processes rather than by the operating system. This sharing method is very fast and is a **high-level communication** method."
+}

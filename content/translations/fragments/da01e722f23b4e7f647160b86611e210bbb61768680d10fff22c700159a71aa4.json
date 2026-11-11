@@ -1,0 +1,4 @@
+{
+  "key": "da01e722f23b4e7f647160b86611e210bbb61768680d10fff22c700159a71aa4",
+  "text": "**Example flow:**\n- Stations initially in collision are grouped, and collisions are reduced layer by layer until all stations transmit successfully."
+}

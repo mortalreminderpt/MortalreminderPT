@@ -1,0 +1,4 @@
+{
+  "key": "0cd24aa46a41cd01a557b865c796b2b318e2f42558541a980bc7355e4ea4bebc",
+  "text": "- **Allocation and reclamation of memory space**: the operating system completes **the allocation and management of main memory space**;\n- Address translation: converting **logical addresses** into **the corresponding physical addresses**;\n- **Expansion** of memory space: using **virtual storage technology** or automatic overlay technology to **logically expand main memory**;\n- **Storage protection**: ensuring that **each job runs within its own storage space** without interfering with others."
+}

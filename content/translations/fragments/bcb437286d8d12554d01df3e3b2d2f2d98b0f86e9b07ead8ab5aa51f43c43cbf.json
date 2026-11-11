@@ -1,0 +1,4 @@
+{
+  "key": "bcb437286d8d12554d01df3e3b2d2f2d98b0f86e9b07ead8ab5aa51f43c43cbf",
+  "text": "**At this point, count is a critical resource, and another semaphore mutex needs to be added to guarantee the atomicity of its operations.**"
+}

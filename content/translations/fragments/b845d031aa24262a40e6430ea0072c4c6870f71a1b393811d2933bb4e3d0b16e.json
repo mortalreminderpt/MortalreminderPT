@@ -1,0 +1,4 @@
+{
+  "key": "b845d031aa24262a40e6430ea0072c4c6870f71a1b393811d2933bb4e3d0b16e",
+  "text": "**Explanation:**\nStore Creator is a function used to create a Redux Store. It receives a Reducer and an initial State and returns a configured Store instance."
+}

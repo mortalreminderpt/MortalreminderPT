@@ -1,0 +1,4 @@
+{
+  "key": "244050477c26b76f578836da096f97d8166d886d370cc5f291181f0c0fcaef52",
+  "text": "4. ConcreteProduct (MotifWindow, MotifScrollBar)\n- Defines a product object to be created by the concrete factory;\n- Implements the AbstractProduct interface"
+}

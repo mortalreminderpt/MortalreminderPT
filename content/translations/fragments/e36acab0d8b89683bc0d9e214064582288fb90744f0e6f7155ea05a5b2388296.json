@@ -1,0 +1,4 @@
+{
+  "key": "e36acab0d8b89683bc0d9e214064582288fb90744f0e6f7155ea05a5b2388296",
+  "text": "Difference from an ordinary integer variable: there are only three operations on a semaphore, namely initialization, P operation, and V operation."
+}

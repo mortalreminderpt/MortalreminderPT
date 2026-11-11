@@ -1,0 +1,4 @@
+{
+  "key": "3c84e56aa10ddc8b38e2c184d0ed4573c64bdfb4f1bc35bb55eb8fe7bc3bdd60",
+  "text": "Reader:\n⟦MC_b9c26313caa6b69e_0⟧\nIf two reader processes execute concurrently, then when count=0, both processes may satisfy the if condition and both execute ⟦MC_b646c7ee406180d4_0⟧, thereby blocking the second reader process.\nThe reason for the above problem is that the check and assignment of the count variable cannot be completed in one atomic step, so another mutual exclusion semaphore can be set to ensure that each reader process's access to count is mutually exclusive."
+}

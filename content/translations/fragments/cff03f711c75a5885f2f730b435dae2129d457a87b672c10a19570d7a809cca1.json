@@ -1,0 +1,4 @@
+{
+  "key": "cff03f711c75a5885f2f730b435dae2129d457a87b672c10a19570d7a809cca1",
+  "text": "|Time|Ready queue|Analysis|\n|--|--|--|\n|0|**P1**|Only P1 has arrived, so P1 is put on the processor|\n|7|P2, **P3**, P4|P1 finishes running and voluntarily gives up the processor; all other processes have arrived, and P3 has the highest priority, so P3 is put on the processor|\n|8|**P2**, P4|P3 finishes; P2 and P4 have the same priority, and since P2 arrived first, P2 is put on the processor first|\n|12|**P4**|P2 finishes; only P4 remains in the ready queue, so P4 is put on the processor|\n|16|-|P4 finishes; all processes have ended|"
+}

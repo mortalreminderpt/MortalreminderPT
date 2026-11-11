@@ -1,0 +1,4 @@
+{
+  "key": "9f896bf52cf3144ea2f2746ec5793e8f0bfd999675953a1a1bfe39781970b7f1",
+  "text": "## TestAndSet Instruction (TS/TSL Instruction)\nThe TS instruction is implemented in hardware, and **its execution process is not allowed to be interrupted**; it must be completed in one go. The following is the logic described in C language:"
+}

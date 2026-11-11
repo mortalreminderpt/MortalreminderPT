@@ -1,0 +1,4 @@
+{
+  "key": "e9e1550909f11325a3eeee9d53eadb7e030819e4478f3e83fa8835c91ba850c6",
+  "text": "- The value of a semaphore: the **remaining quantity of this resource** (if the semaphore value is less than 0, it means some process is currently waiting for this resource);\n- ⟦MC_ed34efc966742035_0⟧: request one resource S; if **the resource is insufficient, block and wait**;\n- ⟦MC_9c77272ebbd5e73b_0⟧: release one resource S; if some process is waiting for this resource, **wake up one process**."
+}

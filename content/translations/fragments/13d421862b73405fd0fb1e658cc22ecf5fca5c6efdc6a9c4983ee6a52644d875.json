@@ -1,0 +1,4 @@
+{
+  "key": "13d421862b73405fd0fb1e658cc22ecf5fca5c6efdc6a9c4983ee6a52644d875",
+  "text": "It must also record which resources have been allocated to the process (such as how much memory has been allocated, which I/O devices are in use, and which files are in use), to enable the operating system to manage resources."
+}

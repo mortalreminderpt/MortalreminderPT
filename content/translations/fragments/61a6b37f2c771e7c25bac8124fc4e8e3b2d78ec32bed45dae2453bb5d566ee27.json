@@ -1,0 +1,4 @@
+{
+  "key": "61a6b37f2c771e7c25bac8124fc4e8e3b2d78ec32bed45dae2453bb5d566ee27",
+  "text": "|Time|Ready queue|Analysis|\n|--|--|--|\n|0|**P1**|Only P1 has arrived, so P1 is put on the processor|\n|2|P1, **P2**|P2 arrives in the ready queue with a higher priority than P1, so preemption occurs. P1 returns to the ready queue, and P2 is put on the processor.|\n|4|P1, P2, **P3**|P3 arrives with a higher priority than P2, so P2 returns to the ready queue and P3 preempts the processor|\n|5|P1, **P2**, P4|P3 finishes and voluntarily releases the processor; at the same time, P4 also arrives. Since P2 entered the ready queue earlier than P4, P2 is selected to be put on the processor|\n|7|P1, **P4**|P2 finishes; only P1 and P4 remain in the ready queue, so P4 is put on the processor.|\n|11|**P1**|P4 finishes, so P1 is put on the processor|\n|16|-|P1 finishes; all processes have ended|"
+}

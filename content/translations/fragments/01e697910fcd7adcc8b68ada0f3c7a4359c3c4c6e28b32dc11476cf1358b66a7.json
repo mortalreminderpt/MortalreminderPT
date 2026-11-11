@@ -1,0 +1,4 @@
+{
+  "key": "01e697910fcd7adcc8b68ada0f3c7a4359c3c4c6e28b32dc11476cf1358b66a7",
+  "text": "- The data length is ⟦MC_fa44b946781f4031_0⟧ bits, and ⟦MC_4ae6426f26b2ec4c_0⟧ check bits are added through encoding to form a codeword of ⟦MC_6bb9717c23a99c40_0⟧ bits.  \n- **d+1**: Can detect up to d errors.  \n- **2d+1**: Can correct up to d errors."
+}

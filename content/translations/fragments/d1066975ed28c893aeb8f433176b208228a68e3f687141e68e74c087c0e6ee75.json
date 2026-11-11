@@ -1,0 +1,4 @@
+{
+  "key": "d1066975ed28c893aeb8f433176b208228a68e3f687141e68e74c087c0e6ee75",
+  "text": "Reading or modifying ⟦MC_da756e7954773222_3⟧ during rendering can lead to unpredictable behavior, because React expects the rendering process to be a pure function with no side effects. You should avoid using ⟦MC_d20227eff778d4bc_0⟧ during rendering unless it is for initialization."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "76f2225fb7265aa47d84ef555f87fccccf1d7c0a9a3471346f5583c555acd215",
+  "text": "If the side effect needs to be cleaned up before the component unmounts or updates, you can perform the cleanup in the function returned by ⟦MC_01a812598bf19cab_5⟧. React calls the cleanup function before the component unmounts or before dependencies change."
+}

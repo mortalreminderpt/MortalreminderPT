@@ -1,0 +1,4 @@
+{
+  "key": "d06b4178f5f7fff1ff568edf8411c0417b678bc4cf82b6750587e103746d7c13",
+  "text": "### **Store**\n**Type signature:**\n⟦MC_3db5fb519db98e0d_0⟧\n**Explanation:**\nStore is the container that holds the application State and provides methods such as ⟦MC_1685976f9fe74590_6⟧, ⟦MC_25b499631a41bff3_0⟧, ⟦MC_356d0ee5397ab2d1_0⟧, and ⟦MC_47250417a2dd74ac_0⟧, which are used to manage and access State and to respond to changes in State."
+}

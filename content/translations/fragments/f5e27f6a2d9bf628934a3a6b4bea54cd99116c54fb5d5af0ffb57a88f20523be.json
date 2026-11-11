@@ -1,0 +1,4 @@
+{
+  "key": "f5e27f6a2d9bf628934a3a6b4bea54cd99116c54fb5d5af0ffb57a88f20523be",
+  "text": "After calling ⟦MC_1685976f9fe74590_3⟧, the state update takes effect only on the next render. If you read the state immediately after calling ⟦MC_1685976f9fe74590_4⟧, you will still get the state value from before the update."
+}

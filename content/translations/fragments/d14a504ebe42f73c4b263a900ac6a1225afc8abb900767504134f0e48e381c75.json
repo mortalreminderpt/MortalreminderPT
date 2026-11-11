@@ -1,0 +1,4 @@
+{
+  "key": "d14a504ebe42f73c4b263a900ac6a1225afc8abb900767504134f0e48e381c75",
+  "text": "- **Do not omit dependencies**: Deliberately omitting dependencies to avoid recomputation is a wrong practice and may lead to unpredictable results."
+}

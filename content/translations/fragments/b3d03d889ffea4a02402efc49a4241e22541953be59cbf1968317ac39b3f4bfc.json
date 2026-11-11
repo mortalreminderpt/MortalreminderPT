@@ -1,0 +1,4 @@
+{
+  "key": "b3d03d889ffea4a02402efc49a4241e22541953be59cbf1968317ac39b3f4bfc",
+  "text": "### **QoS**\nQoS requirements of different application layers:\n1. **Over-Provisioning**: Requires sufficient buffers, router CPU, and bandwidth.\n2. **Buffering**: Buffering the received data stream reduces jitter but increases latency.\n3. **Traffic Shaping**: Controls transmission rate and burst traffic (such as **Leaky Bucket**).\n4. **Admission Control**: Routers decide whether to accept based on traffic conditions."
+}

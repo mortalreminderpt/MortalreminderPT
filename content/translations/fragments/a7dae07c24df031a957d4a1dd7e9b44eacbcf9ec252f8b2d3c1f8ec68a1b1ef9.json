@@ -1,0 +1,4 @@
+{
+  "key": "a7dae07c24df031a957d4a1dd7e9b44eacbcf9ec252f8b2d3c1f8ec68a1b1ef9",
+  "text": "Unlike state variables, updating the value of ⟦MC_da756e7954773222_1⟧ does not cause the component to re-render. This makes ⟦MC_ece0da93fe9e23ff_5⟧ ideal for storing mutable values that do not affect the UI, such as timer IDs, external library instances, and so on."
+}

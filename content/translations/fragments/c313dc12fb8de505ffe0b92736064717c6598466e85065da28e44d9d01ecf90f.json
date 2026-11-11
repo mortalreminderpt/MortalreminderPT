@@ -1,0 +1,4 @@
+{
+  "key": "c313dc12fb8de505ffe0b92736064717c6598466e85065da28e44d9d01ecf90f",
+  "text": "Loadable kernel modules: new modules can be dynamically loaded into the kernel without recompiling the entire kernel."
+}

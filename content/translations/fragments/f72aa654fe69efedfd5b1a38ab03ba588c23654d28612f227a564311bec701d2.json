@@ -1,0 +1,4 @@
+{
+  "key": "f72aa654fe69efedfd5b1a38ab03ba588c23654d28612f227a564311bec701d2",
+  "text": "## Swap Instruction (Exchange/XCHG Instruction)\nThe Swap instruction is implemented in hardware, and its execution process is not allowed to be interrupted; it must be completed in one go. The following is the logic described in C language:"
+}

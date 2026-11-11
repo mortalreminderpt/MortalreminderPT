@@ -1,0 +1,4 @@
+{
+  "key": "75612296bc3fb2a823e493840e8aae6b0c1942dc4a7d60f91643bd5927f309f1",
+  "text": "The state of a process temporarily swapped out to external storage and waiting is the **suspended state**. The PCBs of suspended processes are organized into a **suspend queue**."
+}

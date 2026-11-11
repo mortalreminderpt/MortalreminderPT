@@ -1,0 +1,4 @@
+{
+  "key": "805a23710c05054d99138b84c4d1a540eff3fe9a01fd7d45456f5ba146746fcc",
+  "text": "### Indexed Method\nIn the indexed method, the operating system establishes **several index tables** according to the different process states; the operating system holds **pointers to each index table**."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "b8fcc437ed6a0aad3a985b2cacb7cdf8cc7d7f41d75aaf69dfbdbb4c1c805333",
+  "text": "⟦MC_18b9b49b1c5304f4_0⟧ is a Hook provided by React for introducing a Reducer (similar to the Reducer in Redux) into function components to manage complex state logic inside a component. Compared with ⟦MC_d5607f8c3c3d434c_0⟧, ⟦MC_18b9b49b1c5304f4_1⟧ is better suited for handling complex state that involves multiple sub-values, or when the next state depends on the previous state."
+}

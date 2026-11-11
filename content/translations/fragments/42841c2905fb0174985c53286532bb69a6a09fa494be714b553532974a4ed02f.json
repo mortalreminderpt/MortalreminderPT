@@ -1,0 +1,4 @@
+{
+  "key": "42841c2905fb0174985c53286532bb69a6a09fa494be714b553532974a4ed02f",
+  "text": "The Builder pattern describes all these relationships. Each **converter class is called a Builder in this pattern, and the reader is called a Director**.\nIn the example above, the Builder pattern separates the algorithm for parsing a text format (that is, the parser for an RTF document) from the algorithm that describes how to create and represent a converted format.\nIn this way, we can reuse the parsing algorithm of RTFReader to create different text representations from an RTF document—simply configure RTFReader with a different TextConverter subclass."
+}

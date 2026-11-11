@@ -1,0 +1,4 @@
+{
+  "key": "d812405ec77e1817547d2c8fc741ca39475aaaab0ebaae3acab39944628da301",
+  "text": "### **Dispatch Function**\n**Type signature:**\n⟦MC_18749614f7ea7817_0⟧\n**Explanation:**\n⟦MC_1685976f9fe74590_1⟧ is the function used to send Actions. The basic ⟦MC_1685976f9fe74590_2⟧ can only handle synchronous plain Actions, while Middleware can extend ⟦MC_1685976f9fe74590_3⟧ to handle asynchronous Actions."
+}

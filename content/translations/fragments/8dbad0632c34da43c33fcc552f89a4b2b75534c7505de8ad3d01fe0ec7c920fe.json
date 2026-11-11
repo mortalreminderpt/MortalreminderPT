@@ -1,0 +1,4 @@
+{
+  "key": "8dbad0632c34da43c33fcc552f89a4b2b75534c7505de8ad3d01fe0ec7c920fe",
+  "text": "The precedence relationship problem is essentially a multi-level synchronization problem. Suppose the code in the 6 processes is required to execute in the order shown in the following precedence graph:"
+}

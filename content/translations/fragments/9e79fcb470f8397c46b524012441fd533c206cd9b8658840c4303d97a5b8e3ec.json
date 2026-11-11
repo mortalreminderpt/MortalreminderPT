@@ -1,0 +1,4 @@
+{
+  "key": "9e79fcb470f8397c46b524012441fd533c206cd9b8658840c4303d97a5b8e3ec",
+  "text": "## Privileged Instructions and Unprivileged Instructions\nAs the \"manager\", the operating system kernel sometimes makes the CPU execute some \"privileged instructions\", such as the memory clear instruction. These instructions have major impact and are only allowed to be used by the \"manager\", that is, the operating system kernel."
+}

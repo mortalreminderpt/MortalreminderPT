@@ -1,0 +1,4 @@
+{
+  "key": "397ec9e741c9ef58f633decd0caee3f8d319dbdcbc550f7c82872203abd4bf59",
+  "text": "Resource allocation and scheduling:\n- In the traditional process mechanism, a process is the basic unit of resource allocation and scheduling;\n- After the introduction of threads, a process is the basic unit of resource allocation, and a thread is the basic unit of scheduling."
+}

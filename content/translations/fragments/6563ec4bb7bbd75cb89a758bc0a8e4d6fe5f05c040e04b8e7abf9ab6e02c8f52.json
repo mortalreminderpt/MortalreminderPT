@@ -1,0 +1,4 @@
+{
+  "key": "6563ec4bb7bbd75cb89a758bc0a8e4d6fe5f05c040e04b8e7abf9ab6e02c8f52",
+  "text": "⟦MC_2af479ca3392eccf_17⟧ is the Hook in React used to subscribe to Context. It allows us to conveniently share data across the component tree and avoids manually passing props level by level. However, when using ⟦MC_2af479ca3392eccf_18⟧, pay attention to the following points:"
+}

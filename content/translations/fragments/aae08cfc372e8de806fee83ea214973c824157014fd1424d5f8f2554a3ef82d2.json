@@ -1,0 +1,4 @@
+{
+  "key": "aae08cfc372e8de806fee83ea214973c824157014fd1424d5f8f2554a3ef82d2",
+  "text": "## Consequences\n- It lets you change the internal representation of a product:\n- It separates construction code from representation code:\n- It gives you finer control over the construction process:"
+}

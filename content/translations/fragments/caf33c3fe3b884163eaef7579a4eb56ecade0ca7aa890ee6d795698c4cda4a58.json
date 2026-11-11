@@ -1,0 +1,4 @@
+{
+  "key": "caf33c3fe3b884163eaef7579a4eb56ecade0ca7aa890ee6d795698c4cda4a58",
+  "text": "|Algorithm|Preemptive|Advantages|Disadvantages|Causes starvation|\n|--|--|--|--|\n|RR|Preemptive|Fair, suitable for time-sharing systems|Frequent switching incurs overhead; does not distinguish priorities|No|\n|PSA|Both preemptive and non-preemptive|Distinguishes priorities, suitable for real-time systems|May cause starvation|Yes|\n|MLFQ|Preemptive|Balanced, excellent|May cause starvation|Yes|"
+}

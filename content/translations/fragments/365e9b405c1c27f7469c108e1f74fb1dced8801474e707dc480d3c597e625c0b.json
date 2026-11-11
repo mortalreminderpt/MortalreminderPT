@@ -1,0 +1,4 @@
+{
+  "key": "365e9b405c1c27f7469c108e1f74fb1dced8801474e707dc480d3c597e625c0b",
+  "text": "| |Behavior|Scheduling Location|Frequency|Impact on Process State|\n|---|---|---|---|---|\n|High-level scheduling (job scheduling)|According to certain rules, select a suitable job from the backup queue, load it into memory, and create a process for it|External storage→Memory (job-oriented)|Lowest|None→Created state→Ready state|\n|Medium-level scheduling (memory scheduling)|According to certain rules, select a suitable process from the suspend queue and swap its data back into memory|External storage→Memory (process-oriented)|Medium|Suspended state→Ready state (blocked suspended→Blocked state)|\n|Low-level scheduling (process scheduling)|According to certain rules, select a process from the ready queue and allocate the processor to it|Memory→CPU|Highest|Ready state→Running state|"
+}

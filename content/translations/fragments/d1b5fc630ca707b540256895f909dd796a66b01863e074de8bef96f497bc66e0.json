@@ -1,0 +1,4 @@
+{
+  "key": "d1b5fc630ca707b540256895f909dd796a66b01863e074de8bef96f497bc66e0",
+  "text": "⟦MC_3a0a4e7d7b5b757e_0⟧\n- **Do not ignore the dependency array**: If external variables are used in a side effect but not declared in the dependency array, the side effect may not execute correctly."
+}

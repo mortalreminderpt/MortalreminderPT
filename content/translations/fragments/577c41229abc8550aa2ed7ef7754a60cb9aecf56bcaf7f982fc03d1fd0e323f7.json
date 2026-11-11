@@ -1,0 +1,4 @@
+{
+  "key": "577c41229abc8550aa2ed7ef7754a60cb9aecf56bcaf7f982fc03d1fd0e323f7",
+  "text": "- **Avoid passing frequently changing values**: If the ⟦MC_0b1c5fa09a5595c1_4⟧ of the Context changes frequently, components using ⟦MC_2af479ca3392eccf_14⟧ will re-render frequently, which may affect performance. Try to avoid passing frequently changing data through Context."
+}

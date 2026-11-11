@@ -1,0 +1,4 @@
+{
+  "key": "bc76d2498183061817bbe3427ea9a0ada488d94ff0756699d3414b095c41c50d",
+  "text": "3. **Bit Stuffing**  \n   - Frames start and end with a special bit pattern (01111110).  \n   - If five consecutive 1s appear in the data, insert a 0 to avoid conflict with the flag."
+}

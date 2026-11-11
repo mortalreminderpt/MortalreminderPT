@@ -1,0 +1,4 @@
+{
+  "key": "42747ae98543221f8127131495facb9f1abc79735d32ff9055ca33093d951f31",
+  "text": "### Static Channel Allocation\nStatic channel allocation assigns channels fixedly to different users, and is suitable for scenarios where the number of users is known and stable."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "2b1bcff5dd901c56a3970ccb8082d6d952e4b07d3190654b3d085821972933ae",
+  "text": "⟦MC_d95de6e04fac1ad3_0⟧\n- The **entry section** is responsible for checking whether the critical section can be entered; if it can, a flag indicating that the critical resource is being accessed should be set (locking), to prevent other processes from entering the critical section at the same time;\n- The **critical section** is the code that accesses the resource;\n- The **exit section** is responsible for clearing the flag indicating that the critical resource is being accessed (unlocking);\n- The **remainder section** performs other processing."
+}

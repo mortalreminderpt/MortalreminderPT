@@ -1,0 +1,4 @@
+{
+  "key": "9418c98f89998426b0777a30a755d7aca32c41f3060edc60c70eca2f4ae66704",
+  "text": "System overhead:\n- Traditional inter-process concurrency requires switching the process's running environment, resulting in significant system overhead;\n- For inter-thread concurrency, if it is a thread switch within the same process, there is no need to switch the process environment, so the system overhead is small;\n- After the introduction of threads, the system overhead caused by concurrency is reduced."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "855dd5c9c45307bf2669541c75eaf9b5e5d675f478f707da33f724fe7c75190b",
+  "text": "2. ConcreteFactory (MotifWidgetFactory, PMWidgetFactory)\n- Implements the operations for creating concrete product objects"
+}

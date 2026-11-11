@@ -1,0 +1,4 @@
+{
+  "key": "c7128c6c1c9f0ddf66e1556aef17ea5950d95d7383cebb54aefd042a55349e4a",
+  "text": "When a process is being created, its state is the \"created state\"; at this stage, the operating system allocates resources for the process and initializes the PCB;"
+}

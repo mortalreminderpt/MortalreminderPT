@@ -1,0 +1,4 @@
+{
+  "key": "01eb732b7022e5bee6387a6d0f6343083ddac1c1593981894e671fe85ed9f506",
+  "text": "The arrival times at the ready queue and the required running times of each process are shown in the table below. Use the **round-robin scheduling** algorithm to analyze the process execution when the time slice sizes are 2 and 5 respectively."
+}

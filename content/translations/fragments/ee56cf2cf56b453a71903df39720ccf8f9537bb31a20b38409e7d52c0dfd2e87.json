@@ -1,0 +1,4 @@
+{
+  "key": "ee56cf2cf56b453a71903df39720ccf8f9537bb31a20b38409e7d52c0dfd2e87",
+  "text": "1. Process priority: processes with higher priority first;\n2. How long it has been executing: processes that have run for a long time first;\n3. How much longer until completion: processes with shorter remaining time first;\n4. How many resources the process has already used: processes occupying more resources first;\n5. Whether the process is interactive or batch: interactive processes first."
+}

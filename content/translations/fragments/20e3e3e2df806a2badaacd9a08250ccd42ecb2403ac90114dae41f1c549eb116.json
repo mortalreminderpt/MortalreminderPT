@@ -1,0 +1,4 @@
+{
+  "key": "20e3e3e2df806a2badaacd9a08250ccd42ecb2403ac90114dae41f1c549eb116",
+  "text": "- **The Reducer must be a pure function**: Do not modify state directly, and do not perform side effects in it."
+}

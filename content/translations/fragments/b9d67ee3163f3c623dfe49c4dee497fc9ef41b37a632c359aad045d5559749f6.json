@@ -1,0 +1,4 @@
+{
+  "key": "b9d67ee3163f3c623dfe49c4dee497fc9ef41b37a632c359aad045d5559749f6",
+  "text": "Usually:\n- System processes have **higher** priority than user processes;\n- Foreground processes have **higher** priority than background processes;\n- The operating system prefers I/O-bound processes (also called I/O-intensive processes; I/O devices and the CPU can work **in parallel**. If I/O-intensive processes are allowed to run first, it is more likely that I/O devices can start working as early as possible, so resource utilization and system throughput will both improve.)"
+}

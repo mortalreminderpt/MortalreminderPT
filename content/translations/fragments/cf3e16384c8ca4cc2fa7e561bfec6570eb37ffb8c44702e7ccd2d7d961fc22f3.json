@@ -1,0 +1,4 @@
+{
+  "key": "cf3e16384c8ca4cc2fa7e561bfec6570eb37ffb8c44702e7ccd2d7d961fc22f3",
+  "text": "Breaking the no preemption condition:\n- Option 1: When a process requests new resources and the request cannot be satisfied, it must immediately release all the resources it holds and reapply for them later when needed. That is, even if some resources have not yet been used up, they must be released voluntarily, thereby breaking the no preemption condition;\n- Option 2: When resources needed by a process are occupied by other processes, the operating system can assist in forcibly preempting the desired resources. This approach generally needs to consider the priority of each process. (For example, preemptive scheduling forcibly preempts processor resources for use by higher-priority processes.)"
+}

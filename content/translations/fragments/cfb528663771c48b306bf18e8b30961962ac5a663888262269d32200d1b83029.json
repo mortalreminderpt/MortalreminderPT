@@ -1,0 +1,4 @@
+{
+  "key": "cfb528663771c48b306bf18e8b30961962ac5a663888262269d32200d1b83029",
+  "text": "Different interrupt signals need to be handled by different interrupt handlers. After the CPU detects an interrupt signal, it looks up the \"**interrupt vector table**\" according to the type of the interrupt signal, so as to find the memory location where the corresponding interrupt handler is stored."
+}

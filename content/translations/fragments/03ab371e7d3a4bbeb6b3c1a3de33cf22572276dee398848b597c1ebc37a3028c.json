@@ -1,0 +1,4 @@
+{
+  "key": "03ab371e7d3a4bbeb6b3c1a3de33cf22572276dee398848b597c1ebc37a3028c",
+  "text": "#### 2. Persistent HTTP\n- A single TCP connection can send multiple objects\n- Advantages:\n  - Reduces the overhead of establishing connections\n  - Shortens response time\n  - Reduces server load"
+}

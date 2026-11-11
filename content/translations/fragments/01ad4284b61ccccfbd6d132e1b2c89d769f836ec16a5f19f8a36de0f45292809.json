@@ -1,0 +1,4 @@
+{
+  "key": "01ad4284b61ccccfbd6d132e1b2c89d769f836ec16a5f19f8a36de0f45292809",
+  "text": "### Types of internal interrupts (exceptions):\n1. Trap: triggered by a trap instruction, and deliberately triggered by the application program;\n2. Fault: caused by an error condition and may be fixed by the kernel program. After the kernel program fixes the fault, it will return the right to use the CPU to the application program so that it can continue executing. Examples include page faults;\n3. Abort: caused by a fatal error that the kernel program cannot fix, so the CPU usage right is generally not returned to the application program that caused the abort; instead, the application program is terminated directly. Examples include integer division by zero and illegal use of privileged instructions."
+}

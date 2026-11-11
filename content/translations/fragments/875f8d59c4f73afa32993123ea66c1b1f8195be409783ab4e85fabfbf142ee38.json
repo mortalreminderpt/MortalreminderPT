@@ -1,0 +1,4 @@
+{
+  "key": "875f8d59c4f73afa32993123ea66c1b1f8195be409783ab4e85fabfbf142ee38",
+  "text": "According to whether the priority can be changed dynamically, priorities can be divided into **static priority** and **dynamic priority**:\n- Static priority: determined when the process is created and remains unchanged afterward;\n- Dynamic priority: has an initial value when the process is created, and afterward the priority is dynamically adjusted according to circumstances."
+}

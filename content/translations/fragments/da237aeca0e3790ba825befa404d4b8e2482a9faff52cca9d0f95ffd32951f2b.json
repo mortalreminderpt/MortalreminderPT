@@ -1,0 +1,4 @@
+{
+  "key": "da237aeca0e3790ba825befa404d4b8e2482a9faff52cca9d0f95ffd32951f2b",
+  "text": "Normal disconnection sequence:\n- Host 1 issues a DR (Disconnect Request), and both parties acknowledge each other's DR."
+}

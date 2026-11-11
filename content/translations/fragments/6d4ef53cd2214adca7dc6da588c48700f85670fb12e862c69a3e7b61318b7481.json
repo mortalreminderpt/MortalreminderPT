@@ -1,0 +1,4 @@
+{
+  "key": "6d4ef53cd2214adca7dc6da588c48700f85670fb12e862c69a3e7b61318b7481",
+  "text": "- Performs well under low load with short latency (similar to contention protocols).\n- Under high load, no collisions need to be handled, improving efficiency (similar to collision-free protocols)."
+}

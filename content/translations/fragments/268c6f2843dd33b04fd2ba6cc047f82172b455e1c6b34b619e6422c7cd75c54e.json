@@ -1,0 +1,4 @@
+{
+  "key": "268c6f2843dd33b04fd2ba6cc047f82172b455e1c6b34b619e6422c7cd75c54e",
+  "text": "**Dynamic partition allocation** is also called **variable partition allocation**.\nThis allocation method **does not divide memory partitions in advance**; instead, when a process is loaded into memory, it **dynamically establishes partitions according to the size of the process**, and makes **the partition size exactly fit the needs of the process**.\nTherefore, the size and number of system partitions are variable. (Assume a computer has 64MB of memory, an 8MB system area, and a total user area of 56MB)"
+}

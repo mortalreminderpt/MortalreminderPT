@@ -1,0 +1,4 @@
+{
+  "key": "d8e12366f5c794d9cb11dea1777740cbfff6d3df9076c777e9c331e4c217d605",
+  "text": "Advantages and disadvantages of kernel-level threads:\n- Advantages: When one thread is blocked, other threads can continue to execute, and the concurrency capability is strong. Multiple threads can execute in parallel on a multi-core processor;\n- Disadvantages: One user process will occupy multiple kernel-level threads, and thread switching is completed by the operating system kernel and requires switching to kernel mode, so the cost of thread management is high and the overhead is large."
+}

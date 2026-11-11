@@ -1,0 +1,4 @@
+{
+  "key": "ebef1191bdba605544c35d9a13979b83935a8aeab3d4bc6bdb99f41dfa4632d1",
+  "text": "Note: By \"adding page table entries/segment table entries\", the same shared memory region can be mapped into the address space of each process."
+}

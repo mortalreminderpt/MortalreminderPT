@@ -1,0 +1,4 @@
+{
+  "key": "15b18e158c248d531e8b158167bc4c9bcc8c4e5ccbd26d8a4694785a2e5ec95d",
+  "text": "State should be treated as immutable. For state of object or array type, you should create a copy and modify it rather than directly modifying the original state."
+}

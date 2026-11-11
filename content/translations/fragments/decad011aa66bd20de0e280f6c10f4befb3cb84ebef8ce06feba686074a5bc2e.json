@@ -1,0 +1,4 @@
+{
+  "key": "decad011aa66bd20de0e280f6c10f4befb3cb84ebef8ce06feba686074a5bc2e",
+  "text": "As shown in the figure, when the process ready queue is being accessed, the operating system cannot perform scheduling and switching because the ready queue is being accessed."
+}

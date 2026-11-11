@@ -1,0 +1,4 @@
+{
+  "key": "097364c837afaa34c646e00228bf067455b8bd8d3fcb232ede8a18e61c0a07c2",
+  "text": "Using semaphores to implement process synchronization:\n1. Analyze where a \"synchronization relationship\" needs to be implemented, that is, the two operations (or two lines of code) that must be guaranteed to execute \"one before the other\";\n2. Set a **synchronization semaphore S, initially 0**.\n3. Execute ⟦MC_9c77272ebbd5e73b_1⟧ **after the \"preceding operation\"**\n4. Execute ⟦MC_ed34efc966742035_1⟧ **before the \"following operation\"**"
+}

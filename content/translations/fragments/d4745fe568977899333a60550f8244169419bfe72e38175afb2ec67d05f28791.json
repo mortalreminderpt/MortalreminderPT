@@ -1,0 +1,4 @@
+{
+  "key": "d4745fe568977899333a60550f8244169419bfe72e38175afb2ec67d05f28791",
+  "text": "1. First, process Q's PCB is stored in the operating system kernel's address space, and **process Q's PCB** holds **process Q's message queue**;\n2. Process P uses the send primitive ⟦MC_dcc720bd3b23c538_0⟧, and the operating system **adds the message** ⟦MC_278b3153e7247950_1⟧ **to the message queue of process Q's PCB**;\n3. While running, process Q executes the receive primitive ⟦MC_0ad778b8eefd2fcf_0⟧; the operating system checks the message queue of process Q's PCB, finds which message was sent by process P, and moves this message ⟦MC_278b3153e7247950_2⟧ into process Q's address space."
+}

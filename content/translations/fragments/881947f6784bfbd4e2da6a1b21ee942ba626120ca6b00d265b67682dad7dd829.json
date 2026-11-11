@@ -1,0 +1,4 @@
+{
+  "key": "881947f6784bfbd4e2da6a1b21ee942ba626120ca6b00d265b67682dad7dd829",
+  "text": "If analyzed according to the above process, and **all edges can ultimately be eliminated**, then the graph is said to be **completely reducible**.\nAt this time, **deadlock has definitely not occurred**. (This is equivalent to being able to find a **safe sequence**.)"
+}

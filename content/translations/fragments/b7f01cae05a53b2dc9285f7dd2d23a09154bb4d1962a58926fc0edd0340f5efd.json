@@ -1,0 +1,4 @@
+{
+  "key": "b7f01cae05a53b2dc9285f7dd2d23a09154bb4d1962a58926fc0edd0340f5efd",
+  "text": "### **Congestion Control**\n- **Slow Start**: In the initial stage, gradually probe the degree of network congestion and gradually increase the sending window.\n- **Additive Increase**: Slowly increase the sending window.\n- **Fast Recovery**: When packet loss occurs, continue increasing the window through fast recovery."
+}

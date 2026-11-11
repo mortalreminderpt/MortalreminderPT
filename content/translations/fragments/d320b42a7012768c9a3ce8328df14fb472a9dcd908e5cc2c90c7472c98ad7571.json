@@ -1,0 +1,4 @@
+{
+  "key": "d320b42a7012768c9a3ce8328df14fb472a9dcd908e5cc2c90c7472c98ad7571",
+  "text": "A **process entity (process image)** consists of the **PCB, program segment, and data segment**. A **process** is **dynamic**, while a **process entity (process image)** is **static**, similar to a snapshot of the process."
+}

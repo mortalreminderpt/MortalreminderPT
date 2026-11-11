@@ -1,0 +1,4 @@
+{
+  "key": "9d32a708193104abcbb2c4b7bd7d59e344d03eb6047d796e553e8f672e0baa7c",
+  "text": "In Java, if a function is described with the keyword synchronized, then that function can be called by only one thread within the same time period:"
+}

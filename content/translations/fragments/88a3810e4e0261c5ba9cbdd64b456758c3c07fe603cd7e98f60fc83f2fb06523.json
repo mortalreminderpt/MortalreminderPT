@@ -1,0 +1,4 @@
+{
+  "key": "88a3810e4e0261c5ba9cbdd64b456758c3c07fe603cd7e98f60fc83f2fb06523",
+  "text": "Therefore, the main problem of the **two-flag check-first method** is: **it violates the \"busy then wait\" principle.**"
+}

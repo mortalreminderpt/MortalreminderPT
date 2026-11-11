@@ -1,0 +1,4 @@
+{
+  "key": "f297bf876047469f12943ed3570f1e40f6d1c3cd7856f2affda731fcb0f93865",
+  "text": "⟦MC_dbbf85bdf1050c3f_0⟧\nIn this example, ⟦MC_01a812598bf19cab_2⟧ accepts a function that can return a cleanup function. ⟦MC_0fb8eac7fd0f2150_0⟧ is a dependency array; when the values in it change, ⟦MC_01a812598bf19cab_3⟧ re-executes."
+}

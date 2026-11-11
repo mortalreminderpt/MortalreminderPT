@@ -1,0 +1,4 @@
+{
+  "key": "f3adf6178a6ceb05997eabcb96293472161e8d1f9e2de2acaaf6aec0adc4d30d",
+  "text": "Note: **Process switching has a cost**, so if process **scheduling and switching** are performed **too frequently**, the **efficiency of the entire system** will inevitably **decrease**, causing the system to spend most of its time on process switching and reducing the time actually used to execute processes."
+}

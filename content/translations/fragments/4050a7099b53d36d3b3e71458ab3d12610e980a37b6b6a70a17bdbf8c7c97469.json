@@ -1,0 +1,4 @@
+{
+  "key": "4050a7099b53d36d3b3e71458ab3d12610e980a37b6b6a70a17bdbf8c7c97469",
+  "text": "### Perceptual Coding\n- Uses the limitations of the human perceptual system for lossy compression\n- For example:\n  - Frequency masking: certain frequencies can mask other sounds\n  - Temporal masking: after a loud sound, the human ear temporarily cannot perceive soft sounds"
+}

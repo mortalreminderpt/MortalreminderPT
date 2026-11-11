@@ -1,0 +1,4 @@
+{
+  "key": "1987fac2e6b86ce44db3efa76e72928a4a9c518539516269cdde4eeaa419f639",
+  "text": "When a Type 2 virtual machine wants to allocate hardware resources to a virtual machine, it needs to request the operating system to allocate them. **The manager of hardware resources is still the host operating system**."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "0369dd614a70ffe2e1238355a3906a661d06f4f495f8ef46cca7d10f46aa3b82",
+  "text": "Algorithm idea: A revised version of the two-flag check-first method.\nThe problem with the previous algorithm was that it \"checks\" first and then \"locks\", but these two operations cannot be completed in one uninterrupted step, which led to the problem of two processes entering the critical section at the same time.\nTherefore, people came up with the method of \"locking\" first and then \"checking\" to avoid the above problem."
+}

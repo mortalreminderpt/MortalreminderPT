@@ -1,0 +1,4 @@
+{
+  "key": "135d23348b38f4c55e931dec0c1e8ba4789a7863efbdf7b3edd689bb6eb9700b",
+  "text": "### Dynamic Partition Allocation Algorithms\nWhen loading a new job into memory, a partition must be selected from the free partition table (or free partition chain) according to a certain **dynamic partition allocation algorithm** and allocated to the job.\nBecause allocation algorithms have a great impact on system performance, people have studied them extensively."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "dad26a66247e3c3b79baf8393ebb7db147bbb0262562cb752a156182a8aff930",
+  "text": "⟦MC_dfbda55e5860cbc8_0⟧\nIn this example, ⟦MC_831d4fddbade1b05_0⟧ is only recomputed when ⟦MC_0688b438f9ad6d10_0⟧ changes; otherwise, the cached result is used."
+}

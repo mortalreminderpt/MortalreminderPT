@@ -1,0 +1,4 @@
+{
+  "key": "1165660585f1d6d452ef6ca85998b00b7bae36bfc390cc2afc24213b8e511b16",
+  "text": "### Mutually Exclusive Sharing Mode\nSome resources in the system, although they can be provided for multiple processes to use, **only allow one process to access the resource within a time period**."
+}

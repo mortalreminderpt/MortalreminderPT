@@ -1,0 +1,4 @@
+{
+  "key": "5f7a84f4b0e6177b65af8bcb6f8470fec5263c412d26e9e85b874ba5ac93cf15",
+  "text": "### Logical Addresses and Physical Addresses\n- Logical address: the address specified in the instructions generated after the program is compiled and linked is a logical address (relative address), i.e., an address relative to the process's starting address;"
+}

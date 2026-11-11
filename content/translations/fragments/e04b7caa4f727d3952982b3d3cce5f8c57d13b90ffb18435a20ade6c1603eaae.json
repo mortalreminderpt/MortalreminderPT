@@ -1,0 +1,4 @@
+{
+  "key": "e04b7caa4f727d3952982b3d3cce5f8c57d13b90ffb18435a20ade6c1603eaae",
+  "text": "⟦MC_009e04eec0800d98_0⟧\n- **Initialize complex state**: For complex initial state, you can pass an initializer function to avoid unnecessary computation on every render."
+}

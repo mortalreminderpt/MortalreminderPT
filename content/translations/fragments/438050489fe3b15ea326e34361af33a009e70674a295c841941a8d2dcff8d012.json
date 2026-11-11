@@ -1,0 +1,4 @@
+{
+  "key": "438050489fe3b15ea326e34361af33a009e70674a295c841941a8d2dcff8d012",
+  "text": "|Process|P1|P2|P3|P4|\n|--|--|--|--|--|\n|Turnaround time|7-0=7|11-2=9|12-4=8|16-5=11|\n|Weighted turnaround time|7/7=1|9/4=2.25|8/1=8|11/4=2.75|\n|Waiting time|7-7=0|9-4=5|8-1=7|11-4=7|"
+}

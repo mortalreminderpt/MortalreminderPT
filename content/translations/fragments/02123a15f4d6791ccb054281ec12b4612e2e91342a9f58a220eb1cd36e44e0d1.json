@@ -1,0 +1,4 @@
+{
+  "key": "02123a15f4d6791ccb054281ec12b4612e2e91342a9f58a220eb1cd36e44e0d1",
+  "text": "⟦MC_e90403a4a702aad7_0⟧\nOnly one thread can enter the ⟦MC_596bdac981c2a0f1_0⟧ function at a time. If multiple threads call the ⟦MC_596bdac981c2a0f1_1⟧ function at the same time, the later ones must queue up and wait."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "1ff8d1f6d0293a36d217ee6860795a9b4eb9675979024f23b3dfa06e0eea3eb7",
+  "text": "2. **No side effects**: Rendering should not produce side effects (that is, it should not affect the outside world). React renders components multiple times to optimize the user experience, so side effects (such as DOM operations and data fetching) should be performed in ⟦MC_01a812598bf19cab_0⟧ or event handlers, not during rendering."
+}

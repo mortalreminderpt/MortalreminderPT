@@ -1,0 +1,4 @@
+{
+  "key": "ca5258e2f6cdca2d52db58334f840904b6b985419ee9bf8d81cfb1ad74b2391e",
+  "text": "The previous implementation still has a potential problem: as long as a reader process is still reading, the writer process must remain blocked and waiting, and may \"starve\".\nTherefore, in this algorithm, reader processes have priority.\nTo solve this problem, another semaphore w can be added to prevent writer starvation."
+}

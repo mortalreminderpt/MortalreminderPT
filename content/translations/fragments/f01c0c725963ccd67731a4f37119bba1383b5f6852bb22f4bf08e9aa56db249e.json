@@ -1,0 +1,4 @@
+{
+  "key": "f01c0c725963ccd67731a4f37119bba1383b5f6852bb22f4bf08e9aa56db249e",
+  "text": "⟦MC_2af479ca3392eccf_0⟧ is a Hook provided by React for subscribing to React Context within function components. It allows us to conveniently access data provided by upper-level components through Context in deeply nested components within the component tree, without needing to manually pass it through props at each level."
+}

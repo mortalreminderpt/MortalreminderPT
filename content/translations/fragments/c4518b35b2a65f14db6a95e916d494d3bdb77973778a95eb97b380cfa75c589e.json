@@ -1,0 +1,4 @@
+{
+  "key": "c4518b35b2a65f14db6a95e916d494d3bdb77973778a95eb97b380cfa75c589e",
+  "text": "### Deadlock Detection\nTo be able to detect whether a deadlock has occurred in the system, it is necessary to:\n1. Use **some data structure** to save resource request and allocation information;\n2. Provide **an algorithm** that uses the above information to detect whether the system has entered a deadlock state."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "118b888a4705f2429d413b5638a536a0bd5ecb97405ab76f52f895fa20d336f9",
+  "text": "#### Performance:\n- **CSMA/CD (Collision Detection):** Efficiently utilizes the channel by detecting and resolving collisions.\n- Throughput depends on traffic load and performs best under moderate load conditions."
+}

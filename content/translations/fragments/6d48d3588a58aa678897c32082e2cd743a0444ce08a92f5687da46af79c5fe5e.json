@@ -1,0 +1,4 @@
+{
+  "key": "6d48d3588a58aa678897c32082e2cd743a0444ce08a92f5687da46af79c5fe5e",
+  "text": "This principle simplifies the development of isomorphic applications, because the state on the server can be serialized and injected into the client without doing anything else. A single-source-of-truth state tree also simplifies debugging and monitoring of the application; it also lets you persist application data locally during development, thereby accelerating the development cycle. In addition, some features that were previously difficult to implement, such as \"undo/redo\", become very easy to implement with Redux under the single source of truth principle."
+}

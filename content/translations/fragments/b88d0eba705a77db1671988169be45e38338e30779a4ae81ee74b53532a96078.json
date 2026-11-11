@@ -1,0 +1,4 @@
+{
+  "key": "b88d0eba705a77db1671988169be45e38338e30779a4ae81ee74b53532a96078",
+  "text": "We can set a semaphore rw to guarantee the mutual exclusion relationships between writer process and reader process, and between writer process and writer process:"
+}

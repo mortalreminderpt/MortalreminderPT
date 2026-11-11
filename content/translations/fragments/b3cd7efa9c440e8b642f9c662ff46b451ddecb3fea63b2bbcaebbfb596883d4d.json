@@ -1,0 +1,4 @@
+{
+  "key": "b3cd7efa9c440e8b642f9c662ff46b451ddecb3fea63b2bbcaebbfb596883d4d",
+  "text": "- In a noiseless channel, the maximum data rate is:\n$\n\\text{Max Data Rate} = 2B \\cdot \\log_2(V)\n$\n- ⟦MC_4612fdea6e5bac88_0⟧: channel bandwidth.\n- ⟦MC_893a595fefbd0c3b_0⟧: number of signal levels."
+}

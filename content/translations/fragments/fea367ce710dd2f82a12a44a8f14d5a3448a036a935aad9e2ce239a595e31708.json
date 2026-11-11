@@ -1,0 +1,4 @@
+{
+  "key": "fea367ce710dd2f82a12a44a8f14d5a3448a036a935aad9e2ce239a595e31708",
+  "text": "Internal fragmentation: in the memory area allocated to a process, if some parts are not used, they are \"internal fragmentation\"."
+}

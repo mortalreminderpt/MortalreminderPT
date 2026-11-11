@@ -1,0 +1,4 @@
+{
+  "key": "cd4a91c7970192cbdc58a67d24b3971cbb6b6905e1753acc8f81c34f4594bdbf",
+  "text": "- Some constraints can be imposed on the philosopher processes, for example, allowing at most four philosophers to eat at the same time. (Set a semaphore to 4.) This ensures that at least one philosopher can pick up both the left and right chopsticks.\n- Require odd-numbered philosophers to first pick up the left chopstick and then the right chopstick, while even-numbered philosophers do the opposite. This method ensures that if two adjacent philosophers with odd and even numbers both want to eat, only one of them can pick up the first chopstick, and the other will block directly. This avoids the situation of holding one chopstick and then waiting for the other."
+}

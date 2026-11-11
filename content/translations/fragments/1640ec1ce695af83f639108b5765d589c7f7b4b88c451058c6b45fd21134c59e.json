@@ -1,0 +1,4 @@
+{
+  "key": "1640ec1ce695af83f639108b5765d589c7f7b4b88c451058c6b45fd21134c59e",
+  "text": "The Shortest Job/Process First scheduling algorithm selects **the job/process that has currently arrived and has the shortest running time** at each scheduling decision."
+}

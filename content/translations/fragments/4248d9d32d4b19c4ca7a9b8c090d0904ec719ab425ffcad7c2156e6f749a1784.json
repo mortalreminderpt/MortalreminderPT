@@ -1,0 +1,4 @@
+{
+  "key": "4248d9d32d4b19c4ca7a9b8c090d0904ec719ab425ffcad7c2156e6f749a1784",
+  "text": "The second argument of ⟦MC_18b9b49b1c5304f4_3⟧ is the initial state. You can pass the initial state value directly, or provide a lazy initialization function through the third argument ⟦MC_5941d73331c7c150_0⟧ to avoid recomputing the initial state."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "6296d8ff746070ba282165dd89ca10daa815e3617b617323f9e4d0f3b8e1ee53",
+  "text": "Some operating systems divide ready suspended and blocked suspended into two suspend queues, and may even further subdivide blocked suspended processes into multiple queues according to different blocking reasons."
+}

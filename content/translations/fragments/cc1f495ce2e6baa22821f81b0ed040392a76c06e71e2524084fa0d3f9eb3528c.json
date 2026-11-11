@@ -1,0 +1,4 @@
+{
+  "key": "cc1f495ce2e6baa22821f81b0ed040392a76c06e71e2524084fa0d3f9eb3528c",
+  "text": "Each queue can adopt a different scheduling strategy, such as:\n- System process queue uses PSA\n- Interactive queue uses RR\n- Batch processing queue uses FCFS"
+}

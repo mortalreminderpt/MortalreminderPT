@@ -1,0 +1,4 @@
+{
+  "key": "3f19a1518e2257501eda8daa8de8992d5652bdcd09f98b3f8d448ba63ec94032",
+  "text": "1. **Shortest Path Routing**\n   - Uses Dijkstra's algorithm to compute the shortest path between two points in the network.\n   - Dijkstra's algorithm is based on the principle of minimizing weights (such as distance, delay, cost, etc.), progressively updating paths until the shortest paths for all nodes have been computed."
+}

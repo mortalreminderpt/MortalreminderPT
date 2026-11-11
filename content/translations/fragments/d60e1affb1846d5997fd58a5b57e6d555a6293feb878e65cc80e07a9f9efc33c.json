@@ -1,0 +1,4 @@
+{
+  "key": "d60e1affb1846d5997fd58a5b57e6d555a6293feb878e65cc80e07a9f9efc33c",
+  "text": "The operating system must record basic process description information such as the PID and the ID of the user the process belongs to (UID), so that the operating system can distinguish between processes."
+}

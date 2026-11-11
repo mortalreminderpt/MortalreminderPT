@@ -1,0 +1,4 @@
+{
+  "key": "c27842e03939adeac0e86aa06fb35f75428abb8393339063f19bc927a3a35b74",
+  "text": "## Characteristics of Mutex Locks\n- They require busy waiting; a process leaves the processor only after its time slice is used up, **violating the \"wait with relinquishing the CPU\" principle**; \n- Advantages: during waiting, **no process context switch is needed**; in multiprocessor systems, **if the lock is held for a short time, the waiting cost is very low**;\n- They are often used in multiprocessor systems, where one core busy-waits while other cores work as usual and quickly release the critical section;\n- **They are not very suitable for uniprocessor systems**, because during busy waiting it is impossible to unlock."
+}

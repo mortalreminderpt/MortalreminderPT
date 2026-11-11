@@ -1,0 +1,4 @@
+{
+  "key": "9d959b2501aebba6b20fe49187645e997a7826e7ec05f7664ea05816cbb199fe",
+  "text": "- **Do not directly update dependencies in a side effect**: This may cause an infinite loop."
+}

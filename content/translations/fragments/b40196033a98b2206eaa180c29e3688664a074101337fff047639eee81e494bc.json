@@ -1,0 +1,4 @@
+{
+  "key": "b40196033a98b2206eaa180c29e3688664a074101337fff047639eee81e494bc",
+  "text": "⟦MC_2a5e9736af27aed5_0⟧\nAnalyze the following situations of concurrent execution of P(w):\n- Reader 1 -> Writer 1 -> Reader 2\n- Writer 1 -> Reader 1 -> Writer 2"
+}

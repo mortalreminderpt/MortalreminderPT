@@ -1,0 +1,4 @@
+{
+  "key": "b88bd209a86e955315266142e75ed76d1f031c4b496d8c005cb8d6ce51df60ba",
+  "text": "- **Single source of truth**: The entire state of the application is stored in a single object tree, which makes it easy to manage and debug.\n- **State is read-only**: The only way to change state is to dispatch an action, which ensures the predictability of state.\n- **Use pure functions**: Pure functions (reducers) are used to describe how state changes in response to actions, making the state change process transparent and easy to test."
+}

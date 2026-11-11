@@ -1,0 +1,4 @@
+{
+  "key": "cd435d91313f948aa8608e36de18d4caee6ff703949823a956ebab7c2ef79c0a",
+  "text": "## Applicability\n- When the algorithm for **creating** a complex object should be **independent of the parts that make up the object and how they are assembled**;\n- When the construction process must allow **the object being constructed to have different representations**."
+}

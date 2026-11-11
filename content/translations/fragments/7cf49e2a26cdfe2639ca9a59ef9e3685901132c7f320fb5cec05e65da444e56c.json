@@ -1,0 +1,4 @@
+{
+  "key": "7cf49e2a26cdfe2639ca9a59ef9e3685901132c7f320fb5cec05e65da444e56c",
+  "text": "Therefore, an abstract WidgetFactory class can be defined, declaring the interface used to create basic window components.\nAmong them, each window component has an abstract class, and their subclasses implement the concrete theme of the window component.\nUsers obtain window components through the interface provided by WidgetFactory, but users do not know the concrete classes they use, so users do not depend on a specific theme."
+}

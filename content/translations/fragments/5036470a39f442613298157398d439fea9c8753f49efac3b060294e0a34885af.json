@@ -1,0 +1,4 @@
+{
+  "key": "5036470a39f442613298157398d439fea9c8753f49efac3b060294e0a34885af",
+  "text": "In a pipe, the reading process and the writing process run concurrently. Since concurrency inevitably leads to asynchrony, the **order of execution** of the two operations \"write data\" and \"read data\" is **indeterminate**.\nHowever, **in practical applications**, they **must** be executed **in the order of \"write data → read data\"**.\nHow to solve this asynchrony problem is what \"process synchronization\" discusses."
+}

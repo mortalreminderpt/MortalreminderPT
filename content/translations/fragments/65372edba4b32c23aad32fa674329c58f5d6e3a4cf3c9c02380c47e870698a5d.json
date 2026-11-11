@@ -1,0 +1,4 @@
+{
+  "key": "65372edba4b32c23aad32fa674329c58f5d6e3a4cf3c9c02380c47e870698a5d",
+  "text": "2. **Broadcasting Routing**\n   - Goal: send data packets to all hosts in the network.\n   - Basic method:\n     - Flooding: send to all neighbors, which may generate a large number of duplicate packets.\n   - Improved method: Reverse Path Forwarding (RPF)\n     - Check whether the data packet arrived from the source via the best path.\n     - If so, forward it to other nodes; otherwise, discard the duplicate packet."
+}

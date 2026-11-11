@@ -1,0 +1,4 @@
+{
+  "key": "c9e55f0c269edaff3aa2d35d225770763d5e428810313ca6d16a8da28af69f41",
+  "text": "#### Frame format:\n- **Preamble:** Used for synchronization.\n- **Destination/Source address:** Identifies the sender and receiver.\n- **Payload:** Transmits data.\n- **CRC checksum:** Detects transmission errors."
+}

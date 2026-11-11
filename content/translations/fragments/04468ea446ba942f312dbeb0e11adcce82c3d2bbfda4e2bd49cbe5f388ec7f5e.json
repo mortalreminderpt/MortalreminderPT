@@ -1,0 +1,4 @@
+{
+  "key": "04468ea446ba942f312dbeb0e11adcce82c3d2bbfda4e2bd49cbe5f388ec7f5e",
+  "text": "The operating system needs to be responsible for **the allocation and reclamation of memory space**:\n- How should the operating system record which memory regions have already been allocated and which are still free?\n- After a process finishes running, how should the memory space occupied by the process be reclaimed?\n- There are many locations in memory where a process can be placed; where exactly should it be placed?"
+}

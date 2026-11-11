@@ -1,0 +1,4 @@
+{
+  "key": "87107778138bb36f4e63886c76e71695ea9e764aae5b528a040a8f91d3c7c5d8",
+  "text": "> The global state of the entire application is stored in a single object tree, and this object tree exists in only one store."
+}

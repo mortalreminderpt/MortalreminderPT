@@ -1,0 +1,4 @@
+{
+  "key": "592732235df936ee7aadba3234ad3285b59b815426a3662d1db8e96888b2860e",
+  "text": "### Cookies\n- HTTP servers are essentially stateless\n- Cookies store a small amount of information (<4KB) on the user's computer"
+}

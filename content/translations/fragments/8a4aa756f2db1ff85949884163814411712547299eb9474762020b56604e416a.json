@@ -1,0 +1,4 @@
+{
+  "key": "8a4aa756f2db1ff85949884163814411712547299eb9474762020b56604e416a",
+  "text": "If the ⟦MC_0b1c5fa09a5595c1_2⟧ passed through Context is a new object or function, components using ⟦MC_2af479ca3392eccf_11⟧ will re-render every time the Provider updates. To avoid unnecessary re-renders, you can optimize using ⟦MC_441142c51381d613_0⟧ or ⟦MC_2ec8a423b147e09f_0⟧."
+}

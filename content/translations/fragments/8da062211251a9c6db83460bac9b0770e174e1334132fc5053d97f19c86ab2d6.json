@@ -1,0 +1,4 @@
+{
+  "key": "8da062211251a9c6db83460bac9b0770e174e1334132fc5053d97f19c86ab2d6",
+  "text": "**Explanation:**\nStore Enhancer is a higher-order function used to enhance the Store creation process. It can extend the functionality of the Store, such as adding Middleware support and enhancing debugging capabilities. A common example is ⟦MC_a75765fed681269a_0⟧."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "8376c08db46b45c43bfd793dbd69ce885638dd8ca1186fd124c27be538745318",
+  "text": "2. **Byte Stuffing**  \n   - Use a special \"flag byte\" to mark the start and end of each frame.  \n   - If the flag byte appears in the data, perform byte stuffing to avoid confusion."
+}

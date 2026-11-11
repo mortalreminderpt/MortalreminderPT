@@ -1,0 +1,4 @@
+{
+  "key": "8f14096018d8f9f7b0143b0b9d6a5563dc416e71b1836acf0237436463b42fd3",
+  "text": "**Privileged instructions and unprivileged instructions are divided at the time of CPU design and production**, so the CPU can determine the type of an instruction before executing it."
+}

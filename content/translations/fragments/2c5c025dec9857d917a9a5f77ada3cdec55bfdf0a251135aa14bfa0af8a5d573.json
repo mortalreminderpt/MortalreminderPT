@@ -1,0 +1,4 @@
+{
+  "key": "2c5c025dec9857d917a9a5f77ada3cdec55bfdf0a251135aa14bfa0af8a5d573",
+  "text": "## Problem Description\nThere is a plate on the table, and only one fruit can be placed into it at a time.\nThe father only puts apples into the plate, the mother only puts oranges into the plate, the son only waits to eat the oranges in the plate, and the daughter only waits to eat the apples in the plate.\nOnly when the plate is empty can the father or mother put a fruit into the plate.\nOnly when the plate contains the fruit they need can the son or daughter take the fruit out of the plate."
+}

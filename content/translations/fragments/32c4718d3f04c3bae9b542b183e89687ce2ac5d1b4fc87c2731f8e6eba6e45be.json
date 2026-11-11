@@ -1,0 +1,4 @@
+{
+  "key": "32c4718d3f04c3bae9b542b183e89687ce2ac5d1b4fc87c2731f8e6eba6e45be",
+  "text": "Resource sharing methods include **mutually exclusive sharing** and **simultaneous sharing**:\n- Mutually exclusive sharing: certain resources in the system, although they can be provided for use by multiple processes, **only allow one process to access the resource within a given time period**;\n- Simultaneous sharing: certain resources in the system **allow multiple processes to \"simultaneously\" access them within a given time period**."
+}

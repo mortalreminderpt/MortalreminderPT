@@ -1,0 +1,4 @@
+{
+  "key": "d448a815880f62bc2074563b406095395ecc82bff1a839f76dfe1c2d62738409",
+  "text": "The Banker's Algorithm was designed by the Dutch scholar Dijkstra for the banking system, to ensure that when a bank issues cash loans, it will not encounter a situation where it cannot meet the needs of all customers.\nLater, this algorithm was used in operating systems to **avoid deadlock**."
+}

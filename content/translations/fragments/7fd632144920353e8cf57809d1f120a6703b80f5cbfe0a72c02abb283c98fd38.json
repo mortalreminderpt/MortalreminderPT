@@ -1,0 +1,4 @@
+{
+  "key": "7fd632144920353e8cf57809d1f120a6703b80f5cbfe0a72c02abb283c98fd38",
+  "text": "When in user mode, it means that **an application program is currently running**, and **only unprivileged instructions can be executed** at this time."
+}

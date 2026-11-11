@@ -1,0 +1,4 @@
+{
+  "key": "522eee3f39a4195063f579425d7623b0ebea8f6dd304811c9ecdd604ac85567e",
+  "text": "## Interrupt Masking Method\nImplemented using \"enable/disable interrupt instructions\".\nThe idea is the same as the implementation of primitives: from the moment a process starts accessing the critical section until it finishes, interrupts are not allowed, so process switching cannot occur, and therefore it is impossible for two processes to access the critical section at the same time."
+}

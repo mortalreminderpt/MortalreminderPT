@@ -1,0 +1,4 @@
+{
+  "key": "974115b9117eae8e755cea90d9a3d03bb715ac9ca7cb45cdaa346bb3be33f06e",
+  "text": "- ROM (Basic Input/Output System, BIOS) boot program: instructs the CPU to read the disk's master boot record into RAM;\n- Master Boot Record (MBR): the CPU can execute the disk boot program within it, determine the location of the primary partition, and read in the partition boot record;\n- Partition Boot Record (PBR): executes the boot program, finds and reads in the boot manager at some location under the partition's root directory;\n- Boot manager: executes the boot manager to complete a series of operating system initialization tasks."
+}

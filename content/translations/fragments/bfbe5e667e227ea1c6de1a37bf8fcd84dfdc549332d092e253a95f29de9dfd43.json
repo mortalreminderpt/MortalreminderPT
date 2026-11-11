@@ -1,0 +1,4 @@
+{
+  "key": "bfbe5e667e227ea1c6de1a37bf8fcd84dfdc549332d092e253a95f29de9dfd43",
+  "text": "- **Header size**:  \n  - Minimum: 20 bytes (IHL=5).  \n  - Maximum: 60 bytes (IHL=15, including options)."
+}

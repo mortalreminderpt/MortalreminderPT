@@ -1,0 +1,4 @@
+{
+  "key": "7099ed2bb842e592bcd47eb7850b1f63d49825ad763975a6b850331875a27a5d",
+  "text": "⟦MC_9ca5370c67fe3478_0⟧\nIn this example, we use ⟦MC_41b47773b8f66662_0⟧ to store the return value of ⟦MC_33f1d94f0dcfa5b1_0⟧ (that is, the timer ID), and clear the timer when needed."
+}

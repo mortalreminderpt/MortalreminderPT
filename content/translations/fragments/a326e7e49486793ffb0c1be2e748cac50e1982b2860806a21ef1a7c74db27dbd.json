@@ -1,0 +1,4 @@
+{
+  "key": "a326e7e49486793ffb0c1be2e748cac50e1982b2860806a21ef1a7c74db27dbd",
+  "text": "#### **Connectionless (Datagram)**  \n- Similar to sending a letter; each packet is independent and takes its own path.  \n- No path needs to be established in advance; packets may arrive out of order.  \n- Example: Data transmission on the Internet."
+}

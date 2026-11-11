@@ -1,0 +1,4 @@
+{
+  "key": "cc5184345ce0035876f25c3996d59cf445d83b2216f1b80490bad4b14b85dff4",
+  "text": "In the 1960s, systems supporting multiprogramming appeared.\nIn order to load multiple programs into memory and prevent these programs from interfering with each other, the **entire user space** is divided into **several fixed-size partitions**.\n**Only one job is loaded into each partition**, thus forming the earliest and simplest memory management method capable of running multiple programs."
+}

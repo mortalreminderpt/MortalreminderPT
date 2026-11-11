@@ -1,0 +1,4 @@
+{
+  "key": "b5a7ed6df7726266de1f06a9aef2bf2f97d3cfe52e24b7229d85caf25fd2d93a",
+  "text": "- **Do not call ⟦MC_1685976f9fe74590_8⟧ during rendering**: This will cause an infinite render loop; ⟦MC_1685976f9fe74590_9⟧ should be called in event handlers or ⟦MC_01a812598bf19cab_0⟧."
+}

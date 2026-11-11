@@ -1,0 +1,4 @@
+{
+  "key": "35de93a3680c793ad96938ecb5aa207e46d2923d01cf4b661ff630488ce5d96d",
+  "text": "⟦MC_82d373f8277c7536_0⟧\n- **Reading and modifying ⟦MC_da756e7954773222_6⟧ in event handlers or side effects**: You can safely read and modify ⟦MC_da756e7954773222_7⟧ in event handler functions or ⟦MC_01a812598bf19cab_0⟧."
+}

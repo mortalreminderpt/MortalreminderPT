@@ -1,0 +1,4 @@
+{
+  "key": "e62d9444c5963c328beb4b5b207056f41b6b400db612464c463963e7587d9cd4",
+  "text": "4. **Local mutation is acceptable**: Although global mutation or mutations that affect other components are not allowed, local mutations inside a component are acceptable. For example, creating local variables during rendering and modifying them is fine, because these variables only exist within the current component lifecycle and do not affect subsequent renders."
+}

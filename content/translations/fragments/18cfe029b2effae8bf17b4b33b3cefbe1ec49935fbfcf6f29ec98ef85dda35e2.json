@@ -1,0 +1,4 @@
+{
+  "key": "18cfe029b2effae8bf17b4b33b3cefbe1ec49935fbfcf6f29ec98ef85dda35e2",
+  "text": "One solution is to configure the RTFReader class with a TextConverter object that can convert RTF into another text representation.\nWhen RTFReader parses an RTF document, it uses TextConverter to perform the conversion.\nWhenever RTFReader recognizes an RTF token (either plain text or an RTF control word), it sends a request to TextConverter to convert that token.\nThe TextConverter object is responsible for performing the data conversion and representing the token in a specific format, as shown in the figure"
+}

@@ -1,0 +1,4 @@
+{
+  "key": "cc7a0d5ff8df4b72f9dbeea703a98febc9827529899af7bcad3c8fba9abea903",
+  "text": "1. It is relatively complex to implement.\n2. Releasing already obtained resources may invalidate work done in the previous stage. Therefore, this method is generally **only suitable for resources whose state is easy to save and restore**, such as the CPU.\n3. Repeatedly applying for and releasing resources increases system overhead and reduces system throughput.\n4. If **Option 1** is adopted, it means that as long as a certain resource cannot be obtained temporarily, all previously obtained resources must be abandoned and reapplied for later. If this happens continuously, it will **lead to process starvation**."
+}

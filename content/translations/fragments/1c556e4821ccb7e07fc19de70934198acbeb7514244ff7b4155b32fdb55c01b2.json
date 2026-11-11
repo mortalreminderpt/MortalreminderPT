@@ -1,0 +1,4 @@
+{
+  "key": "1c556e4821ccb7e07fc19de70934198acbeb7514244ff7b4155b32fdb55c01b2",
+  "text": "### **Fragmentation**  \n- Splitting large packets into smaller fragments to fit the network's Maximum Transmission Unit (MTU)."
+}

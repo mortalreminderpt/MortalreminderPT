@@ -1,0 +1,4 @@
+{
+  "key": "a9f43a13f57d036ffdf83d9539ac8891db6ae14bba2bd026a4a71d6ffede0047",
+  "text": "**Conflict with the five-layer architecture**:  \n- Breaks layer transparency: NAT modifies data at the network layer (IP addresses) and the transport layer (port numbers).  \n- Source addresses and ports are changed, affecting end-to-end communication transparency."
+}

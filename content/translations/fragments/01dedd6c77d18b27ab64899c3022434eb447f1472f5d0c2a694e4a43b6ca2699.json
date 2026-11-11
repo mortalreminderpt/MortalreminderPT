@@ -1,0 +1,4 @@
+{
+  "key": "01dedd6c77d18b27ab64899c3022434eb447f1472f5d0c2a694e4a43b6ca2699",
+  "text": "### **Middleware**\n**Type signature:**\n⟦MC_cab5409b76f0bc73_0⟧\n**Explanation:**\nMiddleware is a tool that extends the functionality of ⟦MC_1685976f9fe74590_5⟧, allowing interception, modification, or execution of side effects before an Action is sent to the Reducer. It is commonly used to handle asynchronous operations, logging, and so on."
+}

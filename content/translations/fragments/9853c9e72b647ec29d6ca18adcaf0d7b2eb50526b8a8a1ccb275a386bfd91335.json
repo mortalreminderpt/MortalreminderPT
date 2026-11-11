@@ -1,0 +1,4 @@
+{
+  "key": "9853c9e72b647ec29d6ca18adcaf0d7b2eb50526b8a8a1ccb275a386bfd91335",
+  "text": "Only when **the buffer is not empty** can **the consumer take a product out of it**; otherwise, it must wait."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "671eb3a058b8fe1d85f607fc7b5a649206ba22787d09966c334db20afaf7d03f",
+  "text": "When a user program is to be loaded into memory, the operating system kernel program searches the table according to the size of the user program, finds an unallocated partition that can satisfy the size, allocates it to the program, and then changes the status to \"Allocated\".\n- Advantages: simple to implement, **no external fragmentation**.\n- Disadvantages:\n  1. When the user program is too large, all partitions may be unable to meet the requirement; in this case, overlay technology has to be used to solve it, but this will reduce performance; \n  2. **Internal fragmentation will be generated**, and memory utilization is low."
+}

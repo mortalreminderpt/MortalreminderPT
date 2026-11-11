@@ -1,0 +1,4 @@
+{
+  "key": "e2e0d05854fe7fe9348d619ea836860e1ec62c1b67762f241854a7dce99a18a1",
+  "text": "#### Slotted ALOHA\n- Divides time into fixed time slots, and transmission must begin at the start of a slot.\n- Improves throughput by reducing the probability of collisions, and is more efficient than pure ALOHA."
+}

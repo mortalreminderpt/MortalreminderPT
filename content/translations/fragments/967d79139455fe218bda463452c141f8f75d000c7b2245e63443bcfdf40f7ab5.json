@@ -1,0 +1,4 @@
+{
+  "key": "967d79139455fe218bda463452c141f8f75d000c7b2245e63443bcfdf40f7ab5",
+  "text": "## Swapping Technology\nThe design idea of swapping (exchange) technology:\nWhen memory space is tight, the system **temporarily swaps some processes in memory out to external storage**, and **swaps some processes in external storage that already have the conditions to run into memory**. (Processes are dynamically scheduled between memory and disk; intermediate scheduling)"
+}

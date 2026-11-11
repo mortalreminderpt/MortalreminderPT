@@ -1,0 +1,4 @@
+{
+  "key": "06fd1761539468e799c325149431e76c8f94163cb5a7745a08db1f496f7b29b5",
+  "text": "- **Do not perform side effects in the Reducer**: The Reducer should be a pure function, and side-effect operations such as network requests and logging should not be performed in it."
+}

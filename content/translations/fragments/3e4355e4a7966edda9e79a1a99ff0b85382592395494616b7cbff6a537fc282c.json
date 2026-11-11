@@ -1,0 +1,4 @@
+{
+  "key": "3e4355e4a7966edda9e79a1a99ff0b85382592395494616b7cbff6a537fc282c",
+  "text": "**Note! A deadlock necessarily involves circular waiting, but circular waiting does not necessarily mean deadlock** (circular waiting is a necessary but not sufficient condition for deadlock)."
+}

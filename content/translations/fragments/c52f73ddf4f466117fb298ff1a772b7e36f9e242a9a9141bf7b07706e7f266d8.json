@@ -1,0 +1,4 @@
+{
+  "key": "c52f73ddf4f466117fb298ff1a772b7e36f9e242a9a9141bf7b07706e7f266d8",
+  "text": "If the two processes could freely and concurrently share the printer resource, the printer device would alternately receive print requests from the WPS and Word processes, and the contents of the two papers would be mixed together..."
+}

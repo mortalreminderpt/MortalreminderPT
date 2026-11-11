@@ -1,0 +1,4 @@
+{
+  "key": "bbf98555b73ca9efe26cc50595e7cff106f210fb40d01eb75b2800d66b86bd24",
+  "text": "Only **when the level-k queue is empty** will **a time slice be allocated to the process at the head of the level-(k+1) queue**;"
+}

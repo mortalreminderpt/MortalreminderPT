@@ -1,0 +1,4 @@
+{
+  "key": "88882f9db68600bb628e3a6c2a47add515ca74cd1d976c0985a2baa41d9a705d",
+  "text": "⟦MC_dcd509d105b756a4_0⟧\n**Trap instruction**: Sometimes an application program wants to request a service from the operating system kernel. At this point it executes a special instruction—the trap instruction—which triggers an internal interrupt signal."
+}

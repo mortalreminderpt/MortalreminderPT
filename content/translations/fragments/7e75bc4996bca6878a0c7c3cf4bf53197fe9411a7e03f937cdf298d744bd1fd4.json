@@ -1,0 +1,4 @@
+{
+  "key": "7e75bc4996bca6878a0c7c3cf4bf53197fe9411a7e03f937cdf298d744bd1fd4",
+  "text": "Synchronization relationships (one before the other):\n1. Only after the father puts an apple into the plate can the daughter take the apple;\n2. Only after the mother puts an orange into the plate can the son take the orange;\n3. Only when the plate is empty can the father or mother put a fruit in. (The event \"the plate is empty\" can be triggered by either the son or the daughter, and only after this event occurs is the father or mother allowed to put a fruit in.)"
+}

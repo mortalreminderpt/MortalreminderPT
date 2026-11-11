@@ -1,0 +1,4 @@
+{
+  "key": "16b5ed4a4e18ff4a079a27007cde8979bdf743eb382bdc3767613ffd0bb9115e",
+  "text": "- **Do not redefine the Reducer function inside the component**: Avoid recreating the Reducer function on every render inside the component; you can define it outside the component or use ⟦MC_2ec8a423b147e09f_0⟧."
+}

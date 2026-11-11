@@ -1,0 +1,4 @@
+{
+  "key": "fbd549ae67719f7af90436f506a95e5463f0935cd35c37175ef7ba0a7ac9bad3",
+  "text": "### Connection Establishment Process\n- First RTT: TCP three-way handshake establishes the connection\n- Second RTT: Send the HTTP request and receive the response"
+}

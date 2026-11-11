@@ -1,0 +1,4 @@
+{
+  "key": "14a04be7bf5e53b8b12bf94bd7652a7603c71bf7d38a09d01a7caa159ac13a3d",
+  "text": "- **Follow the rules for using Hooks**: Do not use ⟦MC_18b9b49b1c5304f4_8⟧ in loops, conditions, or nested functions, and do not call ⟦MC_1685976f9fe74590_12⟧ during rendering."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "ac68feabf1db4a03595b54c4b32b64e84fcb187ea2df9ed34b82945cc5505fff",
+  "text": "The state of a process temporarily swapped out to external storage and waiting is the **suspended state (suspend)**, and the suspended state can be further subdivided into two states: **ready suspended** and **blocked suspended**."
+}

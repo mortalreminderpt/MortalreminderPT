@@ -1,0 +1,4 @@
+{
+  "key": "8dce2ada5b898fa96a79de92439cc6eb238de1cb78c6e2cc2c67d11ca1b03b1b",
+  "text": "- **Storing mutable values**: You can use ⟦MC_ece0da93fe9e23ff_8⟧ to store any mutable value that needs to persist between renders, such as counters, timer IDs, external library instances, and so on."
+}

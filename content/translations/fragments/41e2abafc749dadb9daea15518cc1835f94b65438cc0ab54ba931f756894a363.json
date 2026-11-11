@@ -1,0 +1,4 @@
+{
+  "key": "41e2abafc749dadb9daea15518cc1835f94b65438cc0ab54ba931f756894a363",
+  "text": "That is, pass the system call parameters → execute the trap instruction (user mode) → execute the corresponding internal request kernel program to handle the system call (kernel mode) → return to the application."
+}

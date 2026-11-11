@@ -1,0 +1,4 @@
+{
+  "key": "98baf45c2680aacab55129f19ba27eded8be2e626a673335102ffdcf1f43ddf5",
+  "text": "1. **Idle let in**. When the critical section is idle, a process requesting to enter the critical section may be allowed to enter it immediately;\n2. **Busy then wait**. When a process has already entered the critical section, other processes attempting to enter the critical section must wait;\n3. **Bounded waiting**. For a process requesting access, it should be guaranteed to enter the critical section within a finite time (ensuring no starvation);\n4. **Yield the wait**. When a process cannot enter the critical section, it should **immediately release the processor** to prevent the process from busy waiting."
+}

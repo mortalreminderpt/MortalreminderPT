@@ -1,0 +1,4 @@
+{
+  "key": "bdf75230aeb5ddbc16bb1a330956bb671e20f7d485350ef67dd3336d5c965f7a",
+  "text": "If, after resources are allocated, no safe sequence can be found in the system, the system has entered an **unsafe state**.\nThis means that afterward **it is possible that** all processes will be unable to execute successfully.\nOf course, if some processes return some resources in advance, **the system may also return to a safe state**, but we must always consider the worst case before allocating resources."
+}

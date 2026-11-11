@@ -1,0 +1,4 @@
+{
+  "key": "0b1256651c0edbb4f2f866525692e229325cc66b94704b8ed289f97d66410950",
+  "text": "A reducer is a pure function that receives the previous state and an action and returns the new state. Remember, you must return a new object rather than modifying the previous state. You can start with just a single reducer, but as the application grows in complexity, you can split large reducers into smaller reducers that each manage different parts of the state tree. Because reducers are just functions, you can control the order in which they are called, pass in additional data, and even write reusable reducers to handle common tasks such as a paginator."
+}

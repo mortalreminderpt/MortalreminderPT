@@ -1,0 +1,4 @@
+{
+  "key": "6382717d081f517e6f5cbe3e46b67ab3834d00e9f8885353a54154dc173fd031",
+  "text": "During operation, CPU time slices are allocated to several virtual machines. From the perspective of the upper-layer operating system, it appears to have been allocated an independent CPU; disk and memory, however, are divided by space. Each machine has its own independent resources."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "7dd41d3b0c7e480e08e2da650c57f45778a7ae723c02eca431559729ccadd0ce",
+  "text": "**Process scheduling in the narrow sense** refers to **selecting a process to run** from the ready queue.\n(This process may be the process that was just suspended, or it may be **another process**; the latter case requires **process switching**.)"
+}

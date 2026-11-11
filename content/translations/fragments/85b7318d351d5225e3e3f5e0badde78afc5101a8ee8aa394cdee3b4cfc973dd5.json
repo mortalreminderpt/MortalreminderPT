@@ -1,0 +1,4 @@
+{
+  "key": "85b7318d351d5225e3e3f5e0badde78afc5101a8ee8aa394cdee3b4cfc973dd5",
+  "text": "In this way, the sequence of instructions between disabling interrupts and enabling interrupts cannot be interrupted, thus achieving \"atomicity\"."
+}

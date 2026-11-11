@@ -1,0 +1,4 @@
+{
+  "key": "140e67bdedb1fa872dbf531699ec2fa447dba504f2dec2aefe56f0fb1ea6ceb2",
+  "text": "User mode → kernel mode: triggered by an \"**interrupt**\". **The hardware automatically completes the mode-switching process**. Triggering an interrupt signal means that the operating system will forcibly take back CPU usage (in addition to illegal use of privileged instructions, many other events will also trigger interrupt signals. One commonality is that **wherever operating system intervention is needed, an interrupt signal will be triggered**)."
+}

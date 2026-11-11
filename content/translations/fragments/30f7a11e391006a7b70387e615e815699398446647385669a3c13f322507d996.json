@@ -1,0 +1,4 @@
+{
+  "key": "30f7a11e391006a7b70387e615e815699398446647385669a3c13f322507d996",
+  "text": "Each theme corresponds to a concrete WidgetFactory subclass, and each subclass implements the component operations used to create that theme.\n**Clients interact only with the interface defined by the abstract classes, and do not use the interfaces of specific classes**"
+}

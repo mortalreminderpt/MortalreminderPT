@@ -1,0 +1,4 @@
+{
+  "key": "c3ece9be76b87dd7b8ebcf0e49a7c37543d95b8bc4d81acb82aa508e57f667c7",
+  "text": "- **Do not call ⟦MC_d5607f8c3c3d434c_8⟧ inside conditional statements or loops**: This causes the order of Hook calls to be inconsistent, and React cannot manage state correctly."
+}

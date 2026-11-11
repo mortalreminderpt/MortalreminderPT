@@ -1,0 +1,4 @@
+{
+  "key": "c9213ebd8eb391a7fb49cc88f0f32afad7776fd9b73363aa9aa954106b4df8da",
+  "text": "⟦MC_01a812598bf19cab_13⟧ is the key Hook in React for handling side effects, used to perform asynchronous operations, subscriptions, DOM manipulation, etc. after a component renders. When using ⟦MC_01a812598bf19cab_14⟧, pay attention to the following points:"
+}

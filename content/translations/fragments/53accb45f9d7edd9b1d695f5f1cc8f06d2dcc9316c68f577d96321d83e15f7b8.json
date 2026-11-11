@@ -1,0 +1,4 @@
+{
+  "key": "53accb45f9d7edd9b1d695f5f1cc8f06d2dcc9316c68f577d96321d83e15f7b8",
+  "text": "Access to critical resources must be performed **mutually exclusively**.\nMutual exclusion, also called an **indirect constraint relationship**.\n**Process mutual exclusion** means that when **a process accesses a critical resource**, **another process that wants to access the critical resource must wait**.\nAfter the process currently accessing the critical resource finishes accessing and **releases the resource**, **another process can then access the critical resource**."
+}

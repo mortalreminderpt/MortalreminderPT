@@ -1,0 +1,4 @@
+{
+  "key": "42d9a007e0389259ef31d42a571682c222263a740aa54a6baa2e81460654a873",
+  "text": "1. Saving various data of the original running process;\n2. Restoring various data of the new process. (Such as the program counter, program status word, various data registers, and other processor on-site information; this information is generally saved in the process control block.)"
+}

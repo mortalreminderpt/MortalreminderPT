@@ -1,0 +1,4 @@
+{
+  "key": "4342f02c71ed6c1277ca9e1cafecd6d7b87a95f9ce0c87a21be0058e8067d2d2",
+  "text": "### **Port & Socket**\n1. The application layer and transport layer need to specify the remote process for the connection.\n2. At the transport layer, addressing usually uses **Transport Service Access Points (TSAPs)**.\n   - On the Internet, TSAPs are usually called **Ports** (such as port 80).\n3. At the network layer, addressing usually uses **Network Service Access Points (NSAPs)**.\n   - On the Internet, NSAPs usually correspond to **IP addresses**."
+}

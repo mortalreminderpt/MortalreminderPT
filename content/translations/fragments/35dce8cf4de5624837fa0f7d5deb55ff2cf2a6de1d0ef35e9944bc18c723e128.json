@@ -1,0 +1,4 @@
+{
+  "key": "35dce8cf4de5624837fa0f7d5deb55ff2cf2a6de1d0ef35e9944bc18c723e128",
+  "text": "Swapping usually occurs when many processes are running and memory is tight, and pauses when the system load decreases.\nFor example, if page faults frequently occur when many processes are running, it indicates that memory is tight, and some processes can be swapped out at this time;\nif the page fault rate drops significantly, swapping out can be paused."
+}

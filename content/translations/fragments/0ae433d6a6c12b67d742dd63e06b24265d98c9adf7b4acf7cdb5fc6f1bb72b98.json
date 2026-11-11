@@ -1,0 +1,4 @@
+{
+  "key": "0ae433d6a6c12b67d742dd63e06b24265d98c9adf7b4acf7cdb5fc6f1bb72b98",
+  "text": "Similar to processes, the operating system uses a **Thread Control Block (TCB)** and a **Thread table** to accomplish thread organization and control."
+}

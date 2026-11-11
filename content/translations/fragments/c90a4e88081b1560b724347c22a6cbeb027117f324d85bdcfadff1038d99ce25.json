@@ -1,0 +1,4 @@
+{
+  "key": "c90a4e88081b1560b724347c22a6cbeb027117f324d85bdcfadff1038d99ce25",
+  "text": "After calling the state update function, the new state value is not immediately updated in the current execution context. Instead, React uses the new state value on the next render."
+}

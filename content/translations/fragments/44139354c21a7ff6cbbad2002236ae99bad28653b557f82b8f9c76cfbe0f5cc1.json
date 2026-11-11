@@ -1,0 +1,4 @@
+{
+  "key": "44139354c21a7ff6cbbad2002236ae99bad28653b557f82b8f9c76cfbe0f5cc1",
+  "text": "**Example**:\nIf the channel bandwidth is 3000 Hz and the signal-to-noise ratio is 100, the maximum data rate is:\n$\n3000 \\cdot \\log_2(1 + 100) \\approx 19,931 \\text{ bps}\n$"
+}

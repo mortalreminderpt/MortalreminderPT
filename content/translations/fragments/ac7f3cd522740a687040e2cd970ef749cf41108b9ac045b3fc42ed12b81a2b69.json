@@ -1,0 +1,4 @@
+{
+  "key": "ac7f3cd522740a687040e2cd970ef749cf41108b9ac045b3fc42ed12b81a2b69",
+  "text": "Note: Not all processes in the system are in a deadlock state. After **simplifying the resource allocation graph** with the deadlock detection algorithm, **the processes that still have edges connected to them are the deadlocked processes**."
+}

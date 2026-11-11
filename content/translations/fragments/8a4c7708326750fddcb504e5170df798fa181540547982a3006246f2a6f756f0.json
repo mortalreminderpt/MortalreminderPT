@@ -1,0 +1,4 @@
+{
+  "key": "8a4c7708326750fddcb504e5170df798fa181540547982a3006246f2a6f756f0",
+  "text": "## Definition and basic characteristics of monitors\nA monitor is a special software module composed of these parts:\n1. A description of the **shared data structures** local to the monitor;\n2. A **set of procedures** that operate on these data structures;\n3. Statements that set initial values for the shared data local to the monitor;\n4. A monitor has a name."
+}

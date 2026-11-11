@@ -1,0 +1,4 @@
+{
+  "key": "a166fb0022594aa79f9360ada26e0e2d609a6c208ee7631be0ab64cd2b602a92",
+  "text": "Therefore, although the **two-flag lock-first method** **solves the \"busy then wait\" problem**, it **violates the \"idle let in\" and \"bounded waiting\" principles**, and will **cause \"starvation\"** because each process may be unable to access the critical resource for a long time."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "b5a5d75fe4d086f766c997db970e41928d2352f28346cbacf5b09eeafd3b595b",
+  "text": "If you want to store a function in state, you need to wrap it in a function:"
+}

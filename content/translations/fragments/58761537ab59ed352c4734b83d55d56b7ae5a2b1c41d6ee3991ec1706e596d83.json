@@ -1,0 +1,4 @@
+{
+  "key": "58761537ab59ed352c4734b83d55d56b7ae5a2b1c41d6ee3991ec1706e596d83",
+  "text": "Although strictly speaking, the average waiting time and average turnaround time of SJF are not necessarily the minimum,\ncompared with other algorithms (such as FCFS), SJF can still achieve relatively low average waiting time and average turnaround time."
+}

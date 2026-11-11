@@ -1,0 +1,4 @@
+{
+  "key": "dca9ef5f1ac2be8f79df30f9841a82fe6a36d64d862e5459bb0d02e86fbc4ab1",
+  "text": "Memory is divided into **one \"fixed area\"** and **several \"overlay areas\"**:\n- Segments that need to reside in memory permanently are placed in the \"fixed area\" and are not swapped out after being loaded (unless execution ends);\n- Infrequently used segments are placed in \"overlay areas\"; they are loaded into memory when needed and swapped out of memory when not needed."
+}

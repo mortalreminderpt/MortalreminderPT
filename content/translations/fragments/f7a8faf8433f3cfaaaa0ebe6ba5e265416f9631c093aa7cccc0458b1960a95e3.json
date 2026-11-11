@@ -1,0 +1,4 @@
+{
+  "key": "f7a8faf8433f3cfaaaa0ebe6ba5e265416f9631c093aa7cccc0458b1960a95e3",
+  "text": "⟦MC_c36f459f60bfdf82_0⟧\nIf the number of remaining resources is insufficient, the ⟦MC_045f01b5659425bb_0⟧ primitive is used to make the process transition from the running state to the blocked state and hang it in the waiting queue (i.e., blocking queue) of semaphore S;\nafter resources are released, if there are still other processes waiting for this resource, the ⟦MC_6ea40259be2a31da_0⟧ primitive wakes up one process in the waiting queue, and that process changes from the blocked state to the ready state."
+}

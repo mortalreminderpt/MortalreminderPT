@@ -1,0 +1,4 @@
+{
+  "key": "f57649c8dc6581ffcbc8e63bd7c0a363efcaeddb8025e2bfd7afe47aed5765ff",
+  "text": "Main drawback: long user response time, and **no human-computer interaction capability** (after users submit their jobs, they can only wait for the computer to finish processing and cannot control their job execution in the meantime. For example, they cannot debug programs or enter parameters while a program is running)."
+}

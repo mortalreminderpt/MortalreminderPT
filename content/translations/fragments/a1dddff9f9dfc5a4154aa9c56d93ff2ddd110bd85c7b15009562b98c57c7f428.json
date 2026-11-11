@@ -1,0 +1,4 @@
+{
+  "key": "a1dddff9f9dfc5a4154aa9c56d93ff2ddd110bd85c7b15009562b98c57c7f428",
+  "text": "All of this information is stored in a data structure called the **PCB (Process Control Block)**, that is, the **process control block**. The PCB is the only sign that a process exists; when a process is created, the operating system creates a PCB for it, and when the process ends, its PCB is reclaimed."
+}

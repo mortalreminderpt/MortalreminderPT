@@ -1,0 +1,4 @@
+{
+  "key": "ba7d8d5b419d547ef5a60e5255f858a62d308f638d9e3e116de332a69310aca1",
+  "text": "In Strict Mode, React calls the execution function and cleanup function of ⟦MC_01a812598bf19cab_8⟧ twice on the initial render. This is to help developers discover problems in side effects. Make sure that the side effect function and the cleanup function are idempotent."
+}

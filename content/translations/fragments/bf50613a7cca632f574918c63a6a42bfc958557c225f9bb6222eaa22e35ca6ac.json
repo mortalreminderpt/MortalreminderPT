@@ -1,0 +1,4 @@
+{
+  "key": "bf50613a7cca632f574918c63a6a42bfc958557c225f9bb6222eaa22e35ca6ac",
+  "text": "Only the most core functions, such as interrupts, primitives, and inter-process communication, are placed in the kernel. Functions such as process management, file management, and device management run in user mode in the form of user processes."
+}

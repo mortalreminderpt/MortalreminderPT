@@ -1,0 +1,4 @@
+{
+  "key": "648c2a53915a8c27c3518ae25826ea9c567c2ec7cbd377fc33d3752136f8135b",
+  "text": "A **primitive** is a special **program segment** whose execution **can only be completed in one go and cannot be interrupted.**\nPrimitives are implemented by **disable-interrupt/enable-interrupt instructions**.\nThe main problem with software solutions is that \"the various operations in the entry section cannot be completed in one go\"; therefore, if the operations in the entry section and exit section can all be implemented with \"primitives\" so that these operations can be completed \"in one go,\" the problem can be avoided."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "d9883d23efca3312cc733ab78ca1c3c5639a8b36feee3f687adb59816cf6fb4b",
+  "text": "## Motivation\nWhen designing a GUI that supports different themes, a GUI under the same theme will include components such as scroll bars, windows, and buttons.\nTo ensure the portability of themes, an application should not hard-code components for a specific theme; otherwise, changing the theme becomes difficult."
+}

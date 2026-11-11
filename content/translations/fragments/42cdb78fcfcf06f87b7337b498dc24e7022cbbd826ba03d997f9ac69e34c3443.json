@@ -1,0 +1,4 @@
+{
+  "key": "42cdb78fcfcf06f87b7337b498dc24e7022cbbd826ba03d997f9ac69e34c3443",
+  "text": "### Linked Method\nIn the linked method, the operating system divides PCBs into **multiple queues** according to process state; the operating system holds **pointers to each queue**."
+}

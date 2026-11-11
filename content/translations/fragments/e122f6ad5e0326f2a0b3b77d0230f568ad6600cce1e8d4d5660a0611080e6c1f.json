@@ -1,0 +1,4 @@
+{
+  "key": "e122f6ad5e0326f2a0b3b77d0230f568ad6600cce1e8d4d5660a0611080e6c1f",
+  "text": "A **kernel program critical section** is generally used to access some kind of **kernel data structure**, such as the process ready queue (composed of the PCBs of the ready processes)."
+}

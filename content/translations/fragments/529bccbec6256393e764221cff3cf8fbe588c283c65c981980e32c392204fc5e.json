@@ -1,0 +1,4 @@
+{
+  "key": "529bccbec6256393e764221cff3cf8fbe588c283c65c981980e32c392204fc5e",
+  "text": "Eg. A certain computer supports only single-program operation. A job initially needs to run on the CPU for 5 seconds, then use a printer to print output for 5 seconds, and then execute for another 5 seconds before it can finish.\nIn this process, what are the CPU utilization and printer utilization respectively?"
+}

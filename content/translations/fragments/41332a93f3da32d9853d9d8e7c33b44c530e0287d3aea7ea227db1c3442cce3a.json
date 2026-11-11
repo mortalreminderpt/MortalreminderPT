@@ -1,0 +1,4 @@
+{
+  "key": "41332a93f3da32d9853d9d8e7c33b44c530e0287d3aea7ea227db1c3442cce3a",
+  "text": "If P1 runs on the processor first, it will remain stuck at 5.\nUntil P1's time slice is used up and scheduling occurs, switching P0 to run on the processor.\nCode 1 will not block P0; P0 can access the critical section normally, and even if it switches back to P1 during P0's access to the critical section, P1 will still remain stuck at 5."
+}

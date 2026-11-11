@@ -1,0 +1,4 @@
+{
+  "key": "2a56135d84d48086847bf26e7d729238df3c353071431afa996afd1d13b8436d",
+  "text": "### **Transport Protocol Data Unit**\n- An abstract representation of messages sent to and from the transport entity.\n- **Transport Protocol Data Unit (TPDU)** = Segment.\n- Encapsulate segments into packets and frames."
+}

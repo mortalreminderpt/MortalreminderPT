@@ -1,0 +1,4 @@
+{
+  "key": "9fbc92855edb0f6652a6b1c41b662784a3b3089626613dfa20cf0428ad1af0c8",
+  "text": "To avoid errors, each process's **access** to the shared space should be **mutually exclusive**."
+}

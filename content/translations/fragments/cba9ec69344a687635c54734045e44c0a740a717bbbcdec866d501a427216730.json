@@ -1,0 +1,4 @@
+{
+  "key": "cba9ec69344a687635c54734045e44c0a740a717bbbcdec866d501a427216730",
+  "text": "The **Shortest Remaining Time Next algorithm** requires **scheduling whenever a process joins the ready queue and changes it**. If the **remaining time** of the newly arrived process is **shorter** than the remaining time of the currently running process, the new process **preempts the processor**, and the currently running process returns to the ready queue.\nIn addition, **scheduling is also required when a process completes.**"
+}

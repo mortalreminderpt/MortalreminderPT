@@ -1,0 +1,4 @@
+{
+  "key": "012ad77a53d5699a1e31909dc75c7a8f1140aa5d73aca6af9d3c5592c6febbeb",
+  "text": "4. Product (ASCIIText, TeXText, TextWidget)\n- Represents the complex object being constructed. ConcreteBuilder creates the internal representation of the product and defines its assembly process;\n- Contains the classes that define the constituent parts, including the interface for assembling these parts into the final product."
+}

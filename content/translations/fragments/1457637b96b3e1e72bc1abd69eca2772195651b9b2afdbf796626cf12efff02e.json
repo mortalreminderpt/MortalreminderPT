@@ -1,0 +1,4 @@
+{
+  "key": "1457637b96b3e1e72bc1abd69eca2772195651b9b2afdbf796626cf12efff02e",
+  "text": "In Strict Mode, React may call the computation function twice. This is to help detect unexpected side effects, so the computation function must be a pure function."
+}

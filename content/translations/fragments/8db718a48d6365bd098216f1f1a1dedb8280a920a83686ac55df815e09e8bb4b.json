@@ -1,0 +1,4 @@
+{
+  "key": "8db718a48d6365bd098216f1f1a1dedb8280a920a83686ac55df815e09e8bb4b",
+  "text": "Algorithm idea: Combine the ideas of the two-flag method and the single flag method. If both sides are competing to enter the critical section, the processes can try to yield."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "dd67cf84fc366b644375397acbf9f8afc1c69765fb79e9f598a70be449938698",
+  "text": "⟦MC_16004a504a09e890_0⟧\nIn an integer semaphore, \"checking\" and \"locking\" are completed in one go, avoiding problems caused by concurrency and asynchrony."
+}

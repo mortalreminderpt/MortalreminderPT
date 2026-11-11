@@ -1,0 +1,4 @@
+{
+  "key": "a865f8f50e4c375cee5111bac777d479829063a0f3210b8e48a1bd9943104e4d",
+  "text": "### Three Linking Methods\nPrograms can be linked in the following three ways:\n- **Static linking**: before the program runs, the object modules and the library functions they require are first linked into a complete executable file (load module), which is then no longer split apart;\n- **Load-time dynamic linking**: when the object modules are loaded into memory, linking is performed while loading;\n- **Run-time dynamic linking**: an object module is linked only when the program needs it during execution. Its advantages are that it is easy to modify and update, and it facilitates sharing of object modules."
+}

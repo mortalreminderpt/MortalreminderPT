@@ -1,0 +1,4 @@
+{
+  "key": "9d5e11ad451a2d18e9dcc8f5a5977e7f7188bff8bef521c4ed93ab768b1fb479",
+  "text": "The computation function passed to ⟦MC_441142c51381d613_5⟧ should be a pure function and should not have side effects. It should only return a value based on its inputs and should not modify external state."
+}

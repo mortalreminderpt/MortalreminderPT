@@ -1,0 +1,4 @@
+{
+  "key": "f5d116c6ab07ed426c396db448bf5756dc47814add2c95cb667dc206d9640d35",
+  "text": "Steps of the safety algorithm:\n- Check whether the current remaining available resources can satisfy the maximum demand of some process. If so, add that process to the safe sequence and reclaim all resources held by that process.\n- Repeat the above process continuously to see whether all processes can eventually be added to the safe sequence."
+}

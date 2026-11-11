@@ -1,0 +1,4 @@
+{
+  "key": "b8308b335a313800fe3a28423dc14765bdae35205af4d00defe67d9bf8215cc1",
+  "text": "⟦MC_c57eaa7af0ffef82_0⟧\n- **Do not overuse Context**: Context is suitable for global data passing that spans multiple component layers. If data is only passed between parent and child components, using props is more appropriate."
+}

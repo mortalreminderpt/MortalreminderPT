@@ -1,0 +1,4 @@
+{
+  "key": "a5503b73a764933f9014907fd727b24e11ee1ebc2ab9a98641a98494387ddc67",
+  "text": "### Simultaneous Sharing Mode\nSome resources in the system **allow multiple processes to \"simultaneously\" access them within a time period**. However, the so-called \"simultaneous\" is often macroscopic, while microscopically, these processes may access the resource alternately (i.e., time-sharing)."
+}

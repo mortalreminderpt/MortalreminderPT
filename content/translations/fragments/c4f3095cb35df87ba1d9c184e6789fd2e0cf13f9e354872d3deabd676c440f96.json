@@ -1,0 +1,4 @@
+{
+  "key": "c4f3095cb35df87ba1d9c184e6789fd2e0cf13f9e354872d3deabd676c440f96",
+  "text": "⟦MC_d27d8f03aaf2d208_0⟧\nThe buffer size is 1, and at any moment at most one of the four synchronization semaphores has a value of 1, so **there is no need to set up a dedicated mutual exclusion semaphore**."
+}

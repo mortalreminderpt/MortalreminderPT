@@ -1,0 +1,4 @@
+{
+  "key": "8a6f1724a7be828fb7a41bc0b7363c426815b98cf93d817dad450eb70b9e1361",
+  "text": "The operating system needs to manage the various concurrently running processes, and **any information needed for management is placed in the PCB.**"
+}

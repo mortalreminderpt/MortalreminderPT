@@ -1,0 +1,4 @@
+{
+  "key": "aaed7ea489a6cbf8257e7ae27f9c392dae912bcd9ca3af701e754ef950e8dcd3",
+  "text": "Running certain processes concurrently on the same operating system may pose security risks; if they are run on different hardware, a large amount of hardware resources will be wasted."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "fb47fc69c271cd11354c1bf6a5baed17e104b6cf2cc4a0e9b3071e9355f0b114",
+  "text": "⟦MC_809c000a5793e6f4_0⟧\n- **Use functional updates**: When the new state needs to be computed based on the previous state, using a functional update ensures the correctness of the state update."
+}

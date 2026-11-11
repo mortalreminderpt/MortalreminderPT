@@ -1,0 +1,4 @@
+{
+  "key": "95cedd7f82cb5f7dbd5a8a9f912a1fbf6383c6f48be5d8851a605ec31ef4fd98",
+  "text": "#### 1. Recursive Query\n- The server obtains the mapping on behalf of the client, rather than returning a partial answer\n- DNS clients typically send recursive queries to the local name server\n- The local name server then issues a series of iterative queries to resolve the domain name"
+}

@@ -1,0 +1,4 @@
+{
+  "key": "c6af405e07fc1e717ce086b5c091d2cfb472bbf35b0817c049a98232e2947af5",
+  "text": "When the buffer capacity is 1, even if no dedicated mutex variable mutex is set, the phenomenon of multiple processes accessing the plate at the same time will not occur."
+}

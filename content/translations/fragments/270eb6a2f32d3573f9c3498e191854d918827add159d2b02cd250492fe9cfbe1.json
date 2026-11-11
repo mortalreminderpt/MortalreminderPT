@@ -1,0 +1,4 @@
+{
+  "key": "270eb6a2f32d3573f9c3498e191854d918827add159d2b02cd250492fe9cfbe1",
+  "text": "|Process|Maximum Demand (Max matrix)|Allocated (Allocation matrix)|Maximum Remaining Need (Need matrix)|\n|--|--|--|--|\n|P0|(7,5,3)|(0,1,0)|(7,4,3)|\n|P1|(3,2,2)|(2,0,0)|(1,2,2)|\n|P2|(9,0,2)|(3,0,2)|(6,0,0)|\n|P3|(2,2,2)|(2,1,1)|(0,1,1)|\n|P4|(4,3,3)|(0,0,2)|(4,3,1)|"
+}

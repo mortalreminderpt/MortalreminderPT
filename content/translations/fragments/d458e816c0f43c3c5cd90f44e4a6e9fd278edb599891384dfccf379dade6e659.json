@@ -1,0 +1,4 @@
+{
+  "key": "d458e816c0f43c3c5cd90f44e4a6e9fd278edb599891384dfccf379dade6e659",
+  "text": "The SJF algorithm selects the job with the shortest execution time to serve.\nHowever, it does not consider the waiting time of each job at all, which leads to the problem of being unfriendly to long jobs and may even cause starvation;"
+}

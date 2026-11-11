@@ -1,0 +1,4 @@
+{
+  "key": "6fb22806177df50f2c73cd138d2d8127fb652316a5544a30d72dcebc8cecca19",
+  "text": "⟦MC_cd49d074999f393a_0⟧\n**Peterson's algorithm** solves the process mutual exclusion problem using a software method, and **follows the three principles of idle let in, busy then wait, and bounded waiting**, but it still **does not follow the principle of yielding while waiting.**"
+}

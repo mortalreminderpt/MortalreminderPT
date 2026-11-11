@@ -1,0 +1,4 @@
+{
+  "key": "98cceb05a703d573ade16ade7cad6c34eb710ef9bc831a99a07917beefe5e0cb",
+  "text": "A **static allocation method** can be adopted, that is, a process **applies for all the resources it needs at once before running**, and **it is not allowed to start running until its resources are satisfied**.\nOnce it starts running, these resources remain owned by it, and the process will no longer request any other resources."
+}

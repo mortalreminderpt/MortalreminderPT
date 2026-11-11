@@ -1,0 +1,4 @@
+{
+  "key": "348478a343aca7e51829e75e662715bba068df7d6808133d9a51a181a0f17d9f",
+  "text": "Kernel mode → user mode: execute a **privileged instruction—modify the PSW** flag bit to \"user mode\". This action means that the operating system will voluntarily give up CPU usage."
+}

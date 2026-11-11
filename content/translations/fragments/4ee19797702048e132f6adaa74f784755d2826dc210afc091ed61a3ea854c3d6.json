@@ -1,0 +1,4 @@
+{
+  "key": "4ee19797702048e132f6adaa74f784755d2826dc210afc091ed61a3ea854c3d6",
+  "text": "React may batch multiple state updates to improve performance. This means that even if the state update function is called multiple times, React may only re-render once."
+}

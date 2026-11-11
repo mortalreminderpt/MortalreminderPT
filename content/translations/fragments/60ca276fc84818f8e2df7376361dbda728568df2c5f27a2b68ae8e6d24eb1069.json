@@ -1,0 +1,4 @@
+{
+  "key": "60ca276fc84818f8e2df7376361dbda728568df2c5f27a2b68ae8e6d24eb1069",
+  "text": "## Differences Between Overlay and Swapping\n- Overlay occurs within the same program or process;\n- Swapping occurs between different processes (or jobs)."
+}

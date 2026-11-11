@@ -1,0 +1,4 @@
+{
+  "key": "9fb3ea35642d55f6c5be6678f707f31328b53ac6d0ebe2a839f3f921abd15406",
+  "text": "#### Pure ALOHA\n- Users transmit at any time when they have data.\n- If a collision occurs, they retransmit after a random delay.\n- Simple and effective under low load, but inefficient under high traffic due to frequent collisions."
+}

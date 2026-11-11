@@ -1,0 +1,4 @@
+{
+  "key": "05adaaf0ad36d90a29cf4d69494b27b69d99aa0c9a4c154e25999f79547454fc",
+  "text": "Note: The processes in this example are all purely computational processes. After a process arrives, it is either waiting or running.\nIf a process also has I/O operations in addition to computation, its waiting time is turnaround time - running time - I/O operation time."
+}

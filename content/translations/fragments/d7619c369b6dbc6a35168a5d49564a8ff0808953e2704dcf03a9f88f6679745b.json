@@ -1,0 +1,4 @@
+{
+  "key": "d7619c369b6dbc6a35168a5d49564a8ff0808953e2704dcf03a9f88f6679745b",
+  "text": "Sometimes the consumer needs to wait for the producer to produce, and sometimes the producer needs to wait for the consumer to consume. These are two different \"one-before-the-other problems,\" so two synchronization semaphores also need to be set."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "866d6ca9eb9b8d371e716b7aac157b0b59a02bd3415d2c7816cdbb03e73f6b95",
+  "text": "- The number of check bits is related to the data bit length; at least ⟦MC_4ae6426f26b2ec4c_1⟧ check bits are required.  \n- Check bits are allocated according to specific rules, and only 1-bit errors can be corrected."
+}

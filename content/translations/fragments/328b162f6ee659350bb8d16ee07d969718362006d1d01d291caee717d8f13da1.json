@@ -1,0 +1,4 @@
+{
+  "key": "328b162f6ee659350bb8d16ee07d969718362006d1d01d291caee717d8f13da1",
+  "text": "It overcomes the disadvantage of the many-to-one model's low concurrency (one blocked means all blocked), and also overcomes the disadvantage of the one-to-one model in which one user process occupies too many kernel-level threads and the overhead is too large."
+}

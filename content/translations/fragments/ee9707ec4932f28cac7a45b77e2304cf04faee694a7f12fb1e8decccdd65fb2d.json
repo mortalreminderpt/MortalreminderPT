@@ -1,0 +1,4 @@
+{
+  "key": "ee9707ec4932f28cac7a45b77e2304cf04faee694a7f12fb1e8decccdd65fb2d",
+  "text": "Many-to-one model: Multiple user-level threads map to one kernel-level thread, and a process is allocated only one kernel-level thread.\n- Advantages: Switching of user-level threads can be completed in user space without switching to kernel mode, so the system overhead of thread management is small and efficiency is high\n- Disadvantages: When a user-level thread is blocked, the entire process will be blocked, and the degree of concurrency is not high. Multiple threads cannot run in parallel on a multi-core processor\n- Note: The operating system only \"sees\" kernel-level threads, so only **kernel-level threads are the unit of processor allocation**."
+}

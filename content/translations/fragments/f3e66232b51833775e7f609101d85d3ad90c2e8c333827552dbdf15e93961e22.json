@@ -1,0 +1,4 @@
+{
+  "key": "f3e66232b51833775e7f609101d85d3ad90c2e8c333827552dbdf15e93961e22",
+  "text": "⟦MC_c8d1a4bdbfe4fc0a_0⟧\nThe problem with this implementation is that if all 5 philosophers **concurrently pick up the chopstick on their left**, each philosopher waits in a loop for the person on their right to put down their chopstick (blocking), and **a \"deadlock\" occurs**."
+}

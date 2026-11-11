@@ -1,0 +1,4 @@
+{
+  "key": "fa6251569736cf81e99fa8b539a47579135ad0a59b108a809391ee3810546a56",
+  "text": "Turnaround time = Completion time - Arrival time\nWeighted turnaround time = Turnaround time / Running time\nWaiting time = Turnaround time - Running time"
+}

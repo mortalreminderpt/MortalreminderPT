@@ -1,0 +1,4 @@
+{
+  "key": "77f89ac531877fa3cbc3c2b4cfe5a21f0daa9118dee6b3dbf37a14e58c8bb0d3",
+  "text": "- **It is suitable for storing mutable values that need to persist between renders**, such as timer IDs, external library instances, and so on."
+}

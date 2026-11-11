@@ -1,0 +1,4 @@
+{
+  "key": "0c4fe4e1bc8bccc3d5a75f9e938483ad7320154b6ddde509c9b866685a574dbf",
+  "text": "- Usually, an instance of a ConcreteFactory is created at runtime, and this concrete factory creates product objects with specific implementations. To create different product objects, clients should use different concrete factories;\n- AbstractProduct defers the creation of product objects to its ConcreteFactory subclasses"
+}

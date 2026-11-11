@@ -1,0 +1,4 @@
+{
+  "key": "3be0f74db71a6db964adf554e18868045974bb142f7cf9830e8442fa6ebd3e7c",
+  "text": "> The only way to change state is to dispatch an action, and an action is a plain object used to describe an event that has occurred."
+}

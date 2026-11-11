@@ -1,0 +1,4 @@
+{
+  "key": "e9e5c6d8c4983d030b300d9de97645100226f72e6282172e06140311f7a70880",
+  "text": "Mutual exclusion relationship:\n- The table can be abstracted as a buffer of capacity 1, which must be accessed mutually exclusively."
+}

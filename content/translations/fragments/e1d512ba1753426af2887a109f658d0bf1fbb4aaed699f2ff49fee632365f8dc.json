@@ -1,0 +1,4 @@
+{
+  "key": "e1d512ba1753426af2887a109f658d0bf1fbb4aaed699f2ff49fee632365f8dc",
+  "text": "Relationship analysis: There are 5 philosopher processes in the system, and the access of the 5 philosophers and their left and right neighbors to the chopsticks between them is a mutual exclusion relationship."
+}

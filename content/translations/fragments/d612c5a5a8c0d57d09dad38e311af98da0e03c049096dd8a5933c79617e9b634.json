@@ -1,0 +1,4 @@
+{
+  "key": "d612c5a5a8c0d57d09dad38e311af98da0e03c049096dd8a5933c79617e9b634",
+  "text": "#### **Connection-Oriented (Virtual-Circuit)**  \n- Similar to making a phone call; a stable path is established before communication begins.  \n- All packets follow the same path, guaranteeing in-order arrival.  \n- Example: Video conferencing or VoIP calls."
+}

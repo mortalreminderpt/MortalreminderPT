@@ -1,0 +1,4 @@
+{
+  "key": "8d7c00a38466d935b1623798d0560d024e2eba3d85229c3aa336bf95007bce42",
+  "text": "**Explanation:**\nAction is a plain object that describes \"what happened\" and must contain a ⟦MC_800fc75ca46860ae_0⟧ field to identify the specific operation type. Action is the only way to change State; it is sent to the store via ⟦MC_1685976f9fe74590_0⟧."
+}

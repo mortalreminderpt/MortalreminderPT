@@ -1,0 +1,4 @@
+{
+  "key": "1ee03fe8ffb86df2779e7b6d073707396a9dc2e383c615bc05a36d7c85890010",
+  "text": "⟦MC_441142c51381d613_1⟧ should be used only for performance optimization. If ⟦MC_441142c51381d613_2⟧ is not used, the code should still work correctly. Do not rely on ⟦MC_441142c51381d613_3⟧ to ensure the correctness of a component."
+}

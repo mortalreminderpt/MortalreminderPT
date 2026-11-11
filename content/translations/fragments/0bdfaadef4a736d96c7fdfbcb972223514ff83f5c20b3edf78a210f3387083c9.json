@@ -1,0 +1,4 @@
+{
+  "key": "0bdfaadef4a736d96c7fdfbcb972223514ff83f5c20b3edf78a210f3387083c9",
+  "text": "- **What you can do**: local mutation, use ⟦MC_01a812598bf19cab_3⟧ to perform side effects, perform operations in event handlers, use lazy initialization and ⟦MC_d5607f8c3c3d434c_3⟧.\n- **What you must not do**: perform side effects during rendering, directly modify ⟦MC_f34e540923455820_5⟧ or ⟦MC_7727f8cb300c38ed_5⟧, modify non-local variables, use non-idempotent functions, and modify values after JSX has been created."
+}

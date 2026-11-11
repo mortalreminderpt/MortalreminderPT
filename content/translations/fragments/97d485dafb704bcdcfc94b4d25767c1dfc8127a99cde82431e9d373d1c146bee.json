@@ -1,0 +1,4 @@
+{
+  "key": "97d485dafb704bcdcfc94b4d25767c1dfc8127a99cde82431e9d373d1c146bee",
+  "text": "When a process **Pi** requests resources from the system, a one-dimensional array **Request_i** of length m can be used to represent **the amount of each type of resource requested this time**."
+}

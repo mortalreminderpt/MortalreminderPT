@@ -1,0 +1,4 @@
+{
+  "key": "5f4184dd28d04739629cfee107a596ed43e1e0cb81c5cacb014135a77c22b5e3",
+  "text": "While a process is running, it may request to **wait for the occurrence of some event (such as waiting for the allocation of some system resource, or waiting for a response from another process)**."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "f571b0f2139c4a1294b4cbff3e1b686a6dd15fd16c337eb5a8f9da3943fefb33",
+  "text": "1. Deadlock prevention. Break one or several of the four necessary conditions for deadlock;\n2. Deadlock avoidance. Use some method to prevent the system from entering an unsafe state, thereby avoiding deadlock (Banker's Algorithm);\n3. Deadlock detection and recovery. Allow deadlocks to occur, but the operating system is responsible for detecting the occurrence of deadlock and then taking some measure to recover from it."
+}

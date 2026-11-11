@@ -1,0 +1,4 @@
+{
+  "key": "908e0435698c32f01a35d83a7e6ca109a52102f13e4c7cbb9f88643512150de4",
+  "text": "1. The logic between modules is clear and easy to maintain; once the interfaces between modules are determined, multiple modules can be developed simultaneously;\n2. Supports dynamically loading new kernel modules (e.g., installing device drivers, installing new file system modules into the kernel), enhancing OS adaptability;\n3. Any module can directly call other modules without the need for message passing for communication, resulting in high efficiency."
+}

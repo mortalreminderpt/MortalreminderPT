@@ -1,0 +1,4 @@
+{
+  "key": "a9ae534c37d65fb294eb3a1238dbe907e8934b0fc0fc8eff5e63da526c0ec28c",
+  "text": "**A process whose processor is preempted** is placed back at **the tail of its original queue**."
+}

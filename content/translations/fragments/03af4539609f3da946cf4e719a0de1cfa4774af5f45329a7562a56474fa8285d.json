@@ -1,0 +1,4 @@
+{
+  "key": "03af4539609f3da946cf4e719a0de1cfa4774af5f45329a7562a56474fa8285d",
+  "text": "The kernel is responsible for functions such as process scheduling and inter-process communication, while the exokernel is responsible for allocating unabstracted hardware resources to user processes, and the exokernel is responsible for ensuring the safety of resource usage."
+}

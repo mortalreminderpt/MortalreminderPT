@@ -1,0 +1,4 @@
+{
+  "key": "500bffec095dea0f714f2c9c721ecaff50ebd17894d1274ab661090c7f719124",
+  "text": "Two types of edges:\n- Process node -> Resource node: indicates that the process wants to request several resources (each edge represents one);\n- Resource node -> Process node: indicates that several resources have already been allocated to the process (each edge represents one)."
+}

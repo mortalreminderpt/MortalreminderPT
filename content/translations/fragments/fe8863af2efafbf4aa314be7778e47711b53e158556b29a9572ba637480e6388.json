@@ -1,0 +1,4 @@
+{
+  "key": "fe8863af2efafbf4aa314be7778e47711b53e158556b29a9572ba637480e6388",
+  "text": "- Advantages: simple to implement, no need to strictly check for logical loopholes as with software implementation methods; **applicable to multiprocessor** environments;\n- Disadvantages: **does not satisfy the \"wait by yielding the right\" principle**; a process temporarily unable to enter the critical section will occupy the CPU and repeatedly execute the Swap instruction, resulting in \"busy waiting\"."
+}

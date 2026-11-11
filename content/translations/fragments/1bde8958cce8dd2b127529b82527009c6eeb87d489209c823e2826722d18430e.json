@@ -1,0 +1,4 @@
+{
+  "key": "1bde8958cce8dd2b127529b82527009c6eeb87d489209c823e2826722d18430e",
+  "text": "### Example\nThe arrival times of each process at the ready queue and the required running times are shown in the following table. Using the non-preemptive Shortest Job First scheduling algorithm, calculate the waiting time, average waiting time, turnaround time, average turnaround time, weighted turnaround time, and average weighted turnaround time of each process."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "ce3e55488fc023449ae67ab3a6ba33139dfe1a4276709a4daeb695d62769b319",
+  "text": "After instruction 3 is executed, another process starts running on the CPU. Since the other process will also use various registers during its execution, the CPU register data will be overwritten."
+}

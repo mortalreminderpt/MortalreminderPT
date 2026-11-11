@@ -1,0 +1,4 @@
+{
+  "key": "944a6e449b2df59338cef09f44f3cd2dc7abc21444349a70e9c3be5c775282ef",
+  "text": "**Core idea**: When a process requests resources, first predict whether this allocation will cause the system to enter an unsafe state.\nIf it will enter an unsafe state, temporarily do not grant this request and let the process block and wait first."
+}

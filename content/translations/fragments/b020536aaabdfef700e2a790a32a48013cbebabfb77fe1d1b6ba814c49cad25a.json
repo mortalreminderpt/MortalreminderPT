@@ -1,0 +1,4 @@
+{
+  "key": "b020536aaabdfef700e2a790a32a48013cbebabfb77fe1d1b6ba814c49cad25a",
+  "text": "1. Analyze the critical activities of concurrent processes and define the critical section (e.g., access to the critical resource printer should be placed in the critical section);\n2. Set a **mutex semaphore** mutex, which represents **the number of slots for entering the critical section**. Its initial value is 1;\n3. In the entry section, ⟦MC_c080a9d828301512_0⟧ — request the resource;\n4. In the exit section, ⟦MC_e9b079a57ebdea94_0⟧ — release the resource."
+}

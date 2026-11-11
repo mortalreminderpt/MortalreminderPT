@@ -1,0 +1,4 @@
+{
+  "key": "0dc5c1c4f7cb71220057710d9728f21ab61c129cc6439fe8900a9e91e4b22548",
+  "text": "When a process is created, the operating system assigns it a **unique, non-repeating** \"ID number\" — the Process ID (**PID**)."
+}

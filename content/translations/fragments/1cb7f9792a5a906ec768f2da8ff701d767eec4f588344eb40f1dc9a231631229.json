@@ -1,0 +1,4 @@
+{
+  "key": "1cb7f9792a5a906ec768f2da8ff701d767eec4f588344eb40f1dc9a231631229",
+  "text": "⟦MC_0beac3651d047248_0⟧\nIf lock is initially false, the old value returned by TS is false, the while loop condition is not satisfied, the loop is skipped directly, and the process enters the critical section;\nIf lock is initially true, then after executing TS the returned old value is true, the while loop condition is satisfied, and it will keep looping until the process currently accessing the critical section performs \"unlock\" in the exit section.\nCompared with software implementation methods, the TS instruction turns the **\"locking\" and \"checking\"** operations **into an atomic operation completed in one go by hardware means**."
+}

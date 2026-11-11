@@ -1,0 +1,4 @@
+{
+  "key": "5f32d150908b42aff7d3de38dba08be07f317b1ef1a49be920989e5fd275d44c",
+  "text": "### **Remote Procedure Call (RPC)**\n1. **RPC** is an application of **UDP** (there is also RPC based on TCP).\n2. Core idea: Make remote calls look like local calls.\n3. By binding **Stubs** on the client and server sides, the effect of a \"connection\" is achieved."
+}

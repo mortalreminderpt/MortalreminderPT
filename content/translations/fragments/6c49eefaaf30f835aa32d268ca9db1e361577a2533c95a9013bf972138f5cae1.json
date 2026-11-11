@@ -1,0 +1,4 @@
+{
+  "key": "6c49eefaaf30f835aa32d268ca9db1e361577a2533c95a9013bf972138f5cae1",
+  "text": "Dynamic priority adjustment can be considered from the perspectives of pursuing fairness and improving resource utilization:\n- If a process has waited in the ready queue for a long time, its priority can be appropriately raised;\n- If a process has occupied the processor and run for a long time, its priority can be appropriately lowered; \n- If a process is found to perform I/O operations frequently, its priority can be appropriately raised."
+}

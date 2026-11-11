@@ -1,0 +1,4 @@
+{
+  "key": "4c2b0c7dab9a717de53c28e1fbdf46d5b0d1d3371e57ca3e26cefc1045484f62",
+  "text": "2. **Rate-based Flow Control**  \n   - The sender transmits data at a preset rate without requiring feedback from the receiver."
+}

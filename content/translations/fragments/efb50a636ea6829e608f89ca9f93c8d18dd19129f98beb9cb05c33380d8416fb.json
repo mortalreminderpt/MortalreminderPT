@@ -1,0 +1,4 @@
+{
+  "key": "efb50a636ea6829e608f89ca9f93c8d18dd19129f98beb9cb05c33380d8416fb",
+  "text": "1. The exokernel can directly allocate \"non-virtualized, non-abstracted\" hardware resources to user processes, allowing user processes to use hardware resources more flexibly;\n2. It reduces the \"mapping layer\" of virtual hardware resources, improving efficiency."
+}

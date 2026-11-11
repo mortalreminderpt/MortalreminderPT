@@ -1,0 +1,4 @@
+{
+  "key": "df72fdb615a406c11cd2628d607d22c274ff4206be713e799c530a68b33ec4af",
+  "text": "After the job is loaded into memory, **the corresponding process is created**. This process will be served by the CPU and by I/O devices, and of course there will also be times when it is **waiting to be served**."
+}

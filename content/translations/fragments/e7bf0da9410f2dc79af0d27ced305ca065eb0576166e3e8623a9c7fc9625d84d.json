@@ -1,0 +1,4 @@
+{
+  "key": "e7bf0da9410f2dc79af0d27ced305ca065eb0576166e3e8623a9c7fc9625d84d",
+  "text": "Subclasses of TextConverter handle different conversions and different formats specially.\nEach converter class hides the mechanism for creating and assembling a complex object behind an abstract interface.\nThe converter is independent of the reader, and the reader is responsible for parsing an RTF document."
+}

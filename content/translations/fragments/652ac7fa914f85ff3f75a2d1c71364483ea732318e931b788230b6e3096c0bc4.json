@@ -1,0 +1,4 @@
+{
+  "key": "652ac7fa914f85ff3f75a2d1c71364483ea732318e931b788230b6e3096c0bc4",
+  "text": "Suppose there are two processes, P and Q. While process P is running, process P's address space holds a message ⟦MC_278b3153e7247950_0⟧ that needs to be sent to process Q. We demonstrate the process of direct communication by describing the direct communication between the two processes."
+}

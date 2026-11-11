@@ -1,0 +1,4 @@
+{
+  "key": "4f61126c783f3c819a5b9ea9247d4f173bb268ba23552f8d891ceb3d3c3bcc72",
+  "text": "- **Do not directly mutate state variables (especially objects or arrays)**: Directly mutating state leads to unpredictable behavior; you should always return a new state object or array."
+}

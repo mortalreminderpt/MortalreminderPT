@@ -1,0 +1,4 @@
+{
+  "key": "2ed5673b9ca4f6cbea1c6a84e17b88fd6d8f1a308732a1ad312ea2720e98ba11",
+  "text": "The father ⟦MC_1802c2c41c2df43e_2⟧, and can access the plate ->\nthe mother ⟦MC_1802c2c41c2df43e_3⟧, and can access the plate ->\nthe father is putting an apple into the plate, and at the same time the mother can also put an orange into the plate.\nThus the situation arises where two processes access the buffer at the same time, which may cause the data written to the buffer by the two processes to overwrite each other.\nTherefore, if the buffer size is greater than 1, a dedicated mutex semaphore mutex must be set to ensure mutually exclusive access to the buffer."
+}

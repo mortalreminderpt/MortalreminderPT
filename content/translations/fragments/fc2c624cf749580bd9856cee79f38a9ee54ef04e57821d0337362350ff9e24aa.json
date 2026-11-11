@@ -1,0 +1,4 @@
+{
+  "key": "fc2c624cf749580bd9856cee79f38a9ee54ef04e57821d0337362350ff9e24aa",
+  "text": "- Advantages: simple to implement, no need to strictly check for logical loopholes as with software implementation methods; **applicable to multiprocessor** environments;\n- Disadvantages: **does not satisfy the \"wait by yielding the right\" principle**; a process temporarily unable to enter the critical section will occupy the CPU and repeatedly execute the TSL instruction, resulting in \"busy waiting\"."
+}

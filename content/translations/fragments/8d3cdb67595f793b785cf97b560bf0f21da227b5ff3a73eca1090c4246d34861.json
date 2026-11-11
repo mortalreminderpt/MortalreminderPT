@@ -1,0 +1,4 @@
+{
+  "key": "8d3cdb67595f793b785cf97b560bf0f21da227b5ff3a73eca1090c4246d34861",
+  "text": "2. **Internet Checksum**  \n   - A checksum based on 16-bit words.  \n   - The Hamming distance is 2, suitable for detecting 1-bit errors."
+}

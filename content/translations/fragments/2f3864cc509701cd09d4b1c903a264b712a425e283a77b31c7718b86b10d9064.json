@@ -1,0 +1,4 @@
+{
+  "key": "2f3864cc509701cd09d4b1c903a264b712a425e283a77b31c7718b86b10d9064",
+  "text": "⟦MC_139cdeacd6808ded_0⟧\n  $('.top').click(function () {\n    $('html, body').stop().animate({ scrollTop: 0 }, 'slow', 'swing');\n  });\n  $(window).scroll(function () {\n    if (⟦MC_7ef820d706afbd78_0⟧(window).height()) {\n      $('.top').addClass(\"top-active\");\n    } else {\n      $('.top').removeClass(\"top-active\");\n    };\n  });\n⟦MC_62f7c1555dc1a683_4⟧"
+}

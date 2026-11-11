@@ -1,0 +1,4 @@
+{
+  "key": "e0c3ba229b850633588c02403a3731eadab6536d4a17211cee093a6bd7c419b3",
+  "text": "6. **Avoid modifying values after they are used in JSX**: Once a value used in a JSX expression has been passed, React may have already rendered that part of the UI in advance, so do not modify these values after the JSX has been created."
+}

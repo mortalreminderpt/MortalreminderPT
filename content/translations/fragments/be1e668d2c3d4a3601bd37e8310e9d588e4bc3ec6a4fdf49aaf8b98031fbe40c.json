@@ -1,0 +1,4 @@
+{
+  "key": "be1e668d2c3d4a3601bd37e8310e9d588e4bc3ec6a4fdf49aaf8b98031fbe40c",
+  "text": "In systems that support kernel-level threads, several multithreading models can be classified according to the mapping relationship between user-level threads and kernel-level threads."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "9274d1ca0f10da0661edfc14e9a32579eef045893139b360086e5c9d7626aaa1",
+  "text": "When you call ⟦MC_ece0da93fe9e23ff_4⟧, it returns an object containing a ⟦MC_e6263ad29f50b253_0⟧ property. This object remains unchanged throughout the component's entire lifecycle. This means that on every render, the referenced object is the same one."
+}

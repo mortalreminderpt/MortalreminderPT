@@ -1,0 +1,4 @@
+{
+  "key": "dc44c1195b3450c66b8565c7e3327afcf0a13b03f197856dbd6ad928f92359e0",
+  "text": "What events trigger the **scheduler** (process scheduling timing):\n- **Creating a new process**;\n- **Process exit**;\n- Running **process blocks**;\n- **I/O interrupt** occurs (may wake up some blocked processes)."
+}

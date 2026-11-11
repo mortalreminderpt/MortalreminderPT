@@ -1,0 +1,4 @@
+{
+  "key": "a256bf22c6776fa229652bd12d36fe3e547b4aba060b0190e56e83b3e36b1f1f",
+  "text": "- **Do not expect the variable to update immediately after a state update**: State updates are asynchronous, and the updated state is only available on the next render."
+}

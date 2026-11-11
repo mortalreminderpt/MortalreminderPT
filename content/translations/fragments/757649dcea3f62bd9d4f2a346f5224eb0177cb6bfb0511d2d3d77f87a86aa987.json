@@ -1,0 +1,4 @@
+{
+  "key": "757649dcea3f62bd9d4f2a346f5224eb0177cb6bfb0511d2d3d77f87a86aa987",
+  "text": "To prevent the semaphore rw from blocking multiple reader processes during the file reading process, the following code can make the locking process the responsibility of **only the first reader process**.\nSubsequent reader processes no longer need to acquire the lock to read the file contents.\nAnd **the last reader process is responsible for the unlocking process**."
+}

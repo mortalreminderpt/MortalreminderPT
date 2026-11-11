@@ -1,0 +1,4 @@
+{
+  "key": "724907836d95b46cdbffb6568e27eab372adba2a1a31552e1f1b29b02b24fc2b",
+  "text": "Principle analysis: A process is **eligible to apply for resources with larger numbers only when it already holds resources with smaller numbers**.\nAccording to this rule, **a process that already holds resources with large numbers cannot go back in reverse to apply for resources with small numbers**, so the phenomenon of circular wait will not occur."
+}

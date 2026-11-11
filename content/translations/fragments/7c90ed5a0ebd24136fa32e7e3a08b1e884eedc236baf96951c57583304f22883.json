@@ -1,0 +1,4 @@
+{
+  "key": "7c90ed5a0ebd24136fa32e7e3a08b1e884eedc236baf96951c57583304f22883",
+  "text": "**Explanation:**\nAn asynchronous Action is an Action that needs to be processed by Middleware, and is usually used to handle asynchronous operations such as API requests. Middleware converts an asynchronous Action into one or more plain Actions so that the Reducer can process them."
+}

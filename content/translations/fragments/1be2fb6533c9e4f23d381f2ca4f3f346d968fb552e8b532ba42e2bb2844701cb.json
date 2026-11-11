@@ -1,0 +1,4 @@
+{
+  "key": "1be2fb6533c9e4f23d381f2ca4f3f346d968fb552e8b532ba42e2bb2844701cb",
+  "text": "**Medium-level scheduling (memory scheduling)**: According to a certain strategy, decide which process in the suspended state should be loaded back into memory. A process may be swapped out of and into memory multiple times, so **the frequency of medium-level scheduling is higher than that of high-level scheduling**."
+}

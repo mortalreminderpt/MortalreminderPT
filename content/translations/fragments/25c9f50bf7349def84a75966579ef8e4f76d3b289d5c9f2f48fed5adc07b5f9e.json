@@ -1,0 +1,4 @@
+{
+  "key": "25c9f50bf7349def84a75966579ef8e4f76d3b289d5c9f2f48fed5adc07b5f9e",
+  "text": "Mutual exclusion relationships:\n- There is a mutual exclusion relationship between writer process and writer process, and between writer process and reader process.\n- There is no mutual exclusion problem between reader process and reader process."
+}

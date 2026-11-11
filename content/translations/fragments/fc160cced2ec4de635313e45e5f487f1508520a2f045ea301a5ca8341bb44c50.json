@@ -1,0 +1,4 @@
+{
+  "key": "fc160cced2ec4de635313e45e5f487f1508520a2f045ea301a5ca8341bb44c50",
+  "text": "Because concurrently running programs compete to use system resources, and the resources in the system are limited, the execution of a process is not carried through to the end, but rather stops and starts, advancing at an unpredictable speed."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "88a93b47ad7d048b7b4ce32f470ebec353c74824ded0abed52951a72d805b69a",
+  "text": "If the total amount of free space in memory could originally satisfy the requirements of a process, but because the process needs a whole contiguous block of memory space, these \"fragments\" cannot satisfy the process's requirements."
+}

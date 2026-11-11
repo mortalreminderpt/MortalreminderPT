@@ -1,0 +1,4 @@
+{
+  "key": "6462701e775d4b260cdadd33959248086efe8cc915122d409226e683e7685a27",
+  "text": "⟦MC_f151c88b728b9dd0_0⟧\n- **Do not produce side effects in the computation function**: The computation function should be a pure function and should not modify the component's state or cause side effects."
+}

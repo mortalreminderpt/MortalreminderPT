@@ -1,0 +1,4 @@
+{
+  "key": "c7de9bea7f229dc0920093f28694f708a7e86a7107d90173c17abb528c841a0d",
+  "text": "The currently running process **involuntarily relinquishes** the processor:\n- The time slice allocated to the process is used up;\n- A more urgent matter needs to be handled (e.g., an I/O interrupt);\n- A process with higher priority enters the ready queue."
+}

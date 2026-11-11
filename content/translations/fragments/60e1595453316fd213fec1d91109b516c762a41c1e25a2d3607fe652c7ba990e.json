@@ -1,0 +1,4 @@
+{
+  "key": "60e1595453316fd213fec1d91109b516c762a41c1e25a2d3607fe652c7ba990e",
+  "text": "## The Concept of Mutex Locks\nThe simplest tool for solving the critical section problem is the mutex lock.\nA process should acquire the lock when entering the critical section and release the lock when exiting the critical section.\nThe function ⟦MC_ae22a4ea5acb3f84_0⟧ acquires the lock, while the function ⟦MC_3029ca74a14f0801_0⟧ releases the lock."
+}

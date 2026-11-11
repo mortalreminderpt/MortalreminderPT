@@ -1,0 +1,4 @@
+{
+  "key": "657d9e39c340d63eaa4f3db972c720bf5b1b744906289653c41364bbf2474584",
+  "text": "**An interrupt handler is definitely a kernel program**, so it needs to run in \"kernel mode\"."
+}

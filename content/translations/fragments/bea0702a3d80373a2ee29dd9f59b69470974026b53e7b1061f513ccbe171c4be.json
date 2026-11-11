@@ -1,0 +1,4 @@
+{
+  "key": "bea0702a3d80373a2ee29dd9f59b69470974026b53e7b1061f513ccbe171c4be",
+  "text": "During the execution of a program, it may need to simultaneously perform multiple functions such as video chatting and file transfer, but a process is a single execution of a program, and these functions obviously cannot be realized through sequential processing by a single program."
+}

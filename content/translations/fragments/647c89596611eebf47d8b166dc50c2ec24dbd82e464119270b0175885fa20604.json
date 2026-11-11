@@ -1,0 +1,4 @@
+{
+  "key": "647c89596611eebf47d8b166dc50c2ec24dbd82e464119270b0175885fa20604",
+  "text": "**Non-preemptive priority scheduling algorithm**: each time scheduling occurs, select the process that has **currently arrived and has the highest priority**. Scheduling occurs when the current process **voluntarily gives up the processor**."
+}

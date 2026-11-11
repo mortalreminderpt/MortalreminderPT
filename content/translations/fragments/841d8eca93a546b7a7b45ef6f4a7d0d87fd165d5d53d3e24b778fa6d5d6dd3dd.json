@@ -1,0 +1,4 @@
+{
+  "key": "841d8eca93a546b7a7b45ef6f4a7d0d87fd165d5d53d3e24b778fa6d5d6dd3dd",
+  "text": "#### Example\nIf the initial DR and all subsequent retransmissions are lost, Host 1 will time out and release the connection, while Host 2 may remain in the connected state, resulting in data loss and wasted resources."
+}

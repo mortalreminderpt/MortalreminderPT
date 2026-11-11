@@ -1,0 +1,4 @@
+{
+  "key": "107a0b69617696012c83f2266f030b819a2ba84410d8b2a61783d09c11584ba2",
+  "text": "1. The CPU starts fetching instructions from a specific main memory address and executes the **boot program in ROM (BIOS)** (first performing a hardware self-test, then powering on);\n2. The first block of the disk—the **Master Boot Record (MBR)**—is read into memory, the disk boot program is executed, and the partition table is scanned;\n3. The **Partition Boot Record (PBR)** is read from the active partition (also called the primary partition, i.e., the partition where the operating system is installed), and the program within it is executed;\n4. The complete **operating system initialization program (i.e., the boot manager)** is found under the root directory and executed, completing the series of actions involved in \"booting\"."
+}

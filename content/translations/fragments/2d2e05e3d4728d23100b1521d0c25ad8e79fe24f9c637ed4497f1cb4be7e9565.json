@@ -1,0 +1,4 @@
+{
+  "key": "2d2e05e3d4728d23100b1521d0c25ad8e79fe24f9c637ed4497f1cb4be7e9565",
+  "text": "2. **Flooding**\n   - Whenever a node receives a data packet, it sends that packet to all neighboring nodes except the sender.\n   - Characteristics:\n     - Simple and direct, requiring no complex routing table.\n     - Drawback: generates a large number of duplicate packets, wasting bandwidth resources."
+}

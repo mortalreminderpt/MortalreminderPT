@@ -1,0 +1,4 @@
+{
+  "key": "6da6bd52864347baead97cd740fd2025de0d1f678842fbb390ab1fdc3f7d9ccd",
+  "text": "**High-level scheduling (job scheduling)**: According to certain principles, select a job from the job backup queue in external storage and load it into memory, and create a process for it. **Each job is only loaded in once and loaded out once**. When a job is loaded in, a PCB is established, and the PCB is only revoked when the job is loaded out."
+}

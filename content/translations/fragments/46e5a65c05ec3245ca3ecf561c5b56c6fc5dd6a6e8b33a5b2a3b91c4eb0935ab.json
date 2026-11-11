@@ -1,0 +1,4 @@
+{
+  "key": "46e5a65c05ec3245ca3ecf561c5b56c6fc5dd6a6e8b33a5b2a3b91c4eb0935ab",
+  "text": "Thread table:\nA thread table can be set up in each process of the operating system, or a single thread table can be formed from all current threads in the system, organizing the various TCBs and managing them by category; this is called **thread organization**."
+}

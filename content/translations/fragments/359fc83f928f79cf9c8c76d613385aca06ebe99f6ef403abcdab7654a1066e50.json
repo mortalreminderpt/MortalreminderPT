@@ -1,0 +1,4 @@
+{
+  "key": "359fc83f928f79cf9c8c76d613385aca06ebe99f6ef403abcdab7654a1066e50",
+  "text": "- Deadlock: A phenomenon in which processes wait for the resources held by each other, causing all processes to block and none to be able to move forward.\n- Starvation: A phenomenon in which a process cannot move forward because it has long been unable to obtain the resources it wants. For example, in the Shortest Process First (SPF) algorithm, if short processes keep arriving continuously, long processes will never get the processor, resulting in \"starvation\" of long processes.\n- Infinite loop: A phenomenon in which a process cannot escape a certain loop during execution. Sometimes this is caused by a program logic bug, and sometimes it is intentionally designed by the programmer."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "c2c24649330590ccf4b6b968869473a752fc4f398df6de804ab26262262c9747",
+  "text": "Many-to-many model: **n user-level threads map to m kernel-level threads (n>=m)**. Each user process corresponds to m kernel-level threads."
+}

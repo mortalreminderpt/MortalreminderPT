@@ -1,0 +1,4 @@
+{
+  "key": "06d4a925a64ab5587795ed64d28d93f18ddc4d9da187ab06878570a8d214f5e9",
+  "text": "The Intel 8th generation i3 processor is a 4-core CPU, meaning it can execute 4 programs in parallel. But even for a 4-core CPU, as long as more than 4 programs need to run \"simultaneously\", concurrency is still indispensable. Therefore, concurrency is a most fundamental characteristic of an operating system."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "43fe3dc075a1139d1662fceb0d786eddbdaf9f8097cdf3a56acd05965fe95200",
+  "text": "⟦MC_184afd67ed358dc3_0⟧\n**Analysis: semaphore S represents \"some kind of resource\", and initially this resource does not exist. P2 needs to use this resource, but this resource can only be produced by P1.**"
+}

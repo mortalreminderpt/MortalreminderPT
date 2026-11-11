@@ -1,0 +1,4 @@
+{
+  "key": "dd42b8b1e168a39f455524ad25672acd8f9c98aedada8eeaa475bcc745d6eca2",
+  "text": "In this case, using a monolithic kernel structure requires two mode switches, while using a microkernel structure requires six mode switches."
+}

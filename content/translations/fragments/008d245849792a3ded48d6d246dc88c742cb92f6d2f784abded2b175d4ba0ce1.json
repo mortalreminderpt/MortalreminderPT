@@ -1,0 +1,4 @@
+{
+  "key": "008d245849792a3ded48d6d246dc88c742cb92f6d2f784abded2b175d4ba0ce1",
+  "text": "Complexity is hard to reduce because we always conflate two concepts that are difficult for us to understand: Mutation and asynchrony. I compare them to Mentos and cola. Separately, both are excellent, but mixed together they are a mess. Some libraries, such as React, try to solve this problem at the view level by prohibiting asynchronous operations and direct DOM manipulation. But the fly in the ointment is that React leaves state management to the developers themselves, and this is where Redux comes in."
+}

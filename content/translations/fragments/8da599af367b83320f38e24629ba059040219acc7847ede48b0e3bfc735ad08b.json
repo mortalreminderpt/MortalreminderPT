@@ -1,0 +1,4 @@
+{
+  "key": "8da599af367b83320f38e24629ba059040219acc7847ede48b0e3bfc735ad08b",
+  "text": "The **round-robin scheduling** algorithm lets the processes in the ready queue execute one time slice in turn (each time, the process at the head of the ready queue is selected)"
+}

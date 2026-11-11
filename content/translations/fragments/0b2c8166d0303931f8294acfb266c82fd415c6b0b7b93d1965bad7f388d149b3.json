@@ -1,0 +1,4 @@
+{
+  "key": "0b2c8166d0303931f8294acfb266c82fd415c6b0b7b93d1965bad7f388d149b3",
+  "text": "If **one producer must produce multiple products** (or, in other words, will **trigger multiple predecessor events**), then **each V operation** should be placed **after the occurrence of its corresponding \"event\"**."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "32f99c1a53ae7f670a38f76677630954ea3804d7e2716b2f54e59a8881165cfa",
+  "text": "#### **Delay**\n- Delay refers to the time required for data to travel from the sender to the receiver.\n- **Delay formula**:\n  $\n  \\text{Latency} = T\\text{-delay} + P\\text{-delay}\n  $\n  - **Transmission delay (T-delay)**: message length (bits) / transmission rate (bits/sec)\n  - **Propagation delay (P-delay)**: channel length (meters) / signal speed (meters/sec)"
+}

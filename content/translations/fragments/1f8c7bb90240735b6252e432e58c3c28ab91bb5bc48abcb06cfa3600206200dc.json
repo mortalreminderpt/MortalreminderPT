@@ -1,0 +1,4 @@
+{
+  "key": "1f8c7bb90240735b6252e432e58c3c28ab91bb5bc48abcb06cfa3600206200dc",
+  "text": "This principle ensures that neither view behavior nor network request callbacks can directly modify state; instead, they can only express the intent to modify state. Because all modifications are centralized and executed strictly one after another in order, there is no need to worry about race conditions. Actions are just plain objects, so they can be logged, serialized, stored, and replayed later during debugging or testing."
+}

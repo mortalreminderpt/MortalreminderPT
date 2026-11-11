@@ -1,0 +1,4 @@
+{
+  "key": "3caa81fd48232abe4cb4971aa8927035553bbf65eee1a20c30259424914a02ef",
+  "text": "#### Non-persistent CSMA\n- Periodically checks the channel; if the channel is busy, waits a random time and then retries.\n- Reduces collisions, but may increase channel idle time."
+}

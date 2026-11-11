@@ -1,0 +1,4 @@
+{
+  "key": "997a2fa052d5a5de85f34c24a2d15e90ef395de4593b5fbb96ee15bd4d9da732",
+  "text": "**A pair of primitives**: the ⟦MC_15fb340ac8daf4b4_0⟧ primitive and the ⟦MC_ff1e4f0ea496955d_0⟧ primitive. The primitives can be understood as functions we write ourselves, with function names ⟦MC_ec482aacfeeae0bb_0⟧ and ⟦MC_15f28d38c791a58a_0⟧ respectively; the semaphore S in the parentheses is actually a parameter passed in when the function is called."
+}

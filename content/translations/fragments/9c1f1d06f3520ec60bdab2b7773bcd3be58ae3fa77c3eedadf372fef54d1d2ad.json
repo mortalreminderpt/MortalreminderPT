@@ -1,0 +1,4 @@
+{
+  "key": "9c1f1d06f3520ec60bdab2b7773bcd3be58ae3fa77c3eedadf372fef54d1d2ad",
+  "text": "If concurrency is lost, that is, the system can only run each program serially, then the execution of each program will be carried through to the end. **Only when the system has concurrency is it possible to cause asynchrony**."
+}

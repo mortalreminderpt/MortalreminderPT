@@ -1,0 +1,4 @@
+{
+  "key": "dbb7f59e38bd523f1795ee433623691e348c70dad986f16248657b5173b8e774",
+  "text": "In a noisy channel, the maximum data rate is:\n$\n\\text{Max Data Rate} = B \\cdot \\log_2(1 + \\frac{S}{N})\n$\n- ⟦MC_d44418854bd1f34c_0⟧: signal-to-noise ratio."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "10bb67463636cd2785f7fcea52694be9f47c17a2d9df24833a971c5741c7c633",
+  "text": "A single-core CPU can only execute one program at the same moment, so each program can only be executed concurrently; a multi-core CPU can execute multiple programs simultaneously at the same moment, so multiple programs can be executed in parallel."
+}

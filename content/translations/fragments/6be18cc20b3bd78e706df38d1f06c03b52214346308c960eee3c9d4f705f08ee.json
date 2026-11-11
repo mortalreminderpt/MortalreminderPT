@@ -1,0 +1,4 @@
+{
+  "key": "6be18cc20b3bd78e706df38d1f06c03b52214346308c960eee3c9d4f705f08ee",
+  "text": "1. **Character Count**  \n   - Record the number of characters in the frame in the frame header.  \n   - Drawback: If the frame header data is corrupted, subsequent data frames cannot be parsed correctly (chain reaction)."
+}

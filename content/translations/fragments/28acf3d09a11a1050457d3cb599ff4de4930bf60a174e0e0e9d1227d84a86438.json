@@ -1,0 +1,4 @@
+{
+  "key": "28acf3d09a11a1050457d3cb599ff4de4930bf60a174e0e0e9d1227d84a86438",
+  "text": "- **Use Context appropriately**: Context is suitable for global data passing that spans multiple component layers. For local state, component state or props should still be used."
+}

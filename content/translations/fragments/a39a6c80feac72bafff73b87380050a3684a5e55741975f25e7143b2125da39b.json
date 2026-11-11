@@ -1,0 +1,4 @@
+{
+  "key": "a39a6c80feac72bafff73b87380050a3684a5e55741975f25e7143b2125da39b",
+  "text": "The kernel is divided into multiple layers, and each layer can only call the interfaces provided by the layer below it in one direction."
+}

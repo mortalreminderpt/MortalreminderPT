@@ -1,0 +1,4 @@
+{
+  "key": "60ad3b2fb4e7150f284086ca778c8ad702f15ef130d6b9887d5f8283e03f9280",
+  "text": "1. User-Level Threads (ULT) are implemented by applications through thread libraries, and all **thread management work** is the responsibility of the **application** (including thread switching);\n2. In user-level threads, **thread switching** can be completed **in user mode**, without operating system intervention;\n3. From the user's perspective, there are multiple threads. But from the operating system kernel's perspective, it is not aware of the existence of threads. **\"User-level threads\"** are simply **\"the threads that can be seen from the user's perspective\"**."
+}

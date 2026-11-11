@@ -1,0 +1,4 @@
+{
+  "key": "cec530425a03b72643ae9594272ab2ac3949fa60995a9d6ca34ad460e0146d17",
+  "text": "A **semaphore** is actually a **variable** (it can be an integer, or a more complex record-type variable), and a semaphore can be used to **represent the quantity of a certain resource in the system**.\nFor example: if there is only one printer in the system, a semaphore with an initial value of 1 can be set."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "2bf1a7c2a8fbafa4a20458d24217d7b1958b1b69cea980971bb64b7825b46a92",
+  "text": "Use the safety algorithm to try to **find a safe sequence**:\n1. Check in turn whether the remaining available resources (3,3,2) can satisfy the needs of each process. They can satisfy P1's need, so add P1 to the safe sequence and update the remaining available resources to (5,3,2);\n2. Check in turn whether the remaining available resources (5,3,2) can satisfy the needs of the remaining processes (**excluding processes already added to the safe sequence**). They can satisfy P3's need, so add P3 to the safe sequence and update the remaining available resources to (7,4,3);\n3. Check in turn whether the remaining available resources (7,4,3) can satisfy the needs of the remaining processes (**excluding processes already added to the safe sequence**)..."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "021d19e41de34f6eaac2e67f9f59bcfd3f8c68198c7dbbcdceed0cc09ca76598",
+  "text": "Note: Unlike the consumer process, the reader process does not clear the data after reading it, nor does it change the data. Therefore, multiple readers can access the shared data simultaneously."
+}

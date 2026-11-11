@@ -1,0 +1,4 @@
+{
+  "key": "a622905a86378d7e3a724fa8d658ef5bc2fefd3bbf4221c7da682ee870b88198",
+  "text": "Set up multiple ready queues; for each level, **priority goes from high to low, and time slice goes from small to large;**"
+}

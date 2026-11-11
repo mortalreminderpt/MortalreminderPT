@@ -1,0 +1,4 @@
+{
+  "key": "3433f06a4e3b6f4a177ca9ff31ae1fa2db5c629307a6a58a285f5df3f0ade22f",
+  "text": "Between queues, fixed priority or **time slice division** can be adopted:\n- Fixed priority: lower-priority processes can be scheduled only when higher-priority queues are empty;\n- Time slice division: for example, three queues are allocated 50%, 40%, and 10% of the time"
+}

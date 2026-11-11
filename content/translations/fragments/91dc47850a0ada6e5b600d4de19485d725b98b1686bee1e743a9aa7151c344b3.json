@@ -1,0 +1,4 @@
+{
+  "key": "91dc47850a0ada6e5b600d4de19485d725b98b1686bee1e743a9aa7151c344b3",
+  "text": "### **Connection Release**\n1. **Asymmetric Disconnection**: Either party can issue a DISCONNECT command, causing bidirectional transmission to end.\n   - This may cause data loss.\n2. **Symmetric Disconnection**: Both parties each close transmission in one direction (four-way handshake), allowing the receive mode to be maintained more flexibly."
+}

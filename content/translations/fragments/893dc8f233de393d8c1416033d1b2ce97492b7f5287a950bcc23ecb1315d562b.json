@@ -1,0 +1,4 @@
+{
+  "key": "893dc8f233de393d8c1416033d1b2ce97492b7f5287a950bcc23ecb1315d562b",
+  "text": "To ensure safety, **one process cannot directly access the address space of another process**."
+}

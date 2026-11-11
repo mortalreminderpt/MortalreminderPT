@@ -1,0 +1,4 @@
+{
+  "key": "2a5e2e4d0f6187a97e798df533a6cebdfab0fde5507a1ecf6167d19b2a4eaeb1",
+  "text": "|Moment|Remaining time of different processes|\n|--|--|\n|0 (P1 arrives)|**P1=7**|\n|2 (P2 arrives)|P1=5, **P2=4**|\n|4 (P3 arrives)|P1=5, P2=2, **P3=1**|\n|5 (P3 completes, P4 arrives)|P1=5, **P2=2**, P4=4|\n|7 (P2 completes)|P1=5, **P4=4**|\n|11 (P4 completes)|**P1=5**|"
+}

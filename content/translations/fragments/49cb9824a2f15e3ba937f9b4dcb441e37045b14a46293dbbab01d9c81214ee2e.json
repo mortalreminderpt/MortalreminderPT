@@ -1,0 +1,4 @@
+{
+  "key": "49cb9824a2f15e3ba937f9b4dcb441e37045b14a46293dbbab01d9c81214ee2e",
+  "text": "⟦MC_01a812598bf19cab_0⟧ is a Hook provided by React that lets us perform side effects in function components. It helps components synchronize with external systems (such as browser APIs, subscriptions, timers, network requests, etc.). After the component finishes rendering, React executes the function passed to ⟦MC_01a812598bf19cab_1⟧ to perform the side effects."
+}

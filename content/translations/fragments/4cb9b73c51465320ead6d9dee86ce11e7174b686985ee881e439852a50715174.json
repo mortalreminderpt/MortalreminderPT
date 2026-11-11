@@ -1,0 +1,4 @@
+{
+  "key": "4cb9b73c51465320ead6d9dee86ce11e7174b686985ee881e439852a50715174",
+  "text": "If resources that can only be used mutually exclusively are transformed to allow shared use, the system will not enter a deadlock state.\nFor example: **SPOOLing technology.** The operating system can use SPOOLing technology to logically transform exclusive devices into shared devices.\nFor example, use SPOOLing technology to transform a printer into a shared device."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "398aa02b304fdf5c8aad0b0cd60059c71dc9129ffbcfcf8fa08c933462c9a84a",
+  "text": "Solution: **The operating system kernel uniformly manages shared resources** and provides \"system calls\" upward. If a user process wants to use a shared resource such as a printer, it can only send a request to the operating system kernel through a system call. The kernel coordinates and handles each request."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "1559ae516552c0d4e34e524612c7337ecdab5e96250e5b1fb5991daab32f3100",
+  "text": "If the ⟦MC_ed34efc966742035_3⟧ operation is executed first, since ⟦MC_b412ddff4edd21f6_0⟧, after ⟦MC_b90119b1ef69c281_1⟧, ⟦MC_d21d6496e76c1770_0⟧, indicating that there is no available resource at this time, so the ⟦MC_045f01b5659425bb_1⟧ primitive will be executed in the P operation, actively requesting to block.\nLater, after code 2 is executed, the ⟦MC_9c77272ebbd5e73b_3⟧ operation is then executed, ⟦MC_ececb72068763bba_1⟧, making S return to 0. Since there is a process in the blocking queue corresponding to this semaphore at this time, the ⟦MC_6ea40259be2a31da_0⟧ primitive will be executed in the V operation to wake up process P2.\nIn this way, P2 can continue to execute code 4."
+}

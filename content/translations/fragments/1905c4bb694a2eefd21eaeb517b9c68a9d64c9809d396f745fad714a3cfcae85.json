@@ -1,0 +1,4 @@
+{
+  "key": "1905c4bb694a2eefd21eaeb517b9c68a9d64c9809d396f745fad714a3cfcae85",
+  "text": "An operating system only needs a kernel to be sufficient (for example, Docker only needs the Linux kernel). The functions of an operating system are not necessarily all in the kernel, such as the GUI."
+}

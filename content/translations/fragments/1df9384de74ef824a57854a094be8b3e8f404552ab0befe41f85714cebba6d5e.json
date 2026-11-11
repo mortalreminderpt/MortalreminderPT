@@ -1,0 +1,4 @@
+{
+  "key": "1df9384de74ef824a57854a094be8b3e8f404552ab0befe41f85714cebba6d5e",
+  "text": "The smokers problem can provide us with an approach to solving the \"single producer that can produce multiple products\" problem.\nThe key insight worth taking away is: **letting each smoker smoke in turn** necessarily requires **putting combinations** one, two, and three **on the table in turn**.\nPay attention to how we use an integer variable i to implement this **taking turns** process."
+}

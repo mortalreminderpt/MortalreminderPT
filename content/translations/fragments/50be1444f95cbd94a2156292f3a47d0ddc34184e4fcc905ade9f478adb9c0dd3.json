@@ -1,0 +1,4 @@
+{
+  "key": "50be1444f95cbd94a2156292f3a47d0ddc34184e4fcc905ade9f478adb9c0dd3",
+  "text": "This problem is essentially also a \"producer-consumer\" problem; more precisely, it is a \"single producer that can produce multiple products - multiple consumers\" problem."
+}

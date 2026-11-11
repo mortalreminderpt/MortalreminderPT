@@ -1,0 +1,4 @@
+{
+  "key": "618796d32294fc6431d9b629805cf64d09e330702bd71610586c36c3e52a5bc1",
+  "text": "The operating system needs to establish a data structure — a **partition description table** — to implement the allocation and reclamation of each partition.\nEach table entry corresponds to a partition and is usually arranged by partition size.\nEach table entry includes the corresponding partition's **size, starting address, and status** (whether it has been allocated)."
+}

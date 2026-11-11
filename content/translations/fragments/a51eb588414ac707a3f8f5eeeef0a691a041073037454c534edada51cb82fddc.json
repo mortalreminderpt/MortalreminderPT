@@ -1,0 +1,4 @@
+{
+  "key": "a51eb588414ac707a3f8f5eeeef0a691a041073037454c534edada51cb82fddc",
+  "text": "2. **Selective Repeat**  \n   - The receiver window can receive frames at any position, and when an error occurs, only the specific lost frame is retransmitted.  \n   - Negative acknowledgment (NAK) is used to indicate the specific error location."
+}

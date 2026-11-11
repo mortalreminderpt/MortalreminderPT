@@ -1,0 +1,4 @@
+{
+  "key": "11f3bb81f8704dbd6a817256f536229780aaae5ad504bed0254e61dd26ab8a62",
+  "text": "2. **Handle transmission errors**  \n   - Detect and correct errors that may be introduced by the physical layer, ensuring the integrity of data frames."
+}

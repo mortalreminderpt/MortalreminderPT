@@ -1,0 +1,4 @@
+{
+  "key": "fe7841db095369cd4f2c5c7ee5231659bf5e806c152bb5c638d4bc44f5e59579",
+  "text": "After the CPU executes the **disable interrupts instruction**, it no longer routinely checks for interrupt signals, and only resumes checking after executing the **enable interrupts instruction**."
+}

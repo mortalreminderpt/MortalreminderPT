@@ -1,0 +1,4 @@
+{
+  "key": "149d92e3f7cae9e697f080f2e28c0e81ec2889869336865eccfe0c131a5b2def",
+  "text": "The internals of an operating system can be divided into the kernel and non-kernel parts. The **kernel** is the most basic and core part of the operating system, and the programs that implement the kernel functions of the operating system are kernel programs."
+}

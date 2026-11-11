@@ -1,0 +1,4 @@
+{
+  "key": "09230d37fe504523009a1f7ab360dda0009e56fd64bc1c3adbde44deb7d62a03",
+  "text": "Mutual exclusion condition: Only contention for resources that must be used mutually exclusively can lead to deadlock."
+}

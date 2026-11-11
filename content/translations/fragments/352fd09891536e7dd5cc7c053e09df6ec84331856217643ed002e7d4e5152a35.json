@@ -1,0 +1,4 @@
+{
+  "key": "352fd09891536e7dd5cc7c053e09df6ec84331856217643ed002e7d4e5152a35",
+  "text": "#### Adaptive Tree Walk\n- Uses a hierarchical structure to divide colliding stations into smaller groups and resolve them layer by layer.\n- Stations move down the \"tree\" structure until only one station remains and transmits successfully."
+}

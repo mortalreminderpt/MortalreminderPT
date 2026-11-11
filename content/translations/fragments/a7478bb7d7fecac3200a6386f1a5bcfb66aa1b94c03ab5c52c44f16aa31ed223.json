@@ -1,0 +1,4 @@
+{
+  "key": "a7478bb7d7fecac3200a6386f1a5bcfb66aa1b94c03ab5c52c44f16aa31ed223",
+  "text": "Dynamic partition allocation **has no internal fragmentation**, but **has external fragmentation**."
+}

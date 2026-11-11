@@ -1,0 +1,4 @@
+{
+  "key": "f389477f312e3a56f1a4a3dc299dafa494b924e0fa9229ff17205a7cce12fafd",
+  "text": "### Non-preemptive PSA\nThe arrival times at the ready queue, required running times, and process priority numbers of each process are shown in the table below. Use the **non-preemptive priority scheduling algorithm** to analyze the process execution. (Note: the larger the priority number, the higher the priority)"
+}

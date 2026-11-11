@@ -1,0 +1,4 @@
+{
+  "key": "6bb4fdb88b4ab86aa4e7f807c2e85870dd1122833c757a4d168a7301a522693f",
+  "text": "Note the difference between \"suspended\" and \"blocked\". Both states mean that the process temporarily cannot obtain CPU service, but in the suspended state the process image has been swapped out to external storage, whereas in the blocked state the process image is still in memory."
+}

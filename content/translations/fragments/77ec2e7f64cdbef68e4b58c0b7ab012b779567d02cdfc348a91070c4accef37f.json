@@ -1,0 +1,4 @@
+{
+  "key": "77ec2e7f64cdbef68e4b58c0b7ab012b779567d02cdfc348a91070c4accef37f",
+  "text": "In the single-CPU case, only one process is in the running state at any given moment; in the multi-core CPU case, multiple processes may be in the running state."
+}

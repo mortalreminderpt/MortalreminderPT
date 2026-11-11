@@ -1,0 +1,4 @@
+{
+  "key": "980da1f60c386d8704f2bdeb76c485d356aeb3f00456fd0b8dd1862c492fb8c9",
+  "text": "### **Tunneling**  \n- Used when the source and destination are on the same network but other networks lie in between.  \n- The source packet is encapsulated in another packet for transmission."
+}

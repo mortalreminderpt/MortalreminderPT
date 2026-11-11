@@ -1,0 +1,4 @@
+{
+  "key": "65ef2ad88920a3f67e470e47b376da354f72ee6c3ed8ad579a5689a6977380a1",
+  "text": "Main drawback: **only one program could run in memory**, and the next program could only be loaded after that program finished running. **The CPU spent a large amount of time idle waiting for I/O to complete**, so resource utilization remained low."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "ae374d1584db9800a8aa4f015b35f131077de2da2826fe5a25435f42b993ce0d",
+  "text": "The operating system opens up a **shared space** in memory, allowing the communicating processes to **access it mutually exclusively**."
+}

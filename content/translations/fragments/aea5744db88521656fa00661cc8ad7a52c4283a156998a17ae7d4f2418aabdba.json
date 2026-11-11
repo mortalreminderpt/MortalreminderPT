@@ -1,0 +1,4 @@
+{
+  "key": "aea5744db88521656fa00661cc8ad7a52c4283a156998a17ae7d4f2418aabdba",
+  "text": "Note:\n- The transition from blocked state to ready state is not something the process itself can control; it is a **passive behavior**.\n- The transition from running state to blocked state is an **active behavior** made by the process itself.\n- **A process cannot transition directly from the blocked state to the running state, nor can it transition directly from the ready state to the blocked state** (because entering the blocked state is actively requested by the process, and the process must necessarily be running to issue such a request)."
+}

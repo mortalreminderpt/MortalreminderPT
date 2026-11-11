@@ -1,0 +1,4 @@
+{
+  "key": "0a55d2b6b1e38b2fec6b07a5285be6011b1fc44d7a7a14dc7188dc9503229363",
+  "text": "- **Hidden terminal problem:** Collisions occur because nodes cannot see each other.\n- **Exposed terminal problem:** Nodes mistakenly believe they cannot transmit simultaneously, reducing efficiency."
+}

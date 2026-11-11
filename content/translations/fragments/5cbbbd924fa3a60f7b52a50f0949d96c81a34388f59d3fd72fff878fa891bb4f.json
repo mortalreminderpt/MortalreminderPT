@@ -1,0 +1,4 @@
+{
+  "key": "5cbbbd924fa3a60f7b52a50f0949d96c81a34388f59d3fd72fff878fa891bb4f",
+  "text": "## Address Translation\nThe operating system needs to provide an address translation function and be responsible for **the translation between logical addresses and physical addresses** of programs:\nTo make programming more convenient, programmers should only need to focus on the logical addresses of instructions and data when writing programs.\nAnd **the translation from logical addresses to physical addresses** (this process is called **address relocation**) should be handled by the operating system.\nThis ensures that programmers do not need to pay attention to the actual situation of physical memory when writing programs. (Three loading methods)"
+}

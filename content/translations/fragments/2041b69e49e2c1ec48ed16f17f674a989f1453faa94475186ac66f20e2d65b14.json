@@ -1,0 +1,4 @@
+{
+  "key": "2041b69e49e2c1ec48ed16f17f674a989f1453faa94475186ac66f20e2d65b14",
+  "text": "#### Example\nUDP is similar to sending a courier package:\n- **Datagrams**: Data is split into small pieces for transmission.\n- **Connectionless**: Send directly without establishing a connection.\n- **High efficiency**: Suitable for scenarios with high speed requirements, such as live streaming and online games."
+}

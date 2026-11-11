@@ -1,0 +1,4 @@
+{
+  "key": "ff9836ccd23bda36b736503c23598282c5166ef48cc4dbe4f1de8497b2b89073",
+  "text": "- **Manage complex state logic**: When the state logic is relatively complex, contains multiple sub-values, or the next state depends on the previous state, using ⟦MC_18b9b49b1c5304f4_4⟧ can make the code clearer."
+}

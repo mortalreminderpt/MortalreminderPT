@@ -1,0 +1,4 @@
+{
+  "key": "58101f79ec14762f72ed75375301404a7d511c149d616945897775874c2f5fe7",
+  "text": "By analogy, **a total of 5 rounds of checks can add all 5 processes to the safe sequence**, and finally a safe sequence can be obtained.\nThis algorithm is called the **safety algorithm**. The above process can be implemented very conveniently in code, and each round of checks starts from the process with the smaller number."
+}

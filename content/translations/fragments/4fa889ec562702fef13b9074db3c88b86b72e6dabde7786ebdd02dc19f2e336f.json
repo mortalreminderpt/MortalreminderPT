@@ -1,0 +1,4 @@
+{
+  "key": "4fa889ec562702fef13b9074db3c88b86b72e6dabde7786ebdd02dc19f2e336f",
+  "text": "|Partition No.|Size (MB)|Starting Address (M)|Allocation Status|\n|--|--|--|--|\n|1|2|8|Unallocated|\n|2|2|10|Unallocated|\n|3|4|12|Allocated|\n|...|...|...|...|"
+}

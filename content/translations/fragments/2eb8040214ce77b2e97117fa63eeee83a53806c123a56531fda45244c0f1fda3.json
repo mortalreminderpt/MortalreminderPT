@@ -1,0 +1,4 @@
+{
+  "key": "2eb8040214ce77b2e97117fa63eeee83a53806c123a56531fda45244c0f1fda3",
+  "text": "### Breaking the Request and Hold Condition\nRequest and hold condition: A process already holds at least one resource but makes a new resource request, and that resource is occupied by another process. At this time, the requesting process is blocked but still holds on to the resources it already has."
+}

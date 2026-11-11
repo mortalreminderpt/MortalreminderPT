@@ -1,0 +1,4 @@
+{
+  "key": "e5e3351ad42a745ce553ff2b19e1a2e6f729f86869554cb4b9ab158dc3590c6b",
+  "text": "In a Type 1 virtual machine, **only the virtual machine manager runs in kernel mode** and can use those instructions with the highest privileges.\nThe upper-layer **virtual kernel space runs in user mode**, but it believes that it is running in kernel mode and will execute privileged instructions. At this time, these **privileged instructions will be intercepted by the virtual machine manager and converted into equivalent operations**."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "803c2b03b27aaf1ab024cfccf84deec7e17ac6cd7fe200fcc23a49840a517840",
+  "text": "In this process, multiple processes can send messages to the same mailbox, and multiple processes can also receive messages from the same mailbox."
+}

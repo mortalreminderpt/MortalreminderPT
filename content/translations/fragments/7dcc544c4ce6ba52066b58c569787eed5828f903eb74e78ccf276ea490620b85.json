@@ -1,0 +1,4 @@
+{
+  "key": "7dcc544c4ce6ba52066b58c569787eed5828f903eb74e78ccf276ea490620b85",
+  "text": "1. A thread is the unit of processor scheduling;\n2. On multi-CPU computers, each thread can occupy a different CPU;\n3. Each thread has a thread ID and a thread control block (TCB);\n4. A thread also has three basic states: ready, blocked, and running;\n5. A thread hardly owns any system resources;\n6. Different threads in the same process share the process's resources;\n7. Because they share the memory address space, communication between threads in the same process does not even require system intervention;\n8. A thread switch within the same process does not cause a process switch;\n9. A thread switch between different processes causes a process switch;\n10. Switching threads within the same process incurs very little system overhead;\n11. Switching processes incurs relatively large system overhead."
+}

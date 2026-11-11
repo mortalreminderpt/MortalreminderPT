@@ -1,0 +1,4 @@
+{
+  "key": "e34070514d13c64c9459f87ff7f3bce2bae56da0e0e31ebb3588379d6b847d87",
+  "text": "⟦MC_b461e4064ee2bcd2_0⟧\nIn this example, we create the ⟦MC_7dac81b3a37580fa_0⟧ instance only when ⟦MC_a7852c58d3e72c9d_0⟧ is ⟦MC_3fd5627afa0d0f86_1⟧, avoiding the creation of a new instance on every render."
+}

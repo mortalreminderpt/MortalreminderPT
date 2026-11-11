@@ -1,0 +1,4 @@
+{
+  "key": "24a983b016044525324f7f6f17f9fa5c24ebc00cffe481084bc6b0429aba9188",
+  "text": "For example, P1 and P2 execute concurrently. Due to asynchrony, the order in which the two alternate and advance is uncertain."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "067d0f62dffeca3ba67ad21a886e6fd929f6c444173b0df4c9133935c987d1de",
+  "text": "- **Keep the computation function pure**: Avoid introducing side effects into the computation function."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "483988205c2ffbdfc3291a904b82ae885c974a0d8b58cb527be800ab3a3aac13",
+  "text": "Existing problem: **it does not satisfy the \"wait with relinquished CPU\" principle**, and \"busy waiting\" will occur."
+}

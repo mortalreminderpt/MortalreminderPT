@@ -1,0 +1,4 @@
+{
+  "key": "2fed5d9d8f6df569c6314188025d349c6b17ed4dea5e903bf61859282e4f3bf1",
+  "text": "- **Simplex**: data can only be transmitted in one direction (e.g., broadcast).\n- **Half-Duplex**: data can be transmitted in both directions, but not simultaneously (e.g., walkie-talkie).\n- **Full-Duplex**: data can be transmitted in both directions simultaneously (e.g., telephone)."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "82f28574504c4cd15b7ec60a06d828c2fc0709f3ba7bb1fea9de38eb43e18067",
+  "text": "- Advantages: simple to implement; **no external fragmentation**; overlay technology can be used to expand memory; memory protection does not necessarily need to be adopted (such as the early PC operating system MS-DOS).\n- Disadvantages: can only be used in single-user, single-task operating systems; **has internal fragmentation**; a large part of the user area is idle, and memory utilization is extremely low."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "392099a6b01dc73f1bd9a3eff7aa4b3d89ead2ee2f7fe942b70519a165ba3331",
+  "text": "Characteristics of the idle process:\n- Lowest priority\n- Can be a 0-address instruction, occupying a complete instruction cycle (interrupts are routinely checked at the end of the instruction cycle)\n- Low energy consumption"
+}

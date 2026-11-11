@@ -1,0 +1,4 @@
+{
+  "key": "d13e9ada4507a18442487c0f0e1ca72c46a47ac5786afd00bff732366074eed0",
+  "text": "Drawback:\nAccess can only alternate in the order P0->P1->P0->P1.\nThe problem brought by this mandatory \"alternating access\" is that if the process currently allowed to enter the critical section is P0, and P0 never accesses the critical section, then although the critical section is idle at this time, P1 is not allowed to access it."
+}

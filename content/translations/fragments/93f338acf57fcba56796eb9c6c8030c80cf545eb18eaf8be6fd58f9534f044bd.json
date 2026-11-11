@@ -1,0 +1,4 @@
+{
+  "key": "93f338acf57fcba56796eb9c6c8030c80cf545eb18eaf8be6fd58f9534f044bd",
+  "text": "#### Example\nIf a two-way handshake is used instead of a three-way handshake, deadlock may occur. For example:\n- A receives a packet and acknowledges it, but the acknowledgement message is lost.\n- Both A and B are in the open state, but their sequence numbers differ, and communication reaches an impasse.\nA timeout mechanism must be introduced to avoid deadlock."
+}

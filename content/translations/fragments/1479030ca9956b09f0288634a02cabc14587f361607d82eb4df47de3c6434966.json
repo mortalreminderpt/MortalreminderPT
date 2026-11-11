@@ -1,0 +1,4 @@
+{
+  "key": "1479030ca9956b09f0288634a02cabc14587f361607d82eb4df47de3c6434966",
+  "text": "The reason is that the buffer size in this problem is 1.\nAt any moment, among the three synchronization semaphores apple, orange, and plate, at most only one is 1.\nTherefore, at most only one process's P operation will not be blocked and can smoothly enter the critical section."
+}

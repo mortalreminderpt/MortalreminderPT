@@ -1,0 +1,4 @@
+{
+  "key": "b735c66ee8f08b6de68d9577eb9ff5ffe733141cdbc09248cef0d4620a664a09",
+  "text": "#### Why can't a two-way handshake be used?\nIf only a two-way handshake is used, misunderstandings may occur. For example, delays or packet loss may cause both communicating parties to mistakenly believe that the other is not ready, leading to communication confusion."
+}

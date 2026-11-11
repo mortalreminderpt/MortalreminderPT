@@ -1,0 +1,4 @@
+{
+  "key": "a14750f417aa672560e45e885da94436fb5d454862031f6f28be670198de24af",
+  "text": "1. **Parity Check**  \n   - Count the number of 1s in the data and add a parity bit.  \n   - The Hamming distance is 2; it can detect 1-bit errors but cannot correct them."
+}

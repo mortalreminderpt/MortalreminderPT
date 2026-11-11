@@ -1,0 +1,4 @@
+{
+  "key": "6910b16e1682bd14041bee9b41c7920df33d9aa61639b3eea045f7a04c8b2ede",
+  "text": "If you need to store a complex object or class instance in ⟦MC_ece0da93fe9e23ff_7⟧, be careful to avoid creating a new instance on every render. You can initialize ⟦MC_da756e7954773222_5⟧ on the component's first render and keep it unchanged in subsequent renders."
+}

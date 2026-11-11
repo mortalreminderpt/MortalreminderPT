@@ -1,0 +1,4 @@
+{
+  "key": "340d666146a92c27cc9bd1c1963907f28eee1b3605b39172ef0fcff027163962",
+  "text": "A computer **cannot place all user processes** and all the programs and data required by the system **into main memory**, so the operating system must **reasonably partition memory space and perform effective dynamic allocation**."
+}

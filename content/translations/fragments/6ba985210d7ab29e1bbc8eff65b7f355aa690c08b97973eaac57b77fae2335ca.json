@@ -1,0 +1,4 @@
+{
+  "key": "6ba985210d7ab29e1bbc8eff65b7f355aa690c08b97973eaac57b77fae2335ca",
+  "text": "If the system adopts neither deadlock prevention measures nor deadlock avoidance measures, deadlock is very likely to occur.\nIn this case, the system should provide two algorithms:\n1. Deadlock detection algorithm: used to detect the system state to determine whether a deadlock has occurred in the system.\n2. Deadlock recovery algorithm: when it is determined that a deadlock has occurred in the system, this algorithm can be used to free the system from the deadlock state."
+}

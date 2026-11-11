@@ -1,0 +1,4 @@
+{
+  "key": "ed61960198bd8f679b9ee77a7d5a380f7438ac4fbc988e77dc6bc0314eb833a8",
+  "text": "Under normal circumstances, **after executing each instruction**, the CPU will routinely **check whether there is an interrupt signal** that needs to be handled.\nIf there is, it pauses the current program and switches to executing the corresponding interrupt handler."
+}

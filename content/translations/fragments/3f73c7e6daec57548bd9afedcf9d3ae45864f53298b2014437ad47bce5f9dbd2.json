@@ -1,0 +1,4 @@
+{
+  "key": "3f73c7e6daec57548bd9afedcf9d3ae45864f53298b2014437ad47bce5f9dbd2",
+  "text": "After that, if the resource is successfully allocated to the blocked process, that is, the event that the blocked process was waiting for has occurred, the operating system then transitions the process to the ready state."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "c511d923627739ea422426701f9af9448f676986906425c2facb0019c109ab68",
+  "text": "**Contiguous allocation**: means that what is allocated to a user process must be a **contiguous memory space**."
+}

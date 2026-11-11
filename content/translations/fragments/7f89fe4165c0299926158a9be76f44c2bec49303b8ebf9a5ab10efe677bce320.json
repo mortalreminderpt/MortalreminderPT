@@ -1,0 +1,4 @@
+{
+  "key": "7f89fe4165c0299926158a9be76f44c2bec49303b8ebf9a5ab10efe677bce320",
+  "text": "System calls can be made in programs to use the program interface. Ordinary users cannot directly use the program interface and can only use it indirectly through program code."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "ddcc86c0e1cced753bfeb555d97c025c23e6e8c2e0e5f67f27abbb5e48b79f50",
+  "text": "For a **process**, waiting time refers to the **sum of time spent waiting to be served** after the process is created.\nDuring the period of waiting for I/O to complete, the process is actually also being served, so it is not counted in the waiting time."
+}

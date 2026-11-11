@@ -1,0 +1,4 @@
+{
+  "key": "1dce681d05a63667a24a5a35cfe9fa31894f4ddd4ce7ad9a6583492508deccf1",
+  "text": "After the introduction of threads, a **process** serves only as the **unit for allocating system resources other than the CPU** (such as printers and memory address spaces, which are all allocated to processes)."
+}

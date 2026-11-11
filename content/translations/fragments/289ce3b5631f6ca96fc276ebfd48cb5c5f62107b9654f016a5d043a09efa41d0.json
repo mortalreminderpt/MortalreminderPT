@@ -1,0 +1,4 @@
+{
+  "key": "289ce3b5631f6ca96fc276ebfd48cb5c5f62107b9654f016a5d043a09efa41d0",
+  "text": "Executing the \"trap instruction\" means that the application program voluntarily returns CPU control to the operating system kernel. \"System calls\" are completed through trap instructions."
+}

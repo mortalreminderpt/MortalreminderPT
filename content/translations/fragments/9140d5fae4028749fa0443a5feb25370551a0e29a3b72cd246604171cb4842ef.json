@@ -1,0 +1,4 @@
+{
+  "key": "9140d5fae4028749fa0443a5feb25370551a0e29a3b72cd246604171cb4842ef",
+  "text": "## What Is Memory\nMemory can store data. Before a program executes, **it must first be loaded into memory before the CPU can process it**—this eases the speed mismatch between the CPU and the hard disk."
+}

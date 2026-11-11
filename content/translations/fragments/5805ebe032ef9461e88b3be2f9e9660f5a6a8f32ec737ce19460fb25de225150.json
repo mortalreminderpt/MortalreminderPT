@@ -1,0 +1,4 @@
+{
+  "key": "5805ebe032ef9461e88b3be2f9e9660f5a6a8f32ec737ce19460fb25de225150",
+  "text": "1. AbstractFactory (WidgetFactory)\n- Declares an operation interface for creating abstract product objects"
+}

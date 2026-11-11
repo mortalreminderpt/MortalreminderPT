@@ -1,0 +1,4 @@
+{
+  "key": "f21ab14cab0eba44aa4c600b7b8ce844e6b0bd1d1fa0099cdc098d4cb2d6bf10",
+  "text": "⟦MC_ece0da93fe9e23ff_1⟧ is a Hook provided by React that lets us create a mutable ref object whose ⟦MC_c93e3fe4376d7b4c_0⟧ property can hold any mutable value. Its most common use is accessing DOM elements, but it can also be used to store any mutable value that needs to remain unchanged between renders without triggering a re-render."
+}

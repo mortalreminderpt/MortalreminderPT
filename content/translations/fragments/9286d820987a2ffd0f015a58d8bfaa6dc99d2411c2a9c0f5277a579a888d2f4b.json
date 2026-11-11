@@ -1,0 +1,4 @@
+{
+  "key": "9286d820987a2ffd0f015a58d8bfaa6dc99d2411c2a9c0f5277a579a888d2f4b",
+  "text": "2. ConcreteBuilder (ASCIIConverter, TeXConverter, TextWidgetConverter)\n- Implements the Builder interface to construct and assemble the parts of the product;\n- Defines and keeps track of the representation it creates;\n- Provides an interface for retrieving the product (for example, GetASCIIText, GetTextWidget)"
+}

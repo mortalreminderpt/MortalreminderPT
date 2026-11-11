@@ -1,0 +1,4 @@
+{
+  "key": "c8afd4a1a07730023b008f8ba2cb34863139b3ab35d84aeec8df0ac6baceb0b7",
+  "text": "In a Type 1 virtual machine, the VMM can run at Ring 0, the virtual kernel space can run at Ring 1, and the virtual user space can run at Ring 2. This ensures that when privileged instructions at Ring 1 and Ring 2 are executed, the virtual machine manager does not need to intervene, improving operating efficiency."
+}

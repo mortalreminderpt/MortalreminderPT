@@ -1,0 +1,4 @@
+{
+  "key": "db2d28eca673481c349782792edabbb4d64b625b399672a95117fdacc2cff826",
+  "text": "Fixed partition allocation has two modes of partitioning: equal partition sizes and unequal partition sizes, as shown in the figure below:"
+}

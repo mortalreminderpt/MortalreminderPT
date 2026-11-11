@@ -1,0 +1,4 @@
+{
+  "key": "6641c948a6617bb1f70cc8f902d7910bdcbc3462bcdbd70f4dad8602c2326742",
+  "text": "### What is Framing\nFraming is the process of dividing a continuous bit stream into independent, manageable data units called \"frames\".  \n**Purpose**: To provide reliability for data transmission on top of an unreliable physical layer."
+}

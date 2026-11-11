@@ -1,0 +1,4 @@
+{
+  "key": "d315609211090de73830aea72e5f78b04660cfe5b8d931a6d96c41dd089836b4",
+  "text": "#### The problem in the figure\nIn the figure, duplicate old messages (old duplicate messages) may appear, which can cause misunderstandings between the communicating parties. For example:\n- A duplicate connection request is mistaken for a new message.\n- The three-way handshake can avoid this misunderstanding, because each communication requires a new message confirmation."
+}

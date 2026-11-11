@@ -1,0 +1,4 @@
+{
+  "key": "0d4d7c7d929c19be5705270331c927835091be608bd000a13613cbd7d1b4835a",
+  "text": "Semaphore design: Define a mutual exclusion semaphore array ⟦MC_40cd896763dbf564_0⟧ to implement mutually exclusive access to the 5 chopsticks.\nNumber the philosophers from 0 to 4; the chopstick to the left of philosopher ⟦MC_873f49f1cf667b4a_0⟧ is numbered ⟦MC_873f49f1cf667b4a_1⟧, and the chopstick to the right is numbered ⟦MC_3c9be953a4f605a9_0⟧."
+}

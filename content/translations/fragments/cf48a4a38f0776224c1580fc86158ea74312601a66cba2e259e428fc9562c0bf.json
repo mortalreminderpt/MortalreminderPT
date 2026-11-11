@@ -1,0 +1,4 @@
+{
+  "key": "cf48a4a38f0776224c1580fc86158ea74312601a66cba2e259e428fc9562c0bf",
+  "text": "**The buffer is a critical resource**, and each process must **access it mutually exclusively**."
+}

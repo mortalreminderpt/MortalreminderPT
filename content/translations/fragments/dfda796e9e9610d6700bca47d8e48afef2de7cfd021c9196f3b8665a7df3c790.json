@@ -1,0 +1,4 @@
+{
+  "key": "dfda796e9e9610d6700bca47d8e48afef2de7cfd021c9196f3b8665a7df3c790",
+  "text": "React may discard cached values in certain situations, such as when a component re-renders in development mode. Therefore, do not rely on the persistence of cached values."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "e754c4c894834155c0878e537382f2b93e3f4fd58a70a0a5fa39cfe0e11331d0",
+  "text": "For a **job**, not only the **waiting time after the process is created** must be considered, but also **the time the job waits in the backup queue in external storage** must be added."
+}

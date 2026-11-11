@@ -1,0 +1,4 @@
+{
+  "key": "ad1d36814d87c0c57449428e4538c1593427e45237948370a9e729e12401313a",
+  "text": "External interrupts are **unrelated to the currently executing instruction**, and the interrupt signal comes from **outside the CPU**."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "97bd3f5ef835eab4e669b5ce0e6f7fadf257c53a21a0d139f26d501b24a1aabc",
+  "text": "Data structures:\n1. A one-dimensional array **Available** of length m represents how many available resources remain;\n2. An n*m matrix **Max** represents the maximum demand of each process for resources;\n3. An n*m matrix **Allocation** represents how many resources have already been allocated to each process;\n4. Max - Allocation = **Need** matrix represents how many resources each process may still need at most;\n5. A one-dimensional array **Request_i** of length m represents the number of each type of resource requested by process i this time."
+}

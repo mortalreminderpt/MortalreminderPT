@@ -1,0 +1,4 @@
+{
+  "key": "e1141f013e59ed26a8ccda8c129548ccb9002b258284430b28ec907850e0ffa4",
+  "text": "Preemptive scheduling can prioritize more urgent processes and can also implement the function of letting processes execute in turn according to time slices (through clock interrupts). It is suitable for time-sharing operating systems and real-time operating systems."
+}

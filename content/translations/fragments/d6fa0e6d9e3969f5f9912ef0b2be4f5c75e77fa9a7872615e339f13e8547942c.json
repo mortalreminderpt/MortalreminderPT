@@ -1,0 +1,4 @@
+{
+  "key": "d6fa0e6d9e3969f5f9912ef0b2be4f5c75e77fa9a7872615e339f13e8547942c",
+  "text": "Applications request operating system services through system calls.\nVarious shared resources in the system are uniformly managed by the operating system kernel, so **all operations related to shared resources (such as storage allocation, I/O operations, file management, etc.) must submit service requests to the operating system kernel through system calls**, and the operating system kernel completes them on behalf of the application.\nThis can **ensure the stability and security of the system** and prevent users from performing illegal operations."
+}

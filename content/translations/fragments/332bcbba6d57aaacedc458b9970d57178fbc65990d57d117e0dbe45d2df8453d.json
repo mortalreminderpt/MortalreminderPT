@@ -1,0 +1,4 @@
+{
+  "key": "332bcbba6d57aaacedc458b9970d57178fbc65990d57d117e0dbe45d2df8453d",
+  "text": "**Preemptive scheduling mode, also called preemptive mode**. When a process is executing on the processor, if a more important or more urgent process needs to use the processor, the executing process is immediately suspended and the processor is allocated to the more important and urgent process."
+}

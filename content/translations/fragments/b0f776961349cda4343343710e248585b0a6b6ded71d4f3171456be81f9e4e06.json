@@ -1,0 +1,4 @@
+{
+  "key": "b0f776961349cda4343343710e248585b0a6b6ded71d4f3171456be81f9e4e06",
+  "text": "Does looking at it this way mean that four synchronization semaphores must be set to implement these four \"one-before-the-other\" relationships respectively?"
+}

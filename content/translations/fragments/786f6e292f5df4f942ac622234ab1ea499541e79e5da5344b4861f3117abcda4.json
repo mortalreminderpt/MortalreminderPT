@@ -1,0 +1,4 @@
+{
+  "key": "786f6e292f5df4f942ac622234ab1ea499541e79e5da5344b4861f3117abcda4",
+  "text": "The main purpose of the data link layer is to achieve reliable and efficient communication of \"frames\" between two adjacent machines.  \n- **Handle transmission errors**: Ensure the integrity of data transmission.  \n- **Flow control**: Regulate the speed difference between the sender and receiver to avoid buffer overflow or transmission interruption."
+}

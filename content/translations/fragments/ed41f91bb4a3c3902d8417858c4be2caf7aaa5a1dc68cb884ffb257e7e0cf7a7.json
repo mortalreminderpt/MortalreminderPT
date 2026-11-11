@@ -1,0 +1,4 @@
+{
+  "key": "ed41f91bb4a3c3902d8417858c4be2caf7aaa5a1dc68cb884ffb257e7e0cf7a7",
+  "text": "Microsoft and Apple have teams responsible for implementing operating systems. What they write are \"**kernel programs**\". Many kernel programs together form the \"**operating system kernel**\", or \"**kernel**\" for short. The kernel is the most important and core part of the operating system, and also the **part closest to the hardware**."
+}

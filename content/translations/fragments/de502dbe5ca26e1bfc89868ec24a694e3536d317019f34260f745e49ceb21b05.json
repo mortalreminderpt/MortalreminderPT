@@ -1,0 +1,4 @@
+{
+  "key": "de502dbe5ca26e1bfc89868ec24a694e3536d317019f34260f745e49ceb21b05",
+  "text": "The Reducer function should be a pure function that receives the current ⟦MC_7727f8cb300c38ed_0⟧ and ⟦MC_a8d0a513cb089d1f_0⟧ and returns the new state. It should not produce side effects, and it should not directly modify the passed-in ⟦MC_7727f8cb300c38ed_1⟧; instead, it should return a new state object."
+}

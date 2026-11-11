@@ -1,0 +1,4 @@
+{
+  "key": "cdbe3e1f226da235e9f75f24ffd4950ba3b68dd6270b6f8dd34b700c38ea54d9",
+  "text": "3. **Multicasting Routing**\n   - Divides nodes in the network into groups; each group constructs a spanning tree, and nodes within the group share data packets.\n   - Suitable for scenarios that require delivering information to a specific small group, such as video conferencing or multicast communication."
+}

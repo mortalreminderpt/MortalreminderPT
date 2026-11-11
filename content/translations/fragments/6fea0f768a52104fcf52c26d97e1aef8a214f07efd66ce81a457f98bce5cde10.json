@@ -1,0 +1,4 @@
+{
+  "key": "6fea0f768a52104fcf52c26d97e1aef8a214f07efd66ce81a457f98bce5cde10",
+  "text": "### **Transmission Control Protocol (TCP)**\n#### Characteristics of TCP connections\n1. **Full Duplex**: Supports simultaneous bidirectional data transmission.\n2. **Point to Point**: An exact sender and receiver pair.\n3. **Byte Streams**: Data flows in units of bytes, without preserving message boundaries.\n4. **Buffer Capable**:\n   - Can choose to buffer data or send it immediately.\n   - **URGENT flag**: Send immediately.\n   - **PUSH flag**: Prohibit delay."
+}

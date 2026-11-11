@@ -1,0 +1,4 @@
+{
+  "key": "abd869af7068c38cddaf3b5bcde63a3ca05b2dea5a896b31e1d327b8f0a98a6f",
+  "text": "1. The interface definitions between modules may not be reasonable or practical;\n2. Modules depend on each other, making debugging and verification more difficult."
+}

@@ -1,0 +1,4 @@
+{
+  "key": "dc471470c95046ca6973266000cd84c27066b4b2c321834585411ae79ffdc7b2",
+  "text": "At any moment, there is always a process that owns the resource with the largest number, and that process's subsequent resource requests will inevitably proceed without obstruction.\nTherefore, a deadlock phenomenon in which all processes are blocked cannot occur."
+}

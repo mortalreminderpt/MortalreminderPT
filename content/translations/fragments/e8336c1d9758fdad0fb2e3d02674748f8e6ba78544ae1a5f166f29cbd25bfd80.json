@@ -1,0 +1,4 @@
+{
+  "key": "e8336c1d9758fdad0fb2e3d02674748f8e6ba78544ae1a5f166f29cbd25bfd80",
+  "text": "**Termination instruction**: If the currently executing instruction is illegal, an interrupt signal will be triggered."
+}

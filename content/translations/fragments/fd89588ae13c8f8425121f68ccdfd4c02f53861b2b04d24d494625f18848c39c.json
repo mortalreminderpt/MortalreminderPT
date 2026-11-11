@@ -1,0 +1,4 @@
+{
+  "key": "fd89588ae13c8f8425121f68ccdfd4c02f53861b2b04d24d494625f18848c39c",
+  "text": "|Time|Ready queue|Analysis|\n|--|--|--|\n|0|**P1(5)**|Only P1 has arrived, so P1 is put on the processor|\n|2|P2(4)|P2 arrives, but P1's time slice has not yet ended, so **no scheduling occurs for the moment**|\n|4|P2(4)->P3(1)|P3 arrives, but P1's time slice has not yet ended, so no scheduling occurs for the moment|\n|5|**P2(4)**->P3(1)->P4(6)|P4 arrives, and at the same time P1 finishes running. Scheduling occurs, and P2 is put on the processor|\n|9|**P3(1)**->P4(6)|P2 finishes running; although its time slice is not used up, it voluntarily gives up the processor. Scheduling occurs|\n|10|**P4(6)**|P3 finishes running; although its time slice is not used up, it voluntarily gives up the processor. Scheduling occurs|\n|15|-|P4's time slice is used up, but the ready queue is empty, so P4 continues to execute for one more time slice|"
+}

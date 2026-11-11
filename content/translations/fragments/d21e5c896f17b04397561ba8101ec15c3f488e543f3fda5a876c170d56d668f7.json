@@ -1,0 +1,4 @@
+{
+  "key": "d21e5c896f17b04397561ba8101ec15c3f488e543f3fda5a876c170d56d668f7",
+  "text": "3. **CRC**  \n   - A more powerful detection method, typically using a 32-bit CRC.  \n   - The Hamming distance is about 4, and it can detect and even partially correct multiple errors."
+}

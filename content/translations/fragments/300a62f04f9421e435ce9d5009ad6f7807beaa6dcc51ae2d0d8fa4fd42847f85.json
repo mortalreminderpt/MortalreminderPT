@@ -1,0 +1,4 @@
+{
+  "key": "300a62f04f9421e435ce9d5009ad6f7807beaa6dcc51ae2d0d8fa4fd42847f85",
+  "text": "The currently running process **voluntarily relinquishes** the processor:\n- The process terminates normally;\n- The process terminates due to an exception during execution;\n- The process voluntarily requests to block (e.g., waiting for I/O)."
+}

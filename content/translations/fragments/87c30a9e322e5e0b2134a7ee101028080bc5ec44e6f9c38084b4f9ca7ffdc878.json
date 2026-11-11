@@ -1,0 +1,4 @@
+{
+  "key": "87c30a9e322e5e0b2134a7ee101028080bc5ec44e6f9c38084b4f9ca7ffdc878",
+  "text": "I/O interrupt: An interrupt signal sent by an input/output device. When an input/output task is completed, an interrupt signal is sent to the CPU."
+}

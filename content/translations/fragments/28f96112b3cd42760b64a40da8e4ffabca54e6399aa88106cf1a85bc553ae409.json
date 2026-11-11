@@ -1,0 +1,4 @@
+{
+  "key": "28f96112b3cd42760b64a40da8e4ffabca54e6399aa88106cf1a85bc553ae409",
+  "text": "In addition, the fact that the check and assignment of the count variable cannot be completed in one atomic step causes some errors. If **\"completing in one atomic step\" needs to be achieved, it is natural to think of using a mutual exclusion semaphore.**"
+}

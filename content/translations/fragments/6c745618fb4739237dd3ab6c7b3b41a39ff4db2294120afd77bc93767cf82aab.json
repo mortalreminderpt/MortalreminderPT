@@ -1,0 +1,4 @@
+{
+  "key": "6c745618fb4739237dd3ab6c7b3b41a39ff4db2294120afd77bc93767cf82aab",
+  "text": "### Example\nThe arrival times of each process at the ready queue and the required running times are shown in the following table. Using the First Come First Serve scheduling algorithm, calculate the waiting time, average waiting time, turnaround time, average turnaround time, weighted turnaround time, and average weighted turnaround time of each process."
+}

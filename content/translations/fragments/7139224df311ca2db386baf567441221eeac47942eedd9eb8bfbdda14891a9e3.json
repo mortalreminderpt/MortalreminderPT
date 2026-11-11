@@ -1,0 +1,4 @@
+{
+  "key": "7139224df311ca2db386baf567441221eeac47942eedd9eb8bfbdda14891a9e3",
+  "text": "The execution of a **primitive** is **atomic**, that is, the execution process can only be done in one go, and **interruption is not allowed** during it.\nAtomicity can be achieved using the two **privileged instructions** \"**disable interrupts** instruction\" and \"**enable interrupts** instruction\"."
+}

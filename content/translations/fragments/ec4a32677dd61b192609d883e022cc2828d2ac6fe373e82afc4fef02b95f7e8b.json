@@ -1,0 +1,4 @@
+{
+  "key": "ec4a32677dd61b192609d883e022cc2828d2ac6fe373e82afc4fef02b95f7e8b",
+  "text": "The initial state argument accepted by ⟦MC_d5607f8c3c3d434c_6⟧ is only used on the component's first render; subsequent renders ignore that argument. If the initial state needs to be obtained through computation and the computation process is relatively time-consuming, you can pass an initializer function."
+}

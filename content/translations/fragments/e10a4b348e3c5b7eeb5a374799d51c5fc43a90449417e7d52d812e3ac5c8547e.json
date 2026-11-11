@@ -1,0 +1,4 @@
+{
+  "key": "e10a4b348e3c5b7eeb5a374799d51c5fc43a90449417e7d52d812e3ac5c8547e",
+  "text": "The correct analysis method should **consider it from the perspective of \"events\"**. We can abstract the above **four pairs of \"before-and-after relationships of process behaviors\"** into **one pair of \"before-and-after relationships of events\"**\nPlate becomes empty event -> put fruit event:\n- **The \"plate becomes empty event\" can be triggered by either the son or the daughter;**\n- **The \"put fruit event\" may be executed by either the father or the mother.**"
+}

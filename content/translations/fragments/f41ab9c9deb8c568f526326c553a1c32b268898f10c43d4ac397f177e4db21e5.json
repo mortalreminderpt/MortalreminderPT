@@ -1,0 +1,4 @@
+{
+  "key": "f41ab9c9deb8c568f526326c553a1c32b268898f10c43d4ac397f177e4db21e5",
+  "text": "⟦MC_81e49a74113bc29b_0⟧\n- **Memoize functions**: You can use ⟦MC_441142c51381d613_7⟧ or ⟦MC_2ec8a423b147e09f_0⟧ to memoize functions and prevent them from being recreated when dependencies have not changed."
+}

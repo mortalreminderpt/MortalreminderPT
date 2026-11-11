@@ -1,0 +1,4 @@
+{
+  "key": "b2f17178ef5468df668093b579455c1b90e32fa27c28a6bed38919867d65d0a0",
+  "text": "Note that when a new process arrives, the ready queue changes, and the above rules must be used for checking.\nBelow, Pn=m means that the current remaining time of process Pn is m. The situation at each moment is as follows:"
+}

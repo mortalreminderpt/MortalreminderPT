@@ -1,0 +1,4 @@
+{
+  "key": "36b3d3db5ca77d77cc5ace95dfa9761a87f17c586475d83554f4ec619c5d68ec",
+  "text": "Following in the footsteps of Flux, CQRS, and Event Sourcing, Redux attempts to make state changes predictable by restricting when and how updates occur. These restrictions are embodied in the three principles of Redux:"
+}
