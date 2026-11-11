@@ -26,8 +26,8 @@
 <h3 align="center">Just coding for fun</h3>
 
 <div align="center" style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
-  <img src="https://github-readme-stats.vercel.app/api?username=mortalreminderpt&show_icons=true&theme=transparent&hide_border=true" width="50%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mortalreminderpt&layout=donut&hide=html&show_icons=true&theme=transparent&hide_border=true" width="45%" />
+  <img src="public/images/github/github-stats.svg" alt="GitHub statistics" width="50%"/>
+  <img src="public/images/github/top-languages.svg" alt="Most used programming languages" width="45%" />
 </div>
 
 <!-- </div> -->

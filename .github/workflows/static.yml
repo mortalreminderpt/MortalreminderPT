@@ -2,7 +2,9 @@ name: Deploy Next.js to GitHub Pages
 
 on:
   push:
-    branches: [gh-pages]
+    branches: [gh-pages, fix/github-cards-2026-11-11]
+  schedule:
+    - cron: '37 18 * * *'
   workflow_dispatch:
 
 permissions:
@@ -25,11 +27,61 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ github.ref_name }}
+      - name: Prepare isolated GitHub card output
+        run: node scripts/github-cards.mjs prepare
+      - name: Generate English GitHub statistics
+        continue-on-error: true
+        timeout-minutes: 4
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
+        with:
+          card: stats
+          options: username=mortalreminderpt&show_icons=true&theme=transparent&hide_border=true&disable_animations=true&locale=en
+          path: .generated/github-cards/github-stats.svg
+          core_version: '2.2.0'
+          fail_on_error: 'true'
+          token: ${{ github.token }}
+      - name: Generate English language statistics
+        continue-on-error: true
+        timeout-minutes: 4
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
+        with:
+          card: top-langs
+          options: username=mortalreminderpt&layout=donut&hide=html&show_icons=true&theme=transparent&hide_border=true&disable_animations=true&locale=en
+          path: .generated/github-cards/top-languages.svg
+          core_version: '2.2.0'
+          fail_on_error: 'true'
+          token: ${{ github.token }}
+      - name: Generate Chinese GitHub statistics
+        continue-on-error: true
+        timeout-minutes: 4
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
+        with:
+          card: stats
+          options: username=mortalreminderpt&show_icons=true&theme=transparent&hide_border=true&disable_animations=true&locale=cn
+          path: .generated/github-cards/github-stats-zh-cn.svg
+          core_version: '2.2.0'
+          fail_on_error: 'true'
+          token: ${{ github.token }}
+      - name: Generate Chinese language statistics
+        continue-on-error: true
+        timeout-minutes: 4
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
+        with:
+          card: top-langs
+          options: username=mortalreminderpt&layout=donut&hide=html&show_icons=true&theme=transparent&hide_border=true&disable_animations=true&locale=cn
+          path: .generated/github-cards/top-languages-zh-cn.svg
+          core_version: '2.2.0'
+          fail_on_error: 'true'
+          token: ${{ github.token }}
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: npm
       - run: npm ci
+      - name: Validate new cards or retain the last successful snapshot
+        env:
+          GITHUB_CARDS_TOKEN: ${{ github.token }}
+        run: node scripts/github-cards.mjs promote
       - name: Translate and persist changed content
         id: translations
         env:
@@ -42,9 +94,12 @@ jobs:
       - run: npm run test:content
       - run: npm run test:i18n
       - run: npm run test:authoring
+      - run: npm run test:cards
+      - run: npm run cards:check
       - name: Verify no translation credential reaches the public artifact
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          GITHUB_CARDS_TOKEN: ${{ github.token }}
         run: npm run test:secrets
       - uses: actions/configure-pages@v5
         if: github.ref == 'refs/heads/gh-pages'

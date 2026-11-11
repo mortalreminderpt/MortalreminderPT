@@ -14,5 +14,6 @@ public/zh-cn/search.json
 public/css/katex.min.css
 public/css/fonts/
 content/translations/**/*.tmp
+public/images/github/*.tmp
 .env*
 !.env.example

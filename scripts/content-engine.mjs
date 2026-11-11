@@ -124,6 +124,10 @@ export async function buildLocalizedPages(compile){
     else if(base==='/'){
       setHero(page,t.homeTitle);const raw=await fs.readFile('content/home.md','utf8');
       if(page.lang==='en')page.contentHtml=compile(raw,'en');else{const saved=await readTranslation('page-home','zh-cn',payloadDigest(raw));if(!saved)throw new Error('Missing saved home-page translation');page.contentHtml=compile(saved.body,'zh-cn');}
+      const home=load(page.contentHtml,{},false),suffix=page.lang==='zh-cn'?'-zh-cn':'';
+      home('img[data-github-card="stats"]').attr('src',`/images/github/github-stats${suffix}.svg`).attr('alt',page.lang==='zh-cn'?'GitHub 统计':'GitHub statistics');
+      home('img[data-github-card="languages"]').attr('src',`/images/github/top-languages${suffix}.svg`).attr('alt',page.lang==='zh-cn'?'常用编程语言':'Most used programming languages');
+      page.contentHtml=home.html();
     }else if(base==='/test/styleguide/'){
       setHero(page,t.styleguide);const raw=await fs.readFile('content/styleguide.md','utf8');
       if(page.lang==='en')page.contentHtml=compile(matter(raw).content,'en');else{const saved=await readTranslation('page-styleguide','zh-cn',payloadDigest(raw));if(!saved)throw new Error('Missing saved style-guide translation');page.contentHtml=compile(saved.body,'zh-cn');}

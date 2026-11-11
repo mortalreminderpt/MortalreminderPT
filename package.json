@@ -16,6 +16,8 @@
     "test:authoring": "node scripts/verify-authoring.mjs",
     "test:i18n": "node --test tests/translation.test.mjs",
     "test:secrets": "node scripts/verify-secrets.mjs",
+    "test:cards": "node --test tests/github-cards.test.mjs",
+    "cards:check": "node scripts/github-cards.mjs check",
     "test:visual": "PLAYWRIGHT_BROWSERS_PATH=.sites-runtime/browsers node scripts/visual-compare.mjs",
     "preview": "node scripts/serve.mjs"
   },
