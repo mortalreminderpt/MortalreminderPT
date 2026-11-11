@@ -9,6 +9,7 @@ export interface Card {
   title: string;
   excerptHtml: string;
   bottomHtml: string;
+  href?: string;
 }
 
 export interface SitePage {
@@ -40,6 +41,15 @@ export interface SitePage {
   loadMoreText?: string;
   sectionClass?: string;
   redirectTo?: string;
+  canonicalRoute?: string;
+  alternates?: Record<Language, string>;
+  anchorTranslations?: Record<string, string>;
+  translationId?: string;
+  sourceLang?: Language;
+  tagIds?: string[];
+  categoryIds?: string[];
+  taxonomyId?: string;
+  taxonomyType?: 'tags' | 'categories';
 }
 
 export interface SearchEntry {

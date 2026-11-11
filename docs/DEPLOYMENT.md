@@ -7,6 +7,7 @@
 - 活跃分支：`gh-pages`，使用 Next.js 静态导出，GitHub Actions 构建后部署到既有 GitHub Pages。
 - 不需要常驻 Node.js 服务；域名、原有页面地址及 GitHub 个人主页 README 保留。
 - 开发与文章编辑说明：[DEVELOPMENT.md](../DEVELOPMENT.md)。
+- 单篇源稿、标签统一和保存翻译的规则：[INTERNATIONALIZATION.md](INTERNATIONALIZATION.md)。发布任务先使用 Actions Secret 翻译变化的内容并提交保存结果，再构建静态页面；访客访问不触发翻译请求。
 
 ## 旧站归档
 
@@ -25,6 +26,9 @@ npm ci
 npm run build
 npm run typecheck
 npm run test:content
+npm run test:i18n
+npm run test:authoring
+npm run test:secrets
 npm test
 git push origin gh-pages
 ```

@@ -1,8 +1,8 @@
 import { getPage } from '@/lib/content';
 import { PageRenderer } from '@/components/page-renderer';
-import { siteOrigin } from '@/lib/site-origin';
+import { metadataFor } from '@/lib/metadata';
 
-export const metadata = { title: "PT's Home", alternates: { canonical: siteOrigin + '/' } };
+export function generateMetadata() { return metadataFor(getPage('/')!); }
 
 export default function Home() {
   return <PageRenderer page={getPage('/')!} />;

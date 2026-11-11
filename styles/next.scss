@@ -1,2 +1,3 @@
 // Only behavior/accessibility additions; the original design lives in main.scss.
 [role="button"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.article__title a { pointer-events: auto; }

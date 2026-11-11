@@ -1,10 +1,13 @@
 import { test, expect } from '@playwright/test';
+import fs from 'node:fs';
+
+const articleCount = JSON.parse(fs.readFileSync('content/i18n/posts.json', 'utf8')).posts.length;
 
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => { if (!sessionStorage.getItem('theme')) sessionStorage.setItem('theme', 'night'); });
 });
 
-for (const locale of [{ prefix: '', lang: 'en', count: 64 }, { prefix: '/zh-cn', lang: 'zh-cn', count: 127 }]) {
+for (const locale of [{ prefix: '', lang: 'en', count: articleCount }, { prefix: '/zh-cn', lang: 'zh-cn', count: articleCount }]) {
   test(`${locale.lang}: search, theme, article navigation and code highlighting`, async ({ page }) => {
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
@@ -71,7 +74,7 @@ for (const locale of [{ prefix: '', lang: 'en', count: 64 }, { prefix: '/zh-cn',
     await page.locator('#form-text').fill('Next.js 迁移检查');
     await page.locator('#contact-mail-link').click();
     const href = decodeURIComponent((await page.locator('#contact-mail-link').getAttribute('href'))!);
-    expect(href).toContain('subject=Blog Contact');
+    expect(href).toContain(locale.lang === 'en' ? 'subject=Blog Contact' : 'subject=博客留言');
     expect(href).toContain('PT Test');
     expect(href).toContain('test@example.com');
     expect(href).toContain('Next.js 迁移检查');
@@ -88,9 +91,9 @@ test('mobile menu, theme and language preserve the current page', async ({ page 
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'day');
   await page.locator('.menu-overlay .js-lang-switch').click();
   await expect(page).toHaveURL(/\/zh-cn\/blogs\/$/);
-  await page.getByRole('button', { name: 'Open menu', exact: true }).click();
+  await page.getByRole('button', { name: '打开菜单', exact: true }).click();
   await page.locator('.mobile-nav a[href="/zh-cn/categories/"]').click();
-  await expect(page.locator('h1.hero__title')).toHaveText('Categories');
+  await expect(page.locator('h1.hero__title')).toHaveText('分类');
   await expect(page.locator('.article').first()).toBeVisible();
 });
 
@@ -119,23 +122,28 @@ test('images zoom and close, and missing pages lead home', async ({ page }) => {
   await expect(page).toHaveURL('http://localhost:3100/');
 });
 
-test('language switch on a translated article retains the article URL', async ({ page }) => {
+test('language switch on a translated article maps its section anchor', async ({ page }) => {
   await page.goto('/node.js/2024/12/19/Prisma-Filtering/#equality-filter');
   await page.locator('.nav-buttons .js-lang-switch').click();
-  await expect(page).toHaveURL(/\/zh-cn\/node.js\/2024\/12\/19\/Prisma-Filtering\/#equality-filter$/);
+  await expect(page).toHaveURL(/\/zh-cn\/node.js\/2024\/12\/19\/Prisma-Filtering\/#.+$/);
   await expect(page.locator('.post__title')).toHaveText('Prisma：Filtering');
   await expect(page.locator('.post__content')).toContainText('等于过滤');
+  const id = decodeURIComponent(new URL(page.url()).hash.slice(1));
+  await expect(page.locator('.post__content').locator(`[id="${id}"]`)).toBeAttached();
+  await page.locator('.nav-buttons .js-lang-switch').click();
+  await expect(page).toHaveURL(/Prisma-Filtering\/#equality-filter$/);
 });
 
-test('missing translations and localized 404 navigation follow the original URLs', async ({ page }) => {
+test('previously untranslated articles now exist, and Chinese 404 navigation stays Chinese', async ({ page }) => {
   await page.goto('/zh-cn/2022/04/20/操作系统-一-操作系统的概念和功能/');
   await page.locator('.nav-buttons .js-lang-switch').click();
   await expect.poll(() => decodeURI(new URL(page.url()).pathname)).toBe('/2022/04/20/操作系统-一-操作系统的概念和功能/');
-  await expect(page.locator('.hero__title')).toHaveText('Page not found');
+  await expect(page.locator('.post__title')).toContainText('Operating Systems');
   const response = await page.goto('/zh-cn/a-page-that-does-not-exist/');
   expect(response!.status()).toBe(404);
   await expect(page.locator('body')).toHaveClass(/is-in/);
-  await expect(page).toHaveTitle('Page not found');
+  await expect(page).toHaveTitle('没有找到内容');
+  await expect(page.locator('html')).toHaveAttribute('lang', 'zh-CN');
   await page.locator('#homepage').click();
   await expect(page).toHaveURL('http://localhost:3100/zh-cn/');
   await page.goto('/zh-cn');

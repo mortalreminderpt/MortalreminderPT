@@ -3,6 +3,7 @@
 import { useRef } from 'react';
 import config from '@/content/site.json';
 import type { Language } from '@/lib/types';
+import { labelsFor } from '@/lib/i18n';
 
 export function ContactForm({ lang }: { lang: Language }) {
   const t = config.translations[lang].global.contact;
@@ -27,7 +28,7 @@ export function ContactForm({ lang }: { lang: Language }) {
         if (!form.current?.reportValidity()) { event.preventDefault(); return; }
         const values = new FormData(form.current);
         const body = [`${t.name}: ${String(values.get('name')).trim()}`, `${t.email}: ${String(values.get('email')).trim()}`, '', `${t.message}:`, String(values.get('message')).trim()].join('\n');
-        event.currentTarget.href = `mailto:${email}?subject=${encodeURIComponent('Blog Contact')}&body=${encodeURIComponent(body)}`;
+        event.currentTarget.href = `mailto:${email}?subject=${encodeURIComponent(labelsFor(lang).contactSubject)}&body=${encodeURIComponent(body)}`;
       }}>{t['send-message']}</a></div>
     </form>
     <hr />

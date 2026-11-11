@@ -5,6 +5,7 @@ process.env.PLAYWRIGHT_BROWSERS_PATH ||= path.join(process.cwd(), '.sites-runtim
 
 export default defineConfig({
   testDir: './tests',
+  testMatch: '**/*.spec.ts',
   timeout: 60000,
   expect: { timeout: 15000 },
   workers: 2,

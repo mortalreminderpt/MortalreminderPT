@@ -6,6 +6,7 @@ import { SiteEffects } from './site-effects';
 import { ArticleCard } from './article-card';
 import { BlogFeed } from './blog-feed';
 import { ContactForm } from './contact-form';
+import { labelsFor } from '@/lib/i18n';
 
 function Cards({ cards }: { cards: Card[] }) {
   return <>{cards.map((card, i) => <ArticleCard key={`${card.title}-${i}`} card={card} />)}</>;
@@ -43,8 +44,8 @@ function MainContent({ page }: { page: SitePage }) {
 export function PageRenderer({ page }: { page: SitePage }) {
   const fragments = getShared(page.lang);
   return <>
-    <Header lang={page.lang} className={page.headerClass} />
-    <main className="content" aria-label="Content"><MainContent page={page} /></main>
+    <Header lang={page.lang} className={page.headerClass} alternates={page.alternates} anchorTranslations={page.anchorTranslations} />
+    <main className="content" aria-label={labelsFor(page.lang).content}><MainContent page={page} /></main>
     <SiteEffects lang={page.lang} title={page.title} redirectTo={page.redirectTo} />
     <Html html={fragments.footerWidgetsHtml} />
     <Html html={fragments.footerHtml} />

@@ -2,7 +2,7 @@
 
 将 [MortalreminderPT](https://github.com/mortalreminderpt/MortalreminderPT) 的个人主页和中英文博客迁移到 Next.js，保留原站的视觉设计、文章内容、页面路径及交互。
 
-对照版本：[`6bf3cee258799cfe83a9e24a5c8cd6643f72aa31`](https://github.com/mortalreminderpt/MortalreminderPT/commit/6bf3cee258799cfe83a9e24a5c8cd6643f72aa31)。原有 **301 个页面、191 篇文章（英文 64、中文 127）**均已迁入。
+对照版本：[`6bf3cee258799cfe83a9e24a5c8cd6643f72aa31`](https://github.com/mortalreminderpt/MortalreminderPT/commit/6bf3cee258799cfe83a9e24a5c8cd6643f72aa31)。原有 **301 个页面地址、191 份中英文正文**均保留；现在维护 **127 篇源稿，自动生成中英文各 127 篇文章**。标签和分类共用稳定标识，具体规则见 [自动翻译说明](docs/INTERNATIONALIZATION.md)。
 
 正式网站：[ptzhao.com](https://ptzhao.com)。验证结果见 [VALIDATION.md](docs/VALIDATION.md)，部署与旧版恢复见 [DEPLOYMENT.md](docs/DEPLOYMENT.md)。根目录 `README.md` 保留 GitHub 个人主页内容。
 
@@ -36,9 +36,9 @@ npm run preview
 
 ## 编辑内容
 
-`content/posts/en/` 与 `content/posts/zh-cn/` 保存原始 Markdown，`content/home.md` 是首页内容。修改后运行 `npm run content` 更新内容数据，或直接执行 `npm run build`。
+中文源稿放入 `content/posts/zh-cn/`，英文源稿放入 `content/posts/en/`，同一篇只写一份；另一种语言由构建任务翻译并保存到 `content/translations/`。`content/home.md` 是首页源稿。推送 `gh-pages` 后自动翻译、保存并发布。
 
-旧文章的原始 Kramdown/TeX HTML 保存在 `content/rendered/`，通过源码摘要判断是否可复用，以保留现有排版。修改或新增的 Markdown 由 JavaScript 管线处理，支持代码块、目录、属性及数学公式。
+旧文章的原始 Kramdown/TeX HTML 保存在 `content/rendered/`，通过源码摘要判断是否可复用，以保留现有排版。修改或新增的 Markdown 由 JavaScript 管线处理，支持代码块、目录、属性及数学公式。已有翻译在访问和重复构建时直接复用；只有新内容需要构建环境的私有 API Key。
 
 新增文章文件名采用 `YYYY-MM-DD-title.md`，例如：
 
@@ -63,7 +63,7 @@ featured: false
 Article content.
 ```
 
-新增文章会更新列表、分页、分类、标签、相关推荐、搜索与页脚。中文文章放入 `zh-cn` 目录，地址自动保留 `/zh-cn/` 前缀。双语文章使用相同的后续路径即可对应切换。
+新增文章会同时更新两种语言的列表、分页、分类、标签、相关推荐、搜索与页脚。中文页面自动带 `/zh-cn/` 前缀，文章和分类的语言切换使用明确的对应关系；无需再创建第二份源稿或另一种语言的标签。
 
 ## 项目结构
 
@@ -72,7 +72,9 @@ app/                 Next.js 路由及页面元数据
 components/          页面布局和 React 交互
 lib/                 内容读取、数据类型与图片放大
 styles/              原始 SCSS、图标字体样式及少量交互样式
-content/posts/       原始文章 Markdown
+content/posts/       每篇一份文章源稿
+content/i18n/        界面文案、文章对应关系和标签/分类标识
+content/translations/ 保存的译文及片段缓存
 content/rendered/    原文章的渲染缓存和页面数据
 public/              原站图片、字体、样式和独立工具库
 scripts/             内容构建、静态导出检查和视觉验证
@@ -86,12 +88,14 @@ docs/                验证说明
 npm run typecheck
 npm run test:content
 npm run test:authoring
+npm run test:i18n
+npm run test:secrets
 PLAYWRIGHT_BROWSERS_PATH=.sites-runtime/browsers npx playwright install chromium
 npm test
 ```
 
 视觉对照脚本为 `scripts/visual-compare.mjs`，使用相同的外部资源缓存对比原站与 Next.js 的截图。需先分别启动原站和本项目的静态预览；默认端口为 3101 与 3100，也可设置 `REFERENCE_URL`、`REPLICA_URL`。
 
-推送到 `gh-pages` 后，`.github/workflows/static.yml` 自动构建、检查并发布 `out/` 到 GitHub Pages；也支持手动触发。canonical、RSS 和 sitemap 默认使用 `https://ptzhao.com`，可通过 `SITE_URL` 覆盖。`out/CNAME` 保留 `ptzhao.com`。
+推送到 `gh-pages` 后，`.github/workflows/static.yml` 先处理变化的翻译并将结果提交到仓库，再构建、检查并发布 `out/`；也支持手动触发。`DEEPSEEK_API_KEY` 仅放在仓库 Actions Secrets。canonical、语言链接、RSS 和 sitemap 默认使用 `https://ptzhao.com`，可通过 `SITE_URL` 覆盖。`out/CNAME` 保留 `ptzhao.com`。
 
 原站的每日 Bing 背景、头像、GitHub 统计卡片及部分文章图片仍使用原有外部地址。原主题作者署名、图标和第三方工具的许可证信息均予以保留。

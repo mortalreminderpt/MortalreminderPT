@@ -31,7 +31,7 @@ export function BlogFeed({ initialCards, pageNumber, totalPages, lang, label }: 
     <div className="container"><div className="row"><div className="col col-12 load-more">
       {nextPage <= totalPages && <div className="load-more-section">
         <button className="load-more-posts button button--middle" onClick={loadMore} disabled={loading} aria-live="polite">
-          {loading ? 'Loading...' : error ? (lang === 'zh-cn' ? '重试' : 'Try again') : label || 'Load more'}
+          {loading ? (lang === 'zh-cn' ? '加载中...' : 'Loading...') : error ? (lang === 'zh-cn' ? '重试' : 'Try again') : label || 'Load more'}
         </button>
       </div>}
     </div></div></div>

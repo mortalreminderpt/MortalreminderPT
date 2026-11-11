@@ -141,9 +141,10 @@ export async function callDeepSeek(items, { sourceLang, targetLang, glossary = [
 }
 export async function translateDocument(payload, {sourceLang,targetLang,glossary=[],request=callDeepSeek,onProgress=()=>{}}) {
   const protectedBody=protectMarkdown(payload.body);
+  const protectedMetadata=Object.fromEntries(['title','description'].map(key=>[key,protectMarkdown(payload[key]||'')]));
   const segments=splitMarkdown(protectedBody.text);
   const items=[];
-  for (const key of ['title','description']) if (payload[key]) items.push({id:key,text:payload[key]});
+  for (const key of ['title','description']) if (payload[key]) items.push({id:key,text:protectedMetadata[key].text});
   for(let i=0;i<segments.length;i++) if (segments[i].text) items.push({id:'body-'+i,text:segments[i].text});
   const translated=new Map();
   const missing=[];
@@ -170,5 +171,5 @@ export async function translateDocument(payload, {sourceLang,targetLang,glossary
   const masked=segments.map((segment,i)=>'literal'in segment?segment.literal:segment.prefix+translated.get('body-'+i)+segment.suffix).join('');
   const body=protectedBody.restore(masked);
   validateTranslatedMarkdown(payload.body,body);
-  return {title:translated.get('title')||'',description:translated.get('description')||'',body,model};
+  return {title:protectedMetadata.title.restore(translated.get('title')||''),description:protectedMetadata.description.restore(translated.get('description')||''),body,model};
 }

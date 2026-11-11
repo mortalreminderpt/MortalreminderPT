@@ -22,12 +22,14 @@ export async function prepareTranslations({ check=false, plan=false, concurrency
   if(plan){console.log(JSON.stringify(summary,null,2));return summary;}
   if(check){if(pending.length||unknown.length)throw new Error(`Missing or stale translations: ${pending.length} documents, ${unknown.length} taxonomy labels. Run npm run translate with the build-only DEEPSEEK_API_KEY.`);return summary;}
   for(const entry of unknown){
+    if(taxonomyLookup(taxonomy,entry.type,entry.name))continue;
     const targetLang=otherLanguage(entry.sourceLang);
-    const result=await request([{id:'label',text:entry.name}],{sourceLang:entry.sourceLang,targetLang,glossary:[]});
-    const labels={[entry.sourceLang]:entry.name,[targetLang]:result.translations.get('label')};
+    const shared=taxonomyLookup(taxonomy,entry.type==='tags'?'categories':'tags',entry.name);
+    const result=shared?null:await request([{id:'label',text:entry.name}],{sourceLang:entry.sourceLang,targetLang,glossary:[]});
+    const labels=shared?{...shared.labels}:{[entry.sourceLang]:entry.name,[targetLang]:result.translations.get('label')};
     const existing=taxonomyLookup(taxonomy,entry.type,labels.en)||taxonomyLookup(taxonomy,entry.type,labels['zh-cn']);
     if(existing)existing.aliases=[...new Set([...(existing.aliases||[]),entry.name])];
-    else {let id=slug(labels.en);if(!id)id='term-'+digest(entry.name).slice(0,12);if(taxonomy[entry.type].some(term=>term.id===id))throw new Error('Taxonomy identity collision; add an explicit alias for '+entry.name);taxonomy[entry.type].push({id,labels,aliases:[entry.name,...Object.values(labels)]});}
+    else {let id=shared?.id||slug(labels.en);if(!id)id='term-'+digest(entry.name).slice(0,12);if(taxonomy[entry.type].some(term=>term.id===id))id+='-'+digest(entry.name).slice(0,8);taxonomy[entry.type].push({id,labels,aliases:[entry.name,...Object.values(labels)]});}
     validateTaxonomy(taxonomy);await atomicWrite('content/i18n/taxonomy.json',taxonomy);
     console.log(`Saved bilingual ${entry.type} label: ${entry.name}`);
   }

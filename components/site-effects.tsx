@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { toggleTheme } from './header';
 import type { Language } from '@/lib/types';
 import { installImageZoom } from '@/lib/image-zoom';
+import { labelsFor, htmlLanguage } from '@/lib/i18n';
 
 declare global {
   interface Window {
@@ -27,10 +28,12 @@ function loadScript(id: string, src: string) {
 
 export function SiteEffects({ lang, title, redirectTo }: { lang: Language; title: string; redirectTo?: string }) {
   const [scrolled, setScrolled] = useState(false);
+  const t = labelsFor(lang);
   useEffect(() => {
-    if (redirectTo) window.location.replace(redirectTo);
+    if (redirectTo) window.location.replace(redirectTo + window.location.search + window.location.hash);
+    document.documentElement.lang = htmlLanguage(lang);
     document.title = title;
-    const timer = window.setTimeout(() => document.body.classList.add('is-in'), 150);
+    const timer = window.setTimeout(() => { document.title = title; document.body.classList.add('is-in'); }, 150);
     const onScroll = () => { setScrolled(window.scrollY > 0.2 * window.innerHeight); };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -114,9 +117,9 @@ export function SiteEffects({ lang, title, redirectTo }: { lang: Language; title
   }, [lang, title, redirectTo]);
   return <>
     <div className={`pop${scrolled ? ' is-active' : ''}`}>
-      <i id="js-theme-switch-pop" className="pop-item ion ion-md-contrast" title="Theme Switch" role="button" aria-label="Switch theme" tabIndex={0} onClick={toggleTheme} onKeyDown={e => { if (e.key === 'Enter') toggleTheme(); }} />
+      <i id="js-theme-switch-pop" className="pop-item ion ion-md-contrast" title={t.switchTheme} role="button" aria-label={t.switchTheme} tabIndex={0} onClick={toggleTheme} onKeyDown={e => { if (e.key === 'Enter') toggleTheme(); }} />
       <br />
-      <i className="top pop-item ion ion-ios-arrow-up" title="Top" role="button" aria-label="Back to top" tabIndex={0} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} onKeyDown={e => { if (e.key === 'Enter') window.scrollTo({ top: 0, behavior: 'smooth' }); }} />
+      <i className="top pop-item ion ion-ios-arrow-up" title={t.backTop} role="button" aria-label={t.backTop} tabIndex={0} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} onKeyDown={e => { if (e.key === 'Enter') window.scrollTo({ top: 0, behavior: 'smooth' }); }} />
     </div>
   </>;
 }

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getRoutes, getPage } from '@/lib/content';
 import { PageRenderer } from '@/components/page-renderer';
-import { siteOrigin } from '@/lib/site-origin';
+import { metadataFor } from '@/lib/metadata';
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -18,7 +18,7 @@ async function currentPage({ params }: Props) {
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const page = await currentPage(props);
   if (!page) return {};
-  return { title: page.title, description: page.description || undefined, alternates: { canonical: siteOrigin + page.route } };
+  return metadataFor(page);
 }
 export default async function RoutedPage(props: Props) {
   const page = await currentPage(props);

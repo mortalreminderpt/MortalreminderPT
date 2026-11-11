@@ -13,5 +13,6 @@ public/search.json
 public/zh-cn/search.json
 public/css/katex.min.css
 public/css/fonts/
+content/translations/**/*.tmp
 .env*
 !.env.example
