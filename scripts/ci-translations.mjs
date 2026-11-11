@@ -4,7 +4,7 @@ import { prepareTranslations } from './translate-content.mjs';
 
 const git=(...args)=>execFileSync('git',args,{encoding:'utf8'}).trim();
 const branch=process.env.GITHUB_REF_NAME;
-if(!process.env.GITHUB_ACTIONS||!['gh-pages','fix/github-cards-2026-11-11'].includes(branch))throw new Error('Translation persistence must run on the authorized repository branch.');
+if(!process.env.GITHUB_ACTIONS||branch!=='gh-pages')throw new Error('Translation persistence must run on the authorized repository branch.');
 git('config','user.name','github-actions[bot]');
 git('config','user.email','41898282+github-actions[bot]@users.noreply.github.com');
 let error;

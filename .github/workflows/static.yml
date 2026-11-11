@@ -2,7 +2,7 @@ name: Deploy Next.js to GitHub Pages
 
 on:
   push:
-    branches: [gh-pages, fix/github-cards-2026-11-11]
+    branches: [gh-pages]
   schedule:
     - cron: '37 18 * * *'
   workflow_dispatch:
@@ -35,7 +35,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
         with:
           card: stats
-          options: username=mortalreminderpt&show_icons=true&theme=transparent&hide_border=true&disable_animations=true&locale=en
+          options: username=mortalreminderpt&show_icons=true&theme=transparent&hide_border=true&disable_animations=true&text_bold=false&locale=en
           path: .generated/github-cards/github-stats.svg
           core_version: '2.2.0'
           fail_on_error: 'true'
@@ -57,7 +57,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
         with:
           card: stats
-          options: username=mortalreminderpt&show_icons=true&theme=transparent&hide_border=true&disable_animations=true&locale=cn
+          options: username=mortalreminderpt&show_icons=true&theme=transparent&hide_border=true&disable_animations=true&text_bold=false&locale=cn
           path: .generated/github-cards/github-stats-zh-cn.svg
           core_version: '2.2.0'
           fail_on_error: 'true'
@@ -96,7 +96,7 @@ jobs:
       - run: npm run test:authoring
       - run: npm run test:cards
       - run: npm run cards:check
-      - name: Verify no translation credential reaches the public artifact
+      - name: Verify private credentials are absent from the public artifact
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           GITHUB_CARDS_TOKEN: ${{ github.token }}

@@ -90,6 +90,8 @@ npm run test:content
 npm run test:authoring
 npm run test:i18n
 npm run test:secrets
+npm run test:cards
+npm run cards:check
 PLAYWRIGHT_BROWSERS_PATH=.sites-runtime/browsers npx playwright install chromium
 npm test
 ```
@@ -98,4 +100,4 @@ npm test
 
 推送到 `gh-pages` 后，`.github/workflows/static.yml` 先处理变化的翻译并将结果提交到仓库，再构建、检查并发布 `out/`；也支持手动触发。`DEEPSEEK_API_KEY` 仅放在仓库 Actions Secrets。canonical、语言链接、RSS 和 sitemap 默认使用 `https://ptzhao.com`，可通过 `SITE_URL` 覆盖。`out/CNAME` 保留 `ptzhao.com`。
 
-原站的每日 Bing 背景、头像、GitHub 统计卡片及部分文章图片仍使用原有外部地址。原主题作者署名、图标和第三方工具的许可证信息均予以保留。
+GitHub 统计卡片已改为仓库保存的静态 SVG，每日自动更新；更新失败继续显示最后成功结果。详见 [统计卡片维护说明](docs/GITHUB-CARDS.md)。每日 Bing 背景、头像及部分文章图片仍使用原有外部地址。原主题作者署名、图标和第三方工具的许可证信息均予以保留。
