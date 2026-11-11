@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "sourceDigest": "6dfa587d9de0bf778130b090046bb2e087e659265021a7fb7db4867161455ac5",
+  "sourceDigest": "2e8f70d3f22ef193d2d0706e61cd204f0693fe430fecb3c38537fea54630d457",
   "sourceLang": "en",
   "targetLang": "zh-cn",
   "provider": "deepseek",
-  "model": "deepseek-flash",
-  "targetDigest": "143bce7ebb85181ab938830f1282e3e6be64130e91e576bb969d87f55b6283a1",
-  "translatedAt": "2026-11-11T10:59:15.685Z"
+  "model": "saved-fragments",
+  "targetDigest": "3fc6a0c8af2a51ff932ba49e064d75437bdc79c5db4696e58c3c96a79db9c014",
+  "translatedAt": "2026-11-11T11:51:49.131Z"
 }

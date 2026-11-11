@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "username": "mortalreminderpt",
+  "updatedAt": "2026-11-11T11:51:48.897Z",
+  "generator": {
+    "repository": "stats-organization/github-readme-stats-action",
+    "revision": "2c498845f71017821efaad14293ebc736156ef21",
+    "core": "2.2.0"
+  },
+  "cards": {
+    "stats-en": {
+      "file": "github-stats.svg",
+      "language": "en",
+      "width": "467",
+      "height": "195",
+      "viewBox": "0 0 467 195",
+      "textCount": 12,
+      "bytes": 7908,
+      "sha256": "1c76c5b4191b0f119e596e3b3c2642dde2a137f57dbbc63b32d58987900c5b02"
+    },
+    "languages-en": {
+      "file": "top-languages.svg",
+      "language": "en",
+      "width": "350",
+      "height": "215",
+      "viewBox": "0 0 350 215",
+      "textCount": 6,
+      "bytes": 6223,
+      "sha256": "473bd9a5df86e8136e0a0174ffae5e3a5ad03bcb3afaa8a0df382178ab23d937"
+    },
+    "stats-zh-cn": {
+      "file": "github-stats-zh-cn.svg",
+      "language": "zh-cn",
+      "width": "467",
+      "height": "195",
+      "viewBox": "0 0 467 195",
+      "textCount": 12,
+      "bytes": 8308,
+      "sha256": "a47b4f935d793a42f98c4ab23d6005833ffee91f5b79fc36cfbc3ef89d59839e"
+    },
+    "languages-zh-cn": {
+      "file": "top-languages-zh-cn.svg",
+      "language": "zh-cn",
+      "width": "350",
+      "height": "215",
+      "viewBox": "0 0 350 215",
+      "textCount": 6,
+      "bytes": 6252,
+      "sha256": "04625af6a411f1e2910edc12b9f7407f99689e1fceba1cbafb07aaa03f37aa8a"
+    }
+  }
+}
