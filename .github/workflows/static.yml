@@ -2,16 +2,16 @@ name: Deploy Next.js to GitHub Pages
 
 on:
   push:
-    branches: [gh-pages]
+    branches: [gh-pages, codex/i18n-2026-11-11]
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -22,19 +22,34 @@ jobs:
       NEXT_TELEMETRY_DISABLED: '1'
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: npm
       - run: npm ci
+      - name: Translate and persist changed content
+        id: translations
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: node scripts/ci-translations.mjs
       - run: npm run build
+        if: github.ref == 'refs/heads/gh-pages'
+        env:
+          SOURCE_REVISION: ${{ steps.translations.outputs.revision }}
       - run: npm run typecheck
+        if: github.ref == 'refs/heads/gh-pages'
       - run: npm run test:content
+        if: github.ref == 'refs/heads/gh-pages'
       - uses: actions/configure-pages@v5
+        if: github.ref == 'refs/heads/gh-pages'
       - uses: actions/upload-pages-artifact@v4
+        if: github.ref == 'refs/heads/gh-pages'
         with:
           path: out
   deploy:
+    if: github.ref == 'refs/heads/gh-pages'
     needs: build
     runs-on: ubuntu-latest
     environment:

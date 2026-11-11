@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "sourceDigest": "b4d39f9b99b51185ffb4e37b3738924744c148efcc30e4624650e4133986f189",
+  "sourceLang": "zh-cn",
+  "targetLang": "en",
+  "provider": "existing-human-translation",
+  "targetDigest": "86587815c128b92da8234092db79cab8f9870ef47c2b0a81048614a5c8e3673e"
+}

@@ -1,0 +1,2293 @@
+{
+  "version": 1,
+  "posts": [
+    {
+      "id": "post-07c0a2c4c1e39bc838ff",
+      "key": "/algorithm/2024/11/28/经典卷积网络/",
+      "source": "content/posts/zh-cn/2024-11-28-经典卷积网络.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/11/28/经典卷积网络/",
+        "zh-cn": "/zh-cn/algorithm/2024/11/28/经典卷积网络/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "07c0a2c4c1e39bc838fff7f1506903a4e294a13769eb3e9b4d178583ac11e09f.json",
+          "rawDigest": "8f3021ec628057bb4473c8fc44bdce11f1890e80e1f2b6ba18980ea5e7f98541"
+        },
+        "zh-cn": {
+          "file": "05c65612c1486c679a3b2b16099194d17649d43d5335127ac9a7b1b46a543c00.json",
+          "rawDigest": "04eb456ceade79a49c0430ab1621f0cc950053975db77bddaad7d8b536e15c7f"
+        }
+      }
+    },
+    {
+      "id": "post-0d5b6eb8ad9ed4ab4dc0",
+      "key": "/2022/05/01/操作系统-三十六-死锁的预防/",
+      "source": "content/posts/zh-cn/2022-05-01-操作系统（三十六）死锁的预防.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/05/01/操作系统-三十六-死锁的预防/",
+        "zh-cn": "/zh-cn/2022/05/01/操作系统-三十六-死锁的预防/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "97c5298639cfe09e7bac371c2df54806700f26e25105f438776ca42403775fe5.json",
+          "rawDigest": "adb9e895ea45600d529f0b20d478b1d5ed2a0703b9a0a61c4b17881bd3e80132"
+        }
+      }
+    },
+    {
+      "id": "post-0f2759dc4da614ccd4e2",
+      "key": "/2022/04/20/操作系统-一-操作系统的概念和功能/",
+      "source": "content/posts/zh-cn/2022-04-20-操作系统（一）操作系统的概念和功能.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/20/操作系统-一-操作系统的概念和功能/",
+        "zh-cn": "/zh-cn/2022/04/20/操作系统-一-操作系统的概念和功能/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "994437f401393ba580b033aab6185e80d71636acde2f230b02e39736f77c23dc.json",
+          "rawDigest": "2544243c503a4c8d8d4040bebcd6f2140b53151bd2d0ccfd39c72debf93b35f6"
+        }
+      }
+    },
+    {
+      "id": "post-105b7f3661f78fd9199e",
+      "key": "/algorithm/2024/11/28/数据增强/",
+      "source": "content/posts/zh-cn/2024-11-28-数据增强.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/11/28/数据增强/",
+        "zh-cn": "/zh-cn/algorithm/2024/11/28/数据增强/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "105b7f3661f78fd9199e65fac71f31a1232bd60057a83bdaf967a51152747dec.json",
+          "rawDigest": "9215d77c7f7c23450330abb8c61b59c7c251ca1acb56e5452951dc33916dcea1"
+        },
+        "zh-cn": {
+          "file": "b4e3ba6e6c3e86bc72d70cb8214c1d0ac49f76e64b29f5f497240820776f6681.json",
+          "rawDigest": "fb3e8f86e4359a07bc3078760b97edf885dafa599c87f6e6f29efae88b5c00c5"
+        }
+      }
+    },
+    {
+      "id": "post-171076ecc03e3195150b",
+      "key": "/2022/05/01/操作系统-三十八-死锁的检测和解除/",
+      "source": "content/posts/zh-cn/2022-05-01-操作系统（三十八）死锁的检测和解除.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/05/01/操作系统-三十八-死锁的检测和解除/",
+        "zh-cn": "/zh-cn/2022/05/01/操作系统-三十八-死锁的检测和解除/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "221c0d8344f8763f745073111a262fdc207ebed3cd2af66a1c984787e6ea3070.json",
+          "rawDigest": "cb21a539168f63fde2afc08a527f4859abcc9a30e687a6e24f4150677f1a9219"
+        }
+      }
+    },
+    {
+      "id": "post-1a34db49dc2e80d0e845",
+      "key": "/algorithm/2024/11/30/长短期记忆网络-LSTM/",
+      "source": "content/posts/zh-cn/2024-11-30-长短期记忆网络（LSTM）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/11/30/长短期记忆网络-LSTM/",
+        "zh-cn": "/zh-cn/algorithm/2024/11/30/长短期记忆网络-LSTM/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "1a34db49dc2e80d0e8453d9e8396e5d33cab1180ec2c7af5342ae1f09580ed23.json",
+          "rawDigest": "52651d72db98c17c44a1fa105c22344a819d99b8e5f0528378616a933f3b765d"
+        },
+        "zh-cn": {
+          "file": "331743448c5160763901c09b66bf96a2288e6b79abb2bd9f90e53dbe23b4bce8.json",
+          "rawDigest": "fd66497909f4031dec2076702093ac7315b8e7d5f4e09c00fcc25bad46832090"
+        }
+      }
+    },
+    {
+      "id": "post-1af344a1d5bb3f05861b",
+      "key": "/apollo/2023/11/24/Apollo配置中心-五-灰度发布/",
+      "source": "content/posts/zh-cn/2023-11-24-Apollo配置中心（五）灰度发布.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/apollo/2023/11/24/Apollo配置中心-五-灰度发布/",
+        "zh-cn": "/zh-cn/apollo/2023/11/24/Apollo配置中心-五-灰度发布/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "1af344a1d5bb3f05861b3cc1959ac32a514ddca8016c0dbbfb6595bc401e851b.json",
+          "rawDigest": "86587815c128b92da8234092db79cab8f9870ef47c2b0a81048614a5c8e3673e"
+        },
+        "zh-cn": {
+          "file": "6d9f53dbaea4512a9cb8ca58378973c2c83147ddc68abb713d48c6942c302090.json",
+          "rawDigest": "4547bd6d51ce497c2ab391783f1b5b56bf3be93ab3db3e38793f050d7079cff4"
+        }
+      }
+    },
+    {
+      "id": "post-1baf7a8ee0acdb35cf6a",
+      "key": "/2022/04/21/操作系统-九-虚拟机/",
+      "source": "content/posts/zh-cn/2022-04-20-操作系统（九）虚拟机.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/21/操作系统-九-虚拟机/",
+        "zh-cn": "/zh-cn/2022/04/21/操作系统-九-虚拟机/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "870b01c27a9742a244985886090c3556627269ab03c540eee41a1e16cf4a4077.json",
+          "rawDigest": "dcc8f2b4cd131bfae2ba338ba7cb51c5f6b7fb4de5863fcc22139f22239e7c1e"
+        }
+      }
+    },
+    {
+      "id": "post-1c8c9c139bdb4f3421a1",
+      "key": "/maven/2023/12/05/Maven-十一-标准文件目录/",
+      "source": "content/posts/zh-cn/2023-12-05-Maven（十一）标准文件目录.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/maven/2023/12/05/Maven-十一-标准文件目录/",
+        "zh-cn": "/zh-cn/maven/2023/12/05/Maven-十一-标准文件目录/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "1c8c9c139bdb4f3421a1ed4dc7215e05e8c1ca7720fa243c636b2b6dcf35d4b3.json",
+          "rawDigest": "91b70a1574c94b6e707f3d9c34000ca1cfc472734faea425e8fb3e3d4430421c"
+        },
+        "zh-cn": {
+          "file": "5805e4f3cddea2cbaa58140bc145a0895fdeb97da6532d8f4f245885c7863086.json",
+          "rawDigest": "0bc0ae24520c92c63a7def259504158becffd25bb6feb890006059c486c23846"
+        }
+      }
+    },
+    {
+      "id": "post-1f54faf36c1e944e14d5",
+      "key": "/maven/2023/12/04/Maven-七-命名约定指南/",
+      "source": "content/posts/zh-cn/2023-12-04-Maven（七）命名约定指南.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/maven/2023/12/04/Maven-七-命名约定指南/",
+        "zh-cn": "/zh-cn/maven/2023/12/04/Maven-七-命名约定指南/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "1f54faf36c1e944e14d5c59312d17db7320dea7a60935d437c7f6901921bff20.json",
+          "rawDigest": "9c567006ce3799257c847b78fbd7d80861df8494d32aea12bf16600655349ff0"
+        },
+        "zh-cn": {
+          "file": "2fff8e6871dd2e51af749a45827914008159bee362150f2b4665bdfb607ba3d9.json",
+          "rawDigest": "830c5db8e1190093700fd0f1c32ab403fdb6e513f049c45579bea9c4aac9cd5a"
+        }
+      }
+    },
+    {
+      "id": "post-22ddc2c8df7a683ef59a",
+      "key": "/react/2024/09/15/react-hook-6/",
+      "source": "content/posts/zh-cn/2024-09-15-react-hook-6.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/react/2024/09/15/react-hook-6/",
+        "zh-cn": "/zh-cn/react/2024/09/15/react-hook-6/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "7cfe18b80f6ffb7b3b92d77203e99eca4d8dcf786453d3e01ccbb49707ff929d.json",
+          "rawDigest": "c23dd78ea74c62f1a59c93fa5db2cc6eb601de184c1f907618e1293000e57060"
+        }
+      }
+    },
+    {
+      "id": "post-28512fb86512baeb9370",
+      "key": "/2022/04/23/操作系统-十六-线程的状态与转换/",
+      "source": "content/posts/zh-cn/2022-04-23-操作系统（十六）线程的状态与转换.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/23/操作系统-十六-线程的状态与转换/",
+        "zh-cn": "/zh-cn/2022/04/23/操作系统-十六-线程的状态与转换/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "0052ef71bdf8c5407217b5272600a4a3abfc729e5f173e6006c27a33692daa5a.json",
+          "rawDigest": "79926014a8d980541fa3f031525be7132c308ca0834ba790158237920e8140e5"
+        }
+      }
+    },
+    {
+      "id": "post-2891ab669b6aa37eda6b",
+      "key": "/algorithm/2024/11/21/Pytorch简介/",
+      "source": "content/posts/zh-cn/2024-11-20-Pytorch简介.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/11/21/Pytorch简介/",
+        "zh-cn": "/zh-cn/algorithm/2024/11/21/Pytorch简介/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "2891ab669b6aa37eda6bef75c1628fdb42136545df12776cc6e4546d6b41f309.json",
+          "rawDigest": "62a28083404bcd07e6fa74231da8de1dc80829448da3c67c5a0100243a566722"
+        },
+        "zh-cn": {
+          "file": "8965d36db69e3f43e2bcc6fa7f9727dd50dc961d8025b4595225d79951269e7c.json",
+          "rawDigest": "54ece1970cede728a8967c7a24f2416ea0d51cf6ba15e9f3c71a1b767a84c25d"
+        }
+      }
+    },
+    {
+      "id": "post-2dd506e05025731b6849",
+      "key": "/2022/04/25/操作系统-二十五-进程互斥的硬件实现方法/",
+      "source": "content/posts/zh-cn/2022-04-25-操作系统（二十五）进程互斥的硬件实现方法.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/25/操作系统-二十五-进程互斥的硬件实现方法/",
+        "zh-cn": "/zh-cn/2022/04/25/操作系统-二十五-进程互斥的硬件实现方法/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "3db35fcf4407b960d4f8f7940804c936d82e72e67825a8ca2b0b62ea9ff66629.json",
+          "rawDigest": "9a915badb2b6a7c3254c84958e7ab757d9cb3cccd291f4f84e9645ef2187b210"
+        }
+      }
+    },
+    {
+      "id": "post-35d2fa6708f04297a48f",
+      "key": "/2022/04/22/操作系统-十五-线程的实现方式和多线程模型/",
+      "source": "content/posts/zh-cn/2022-04-22-操作系统（十五）线程的实现方式和多线程模型.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/22/操作系统-十五-线程的实现方式和多线程模型/",
+        "zh-cn": "/zh-cn/2022/04/22/操作系统-十五-线程的实现方式和多线程模型/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "ca6c294c7bef7a190b0c3702629d3d661c655a8fd210d77b2e1adaa41f02061d.json",
+          "rawDigest": "7784cbc11d3950005b64c7e052919ac22119b05504fdb50be6eab5b0dbae42c7"
+        }
+      }
+    },
+    {
+      "id": "post-3616708ec783906c942d",
+      "key": "/2022/09/10/设计模式-三-生成器-Builder/",
+      "source": "content/posts/zh-cn/2022-09-10-设计模式（三）生成器（Builder）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/09/10/设计模式-三-生成器-Builder/",
+        "zh-cn": "/zh-cn/2022/09/10/设计模式-三-生成器-Builder/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "0520db0341acda4a25cee02b386362094a8668922cae5646f6f111e3b0895d1f.json",
+          "rawDigest": "61a39222fba2f89d6269b2a87d68ccbdfa82dc0ecf763283ae7a6b3c8dbe3922"
+        }
+      }
+    },
+    {
+      "id": "post-364df1e14b5e020db829",
+      "key": "/react/2024/09/12/react-2/",
+      "source": "content/posts/zh-cn/2024-09-12-react-2.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/react/2024/09/12/react-2/",
+        "zh-cn": "/zh-cn/react/2024/09/12/react-2/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "7badf69f05dc9d00a290860ab43a9058fc8af43cb4ae34c16793a6b936418325.json",
+          "rawDigest": "142ecdc21b4397899fe5ddc0e9c6adff69d4078e59051ad665342c5c82371067"
+        }
+      }
+    },
+    {
+      "id": "post-37b0bccde778ef6f9808",
+      "key": "/2023/10/12/使用DiskGenius迁移C盘/",
+      "source": "content/posts/zh-cn/2023-10-12-使用DiskGenius迁移C盘.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2023/10/12/使用DiskGenius迁移C盘/",
+        "zh-cn": "/zh-cn/2023/10/12/使用DiskGenius迁移C盘/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "37b0bccde778ef6f9808a538a1e54f794dd33aa14ed18698f188ba9a33c8ee5b.json",
+          "rawDigest": "a293f02b390bd5184d650124ed9336fe0d8101daab138a970d24216899468f0d"
+        },
+        "zh-cn": {
+          "file": "9501de346536bf72a61ff9dc898ff8531defb91406b5d15646c811fb0fe4e4aa.json",
+          "rawDigest": "50a5e079bf1f903ca65da792a4d35e2641fb3c07575e5f08061e148c54f1f332"
+        }
+      }
+    },
+    {
+      "id": "post-3a186d59431c88ada7e8",
+      "key": "/node.js/2024/12/19/Prisma-Filtering/",
+      "source": "content/posts/zh-cn/2024-12-19-Prisma：Filtering.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/node.js/2024/12/19/Prisma-Filtering/",
+        "zh-cn": "/zh-cn/node.js/2024/12/19/Prisma-Filtering/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "3a186d59431c88ada7e8546ecd837f61cd77a16bcab42b3295d2357bd68035a0.json",
+          "rawDigest": "dd5ff12a606ac45757c9adf2527d85ab33be0726fb7e63107493d99ede87bafd"
+        },
+        "zh-cn": {
+          "file": "f10ee17250d497e54ca6d04975e5b22cab6a8aa73165a5acd60d439ab9dd691b.json",
+          "rawDigest": "4c500b3d4e8fcba35be866b0aa21bf65f681952c56385cfa5f833da21fbc2b1f"
+        }
+      }
+    },
+    {
+      "id": "post-3a4fae1bda02cabd5bc1",
+      "key": "/algorithm/2024/11/25/分类问题/",
+      "source": "content/posts/zh-cn/2024-11-25-分类问题.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/11/25/分类问题/",
+        "zh-cn": "/zh-cn/algorithm/2024/11/25/分类问题/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "3a4fae1bda02cabd5bc17999afdff6ee83f80d1605775a179ea2ea8c73fb40d1.json",
+          "rawDigest": "53cf0f4e15ca3a81dd119c123bd05e1b7dc6bef8334b046f8468afd8210abbdb"
+        },
+        "zh-cn": {
+          "file": "5e7f38516d6bb87807cabe61120ddb0b88152027d7adb05a1300713dbf7389bf.json",
+          "rawDigest": "0d5d3ff0d96f9b4171c0fd304de93b1bb1ea065c6e5be489e26fcbdc1537a3e5"
+        }
+      }
+    },
+    {
+      "id": "post-3ab6e4e5153f7106537b",
+      "key": "/dynamic programming fundamentals/2021/09/27/动态规划-一-打家劫舍系列/",
+      "source": "content/posts/zh-cn/2021-09-27-动态规划（一）打家劫舍系列.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/dynamic programming fundamentals/2021/09/27/动态规划-一-打家劫舍系列/",
+        "zh-cn": "/zh-cn/dynamic programming fundamentals/2021/09/27/动态规划-一-打家劫舍系列/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "3ab6e4e5153f7106537b479b1849b2180fd9fb4f171393dad59ffa61c4078c1c.json",
+          "rawDigest": "a72205c3846e7c52aa3e016c34c2feb95737adb154f2573390b373234e02f096"
+        },
+        "zh-cn": {
+          "file": "dfb7cb233d1a640202ac38cedaa82a99548242340d99d20b40dd31ecbd38972d.json",
+          "rawDigest": "b42e7ab30662d39f6c2a3b0325e837343cf61560e62d3620571943e4c740d465"
+        }
+      }
+    },
+    {
+      "id": "post-3bd34bf89b03c919cacc",
+      "key": "/2022/05/03/操作系统-四十-内存管理的概念/",
+      "source": "content/posts/zh-cn/2022-05-03-操作系统（四十）内存管理的概念.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/05/03/操作系统-四十-内存管理的概念/",
+        "zh-cn": "/zh-cn/2022/05/03/操作系统-四十-内存管理的概念/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "c1537911bb9fc1154127285ec6872dc3c8e29459a46ac237754d8a0c60785484.json",
+          "rawDigest": "d65303f2ecd06775d199222e32c79a9c00c7f68906dbb0a4486846a6e156ffaa"
+        }
+      }
+    },
+    {
+      "id": "post-3eb777734fd74e3c423b",
+      "key": "/computer network/2024/10/22/计算机网络-四-网络层/",
+      "source": "content/posts/zh-cn/2024-10-22-计算机网络（四）网络层.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/computer network/2024/10/22/计算机网络-四-网络层/",
+        "zh-cn": "/zh-cn/computer network/2024/10/22/计算机网络-四-网络层/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "cd4c4e49ec1aead087532e33d79f671d3df4e11d588590d694b2c72070ca4e4c.json",
+          "rawDigest": "bd8cfaf45dc403ccedfbdb46494a6ac8f6747b85f081f680212b971d048f6d76"
+        }
+      }
+    },
+    {
+      "id": "post-44cb4b92ab5e2c709dc9",
+      "key": "/react/2024/09/12/react-1/",
+      "source": "content/posts/zh-cn/2024-09-12-react-1.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/react/2024/09/12/react-1/",
+        "zh-cn": "/zh-cn/react/2024/09/12/react-1/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "2f037105cb3d7720676ae72cdb77e51ce265fb12b0e1767334592b18d364bcc1.json",
+          "rawDigest": "6235b8028be9d03bed2f37f59bf58e847a55ad776ca1b56c51654ff84cede6ca"
+        }
+      }
+    },
+    {
+      "id": "post-46aa38943895a00d833f",
+      "key": "/maven/2023/12/04/Maven-四-资源的添加及过滤/",
+      "source": "content/posts/zh-cn/2023-12-04-Maven（四）资源的添加及过滤.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/maven/2023/12/04/Maven-四-资源的添加及过滤/",
+        "zh-cn": "/zh-cn/maven/2023/12/04/Maven-四-资源的添加及过滤/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "46aa38943895a00d833fbf5c86764efc54bd5efda69ccde73317c60479cbdd0b.json",
+          "rawDigest": "d7427d3af5667564e10d70433717d868af0ad921e0be7aa3c55eb5ffde97bd38"
+        },
+        "zh-cn": {
+          "file": "da2f13e8d8fb2e37a343ff523ed1dd8b8bcbbe38f901457f714376e44d3c9ebf.json",
+          "rawDigest": "dda286847f214ba047be101066a9e00761a4a6e966ae0b212f8da48f5e21bdde"
+        }
+      }
+    },
+    {
+      "id": "post-47ece83e84182eef9af9",
+      "key": "/algorithm/2024/12/07/Variational-Autoencoder/",
+      "source": "content/posts/zh-cn/2024-12-07-Variational Autoencoder.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/12/07/Variational-Autoencoder/",
+        "zh-cn": "/zh-cn/algorithm/2024/12/07/Variational-Autoencoder/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "47ece83e84182eef9af9acb344493211141aa4509b63fbab71ea7428a7fa2baa.json",
+          "rawDigest": "daba3f07af256e3c95408c29f3d9bc42024e4ce74902bd9818f55e3ca126becd"
+        },
+        "zh-cn": {
+          "file": "a9b5ba2155d5b20ff634af8a2a82990d85219c7159f0c8078f3fe764535facd3.json",
+          "rawDigest": "c68833dbbe0fd64a683c14102800f7b87dede3c6c5fa147660ae25f0948666e6"
+        }
+      }
+    },
+    {
+      "id": "post-482815dfbac4310107d7",
+      "key": "/2022/04/20/操作系统-五-中断和异常/",
+      "source": "content/posts/zh-cn/2022-04-20-操作系统（五）中断和异常.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/20/操作系统-五-中断和异常/",
+        "zh-cn": "/zh-cn/2022/04/20/操作系统-五-中断和异常/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "7731e9398adb9302d1659bcfdd22b2b19f4c722f05186aad3b5f4cb64dcacab5.json",
+          "rawDigest": "18f63b397ed891ce59c21a54595b8ca4f1c5167977870bcb9297937b5be8dd38"
+        }
+      }
+    },
+    {
+      "id": "post-48665e6eddb917b5f0fb",
+      "key": "/2022/04/26/操作系统-二十六-互斥锁/",
+      "source": "content/posts/zh-cn/2022-04-26-操作系统（二十六）互斥锁.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/26/操作系统-二十六-互斥锁/",
+        "zh-cn": "/zh-cn/2022/04/26/操作系统-二十六-互斥锁/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "773e0faaa575c7cdc1f549ecba91232e943cb5aa680ebadfcf7ae7831466df2b.json",
+          "rawDigest": "40bf57f7c2a8bcf453da21c8cf390322b1ac507132b1af167de965663ad53497"
+        }
+      }
+    },
+    {
+      "id": "post-489dd59f218b52d5ed53",
+      "key": "/2024/05/24/K8s笔记-二/",
+      "source": "content/posts/zh-cn/2024-05-24-K8s笔记（二）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2024/05/24/K8s笔记-二/",
+        "zh-cn": "/zh-cn/2024/05/24/K8s笔记-二/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "489dd59f218b52d5ed53f6d4c3775000de1c8fafdc37ce7dab6edf9bfba08830.json",
+          "rawDigest": "e0477bbc2c1ef53c2af56aa27ac59ae0ad793dca6cf732809970b39ee1becc1a"
+        },
+        "zh-cn": {
+          "file": "8bf767e5234cc183eefa9176048228addf64cdf74e49fb59405594791515a69a.json",
+          "rawDigest": "74b0076a5c791a5753a2e49bf6ab66a60bae7971e80c4f1d003137dd7ca9d652"
+        }
+      }
+    },
+    {
+      "id": "post-4a526ac43c1dcffa3d5d",
+      "key": "/2022/04/25/操作系统-二十三-进程同步与互斥/",
+      "source": "content/posts/zh-cn/2022-04-25-操作系统（二十三）进程同步与互斥.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/25/操作系统-二十三-进程同步与互斥/",
+        "zh-cn": "/zh-cn/2022/04/25/操作系统-二十三-进程同步与互斥/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "052d6044cb5466a3fed340b4969272069652fcc9b46100681c5d2da47a915248.json",
+          "rawDigest": "d91011bbea9b455b3a139e800597b14e143bff8b2e16e6a51a8392a66d2030f2"
+        }
+      }
+    },
+    {
+      "id": "post-4b090156234bd35fca90",
+      "key": "/2022/04/24/操作系统-二十二-RR-PSA-MLFQ调度算法/",
+      "source": "content/posts/zh-cn/2022-04-24-操作系统（二十二）RR、PSA、MLFQ调度算法.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/24/操作系统-二十二-RR-PSA-MLFQ调度算法/",
+        "zh-cn": "/zh-cn/2022/04/24/操作系统-二十二-RR-PSA-MLFQ调度算法/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "8e33e240dcf602958658690989b7a1d8dc3885bde896fc98c45094bbf7b953d2.json",
+          "rawDigest": "9b6767ce6bbb7666a95d87e3b77482e4659d961bc231f52ee8904ffe0e6ad0fc"
+        }
+      }
+    },
+    {
+      "id": "post-4f67efc7fbfae9cf0783",
+      "key": "/algorithm/2024/11/22/Tensor进阶操作/",
+      "source": "content/posts/zh-cn/2024-11-22-Tensor进阶操作.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/11/22/Tensor进阶操作/",
+        "zh-cn": "/zh-cn/algorithm/2024/11/22/Tensor进阶操作/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "4f67efc7fbfae9cf0783bcaf456a821dce7bbbd39cde7918086396602a0d5460.json",
+          "rawDigest": "29c40e7c39f7f3edc8181049fef8190bbc050c7f88ecf72c2df131d5f74bf662"
+        },
+        "zh-cn": {
+          "file": "fe8854510b3100c034e7fa1ebade32d921ef151db5fb06979bf90b972f6a0bf1.json",
+          "rawDigest": "fd040e694f043d6af985d30157048ff335e4fdbd9b710c270d8a964437899921"
+        }
+      }
+    },
+    {
+      "id": "post-50c32ec52de80401d61c",
+      "key": "/2022/04/20/操作系统-四-操作系统的运行机制/",
+      "source": "content/posts/zh-cn/2022-04-20-操作系统（四）操作系统的运行机制.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/20/操作系统-四-操作系统的运行机制/",
+        "zh-cn": "/zh-cn/2022/04/20/操作系统-四-操作系统的运行机制/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "51e506d1b6d8a92a02f787de13016a719ae9103c4c95925fa7d7399e57bc89be.json",
+          "rawDigest": "93dd8ac1dab342ca80531c5dbfc5354681914aa9e5fe80e9367c20c44fdc9fd0"
+        }
+      }
+    },
+    {
+      "id": "post-53af512e38595165ac63",
+      "key": "/2021/10/15/二分查找-Binary-Search/",
+      "source": "content/posts/zh-cn/2021-10-15-二分查找（Binary Search）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2021/10/15/二分查找-Binary-Search/",
+        "zh-cn": "/zh-cn/2021/10/15/二分查找-Binary-Search/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "53af512e38595165ac63b73baf9601be105653e85d5a4653bdb2a3a198edc72d.json",
+          "rawDigest": "dcf4b635e7d0aca2383a1b560d421e290e7156ee99df0d29dd9b5e4eac6af525"
+        },
+        "zh-cn": {
+          "file": "9a4f5848c1f4c60204f966a7ad8a8f4bee46d9c1df800dc7261a4b45a544ae4e.json",
+          "rawDigest": "8f467722566fa160b925aa7bf99184e67f8f44292a8f2033fae998644404bf6a"
+        }
+      }
+    },
+    {
+      "id": "post-56cb70dca3bd935e19fc",
+      "key": "/2022/04/22/操作系统-十四-线程的概念/",
+      "source": "content/posts/zh-cn/2022-04-22-操作系统（十四）线程的概念.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/22/操作系统-十四-线程的概念/",
+        "zh-cn": "/zh-cn/2022/04/22/操作系统-十四-线程的概念/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "b2ceda3b6fa4b8d40e34caa129c0e5b073d8f877eb69b4fc27b4908851799750.json",
+          "rawDigest": "85f0c796311ed31349c7ac75ff70a56c974a3126a593097c87172cf6c0470690"
+        }
+      }
+    },
+    {
+      "id": "post-5701e71c435b19ce9bf8",
+      "key": "/dynamic programming fundamentals/2021/10/12/动态规划-四-最长上升子序列-LIS/",
+      "source": "content/posts/zh-cn/2021-10-11-动态规划（四） 最长上升子序列（LIS）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/dynamic programming fundamentals/2021/10/12/动态规划-四-最长上升子序列-LIS/",
+        "zh-cn": "/zh-cn/dynamic programming fundamentals/2021/10/12/动态规划-四-最长上升子序列-LIS/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "5701e71c435b19ce9bf85f8844c0741ad4655cd78a8010d098d858d1d79140df.json",
+          "rawDigest": "ffd63b4a84d1c5968d4efe51c4e5d3ad8107fc07b10dbe8ab48e611cba112ed9"
+        },
+        "zh-cn": {
+          "file": "b8c9ab362650ed08c5ce51d827b05b311be313f0c78f6fd43ad573e201e6f4d8.json",
+          "rawDigest": "23a759761678fd2c49d3c6232a4a61d3d4bac4e0dfa5d67b31ac8fe5e71ebf34"
+        }
+      }
+    },
+    {
+      "id": "post-58592a5edd4b011fc945",
+      "key": "/react/2024/09/15/react-hook-5/",
+      "source": "content/posts/zh-cn/2024-09-15-react-hook-5.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/react/2024/09/15/react-hook-5/",
+        "zh-cn": "/zh-cn/react/2024/09/15/react-hook-5/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "37e2760b0c2014128c238a14e935fb3f453fab8ea7907469fa24594dae24af91.json",
+          "rawDigest": "351230d8a6ed07efaeadeca050b0ff5c7a40679a6cfb11c916e1244f38037466"
+        }
+      }
+    },
+    {
+      "id": "post-591816f869a26dbffe47",
+      "key": "/react/2024/09/12/react-hook-1/",
+      "source": "content/posts/zh-cn/2024-09-12-react-hook-1.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/react/2024/09/12/react-hook-1/",
+        "zh-cn": "/zh-cn/react/2024/09/12/react-hook-1/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "e6a32864591cf755e7bb7aa1ee17c10dcd5eee5af4161c3a65b52e7185ebe8c4.json",
+          "rawDigest": "2baed531523fab313b81b2b92429d9acbfdb9afdaf5cc4c7130add31bbaa9e80"
+        }
+      }
+    },
+    {
+      "id": "post-5a0cbbe9ef822ceeb11c",
+      "key": "/maven/2023/12/03/Maven-二-第一个Maven项目/",
+      "source": "content/posts/zh-cn/2023-12-03-Maven（二）第一个Maven项目.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/maven/2023/12/03/Maven-二-第一个Maven项目/",
+        "zh-cn": "/zh-cn/maven/2023/12/03/Maven-二-第一个Maven项目/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "5a0cbbe9ef822ceeb11c06f5047acf71c40d983e7c938fb07135c63b16378dac.json",
+          "rawDigest": "39aad090117bcb08521563ad158714a2f9c154682fcf24ec5dd5c2a5310d779a"
+        },
+        "zh-cn": {
+          "file": "a70a740011c02e09029ceff5513897fd24b5e196b137ac55fb39afb9072b82d3.json",
+          "rawDigest": "ecede619d01e8b80a2b8c872157f7dc0845fc3622aa59e6aa4919f716463eed8"
+        }
+      }
+    },
+    {
+      "id": "post-5b950a28461eefa23806",
+      "key": "/react/2024/09/16/redux-2/",
+      "source": "content/posts/zh-cn/2024-09-16-redux-2.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/react/2024/09/16/redux-2/",
+        "zh-cn": "/zh-cn/react/2024/09/16/redux-2/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "f3c3b80512df1714c35018f0455b5000016f0c619b5b9b50f8b5188f0826d274.json",
+          "rawDigest": "ce36c2296e4d6c86f2e90db2182732512c09e2824f5bf7df95baff95265e1e3a"
+        }
+      }
+    },
+    {
+      "id": "post-5f2cb83fe4b733a63b15",
+      "key": "/maven/2023/12/03/Maven-一-Maven的哲学/",
+      "source": "content/posts/zh-cn/2023-12-03-Maven（一）Maven的哲学.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/maven/2023/12/03/Maven-一-Maven的哲学/",
+        "zh-cn": "/zh-cn/maven/2023/12/03/Maven-一-Maven的哲学/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "5f2cb83fe4b733a63b15419bcb56d773294ab76b7879764dabb4ee115fca51c9.json",
+          "rawDigest": "de36799350d08c43b013ade97bec2c03ce4c0f5f27ea199acdaf31db1f3d44c0"
+        },
+        "zh-cn": {
+          "file": "451e8a676bb3014bd8c3aa317a47189a2fa102294a304476b83c5bd9808b675b.json",
+          "rawDigest": "e8d4e8e1c53d2ba28cb50c59fd079180cb392e02489e1b4f080fbcb1627b9639"
+        }
+      }
+    },
+    {
+      "id": "post-5f867836c78026136dae",
+      "key": "/2024/05/23/K8s笔记-一/",
+      "source": "content/posts/zh-cn/2024-05-23-K8s笔记（一）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2024/05/23/K8s笔记-一/",
+        "zh-cn": "/zh-cn/2024/05/23/K8s笔记-一/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "5f867836c78026136dae508dd321cd32ceda159d8029532cca944546e60e8f09.json",
+          "rawDigest": "50845959d2729f1c2cd5aa27aa6c0311cd41a227839cc866581db7a918c55ffa"
+        },
+        "zh-cn": {
+          "file": "9e2b6561d32ce08cfe3c2f392cf442bc5d2974c10cc8e4cea95bc6845c9108e7.json",
+          "rawDigest": "6b36e1870e52092228303e0841cacd3c5cedc4c056cc0e617f17f2d4aac8e60c"
+        }
+      }
+    },
+    {
+      "id": "post-5f9e258ea213bd54c04d",
+      "key": "/apollo/2023/11/23/Apollo配置中心-三-工作原理及核心概念/",
+      "source": "content/posts/zh-cn/2023-11-23-Apollo配置中心（三）工作原理及核心概念.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/apollo/2023/11/23/Apollo配置中心-三-工作原理及核心概念/",
+        "zh-cn": "/zh-cn/apollo/2023/11/23/Apollo配置中心-三-工作原理及核心概念/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "5f9e258ea213bd54c04dd9298eccf30a0eccd3c160ba4768a35f9a0ad9d20256.json",
+          "rawDigest": "08bc99439c7612c9c4d7a49ace7e704e6ea546b52e74b775b976519217c286e9"
+        },
+        "zh-cn": {
+          "file": "cd1972c38e26bf3f2893b695b281c95e2ed251236064fa7332ebb93f9d03d47b.json",
+          "rawDigest": "b78daf10f1de0036cbf37ee076a041b216d219e15f77ac2bf32e84a13affd5c4"
+        }
+      }
+    },
+    {
+      "id": "post-628c55b0f7b08bb94491",
+      "key": "/2022/05/01/操作系统-三十五-死锁的概念/",
+      "source": "content/posts/zh-cn/2022-05-01-操作系统（三十五）死锁的概念.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/05/01/操作系统-三十五-死锁的概念/",
+        "zh-cn": "/zh-cn/2022/05/01/操作系统-三十五-死锁的概念/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "bbbfe68d4beaac11e56d7c4f5beb91950ed67f987e760223b1ca14315d218dfd.json",
+          "rawDigest": "7122bafda668bd92e735de1cc33bf9a41883fd8576e6a368c44b9e669dafd24c"
+        }
+      }
+    },
+    {
+      "id": "post-6359f173d17ef5ab050a",
+      "key": "/react/2024/09/13/react-hook-2/",
+      "source": "content/posts/zh-cn/2024-09-13-react-hook-2.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/react/2024/09/13/react-hook-2/",
+        "zh-cn": "/zh-cn/react/2024/09/13/react-hook-2/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "9893e56b8ec9d7661a6c2625141dc50dfaff62a4792af9b780b069e84368a465.json",
+          "rawDigest": "294976398d590d8d50e0496fe2c5a0a66cf94b3e7e318e3b7aab458d74a8355f"
+        }
+      }
+    },
+    {
+      "id": "post-69406edf732a5719deee",
+      "key": "/node.js/2024/12/18/Prisma-TypeScript的现代ORM解决方案/",
+      "source": "content/posts/zh-cn/2024-12-18-Prisma：TypeScript的现代ORM解决方案.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/node.js/2024/12/18/Prisma-TypeScript的现代ORM解决方案/",
+        "zh-cn": "/zh-cn/node.js/2024/12/18/Prisma-TypeScript的现代ORM解决方案/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "69406edf732a5719deee00ec95cacc4632de2317f0c0d2aec71cfceb091ba691.json",
+          "rawDigest": "abe00fee9d1c287ff07d2c833c6e572f9454e3e0b12eccdc2320318fb7b40a01"
+        },
+        "zh-cn": {
+          "file": "cbe3e1f719439c9205cc59d47a4f21ba51471f6a4a0bddc73e4ba6705dd46634.json",
+          "rawDigest": "a2a4d5850a07c57499e5e532eea954da43f685dd7f128e50e4f63848bec1035f"
+        }
+      }
+    },
+    {
+      "id": "post-69f228404c88b8943b04",
+      "key": "/react/2024/09/13/react-hook-3/",
+      "source": "content/posts/zh-cn/2024-09-13-react-hook-3.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/react/2024/09/13/react-hook-3/",
+        "zh-cn": "/zh-cn/react/2024/09/13/react-hook-3/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "41b612746da8b8c5cee81b7de34f8ba9aec56c8fe90461e0a5364b564d2588e3.json",
+          "rawDigest": "61eb003edabca8e4c7b11cb90c1edb4d6c1cf928a6b4327fafb7d682b304e359"
+        }
+      }
+    },
+    {
+      "id": "post-69f8c5242876150d8468",
+      "key": "/2022/05/02/操作系统-三十九-内存的基础知识/",
+      "source": "content/posts/zh-cn/2022-05-02-操作系统（三十九）内存的基础知识.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/05/02/操作系统-三十九-内存的基础知识/",
+        "zh-cn": "/zh-cn/2022/05/02/操作系统-三十九-内存的基础知识/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "5fad8f517a66685f023a957511af0367a47331fc0c302dad3793709ee548f21b.json",
+          "rawDigest": "063adeb02b81663c5909ebe640f30572e5db796a9b06e11f5595190660efe139"
+        }
+      }
+    },
+    {
+      "id": "post-6d3b25c8d9548e721013",
+      "key": "/2022/04/30/操作系统-三十四-管程/",
+      "source": "content/posts/zh-cn/2022-04-30-操作系统（三十四）管程.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/30/操作系统-三十四-管程/",
+        "zh-cn": "/zh-cn/2022/04/30/操作系统-三十四-管程/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "e6b117b3c7a219aea6335fb6da0d9a440c93e9dd6ce87bbda672d20986be960a.json",
+          "rawDigest": "951f0267f16794fcfd80af2368dc039ee52afa72af6c2e90761b9c35bbba755d"
+        }
+      }
+    },
+    {
+      "id": "post-6e918b290b48598accd9",
+      "key": "/2023/04/24/使用ChatGPT控制Arduino设备/",
+      "source": "content/posts/zh-cn/2023-06-12-使用ChatGPT控制Arduino设备.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2023/04/24/使用ChatGPT控制Arduino设备/",
+        "zh-cn": "/zh-cn/2023/04/24/使用ChatGPT控制Arduino设备/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "6e918b290b48598accd9567e1029fda2100d27f17184e054675715e890aaf7b8.json",
+          "rawDigest": "6009c7468e1dbfdd1a483f959bbc11bda5b71e6da82243851091a43305e866dc"
+        },
+        "zh-cn": {
+          "file": "0da6593766405fa4999bdfc517290f5b272fc6b46fe7f3233edf33c6ec780583.json",
+          "rawDigest": "8dae4ebbd273fa9c2d6469e3987c0093ffbe5840ea4c280935f29a7f2d40562a"
+        }
+      }
+    },
+    {
+      "id": "post-6f0e726a5a76e331d99e",
+      "key": "/2022/04/24/操作系统-十九-调度器-Scheduler-和闲逛进程/",
+      "source": "content/posts/zh-cn/2022-04-24-操作系统（十九）调度器（Scheduler）和闲逛进程.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/24/操作系统-十九-调度器-Scheduler-和闲逛进程/",
+        "zh-cn": "/zh-cn/2022/04/24/操作系统-十九-调度器-Scheduler-和闲逛进程/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "46fca30e6ec6bcf21da7ab8e422d25882e6f9e7bb0fbe8ad37fb29b17827a793.json",
+          "rawDigest": "83aa765cc14d5dc8645cdd111e0182dbbcd2b2ba88e07e76b688cf1323cc648a"
+        }
+      }
+    },
+    {
+      "id": "post-6f77d7b7316254a74079",
+      "key": "/2022/04/23/操作系统-十八-进程调度的时机-切换与过程-方式/",
+      "source": "content/posts/zh-cn/2022-04-23-操作系统（十八）进程调度的时机、切换与过程、方式.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/23/操作系统-十八-进程调度的时机-切换与过程-方式/",
+        "zh-cn": "/zh-cn/2022/04/23/操作系统-十八-进程调度的时机-切换与过程-方式/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "466fa3131d12a39361c31f427fa8244eefcc25da23e36fc13816068335998c39.json",
+          "rawDigest": "e6fa4baec9eb00fbdba7b75d347f8821574608eb2be0f26fbadc0b9f051ed903"
+        }
+      }
+    },
+    {
+      "id": "post-70a9f55d88ea6fa242d4",
+      "key": "/maven/2023/12/05/Maven-九-POM简介/",
+      "source": "content/posts/zh-cn/2023-12-05-Maven（九）POM简介.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/maven/2023/12/05/Maven-九-POM简介/",
+        "zh-cn": "/zh-cn/maven/2023/12/05/Maven-九-POM简介/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "70a9f55d88ea6fa242d432d9cb9edb654d06ea5eacd439fc98eaa6330ab5a61f.json",
+          "rawDigest": "5ff411c4b9730e39cdadc055f027ad7c7e9f008dd19892531a3bcc056999f7a7"
+        },
+        "zh-cn": {
+          "file": "df645c45979dcd19dfd36b6c3f7a887a24a7122e22a022468c1a93e97fb91f00.json",
+          "rawDigest": "043c1076ba62b12feb0d88d563045dd905b5d8a906e716301a8390cd7b91de4d"
+        }
+      }
+    },
+    {
+      "id": "post-731c2645de21b7bee71c",
+      "key": "/maven/2023/12/03/Maven-三-快照版本/",
+      "source": "content/posts/zh-cn/2023-12-03-Maven（三）快照版本.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/maven/2023/12/03/Maven-三-快照版本/",
+        "zh-cn": "/zh-cn/maven/2023/12/03/Maven-三-快照版本/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "731c2645de21b7bee71c62fe0f261abb68b8037543db394a40e8b288f4f073bd.json",
+          "rawDigest": "3795cb6a1fe1cd7df203a336cee3a2a5ed696e2cf724b6a08cbf011df74de245"
+        },
+        "zh-cn": {
+          "file": "5a4ef801d3ae876d18853a35de8484738f5a177d90d740728cd6170a6ec89c06.json",
+          "rawDigest": "09b595759a13c3c193bb95e5052fabb923169be72b56279714cba90d6326c3fc"
+        }
+      }
+    },
+    {
+      "id": "post-73edfe7a1603ac1076fb",
+      "key": "/computer network/2024/10/19/计算机网络-一-物理层/",
+      "source": "content/posts/zh-cn/2024-10-19-计算机网络（一）物理层.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/computer network/2024/10/19/计算机网络-一-物理层/",
+        "zh-cn": "/zh-cn/computer network/2024/10/19/计算机网络-一-物理层/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "bf02b0e3f5325d292d4be53e50982bce463c8a307855166f141137978fb2dea7.json",
+          "rawDigest": "7e9d0e3c3630ab79dd958545869aa37b7d36edf3518f3263cf9f80207dc1afcd"
+        }
+      }
+    },
+    {
+      "id": "post-744b314a9e3b0e3abbf7",
+      "key": "/computer network/2024/10/25/计算机网络-七-应用层/",
+      "source": "content/posts/zh-cn/2024-10-25-计算机网络（七）应用层.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/computer network/2024/10/25/计算机网络-七-应用层/",
+        "zh-cn": "/zh-cn/computer network/2024/10/25/计算机网络-七-应用层/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "cf2ab5a73f07b1cd55190b7bd8762d5a6a1b6028771b108b2ee236114a3aeebe.json",
+          "rawDigest": "db90cbd7c624b3162242ff419d762f7f2883af666ad412d593510ed52ac3a7be"
+        }
+      }
+    },
+    {
+      "id": "post-748a8caae0a2967e80bd",
+      "key": "/algorithm/2024/11/23/loss函数及梯度/",
+      "source": "content/posts/zh-cn/2024-11-23-loss函数及梯度.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/11/23/loss函数及梯度/",
+        "zh-cn": "/zh-cn/algorithm/2024/11/23/loss函数及梯度/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "748a8caae0a2967e80bdf91080c0a1f0717d98d829955abcd6966c188cc35c8a.json",
+          "rawDigest": "9e9c3a042e379fae402b4cb86433c1a5fde556142bb152363355fff932edc517"
+        },
+        "zh-cn": {
+          "file": "eac42fe254ec4aa198857fedc024161d3edbc3f7d045b1c62c424afb00b8fb3d.json",
+          "rawDigest": "12521decc8dd739cd6abb5f804810effe19a8076d185bf3a373aed81c3a09869"
+        }
+      }
+    },
+    {
+      "id": "post-75f3a9236648cc73e919",
+      "key": "/algorithm/2024/11/21/Tensor基本操作/",
+      "source": "content/posts/zh-cn/2024-11-21-Tensor基本操作.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/11/21/Tensor基本操作/",
+        "zh-cn": "/zh-cn/algorithm/2024/11/21/Tensor基本操作/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "75f3a9236648cc73e9198b119ee0993bb0d8209764190b131b092d21522cba54.json",
+          "rawDigest": "caf4e716d9bcf2482b6e314ba5cbb9f8e90b40220ab03507c2cdf67ed2c640b6"
+        },
+        "zh-cn": {
+          "file": "f38bd6a0c0bb83da8f54cfe5d5c55bb89f93f267f4877bec167bc54d9939682f.json",
+          "rawDigest": "9cf8d770b974012e1012ee5214994b3ffaba70fa68140f72cc6f5a6d8adc5baa"
+        }
+      }
+    },
+    {
+      "id": "post-76055a219bc5a1efbb4f",
+      "key": "/2022/04/20/操作系统-七-操作系统体系结构/",
+      "source": "content/posts/zh-cn/2022-04-20-操作系统（七）操作系统体系结构.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/20/操作系统-七-操作系统体系结构/",
+        "zh-cn": "/zh-cn/2022/04/20/操作系统-七-操作系统体系结构/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "0a0f6c6b7997d71524f959c1128319c24a756d9b93aaf6aa873ed80764abc1cb.json",
+          "rawDigest": "b297e5fba4c6502ea5d8618e2288b5ad13611885347caf9d7ade81183d079cfb"
+        }
+      }
+    },
+    {
+      "id": "post-7773629fbca26d45468a",
+      "key": "/2022/04/25/操作系统-二十四-进程互斥的软件实现方法/",
+      "source": "content/posts/zh-cn/2022-04-25-操作系统（二十四）进程互斥的软件实现方法.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/25/操作系统-二十四-进程互斥的软件实现方法/",
+        "zh-cn": "/zh-cn/2022/04/25/操作系统-二十四-进程互斥的软件实现方法/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "48ff4a0ccbd9721335c213c33bb9402ae54221f0e6df381b59cc013c61368692.json",
+          "rawDigest": "01068d1f8e75bfe8e642af19e1162bf9b6930d1c7d637b9f097c0246fc4f2a46"
+        }
+      }
+    },
+    {
+      "id": "post-792a6803099a3859168e",
+      "key": "/2022/04/21/操作系统-十一-进程的状态-转换和组织方式/",
+      "source": "content/posts/zh-cn/2022-04-21-操作系统（十一）进程的状态、转换和组织方式.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/21/操作系统-十一-进程的状态-转换和组织方式/",
+        "zh-cn": "/zh-cn/2022/04/21/操作系统-十一-进程的状态-转换和组织方式/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "667d414d7a2a9925e0d4a5d267852735453223c139b99cc848ca3853013c2753.json",
+          "rawDigest": "3caf3fcfcb20308d7a334dd999215d909aae828564c1a60c1d1e6705afbae3b2"
+        }
+      }
+    },
+    {
+      "id": "post-799f92b03660f179bb35",
+      "key": "/node.js/2024/12/18/Prisma-事务操作及错误处理/",
+      "source": "content/posts/zh-cn/2024-12-18-Prisma：事务操作及错误处理.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/node.js/2024/12/18/Prisma-事务操作及错误处理/",
+        "zh-cn": "/zh-cn/node.js/2024/12/18/Prisma-事务操作及错误处理/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "799f92b03660f179bb356abe5dcbc94d6d03f7f2ba1c9743410dc840a907c9bf.json",
+          "rawDigest": "c1b1e130c71fe539f0e02882d0972889ddc7c1ede73c585b21142039d7c00b38"
+        },
+        "zh-cn": {
+          "file": "8c10614d65be4754726953628dac983c24d755f5e8a030838b1775bb78a58b70.json",
+          "rawDigest": "aecccb58fdd70c4d4524e3757432b3d80322fb3789d7f2744d5ce0fbee042b83"
+        }
+      }
+    },
+    {
+      "id": "post-79ce6995c1eeae071697",
+      "key": "/algorithm/2024/11/27/卷积神经网络-CNN/",
+      "source": "content/posts/zh-cn/2024-11-27-卷积神经网络（CNN）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/11/27/卷积神经网络-CNN/",
+        "zh-cn": "/zh-cn/algorithm/2024/11/27/卷积神经网络-CNN/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "79ce6995c1eeae071697d76eef7da6ef19a1c502b49e7a28e8cfcea94a720e79.json",
+          "rawDigest": "3c745f0e86e554aca139bb9ee2e6e007aefc3385332a62d9a76abd98b301b131"
+        },
+        "zh-cn": {
+          "file": "9810c7dd6d4e26d382c44f97ffe514caed029b128f5934592776d73fa0abd881.json",
+          "rawDigest": "4950a74eccf15d1eec5128a5f4a7f1df6d5101a5d0af11c6ac23a42a1a9fa71c"
+        }
+      }
+    },
+    {
+      "id": "post-800b67bdf5e5fe3c1c99",
+      "key": "/2022/04/22/操作系统-十三-进程通信/",
+      "source": "content/posts/zh-cn/2022-04-21-操作系统（十三）进程通信.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/22/操作系统-十三-进程通信/",
+        "zh-cn": "/zh-cn/2022/04/22/操作系统-十三-进程通信/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "35ca09b7245494380addcada43ad4eb157ac07175d44e579b7c7380b9e61b1c0.json",
+          "rawDigest": "a03bb6be970353ef74aa8d781bb051c7e5d5f9d0287eb099b071b4cc4c9be16b"
+        }
+      }
+    },
+    {
+      "id": "post-84c4673a7ca2a16bae3c",
+      "key": "/2022/04/30/操作系统-三十三-哲学家进餐问题/",
+      "source": "content/posts/zh-cn/2022-04-30-操作系统（三十三）哲学家进餐问题.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/30/操作系统-三十三-哲学家进餐问题/",
+        "zh-cn": "/zh-cn/2022/04/30/操作系统-三十三-哲学家进餐问题/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "161cbe2f60dd14c4d738e41b56fdb9d27db4535b81691c03a50a6329307022b3.json",
+          "rawDigest": "528c9fd471e0f2d81c093160a6efe332d98f0b4188f23ebfa357d46f2652a5b7"
+        }
+      }
+    },
+    {
+      "id": "post-84ffd97e5f05f16f96c7",
+      "key": "/maven/2023/12/05/Maven-十三-可选-optional-依赖项和依赖项排除-exclusion/",
+      "source": "content/posts/zh-cn/2023-12-05-Maven（十三）可选（optional）依赖项和依赖项排除（exclusion）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/maven/2023/12/05/Maven-十三-可选-optional-依赖项和依赖项排除-exclusion/",
+        "zh-cn": "/zh-cn/maven/2023/12/05/Maven-十三-可选-optional-依赖项和依赖项排除-exclusion/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "84ffd97e5f05f16f96c789fe09c0f54d0543be555cf063018e0383f47f1d9231.json",
+          "rawDigest": "c10462b0623e22edd4a1ba29ef7cb5dd18a1d0b3be17beee147ef5e3a097dc1f"
+        },
+        "zh-cn": {
+          "file": "9dbc08543bf86fefa83999ab646a40e5caa0b965c97f7f71c3eac2f53e6fda81.json",
+          "rawDigest": "abad47ff017f88bd4a13aeb68658c46d8f381d27b4656eb1449a98da71310e70"
+        }
+      }
+    },
+    {
+      "id": "post-87e4860abc21dfcb3422",
+      "key": "/2022/09/10/设计模式-二-抽象工厂-Abstract-Factory/",
+      "source": "content/posts/zh-cn/2022-09-10-设计模式（二）抽象工厂（Abstract Factory）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/09/10/设计模式-二-抽象工厂-Abstract-Factory/",
+        "zh-cn": "/zh-cn/2022/09/10/设计模式-二-抽象工厂-Abstract-Factory/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "4e9a3ad6ae273878d20c125b766cf0ab2893b890741c586e4f9c88295279e634.json",
+          "rawDigest": "757e1f28706525da8dca7b8a5bf04a114c737896eabd3cf659e585970f0f43f7"
+        }
+      }
+    },
+    {
+      "id": "post-87ff02045c8047821959",
+      "key": "/node.js/2024/12/19/Prisma-事务处理-Batch和Interactive/",
+      "source": "content/posts/zh-cn/2024-12-19-Prisma：事务处理：Batch和Interactive.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/node.js/2024/12/19/Prisma-事务处理-Batch和Interactive/",
+        "zh-cn": "/zh-cn/node.js/2024/12/19/Prisma-事务处理-Batch和Interactive/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "87ff02045c8047821959b89e4f74ff01e0c4c1d3c9b0b8c5bd0ab87cf740c36d.json",
+          "rawDigest": "1aabb5ebb449dd8adbf90d35b16894b1f56f875e6a9e05e5287e257a680f0eac"
+        },
+        "zh-cn": {
+          "file": "d9c47e92c3434a32274ffed088a0ca83e744325e95c69a8b726d1302aa31fe47.json",
+          "rawDigest": "716ad03c01418cafaf12cc9dd8a6c4daab2740ab026b7d5736b7d381f78093b5"
+        }
+      }
+    },
+    {
+      "id": "post-899efbca3562d398c6fb",
+      "key": "/algorithm/2024/12/08/使用VAE重建MNIST数据集/",
+      "source": "content/posts/zh-cn/2024-12-08-使用VAE重建MNIST数据集.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/12/08/使用VAE重建MNIST数据集/",
+        "zh-cn": "/zh-cn/algorithm/2024/12/08/使用VAE重建MNIST数据集/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "899efbca3562d398c6fbc5b7f4fd16eeb9e92922224126063138f8dcbba41995.json",
+          "rawDigest": "1bae0e8637593dc969760d6c09f554ae801727abecdd24d4b52c04acf9c2b77a"
+        },
+        "zh-cn": {
+          "file": "7a89e89a64de72d43c324c17bf9e8cc01a17fb0c59069d598ab5edf9e60b9e0c.json",
+          "rawDigest": "522bf4092e69d76e3bbc889bc06618d30b6b354b3dfb1f6e6804a2a46969649b"
+        }
+      }
+    },
+    {
+      "id": "post-8b38ca097a441aef757a",
+      "key": "/2022/04/21/操作系统-十-进程的概念-组成和特征/",
+      "source": "content/posts/zh-cn/2022-04-21-操作系统（十）进程的概念、组成和特征.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/21/操作系统-十-进程的概念-组成和特征/",
+        "zh-cn": "/zh-cn/2022/04/21/操作系统-十-进程的概念-组成和特征/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "3474e071d09bb83d671321c9d63e2500d8002c8d577b630498303928b46c1d3a.json",
+          "rawDigest": "eabf8a5fb72a814124dc8609c07ef78ad64a6c479b8c473cced57692bcd6649c"
+        }
+      }
+    },
+    {
+      "id": "post-8fe3080449bc60542c68",
+      "key": "/algorithm/2024/12/04/Pokemon-三-训练-验证及测试/",
+      "source": "content/posts/zh-cn/2024-12-04-Pokemon（三）训练、验证及测试.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/12/04/Pokemon-三-训练-验证及测试/",
+        "zh-cn": "/zh-cn/algorithm/2024/12/04/Pokemon-三-训练-验证及测试/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "8fe3080449bc60542c68f60ebc2af27640fc2d033535d7ac2c9e32d2e6e6d1d1.json",
+          "rawDigest": "4f5a571072e1293a68da5ae616acdca7c176f0d811a20c672a0fcce8973563d3"
+        },
+        "zh-cn": {
+          "file": "b106fa0f1812062f432850e2728034c86f2e311b053fab8718f4cc79b987b87e.json",
+          "rawDigest": "e00957f1e16548d1914852c6122680c59d66f3989f113063392f65895c22f4fd"
+        }
+      }
+    },
+    {
+      "id": "post-95796dac976a9110a5eb",
+      "key": "/maven/2023/12/05/Maven-十二-依赖机制简介/",
+      "source": "content/posts/zh-cn/2023-12-05-Maven（十二）依赖机制简介.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/maven/2023/12/05/Maven-十二-依赖机制简介/",
+        "zh-cn": "/zh-cn/maven/2023/12/05/Maven-十二-依赖机制简介/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "95796dac976a9110a5eb56a653644e9d1b15607e6de1224d791466b5ad69252e.json",
+          "rawDigest": "fbb63c3d608d2c6e88d3a67fa5e645bcbf71912da85eafb1074014e8647c800a"
+        },
+        "zh-cn": {
+          "file": "f76c5a5b9e1a036d516d676d0d483a12e516da2a8ae94b534ce93c7a2bf2c009.json",
+          "rawDigest": "568de4f3dd612173bb437360320a20468f87a0e680817e80c400f95742c27d00"
+        }
+      }
+    },
+    {
+      "id": "post-9595cc30b8fba6ed8d6a",
+      "key": "/algorithm/2024/12/01/梯度消失和梯度爆炸/",
+      "source": "content/posts/zh-cn/2024-12-01-梯度消失和梯度爆炸.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/12/01/梯度消失和梯度爆炸/",
+        "zh-cn": "/zh-cn/algorithm/2024/12/01/梯度消失和梯度爆炸/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "9595cc30b8fba6ed8d6a6cd759e372db1391eb19265eda786b971a143493c4e7.json",
+          "rawDigest": "421714cac5f694489cfb9a9b193e2515fe4f309e2bc686cb3e13621f267c3575"
+        },
+        "zh-cn": {
+          "file": "0e10314071dcfb2ba091ca234550be7a49d0746145eae974f6406a235b3f192c.json",
+          "rawDigest": "d70d4d362e4e1a3510811e16450e5e422cb2b0f28089b526b7bf17e26b8181df"
+        }
+      }
+    },
+    {
+      "id": "post-9629f738dc9f3ecd91c2",
+      "key": "/maven/2023/12/04/Maven-八-构建生命周期/",
+      "source": "content/posts/zh-cn/2023-12-04-Maven（八）构建生命周期.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/maven/2023/12/04/Maven-八-构建生命周期/",
+        "zh-cn": "/zh-cn/maven/2023/12/04/Maven-八-构建生命周期/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "9629f738dc9f3ecd91c2c0cbd096fec31d4326ff2c06b1aad7633759214fb89c.json",
+          "rawDigest": "ecd19a2ffd021decb4d7b555e3c04f0ad5ec07f6972a8dc48269a49e15cbdea1"
+        },
+        "zh-cn": {
+          "file": "8e952cca8eabef38e989377c66dc29138f78d2490e494e4b6d92044547b663c6.json",
+          "rawDigest": "afca97b9ede5c0e7dfa12cc6e9a2009ac9ac2302c03ba57abc095bb8fa689773"
+        }
+      }
+    },
+    {
+      "id": "post-9b4b0adca58ac2ef9d58",
+      "key": "/2022/04/29/操作系统-三十一-吸烟者问题/",
+      "source": "content/posts/zh-cn/2022-04-29-操作系统（三十一）吸烟者问题.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/29/操作系统-三十一-吸烟者问题/",
+        "zh-cn": "/zh-cn/2022/04/29/操作系统-三十一-吸烟者问题/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "75415958a2925df13d5c60cb27c53370a32805858b5d4a6dbe589555ea8ac99b.json",
+          "rawDigest": "4474963dfc55ffb93059e7b81603ebb591c25a393e451ac690444ef98cb88100"
+        }
+      }
+    },
+    {
+      "id": "post-9bf713ce08423d345284",
+      "key": "/apollo/2023/11/24/Apollo配置中心-七-Springboot集成及分布式部署/",
+      "source": "content/posts/zh-cn/2023-11-24-Apollo配置中心（七）Springboot集成及分布式部署.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/apollo/2023/11/24/Apollo配置中心-七-Springboot集成及分布式部署/",
+        "zh-cn": "/zh-cn/apollo/2023/11/24/Apollo配置中心-七-Springboot集成及分布式部署/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "9bf713ce08423d345284b15ecb46ab33738cd1d728cde198acfb42bf8c38c43b.json",
+          "rawDigest": "53f1d527d6f86f88cd1f8991fbe68d9a24455c027d3a8a0b509bdf5c3059b048"
+        },
+        "zh-cn": {
+          "file": "c747526ade42e54087dd5c644b3f0d7559f6655d5a025d06dd892e43dac9a055.json",
+          "rawDigest": "8dfaa7a37c3d7eb73ccc6969c47887a21ba55e35d74e4970665d075f5ab4777f"
+        }
+      }
+    },
+    {
+      "id": "post-a0dee9b226ba5ef7b6b0",
+      "key": "/computer network/2024/10/24/计算机网络-五-路由算法/",
+      "source": "content/posts/zh-cn/2024-10-23-计算机网络（五）路由算法.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/computer network/2024/10/24/计算机网络-五-路由算法/",
+        "zh-cn": "/zh-cn/computer network/2024/10/24/计算机网络-五-路由算法/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "aa1038953f2ce58b99c3df6376dc23659226e3f38f453462a0319383adfaf3b4.json",
+          "rawDigest": "39f94e985f2f3421618efa718651a4e9f6061dc9c06a559e2215ea88eb199a1f"
+        }
+      }
+    },
+    {
+      "id": "post-a3ceaa4ae2f0e541b03b",
+      "key": "/2022/04/20/操作系统-二-操作系统的特征/",
+      "source": "content/posts/zh-cn/2022-04-20-操作系统（二）操作系统的特征.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/20/操作系统-二-操作系统的特征/",
+        "zh-cn": "/zh-cn/2022/04/20/操作系统-二-操作系统的特征/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "7278370874855a241375b452c35f94ed1f29cf3f3c5749b5b7ed3354cf565e92.json",
+          "rawDigest": "4c74c5c7f24413ee4b247dc681bc5cffbe907b2943d7ea8af41c48cef5899c63"
+        }
+      }
+    },
+    {
+      "id": "post-a788a92179ed7ccc5202",
+      "key": "/computer network/2024/10/24/计算机网络-六-传输层/",
+      "source": "content/posts/zh-cn/2024-10-24-计算机网络（六）传输层.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/computer network/2024/10/24/计算机网络-六-传输层/",
+        "zh-cn": "/zh-cn/computer network/2024/10/24/计算机网络-六-传输层/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "45a6bc1058aa154a28a91dac84c99bb0adc8b7c7e8ee6eb9ee30993c72d176da.json",
+          "rawDigest": "8ac897d70cf7e0cdfb3b34fce9d4d7dfbdf89353ebcf61a6054c8b55ed9d3800"
+        }
+      }
+    },
+    {
+      "id": "post-a84d881f50b17f1d5850",
+      "key": "/computer network/2024/10/20/计算机网络-二-Data-Link层/",
+      "source": "content/posts/zh-cn/2024-10-20-计算机网络（二）Data Link层.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/computer network/2024/10/20/计算机网络-二-Data-Link层/",
+        "zh-cn": "/zh-cn/computer network/2024/10/20/计算机网络-二-Data-Link层/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "c4724f36bdf8275528fdb92bca5f2dda16e406b975f90ed36703ddf24f2eb63c.json",
+          "rawDigest": "050f2089a18fde17f203d61ff856a5fa30513ef085d140dc2da227a9011d330b"
+        }
+      }
+    },
+    {
+      "id": "post-aa80240b01d526512fa2",
+      "key": "/algorithm/2024/11/12/射线法判断点是否在多边形内/",
+      "source": "content/posts/zh-cn/2024-11-12-射线法判断点是否在多边形内.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/11/12/射线法判断点是否在多边形内/",
+        "zh-cn": "/zh-cn/algorithm/2024/11/12/射线法判断点是否在多边形内/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "aa80240b01d526512fa26385e2f281a8de36c76f97bbe25ad022ad075b7ee7a0.json",
+          "rawDigest": "d09e6985383ce3e006af93a4781e98479dfcf8e310f60a1b9910202f72033366"
+        },
+        "zh-cn": {
+          "file": "092b1cb0369f18adf00a94880d2b51a45202a3fb58c0ebf7f1e6cf8246849ae7.json",
+          "rawDigest": "db722374d75d86c7d6725863b8a78aa1298947a765b8e51fb82353eacba6803b"
+        }
+      }
+    },
+    {
+      "id": "post-aadd8b8003b4471a0409",
+      "key": "/2022/04/27/操作系统-二十七-信号量机制/",
+      "source": "content/posts/zh-cn/2022-04-27-操作系统（二十七）信号量机制.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/27/操作系统-二十七-信号量机制/",
+        "zh-cn": "/zh-cn/2022/04/27/操作系统-二十七-信号量机制/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "582fa18ebb348d606e7b97e6fc417a8c33e5c07fd19d19cc5e7cbc94d99bcb51.json",
+          "rawDigest": "bdf08d077ad6037675d79e9375f34174d286004fb5525c99cc86103c106a6ec0"
+        }
+      }
+    },
+    {
+      "id": "post-abf720003702c9d1bdb4",
+      "key": "/2021/10/09/二叉树基础-三-线段树-Segment-Tree/",
+      "source": "content/posts/zh-cn/2021-10-09-二叉树基础（三）线段树（Segment Tree）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2021/10/09/二叉树基础-三-线段树-Segment-Tree/",
+        "zh-cn": "/zh-cn/2021/10/09/二叉树基础-三-线段树-Segment-Tree/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "abf720003702c9d1bdb456e04b4be7578ac613bbc8ce33616bd03657bc54c0ae.json",
+          "rawDigest": "0c448b3441bf7e03dd048616627f8dfedfcbf0f453a2627219ddfbcb6b0a4953"
+        },
+        "zh-cn": {
+          "file": "d538a382840d35c9e0500d27988c21648a3df4c534abefc2ea8dafbf9ca468ed.json",
+          "rawDigest": "c8cfa3d67ddef6f2254bf30e3dd149f60530bf5fee98ebffa6174b4cde6f3e56"
+        }
+      }
+    },
+    {
+      "id": "post-ae4edc56c843eb893c90",
+      "key": "/2022/05/01/操作系统-三十七-死锁的避免/",
+      "source": "content/posts/zh-cn/2022-05-01-操作系统（三十七）死锁的避免.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/05/01/操作系统-三十七-死锁的避免/",
+        "zh-cn": "/zh-cn/2022/05/01/操作系统-三十七-死锁的避免/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "4e2d7da55767b71abc6e4d6eac8a3526fd70e5aa23bcbc8dd5b5731f20a871c1.json",
+          "rawDigest": "91a1b06236fccd7f66a18ff6d6c04102dd349d2650def1b95de73b088618cb59"
+        }
+      }
+    },
+    {
+      "id": "post-ae5ea7d2dc9fa65ec755",
+      "key": "/2022/04/20/操作系统-六-系统调用/",
+      "source": "content/posts/zh-cn/2022-04-20-操作系统（六）系统调用.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/20/操作系统-六-系统调用/",
+        "zh-cn": "/zh-cn/2022/04/20/操作系统-六-系统调用/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "5ed5d81803bb1fdb0d1e9d44ec24f4d1b98f5f749ed1d643c4f94a661f9dfdd5.json",
+          "rawDigest": "abd6b20dd4d344a7ef59feec9de57ead6fbc29f4ba4dfc0c0fcbbb7f50e99199"
+        }
+      }
+    },
+    {
+      "id": "post-aef79682cb00d9e4aa3c",
+      "key": "/2022/05/03/操作系统-四十三-动态分区分配算法/",
+      "source": "content/posts/zh-cn/2022-05-03-操作系统（四十三）动态分区分配算法.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/05/03/操作系统-四十三-动态分区分配算法/",
+        "zh-cn": "/zh-cn/2022/05/03/操作系统-四十三-动态分区分配算法/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "382dc9244f7d06f288419a5cd1adada76caa5ab9c16378dea508c4d04f6952c2.json",
+          "rawDigest": "34be8e7adb1a9e0e08a6295a4bec12359dda265e49591ab941563401f44b8f6c"
+        }
+      }
+    },
+    {
+      "id": "post-b913a490c00596a0506a",
+      "key": "/maven/2023/12/04/Maven-六-构建其它类型项目及子项目/",
+      "source": "content/posts/zh-cn/2023-12-04-Maven（六）构建其它类型项目及子项目.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/maven/2023/12/04/Maven-六-构建其它类型项目及子项目/",
+        "zh-cn": "/zh-cn/maven/2023/12/04/Maven-六-构建其它类型项目及子项目/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "b913a490c00596a0506a1d22e3c7170dccd2ba23e47cf91808a282510598b819.json",
+          "rawDigest": "c17d71f0f6322f6c693efd29e9ccdb8cf1123b0ae51517a5f0f8c1f7ef41da90"
+        },
+        "zh-cn": {
+          "file": "02e7800480928ee11e8a8b09dca8c384dc40f8d51f93214d6d7f6a00e0466f82.json",
+          "rawDigest": "577cb50410f9d87684c35353a2c946d1ea5c8b7138b80e4d4529f1d2e795e323"
+        }
+      }
+    },
+    {
+      "id": "post-b9618acb83b8ac08cf03",
+      "key": "/dynamic programming fundamentals/2021/09/29/动态规划-三-股票问题系列/",
+      "source": "content/posts/zh-cn/2021-09-29-动态规划（三）股票问题系列.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/dynamic programming fundamentals/2021/09/29/动态规划-三-股票问题系列/",
+        "zh-cn": "/zh-cn/dynamic programming fundamentals/2021/09/29/动态规划-三-股票问题系列/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "b9618acb83b8ac08cf031dafbe8f3c829954f307a42c5a6296bc28e1e8eae127.json",
+          "rawDigest": "c8d772cf7fb956e95eba8e98b644474849db87ce471695cd3b14cba60afbb38a"
+        },
+        "zh-cn": {
+          "file": "4d06e0be0adc3639bbff4d1292447d31719f9c1e1f097b09ca372a7794752de3.json",
+          "rawDigest": "d48fe77b1325cca2c1ca367faa2f964edef1f39da3d8b8f19e727bd5bb229ce4"
+        }
+      }
+    },
+    {
+      "id": "post-ba3f730cc163e6f28856",
+      "key": "/react/2024/09/14/react-hook-4/",
+      "source": "content/posts/zh-cn/2024-09-14-react-hook-4.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/react/2024/09/14/react-hook-4/",
+        "zh-cn": "/zh-cn/react/2024/09/14/react-hook-4/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "e58109c32b6f4e3effe233c8f8dcd9f729ccda3e56e2f1bfbe613d74e6097059.json",
+          "rawDigest": "b53d283fc1bd86c0c74eca6fb49647520b544b6364743231f0973fc915ec8500"
+        }
+      }
+    },
+    {
+      "id": "post-ba54580aaff3a291d7eb",
+      "key": "/apollo/2023/11/24/Apollo配置中心-六-服务端及客户端设计/",
+      "source": "content/posts/zh-cn/2023-11-24-Apollo配置中心（六）服务端及客户端设计.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/apollo/2023/11/24/Apollo配置中心-六-服务端及客户端设计/",
+        "zh-cn": "/zh-cn/apollo/2023/11/24/Apollo配置中心-六-服务端及客户端设计/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "ba54580aaff3a291d7ebd92dfa4b248beb61a400450ee49b44731b91123b13a0.json",
+          "rawDigest": "ee43e0235733a6edffaa6732fa27cb59e89b3945e3220b711a8897141afda91e"
+        },
+        "zh-cn": {
+          "file": "82eb4898060b5c48ef05b5a1bb8dfbefc77499ff822e154d6297b0a88738018a.json",
+          "rawDigest": "a494b5e92e4e7d3ad7506c049dbf2d3a05ab33f65502d871d5266f0ac69d38ad"
+        }
+      }
+    },
+    {
+      "id": "post-c16e90c5916ef5d96a19",
+      "key": "/2022/04/27/操作系统-二十八-信号量实现进程的同步-互斥和前驱/",
+      "source": "content/posts/zh-cn/2022-04-27-操作系统（二十八）信号量实现进程的同步、互斥和前驱.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/27/操作系统-二十八-信号量实现进程的同步-互斥和前驱/",
+        "zh-cn": "/zh-cn/2022/04/27/操作系统-二十八-信号量实现进程的同步-互斥和前驱/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "ad14dd5ffa39449f8784373f9d14c264998139e19bcbe6f9947c282860894659.json",
+          "rawDigest": "c83dd25e6231176f728b1cd3af4ccf56ff8b9bd26daccd18975c3796453a776d"
+        }
+      }
+    },
+    {
+      "id": "post-c1f4a5736f13d6416605",
+      "key": "/algorithm/2024/11/24/感知机/",
+      "source": "content/posts/zh-cn/2024-11-24-感知机.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/11/24/感知机/",
+        "zh-cn": "/zh-cn/algorithm/2024/11/24/感知机/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "c1f4a5736f13d6416605941692cf032f4bd18012bbe6229f505aa891af2debc9.json",
+          "rawDigest": "912226a4d414e734111ba08ddc649ca39cf5ec2a798f16c9c400dec5a16821bc"
+        },
+        "zh-cn": {
+          "file": "705630bf2f43ade6789e95130a1a8ce45e66f9c15203c97c6e867db995fa1483.json",
+          "rawDigest": "0b403b2630d88442bdec2cadb13aa2192f01312936d1e8639cd00bc5b8d83d65"
+        }
+      }
+    },
+    {
+      "id": "post-c21781e3fd002c5e31ea",
+      "key": "/2021/10/05/二叉树基础-二-二叉搜索树-BST/",
+      "source": "content/posts/zh-cn/2021-10-05-二叉树基础（二）二叉搜索树（BST）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2021/10/05/二叉树基础-二-二叉搜索树-BST/",
+        "zh-cn": "/zh-cn/2021/10/05/二叉树基础-二-二叉搜索树-BST/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "c21781e3fd002c5e31eadea67485f6f9a9c5df79fb0b964850524a72af9dd7ce.json",
+          "rawDigest": "48dea369badab433a0d13664b1442f27ea6aa32c5d3eefd65c2b28f684ea8417"
+        },
+        "zh-cn": {
+          "file": "113a3cbcd2b9ff51888e17041f4efaf55aac7a12fa7f43b98e5f446565270415.json",
+          "rawDigest": "26a10b4adf6545dd90b70b21ef93f6258f9b741fdc173fd8ae9ae3f22896a2eb"
+        }
+      }
+    },
+    {
+      "id": "post-c36152965742eadc9889",
+      "key": "/2021/10/20/双指针问题-二-滑动窗口/",
+      "source": "content/posts/zh-cn/2021-10-19-双指针问题（二）滑动窗口.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2021/10/20/双指针问题-二-滑动窗口/",
+        "zh-cn": "/zh-cn/2021/10/20/双指针问题-二-滑动窗口/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "c36152965742eadc9889ec605c385a729a760239869de86fe3c84ecc1d2afa24.json",
+          "rawDigest": "3e8092b6aab224db8e2ac1a88e9cd1087a04fe04bf7d7fc3218512226aad6c27"
+        },
+        "zh-cn": {
+          "file": "a113d124e6eb6317d133db4a1933218c6a18e59364399323e11fbce0206351a3.json",
+          "rawDigest": "c59aef6a2918032dfc7a806211ae5c2922d35e3bec13d6aa0c331ad1b752a7ea"
+        }
+      }
+    },
+    {
+      "id": "post-c372f6fcd129cd360324",
+      "key": "/2022/05/03/操作系统-四十二-连续分配管理方式/",
+      "source": "content/posts/zh-cn/2022-05-03-操作系统（四十二）连续分配管理方式.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/05/03/操作系统-四十二-连续分配管理方式/",
+        "zh-cn": "/zh-cn/2022/05/03/操作系统-四十二-连续分配管理方式/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "ccfeab5c14f71aab9faf23c96bafd8ddaf4da910dfd2548f1169ced1b2e9ab89.json",
+          "rawDigest": "7f0a10863d747dd020121da73a5943ff90f0f62da41976bcbabcbb612cc7c02c"
+        }
+      }
+    },
+    {
+      "id": "post-c3d1b72d748ba44a6dff",
+      "key": "/algorithm/2024/12/06/Pokemon-四-实战迁移学习/",
+      "source": "content/posts/zh-cn/2024-12-05-Pokemon（四）实战迁移学习.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/12/06/Pokemon-四-实战迁移学习/",
+        "zh-cn": "/zh-cn/algorithm/2024/12/06/Pokemon-四-实战迁移学习/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "c3d1b72d748ba44a6dff9a1bdfa75dc1d011d46ee80dce13fc97c67286a743d6.json",
+          "rawDigest": "501282c71e523cd3409be413a951e8b95e0bb8070e38a87d96a8923819dd555a"
+        },
+        "zh-cn": {
+          "file": "5ca130a44f6498feb1d787e89e858ed625ba4838fa40c2355755b8d8ff3101d2.json",
+          "rawDigest": "80c1765cd65ab4a7f47f8093b2bead46d79b0c34df0d8a616179c8383fb755b6"
+        }
+      }
+    },
+    {
+      "id": "post-c7c39f805b4f5d2f50db",
+      "key": "/2022/04/20/操作系统-三-操作系统的发展和分类/",
+      "source": "content/posts/zh-cn/2022-04-20-操作系统（三）操作系统的发展和分类.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/20/操作系统-三-操作系统的发展和分类/",
+        "zh-cn": "/zh-cn/2022/04/20/操作系统-三-操作系统的发展和分类/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "c72c7c6b4fc6a6e0d843e275ba3b742f0a33b3453a0abb7fc8091a874e029df1.json",
+          "rawDigest": "44f6f945565777faedc13c0baaebf73d8611211d46ee556ca825546ac903098f"
+        }
+      }
+    },
+    {
+      "id": "post-c94f20c3220dd8208ccd",
+      "key": "/algorithm/2024/12/06/无监督学习及Autoencoder/",
+      "source": "content/posts/zh-cn/2024-12-06-无监督学习及Autoencoder.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/12/06/无监督学习及Autoencoder/",
+        "zh-cn": "/zh-cn/algorithm/2024/12/06/无监督学习及Autoencoder/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "c94f20c3220dd8208ccd0db30c08f4dfb4cf06266a142734ce20c531f757c849.json",
+          "rawDigest": "0cfa1f78d34f97e9cdd20abf5c0512aea532b2adda310b24275340097f844ddb"
+        },
+        "zh-cn": {
+          "file": "59faf1bf77750e75e43e862eb62c8b434aef809bb4ae2e29f0a4d11a18924bbb.json",
+          "rawDigest": "0e7592f935824c1cd6a49b2432cf88ca83ec5837d337a850807f807799b4489c"
+        }
+      }
+    },
+    {
+      "id": "post-ca12c08d627ec621c7c5",
+      "key": "/2022/04/29/操作系统-三十二-读者-写者问题/",
+      "source": "content/posts/zh-cn/2022-04-29-操作系统（三十二）读者-写者问题.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/29/操作系统-三十二-读者-写者问题/",
+        "zh-cn": "/zh-cn/2022/04/29/操作系统-三十二-读者-写者问题/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "d3e902d948f301a8c7bf1e1cd4fd46e2ceb731fb8a1db4ddd2b407b0cc5af73f.json",
+          "rawDigest": "12d806ea576d00349d2d9d5f1fedce192c8f1afc70c99ffa346dc802ec083e54"
+        }
+      }
+    },
+    {
+      "id": "post-cab682bcb169743e1f40",
+      "key": "/computer network/2024/10/21/计算机网络-三-MAC层/",
+      "source": "content/posts/zh-cn/2024-10-21-计算机网络（三）MAC层.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/computer network/2024/10/21/计算机网络-三-MAC层/",
+        "zh-cn": "/zh-cn/computer network/2024/10/21/计算机网络-三-MAC层/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "5e399af89a87de8355012f90b315267b3fe11146a370c66a9d7c43bed5abf4a0.json",
+          "rawDigest": "bdaf252b12cc1f8048d2f58747a42d711d5c7e1f8be41aa05af5fb11f1f1bbcf"
+        }
+      }
+    },
+    {
+      "id": "post-ce64a3d07acbc58cc30f",
+      "key": "/algorithm/2024/11/26/深度学习的其他概念/",
+      "source": "content/posts/zh-cn/2024-11-26-深度学习的其他概念.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/11/26/深度学习的其他概念/",
+        "zh-cn": "/zh-cn/algorithm/2024/11/26/深度学习的其他概念/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "ce64a3d07acbc58cc30f052889d240d3683ae6f859209b6533e0a5827e20cb2e.json",
+          "rawDigest": "a89d69d938f024ed3cfe48fce776375fb919c5611ae6f225b823a7a77c0b81c8"
+        },
+        "zh-cn": {
+          "file": "bbb57a4c5b624b4564ee2a326a1afd87ece502d4caf73a79d1e2bdfb4fad8259.json",
+          "rawDigest": "26fb354eefc19f86d0bb506caaa9f99c882e85c797215eb6a337a20de0988fdf"
+        }
+      }
+    },
+    {
+      "id": "post-cfea623e4542258af425",
+      "key": "/maven/2023/12/04/Maven-五-外部依赖-远程仓库及文档/",
+      "source": "content/posts/zh-cn/2023-12-04-Maven（五）外部依赖、远程仓库及文档.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/maven/2023/12/04/Maven-五-外部依赖-远程仓库及文档/",
+        "zh-cn": "/zh-cn/maven/2023/12/04/Maven-五-外部依赖-远程仓库及文档/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "cfea623e4542258af42542a2ecc695ecf83fd6ad44a80913bb9418569079b4b2.json",
+          "rawDigest": "58525c66510e5dc3244edb487e39c77c614618e721a4c2760e908e6de87ff737"
+        },
+        "zh-cn": {
+          "file": "da445ef136422ed058755b085f3f36749e5910f01449b0afee2262fce74cfd91.json",
+          "rawDigest": "c9134a5acb1ebeaab08bfd492b65c0f9a92edab12e6b2c4eb020b710d9c03a01"
+        }
+      }
+    },
+    {
+      "id": "post-cfefa6ff3a83702f6189",
+      "key": "/algorithm/2024/12/02/Pokemon-一-实战Dataset-使用PyTorch构建自定义Pokemon数据集/",
+      "source": "content/posts/zh-cn/2024-12-02-Pokemon（一）实战Dataset：使用PyTorch构建自定义Pokemon数据集.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/12/02/Pokemon-一-实战Dataset-使用PyTorch构建自定义Pokemon数据集/",
+        "zh-cn": "/zh-cn/algorithm/2024/12/02/Pokemon-一-实战Dataset-使用PyTorch构建自定义Pokemon数据集/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "cfefa6ff3a83702f6189f39069e3d24447692f21667e6a8fc0425ace8f5ef2af.json",
+          "rawDigest": "6a309c45f6df6c00e36b59d11f81faa1c372f8cb2d474f9f5da72ede119fc0a3"
+        },
+        "zh-cn": {
+          "file": "d98767a528a5e41c0823ba6085991725a249e82d10ec79cb8a6d44c71729f113.json",
+          "rawDigest": "c10006010faae23879f0b8cc2214c6a79df5087cbb5e72c9a560074b5078eefc"
+        }
+      }
+    },
+    {
+      "id": "post-d3c5247de044484fe189",
+      "key": "/react/2024/09/16/redux-1/",
+      "source": "content/posts/zh-cn/2024-09-16-redux-1.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/react/2024/09/16/redux-1/",
+        "zh-cn": "/zh-cn/react/2024/09/16/redux-1/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "03a14d89bd8c1ac0dad13e003980fc13945cd30407cd3e250ee3825f950a333d.json",
+          "rawDigest": "1fc58b2214b2765d454084559b068f354eab3b544dbbcf742e43fe500fb482f8"
+        }
+      }
+    },
+    {
+      "id": "post-d4901f704f2e369c3916",
+      "key": "/2019/10/11/阳光体育一键汉姆/",
+      "source": "content/posts/zh-cn/2019-10-11-阳光体育一键汉姆.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2019/10/11/阳光体育一键汉姆/",
+        "zh-cn": "/zh-cn/2019/10/11/阳光体育一键汉姆/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "d4901f704f2e369c3916e6a4c5219d44911040106707011488c2e08b4db81579.json",
+          "rawDigest": "4224eb5637fa5f6fdc52a8acdaaefd549a2388f38eca0cab5e6bcb9363a7ddb6"
+        },
+        "zh-cn": {
+          "file": "df2ce2a74e387f7dc54bb5e8ec02e933d6edf840f9d19937bcc8f3e39dc378b8.json",
+          "rawDigest": "b7611793c4c9a72b1c7942cd01e587ef43c15828682178eb72c0f689815bec6f"
+        }
+      }
+    },
+    {
+      "id": "post-d60e6c1d31880660db09",
+      "key": "/2022/04/24/操作系统-二十-调度算法的评价指标/",
+      "source": "content/posts/zh-cn/2022-04-24-操作系统（二十）调度算法的评价指标.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/24/操作系统-二十-调度算法的评价指标/",
+        "zh-cn": "/zh-cn/2022/04/24/操作系统-二十-调度算法的评价指标/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "3daea8da9623711748364054a3608eb956ff941389cb035edfc940785a3be103.json",
+          "rawDigest": "4f0512b94543d4141b92befb276167333dd09174a334dc95b19d3f0862ccd4cf"
+        }
+      }
+    },
+    {
+      "id": "post-d67f8795e4c516eb6627",
+      "key": "/algorithm/2024/12/03/Pokemon-二-实战自定义网络-使用PyTorch构建ResNet18模型/",
+      "source": "content/posts/zh-cn/2024-12-03-Pokemon（二）实战自定义网络：使用PyTorch构建ResNet18模型.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/12/03/Pokemon-二-实战自定义网络-使用PyTorch构建ResNet18模型/",
+        "zh-cn": "/zh-cn/algorithm/2024/12/03/Pokemon-二-实战自定义网络-使用PyTorch构建ResNet18模型/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "d67f8795e4c516eb6627a96a99b36a70f5cca43e83afb76ebed195996909d24d.json",
+          "rawDigest": "eb1384825e7ceb8b49d937e22e9a774c464f140981fe9fa70b1db18c7cd632ee"
+        },
+        "zh-cn": {
+          "file": "fa2b64f1e5a71f91796a1e818791f82fc8d6220e2ddce2eb816500b4c559f24f.json",
+          "rawDigest": "5527d0871f38cc0fbb1f52ce5a4d494b37ee04e37c014d7646ac90736ace8de1"
+        }
+      }
+    },
+    {
+      "id": "post-dace97715ae227e009e5",
+      "key": "/edit-xlsx/2024/01/30/Edit-xlsx开发日志-一/",
+      "source": "content/posts/zh-cn/2024-01-30-Edit-xlsx开发日志（一）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/edit-xlsx/2024/01/30/Edit-xlsx开发日志-一/",
+        "zh-cn": "/zh-cn/edit-xlsx/2024/01/30/Edit-xlsx开发日志-一/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "dace97715ae227e009e520fd59bc908b9ed0cce369396bc1d03d01589b70bc0c.json",
+          "rawDigest": "7ccb208b49c7229e133569646238a1f1eaf8b6fa847e78a1bf6d7cb8c9fe3aa5"
+        },
+        "zh-cn": {
+          "file": "cfcff98229c9446f9540f9bc0035bd10e2ee8040368e3df701d0139f8718af7e.json",
+          "rawDigest": "4c25689ac660a41729257a8be7d9fe6a31e0e9f2448c2ece213ece3eb0e36f85"
+        }
+      }
+    },
+    {
+      "id": "post-dddd2b7bff56127bdf1f",
+      "key": "/2022/09/10/设计模式-一-简介/",
+      "source": "content/posts/zh-cn/2022-09-10-设计模式（一）简介.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/09/10/设计模式-一-简介/",
+        "zh-cn": "/zh-cn/2022/09/10/设计模式-一-简介/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "11198cb4f35b04e837044794be685ff86ec6491c43bc2b73922e0505e39e9b87.json",
+          "rawDigest": "67aa77e67ea5966da4764ee06366a237b0a5f02e0c0d65a5aec23236511957c9"
+        }
+      }
+    },
+    {
+      "id": "post-df6de7c26f489b3a8702",
+      "key": "/2021/10/09/双指针问题-一-对撞指针和快慢指针/",
+      "source": "content/posts/zh-cn/2021-10-08-双指针问题（一）对撞指针和快慢指针.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2021/10/09/双指针问题-一-对撞指针和快慢指针/",
+        "zh-cn": "/zh-cn/2021/10/09/双指针问题-一-对撞指针和快慢指针/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "df6de7c26f489b3a8702f614a00279a9c5daa4d66a9732d8a5f5d7dbf8fda7dd.json",
+          "rawDigest": "f5e1785a6a3ceaa47d19343dbe8dc9a87c5f9f79e50700d96401f50ec052689e"
+        },
+        "zh-cn": {
+          "file": "9fb91282876bb33abc5b30699902aad460fb5e1cdebee020c4dd1698bd68e0c6.json",
+          "rawDigest": "ae54cf7796b080f673bc1fce0f7d4b31cf5d872f5072fe77c53193f842eb191d"
+        }
+      }
+    },
+    {
+      "id": "post-dfddf5e96ae58c0cc1bd",
+      "key": "/dynamic programming fundamentals/2021/09/28/动态规划-二-最优子序列系列/",
+      "source": "content/posts/zh-cn/2021-09-28-动态规划（二）最优子序列系列.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/dynamic programming fundamentals/2021/09/28/动态规划-二-最优子序列系列/",
+        "zh-cn": "/zh-cn/dynamic programming fundamentals/2021/09/28/动态规划-二-最优子序列系列/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "dfddf5e96ae58c0cc1bd8166db7a6386a93a9edc86f2d913ba87b4f8fd3bc203.json",
+          "rawDigest": "707dbd7bec015a169479542dcdc93f642b183cd88c6b7a403c63419b7fcd7557"
+        },
+        "zh-cn": {
+          "file": "fb955a293afcf2682ff21304b3b08c0c8aeaf76a262d4c9fb509472b40c2a771.json",
+          "rawDigest": "0c2cd8e379e4bfa5e0ae7bee237bbf084434de264fb42a0d3d2c44ceaa044b33"
+        }
+      }
+    },
+    {
+      "id": "post-e118d695bfb7de9d50f4",
+      "key": "/maven/2023/12/05/Maven-十-配置文件-Profiles-简介/",
+      "source": "content/posts/zh-cn/2023-12-05-Maven（十）配置文件（Profiles）简介.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/maven/2023/12/05/Maven-十-配置文件-Profiles-简介/",
+        "zh-cn": "/zh-cn/maven/2023/12/05/Maven-十-配置文件-Profiles-简介/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "e118d695bfb7de9d50f4d1baea9d45bcc4387257098163d91b00ac6b90eecf90.json",
+          "rawDigest": "6f3391768d3e3346f9285ff544b9d8cae959547f884f89ebee6e714f572b03fb"
+        },
+        "zh-cn": {
+          "file": "2844b74b268468b10d38d4bf49e0b6f350d017f9309c16a0d51d5b25e78f1927.json",
+          "rawDigest": "38bc4966faf09f6098922f1c499e3c9ed9461465b96867002eae1bb36e26701a"
+        }
+      }
+    },
+    {
+      "id": "post-e2a0a276a00ecf3e0b35",
+      "key": "/apollo/2023/11/23/Apollo配置中心-四-快速入门及使用指南/",
+      "source": "content/posts/zh-cn/2023-11-23-Apollo配置中心（四）快速入门及使用指南.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/apollo/2023/11/23/Apollo配置中心-四-快速入门及使用指南/",
+        "zh-cn": "/zh-cn/apollo/2023/11/23/Apollo配置中心-四-快速入门及使用指南/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "e2a0a276a00ecf3e0b35412dea8ae7079acbb5430bd0d49f19974b33eb059011.json",
+          "rawDigest": "47dceac9a03df181d3df8c6adeee7650bc9447ea8d67639f063c255764469e0b"
+        },
+        "zh-cn": {
+          "file": "025c1e2b114c4b269fce01261cc985e39bfedd01f129a490ab8d78a694118770.json",
+          "rawDigest": "ea408d1a96b379f5adbe606fd3d700d66d55c1831a436b4ce0dd054c89f74aa3"
+        }
+      }
+    },
+    {
+      "id": "post-e6e24384354b654eb5a4",
+      "key": "/2024/05/24/K8s笔记-三/",
+      "source": "content/posts/zh-cn/2024-05-24-K8s笔记（三）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2024/05/24/K8s笔记-三/",
+        "zh-cn": "/zh-cn/2024/05/24/K8s笔记-三/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "e6e24384354b654eb5a4392409e28b5ba25eef0bab28e7779c6c557675e90510.json",
+          "rawDigest": "5a335c4d70d2cd548553d9d4cdb7da14d9ff79347d7f0b9ec97fb00c5f9105be"
+        },
+        "zh-cn": {
+          "file": "965ccf9e3f15869af4ecc672531c60a47e4d96643ec5c5a5cf72a72bfc4b2355.json",
+          "rawDigest": "2b7896a000beebe481617d1d48caed3d0e7dc9e1ae268e8977a3075342142425"
+        }
+      }
+    },
+    {
+      "id": "post-e75240c764d86762465b",
+      "key": "/node.js/2024/12/18/Prisma-更新和删除/",
+      "source": "content/posts/zh-cn/2024-12-18-Prisma：更新和删除.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/node.js/2024/12/18/Prisma-更新和删除/",
+        "zh-cn": "/zh-cn/node.js/2024/12/18/Prisma-更新和删除/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "e75240c764d86762465bd1ba2836db814cedca3ea03331565230b11a16b125bf.json",
+          "rawDigest": "ac4e9c6ab7347f52f25641faa22bf23a5da9f6c06ee89d569a1bc05f58eb9b5b"
+        },
+        "zh-cn": {
+          "file": "3ebb633335b4dda5b025ca081c68a5432ebb051deffb38067b0845c7277310b2.json",
+          "rawDigest": "94ab730be50adb5307b5f4687d257a5271aa9b884827b98592be5035e75ee15a"
+        }
+      }
+    },
+    {
+      "id": "post-e9d4428d87c4434e126e",
+      "key": "/fundamentals of data structures/2021/09/28/二叉树基础-一-二叉树的概念/",
+      "source": "content/posts/zh-cn/2021-09-28-二叉树基础（一）二叉树的概念.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/fundamentals of data structures/2021/09/28/二叉树基础-一-二叉树的概念/",
+        "zh-cn": "/zh-cn/fundamentals of data structures/2021/09/28/二叉树基础-一-二叉树的概念/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "e9d4428d87c4434e126e3f72513063ae8f681f4ac032df838dcdce781953127a.json",
+          "rawDigest": "2a466a1707371f3011f986c4aaaf410684c8e8031234934951353e4b7845671d"
+        },
+        "zh-cn": {
+          "file": "d9947d11f5a3c06a497ce23be11879f980b545ee8317f28ec0d31b2baa897ab7.json",
+          "rawDigest": "5687ff1438500075162f5d5775ec2024aeba50277b178d1ea36cb0a64d21af38"
+        }
+      }
+    },
+    {
+      "id": "post-ec5547b1e001543a84a0",
+      "key": "/2022/04/21/操作系统-十二-进程控制/",
+      "source": "content/posts/zh-cn/2022-04-21-操作系统（十二）进程控制.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/21/操作系统-十二-进程控制/",
+        "zh-cn": "/zh-cn/2022/04/21/操作系统-十二-进程控制/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "29b87ebcd45d1daa50696ea47f804cbbc5558e8299f4f4a2aaf8d9f524b0bd68.json",
+          "rawDigest": "87fdd4402b8f0fb5a7c7a5c392542122f47a47cf32182227026140327b701737"
+        }
+      }
+    },
+    {
+      "id": "post-ec6f9474e563bec344f0",
+      "key": "/algorithm/2024/12/05/迁移学习/",
+      "source": "content/posts/zh-cn/2024-12-05-迁移学习.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/12/05/迁移学习/",
+        "zh-cn": "/zh-cn/algorithm/2024/12/05/迁移学习/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "ec6f9474e563bec344f092c3d1092af233bd8a4db726c7daf6f5654b5d338bb5.json",
+          "rawDigest": "6313d8b7d856e91bc38a099d465af6c637de9ff31c9671c08031571fd99d9815"
+        },
+        "zh-cn": {
+          "file": "9fc4d3f59bd81bfbddca709e9f42aa433ef63eeb4646afc0e69aa7c4beaa9dcc.json",
+          "rawDigest": "f950dfffdfe815eb9ce9a7f87a587a47ea71586a19e98556d03a29b015156c95"
+        }
+      }
+    },
+    {
+      "id": "post-ec89e57e6a9d4cde20dc",
+      "key": "/2022/04/20/操作系统-八-操作系统引导-Boot/",
+      "source": "content/posts/zh-cn/2022-04-20-操作系统（八）操作系统引导（Boot）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/20/操作系统-八-操作系统引导-Boot/",
+        "zh-cn": "/zh-cn/2022/04/20/操作系统-八-操作系统引导-Boot/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "ad9b5e35ebb164c6be4e4deb2a498696440128003b7525ecadcaee38d80a4e6b.json",
+          "rawDigest": "53177ccc085df8f2d74d5908d752f24b635c7c8a746e4e5406b1f8413eb089b2"
+        }
+      }
+    },
+    {
+      "id": "post-f2576995435798285d79",
+      "key": "/2022/04/23/操作系统-十七-调度的概念和层次/",
+      "source": "content/posts/zh-cn/2022-04-23-操作系统（十七）调度的概念和层次.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/23/操作系统-十七-调度的概念和层次/",
+        "zh-cn": "/zh-cn/2022/04/23/操作系统-十七-调度的概念和层次/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "f1603a6bebac15a3ee30687467a53a3795b46ec03754eaf228c49f2386986f44.json",
+          "rawDigest": "692fed163466eea2bee50a43ed4e1dcf5931c3969a9b379213ddc80be3c6e4aa"
+        }
+      }
+    },
+    {
+      "id": "post-f6335a32e06125ce4491",
+      "key": "/apollo/2023/11/23/Apollo配置中心-二-Apollo简介/",
+      "source": "content/posts/zh-cn/2023-11-23-Apollo配置中心（二）Apollo简介.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/apollo/2023/11/23/Apollo配置中心-二-Apollo简介/",
+        "zh-cn": "/zh-cn/apollo/2023/11/23/Apollo配置中心-二-Apollo简介/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "f6335a32e06125ce449191d543876a8f4becd04e0fce481d90cf2a6d9afbe4fe.json",
+          "rawDigest": "4dd5106f018be6378a090864fcfe389bb1dfafa4849a3a5c56851b30bf7d88ff"
+        },
+        "zh-cn": {
+          "file": "ce40e9d08964669159da79261d801dc099a9b17157a85c05882619fa596e42b0.json",
+          "rawDigest": "c041fb7a0213311e90d1d112848fa778e4cdef594c96db0f6b926bacf6748fd3"
+        }
+      }
+    },
+    {
+      "id": "post-f7052b9485cfbce225d8",
+      "key": "/apollo/2023/11/23/Apollo配置中心-一-配置和配置中心/",
+      "source": "content/posts/zh-cn/2023-11-23-Apollo配置中心（一）配置和配置中心.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/apollo/2023/11/23/Apollo配置中心-一-配置和配置中心/",
+        "zh-cn": "/zh-cn/apollo/2023/11/23/Apollo配置中心-一-配置和配置中心/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "f7052b9485cfbce225d8275295259da6deacebc590d1ba597a95381895ff12b4.json",
+          "rawDigest": "056aa2546ad91e0db9c7d2304e8631b872ddcc6d428186b6fb4f842405bf7498"
+        },
+        "zh-cn": {
+          "file": "a38874e921e49c07e57e6ba1eb606d612afa50f8ea7f58472adc8f40660c9dc7.json",
+          "rawDigest": "5f780f1ab7f7df1586b0fe6796fb590d3ca188606e61a050a011afb6867408c0"
+        }
+      }
+    },
+    {
+      "id": "post-f70d0264c89861eef162",
+      "key": "/algorithm/2024/11/29/循环神经网络-RNN/",
+      "source": "content/posts/zh-cn/2024-11-29-循环神经网络（RNN）.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/algorithm/2024/11/29/循环神经网络-RNN/",
+        "zh-cn": "/zh-cn/algorithm/2024/11/29/循环神经网络-RNN/"
+      },
+      "snapshots": {
+        "en": {
+          "file": "f70d0264c89861eef1629217aafc37b336266e7fd393cfe9776ca296ea3b4585.json",
+          "rawDigest": "3bb8b6b3cc26a13d7c10c9600e3beab91afcec07dfacd3921e83ed55e2293ef1"
+        },
+        "zh-cn": {
+          "file": "ee40874c19f1ce9399e535467ed7f5ed362b229f2c6beaf0705b91ab86e38d93.json",
+          "rawDigest": "b2bf1d48cd30733483e908cee4da617dd96e96766b4a182ba8df25cc688c7538"
+        }
+      }
+    },
+    {
+      "id": "post-f8216bd07f38c4ea69c2",
+      "key": "/2022/04/24/操作系统-二十一-FCFS-SJF-HRRN调度算法/",
+      "source": "content/posts/zh-cn/2022-04-24-操作系统（二十一）FCFS、SJF、HRRN调度算法.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/24/操作系统-二十一-FCFS-SJF-HRRN调度算法/",
+        "zh-cn": "/zh-cn/2022/04/24/操作系统-二十一-FCFS-SJF-HRRN调度算法/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "684a531ba8eef57a9513430921f4d018c908ad0631dc575f047d677e917ddb3a.json",
+          "rawDigest": "417ff0a83f999f5f1458a5dc35af54a2d400a87fa24c2298b89dafa8fbac84af"
+        }
+      }
+    },
+    {
+      "id": "post-fa04d3acde3d6deb4a1d",
+      "key": "/2022/04/28/操作系统-二十九-生产者-消费者问题/",
+      "source": "content/posts/zh-cn/2022-04-28-操作系统（二十九）生产者-消费者问题.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/28/操作系统-二十九-生产者-消费者问题/",
+        "zh-cn": "/zh-cn/2022/04/28/操作系统-二十九-生产者-消费者问题/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "a287f996354c6e31c7213b6f16528437b7f238244b1d7f2ce7aea6d757129e45.json",
+          "rawDigest": "1a01ec688eca276210bedbaad831ed52cf09571eecf7bf34e5fba4c37e3086a2"
+        }
+      }
+    },
+    {
+      "id": "post-fad7ed8836648c035614",
+      "key": "/2022/04/28/操作系统-三十-多生产者-多消费者问题/",
+      "source": "content/posts/zh-cn/2022-04-28-操作系统（三十）多生产者-多消费者问题.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/04/28/操作系统-三十-多生产者-多消费者问题/",
+        "zh-cn": "/zh-cn/2022/04/28/操作系统-三十-多生产者-多消费者问题/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "8605eb633807da9761720ff61b31b18e7cc2ab0c389f06a4381eaa690cbe3604.json",
+          "rawDigest": "1a15ffd48b9f88476d5886960601561c290bea341aad90f915a0710852b82c15"
+        }
+      }
+    },
+    {
+      "id": "post-fce19fd64133f43699ed",
+      "key": "/2022/05/03/操作系统-四十一-覆盖与交换/",
+      "source": "content/posts/zh-cn/2022-05-03-操作系统（四十一）覆盖与交换.md",
+      "sourceLang": "zh-cn",
+      "routes": {
+        "en": "/2022/05/03/操作系统-四十一-覆盖与交换/",
+        "zh-cn": "/zh-cn/2022/05/03/操作系统-四十一-覆盖与交换/"
+      },
+      "snapshots": {
+        "zh-cn": {
+          "file": "61ad4f699c91a08c86042e4232fde4b2daab44eb3347521d3587b215e8552a9e.json",
+          "rawDigest": "e11e1dab5afdaa8372d39b8550ee73057dd3a77453db10ecc62592e4ff3e56ba"
+        }
+      }
+    }
+  ]
+}

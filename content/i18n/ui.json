@@ -1,0 +1,20 @@
+{
+  "en": {
+    "home": "Home", "blog": "Blog", "categories": "Categories", "tags": "Tags", "contact": "Contact",
+    "homeTitle": "PT's Home", "blogTitle": "PT's Blog", "tagline": "Just coding for fun.", "styleguide": "Style Guide",
+    "menu": "Menu", "openMenu": "Open menu", "closeMenu": "Close menu", "switchLanguage": "Switch to Chinese", "switchTheme": "Switch theme",
+    "search": "Search", "searchBlog": "Search for Blog", "searchPlaceholder": "Search...", "closeSearch": "Close search", "noResults": "No results found", "searchUnavailable": "Search is temporarily unavailable",
+    "latestPosts": "Latest Posts", "viewCategories": "View Categories", "exploreTags": "Explore Tags", "subscribe": "Get Interesting News", "subscribeContent": "Subscribe to our newsletter and we’ll send you the emails of latest posts.", "email": "Email", "emailPlaceholder": "Email Address", "join": "Join",
+    "related": "You may also like", "previousPost": "PREVIOUS POST", "nextPost": "NEXT POST", "loadMore": "Load more posts", "reading": "{count} min read", "postsFound": "{count} posts found.", "postFound": "1 post found.", "in": "in",
+    "notFound": "Page not found", "backHome": "BACK TO THE HOMEPAGE", "content": "Content", "backTop": "Back to top", "contactSubject": "Blog Contact", "copyrightCredit": "Crafted & Designed by"
+  },
+  "zh-cn": {
+    "home": "首页", "blog": "博客", "categories": "分类", "tags": "标签", "contact": "联系",
+    "homeTitle": "PT 的主页", "blogTitle": "PT 的博客", "tagline": "写代码，只为乐趣。", "styleguide": "样式指南",
+    "menu": "菜单", "openMenu": "打开菜单", "closeMenu": "关闭菜单", "switchLanguage": "切换到英文", "switchTheme": "切换主题",
+    "search": "搜索", "searchBlog": "搜索博客", "searchPlaceholder": "搜索...", "closeSearch": "关闭搜索", "noResults": "未找到相关内容", "searchUnavailable": "搜索暂时不可用",
+    "latestPosts": "最新发布", "viewCategories": "查看分类", "exploreTags": "探索标签", "subscribe": "订阅", "subscribeContent": "留下邮箱以订阅更新", "email": "邮箱", "emailPlaceholder": "邮箱地址", "join": "订阅",
+    "related": "相关阅读", "previousPost": "上一篇", "nextPost": "下一篇", "loadMore": "加载更多文章", "reading": "阅读时间 {count} 分钟", "postsFound": "共 {count} 篇文章", "postFound": "共 1 篇文章", "in": "归于",
+    "notFound": "没有找到内容", "backHome": "返回首页", "content": "页面内容", "backTop": "返回顶部", "contactSubject": "博客留言", "copyrightCredit": "主题设计："
+  }
+}
