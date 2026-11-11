@@ -39,6 +39,7 @@ test('Chinese navigation, dates, reading time, footer and exported language meta
   expect(document('link[rel="alternate"][hreflang="zh-CN"]').attr('href')).toBe('https://ptzhao.com/zh-cn/blogs/');
   await page.goto('/zh-cn/blogs/');
   await expect(page.locator('.top-nav .nav__link').first()).toHaveText('首页');
+  await expect(page.locator('.hero__content p')).toHaveText('写代码，只为乐趣。');
   await expect(page.locator('main .article__date').first()).toHaveText(/\d{4}年\d{1,2}月\d{1,2}日/);
   await expect(page.locator('main .article__minutes').first()).toContainText(/阅读时间 \d+ 分钟/);
   await expect(page.locator('.subscribe-email')).toHaveAttribute('placeholder', '邮箱地址');

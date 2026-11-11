@@ -29,7 +29,7 @@ export function makeCard(post,site,mode='normal'){
 export function cardHtml(card){return `<div class="${card.className}"><div class="article__inner">${card.featured?'<span class="featured-post ion ion-ios-star-outline"></span>':''}${card.image?`<a class="article__image" href="${encodeURI(card.image.href)}"><img class="lazy" data-src="${escape(card.image.src)}" alt="${escape(card.image.alt)}"></a>`:''}<div class="article__content"><div class="article__meta">${card.metaHtml}</div><h2 class="article__title">${card.titleHtml}</h2><p class="article__excerpt">${card.excerptHtml}</p><div class="article__bottom">${card.bottomHtml}</div></div></div></div>`;}
 function setHero(page,title,description){
   const $=load(page.heroHtml,{},false);$('.hero__title').text(title);$('.hero__image img').attr('alt',title);
-  if(description!==undefined)$('.hero__description').text(description);
+  if(description!==undefined)$('.hero__content p').text(description);
   page.title=title;page.heroHtml=$.html();return page;
 }
 function updatePostHero(post,site){
