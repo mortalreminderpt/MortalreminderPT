@@ -65,6 +65,12 @@ Article content.
 
 新增文章会同时更新两种语言的列表、分页、分类、标签、相关推荐、搜索与页脚。中文页面自动带 `/zh-cn/` 前缀，文章和分类的语言切换使用明确的对应关系；无需再创建第二份源稿或另一种语言的标签。
 
+## 数学公式
+
+支持 `$x^2$`、内侧带空格的 `$ x^2 $`、跨行的单 `$` 公式，以及 `$$ ... $$` 独立公式。公式在构建时用 KaTeX 生成 HTML/MathML，样式与字体随网站一起发布。代码块、行内代码、转义的美元符号和价格文字保持原样。
+
+原有有效的 MathML 缓存继续复用。如果旧 HTML 中仍有未渲染的公式，只从该文章的 Markdown 重建对应段落或列表，保留目录、锚点和其他段落。`npm run test:math` 覆盖这些兼容写法与旧缓存修复。
+
 ## 项目结构
 
 ```text
@@ -91,6 +97,7 @@ npm run test:authoring
 npm run test:i18n
 npm run test:secrets
 npm run test:cards
+npm run test:math
 npm run cards:check
 PLAYWRIGHT_BROWSERS_PATH=.sites-runtime/browsers npx playwright install chromium
 npm test

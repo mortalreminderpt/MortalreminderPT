@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import matter from 'gray-matter';
 import { load } from 'cheerio';
+import { repairCachedMath } from './markdown.mjs';
 import { languages, readJson, digest, escape, prefixFor, baseRoute, localizedRoute, normalizeRoute, discoverSources, asArray, taxonomyLookup, validateTaxonomy, readTranslation, otherLanguage, payloadDigest } from './i18n-core.mjs';
 
 const ui=await readJson('content/i18n/ui.json');
@@ -104,7 +105,7 @@ export async function buildLocalizedPages(compile){
       const {data,content}=matter(raw);
       const snapshot=source.snapshots[lang];const cached=snapshot&&snapshotMap.get(snapshot.file);
       const template=structuredClone(cached||snapshotMap.get(source.snapshots[source.sourceLang]?.file)||originals.find(page=>page.kind==='post'&&page.lang===lang));
-      const contentHtml=cached&&snapshot.rawDigest===digest(raw)?cached.contentHtml:compile(content,lang);
+      const contentHtml=cached&&snapshot.rawDigest===digest(raw)?repairCachedMath(cached.contentHtml,()=>compile(content,lang)):compile(content,lang);
       const ids=type=>unique(asArray(type==='tags'?source.data.tags:source.data.category??source.data.categories).map(name=>{const term=taxonomyLookup(taxonomy,type,name);if(!term)throw new Error('Untranslated taxonomy label: '+name);return term.id;}));
       const tagIds=ids('tags'),categoryIds=ids('categories');
       const date=new Date(source.data.date||source.source.split('/').at(-1).slice(0,10));if(Number.isNaN(date.getTime()))throw new Error('Invalid article date: '+source.source);

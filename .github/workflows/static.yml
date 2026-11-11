@@ -95,6 +95,7 @@ jobs:
       - run: npm run test:i18n
       - run: npm run test:authoring
       - run: npm run test:cards
+      - run: npm run test:math
       - run: npm run cards:check
       - name: Verify private credentials are absent from the public artifact
         env:

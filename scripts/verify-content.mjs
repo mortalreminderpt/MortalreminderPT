@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import { load } from 'cheerio';
 import { readJson, discoverSources, normalizeRoute, digest } from './i18n-core.mjs';
 import { prepareTranslations } from './translate-content.mjs';
+import { hasUnrenderedMath } from './markdown.mjs';
 
 await prepareTranslations({check:true});
 const routes=await readJson('.generated/routes.json');
@@ -25,7 +26,11 @@ function canonical(node){
   if(node.name==='img'&&node.attribs?.['data-src'])attributes.src=node.attribs['data-src'].replace(/^\/zh-cn\/(images|css|js)\//,'/$1/');
   return {name:node.name,attrs:Object.fromEntries(Object.entries(attributes).sort()),children:(node.children||[]).map(canonical).filter(value=>value!==null)};
 }
-const fragments=new Set();let preserved=0;const counts={en:0,'zh-cn':0};let checkedAlternates=0;
+function proseWithoutMath(html){
+  const $=load(html);$('.katex,include,math').remove();
+  return $.text().replace(/\${1,2}(?:\\[\s\S]|[^$\\])*?\${1,2}/g,'').replace(/\s+/g,' ').trim();
+}
+const fragments=new Set();let preserved=0,repairedMath=0;const counts={en:0,'zh-cn':0};let checkedAlternates=0;
 for(const page of pages){
   const filename=path.join('out',page.route.endsWith('.html')?page.route.slice(1):page.route.slice(1)+'index.html');
   const html=await fs.readFile(filename,'utf8'),$=load(html);
@@ -58,7 +63,19 @@ for(const page of pages){
       const raw=page.lang===source.sourceLang?source.raw:await fs.readFile(`content/translations/${page.lang}/${source.id}.md`,'utf8');
       if(digest(raw)===snapshot.rawDigest){
         const previous=load(original.contentHtml),current=load(page.contentHtml);
-        assert.equal(current.text().replace(/\s+/g,' ').trim(),previous.text().replace(/\s+/g,' ').trim(),'Original article prose changed: '+page.route);
+        if(hasUnrenderedMath(original.contentHtml)){
+          const oldBlocks=previous.root().find('body').children().not('link,meta,script').toArray(),newBlocks=current.root().find('body').children().not('link,meta,script').toArray();
+          assert.equal(newBlocks.length,oldBlocks.length,'Original block structure changed: '+page.route);
+          for(let i=0;i<oldBlocks.length;i++){
+            if(!hasUnrenderedMath(previous.html(oldBlocks[i])))assert.deepEqual(canonical(newBlocks[i]),canonical(oldBlocks[i]),'Unrelated article block changed: '+page.route);
+          }
+          const restored=proseWithoutMath(page.contentHtml).split(/\s+/);let position=0;
+          for(const word of proseWithoutMath(original.contentHtml).split(/\s+/)){
+            while(position<restored.length&&restored[position]!==word)position++;
+            assert.ok(position<restored.length,'Original non-math prose lost: '+page.route);position++;
+          }
+          assert.equal(hasUnrenderedMath(page.contentHtml),false,'Original formula still unrendered: '+page.route);repairedMath++;
+        }else assert.equal(current.text().replace(/\s+/g,' ').trim(),previous.text().replace(/\s+/g,' ').trim(),'Original article prose changed: '+page.route);
         assert.deepEqual(current('pre').map((i,e)=>current(e).text()).get(),previous('pre').map((i,e)=>previous(e).text()).get(),'Original code changed: '+page.route);preserved++;
       }
     }
@@ -82,5 +99,5 @@ for(const lang of ['en','zh-cn']){
 for(const fragment of fragments)assert.ok((await fs.stat(path.join('out',fragment))).isFile(),'Missing formula: '+fragment);
 const legacy=await readJson('content/routes.json');let oldPaths=0;
 for(const route of legacy){if(byRoute.has(normalizeRoute(route.route)))oldPaths++;else if(route.kind!=='post')throw new Error('Lost legacy path: '+route.route);}
-const report={sourceArticles:sources.length,localizedArticles:counts,routes:pages.length,legacyPathsAvailable:oldPaths,preservedOriginalArticles:preserved,formulaFragments:fragments.size,checkedAlternates,differences:0};
+const report={sourceArticles:sources.length,localizedArticles:counts,routes:pages.length,legacyPathsAvailable:oldPaths,preservedOriginalArticles:preserved,repairedOriginalMathArticles:repairedMath,formulaFragments:fragments.size,checkedAlternates,differences:0};
 await fs.mkdir('.artifacts',{recursive:true});await fs.writeFile('.artifacts/content-verification.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
